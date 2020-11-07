@@ -1,10 +1,15 @@
 Entfernung:
   GA 79:
-  - {pageref: 2ff.}
+  - pageref: 2ff.
 "Grundri\xDF":
   GA 61:
-  - {pageref: 159-160, reftype: r}
+  - pageref: 159-160
+    reftype: r
   GA 79:
-  - {pageref: 8-9, reftype: r}
+  - pageref: 8-9
+    reftype: r
   ZW:
-  - {pageref: '79'}
+  - pageref: '79'
+Etymologie:
+  GA 79:
+  - pageref: 13-15

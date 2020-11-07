@@ -2,6 +2,8 @@ import yaml
 
 INDEX_FILE = 'heidegger-index.yml'
 
+yaml.warnings({'YAMLLoadWarning': False})
+
 def add_to_index(lemma, work, page_ref, ref_type=None):
     with open(INDEX_FILE) as f:
         index = yaml.load(f)
