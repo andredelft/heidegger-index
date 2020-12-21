@@ -8,14 +8,27 @@ Geviert:
   EWI:
   - pageref: 17ff.
 "Grundri\xDF":
-  GA 61:
-  - pageref: 159-160
-    reftype: r
   EWI:
   - pageref: 8-9
     reftype: r
+  GA 61:
+  - pageref: 159-160
+    reftype: r
   ZW:
   - pageref: '79'
+Langeweile:
+  EWI:
+  - pageref: '39'
+Maschine:
+  EWI:
+  - pageref: '35'
 Tod:
   EWI:
   - pageref: '18'
+auf der Stelle zur Stelle:
+  EWI:
+  - pageref: '28'
+  - pageref: '33'
+  - pageref: '35'
+  VA:
+  - pageref: '17'
