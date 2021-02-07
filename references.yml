@@ -1,0 +1,63 @@
+EWI:
+  author:
+  - family: Heidegger
+    given: Martin
+  collection-editor:
+  - family: Klostermann
+    given: Vittorio
+  container-title: "Bremer und Freiburger Vortr\xE4ge"
+  collection-number: band 79
+  collection-title: Gesamtausgabe
+  editor:
+  - family: Jaeger
+    given: Petra
+  id: EWI
+  issued:
+    date-parts:
+    - - '2005'
+  publisher: Vittorio Klostermann
+  publisher-place: Frankfurt am Main
+  title: "Einblick in das was ist, Bremer Vortr\xE4ge 1949"
+  type: book
+SZ:
+  author:
+  - family: Heidegger
+    given: Martin
+  collection-editor:
+  - family: Klostermann
+    given: Vittorio
+  collection-number: band 2
+  collection-title: Gesamtausgabe
+  editor:
+  - family: Hermann
+    given: Friedrich-Wilhelm
+    non-dropping-particle: von
+  id: SZ
+  issued:
+    date-parts:
+    - - '1977'
+  publisher: Vittorio Klostermann
+  publisher-place: Frankfurt am Main
+  title: Sein und Zeit
+  type: book
+VA:
+  author:
+  - family: Heidegger
+    given: Martin
+  collection-editor:
+  - family: Klostermann
+    given: Vittorio
+  collection-number: band 7
+  collection-title: Gesamtausgabe
+  editor:
+  - family: Hermann
+    given: Friedrich-Wilhelm
+    non-dropping-particle: von
+  id: VA
+  issued:
+    date-parts:
+    - - '2000'
+  publisher: Vittorio Klostermann
+  publisher-place: Frankfurt am Main
+  title: "Vortr\xE4ge und Aufs\xE4tze"
+  type: book
