@@ -11,7 +11,7 @@ Geviert:
   EWI:
   - pageref: 8-9
     reftype: r
-  GA 61:
+  GA61:
   - pageref: 159-160
     reftype: r
   ZW:
@@ -22,6 +22,9 @@ Langeweile:
 Maschine:
   EWI:
   - pageref: '35'
+Natur:
+  EWI:
+  - pageref: 41ff.
 Tod:
   EWI:
   - pageref: '18'
@@ -30,5 +33,6 @@ auf der Stelle zur Stelle:
   - pageref: '28'
   - pageref: '33'
   - pageref: '35'
+  - pageref: '40'
   VA:
   - pageref: '17'
