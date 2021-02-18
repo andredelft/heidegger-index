@@ -16,6 +16,10 @@ Geviert:
     reftype: r
   ZW:
   - pageref: '79'
+"Kierkegaard, S\xF8ren":
+  GA 29/30:
+  - pageref: '226'
+  reftype: p
 Langeweile:
   EWI:
   - pageref: '39'
@@ -27,6 +31,11 @@ Maschine:
 Natur:
   EWI:
   - pageref: 41ff.
+Novalis:
+  GA 29/30:
+  - pageref: '7'
+  - pageref: 10-12
+  reftype: p
 Tod:
   EWI:
   - pageref: '18'
