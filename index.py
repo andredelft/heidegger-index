@@ -11,15 +11,16 @@ def add_to_index(lemma, work, page_ref, ref_type=None):
     reference = {'pageref': page_ref}
 
     # Makes sure ref_type 'p' is a child of 'lemma' instead of 'work'
-    if ref_type is not 'p' and ref_type is not None:
+    if ref_type != 'p' and ref_type != None:
          reference['reftype'] = ref_type
 
     try:
         lemma_entry = index[lemma]
     except KeyError:
         # Makes sure ref_type 'p' is a child of 'lemma' instead of 'work'
-        if ref_type != 'p':
-            lemma_entry = {'reftype': ref_type, work: [reference]}
+        if ref_type == 'p':
+            lemma_entry = {work: [reference]}
+            lemma_entry['reftype'] = ref_type
         else:
             lemma_entry = {work: [reference]}
     else:
