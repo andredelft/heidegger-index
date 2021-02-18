@@ -9,13 +9,19 @@ def add_to_index(lemma, work, page_ref, ref_type=None):
         index = yaml.load(f)
 
     reference = {'pageref': page_ref}
-    if ref_type:
-        reference['reftype'] = ref_type
+
+    # Makes sure ref_type 'p' is a child of 'lemma' instead of 'work'
+    if ref_type is not 'p' and ref_type is not None:
+         reference['reftype'] = ref_type
 
     try:
         lemma_entry = index[lemma]
     except KeyError:
-        lemma_entry = {work: [reference]}
+        # Makes sure ref_type 'p' is a child of 'lemma' instead of 'work'
+        if ref_type != 'p':
+            lemma_entry = {'reftype': ref_type, work: [reference]}
+        else:
+            lemma_entry = {work: [reference]}
     else:
         try:
             lemma_entry[work].append(reference)

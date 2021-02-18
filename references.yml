@@ -40,6 +40,27 @@ SZ:
   publisher-place: Frankfurt am Main
   title: Sein und Zeit
   type: book
+"GA 29/30":
+  author:
+  - family: Heidegger
+    given: Martin
+  collection-editor:
+  - family: Klostermann
+    given: Vittorio
+  collection-number: 'band 29/30'
+  collection-title: Gesamtausgabe
+  editor:
+  - family: Hermann
+    given: Friedrich-Wilhelm
+    non-dropping-particle: von
+  id: 'GA 29/30'
+  issued:
+    date-parts:
+    - - '1983'
+  publisher: Vittorio Klostermann
+  publisher-place: Frankfurt am Main
+  title: "Die Grundbegriffe der Metaphysik : Welt, Endlichkeit, Einsamkeit"
+  type: book
 VA:
   author:
   - family: Heidegger
