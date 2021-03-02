@@ -82,3 +82,15 @@ VA:
   publisher-place: Frankfurt am Main
   title: "Vortr\xE4ge und Aufs\xE4tze"
   type: book
+SZ:
+  author:
+  - family: Heidegger
+    given: Martin
+  publisher: Max Niemeyer Verlag
+  publisher-place: "T\xFCbingen"
+  id: SZ
+  issued:
+    date-parts:
+    - - '1972'
+  title: Sein und Zeit
+  type: book

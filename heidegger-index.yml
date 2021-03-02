@@ -1,9 +1,16 @@
+Aristoteles:
+  SZ:
+  - pageref: '3'
+  reftype: p
 Entfernung:
   EWI:
   - pageref: 2ff.
 Etymologie:
   EWI:
   - pageref: 13-15
+Frage nach dem Sinn von Sein:
+  SZ:
+  - pageref: 1-8
 Geviert:
   EWI:
   - pageref: 17ff.
@@ -16,6 +23,10 @@ Geviert:
     reftype: r
   ZW:
   - pageref: '79'
+Hegel, Georg Wilhelm Friedrich:
+  SZ:
+  - pageref: '3'
+  reftype: p
 "Kierkegaard, S\xF8ren":
   GA 29/30:
   - pageref: '226'
@@ -36,9 +47,34 @@ Novalis:
   - pageref: '7'
   - pageref: 10-12
   reftype: p
+Pascal, Blaise:
+  SZ:
+  - pageref: '4'
+  reftype: p
+Plato:
+  SZ:
+  - pageref: '3'
+  reftype: p
+"R\xE4tsel":
+  SZ:
+  - pageref: '4'
+Sein zu Seiendem als Seidendem:
+  SZ:
+  - pageref: '4'
+Thomans von Aquin:
+  SZ:
+  - pageref: '3'
+  reftype: p
 Tod:
   EWI:
   - pageref: '18'
+Verhalten:
+  SZ:
+  - pageref: '4'
+antiken Ontologie:
+  SZ:
+  - pageref: '4'
+  - pageref: '5'
 auf der Stelle zur Stelle:
   EWI:
   - pageref: '28'
@@ -47,3 +83,6 @@ auf der Stelle zur Stelle:
   - pageref: '40'
   VA:
   - pageref: '17'
+unbestimmte Unmittelbare:
+  SZ:
+  - pageref: '3'
