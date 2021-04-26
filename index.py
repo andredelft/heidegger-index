@@ -1,9 +1,19 @@
 import yaml
+import click
 
 INDEX_FILE = 'heidegger-index.yml'
 
 yaml.warnings({'YAMLLoadWarning': False})
 
+
+@click.command()
+@click.argument('lemma', type=str)
+@click.argument('work', type=str)
+@click.argument('page_ref', type=str)
+@click.option(
+    '-t', '--type', 'ref_type', default=None,
+    type=click.Choice(['p']), help="Type of reference (e.g. 'p' for 'person')"
+)
 def add_to_index(lemma, work, page_ref, ref_type=None):
     with open(INDEX_FILE) as f:
         index = yaml.load(f)
@@ -12,7 +22,7 @@ def add_to_index(lemma, work, page_ref, ref_type=None):
 
     # Makes sure ref_type 'p' is a child of 'lemma' instead of 'work'
     if ref_type != 'p' and ref_type != None:
-         reference['reftype'] = ref_type
+        reference['reftype'] = ref_type
 
     try:
         lemma_entry = index[lemma]
