@@ -15,9 +15,10 @@ class Command(BaseCommand):
 
     def _flush_table(self, Model):
         n, info = Model.objects.all().delete()
-        self.stdout.write(f'{n} objects deleted' + (':' if n else ''))
-        for object_type, no_objects in info.items():
-            self.stdout.write(f'- {object_type}: {no_objects}')
+        if n:
+            self.stdout.write(f'{n} objects deleted')
+            for object_type, no_objects in info.items():
+                self.stdout.write(f'- {object_type}: {no_objects}')
 
     def handle(self, *args, **options):
         # Clean DB
@@ -28,21 +29,48 @@ class Command(BaseCommand):
             works_data = yaml.load(f)
 
         Work.objects.bulk_create(
-            Work(id=ref_id, reference=ref_data)
-            for ref_id, ref_data in tqdm(
+            Work(id=work_id, csl_json=csl_json)
+            for work_id, csl_json in tqdm(
                 works_data.items(),
                 desc="Populating works"
             )
         )
 
+        existing_works = set(works_data.keys())
+
         with open(INDEX_FILE) as f:
             index_data = yaml.load(f)
 
-        lemmas = {
-            # Create all lemma objects, and index them by term
-            term: Lemma(id=i, term=term, type=data.pop('reftype', None))
-            for i, (term, data) in enumerate(index_data.items())
+        lemma_objs = {
+            # Create all lemma objects, and index them by value
+            value: Lemma(id=i, value=value, type=data.pop('reftype', None))
+            for i, (value, data) in enumerate(index_data.items())
         }
-        Lemma.objects.bulk_create(tqdm(lemmas.values(), desc="Populating lemmata"))
+        Lemma.objects.bulk_create(
+            tqdm(lemma_objs.values(), desc="Populating lemmata")
+        )
 
-        # TODO: Populate page refs
+        pageref_objs = []
+        for lemma_value, works in index_data.items():
+            for work, page_ref_list in works.items():
+
+                if work not in existing_works:
+                    self.stdout.write(
+                        f'Warning: Work {work} does not exist in {REF_FILE}, '
+                        'will be added with an empty reference'
+                    )
+                    Work(
+                        id=work, csl_json={}
+                    ).save()
+                    existing_works.add(work)
+
+                pageref_objs += [
+                    PageReference(
+                        work_id=work, lemma=lemma_objs[lemma_value],
+                        value=ref['pageref']
+                    ) for ref in page_ref_list
+                ]
+
+        PageReference.objects.bulk_create(
+            tqdm(pageref_objs, desc="Populating page references")
+        )

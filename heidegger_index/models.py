@@ -3,19 +3,28 @@ from django.db import models
 
 class Work(models.Model):
     id = models.CharField(max_length=8, primary_key=True)
-    reference = models.JSONField()
+    csl_json = models.JSONField()
+
+    def __str__(self):
+        return self.id
 
 
 class Lemma(models.Model):
     PERSON = 'p'
     LEMMA_TYPES = {
-        PERSON: 'Person'
+        PERSON: 'person'
     }
-    term = models.CharField(max_length=100, unique=True)
+    value = models.CharField(max_length=100, unique=True)
     type = models.CharField(max_length=1, null=True, choices=LEMMA_TYPES.items())
+
+    def __str__(self):
+        return self.value
 
 
 class PageReference(models.Model):
     work = models.ForeignKey(Work, on_delete=models.PROTECT)
     lemma = models.ForeignKey(Lemma, on_delete=models.PROTECT)
-    reference = models.CharField(max_length=20)
+    value = models.CharField(max_length=20)
+
+    def __str__(self):
+        return self.value
