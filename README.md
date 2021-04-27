@@ -1,5 +1,7 @@
 # Heidegger index
 
+## Add references to `references.yml`
+
 ```pycon
 >>> from index import add_to_index
 >>> add_to_index('Grundriß', 'ZW', '79')
@@ -27,6 +29,26 @@ E.g.:
 $ hi-add 'Grundriß' 'ZW' '79'
 $ hi-add 'Kierkegaard, Søren' 'GA 29/30' '226' --type p
 ```
+
+## Populate the Django DB
+
+Initialize the databse:
+
+```sh
+$ python manage.py migrate
+```
+
+Populate the database:
+
+```sh
+$ python manage.py poopulate
+```
+
+Spin up the django project:
+```sh
+$ python manage.py runserver
+```
+and navigate to http://localhost:8000.
 
 ## References
 
