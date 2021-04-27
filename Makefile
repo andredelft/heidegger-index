@@ -1,4 +1,4 @@
-HOST_PORT=5005
+HOST_PORT=5003
 IMAGE_TAG=heidegger-index
 ENV_FILE=.env
 CONTAINER_NAME=HeideggerIndex
