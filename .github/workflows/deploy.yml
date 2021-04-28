@@ -16,7 +16,7 @@ jobs:
     - name: Adding known hosts
       run: ssh-keyscan -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
     - name: Deploy with rsync
-      run: rsync -avz $PWD ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:${{ secrets.SERVER_ROOT_DIR }}
+      run: rsync -ravz "${PWD}/" ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:${{ secrets.SERVER_ROOT_DIR }}
     - name: Update container on server
       uses: garygrossgarten/github-action-ssh@release
       with:
