@@ -11,8 +11,10 @@ class Work(models.Model):
 
 class Lemma(models.Model):
     PERSON = 'p'
+    WORK = 'w'
     LEMMA_TYPES = {
-        PERSON: 'person'
+        PERSON: 'person',
+        WORK: 'work'
     }
     value = models.CharField(max_length=100, unique=True)
     type = models.CharField(max_length=1, null=True, choices=LEMMA_TYPES.items())
