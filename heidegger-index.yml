@@ -16,6 +16,10 @@ Augenblick:
   - pageref: '251'
   - pageref: '257'
   - pageref: '257'
+Baer, Karl Ernst von:
+  GA 29/30:
+  - pageref: '378'
+  reftype: p
 "Bedr\xE4ngnis im Ganzen":
   GA 29/30:
   - pageref: '251'
@@ -47,13 +51,25 @@ Beziehung zu Seiendem als Solchem:
 Blick der Entschlossenheit:
   GA 29/30:
   - pageref: '251'
+Buytendijk, Frederik Jacobus Johannes:
+  GA 29/30:
+  - pageref: 375-376
+  reftype: p
 Darwin, Charles:
   GA 29/30:
   - pageref: '366'
   reftype: p
+Darwinismus:
+  GA 29/30:
+  - pageref: '377'
+  - pageref: '378'
 Dasein:
   GA 29/30:
   - pageref: '251'
+Driesch, Hans:
+  GA 29/30:
+  - pageref: 380-381
+  reftype: p
 Endlichkeit des Daseins:
   GA 29/30:
   - pageref: '252'
@@ -185,6 +201,10 @@ Seiende im Ganzen:
 Sein zu Seiendem als Seidendem:
   SZ:
   - pageref: '4'
+Spemann, Hans:
+  GA 29/30:
+  - pageref: '381'
+  reftype: p
 Thomans von Aquin:
   SZ:
   - pageref: '3'
