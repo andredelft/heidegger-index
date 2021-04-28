@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Heidegger index</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Crimson Text', serif;
+        margin: 0;
+        font-size: 18px;
+      }
+      .container {
+        max-width: 700px;
+        margin: auto;
+        padding: 1rem;
+      }
+      .lemma-header {
+        font-style: italic;
+        font-weight: normal;
+        margin-bottom: 0;
+      }
+      .lemma-refs {
+        margin-top: 0;
+        padding-left: 1rem;
+        list-style: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+    <h1>Heidegger index</h1>
+    {% for lemma in lemmas %}
+      <h3 class="lemma-header">
+        {{ lemma }}
+        {% if lemma.type %}({{ lemma.get_type_display }}){% endif %}
+      </h3>
+      <ul class="lemma-refs">
+      {% regroup lemma.pagereference_set.all by work as work_list %}
+      {% for work in work_list %}
+        <li>{{ work.grouper }}:
+          {% for page_ref in work.list %}
+          {{ page_ref }}{% if not forloop.last %},{% endif %}
+          {% endfor %}
+        </li>
+      {% endfor %}
+      </ul>
+    {% endfor %}
+    </div>
+  </body>
+</html>
