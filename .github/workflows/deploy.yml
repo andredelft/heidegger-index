@@ -23,10 +23,9 @@ jobs:
       uses: garygrossgarten/github-action-ssh@release
       with:
         command: |
-          cd ${{ secrets.SERVER_ROOT_DIR }};
-          export SECRET_KEY="${{ secrets.DJANGO_SECRET_KEY }}";
+          cd ${{ secrets.SERVER_ROOT_DIR }}
+          export SECRET_KEY="${{ secrets.DJANGO_SECRET_KEY }}"
           make update
         host: ${{ secrets.SSH_HOST }}
         username: ${{ secrets.SSH_USER }}
-        passphrase: ${{ secrets.SSH_PASSPHRASE }}
         privateKey: ${{ secrets.SSH_PRIVATE_KEY}}
