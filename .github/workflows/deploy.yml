@@ -19,7 +19,7 @@ jobs:
       uses: actions/checkout@v2
     - name: Deploy with rsync
       run: >
-        rsync -ravz "${{ github.workspace }}/" --exclude .*
+        rsync -ravz --exclude .* "${{ github.workspace }}/"
         ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:${{ secrets.SERVER_ROOT_DIR }}
     - name: Update container on server
       uses: garygrossgarten/github-action-ssh@release
