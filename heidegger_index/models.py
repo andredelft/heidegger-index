@@ -12,10 +12,10 @@ class Work(models.Model):
 
 
 class Lemma(models.Model):
-    lemma_types = LEMMA_TYPES
+    TYPES = LEMMA_TYPES
     value = models.CharField(max_length=100, unique=True)
     type = models.CharField(
-        max_length=1, null=True, choices=lemma_types.items()
+        max_length=1, null=True, choices=TYPES.items()
     )
 
     def __str__(self):
