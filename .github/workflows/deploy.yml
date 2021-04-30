@@ -26,7 +26,8 @@ jobs:
       with:
         command: |
           cd ${{ secrets.SERVER_ROOT_DIR }}
-          export SECRET_KEY="${{ secrets.DJANGO_SECRET_KEY }}"
+          echo SECRET_KEY="${{ secrets.DJANGO_SECRET_KEY }}" > .env
+          echo DEBUG=0 >> .env
           make update
         host: ${{ secrets.SSH_HOST }}
         username: ${{ secrets.SSH_USER }}
