@@ -1,6 +1,6 @@
 # Heidegger index
 
-## Add indices to `heidegger-index.yml`
+## Add lemmas to `heidegger-index.yml`
 
 ```pycon
 >>> from index import add_to_index
@@ -20,14 +20,14 @@ $ hi-add --help
 Usage: hi-add [OPTIONS] LEMMA WORK PAGE_REF
 
 Options:
-  -t, --type [p]  Type of reference (e.g. 'p' for 'person')
-  --help          Show this message and exit.
+  -t, --type [p|w]  Type of lemma (e.g. 'p' for 'person')
+  --help            Show this message and exit.
 ```
 
 E.g.:
 ```sh
 $ hi-add 'Grundriß' 'ZW' '79'
-$ hi-add 'Kierkegaard, Søren' 'GA 29/30' '226' --type p
+$ hi-add --type p 'Kierkegaard, Søren' 'GA 29/30' '226'
 ```
 
 ## Populate the Django DB

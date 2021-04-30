@@ -12,7 +12,7 @@ yaml.warnings({'YAMLLoadWarning': False})
 @click.argument('page_ref', type=str)
 @click.option(
     '-t', '--type', 'ref_type', default=None,
-    type=click.Choice(['p']), help="Type of reference (e.g. 'p' for 'person')"
+    type=click.Choice(['p', 'w']), help="Type of lemma (e.g. 'p' for 'person')"
 )
 def add_to_index(lemma, work, page_ref, ref_type=None):
     with open(INDEX_FILE) as f:
