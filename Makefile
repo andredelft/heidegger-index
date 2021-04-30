@@ -1,14 +1,14 @@
 HOST_PORT=5003
 IMAGE_TAG=heidegger-index
-ENV_FILE=.env
 CONTAINER_NAME=HeideggerIndex
+SECRET_KEY=$(SECRET_KEY)
 
 build:
 	docker build -t $(IMAGE_TAG) .
 
 run:
 	touch $(ENV_FILE)
-	docker run --name $(CONTAINER_NAME) --env DEBUG=0 --env-file $(ENV_FILE) -p $(HOST_PORT):8000 --detach $(IMAGE_TAG)
+	docker run --name $(CONTAINER_NAME) --env DEBUG=0 -e SECRET_KEY=$(SECRET_KEY) -p $(HOST_PORT):8000 --detach $(IMAGE_TAG)
 
 update:
 	make build
