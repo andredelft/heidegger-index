@@ -1,6 +1,6 @@
 # Heidegger index
 
-## Add references to `references.yml`
+## Add indices to `heidegger-index.yml`
 
 ```pycon
 >>> from index import add_to_index
