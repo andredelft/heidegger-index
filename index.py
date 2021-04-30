@@ -1,6 +1,8 @@
 import yaml
 import click
 
+from heidegger_index.constants import LEMMA_TYPES
+
 INDEX_FILE = 'heidegger-index.yml'
 
 yaml.warnings({'YAMLLoadWarning': False})
@@ -12,7 +14,8 @@ yaml.warnings({'YAMLLoadWarning': False})
 @click.argument('page_ref', type=str)
 @click.option(
     '-t', '--type', 'ref_type', default=None,
-    type=click.Choice(['p', 'w']), help="Type of lemma (e.g. 'p' for 'person')"
+    type=click.Choice(LEMMA_TYPES.keys()),
+    help=f"Type of lemma ({', '.join(k + ': ' + v for k, v in LEMMA_TYPES.items())})"
 )
 def add_to_index(lemma, work, page_ref, ref_type=None):
     with open(INDEX_FILE) as f:

@@ -1,5 +1,7 @@
 from django.db import models
 
+from heidegger_index.constants import LEMMA_TYPES
+
 
 class Work(models.Model):
     id = models.CharField(max_length=8, primary_key=True)
@@ -10,14 +12,11 @@ class Work(models.Model):
 
 
 class Lemma(models.Model):
-    PERSON = 'p'
-    WORK = 'w'
-    LEMMA_TYPES = {
-        PERSON: 'person',
-        WORK: 'work'
-    }
+    lemma_types = LEMMA_TYPES
     value = models.CharField(max_length=100, unique=True)
-    type = models.CharField(max_length=1, null=True, choices=LEMMA_TYPES.items())
+    type = models.CharField(
+        max_length=1, null=True, choices=lemma_types.items()
+    )
 
     def __str__(self):
         return self.value
