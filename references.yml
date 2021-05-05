@@ -19,6 +19,7 @@ EWI:
   publisher-place: Frankfurt am Main
   title: "Einblick in das was ist, Bremer Vortr\xE4ge 1949"
   type: chapter
+  language: german
 SZ:
   author:
   - family: Heidegger
@@ -40,6 +41,7 @@ SZ:
   publisher-place: Frankfurt am Main
   title: Sein und Zeit
   type: book
+  language: german
 "GA 29/30":
   author:
   - family: Heidegger
@@ -61,6 +63,7 @@ SZ:
   publisher-place: Frankfurt am Main
   title: "Die Grundbegriffe der Metaphysik : Welt, Endlichkeit, Einsamkeit"
   type: book
+  language: german
 VA:
   author:
   - family: Heidegger
@@ -82,6 +85,7 @@ VA:
   publisher-place: Frankfurt am Main
   title: "Vortr\xE4ge und Aufs\xE4tze"
   type: book
+  language: german
 SZ:
   author:
   - family: Heidegger
@@ -94,3 +98,4 @@ SZ:
     - - '1972'
   title: Sein und Zeit
   type: book
+  language: german

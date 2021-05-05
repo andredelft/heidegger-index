@@ -28,13 +28,10 @@ class Command(BaseCommand):
         with open(REF_FILE) as f:
             works_data = yaml.load(f)
 
-        Work.objects.bulk_create(
-            Work(id=work_id, csl_json=csl_json)
-            for work_id, csl_json in tqdm(
-                works_data.items(),
-                desc="Populating works"
-            )
-        )
+        for work_id, csl_json in tqdm(works_data.items(), desc="Populating works"):
+            work_obj = Work(id=work_id, csl_json=csl_json)
+            work_obj.save()
+            # We need the save method for reference generation, hence no bulk_create
 
         existing_works = set(works_data.keys())
 

@@ -47,6 +47,16 @@
       {% endfor %}
       </ul>
     {% endfor %}
+    <h2 style="margin-top: 100px;">Bibliography</h2>
+    <table style="border-spacing: 1rem 10px;">
+      {% for work in works %}
+      {% if work.reference %}
+      <tr>
+        <td style="white-space: nowrap; vertical-align: top;">{{ work.id }}</td>
+        <td>{{ work.reference|safe }}</td>
+      </tr>
+      {% endif %}
+      {% endfor %}
     </div>
   </body>
 </html>
