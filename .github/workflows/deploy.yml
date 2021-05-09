@@ -26,8 +26,8 @@ jobs:
       with:
         command: |
           cd ${{ secrets.SERVER_ROOT_DIR }}
-          dotenv set SECRET_KEY "${{ secrets.DJANGO_SECRET_KEY }}"
-          dotenv set DEBUG 0
+          dotenv -q never set SECRET_KEY "${{ secrets.DJANGO_SECRET_KEY }}"
+          dotenv -q never set DEBUG 0
           make update
         host: ${{ secrets.SSH_HOST }}
         username: ${{ secrets.SSH_USER }}
