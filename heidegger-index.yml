@@ -106,6 +106,9 @@ Gebrochenheit des Daseins:
 Geheimnis:
   GA 29/30:
   - pageref: '255'
+Gelassenheit:
+  GA 13:
+  - pageref: 40ff.
 Geviert:
   EWI:
   - pageref: 17ff.
@@ -177,6 +180,8 @@ Maschine:
 Natur:
   EWI:
   - pageref: 41ff.
+  GA 13:
+  - pageref: '60'
 Nichts:
   GA 29/30:
   - pageref: '368'
@@ -214,6 +219,8 @@ Seiende im Ganzen:
   GA 29/30:
   - pageref: '251'
 Sein und Zeit:
+  GA 13:
+  - pageref: '63'
   GA 29/30:
   - pageref: '262'
   reftype: w
