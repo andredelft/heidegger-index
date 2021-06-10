@@ -30,12 +30,12 @@ def add_to_index(lemma, work, ref, ref_type=None):
         raise click.BadParameter(f'Reference "{ref}" is not recognized')
 
     ref_dict = {}
-    for k, v in m.groups().items():
+    for k, v in m.groupdict().items():
         if v:
             ref_dict[k] = int(v) if k in REF_INTFIELDS else v
 
     # Makes sure ref_type 'p' is a child of 'lemma' instead of 'work'
-    if ref_type != 'p' and not ref_type:
+    if ref_type != 'p' and ref_type is not None:
         ref_dict['reftype'] = ref_type
 
     try:

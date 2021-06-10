@@ -170,7 +170,7 @@ Herakles:
 Horizont:
   GA 29/30:
   - begin: 252
-"H\xF6lderlin":
+"H\xF6lderlin, Friedrich":
   WD:
   - begin: 269
     suffix: ff
@@ -197,6 +197,9 @@ Lichtung:
 Maschine:
   EWI:
   - begin: 35
+Mythos:
+  WD:
+  - begin: 273
 "M\xFCller, Johannes":
   GA 29/30:
   - begin: 372
@@ -235,6 +238,11 @@ Reizbarkeit:
   GA 29/30:
   - begin: 372
     end: 373
+Rilke, Reiner Maria:
+  WD:
+  - begin: 274
+    suffix: ff
+  reftype: p
 "R\xE1dl, Emanuel":
   GA 29/30:
   - begin: 365
@@ -254,6 +262,10 @@ Sein und Zeit:
 Sein zu Seiendem als Seidendem:
   SZ:
   - begin: 4
+Seinsgeschichte:
+  WD:
+  - begin: 273
+    suffix: f
 Seinsvergessenheit:
   WD:
   - begin: 273
