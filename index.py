@@ -56,4 +56,4 @@ def add_to_index(lemma, work, ref, ref_type=None):
     index[lemma] = lemma_entry
 
     with open(INDEX_FILE, 'w') as f:
-        yaml.dump(index, f)
+        yaml.dump(index, f, allow_unicode=True)
