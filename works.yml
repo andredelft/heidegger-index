@@ -114,7 +114,8 @@ WD:
   event-place: Frankfurt am Main
   ISBN: 978-3-465-03236-6 978-3-465-03237-3
   issued:
-    - year: 2003
+    date-parts:
+    - - '2003'
   language: german
   note: 'OCLC: 177280863'
   page: 269-320
@@ -138,7 +139,8 @@ ZW:
   event-place: Frankfurt am Main
   ISBN: 978-3-465-03236-6 978-3-465-03237-3
   issued:
-    - year: 2003
+    date-parts:
+    - - '2003'
   language: german
   note: 'OCLC: 177280863'
   page: 75-113
