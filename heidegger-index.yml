@@ -1,329 +1,352 @@
 Abgrund:
   VA:
-  - pageref: 269ff.
+  - begin: 269
+    suffix: ff
   WD:
-  - pageref: 248f.
+  - begin: 248
+    suffix: f
 Aristoteles:
   SZ:
-  - pageref: '3'
+  - begin: 3
   reftype: p
 Augenblick:
   GA 29/30:
-  - pageref: '251'
-  - pageref: '257'
+  - begin: 251
+  - begin: 257
 Baer, Karl Ernst von:
   GA 29/30:
-  - pageref: '378'
+  - begin: 378
   reftype: p
 "Bedr\xE4ngnis im Ganzen":
   GA 29/30:
-  - pageref: '251'
+  - begin: 251
 Befreiung:
   GA 29/30:
-  - pageref: '253'
+  - begin: 253
 Befreiung des Daseins im Menschen:
   GA 29/30:
-  - pageref: '255'
-  - pageref: '257'
+  - begin: 255
+  - begin: 257
     reftype: r
 Benommenheit des Tieres:
   GA 29/30:
-  - pageref: '362'
+  - begin: 362
 Benommenheit, Offenheit der:
   GA 29/30:
-  - pageref: '362'
-  - pageref: '363'
+  - begin: 362
+  - begin: 363
     reftype: r
-  - pageref: '368'
+  - begin: 368
     reftype: r
-  - pageref: '369'
+  - begin: 369
     reftype: r
-  - pageref: '370'
+  - begin: 370
     reftype: r
 Beziehung zu Seiendem als Solchem:
   GA 29/30:
-  - pageref: 367-368
+  - begin: 367
+    end: 368
 Blick der Entschlossenheit:
   GA 29/30:
-  - pageref: '251'
+  - begin: 251
 Buytendijk, Frederik Jacobus Johannes:
   GA 29/30:
-  - pageref: 375-376
+  - begin: 375
+    end: 376
   reftype: p
 Christus:
   VA:
-  - pageref: 269
+  - begin: 269
 Darwin, Charles:
   GA 29/30:
-  - pageref: '366'
+  - begin: 366
   reftype: p
 Darwinismus:
   GA 29/30:
-  - pageref: '377'
-  - pageref: '378'
+  - begin: 377
+  - begin: 378
 Dasein:
   GA 29/30:
-  - pageref: '251'
+  - begin: 251
 Dionysos:
   VA:
-  - pageref: 269
+  - begin: 269
   reftype: p
 Driesch, Hans:
   GA 29/30:
-  - pageref: 380-381
+  - begin: 380
+    end: 381
   reftype: p
 "D\xFCrftiger Zeit":
   VA:
-  - pageref: 269ff
+  - begin: 269
+    suffix: ff
 Endlichkeit des Daseins:
   GA 29/30:
-  - pageref: '252'
+  - begin: 252
 Entfernung:
   EWI:
-  - pageref: 2ff.
+  - begin: 2
+    suffix: ff
 Entschlossenheit:
   GA 29/30:
-  - pageref: '251'
+  - begin: 251
 Ernst:
   GA 29/30:
-  - pageref: '258'
+  - begin: 258
 Etymologie:
   EWI:
-  - pageref: 13-15
+  - begin: 13
+    end: 15
 Existenz:
   GA 29/30:
-  - pageref: '257'
+  - begin: 257
 Fehl Gottes:
   VA:
-  - pageref: 269
+  - begin: 269
 Frage nach dem Sein:
   GA 29/30:
-  - pageref: '256'
+  - begin: 256
 Frage nach dem Sinn von Sein:
   SZ:
-  - pageref: 1-8
+  - begin: 1
+    end: 8
 Gebrochenheit des Daseins:
   GA 29/30:
-  - pageref: '252'
+  - begin: 252
 Geheimnis:
   GA 29/30:
-  - pageref: '255'
+  - begin: 255
 Gelassenheit:
   GA 13:
-  - pageref: 40ff.
+  - begin: 40
+    suffix: ff
 Geschick:
   WD:
-  - pageref: '272'
+  - begin: 272
 Geviert:
   EWI:
-  - pageref: 17ff.
+  - begin: 17
+    suffix: ff
 Glanz:
   GA 13:
-  - pageref: 88
+  - begin: 88
   VA:
-  - pageref: 269
+  - begin: 269
 "Gleichg\xFCltigkeit":
   GA 29/30:
-  - pageref: '367'
+  - begin: 367
     reftype: r
 Gott:
   GA 29/30:
-  - pageref: '262'
+  - begin: 262
 "Grundri\xDF":
   EWI:
-  - pageref: 8-9
+  - begin: 8
+    end: 9
     reftype: r
   GA 61:
-  - pageref: 159-160
+  - begin: 159
+    end: 160
     reftype: r
   ZW:
-  - pageref: '79'
+  - begin: 79
 Grundstimmung:
   GA 29/30:
-  - pageref: '251'
-  - pageref: '252'
-  - pageref: '253'
-  - pageref: '254'
-  - pageref: '256'
+  - begin: 251
+  - begin: 252
+  - begin: 253
+  - begin: 254
+  - begin: 256
 Haben der Welt:
   GA 29/30:
-  - pageref: '262'
-  - pageref: '263'
+  - begin: 262
+  - begin: 263
 Hegel, Georg Wilhelm Friedrich:
   SZ:
-  - pageref: '3'
+  - begin: 3
   reftype: p
 Herakles:
   VA:
-  - pageref: 269
+  - begin: 269
   reftype: p
 Horizont:
   GA 29/30:
-  - pageref: '252'
+  - begin: 252
 "H\xF6lderlin":
   WD:
-  - pageref: 248ff.
+  - begin: 248
     reftype: w
+    suffix: ff
 "Kierkegaard, S\xF8ren":
   GA 29/30:
-  - pageref: '226'
+  - begin: 226
   reftype: p
 Langeweile:
   EWI:
-  - pageref: '39'
+  - begin: 39
   GA 29/30:
-  - pageref: 115ff.
+  - begin: 115
+    suffix: ff
 Leere:
   GA 29/30:
-  - pageref: '367'
+  - begin: 367
 Leere im Ganzen:
   GA 29/30:
-  - pageref: '251'
+  - begin: 251
 Lichtung:
   WD:
-  - pageref: '273'
+  - begin: 273
 Maschine:
   EWI:
-  - pageref: '35'
+  - begin: 35
 "M\xFCller, Johannes":
   GA 29/30:
-  - pageref: '372'
+  - begin: 372
   reftype: p
 Natur:
   EWI:
-  - pageref: 41ff.
+  - begin: 41
+    suffix: ff
   GA 13:
-  - pageref: '60'
+  - begin: 60
 Nichts:
   GA 29/30:
-  - pageref: '368'
+  - begin: 368
 Novalis:
   GA 29/30:
-  - pageref: '7'
-  - pageref: 10-12
+  - begin: 7
+  - begin: 10
+    end: 12
   reftype: p
 Pascal, Blaise:
   SZ:
-  - pageref: '4'
+  - begin: 4
   reftype: p
 Philosophie:
   GA 29/30:
-  - pageref: '259'
-  - pageref: '260'
+  - begin: 259
+  - begin: 260
 Plato:
   SZ:
-  - pageref: '3'
+  - begin: 3
   reftype: p
 "Rand der M\xF6glichkeit":
   GA 29/30:
-  - pageref: '257'
+  - begin: 257
 Reizbarkeit:
   GA 29/30:
-  - pageref: 372-373
+  - begin: 372
+    end: 373
 "R\xE1dl, Emanuel":
   GA 29/30:
-  - pageref: '365'
+  - begin: 365
   reftype: p
 "R\xE4tsel":
   SZ:
-  - pageref: '4'
+  - begin: 4
 Seiende im Ganzen:
   GA 29/30:
-  - pageref: '251'
+  - begin: 251
 Sein und Zeit:
   GA 13:
-  - pageref: '63'
+  - begin: 63
   GA 29/30:
-  - pageref: '262'
+  - begin: 262
   reftype: w
 Sein zu Seiendem als Seidendem:
   SZ:
-  - pageref: '4'
+  - begin: 4
 Seinsvergessenheit:
   WD:
-  - pageref: '273'
+  - begin: 273
 Spemann, Hans:
   GA 29/30:
-  - pageref: '381'
+  - begin: 381
   reftype: p
 Spur:
   WD:
-  - pageref: '272'
+  - begin: 272
 Thomans von Aquin:
   SZ:
-  - pageref: '3'
+  - begin: 3
   reftype: p
 Tod:
   EWI:
-  - pageref: '18'
+  - begin: 18
 Trieb:
   GA 29/30:
-  - pageref: '362'
-  - pageref: '363'
+  - begin: 362
+  - begin: 363
 Vereinzelung:
   GA 29/30:
-  - pageref: '251'
-  - pageref: 252-253
+  - begin: 251
+  - begin: 252
+    end: 253
 Verhalten:
   SZ:
-  - pageref: '4'
+  - begin: 4
 Vom Wesen des Grundes:
   GA 29/30:
-  - pageref: '261'
+  - begin: 261
   reftype: w
 Welt:
   GA 29/30:
-  - pageref: '251'
-  - pageref: 251-253
-  - pageref: '261'
-  - pageref: '262'
-  - pageref: '263'
-  - pageref: '264'
+  - begin: 251
+  - begin: 251
+    end: 253
+  - begin: 261
+  - begin: 262
+  - begin: 263
+  - begin: 264
 Weltalter:
   VA:
-  - pageref: 269ff.
+  - begin: 269
+    suffix: ff
 Weltnacht:
   VA:
-  - pageref: 269ff.
+  - begin: 269
+    suffix: ff
 Zeitlichkeit des Daseins:
   GA 29/30:
-  - pageref: '253'
+  - begin: 253
 antiken Ontologie:
   SZ:
-  - pageref: '4'
-  - pageref: '5'
+  - begin: 4
+  - begin: 5
 auf der Stelle zur Stelle:
   EWI:
-  - pageref: '28'
-  - pageref: '33'
-  - pageref: '35'
-  - pageref: '40'
+  - begin: 28
+  - begin: 33
+  - begin: 35
+  - begin: 40
   VA:
-  - pageref: '17'
+  - begin: 17
 das Heilige:
   WD:
-  - pageref: '272'
+  - begin: 272
 das Ungesprochene:
   WD:
-  - pageref: '273'
+  - begin: 273
 das Wesen des Menschen:
   EWI:
-  - pageref: '70'
+  - begin: 70
   GA 13:
-  - pageref: '38'
+  - begin: 38
 "d\xFCrftiger Zeit":
   WD:
-  - pageref: 248ff.
+  - begin: 248
+    suffix: ff
 im Ganzen:
   GA 29/30:
-  - pageref: '251'
+  - begin: 251
 tiefen Langeweile:
   GA 29/30:
-  - pageref: '251'
-  - pageref: '252'
-  - pageref: '253'
-  - pageref: '254'
-  - pageref: '256'
+  - begin: 251
+  - begin: 252
+  - begin: 253
+  - begin: 254
+  - begin: 256
 unbestimmte Unmittelbare:
   SZ:
-  - pageref: '3'
+  - begin: 3

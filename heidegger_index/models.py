@@ -43,7 +43,21 @@ class Lemma(models.Model):
 class PageReference(models.Model):
     work = models.ForeignKey(Work, on_delete=models.PROTECT)
     lemma = models.ForeignKey(Lemma, on_delete=models.PROTECT)
-    value = models.CharField(max_length=20)
+
+    # Datafied page reference
+    begin = models.IntegerField()
+    end = models.IntegerField(null=True)
+    suffix = models.CharField(
+        max_length=2, null=True, choices=[
+            ('f', 'And next page'),
+            ('ff', 'And next pages')
+        ]
+    )
 
     def __str__(self):
-        return self.value
+        if self.end:
+            return f'{self.begin}–{self.end}'
+        elif self.suffix:
+            return f'{self.begin}{self.suffix}.'
+        else:
+            return f'{self.begin}'
