@@ -17,7 +17,6 @@
         padding: 1rem;
       }
       .lemma-header {
-        font-style: italic;
         font-weight: normal;
         margin-bottom: 0;
       }
@@ -34,7 +33,7 @@
       <p style="font-style: italic;">Managed by: André van Delft & Johannes de Wit</p>
       {% for lemma in lemmas %}
       <h3 class="lemma-header">
-        {{ lemma }}
+        <i>{{ lemma }}</i>
         {% if lemma.type %}({{ lemma.get_type_display }}){% endif %}
       </h3>
       <ul class="lemma-refs">

@@ -1,10 +1,7 @@
 Abgrund:
-  VA:
+  WD:
   - begin: 269
     suffix: ff
-  WD:
-  - begin: 248
-    suffix: f
 Aristoteles:
   SZ:
   - begin: 3
@@ -55,7 +52,7 @@ Buytendijk, Frederik Jacobus Johannes:
     end: 376
   reftype: p
 Christus:
-  VA:
+  WD:
   - begin: 269
 Darwin, Charles:
   GA 29/30:
@@ -69,7 +66,7 @@ Dasein:
   GA 29/30:
   - begin: 251
 Dionysos:
-  VA:
+  WD:
   - begin: 269
   reftype: p
 Driesch, Hans:
@@ -78,7 +75,7 @@ Driesch, Hans:
     end: 381
   reftype: p
 "D\xFCrftiger Zeit":
-  VA:
+  WD:
   - begin: 269
     suffix: ff
 Endlichkeit des Daseins:
@@ -102,7 +99,7 @@ Existenz:
   GA 29/30:
   - begin: 257
 Fehl Gottes:
-  VA:
+  WD:
   - begin: 269
 Frage nach dem Sein:
   GA 29/30:
@@ -131,7 +128,7 @@ Geviert:
 Glanz:
   GA 13:
   - begin: 88
-  VA:
+  WD:
   - begin: 269
 "Gleichg\xFCltigkeit":
   GA 29/30:
@@ -167,7 +164,7 @@ Hegel, Georg Wilhelm Friedrich:
   - begin: 3
   reftype: p
 Herakles:
-  VA:
+  WD:
   - begin: 269
   reftype: p
 Horizont:
@@ -175,9 +172,9 @@ Horizont:
   - begin: 252
 "H\xF6lderlin":
   WD:
-  - begin: 248
-    reftype: w
+  - begin: 269
     suffix: ff
+  reftype: p
 "Kierkegaard, S\xF8ren":
   GA 29/30:
   - begin: 226
@@ -300,11 +297,11 @@ Welt:
   - begin: 263
   - begin: 264
 Weltalter:
-  VA:
+  WD:
   - begin: 269
     suffix: ff
 Weltnacht:
-  VA:
+  WD:
   - begin: 269
     suffix: ff
 Zeitlichkeit des Daseins:
@@ -335,7 +332,7 @@ das Wesen des Menschen:
   - begin: 38
 "d\xFCrftiger Zeit":
   WD:
-  - begin: 248
+  - begin: 269
     suffix: ff
 im Ganzen:
   GA 29/30:
