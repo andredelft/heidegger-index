@@ -17,17 +17,18 @@ $ pip install .
 Usage:
 ```sh
 $ hi-add --help
-Usage: hi-add [OPTIONS] LEMMA WORK PAGE_REF
+Usage: hi-add [OPTIONS] LEMMA WORK REF
 
 Options:
-  -t, --type [p|w]  Type of lemma (e.g. 'p' for 'person')
+  -t, --type [p|w]  Type of lemma (p: person, w: work)
   --help            Show this message and exit.
 ```
 
 E.g.:
+
 ```sh
-$ hi-add 'Grundriß' 'ZW' '79'
-$ hi-add --type p 'Kierkegaard, Søren' 'GA 29/30' '226'
+$ hi-add Grundriß ZW 79
+$ hi-add --type p 'Kierkegaard, Søren' 'GA 29/30' 226
 ```
 
 ### Page reference
@@ -79,6 +80,7 @@ A Django project is included with models into which `heidegger-index.yml` can be
   ```
 
 4. Spin up the django project:
+
   ```sh
   $ python manage.py runserver
   ```
