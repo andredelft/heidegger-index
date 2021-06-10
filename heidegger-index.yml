@@ -115,7 +115,7 @@ Geheimnis:
   GA 29/30:
   - start: 255
 Gelassenheit:
-  GA 13:
+  ZEG:
   - start: 40
     suffix: ff
 Gesang:
@@ -130,7 +130,7 @@ Geviert:
   - start: 17
     suffix: ff
 Glanz:
-  GA 13:
+  FW:
   - start: 88
   WD:
   - start: 269
@@ -212,7 +212,7 @@ Natur:
   EWI:
   - start: 41
     suffix: ff
-  GA 13:
+  ZEG:
   - start: 60
   WD:
   - start: 277
@@ -268,7 +268,7 @@ Seiende im Ganzen:
   WD:
   - start: 279
 Sein und Zeit:
-  GA 13:
+  ZEG:
   - start: 63
   GA 29/30:
   - start: 262
@@ -358,7 +358,7 @@ das Ungesprochene:
 das Wesen des Menschen:
   EWI:
   - start: 70
-  GA 13:
+  ZEG:
   - start: 38
 der Wille:
   WD:
