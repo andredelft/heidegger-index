@@ -41,7 +41,7 @@ $ python manage.py migrate
 Populate the database:
 
 ```sh
-$ python manage.py poopulate
+$ python manage.py populate
 ```
 
 Spin up the django project:
