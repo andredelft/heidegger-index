@@ -8,8 +8,8 @@ INDEX_FILE = 'heidegger-index.yml'
 
 yaml.warnings({'YAMLLoadWarning': False})
 
-REF_REGEX = re.compile(r'^(?P<begin>\d+)(?:-(?P<end>\d+)|(?P<suffix>f{1,2})\.?)?$')
-REF_INTFIELDS = {'begin', 'end'}
+REF_REGEX = re.compile(r'^(?P<start>\d+)(?:-(?P<end>\d+)|(?P<suffix>f{1,2})\.?)?$')
+REF_INTFIELDS = {'start', 'end'}
 
 
 @click.command()

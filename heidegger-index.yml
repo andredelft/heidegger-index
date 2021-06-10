@@ -1,357 +1,357 @@
 Abgrund:
   WD:
-  - begin: 269
+  - start: 269
     suffix: ff
 Aristoteles:
   SZ:
-  - begin: 3
+  - start: 3
   reftype: p
 Augenblick:
   GA 29/30:
-  - begin: 251
-  - begin: 257
+  - start: 251
+  - start: 257
 Baer, Karl Ernst von:
   GA 29/30:
-  - begin: 378
+  - start: 378
   reftype: p
 Bedrängnis im Ganzen:
   GA 29/30:
-  - begin: 251
+  - start: 251
 Befreiung:
   GA 29/30:
-  - begin: 253
+  - start: 253
 Befreiung des Daseins im Menschen:
   GA 29/30:
-  - begin: 255
-  - begin: 257
+  - start: 255
+  - start: 257
     reftype: r
 Benommenheit des Tieres:
   GA 29/30:
-  - begin: 362
+  - start: 362
 Benommenheit, Offenheit der:
   GA 29/30:
-  - begin: 362
-  - begin: 363
+  - start: 362
+  - start: 363
     reftype: r
-  - begin: 368
+  - start: 368
     reftype: r
-  - begin: 369
+  - start: 369
     reftype: r
-  - begin: 370
+  - start: 370
     reftype: r
 Beziehung zu Seiendem als Solchem:
   GA 29/30:
-  - begin: 367
+  - start: 367
     end: 368
 Blick der Entschlossenheit:
   GA 29/30:
-  - begin: 251
+  - start: 251
 Buytendijk, Frederik Jacobus Johannes:
   GA 29/30:
-  - begin: 375
+  - start: 375
     end: 376
   reftype: p
 Christus:
   WD:
-  - begin: 269
+  - start: 269
 Darwin, Charles:
   GA 29/30:
-  - begin: 366
+  - start: 366
   reftype: p
 Darwinismus:
   GA 29/30:
-  - begin: 377
-  - begin: 378
+  - start: 377
+  - start: 378
 Dasein:
   GA 29/30:
-  - begin: 251
+  - start: 251
 Dionysos:
   WD:
-  - begin: 269
+  - start: 269
   reftype: p
 Driesch, Hans:
   GA 29/30:
-  - begin: 380
+  - start: 380
     end: 381
   reftype: p
 Dürftiger Zeit:
   WD:
-  - begin: 269
+  - start: 269
     suffix: ff
 Endlichkeit des Daseins:
   GA 29/30:
-  - begin: 252
+  - start: 252
 Entfernung:
   EWI:
-  - begin: 2
+  - start: 2
     suffix: ff
 Entschlossenheit:
   GA 29/30:
-  - begin: 251
+  - start: 251
 Ernst:
   GA 29/30:
-  - begin: 258
+  - start: 258
 Etymologie:
   EWI:
-  - begin: 13
+  - start: 13
     end: 15
 Existenz:
   GA 29/30:
-  - begin: 257
+  - start: 257
 Fehl Gottes:
   WD:
-  - begin: 269
+  - start: 269
 Frage nach dem Sein:
   GA 29/30:
-  - begin: 256
+  - start: 256
 Frage nach dem Sinn von Sein:
   SZ:
-  - begin: 1
+  - start: 1
     end: 8
 Gebrochenheit des Daseins:
   GA 29/30:
-  - begin: 252
+  - start: 252
 Geheimnis:
   GA 29/30:
-  - begin: 255
+  - start: 255
 Gelassenheit:
   GA 13:
-  - begin: 40
+  - start: 40
     suffix: ff
 Geschick:
   WD:
-  - begin: 272
+  - start: 272
 Geviert:
   EWI:
-  - begin: 17
+  - start: 17
     suffix: ff
 Glanz:
   GA 13:
-  - begin: 88
+  - start: 88
   WD:
-  - begin: 269
+  - start: 269
 Gleichgültigkeit:
   GA 29/30:
-  - begin: 367
+  - start: 367
     reftype: r
 Gott:
   GA 29/30:
-  - begin: 262
+  - start: 262
 Grundriß:
   EWI:
-  - begin: 8
+  - start: 8
     end: 9
     reftype: r
   GA 61:
-  - begin: 159
+  - start: 159
     end: 160
     reftype: r
   ZW:
-  - begin: 79
+  - start: 79
 Grundstimmung:
   GA 29/30:
-  - begin: 251
-  - begin: 252
-  - begin: 253
-  - begin: 254
-  - begin: 256
+  - start: 251
+  - start: 252
+  - start: 253
+  - start: 254
+  - start: 256
 Haben der Welt:
   GA 29/30:
-  - begin: 262
-  - begin: 263
+  - start: 262
+  - start: 263
 Hegel, Georg Wilhelm Friedrich:
   SZ:
-  - begin: 3
+  - start: 3
   reftype: p
 Herakles:
   WD:
-  - begin: 269
+  - start: 269
   reftype: p
 Horizont:
   GA 29/30:
-  - begin: 252
+  - start: 252
 Hölderlin, Friedrich:
   WD:
-  - begin: 269
+  - start: 269
     suffix: ff
   reftype: p
 Kierkegaard, Søren:
   GA 29/30:
-  - begin: 226
+  - start: 226
   reftype: p
 Langeweile:
   EWI:
-  - begin: 39
+  - start: 39
   GA 29/30:
-  - begin: 115
+  - start: 115
     suffix: ff
 Leere:
   GA 29/30:
-  - begin: 367
+  - start: 367
 Leere im Ganzen:
   GA 29/30:
-  - begin: 251
+  - start: 251
 Lichtung:
   WD:
-  - begin: 273
+  - start: 273
 Maschine:
   EWI:
-  - begin: 35
+  - start: 35
 Mythos:
   WD:
-  - begin: 273
+  - start: 273
 Müller, Johannes:
   GA 29/30:
-  - begin: 372
+  - start: 372
   reftype: p
 Natur:
   EWI:
-  - begin: 41
+  - start: 41
     suffix: ff
   GA 13:
-  - begin: 60
+  - start: 60
 Nichts:
   GA 29/30:
-  - begin: 368
+  - start: 368
 Novalis:
   GA 29/30:
-  - begin: 7
-  - begin: 10
+  - start: 7
+  - start: 10
     end: 12
   reftype: p
 Pascal, Blaise:
   SZ:
-  - begin: 4
+  - start: 4
   reftype: p
 Philosophie:
   GA 29/30:
-  - begin: 259
-  - begin: 260
+  - start: 259
+  - start: 260
 Plato:
   SZ:
-  - begin: 3
+  - start: 3
   reftype: p
 Rand der Möglichkeit:
   GA 29/30:
-  - begin: 257
+  - start: 257
 Reizbarkeit:
   GA 29/30:
-  - begin: 372
+  - start: 372
     end: 373
 Rilke, Reiner Maria:
   WD:
-  - begin: 274
+  - start: 274
     suffix: ff
   reftype: p
 Rádl, Emanuel:
   GA 29/30:
-  - begin: 365
+  - start: 365
   reftype: p
 Rätsel:
   SZ:
-  - begin: 4
+  - start: 4
 Seiende im Ganzen:
   GA 29/30:
-  - begin: 251
+  - start: 251
 Sein und Zeit:
   GA 13:
-  - begin: 63
+  - start: 63
   GA 29/30:
-  - begin: 262
+  - start: 262
   reftype: w
 Sein zu Seiendem als Seidendem:
   SZ:
-  - begin: 4
+  - start: 4
 Seinsgeschichte:
   WD:
-  - begin: 273
+  - start: 273
     suffix: f
 Seinsvergessenheit:
   WD:
-  - begin: 273
+  - start: 273
 Spemann, Hans:
   GA 29/30:
-  - begin: 381
+  - start: 381
   reftype: p
 Spur:
   WD:
-  - begin: 272
+  - start: 272
 Thomans von Aquin:
   SZ:
-  - begin: 3
+  - start: 3
   reftype: p
 Tod:
   EWI:
-  - begin: 18
+  - start: 18
 Trieb:
   GA 29/30:
-  - begin: 362
-  - begin: 363
+  - start: 362
+  - start: 363
 Vereinzelung:
   GA 29/30:
-  - begin: 251
-  - begin: 252
+  - start: 251
+  - start: 252
     end: 253
 Verhalten:
   SZ:
-  - begin: 4
+  - start: 4
 Vom Wesen des Grundes:
   GA 29/30:
-  - begin: 261
+  - start: 261
   reftype: w
 Welt:
   GA 29/30:
-  - begin: 251
-  - begin: 251
+  - start: 251
+  - start: 251
     end: 253
-  - begin: 261
-  - begin: 262
-  - begin: 263
-  - begin: 264
+  - start: 261
+  - start: 262
+  - start: 263
+  - start: 264
 Weltalter:
   WD:
-  - begin: 269
+  - start: 269
     suffix: ff
 Weltnacht:
   WD:
-  - begin: 269
+  - start: 269
     suffix: ff
 Zeitlichkeit des Daseins:
   GA 29/30:
-  - begin: 253
+  - start: 253
 antiken Ontologie:
   SZ:
-  - begin: 4
-  - begin: 5
+  - start: 4
+  - start: 5
 auf der Stelle zur Stelle:
   EWI:
-  - begin: 28
-  - begin: 33
-  - begin: 35
-  - begin: 40
+  - start: 28
+  - start: 33
+  - start: 35
+  - start: 40
   VA:
-  - begin: 17
+  - start: 17
 das Heilige:
   WD:
-  - begin: 272
+  - start: 272
 das Ungesprochene:
   WD:
-  - begin: 273
+  - start: 273
 das Wesen des Menschen:
   EWI:
-  - begin: 70
+  - start: 70
   GA 13:
-  - begin: 38
+  - start: 38
 im Ganzen:
   GA 29/30:
-  - begin: 251
+  - start: 251
 tiefen Langeweile:
   GA 29/30:
-  - begin: 251
-  - begin: 252
-  - begin: 253
-  - begin: 254
-  - begin: 256
+  - start: 251
+  - start: 252
+  - start: 253
+  - start: 254
+  - start: 256
 unbestimmte Unmittelbare:
   SZ:
-  - begin: 3
+  - start: 3

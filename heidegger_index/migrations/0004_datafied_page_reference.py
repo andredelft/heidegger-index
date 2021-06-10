@@ -16,7 +16,7 @@ class Migration(migrations.Migration):
         ),
         migrations.AddField(
             model_name='pagereference',
-            name='begin',
+            name='start',
             field=models.IntegerField(default=0),
             preserve_default=False,
         ),

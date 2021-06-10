@@ -45,7 +45,7 @@ class PageReference(models.Model):
     lemma = models.ForeignKey(Lemma, on_delete=models.PROTECT)
 
     # Datafied page reference
-    begin = models.IntegerField()
+    start = models.IntegerField()
     end = models.IntegerField(null=True)
     suffix = models.CharField(
         max_length=2, null=True, choices=[
@@ -56,8 +56,8 @@ class PageReference(models.Model):
 
     def __str__(self):
         if self.end:
-            return f'{self.begin}–{self.end}'
+            return f'{self.start}–{self.end}'
         elif self.suffix:
-            return f'{self.begin}{self.suffix}.'
+            return f'{self.start}{self.suffix}.'
         else:
-            return f'{self.begin}'
+            return f'{self.start}'
