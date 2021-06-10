@@ -23,33 +23,33 @@ Befreiung:
 Befreiung des Daseins im Menschen:
   GA 29/30:
   - start: 255
-  - start: 257
-    reftype: r
+  - reftype: r
+    start: 257
 Benommenheit des Tieres:
   GA 29/30:
   - start: 362
 Benommenheit, Offenheit der:
   GA 29/30:
   - start: 362
-  - start: 363
-    reftype: r
-  - start: 368
-    reftype: r
-  - start: 369
-    reftype: r
-  - start: 370
-    reftype: r
+  - reftype: r
+    start: 363
+  - reftype: r
+    start: 368
+  - reftype: r
+    start: 369
+  - reftype: r
+    start: 370
 Beziehung zu Seiendem als Solchem:
   GA 29/30:
-  - start: 367
-    end: 368
+  - end: 368
+    start: 367
 Blick der Entschlossenheit:
   GA 29/30:
   - start: 251
 Buytendijk, Frederik Jacobus Johannes:
   GA 29/30:
-  - start: 375
-    end: 376
+  - end: 376
+    start: 375
   reftype: p
 Christus:
   WD:
@@ -71,8 +71,8 @@ Dionysos:
   reftype: p
 Driesch, Hans:
   GA 29/30:
-  - start: 380
-    end: 381
+  - end: 381
+    start: 380
   reftype: p
 Dürftiger Zeit:
   WD:
@@ -93,8 +93,8 @@ Ernst:
   - start: 258
 Etymologie:
   EWI:
-  - start: 13
-    end: 15
+  - end: 15
+    start: 13
 Existenz:
   GA 29/30:
   - start: 257
@@ -106,8 +106,8 @@ Frage nach dem Sein:
   - start: 256
 Frage nach dem Sinn von Sein:
   SZ:
-  - start: 1
-    end: 8
+  - end: 8
+    start: 1
 Gebrochenheit des Daseins:
   GA 29/30:
   - start: 252
@@ -117,6 +117,10 @@ Geheimnis:
 Gelassenheit:
   GA 13:
   - start: 40
+    suffix: ff
+Gesang:
+  WD:
+  - start: 274
     suffix: ff
 Geschick:
   WD:
@@ -132,20 +136,20 @@ Glanz:
   - start: 269
 Gleichgültigkeit:
   GA 29/30:
-  - start: 367
-    reftype: r
+  - reftype: r
+    start: 367
 Gott:
   GA 29/30:
   - start: 262
 Grundriß:
   EWI:
-  - start: 8
-    end: 9
+  - end: 9
     reftype: r
+    start: 8
   GA 61:
-  - start: 159
-    end: 160
+  - end: 160
     reftype: r
+    start: 159
   ZW:
   - start: 79
 Grundstimmung:
@@ -210,14 +214,22 @@ Natur:
     suffix: ff
   GA 13:
   - start: 60
+  WD:
+  - start: 277
+    suffix: ff
 Nichts:
   GA 29/30:
   - start: 368
+Nietzsche, Friedrich:
+  WD:
+  - start: 275
+  - start: 279
+  reftype: p
 Novalis:
   GA 29/30:
   - start: 7
-  - start: 10
-    end: 12
+  - end: 12
+    start: 10
   reftype: p
 Pascal, Blaise:
   SZ:
@@ -236,8 +248,8 @@ Rand der Möglichkeit:
   - start: 257
 Reizbarkeit:
   GA 29/30:
-  - start: 372
-    end: 373
+  - end: 373
+    start: 372
 Rilke, Reiner Maria:
   WD:
   - start: 274
@@ -253,6 +265,8 @@ Rätsel:
 Seiende im Ganzen:
   GA 29/30:
   - start: 251
+  WD:
+  - start: 279
 Sein und Zeit:
   GA 13:
   - start: 63
@@ -273,6 +287,10 @@ Spemann, Hans:
   GA 29/30:
   - start: 381
   reftype: p
+Sprache:
+  WD:
+  - start: 274
+    suffix: ff
 Spur:
   WD:
   - start: 272
@@ -290,8 +308,8 @@ Trieb:
 Vereinzelung:
   GA 29/30:
   - start: 251
-  - start: 252
-    end: 253
+  - end: 253
+    start: 252
 Verhalten:
   SZ:
   - start: 4
@@ -302,8 +320,8 @@ Vom Wesen des Grundes:
 Welt:
   GA 29/30:
   - start: 251
-  - start: 251
-    end: 253
+  - end: 253
+    start: 251
   - start: 261
   - start: 262
   - start: 263
@@ -342,6 +360,9 @@ das Wesen des Menschen:
   - start: 70
   GA 13:
   - start: 38
+der Wille:
+  WD:
+  - start: 278
 im Ganzen:
   GA 29/30:
   - start: 251
@@ -355,3 +376,7 @@ tiefen Langeweile:
 unbestimmte Unmittelbare:
   SZ:
   - start: 3
+Φύσις:
+  WD:
+  - start: 278
+    suffix: f
