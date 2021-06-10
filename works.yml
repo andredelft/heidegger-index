@@ -99,3 +99,51 @@ SZ:
   title: Sein und Zeit
   type: book
   language: german
+WD:
+  id: WD
+  author:
+    - family: Heidegger
+      given: Martin
+  collection-number: band 5
+  collection-title: Gesamtausgabe
+  container-title: Holzwege
+  editor:
+    - family: Herrmann
+      given: Friedrich-Wilhelm
+      dropping-particle: von
+  event-place: Frankfurt am Main
+  ISBN: 978-3-465-03236-6 978-3-465-03237-3
+  issued:
+    - year: 2003
+  language: german
+  note: 'OCLC: 177280863'
+  page: 269-320
+  publisher: Vittorio Klostermann
+  publisher-place: Frankfurt am Main
+  source: Gemeinsamer Bibliotheksverbund ISBN
+  title: Wozu Dichter?
+  type: chapter
+ZW:
+  id: ZW
+  author:
+    - family: Heidegger
+      given: Martin
+  collection-number: band 5
+  collection-title: Gesamtausgabe
+  container-title: Holzwege
+  editor:
+    - family: Herrmann
+      given: Friedrich-Wilhelm
+      dropping-particle: von
+  event-place: Frankfurt am Main
+  ISBN: 978-3-465-03236-6 978-3-465-03237-3
+  issued:
+    - year: 2003
+  language: german
+  note: 'OCLC: 177280863'
+  page: 75-113
+  publisher: Vittorio Klostermann
+  publisher-place: Frankfurt am Main
+  source: Gemeinsamer Bibliotheksverbund ISBN
+  title: Die Zeit des Weltbildes
+  type: chapter

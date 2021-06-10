@@ -47,15 +47,15 @@ Where
 
 As can be seen from the regular expression, `end` and `suffix` are optional, and cannot appear simultaneously. Valid references are, for example `123`, `123-124` (make sure **not** to abbreviate final page numbers, like `123-4`) and `12f.`.
 
-### Book references
+### Work references
 
-The references to Heideggers works are gathered in `references.yml` in CSL YAML format. Using a citeproc processor these can be converted to a styled bibliography:
+The references to Heideggers works are gathered in `works.yml` in CSL YAML format. Using a citeproc processor these can be converted to a styled bibliography:
 
 ```shell
-$ python refs.py
+$ python work_refs.py
 ```
 
-Output is stored in `references.html`
+Output is stored in `works.html`
 
 ## Django project
 
