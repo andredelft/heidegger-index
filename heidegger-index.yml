@@ -10,6 +10,9 @@ Augenblick:
   GA 29/30:
   - start: 251
   - start: 257
+Ausbeutung:
+  EWI:
+  - start: 29
 Baer, Karl Ernst von:
   GA 29/30:
   - start: 378
@@ -212,11 +215,11 @@ Natur:
   EWI:
   - start: 41
     suffix: ff
-  ZEG:
-  - start: 60
   WD:
   - start: 277
     suffix: ff
+  ZEG:
+  - start: 60
 Nichts:
   GA 29/30:
   - start: 368
@@ -268,10 +271,10 @@ Seiende im Ganzen:
   WD:
   - start: 279
 Sein und Zeit:
-  ZEG:
-  - start: 63
   GA 29/30:
   - start: 262
+  ZEG:
+  - start: 63
   reftype: w
 Sein zu Seiendem als Seidendem:
   SZ:
