@@ -1,5 +1,7 @@
 # Heidegger index
 
+https://delve.nu/heidegger-index
+
 ## Add lemmas to `heidegger-index.yml`
 
 ```pycon
