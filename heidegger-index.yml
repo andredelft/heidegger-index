@@ -126,8 +126,20 @@ Gesang:
   - start: 274
     suffix: ff
 Geschick:
+  EWI:
+  - start: 68
+    suffix: ff
+  SVG:
+  - start: 90
+    suffix: ff
+  VA:
+  - start: 25
+    suffix: ff
   WD:
   - start: 272
+  ZuS:
+  - start: 12
+    suffix: f
 Geviert:
   EWI:
   - start: 17
