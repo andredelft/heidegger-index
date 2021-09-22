@@ -68,6 +68,11 @@ Darwinismus:
 Dasein:
   GA 29/30:
   - start: 251
+Der Feldberg:
+  GA 55:
+  - start: 335
+  HH:
+  - start: 134
 Dionysos:
   WD:
   - start: 269
@@ -114,6 +119,11 @@ Frage nach dem Sinn von Sein:
 Gebrochenheit des Daseins:
   GA 29/30:
   - start: 252
+Gegnet:
+  GA 55:
+  - start: 335
+  HH:
+  - start: 47
 Geheimnis:
   GA 29/30:
   - start: 255
@@ -306,6 +316,9 @@ Sprache:
   WD:
   - start: 274
     suffix: ff
+Sprachgeist:
+  HH:
+  - start: 135
 Spur:
   WD:
   - start: 272
@@ -395,6 +408,8 @@ unbestimmte Unmittelbare:
   SZ:
   - start: 3
 Φύσις:
+  HH:
+  - start: 145
   WD:
   - start: 278
     suffix: f
