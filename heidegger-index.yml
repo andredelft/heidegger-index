@@ -312,6 +312,12 @@ Spemann, Hans:
   GA 29/30:
   - start: 381
   reftype: p
+Spielraum:
+  ID:
+  - start: 22
+  - start: 64
+  SZ:
+  - start: 107
 Sprache:
   WD:
   - start: 274
