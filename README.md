@@ -7,7 +7,7 @@ https://delve.nu/heidegger-index
 ```pycon
 >>> from index import add_to_index
 >>> add_to_index('Grundriß', 'ZW', '79')
->>> add_to_index('Kierkegaard, Søren' , 'GA 29/30', '226', 'p') # Referencing personal names
+>>> add_to_index('Kierkegaard, Søren', 'GA 29/30', '226', 'p') # Referencing personal names
 ```
 
 This function is also available als a terminal command `hi-add`, that can be installed using
