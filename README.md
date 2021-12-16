@@ -8,6 +8,8 @@ https://delve.nu/heidegger-index
 >>> from index import add_to_index
 >>> add_to_index('Grundriß', 'ZW', '79')
 >>> add_to_index('Kierkegaard, Søren', 'GA 29/30', '226', 'p') # Referencing personal names
+>>> add_to_index('Sein und Zeit', 'ZEG', '63', 'w') # Referencing works
+>>> add_to_index('Grundriß', 'GA 61', '159-160', 'r') # Referencing related terms
 ```
 
 This function is also available als a terminal command `hi-add`, that can be installed using
@@ -22,7 +24,7 @@ $ hi-add --help
 Usage: hi-add [OPTIONS] LEMMA WORK REF
 
 Options:
-  -t, --type [p|w]  Type of lemma (p: person, w: work)
+  -t, --type [p|w]  Type of lemma (p: person, w: work, r: related term)
   --help            Show this message and exit.
 ```
 
