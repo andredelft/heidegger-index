@@ -244,6 +244,9 @@ Natur:
     suffix: ff
   ZEG:
   - start: 60
+Natura:
+  SVG:
+  - start: 40
 Nichts:
   GA 29/30:
   - start: 368
