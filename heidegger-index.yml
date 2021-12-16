@@ -179,15 +179,13 @@ Grundriß:
   - start: 79
 Grundstimmung:
   GA 29/30:
-  - start: 251
-  - start: 252
-  - start: 253
-  - start: 254
+  - end: 254
+    start: 251
   - start: 256
 Haben der Welt:
   GA 29/30:
-  - start: 262
-  - start: 263
+  - end: 263
+    start: 262
 Hegel, Georg Wilhelm Friedrich:
   SZ:
   - start: 3
@@ -226,6 +224,10 @@ Lichtung:
 Maschine:
   EWI:
   - start: 35
+Meister Eckhart:
+  GA 42:
+  - start: 42
+  reftype: p
 Mythos:
   WD:
   - start: 273
@@ -262,6 +264,8 @@ Novalis:
 Pascal, Blaise:
   SZ:
   - start: 4
+  GA 42:
+  - start: 54
   reftype: p
 Philosophie:
   GA 29/30:
