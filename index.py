@@ -4,23 +4,30 @@ import regex as re
 
 from heidegger_index.constants import LEMMA_TYPES
 
-INDEX_FILE = 'heidegger-index.yml'
+INDEX_FILE = "heidegger-index.yml"
 
-yaml.warnings({'YAMLLoadWarning': False})
+yaml.warnings({"YAMLLoadWarning": False})
 
-REF_REGEX = re.compile(r'^(?P<start>\d+)(?:-(?P<end>\d+)|(?P<suffix>f{1,2})\.?)?$')
-REF_INTFIELDS = {'start', 'end'}
+REF_REGEX = re.compile(r"^(?P<start>\d+)(?:-(?P<end>\d+)|(?P<suffix>f{1,2})\.?)?$")
+REF_INTFIELDS = {"start", "end"}
 
 
 @click.command()
-@click.argument('lemma', type=str)
-@click.argument('work', type=str)
-@click.argument('ref', type=str)
+@click.argument("lemma", type=str)
+@click.argument("work", type=str)
+@click.argument("ref", type=str)
 @click.option(
-    '-t', '--type', 'ref_type', default=None,
+    "-t",
+    "--type",
+    "ref_type",
+    default=None,
     type=click.Choice(LEMMA_TYPES.keys()),
-    help=f"Type of lemma ({', '.join(k + ': ' + v for k, v in LEMMA_TYPES.items())})"
+    help=f"Type of lemma ({', '.join(k + ': ' + v for k, v in LEMMA_TYPES.items())})",
 )
+def click_command(lemma, work, ref, ref_type=None):
+    add_to_index(lemma, work, ref, ref_type)
+
+
 def add_to_index(lemma, work, ref, ref_type=None):
     with open(INDEX_FILE) as f:
         index = yaml.load(f)
@@ -35,16 +42,16 @@ def add_to_index(lemma, work, ref, ref_type=None):
             ref_dict[k] = int(v) if k in REF_INTFIELDS else v
 
     # Makes sure ref_type 'p' is a child of 'lemma' instead of 'work'
-    if ref_type != 'p' and ref_type is not None:
-        ref_dict['reftype'] = ref_type
+    if ref_type != "p" and ref_type is not None:
+        ref_dict["reftype"] = ref_type
 
     try:
         lemma_entry = index[lemma]
     except KeyError:
         # Makes sure ref_type 'p' is a child of 'lemma' instead of 'work'
-        if ref_type == 'p':
+        if ref_type == "p":
             lemma_entry = {work: [ref_dict]}
-            lemma_entry['reftype'] = ref_type
+            lemma_entry["reftype"] = ref_type
         else:
             lemma_entry = {work: [ref_dict]}
     else:
@@ -55,5 +62,5 @@ def add_to_index(lemma, work, ref, ref_type=None):
 
     index[lemma] = lemma_entry
 
-    with open(INDEX_FILE, 'w') as f:
+    with open(INDEX_FILE, "w") as f:
         yaml.dump(index, f, allow_unicode=True)
