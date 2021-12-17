@@ -194,6 +194,10 @@ Herakles:
   WD:
   - start: 269
   reftype: p
+Hitler, Adolf:
+  GA 42:
+  - start: 40
+  reftype: p
 Horizont:
   GA 29/30:
   - start: 252
@@ -205,6 +209,9 @@ Hölderlin, Friedrich:
 Kierkegaard, Søren:
   GA 29/30:
   - start: 226
+  GA 42:
+  - end: 43
+    start: 42
   reftype: p
 Langeweile:
   EWI:
@@ -227,6 +234,10 @@ Maschine:
 Meister Eckhart:
   GA 42:
   - start: 42
+  reftype: p
+Mussolini, Benito:
+  GA 42:
+  - start: 40
   reftype: p
 Mythos:
   WD:
@@ -251,10 +262,17 @@ Nichts:
   GA 29/30:
   - start: 368
 Nietzsche, Friedrich:
+  GA 42:
+  - end: 42
+    start: 39
   WD:
   - start: 275
   - start: 279
   reftype: p
+Nihilismus:
+  GA 42:
+  - end: 42
+    start: 39
 Novalis:
   GA 29/30:
   - start: 7
@@ -262,10 +280,10 @@ Novalis:
     start: 10
   reftype: p
 Pascal, Blaise:
-  SZ:
-  - start: 4
   GA 42:
   - start: 54
+  SZ:
+  - start: 4
   reftype: p
 Philosophie:
   GA 29/30:
@@ -325,6 +343,11 @@ Spielraum:
   - start: 64
   SZ:
   - start: 107
+Spinoza, Baruch:
+  GA 42:
+  - end: 61
+    start: 59
+  reftype: p
 Sprache:
   WD:
   - start: 274
