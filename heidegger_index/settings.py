@@ -15,6 +15,8 @@ except KeyError:
 
 ALLOWED_HOSTS = ["delve.nu", "localhost"]
 
+URL_PREFIX = "heidegger-index/"
+
 
 # Application definition
 
@@ -106,7 +108,7 @@ USE_TZ = True
 
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
-STATIC_URL = "/static/"
+STATIC_URL = f"/{URL_PREFIX}static/"
 
 STATIC_ROOT = BASE_DIR / "staticfiles"
 
