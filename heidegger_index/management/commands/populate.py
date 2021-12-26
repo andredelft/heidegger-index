@@ -5,22 +5,21 @@ from django.core.management.base import BaseCommand
 
 from heidegger_index.models import Work, Lemma, PageReference
 
-WORK_REFS_FILE = 'works.yml'
-INDEX_FILE = 'heidegger-index.yml'
+WORK_REFS_FILE = "works.yml"
+INDEX_FILE = "heidegger-index.yml"
 
-yaml.warnings({'YAMLLoadWarning': False})
+yaml.warnings({"YAMLLoadWarning": False})
 
 
 class Command(BaseCommand):
-
     def _flush_table(self, Model):
         n, info = Model.objects.all().delete()
         if n:
-            self.stdout.write(f'{n} objects deleted')
+            self.stdout.write(f"{n} objects deleted")
             for object_type, no_objects in info.items():
-                self.stdout.write(f'- {object_type}: {no_objects}')
+                self.stdout.write(f"- {object_type}: {no_objects}")
 
-    def handle(self, *args, **options):
+    def handle(self, *args, **kwargs):
         # Clean DB
         for Model in [PageReference, Lemma, Work]:
             self._flush_table(Model)
@@ -38,14 +37,13 @@ class Command(BaseCommand):
         with open(INDEX_FILE) as f:
             index_data = yaml.load(f)
 
-        lemma_objs = {
-            # Create all lemma objects, and index them by value
-            value: Lemma(id=i, value=value, type=data.pop('reftype', None))
-            for i, (value, data) in enumerate(index_data.items())
-        }
-        Lemma.objects.bulk_create(
-            tqdm(lemma_objs.values(), desc="Populating lemmata")
-        )
+        lemma_objs = dict()
+        for i, (value, data) in enumerate(index_data.items()):
+            lemma_obj = Lemma(id=i, value=value, type=data.pop("reftype", None))
+            lemma_obj.create_sort_key()
+            lemma_objs[value] = lemma_obj
+
+        Lemma.objects.bulk_create(tqdm(lemma_objs.values(), desc="Populating lemmata"))
 
         pageref_objs = []
         for lemma_value, works in index_data.items():
@@ -53,20 +51,16 @@ class Command(BaseCommand):
 
                 if work not in existing_works:
                     self.stdout.write(
-                        f'Warning: Work {work} does not exist in {WORK_REFS_FILE}, '
-                        'will be added with an empty reference'
+                        f"Warning: Work {work} does not exist in {WORK_REFS_FILE}, "
+                        "will be added with an empty reference"
                     )
-                    Work(
-                        id=work, csl_json={}
-                    ).save()
+                    Work(id=work, csl_json={}).save()
                     existing_works.add(work)
 
                 for ref in page_ref_list:
-                    ref.pop('reftype', None)
+                    ref.pop("reftype", None)
                 pageref_objs.append(
-                    PageReference(
-                        work_id=work, lemma=lemma_objs[lemma_value], **ref
-                    )
+                    PageReference(work_id=work, lemma=lemma_objs[lemma_value], **ref)
                 )
 
         PageReference.objects.bulk_create(

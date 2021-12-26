@@ -1,64 +1,38 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Heidegger index</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital@0;1&display=swap" rel="stylesheet">
-    <style>
-      body {
-        font-family: 'Crimson Text', 'Alegreya', serif;
-        margin: 0;
-        font-size: 18px;
-      }
-      .container {
-        max-width: 700px;
-        margin: auto;
-        padding: 1rem;
-      }
-      .lemma-header {
-        font-weight: normal;
-        margin-bottom: 0;
-      }
-      .lemma-refs {
-        margin-top: 0;
-        padding-left: 1rem;
-        list-style: none;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <h1>Heidegger index</h1>
-      <p style="font-style: italic;">Managed by: André van Delft & Johannes de Wit</p>
-      {% for lemma in lemmas %}
-      <h3 class="lemma-header">
-        <i>{{ lemma }}</i>
-        {% if lemma.type %}({{ lemma.get_type_display }}){% endif %}
-      </h3>
-      <ul class="lemma-refs">
-      {% regroup lemma.pagereference_set.all by work as work_list %}
-      {% for work in work_list %}
-        <li>{{ work.grouper }}:
-          {% for page_ref in work.list %}
-          {{ page_ref }}{% if not forloop.last %},{% endif %}
-          {% endfor %}
-        </li>
-      {% endfor %}
-      </ul>
-      {% endfor %}
-      <h2 style="margin-top: 100px;">Bibliography</h2>
-      <table style="border-spacing: 1rem 10px;">
-        {% for work in works %}
-        {% if work.reference %}
-        <tr>
-          <td style="white-space: nowrap; vertical-align: top;">{{ work.id }}</td>
-          <td>{{ work.reference|safe }}</td>
-        </tr>
-        {% endif %}
-        {% endfor %}
-      </table>
-    </div>
-  </body>
-</html>
+{% extends '_site_base.html' %}
+
+{% block body %}
+<h1>Heidegger index</h1>
+<p class="description">Managed by: André van Delft &amp; Johannes de Wit</p>
+{% for lemma in lemmas %}
+<h3 class="lemma-header">
+  <i>{{ lemma }}</i>
+  {% if lemma.type %}({{ lemma.get_type_display }}){% endif %}
+</h3>
+<ul class="lemma-refs">
+{% regroup lemma.pagereference_set.all by work as work_list %}
+{% for work in work_list %}
+  <li>
+    {% if work.grouper.id in work_ids %}
+      <a href="{% url 'work-detail' work.grouper.slug %}">{{work.grouper}}</a>:
+    {% else %}
+      {{ work.grouper }}:
+    {% endif %}
+    {{ work.list|join:', ' }}
+  </li>
+{% endfor %}
+</ul>
+{% endfor %}
+<div class="bibliography">
+  <h2>Bibliography</h2>
+  <table>
+    {% for work in works %}
+    {% if work.reference %}
+    <tr>
+      <td class="label">{{ work.id }}</td>
+      <td>{{ work.reference|safe }}</td>
+    </tr>
+    {% endif %}
+    {% endfor %}
+  </table>
+</div>
+{% endblock %}

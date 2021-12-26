@@ -4,3 +4,4 @@ works.html
 *.sqlite3
 build/
 *.egg-info
+staticfiles/
