@@ -1,12 +1,13 @@
 body {
   font-family: "Crimson Text", "Alegreya", serif;
   margin: 0;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .container {
   max-width: 700px;
   margin: auto;
+  margin-top: 50px;
   padding: 1rem;
 }
 
@@ -25,8 +26,9 @@ body {
   list-style: none;
 }
 
-.bibliography h2 {
-  margin-top: 100px;
+h2 {
+  margin-top: 2em;
+  margin-bottom: 0.5em;
 }
 
 .bibliography table {
@@ -36,4 +38,15 @@ body {
 td.label {
   white-space: nowrap;
   vertical-align: top;
+}
+
+a,
+a:visited {
+  color: #398b98;
+}
+
+.breadcrumb {
+  display: block;
+  font-size: 1.2em;
+  font-style: italic;
 }

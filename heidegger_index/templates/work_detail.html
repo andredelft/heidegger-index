@@ -1,7 +1,17 @@
 {% extends '_site_base.html' %}
 
 {% block body %}
-{% if object.csl_json %}
-  <h1>{{object.csl_json.title}}</h1>
+{% if work.csl_json %}
+  <a class="breadcrumb" href="{% url 'home' %}">Home</a>
+  <h1>{{ work.csl_json.title }}</h1>
+  <h2>Reference</h2>
+  <p>{{ work.reference | safe }}</p>
+  <h2>Index terms</h2>
+  {% regroup page_refs by lemma as lemma_list %}
+  <ul class="lemma-refs">
+    {% for lemma, page_ref_list in lemma_list %}
+      <li>{{ lemma }}: {{ page_ref_list|join:', ' }}</li>
+    {% endfor %}
+  </ul>
 {% endif %}
 {% endblock %}
