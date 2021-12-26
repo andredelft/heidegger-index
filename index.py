@@ -24,7 +24,7 @@ REF_INTFIELDS = {"start", "end"}
     type=click.Choice(LEMMA_TYPES.keys()),
     help=f"Type of lemma ({', '.join(k + ': ' + v for k, v in LEMMA_TYPES.items())})",
 )
-def click_command(lemma, work, ref, ref_type=None):
+def click_wrapper(lemma, work, ref, ref_type=None):
     add_to_index(lemma, work, ref, ref_type)
 
 
