@@ -3,6 +3,7 @@ from unidecode import unidecode
 
 from django.db import models
 from django.conf import settings
+from django_extensions.db.fields import AutoSlugField
 
 from heidegger_index.constants import LEMMA_TYPES
 
@@ -11,6 +12,7 @@ class Work(models.Model):
     id = models.CharField(max_length=8, primary_key=True)
     csl_json = models.JSONField()
     reference = models.CharField(max_length=200, null=True)
+    slug = AutoSlugField(populate_from="id")
 
     def __str__(self):
         return self.id
@@ -26,6 +28,9 @@ class Work(models.Model):
             self.reference = r.content.decode()
 
         super().save(*args, **kwargs)
+
+    class Meta:
+        ordering = ["id"]
 
 
 class Lemma(models.Model):
@@ -47,7 +52,7 @@ class Lemma(models.Model):
         super().save(*args, **kwargs)
 
     class Meta:
-        indexes = [models.Index(fields=["sort_key"])]
+        ordering = ["sort_key"]
 
 
 class PageReference(models.Model):
