@@ -59,9 +59,11 @@ class Command(BaseCommand):
 
                 for ref in page_ref_list:
                     ref.pop("reftype", None)
-                pageref_objs.append(
-                    PageReference(work_id=work, lemma=lemma_objs[lemma_value], **ref)
-                )
+                    pageref_objs.append(
+                        PageReference(
+                            work_id=work, lemma=lemma_objs[lemma_value], **ref
+                        )
+                    )
 
         PageReference.objects.bulk_create(
             tqdm(pageref_objs, desc="Populating page references")

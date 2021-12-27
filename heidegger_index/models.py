@@ -75,3 +75,6 @@ class PageReference(models.Model):
             return f"{self.start}{self.suffix}."
         else:
             return f"{self.start}"
+
+    class Meta:
+        ordering = ["lemma", "work", "start", "end", "suffix"]
