@@ -2,7 +2,7 @@
 
 {% block body %}
 <h1>Heidegger index</h1>
-<p class="description">Managed by: André van Delft &amp; Johannes de Wit</p>
+<p class="description">Managed by: <a href="https://github.com/andredelft" target="_blank" rel="noopener noreferrer">André van Delft</a> &amp; <a href="https://github.com/johannesdewit" target="_blank" rel="noopener noreferrer">Johannes de Wit</a></p>
 {% for lemma in lemmas %}
 <h3 class="lemma-header">
   <a href="{% url 'lemma-detail' lemma.slug %}" class="hidden-link">{{ lemma.format }}</a>

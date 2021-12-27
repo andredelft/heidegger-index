@@ -22,9 +22,7 @@ class WorkDetailView(DetailView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context["page_refs"] = PageReference.objects.filter(
-            work=context["work"]
-        ).order_by("lemma__sort_key")
+        context["page_refs"] = PageReference.objects.filter(work=context["work"])
         return context
 
 
