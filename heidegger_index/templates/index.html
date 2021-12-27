@@ -5,34 +5,21 @@
 <p class="description">Managed by: André van Delft &amp; Johannes de Wit</p>
 {% for lemma in lemmas %}
 <h3 class="lemma-header">
-  <i>{{ lemma }}</i>
-  {% if lemma.type %}({{ lemma.get_type_display }}){% endif %}
+  <a href="{% url 'lemma-detail' lemma.slug %}" class="hidden-link">{{ lemma.format }}</a>
 </h3>
-<ul class="lemma-refs">
-  {% regroup lemma.pagereference_set.all by work as work_list %}
-  {% for work, page_ref_list in work_list %}
-    <li>
-      {% if work.id in work_ids %}
-        <a href="{% url 'work-detail' work.slug %}">{{work}}</a>:
-      {% else %}
-        {{ work }}:
-      {% endif %}
-      {{ page_ref_list|join:', ' }}
-    </li>
-  {% endfor %}
-</ul>
+{% include '_page_ref_list.html' with page_refs=lemma.pagereference_set.all only %}
 {% endfor %}
 <div class="bibliography">
   <h2>Bibliography</h2>
-  <table>
+  <div class="bibliography-wrapper">
     {% for work in works %}
     {% if work.reference %}
-    <tr>
-      <td class="label">{{ work.id }}</td>
-      <td>{{ work.reference|safe }}</td>
-    </tr>
+    <a class="entry-wrapper hidden-link button" href="{% url 'work-detail' work.slug %}">
+      <div class="entry-label">{{ work.id }}</div>
+      {{ work.reference|safe }}
+    </a>
     {% endif %}
     {% endfor %}
-  </table>
+  </div>
 </div>
 {% endblock %}

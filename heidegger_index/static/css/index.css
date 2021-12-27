@@ -2,6 +2,8 @@ body {
   font-family: "Crimson Text", "Alegreya", serif;
   margin: 0;
   font-size: 20px;
+  --link-color: rgb(57, 139, 152);
+  --link-background-color: rgba(100, 143, 150, 0.1);
 }
 
 .container {
@@ -20,6 +22,7 @@ body {
   margin-bottom: 0;
 }
 
+.page-refs,
 .lemma-refs {
   margin-top: 0;
   padding-left: 1rem;
@@ -31,10 +34,6 @@ h2 {
   margin-bottom: 0.5em;
 }
 
-.bibliography table {
-  border-spacing: 1rem 10px;
-}
-
 td.label {
   white-space: nowrap;
   vertical-align: top;
@@ -42,11 +41,56 @@ td.label {
 
 a,
 a:visited {
-  color: #398b98;
+  color: var(--link-color);
 }
 
 .breadcrumb {
+  color: var(--link-color);
+  text-decoration: none;
   display: block;
   font-size: 1.2em;
   font-style: italic;
+  display: inline-block;
+}
+
+.hidden-link,
+.hidden-link:visited {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.hidden-link:hover {
+  color: var(--link-color);
+}
+
+.bibliography-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.entry-wrapper {
+  display: flex;
+  column-gap: 20px;
+}
+
+.button {
+  padding: 5px 10px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: var(--link-background-color);
+}
+
+.entry-label {
+  width: 100px;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.entry-wrapper:hover {
+  color: inherit;
 }

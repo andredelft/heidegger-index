@@ -5,12 +5,13 @@ from heidegger_index.models import Lemma, Work, PageReference
 
 
 def index_view(request):
-    works = Work.objects.all()
-    work_ids = set(work.id for work in works if work.reference)
     return render(
         request,
         "index.html",
-        {"lemmas": Lemma.objects.all(), "works": works, "work_ids": work_ids},
+        {
+            "lemmas": Lemma.objects.all(),
+            "works": Work.objects.all(),
+        },
     )
 
 
@@ -25,3 +26,9 @@ class WorkDetailView(DetailView):
             work=context["work"]
         ).order_by("lemma__sort_key")
         return context
+
+
+class LemmaDetailView(DetailView):
+    model = Lemma
+    template_name = "lemma_detail.html"
+    context_object_name = "lemma"
