@@ -226,6 +226,7 @@ Kant, Immanuel:
   GA 29/30:
   - end: 423
     start: 421
+  reftype: p
 Kierkegaard, Søren:
   GA 29/30:
   - start: 226
@@ -485,13 +486,8 @@ tiefe Langeweile:
   GA 29/30:
   - end: 410
     start: 409
-tiefen Langeweile:
-  GA 29/30:
-  - start: 251
-  - start: 252
-  - start: 253
-  - start: 254
-  - start: 256
+  - end: 256
+    start: 251
 unbestimmte Unmittelbare:
   SZ:
   - start: 3
