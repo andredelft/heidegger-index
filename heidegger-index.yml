@@ -236,8 +236,8 @@ Kierkegaard, Søren:
   reftype: p
 Kritik der Reinen Vernunft:
   GA 29/30:
-  - reftype: w
-    start: 422
+  - start: 422
+  reftype: w
 Langeweile:
   EWI:
   - start: 39
