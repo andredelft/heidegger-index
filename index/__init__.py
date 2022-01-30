@@ -1,10 +1,11 @@
 import yaml
+import requests
 import click
 import regex as re
 
 from heidegger_index.constants import LEMMA_TYPES
 
-INDEX_FILE = "heidegger-index.yml"
+INDEX_FILE = "index/heidegger-index.yml"
 
 yaml.warnings({"YAMLLoadWarning": False})
 
@@ -64,3 +65,30 @@ def add_to_index(lemma, work, ref, ref_type=None):
 
     with open(INDEX_FILE, "w") as f:
         yaml.dump(index, f, allow_unicode=True)
+
+
+CITATION_STYLE = "mhra"  # Modern humanities research association
+WORK_REFS_FILE = "index/works.yml"
+CITEPROC_ENDPOINT = "https://labs.brill.com/citeproc"
+OUTPUT_FILE = "index/works.html"
+
+yaml.warnings({"YAMLLoadWarning": False})
+
+
+def format_refs(
+    work_refs_file=WORK_REFS_FILE,
+    citeproc_endpoint=CITEPROC_ENDPOINT,
+    citation_style=CITATION_STYLE,
+    output_file=OUTPUT_FILE,
+):
+    with open(work_refs_file) as f:
+        refs = yaml.load(f)
+
+    r = requests.post(
+        citeproc_endpoint,
+        json={"items": refs},
+        params={"style": citation_style, "responseformat": "html"},
+    )
+
+    with open(output_file, "wb") as f:
+        f.write(r.content)

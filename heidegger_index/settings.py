@@ -119,3 +119,7 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 CITEPROC_ENDPOINT = "https://labs.brill.com/citeproc"
 CITEPROC_STYLE = "mhra"
+
+INDEX_DIR = BASE_DIR / "index"
+WORK_REFS_FILE = INDEX_DIR / "works.yml"
+INDEX_FILE = INDEX_DIR / "heidegger-index.yml"

@@ -56,8 +56,9 @@ As can be seen from the regular expression, `end` and `suffix` are optional, and
 
 The references to Heideggers works are gathered in `works.yml` in CSL YAML format. Using a citeproc processor these can be converted to a styled bibliography:
 
-```shell
-python work_refs.py
+```pycon
+>>> from index import format_refs
+>>> format_refs()
 ```
 
 Output is stored in `works.html`

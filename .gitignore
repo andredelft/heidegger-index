@@ -1,6 +1,6 @@
 __pycache__
 venv/
-works.html
+/index/works.html
 *.sqlite3
 build/
 *.egg-info

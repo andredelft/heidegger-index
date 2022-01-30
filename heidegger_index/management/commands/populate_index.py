@@ -2,11 +2,9 @@ import yaml
 from tqdm import tqdm
 
 from django.core.management.base import BaseCommand
+from django.conf import settings
 
 from heidegger_index.models import Work, Lemma, PageReference
-
-WORK_REFS_FILE = "works.yml"
-INDEX_FILE = "heidegger-index.yml"
 
 yaml.warnings({"YAMLLoadWarning": False})
 
@@ -24,7 +22,7 @@ class Command(BaseCommand):
         for Model in [PageReference, Lemma, Work]:
             self._flush_table(Model)
 
-        with open(WORK_REFS_FILE) as f:
+        with open(settings.WORK_REFS_FILE) as f:
             works_data = yaml.load(f)
 
         for work_id, csl_json in tqdm(works_data.items(), desc="Populating works"):
@@ -34,7 +32,7 @@ class Command(BaseCommand):
 
         existing_works = set(works_data.keys())
 
-        with open(INDEX_FILE) as f:
+        with open(settings.INDEX_FILE) as f:
             index_data = yaml.load(f)
 
         lemma_objs = dict()
@@ -51,7 +49,7 @@ class Command(BaseCommand):
 
                 if work not in existing_works:
                     self.stdout.write(
-                        f"Warning: Work {work} does not exist in {WORK_REFS_FILE}, "
+                        f"Warning: Work {work} does not exist in {settings.WORK_REFS_FILE.name}, "
                         "will be added with an empty reference"
                     )
                     Work(id=work, csl_json={}).save()
