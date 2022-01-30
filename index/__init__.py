@@ -2,10 +2,18 @@ import yaml
 import requests
 import click
 import regex as re
+from pathlib import Path
 
 from heidegger_index.constants import LEMMA_TYPES
 
-INDEX_FILE = "index/heidegger-index.yml"
+CURRENT_DIR = Path(__file__).parent
+
+INDEX_FILE = CURRENT_DIR / "heidegger-index.yml"
+WORK_REFS_FILE = CURRENT_DIR / "works.yml"
+OUTPUT_FILE = CURRENT_DIR / "works.html"
+
+CITATION_STYLE = "mhra"  # Modern humanities research association
+CITEPROC_ENDPOINT = "https://labs.brill.com/citeproc"
 
 yaml.warnings({"YAMLLoadWarning": False})
 
@@ -65,14 +73,6 @@ def add_to_index(lemma, work, ref, ref_type=None):
 
     with open(INDEX_FILE, "w") as f:
         yaml.dump(index, f, allow_unicode=True)
-
-
-CITATION_STYLE = "mhra"  # Modern humanities research association
-WORK_REFS_FILE = "index/works.yml"
-CITEPROC_ENDPOINT = "https://labs.brill.com/citeproc"
-OUTPUT_FILE = "index/works.html"
-
-yaml.warnings({"YAMLLoadWarning": False})
 
 
 def format_refs(
