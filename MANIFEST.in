@@ -1,0 +1,2 @@
+recursive-include heidegger_index/templates *.html
+recursive-include heidegger_index/static *
