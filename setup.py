@@ -9,5 +9,6 @@ setup(
     description="Heidegger index",
     packages=find_packages(),
     install_requires=REQUIREMENTS,
+    include_package_data=True,
     entry_points={"console_scripts": ["hi-add=index:click_wrapper"]},
 )
