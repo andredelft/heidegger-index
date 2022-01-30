@@ -1,10 +1,11 @@
+Django==4.*
+gunicorn==20.*
+whitenoise==5.*
+
 PyYAML==5.*
 requests==2.*
 click==7.*
-Django==4.*
 tqdm==4.*
-gunicorn==20.*
 regex
 Unidecode==1.*
 django-extensions==3.*
-whitenoise==5.*
