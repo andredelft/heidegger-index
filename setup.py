@@ -10,5 +10,10 @@ setup(
     packages=find_packages(),
     install_requires=REQUIREMENTS,
     include_package_data=True,
-    entry_points={"console_scripts": ["hi-add=index:click_wrapper"]},
+    entry_points={
+        "console_scripts": [
+            "add-ref=index:ar_click",
+            "format-refs=index:fr_click",
+        ]
+    },
 )

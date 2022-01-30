@@ -2,17 +2,17 @@
 
 <https://delve.nu/heidegger-index>
 
-## Add lemmas to `heidegger-index.yml`
+## Add lemmas to `index/heidegger-index.yml`
 
 ```pycon
->>> from index import add_to_index
->>> add_to_index('Grundriß', 'ZW', '79')
->>> add_to_index('Kierkegaard, Søren', 'GA 29/30', '226', 'p') # Referencing personal names
->>> add_to_index('Sein und Zeit', 'ZEG', '63', 'w') # Referencing works
->>> add_to_index('Grundriß', 'GA 61', '159-160', 'r') # Referencing related terms
+>>> from index import add_ref
+>>> add_ref('Grundriß', 'ZW', '79')
+>>> add_ref('Kierkegaard, Søren', 'GA 29/30', '226', 'p') # Referencing personal names
+>>> add_ref('Sein und Zeit', 'ZEG', '63', 'w') # Referencing works
+>>> add_ref('Grundriß', 'GA 61', '159-160', 'r') # Referencing related terms
 ```
 
-This function is also available als a terminal command `hi-add`, that can be installed using
+This function is also available als a terminal command `add-ref`, that can be installed using
 
 ```sh
 pip install .
@@ -21,8 +21,8 @@ pip install .
 Usage:
 
 ```sh
-$ hi-add --help
-Usage: hi-add [OPTIONS] LEMMA WORK REF
+$ add-ref --help
+Usage: add-ref [OPTIONS] LEMMA WORK REF
 
 Options:
   -t, --type [p|w]  Type of lemma (p: person, w: work, r: related term)
@@ -32,8 +32,8 @@ Options:
 E.g.:
 
 ```sh
-hi-add Grundriß ZW 79
-hi-add --type p 'Kierkegaard, Søren' 'GA 29/30' 226
+add-ref Grundriß ZW 79
+add-ref --type p 'Kierkegaard, Søren' 'GA 29/30' 226
 ```
 
 ### Page reference
@@ -54,18 +54,11 @@ As can be seen from the regular expression, `end` and `suffix` are optional, and
 
 ### Work references
 
-The references to Heideggers works are gathered in `works.yml` in CSL YAML format. Using a citeproc processor these can be converted to a styled bibliography:
-
-```pycon
->>> from index import format_refs
->>> format_refs()
-```
-
-Output is stored in `works.html`
+The references to Heideggers works are gathered in `index/works.yml` in CSL YAML format. Using a citeproc processor these can be converted to a styled bibliography using the command `format-refs`. The output is stored in `index/works.html`
 
 ## Django project
 
-A Django project is included with models into which `heidegger-index.yml` can be ingested and served as a dynamic HTML page. Follow the steps below to spin up the project.
+A Django project is included with models into which `index/heidegger-index.yml` can be ingested and served as a dynamic HTML page. Follow the steps below to spin up the project.
 
 1. Install requirements:
 
