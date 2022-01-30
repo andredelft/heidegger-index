@@ -3,7 +3,7 @@
 {% block body %}
 {% if work.csl_json %}
 <div>
-  <a class="breadcrumb button" href="{% url 'home' %}">Home</a>
+  <a class="breadcrumb button" href="{% url 'index:home' %}">Home</a>
 </div>
 <h1>{{ work.csl_json.title }}</h1>
 <h2>Reference</h2>
@@ -13,7 +13,7 @@
 <ul class="lemma-refs">
   {% for lemma, page_ref_list in lemma_list %}
     <li>
-      <a href="{% url 'lemma-detail' lemma.slug %}" class="hidden-link">{{ lemma.format }}</a>: {{ page_ref_list|join:', ' }}
+      <a href="{% url 'index:lemma-detail' lemma.slug %}" class="hidden-link">{{ lemma.format }}</a>: {{ page_ref_list|join:', ' }}
     </li>
   {% endfor %}
 </ul>

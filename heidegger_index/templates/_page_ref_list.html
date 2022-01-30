@@ -3,7 +3,7 @@
   {% for work, page_ref_list in work_groups %}
     <li>
       {% if work.reference %}
-        <a href="{% url 'work-detail' work.slug %}" class="hidden-link">{{ work }}</a>:
+        <a href="{% url 'index:work-detail' work.slug %}" class="hidden-link">{{ work }}</a>:
       {% else %}
         {{ work }}:
       {% endif %}
