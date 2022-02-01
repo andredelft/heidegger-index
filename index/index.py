@@ -20,36 +20,58 @@ REF_INTFIELDS = {"start", "end"}
 
 
 def add_ref(lemma, work, ref, ref_type=None):
+    # Open index file
     with open(INDEX_FILE) as f:
         index = yaml.load(f)
 
+    # Verify if reference is given properly
     m = REF_REGEX.search(ref.strip())
     if not m:
         raise click.BadParameter(f'Reference "{ref}" is not recognized')
 
+    # Prepare reference dinctionary
     ref_dict = {}
     for k, v in m.groupdict().items():
         if v:
             ref_dict[k] = int(v) if k in REF_INTFIELDS else v
 
-    # Makes sure ref_type 'p' is a child of 'lemma' instead of 'work'
-    if ref_type != "p" and ref_type is not None:
+    if ref_type == "r":
         ref_dict["reftype"] = ref_type
 
+    # Determine whether that lemma is already in the index
     try:
         lemma_entry = index[lemma]
+        # reftype does not need to be defined here because the lemma reftype is already checked.
     except KeyError:
-        # Makes sure ref_type 'p' is a child of 'lemma' instead of 'work'
-        if ref_type == "p":
+        # This triggers if the lemma is not present in the index.
+        if ref_type == "p" or ref_type == "w":
+            # Makes sure ref_type 'p' and 'w' are children of 'lemma' instead of 'work'
             lemma_entry = {work: [ref_dict]}
             lemma_entry["reftype"] = ref_type
         else:
             lemma_entry = {work: [ref_dict]}
     else:
+        # This triggers if the lemma is already present in the index.
+
+        # Raise error if the reftype given does not match the one allready assigned to the lemma.
         try:
+            if lemma_entry["reftype"] != ref_type and ref_type != "r":
+                raise click.BadParameter(f'Cannot assign reftype {ref_type} to lemma. Lemma is already defined as being of type "{lemma_entry["reftype"]}".')
+        except KeyError:
+            if ref_type != "r" and ref_type != None:
+                raise click.BadParameter(f'Cannot assign reftype {ref_type} to lemma. Lemma is already defined as being of another type.')
+
+        try:
+            # This triggers if the lemma already contains the work
             lemma_entry[work].append(ref_dict)
         except KeyError:
-            lemma_entry[work] = [ref_dict]
+            # This triggers if the lemma does not contain the work
+            if ref_type == "p" or ref_type == "w":
+                # Makes sure ref_type 'p' and 'w' are children of 'lemma' instead of 'work'
+                lemma_entry = {work: [ref_dict]}
+                lemma_entry["reftype"] = ref_type
+            else:
+                lemma_entry = {work: [ref_dict]}
 
     index[lemma] = lemma_entry
 

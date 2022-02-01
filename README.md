@@ -25,7 +25,7 @@ $ add-ref --help
 Usage: add-ref [OPTIONS] LEMMA WORK REF
 
 Options:
-  -t, --type [p|w]  Type of lemma (p: person, w: work, r: related term)
+  -t, --type [p|w]  Type of lemma (p: person, w: work)
   --help            Show this message and exit.
 ```
 
