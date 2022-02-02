@@ -14,7 +14,7 @@
   {% for lemma, page_ref_list in lemma_list %}
     {% if not lemma.type %}
       <li>
-        <a href="{% url 'index:lemma-detail' lemma.slug %}" class="hidden-link">{{ lemma.format }}</a>: {{ page_ref_list|join:', ' }}
+        <a href="{% url 'index:lemma-detail' lemma.slug %}" class="hidden-link">{{ lemma.format_just_lemma }}</a>: {{ page_ref_list|join:', ' }}
       </li>
     {% endif %}
   {% endfor %}
@@ -24,7 +24,7 @@
   {% for lemma, page_ref_list in lemma_list %}
     {% if lemma.type == 'p' %}
       <li>
-        <a href="{% url 'index:lemma-detail' lemma.slug %}" class="hidden-link">{{ lemma.format }}</a>: {{ page_ref_list|join:', ' }}
+        <a href="{% url 'index:lemma-detail' lemma.slug %}" class="hidden-link">{{ lemma.format_just_lemma }}</a>: {{ page_ref_list|join:', ' }}
       </li>
     {% endif %}
   {% endfor %}
@@ -34,7 +34,7 @@
   {% for lemma, page_ref_list in lemma_list %}
     {% if lemma.type == 'w' %}
       <li>
-        <a href="{% url 'index:lemma-detail' lemma.slug %}" class="hidden-link">{{ lemma.format }}</a>: {{ page_ref_list|join:', ' }}
+        <a href="{% url 'index:lemma-detail' lemma.slug %}" class="hidden-link">{{ lemma.format_just_lemma }}</a>: {{ page_ref_list|join:', ' }}
       </li>
     {% endif %}
   {% endfor %}
