@@ -4,11 +4,11 @@ import click
 import regex as re
 from pathlib import Path
 
-CURRENT_DIR = Path(__file__).parent
+WORKING_DIR = Path("index")
 
-INDEX_FILE = CURRENT_DIR / "heidegger-index.yml"
-WORK_REFS_FILE = CURRENT_DIR / "works.yml"
-OUTPUT_FILE = CURRENT_DIR / "works.html"
+INDEX_FILE = WORKING_DIR / "heidegger-index.yml"
+WORK_REFS_FILE = WORKING_DIR / "works.yml"
+OUTPUT_FILE = WORKING_DIR / "works.html"
 
 CITATION_STYLE = "mhra"  # Modern humanities research association
 CITEPROC_ENDPOINT = "https://labs.brill.com/citeproc"
