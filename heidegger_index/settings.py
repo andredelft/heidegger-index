@@ -15,7 +15,7 @@ except KeyError:
 
 ALLOWED_HOSTS = ["delve.nu", "localhost"]
 
-URL_PREFIX = ""  # "heidegger-index/"
+URL_PREFIX = "heidegger-index/"
 
 
 # Application definition
