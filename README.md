@@ -56,6 +56,17 @@ As can be seen from the regular expression, `end` and `suffix` are optional, and
 
 The references to Heideggers works are gathered in `index/works.yml` in CSL YAML format. Using a citeproc processor these can be converted to a styled bibliography using the command `format-refs`. The output is stored in `index/works.html`
 
+## Search for an existing reference
+
+A terminal command `find-ref` is provided to search through exisitng references. It provides flexible matching, e.g.:
+
+```sh
+$ find-ref Seienden
+Beziehung zu Seiendem als Solchem
+Seiende im Ganzen
+Sein zu Seiendem als Seidendem
+```
+
 ## Django project
 
 A Django project is included with models into which `index/heidegger-index.yml` can be ingested and served as a dynamic HTML page. Follow the steps below to spin up the project.

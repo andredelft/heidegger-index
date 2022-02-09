@@ -3,6 +3,7 @@ import requests
 import click
 import regex as re
 from pathlib import Path
+from fuzzysearch import find_near_matches
 
 WORKING_DIR = Path("index")
 
@@ -77,6 +78,28 @@ def add_ref(lemma, work, ref, ref_type=None):
 
     with open(INDEX_FILE, "w") as f:
         yaml.dump(index, f, allow_unicode=True)
+
+
+def find_ref(search_term, max_l_dist=2, num_results=5):
+
+    with open(INDEX_FILE) as f:
+        lemmata = yaml.load(f).keys()
+
+    matches = [
+        (lemma, find_near_matches(search_term, lemma, max_l_dist=max_l_dist))
+        for lemma in lemmata
+    ]
+
+    # Remove unmatched lemmata from list
+    matches = [m for m in matches if m[1]]
+
+    # Sort by levensteihn distance first, then by lemma
+    matches.sort(key=lambda match: (min(m.dist for m in match[1]), match[0]))
+
+    if matches:
+        print("\n".join(f"{m[0]}" for m in matches[:num_results]))
+    else:
+        print("No matches found")
 
 
 def format_refs(

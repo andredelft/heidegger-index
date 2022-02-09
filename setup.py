@@ -13,7 +13,8 @@ setup(
     entry_points={
         "console_scripts": [
             "add-ref=index:ar_click",
-            "format-refs=index:fr_click",
+            "find-ref=index:fr_click",
+            "format-refs=index:for_click",
         ]
     },
 )

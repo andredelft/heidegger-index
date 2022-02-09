@@ -1,6 +1,6 @@
 import click
 
-from .index import add_ref, format_refs
+from .index import add_ref, format_refs, find_ref
 
 from heidegger_index.constants import LEMMA_TYPES
 
@@ -22,5 +22,11 @@ def ar_click(lemma, work, ref, ref_type=None):
 
 
 @click.command()
-def fr_click():
+@click.argument("search_term", type=str)
+def fr_click(search_term):
+    find_ref(search_term)
+
+
+@click.command()
+def for_click():
     format_refs()

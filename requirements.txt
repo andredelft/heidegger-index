@@ -9,3 +9,4 @@ tqdm==4.*
 regex
 Unidecode==1.*
 django-extensions==3.*
+fuzzysearch==0.7.3
