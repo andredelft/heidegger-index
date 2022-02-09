@@ -51,16 +51,16 @@ def add_ref(lemma, work, ref, ref_type=None):
     else:
         # This triggers if the lemma is already present in the index.
 
-        # Raise error if the reftype given does not match the one allready assigned to the lemma.
-        try:
-            if lemma_entry["reftype"] != ref_type and ref_type != "r":
+        if ref_type not in [None, "r"]:
+            # Raise error if the reftype given does not match the one already assigned to the lemma.
+            try:
+                if lemma_entry["reftype"] != ref_type:
+                    raise click.BadParameter(
+                        f'Cannot assign reftype "{ref_type}" to lemma. Lemma is already defined as being of type "{lemma_entry["reftype"]}".'
+                    )
+            except KeyError:
                 raise click.BadParameter(
-                    f'Cannot assign reftype {ref_type} to lemma. Lemma is already defined as being of type "{lemma_entry["reftype"]}".'
-                )
-        except KeyError:
-            if ref_type != "r" and ref_type != None:
-                raise click.BadParameter(
-                    f"Cannot assign reftype {ref_type} to lemma. Lemma is already defined as being of another type."
+                    f"Cannot assign reftype {ref_type} to lemma. Lemma is already defined as having no type."
                 )
 
         try:
