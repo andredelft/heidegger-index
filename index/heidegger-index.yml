@@ -218,6 +218,8 @@ Horizont:
   GA 29/30:
   - start: 252
 Hölderlin, Friedrich:
+  WBPh:
+  - start: 238
   WD:
   - start: 269
     suffix: ff
@@ -293,6 +295,8 @@ Nietzsche, Friedrich:
   GA 42:
   - end: 42
     start: 39
+  WBPh:
+  - start: 237
   WD:
   - start: 275
   - start: 279
@@ -343,6 +347,8 @@ Rätsel:
 Seiende im Ganzen:
   GA 29/30:
   - start: 251
+  WBPh:
+  - start: 238
   WD:
   - start: 279
 Sein und Zeit:

@@ -191,3 +191,27 @@ FW:
   title: Der Feldweg
   type: chapter
   page: 87-90
+WBPh:
+  id: heideggerVomWesenUnd1976a
+  author:
+    - family: Heidegger
+      given: Martin
+  citation-key: heideggerVomWesenUnd1976a
+  collection-number: band 9
+  collection-title: Gesamtausgabe
+  container-title: Wegmarken
+  editor:
+    - family: Herrmann
+      given: Friedrich-Wilhelm
+      dropping-particle: von
+  event-place: Frankfurt am Main
+  issued:
+    date-parts:
+    - - 1976
+  language: ger
+  page: 239-302
+  publisher: Vittorio Klostermann
+  publisher-place: Frankfurt am Main
+  title: Vom Wesen und Begriff der Φὐσις, Aristoteles, Physik B, 1
+  type: chapter
+
