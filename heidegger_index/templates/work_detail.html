@@ -19,7 +19,7 @@
     {% endif %}
   {% endfor %}
 </ul>
-<h2>People mentioned</h2>
+<h3>People mentioned</h3>
 <ul class="lemma-refs">
   {% for lemma, page_ref_list in lemma_list %}
     {% if lemma.type == 'p' %}
@@ -29,7 +29,7 @@
     {% endif %}
   {% endfor %}
 </ul>
-<h2>Works mentioned</h2>
+<h3>Works mentioned</h3>
 <ul class="lemma-refs">
   {% for lemma, page_ref_list in lemma_list %}
     {% if lemma.type == 'w' %}
