@@ -81,6 +81,14 @@ Dasein:
   - start: 251
   - end: 411
     start: 410
+Denken:
+  GA 16:
+  - start: 518
+    suffix: ff
+Der Feldweg:
+  GA 16:
+  - start: 517
+  reftype: w
 Dionysos:
   WD:
   - start: 269
@@ -127,6 +135,10 @@ Frage nach dem Sinn von Sein:
 Gebrochenheit des Daseins:
   GA 29/30:
   - start: 252
+Gedankenlosigkeit:
+  GA 16:
+  - end: 519
+    start: 518
 Gegnet:
   GA 55:
   - start: 335
@@ -235,6 +247,11 @@ Kierkegaard, Søren:
   GA 42:
   - end: 43
     start: 42
+  reftype: p
+Kreutzer, Conradin:
+  GA 16:
+  - end: 518
+    start: 517
   reftype: p
 Kritik der Reinen Vernunft:
   GA 29/30:
@@ -464,6 +481,9 @@ auf der Stelle zur Stelle:
 begegnen:
   GA 29/30:
   - start: 397
+besinnliche Nachdenken:
+  GA 16:
+  - start: 520
 das Heilige:
   WD:
   - start: 272
@@ -488,6 +508,10 @@ im Ganzen:
   - start: 251
   - end: 412
     start: 411
+rechnende Denken:
+  GA 16:
+  - end: 520
+    start: 519
 tiefe Langeweile:
   GA 29/30:
   - end: 410

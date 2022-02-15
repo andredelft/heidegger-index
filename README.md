@@ -9,7 +9,7 @@
 >>> add_ref('Grundriß', 'ZW', '79')
 >>> add_ref('Kierkegaard, Søren', 'GA 29/30', '226', 'p') # Referencing personal names
 >>> add_ref('Sein und Zeit', 'ZEG', '63', 'w') # Referencing works
->>> add_ref('Grundriß', 'GA 61', '159-160', 'r') # Referencing related terms
+>>> add_ref('Grundriß', 'GA 61', '159-160', 'r') # Referencing pages related to term
 ```
 
 This function is also available als a terminal command `add-ref`, that can be installed using
