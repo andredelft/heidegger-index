@@ -86,7 +86,7 @@ A Django project is included with models into which `index/heidegger-index.yml` 
 3. Populate the database:
 
    ```sh
-   python manage.py populate
+   python manage.py populate_index
    ```
 
 4. Spin up the django project:
