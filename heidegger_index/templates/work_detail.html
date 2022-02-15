@@ -19,25 +19,27 @@
     {% endif %}
   {% endfor %}
 </ul>
-<h3>People mentioned</h3>
-<ul class="lemma-refs">
-  {% for lemma, page_ref_list in lemma_list %}
-    {% if lemma.type == 'p' %}
+{% if person_list %}
+  <h3>People mentioned</h3>
+  <ul class="lemma-refs">
+    {% regroup person_list by lemma as person_list %}
+    {% for lemma, page_ref_list in person_list %}
       <li>
         <a href="{% url 'index:lemma-detail' lemma.slug %}" class="hidden-link">{{ lemma.format_just_lemma }}</a>: {{ page_ref_list|join:', ' }}
       </li>
-    {% endif %}
-  {% endfor %}
-</ul>
-<h3>Works mentioned</h3>
-<ul class="lemma-refs">
-  {% for lemma, page_ref_list in lemma_list %}
-    {% if lemma.type == 'w' %}
+    {% endfor %}
+  </ul>
+{% endif %}
+{% if work_list %}
+  <h3>Works mentioned</h3>
+  <ul class="lemma-refs">
+    {% regroup work_list by lemma as work_list %}
+    {% for lemma, page_ref_list in work_list %}
       <li>
         <a href="{% url 'index:lemma-detail' lemma.slug %}" class="hidden-link">{{ lemma.format_just_lemma }}</a>: {{ page_ref_list|join:', ' }}
       </li>
-    {% endif %}
-  {% endfor %}
-</ul>
+    {% endfor %}
+  </ul>
+{% endif %}
 {% endif %}
 {% endblock %}
