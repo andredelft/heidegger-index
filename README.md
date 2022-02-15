@@ -58,7 +58,7 @@ The references to Heideggers works are gathered in `index/works.yml` in CSL YAML
 
 ## Search for an existing reference
 
-A terminal command `find-ref` is provided to search through exisitng references. It provides flexible matching, e.g.:
+A terminal command `find-ref` is provided to search through existing references. It provides flexible matching, e.g.:
 
 ```sh
 $ find-ref Seienden
