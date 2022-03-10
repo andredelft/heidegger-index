@@ -4,6 +4,7 @@ import click
 import regex as re
 from pathlib import Path
 from fuzzysearch import find_near_matches
+from betacode.conv import beta_to_uni
 
 WORKING_DIR = Path("index")
 
@@ -20,7 +21,11 @@ REF_REGEX = re.compile(r"^(?P<start>\d+)(?:-(?P<end>\d+)|(?P<suffix>f{1,2})\.?)?
 REF_INTFIELDS = {"start", "end"}
 
 
-def add_ref(lemma, work, ref, ref_type=None):
+def add_ref(lemma, work, ref, ref_type=None, betacode=False):
+
+    if betacode:
+        lemma = beta_to_uni(lemma)
+
     # Open index file
     with open(INDEX_FILE) as f:
         index = yaml.load(f)

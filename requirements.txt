@@ -10,3 +10,4 @@ regex
 Unidecode==1.*
 django-extensions==3.*
 fuzzysearch==0.7.3
+betacode==1.0
