@@ -26,7 +26,7 @@ def add_ref(lemma, work, ref, ref_type=None):
         index = yaml.load(f)
 
     # Verify if reference is given properly
-    m = REF_REGEX.search(ref.strip())
+    m = REF_REGEX.search(str(ref).strip())
     if not m:
         raise click.BadParameter(f'Reference "{ref}" is not recognized')
 
