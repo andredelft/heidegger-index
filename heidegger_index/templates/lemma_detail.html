@@ -3,5 +3,6 @@
 {% block body %}
 <a class="breadcrumb button" href="{% url 'index:home' %}">Home</a>
 <h1>{{ lemma.value }}</h1>
+{% if lemma.description %}{{ lemma.description | safe }}{% endif %}
 {% include '_page_ref_list.html' with page_refs=lemma.pagereference_set.all verbose_titles=True only %}
 {% endblock body %}
