@@ -12,6 +12,13 @@ Anthropologie:
   - start: 406
   - start: 408
 Aristoteles:
+  GA 29/30:
+  - end: 57
+    start: 48
+  - end: 65
+    start: 64
+  - end: 68
+    start: 67
   SZ:
   - start: 3
   reftype: p
@@ -132,6 +139,11 @@ Frage nach dem Sinn von Sein:
   SZ:
   - end: 8
     start: 1
+Franz Suarez:
+  GA 29/30:
+  - start: 77
+    suffix: ff
+  reftype: p
 Gebrochenheit des Daseins:
   GA 29/30:
   - start: 252
@@ -218,6 +230,12 @@ Hegel, Georg Wilhelm Friedrich:
   SZ:
   - start: 3
   reftype: p
+Heimweh:
+  GA 29/30:
+  - start: 7
+  - end: 12
+    start: 10
+  - start: 33
 Herakles:
   WD:
   - start: 269
@@ -327,6 +345,7 @@ Novalis:
   - start: 7
   - end: 12
     start: 10
+  - start: 33
   reftype: p
 Pascal, Blaise:
   GA 42:
@@ -371,6 +390,8 @@ Seiende im Ganzen:
 Sein und Zeit:
   GA 29/30:
   - start: 262
+  - end: 263
+    start: 262
   ZEG:
   - start: 63
   reftype: w
@@ -420,6 +441,11 @@ Thomans von Aquin:
   SZ:
   - start: 3
   reftype: p
+Thomas van Aquin:
+  GA 29/30:
+  - start: 69
+    suffix: ff
+  reftype: p
 Tod:
   EWI:
   - start: 18
@@ -427,6 +453,10 @@ Trieb:
   GA 29/30:
   - start: 362
   - start: 363
+  - end: 9
+    start: 7
+  - start: 11
+  - start: 33
 Vereinzelung:
   GA 29/30:
   - start: 251
@@ -508,6 +538,10 @@ im Ganzen:
   - start: 251
   - end: 412
     start: 411
+  - start: 8
+  - end: 13
+    start: 11
+  - start: 85
 rechnende Denken:
   GA 16:
   - end: 520
@@ -522,6 +556,9 @@ unbestimmte Unmittelbare:
   SZ:
   - start: 3
 Φύσις:
+  GA 29/30:
+  - start: 38
+    suffix: ff
   HH:
   - start: 145
   WD:
