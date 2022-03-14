@@ -159,6 +159,9 @@ Gegnet:
 Geheimnis:
   GA 29/30:
   - start: 255
+Geist:
+  WBPh:
+  - start: 241
 Gelassenheit:
   ZEG:
   - start: 40
@@ -555,12 +558,32 @@ tiefe Langeweile:
 unbestimmte Unmittelbare:
   SZ:
   - start: 3
-Φύσις:
+αἰτία:
+  FT:
+  - start: 12
+  WBPh:
+  - start: 243
+κίνησις:
+  WBPh:
+  - start: 241
+φύσις:
+  FT:
+  - start: 12
   GA 29/30:
   - start: 38
     suffix: ff
   HH:
   - start: 145
+  WBPh:
+  - start: 237
+    suffix: ff
   WD:
   - start: 278
     suffix: f
+ἀρχή:
+  WBPh:
+  - start: 244
+    suffix: ff
+ἐπαγωγή:
+  WBPh:
+  - start: 242

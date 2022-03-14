@@ -1,5 +1,8 @@
 import yaml
 from tqdm import tqdm
+from glob import glob
+from pathlib import Path
+from markdown import markdown
 
 from django.core.management.base import BaseCommand
 from django.conf import settings
@@ -25,10 +28,17 @@ class Command(BaseCommand):
         with open(settings.WORK_REFS_FILE) as f:
             works_data = yaml.load(f)
 
+        descriptions = {}
+        for fpath in glob(str(settings.DESCRIPTIONS_DIR / "*.md")):
+            print(fpath)
+            lemma = Path(fpath).stem
+            with open(fpath) as f:
+                content = markdown(f.read())
+            descriptions[lemma] = content
+
         for work_id, csl_json in tqdm(works_data.items(), desc="Populating works"):
             work_obj = Work(id=work_id, csl_json=csl_json)
-            work_obj.save()
-            # We need the save method for reference generation, hence no bulk_create
+            work_obj.save()  # We need the save method for reference generation, hence no bulk_create
 
         existing_works = set(works_data.keys())
 
@@ -38,6 +48,9 @@ class Command(BaseCommand):
         lemma_objs = dict()
         for i, (value, data) in enumerate(index_data.items()):
             lemma_obj = Lemma(id=i, value=value, type=data.pop("reftype", None))
+            description = descriptions.get(value)
+            if description:
+                lemma_obj.description = description
             lemma_obj.create_sort_key()
             lemma_objs[value] = lemma_obj
 
