@@ -229,10 +229,18 @@ Haben der Welt:
   GA 29/30:
   - end: 263
     start: 262
+Hebel, Johann Peter:
+  GA 16:
+  - start: 521
+  reftype: p
 Hegel, Georg Wilhelm Friedrich:
   SZ:
   - start: 3
   reftype: p
+Heimat:
+  GA 16:
+  - end: 522
+    start: 520
 Heimweh:
   GA 29/30:
   - start: 7
@@ -316,6 +324,9 @@ Müller, Johannes:
   GA 29/30:
   - start: 372
   reftype: p
+Nachdenken:
+  GA 16:
+  - start: 521
 Natur:
   EWI:
   - start: 41
@@ -522,6 +533,9 @@ begegnen:
 besinnliche Nachdenken:
   GA 16:
   - start: 520
+boden-ständig:
+  GA 16:
+  - start: 521
 das Heilige:
   WD:
   - start: 272
