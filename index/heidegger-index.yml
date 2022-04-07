@@ -177,6 +177,8 @@ Geschick:
   SVG:
   - start: 90
     suffix: ff
+  SZ:
+  - start: 384
   VA:
   - start: 25
     suffix: ff
@@ -232,6 +234,8 @@ Haben der Welt:
 Hegel, Georg Wilhelm Friedrich:
   SZ:
   - start: 3
+  WBPh:
+  - start: 251
   reftype: p
 Heimweh:
   GA 29/30:
@@ -243,6 +247,10 @@ Herakles:
   WD:
   - start: 269
   reftype: p
+Hergestelltheit:
+  WBPh:
+  - start: 248
+    suffix: f
 Hitler, Adolf:
   GA 42:
   - start: 40
@@ -250,6 +258,10 @@ Hitler, Adolf:
 Horizont:
   GA 29/30:
   - start: 252
+Humboldt, Alexander von:
+  SZ:
+  - start: 166
+  reftype: p
 Hölderlin, Friedrich:
   WBPh:
   - start: 238
@@ -261,6 +273,8 @@ Kant, Immanuel:
   GA 29/30:
   - end: 423
     start: 421
+  WBPh:
+  - start: 251
   reftype: p
 Kierkegaard, Søren:
   GA 29/30:
@@ -355,6 +369,9 @@ Novalis:
     start: 10
   - start: 33
   reftype: p
+Objekt:
+  WBPh:
+  - start: 249
 Pascal, Blaise:
   GA 42:
   - start: 54
@@ -501,6 +518,10 @@ Wesen des Menschen:
   GA 29/30:
   - end: 408
     start: 406
+Wissenschaft der Logik:
+  WBPh:
+  - start: 251
+  reftype: w
 Zeitlichkeit des Daseins:
   GA 29/30:
   - start: 253
@@ -568,9 +589,28 @@ unbestimmte Unmittelbare:
   - start: 12
   WBPh:
   - start: 243
+κατηγορία:
+  WBPh:
+  - start: 250
+    suffix: f
 κίνησις:
   WBPh:
   - start: 241
+λόγος:
+  WBPh:
+  - start: 251
+μεταβολή:
+  WBPh:
+  - start: 247
+τέλος:
+  WBPh:
+  - start: 249
+τέχνη:
+  WBPh:
+  - start: 249
+τόπος:
+  WBPh:
+  - start: 246
 φύσις:
   FT:
   - start: 12
