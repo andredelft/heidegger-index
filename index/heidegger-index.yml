@@ -220,6 +220,8 @@ Grundstimmung:
     start: 251
   - start: 256
   - start: 411
+  - end: 411
+    start: 410
 Grundstimmung unseres Daseins:
   GA 29/30:
   - end: 409
@@ -306,6 +308,9 @@ Langeweile:
   GA 29/30:
   - start: 115
     suffix: ff
+  - start: 409
+  - end: 411
+    start: 410
 Leere:
   GA 29/30:
   - start: 367
@@ -383,6 +388,11 @@ Novalis:
 Objekt:
   WBPh:
   - start: 249
+Offenbarkeit des Seienden im Ganze:
+  GA 29/30:
+  - end: 413
+    start: 412
+  - start: 415
 Pascal, Blaise:
   GA 42:
   - start: 54
@@ -445,6 +455,9 @@ Spemann, Hans:
   GA 29/30:
   - start: 381
   reftype: p
+Spiel mit der Sprache:
+  GA 29/30:
+  - start: 414
 Spielraum:
   ID:
   - start: 22
@@ -482,6 +495,9 @@ Thomas van Aquin:
   - start: 69
     suffix: ff
   reftype: p
+Tier:
+  GA 29/30:
+  - start: 412
 Tod:
   EWI:
   - start: 18
@@ -517,10 +533,16 @@ Welt:
   - start: 262
   - start: 263
   - start: 264
+  - end: 413
+    start: 411
 Weltalter:
   WD:
   - start: 269
     suffix: ff
+Weltbildung:
+  GA 29/30:
+  - end: 414
+    start: 413
 Weltnacht:
   WD:
   - start: 269
@@ -529,6 +551,9 @@ Wesen des Menschen:
   GA 29/30:
   - end: 408
     start: 406
+  - start: 410
+  - start: 413
+    suffix: f
 Wissenschaft der Logik:
   WBPh:
   - start: 251
@@ -536,6 +561,9 @@ Wissenschaft der Logik:
 Zeitlichkeit des Daseins:
   GA 29/30:
   - start: 253
+Zugänglichkeit des Seienden:
+  GA 29/30:
+  - start: 412
 antiken Ontologie:
   SZ:
   - start: 4
@@ -585,6 +613,8 @@ im Ganzen:
   - end: 13
     start: 11
   - start: 85
+  - end: 416
+    start: 410
 rechnende Denken:
   GA 16:
   - end: 520
