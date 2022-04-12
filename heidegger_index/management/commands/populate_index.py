@@ -29,8 +29,9 @@ class Command(BaseCommand):
             works_data = yaml.load(f)
 
         descriptions = {}
-        for fpath in glob(str(settings.DESCRIPTIONS_DIR / "*.md")):
-            print(fpath)
+        for fpath in tqdm(
+            glob(str(settings.DESCRIPTIONS_DIR / "*.md")), desc="Loading descriptions"
+        ):
             lemma = Path(fpath).stem
             with open(fpath) as f:
                 content = markdown(f.read())
