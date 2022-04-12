@@ -323,6 +323,10 @@ Leere im Ganzen:
 Lichtung:
   WD:
   - start: 273
+Logik:
+  GA 29/30:
+  - end: 421
+    start: 418
 Maschine:
   EWI:
   - start: 35
@@ -549,6 +553,7 @@ Weltbildung:
   GA 29/30:
   - end: 414
     start: 413
+  - start: 419
 Weltnacht:
   WD:
   - start: 269
@@ -560,6 +565,7 @@ Wesen des Menschen:
   - start: 410
   - start: 413
     suffix: f
+  - start: 419
 Wissenschaft der Logik:
   WBPh:
   - start: 251
@@ -570,6 +576,14 @@ Zeitlichkeit des Daseins:
 Zugänglichkeit des Seienden:
   GA 29/30:
   - start: 412
+als:
+  GA 29/30:
+  - start: 416
+    suffix: f
+als solches:
+  GA 29/30:
+  - start: 416
+  - start: 420
 antiken Ontologie:
   SZ:
   - start: 4
@@ -646,6 +660,10 @@ unbestimmte Unmittelbare:
 κίνησις:
   WBPh:
   - start: 241
+λóγος:
+  GA 29/30:
+  - end: 420
+    start: 418
 λόγος:
   WBPh:
   - start: 251
