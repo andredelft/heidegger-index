@@ -241,6 +241,8 @@ Hebel, Johann Peter:
   - start: 521
   reftype: p
 Hegel, Georg Wilhelm Friedrich:
+  GA 29/30:
+  - start: 420
   SZ:
   - start: 3
   WBPh:
@@ -286,6 +288,7 @@ Kant, Immanuel:
   GA 29/30:
   - end: 423
     start: 421
+  - start: 421
   WBPh:
   - start: 251
   reftype: p
