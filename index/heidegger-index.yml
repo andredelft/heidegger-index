@@ -7,6 +7,10 @@ Alltäglichkeit:
   - end: 400
     start: 398
   - start: 405
+Anspruch:
+  GA 29/30:
+  - start: 429
+  - start: 428
 Anthropologie:
   GA 29/30:
   - start: 406
@@ -88,6 +92,8 @@ Dasein:
   - start: 251
   - end: 411
     start: 410
+  - end: 429
+    start: 425
 Dasein im Menschen:
   GA 29/30:
   - start: 414
@@ -289,6 +295,11 @@ Kant, Immanuel:
   - end: 423
     start: 421
   - start: 421
+  - end: 423
+    start: 422
+  - start: 429
+  - end: 431
+    start: 430
   WBPh:
   - start: 251
   reftype: p
@@ -416,6 +427,8 @@ Philosophie:
   GA 29/30:
   - start: 259
   - start: 260
+  - end: 431
+    start: 421
 Plato:
   SZ:
   - start: 3
@@ -451,6 +464,8 @@ Sein und Zeit:
   - start: 262
   - end: 263
     start: 262
+  - end: 428
+    start: 425
   ZEG:
   - start: 63
   reftype: w
@@ -514,6 +529,11 @@ Tier:
 Tod:
   EWI:
   - start: 18
+  GA 29/30:
+  - end: 426
+    start: 425
+  - end: 426
+    start: 425
 Trieb:
   GA 29/30:
   - start: 362
@@ -533,10 +553,18 @@ Verhalten:
 Verwahrlosung:
   EWI:
   - start: 47
+Verwandlung:
+  GA 29/30:
+  - start: 428
+    suffix: f
 Vom Wesen des Grundes:
   GA 29/30:
   - start: 261
   reftype: w
+Vorhandenen:
+  GA 29/30:
+  - end: 424
+    start: 423
 Welt:
   GA 29/30:
   - start: 251
@@ -627,6 +655,10 @@ der Feldberg:
 der Wille:
   WD:
   - start: 278
+formale Anzeige:
+  GA 29/30:
+  - end: 431
+    start: 421
 im Ganzen:
   GA 29/30:
   - start: 251
