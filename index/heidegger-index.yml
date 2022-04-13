@@ -23,6 +23,7 @@ Aristoteles:
     start: 64
   - end: 68
     start: 67
+  - start: 439
   SZ:
   - start: 3
   reftype: p
@@ -33,6 +34,12 @@ Augenblick:
 Ausbeutung:
   EWI:
   - start: 29
+Aussagesatz:
+  GA 29/30:
+  - end: 419
+    start: 416
+  - end: 440
+    start: 435
 Baer, Karl Ernst von:
   GA 29/30:
   - start: 378
@@ -346,6 +353,8 @@ Logik:
   GA 29/30:
   - end: 421
     start: 418
+  - end: 440
+    start: 438
 Maschine:
   EWI:
   - start: 35
@@ -441,6 +450,10 @@ Philosophieren:
 Plato:
   SZ:
   - start: 3
+  reftype: p
+Platon:
+  GA 29/30:
+  - start: 439
   reftype: p
 Rand der Möglichkeit:
   GA 29/30:
@@ -629,6 +642,9 @@ als:
   GA 29/30:
   - start: 416
     suffix: f
+  - start: 435
+    suffix: f
+  - start: 440
 als solches:
   GA 29/30:
   - start: 416
@@ -677,6 +693,9 @@ formale Anzeige:
   GA 29/30:
   - end: 431
     start: 421
+ganz Andere:
+  GA 29/30:
+  - start: 440
 im Ganzen:
   GA 29/30:
   - start: 251
@@ -688,6 +707,9 @@ im Ganzen:
   - start: 85
   - end: 416
     start: 410
+  - start: 440
+  - start: 435
+    suffix: f
 rechnende Denken:
   GA 16:
   - end: 520
@@ -717,6 +739,8 @@ unbestimmte Unmittelbare:
   GA 29/30:
   - end: 420
     start: 418
+  - end: 440
+    start: 438
 λόγος:
   WBPh:
   - start: 251
