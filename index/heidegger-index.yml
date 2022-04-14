@@ -27,6 +27,8 @@ Aristoteles:
   - start: 441
   - end: 448
     start: 442
+  - end: 450
+    start: 448
   SZ:
   - start: 3
   reftype: p
@@ -43,6 +45,8 @@ Aussagesatz:
     start: 416
   - end: 440
     start: 435
+  - end: 452
+    start: 448
 Baer, Karl Ernst von:
   GA 29/30:
   - start: 378
@@ -58,6 +62,9 @@ Befreiung des Daseins im Menschen:
   - start: 255
   - reftype: r
     start: 257
+Benehmen:
+  GA 29/30:
+  - start: 450
 Benommenheit:
   GA 29/30:
   - start: 443
@@ -119,6 +126,8 @@ De Interpretatione:
   GA 29/30:
   - start: 443
     suffix: ff
+  - end: 450
+    start: 448
   reftype: w
 Denken:
   GA 16:
@@ -144,6 +153,11 @@ Dürftiger Zeit:
 Endlichkeit des Daseins:
   GA 29/30:
   - start: 252
+Entbergen:
+  GA 29/30:
+  - start: 449
+    suffix: f
+  - start: 452
 Entfernung:
   EWI:
   - start: 2
@@ -602,6 +616,11 @@ Trieb:
     start: 7
   - start: 11
   - start: 33
+Verbergen:
+  GA 29/30:
+  - start: 449
+    suffix: f
+  - start: 452
 Vereinzelung:
   GA 29/30:
   - start: 251
@@ -613,6 +632,7 @@ Verhalten:
 Vernehmen:
   GA 29/30:
   - start: 443
+  - start: 450
 Verwahrlosung:
   EWI:
   - start: 47
@@ -659,6 +679,10 @@ Weltnacht:
   WD:
   - start: 269
     suffix: ff
+Weltphänomen:
+  GA 29/30:
+  - start: 450
+    suffix: f
 Wesen des Menschen:
   GA 29/30:
   - end: 408
@@ -695,6 +719,7 @@ als:
     suffix: f
   - start: 440
   - start: 441
+  - start: 450
 als solches:
   GA 29/30:
   - start: 416
@@ -791,6 +816,7 @@ unbestimmte Unmittelbare:
   GA 29/30:
   - start: 442
     suffix: f
+  - start: 451
 κατηγορία:
   WBPh:
   - start: 250
@@ -809,6 +835,12 @@ unbestimmte Unmittelbare:
 λόγος:
   GA 29/30:
   - start: 441
+  - end: 452
+    start: 448
+λόγος ἀποφαντικός:
+  GA 29/30:
+  - end: 452
+    start: 448
 λόγος:
   WBPh:
   - start: 251
@@ -842,6 +874,14 @@ unbestimmte Unmittelbare:
   WD:
   - start: 278
     suffix: f
+ψεύδεσθαι:
+  GA 29/30:
+  - start: 449
+  - start: 452
+ἀλεθεύειν:
+  GA 29/30:
+  - start: 449
+  - start: 452
 ἀρχή:
   WBPh:
   - start: 244
