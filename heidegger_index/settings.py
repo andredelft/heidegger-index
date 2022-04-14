@@ -13,9 +13,9 @@ except KeyError:
     else:
         raise RuntimeError("Missing SECRET_KEY environment variable")
 
-ALLOWED_HOSTS = ["delve.nu", "localhost"]
+ALLOWED_HOSTS = ["heidegger.delve.nu", "delve.nu", "localhost"]
 
-URL_PREFIX = "heidegger-index/"
+URL_PREFIX = "index/"
 
 
 # Application definition
