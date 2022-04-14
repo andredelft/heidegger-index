@@ -29,6 +29,8 @@ Aristoteles:
     start: 442
   - end: 450
     start: 448
+  - end: 456
+    start: 454
   SZ:
   - start: 3
   reftype: p
@@ -47,6 +49,8 @@ Aussagesatz:
     start: 435
   - end: 452
     start: 448
+  - end: 453
+    start: 452
 Baer, Karl Ernst von:
   GA 29/30:
   - start: 378
@@ -129,6 +133,11 @@ De Interpretatione:
   - end: 450
     start: 448
   reftype: w
+De anima:
+  GA 29/30:
+  - end: 455
+    start: 454
+  reftype: w
 Denken:
   GA 16:
   - start: 518
@@ -158,6 +167,8 @@ Entbergen:
   - start: 449
     suffix: f
   - start: 452
+  - end: 455
+    start: 453
 Entfernung:
   EWI:
   - start: 2
@@ -621,6 +632,8 @@ Verbergen:
   - start: 449
     suffix: f
   - start: 452
+  - end: 455
+    start: 453
 Vereinzelung:
   GA 29/30:
   - start: 251
@@ -633,6 +646,8 @@ Vernehmen:
   GA 29/30:
   - start: 443
   - start: 450
+  - start: 454
+    suffix: ff
 Verwahrlosung:
   EWI:
   - start: 47
@@ -720,6 +735,7 @@ als:
   - start: 440
   - start: 441
   - start: 450
+  - start: 456
 als solches:
   GA 29/30:
   - start: 416
@@ -790,6 +806,7 @@ im Ganzen:
   - start: 435
     suffix: f
   - start: 441
+  - start: 457
 rechnende Denken:
   GA 16:
   - end: 520
@@ -817,6 +834,8 @@ unbestimmte Unmittelbare:
   - start: 442
     suffix: f
   - start: 451
+  - start: 454
+    suffix: f
 κατηγορία:
   WBPh:
   - start: 250
@@ -837,10 +856,14 @@ unbestimmte Unmittelbare:
   - start: 441
   - end: 452
     start: 448
+  - end: 456
+    start: 452
 λόγος ἀποφαντικός:
   GA 29/30:
   - end: 452
     start: 448
+  - end: 454
+    start: 452
 λόγος:
   WBPh:
   - start: 251
