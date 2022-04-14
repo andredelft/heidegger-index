@@ -843,21 +843,6 @@ unbestimmte Unmittelbare:
 κίνησις:
   WBPh:
   - start: 241
-λóγος:
-  GA 29/30:
-  - end: 420
-    start: 418
-  - end: 440
-    start: 438
-  - end: 448
-    start: 442
-λόγος:
-  GA 29/30:
-  - start: 441
-  - end: 452
-    start: 448
-  - end: 456
-    start: 452
 λόγος ἀποφαντικός:
   GA 29/30:
   - end: 452
@@ -865,6 +850,14 @@ unbestimmte Unmittelbare:
   - end: 454
     start: 452
 λόγος:
+  GA 29/30:
+  - start: 441
+  - end: 420
+    start: 418
+  - end: 440
+    start: 438
+  - end: 467
+    start: 442
   WBPh:
   - start: 251
 μεταβολή:
