@@ -11,7 +11,6 @@
 {% if work_lemma %}
   <h2>Mentions of <em>{{ work.csl_json.title }}</em></h2>
   {% include '_page_ref_list.html' with page_refs=work_lemma verbose_titles=True only %}
-    </ul>
 {% endif %}
 <h2>Index terms</h2>
 {% regroup page_refs by lemma as lemma_list %}
