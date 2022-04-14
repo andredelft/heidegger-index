@@ -24,6 +24,9 @@ Aristoteles:
   - end: 68
     start: 67
   - start: 439
+  - start: 441
+  - end: 448
+    start: 442
   SZ:
   - start: 3
   reftype: p
@@ -55,6 +58,9 @@ Befreiung des Daseins im Menschen:
   - start: 255
   - reftype: r
     start: 257
+Benommenheit:
+  GA 29/30:
+  - start: 443
 Benommenheit des Tieres:
   GA 29/30:
   - start: 362
@@ -109,6 +115,11 @@ Dasein im Menschen:
 Daseinsgeschichte:
   GA 29/30:
   - start: 432
+De Interpretatione:
+  GA 29/30:
+  - start: 443
+    suffix: ff
+  reftype: w
 Denken:
   GA 16:
   - start: 518
@@ -165,6 +176,9 @@ Franz Suarez:
   - start: 77
     suffix: ff
   reftype: p
+Fuge:
+  GA 29/30:
+  - start: 445
 Gebrochenheit des Daseins:
   GA 29/30:
   - start: 252
@@ -302,6 +316,10 @@ Hölderlin, Friedrich:
   - start: 269
     suffix: ff
   reftype: p
+Kant und das Problem der Metaphysik:
+  GA 29/30:
+  - start: 441
+  reftype: w
 Kant, Immanuel:
   GA 29/30:
   - end: 423
@@ -365,6 +383,9 @@ Meister Eckhart:
 Mensch qua Mensch:
   GA 29/30:
   - start: 414
+Miteinandersein:
+  GA 29/30:
+  - start: 447
 Mozart, Wolfgang Amadeus:
   SvG:
   - end: 118
@@ -483,12 +504,12 @@ Seiende im Ganzen:
   - start: 279
 Sein und Zeit:
   GA 29/30:
-  - start: 262
   - end: 263
     start: 262
   - end: 428
     start: 425
   - start: 433
+  - start: 441
   ZEG:
   - start: 63
   reftype: w
@@ -521,6 +542,9 @@ Spinoza, Baruch:
     start: 59
   reftype: p
 Sprache:
+  GA 29/30:
+  - start: 442
+    suffix: f
   WD:
   - start: 274
     suffix: ff
@@ -534,6 +558,10 @@ Stimmung:
   GA 29/30:
   - end: 410
     start: 409
+Symbol:
+  GA 29/30:
+  - end: 448
+    start: 444
 System:
   GA 29/30:
   - start: 431
@@ -553,6 +581,8 @@ Thomas van Aquin:
 Tier:
   GA 29/30:
   - start: 412
+  - end: 445
+    start: 442
 Tod:
   EWI:
   - start: 18
@@ -561,6 +591,9 @@ Tod:
     start: 425
   - end: 426
     start: 425
+Tranzendenz:
+  GA 29/30:
+  - start: 447
 Trieb:
   GA 29/30:
   - start: 362
@@ -577,6 +610,9 @@ Vereinzelung:
 Verhalten:
   SZ:
   - start: 4
+Vernehmen:
+  GA 29/30:
+  - start: 443
 Verwahrlosung:
   EWI:
   - start: 47
@@ -587,6 +623,7 @@ Verwandlung:
 Vom Wesen des Grundes:
   GA 29/30:
   - start: 261
+  - start: 441
   reftype: w
 Vorhandenen:
   GA 29/30:
@@ -606,6 +643,8 @@ Welt:
   - end: 413
     start: 411
   - start: 434
+    suffix: f
+  - start: 442
     suffix: f
 Weltalter:
   WD:
@@ -628,10 +667,20 @@ Wesen des Menschen:
   - start: 413
     suffix: f
   - start: 419
+  - start: 442
+    suffix: f
+  - start: 444
+    suffix: f
+  - start: 447
+  - start: 446
 Wissenschaft der Logik:
   WBPh:
   - start: 251
   reftype: w
+Wort:
+  GA 29/30:
+  - end: 447
+    start: 446
 Zeitlichkeit des Daseins:
   GA 29/30:
   - start: 253
@@ -645,10 +694,14 @@ als:
   - start: 435
     suffix: f
   - start: 440
+  - start: 441
 als solches:
   GA 29/30:
   - start: 416
   - start: 420
+animal rationale:
+  GA 29/30:
+  - start: 442
 antiken Ontologie:
   SZ:
   - start: 4
@@ -693,6 +746,7 @@ formale Anzeige:
   GA 29/30:
   - end: 431
     start: 421
+  - start: 441
 ganz Andere:
   GA 29/30:
   - start: 440
@@ -710,6 +764,7 @@ im Ganzen:
   - start: 440
   - start: 435
     suffix: f
+  - start: 441
 rechnende Denken:
   GA 16:
   - end: 520
@@ -728,6 +783,14 @@ unbestimmte Unmittelbare:
   - start: 12
   WBPh:
   - start: 243
+ζῷον αλóγον:
+  GA 29/30:
+  - start: 442
+    suffix: f
+ζῷον λóγον ἔχον:
+  GA 29/30:
+  - start: 442
+    suffix: f
 κατηγορία:
   WBPh:
   - start: 250
@@ -741,12 +804,21 @@ unbestimmte Unmittelbare:
     start: 418
   - end: 440
     start: 438
+  - end: 448
+    start: 442
+λόγος:
+  GA 29/30:
+  - start: 441
 λόγος:
   WBPh:
   - start: 251
 μεταβολή:
   WBPh:
   - start: 247
+σúμβολον:
+  GA 29/30:
+  - end: 447
+    start: 444
 τέλος:
   WBPh:
   - start: 249
