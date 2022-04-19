@@ -17,8 +17,8 @@ Anthropologie:
   - start: 408
 Antiphon:
   WBPh:
-  - start: 263
-    end: 265
+  - end: 265
+    start: 263
   reftype: p
 Aristoteles:
   GA 29/30:
@@ -42,6 +42,9 @@ Aristoteles:
   - start: 237
     suffix: ff
   reftype: p
+Atomzeitalter:
+  GA 16:
+  - start: 522
 Augenblick:
   GA 29/30:
   - start: 251
@@ -101,6 +104,9 @@ Beziehung zu Seiendem als Solchem:
 Blick der Entschlossenheit:
   GA 29/30:
   - start: 251
+Bodenständigkeit:
+  GA 16:
+  - start: 522
 Buytendijk, Frederik Jacobus Johannes:
   GA 29/30:
   - end: 376
@@ -219,6 +225,9 @@ Gedankenlosigkeit:
   GA 16:
   - end: 519
     start: 518
+Gegenstand:
+  GA 16:
+  - start: 523
 Gegnet:
   GA 55:
   - start: 335
@@ -442,6 +451,8 @@ Natur:
   EWI:
   - start: 41
     suffix: ff
+  GA 16:
+  - start: 523
   GA 29/30:
   - end: 404
     start: 402
@@ -604,6 +615,8 @@ System:
   - start: 431
     suffix: f
 Technik:
+  GA 16:
+  - start: 523
   GA 42:
   - start: 55
 Thomans von Aquin:
@@ -724,6 +737,9 @@ Wesen des Menschen:
     suffix: f
   - start: 447
   - start: 446
+Wissenschaft:
+  GA 16:
+  - start: 523
 Wissenschaft der Logik:
   WBPh:
   - start: 251
@@ -773,9 +789,10 @@ begegnen:
 besinnliche Nachdenken:
   GA 16:
   - start: 520
-boden-ständig:
+bodenständig:
   GA 16:
   - start: 521
+    suffix: f
 das Heilige:
   WD:
   - start: 272
@@ -823,6 +840,7 @@ rechnende Denken:
   GA 16:
   - end: 520
     start: 519
+  - start: 523
 tiefe Langeweile:
   GA 29/30:
   - end: 410

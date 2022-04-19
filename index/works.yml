@@ -42,6 +42,50 @@ SZ:
   title: Sein und Zeit
   type: book
   language: german
+G:
+  author:
+  - family: Heidegger
+    given: Martin
+  collection-editor:
+  - family: Klostermann
+    given: Vittorio
+  collection-number: 'band 16'
+  collection-title: Gesamtausgabe
+  container-title: "Reden und Zeugnisse eines Lebensweg: 1910–1976"
+  editor:
+  - family: Heidegger
+    given: Hermann
+  id: G
+  issued:
+    date-parts:
+    - - '2000'
+  page: 517-529
+  publisher: Vittorio Klostermann
+  publisher-place: Frankfurt am Main
+  title: Gelassenheit (30. Oktober 1955)
+  type: chapter
+  language: german
+"GA 16":
+  author:
+  - family: Heidegger
+    given: Martin
+  collection-editor:
+  - family: Klostermann
+    given: Vittorio
+  collection-number: 'band 16'
+  collection-title: Gesamtausgabe
+  editor:
+  - family: Heidegger
+    given: Hermann
+  id: 'GA 16'
+  issued:
+    date-parts:
+    - - '2000'
+  publisher: Vittorio Klostermann
+  publisher-place: Frankfurt am Main
+  title: "Reden und Zeugnisse eines Lebensweg: 1910–1976"
+  type: chapter
+  language: german
 "GA 29/30":
   author:
   - family: Heidegger
@@ -214,4 +258,3 @@ WBPh:
   publisher-place: Frankfurt am Main
   title: Vom Wesen und Begriff der Φὐσις, Aristoteles, Physik B, 1
   type: chapter
-
