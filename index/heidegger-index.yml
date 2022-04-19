@@ -15,6 +15,11 @@ Anthropologie:
   GA 29/30:
   - start: 406
   - start: 408
+Antiphon:
+  WBPh:
+  - start: 263
+    end: 265
+  reftype: p
 Aristoteles:
   GA 29/30:
   - end: 57
@@ -33,6 +38,9 @@ Aristoteles:
     start: 454
   SZ:
   - start: 3
+  WBPh:
+  - start: 237
+    suffix: ff
   reftype: p
 Augenblick:
   GA 29/30:
@@ -525,8 +533,12 @@ Seiende im Ganzen:
   - start: 251
   WBPh:
   - start: 238
+  - start: 261
   WD:
   - start: 279
+Seiendheit:
+  WBPh:
+  - start: 257
 Sein und Zeit:
   GA 29/30:
   - end: 263
@@ -840,6 +852,9 @@ unbestimmte Unmittelbare:
   WBPh:
   - start: 250
     suffix: f
+κρίνειν:
+  WBPh:
+  - start: 262
 κίνησις:
   WBPh:
   - start: 241
@@ -863,19 +878,39 @@ unbestimmte Unmittelbare:
 μεταβολή:
   WBPh:
   - start: 247
+οὐσία:
+  WBPh:
+  - start: 257
+    suffix: f
+  - start: 255
+  - start: 262
 σúμβολον:
   GA 29/30:
   - end: 447
     start: 444
+συμβεβηκός:
+  WBPh:
+  - start: 256
+  - start: 252
+  - start: 253
 τέλος:
   WBPh:
   - start: 249
 τέχνη:
   WBPh:
   - start: 249
+    suffix: f
+  - start: 254
+    suffix: f
 τόπος:
   WBPh:
   - start: 246
+φύσει ὄντα:
+  WBPh:
+  - start: 253
+  - start: 256
+  - end: 261
+    start: 259
 φύσις:
   FT:
   - start: 12
@@ -905,3 +940,9 @@ unbestimmte Unmittelbare:
 ἐπαγωγή:
   WBPh:
   - start: 242
+  - start: 259
+  - start: 262
+ὑποκείμενον:
+  WBPh:
+  - start: 258
+    suffix: f
