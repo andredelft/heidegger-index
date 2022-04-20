@@ -61,6 +61,7 @@ SZ:
     - - '1983'
   publisher: Vittorio Klostermann
   publisher-place: Frankfurt am Main
+  short-title: "Die Grundbegriffe der Metaphysik"
   title: "Die Grundbegriffe der Metaphysik: Welt, Endlichkeit, Einsamkeit"
   type: book
   language: german
@@ -167,6 +168,7 @@ ZEG:
   language: german
   publisher: Vittorio Klostermann
   publisher-place: Frankfurt am Main
+  short-title: 'Zur Erörterung der Gelassenheit'
   title: 'Zur Erörterung der Gelassenheit: Aus einem Feldweggespräch über das Denken'
   type: chapter
   page: 37-74
@@ -212,6 +214,6 @@ WBPh:
   page: 239-302
   publisher: Vittorio Klostermann
   publisher-place: Frankfurt am Main
+  short-title: Vom Wesen und Begriff der Φὐσις
   title: Vom Wesen und Begriff der Φὐσις, Aristoteles, Physik B, 1
   type: chapter
-
