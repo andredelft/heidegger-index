@@ -21,11 +21,11 @@ class WorkDetailView(DetailView):
     context_object_name = "work"
 
     def _get_work_lemma(self, work: Work):
-    short_title = work.csl_json.get("title-short")  # Geeft None terug als het veld niet bestaat
-    if short_title:
-        return PageReference.objects.filter(lemma__value=short_title, lemma__type="w")
-    else:
-        return PageReference.objects.filter(lemma__value=work.csl_json["title"], lemma__type="w")
+        short_title = work.csl_json.get("title-short")  # Geeft None terug als het veld niet bestaat
+        if short_title:
+            return PageReference.objects.filter(lemma__value=short_title, lemma__type="w")
+        else:
+            return PageReference.objects.filter(lemma__value=work.csl_json["title"], lemma__type="w")
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
