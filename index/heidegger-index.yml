@@ -39,6 +39,9 @@ Aristoteles:
   - start: 484
     suffix: f
   - start: 487
+  - start: 488
+  - start: 490
+    suffix: f
   SZ:
   - start: 3
   WBPh:
@@ -86,6 +89,7 @@ Benehmen:
 Benommenheit:
   GA 29/30:
   - start: 443
+  - start: 489
 Benommenheit des Tieres:
   GA 29/30:
   - start: 362
@@ -189,6 +193,7 @@ Entbergen:
   - start: 452
   - end: 455
     start: 453
+  - start: 490
 Entfernung:
   EWI:
   - start: 2
@@ -226,6 +231,9 @@ Franz Suarez:
 Fuge:
   GA 29/30:
   - start: 445
+Fähigkeit:
+  GA 29/30:
+  - start: 489
 Gebrochenheit des Daseins:
   GA 29/30:
   - start: 252
@@ -308,6 +316,7 @@ Grundstimmung:
   - end: 411
     start: 410
   - start: 487
+  - start: 490
 Grundstimmung unseres Daseins:
   GA 29/30:
   - end: 409
@@ -458,6 +467,8 @@ Möglichkeit der λόγος:
   GA 29/30:
   - end: 487
     start: 485
+  - start: 489
+    suffix: f
 Müller, Johannes:
   GA 29/30:
   - start: 372
@@ -570,6 +581,10 @@ Seiende im Ganzen:
 Seiendheit:
   WBPh:
   - start: 257
+Sein:
+  GA 29/30:
+  - start: 489
+  - start: 491
 Sein und Zeit:
   GA 29/30:
   - end: 263
@@ -672,6 +687,9 @@ Trieb:
     start: 7
   - start: 11
   - start: 33
+Unheimlichkeit:
+  GA 29/30:
+  - start: 490
 Verbergen:
   GA 29/30:
   - start: 449
@@ -679,6 +697,7 @@ Verbergen:
   - start: 452
   - end: 455
     start: 453
+  - start: 490
 Vereinzelung:
   GA 29/30:
   - start: 251
@@ -888,6 +907,7 @@ unbestimmte Unmittelbare:
   - start: 484
     suffix: f
   - start: 487
+  - start: 490
 ζῷον αλóγον:
   GA 29/30:
   - start: 442
@@ -902,6 +922,8 @@ unbestimmte Unmittelbare:
 κατάφασις:
   GA 29/30:
   - start: 484
+  - start: 487
+  - start: 490
 κατηγορία:
   WBPh:
   - start: 250
@@ -916,6 +938,8 @@ unbestimmte Unmittelbare:
   GA 29/30:
   - end: 487
     start: 484
+  - end: 491
+    start: 487
 λόγος ἀποφαντικός:
   GA 29/30:
   - end: 452
@@ -923,6 +947,7 @@ unbestimmte Unmittelbare:
   - end: 454
     start: 452
   - start: 487
+  - start: 489
 λόγος:
   GA 29/30:
   - start: 441
@@ -957,6 +982,8 @@ unbestimmte Unmittelbare:
   - start: 484
     suffix: f
   - start: 487
+  - start: 490
+    suffix: f
 τέλος:
   WBPh:
   - start: 249
@@ -994,14 +1021,20 @@ unbestimmte Unmittelbare:
   - start: 449
   - start: 452
   - start: 484
+  - start: 490
+  - start: 488
 ἀλεθεύειν:
   GA 29/30:
   - start: 449
   - start: 452
   - start: 484
+  - start: 487
+  - start: 490
+  - start: 488
 ἀπόφασις:
   GA 29/30:
   - start: 484
+  - start: 490
 ἀρχή:
   WBPh:
   - start: 244
