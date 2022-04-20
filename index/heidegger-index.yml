@@ -36,6 +36,9 @@ Aristoteles:
     start: 448
   - end: 456
     start: 454
+  - start: 484
+    suffix: f
+  - start: 487
   SZ:
   - start: 3
   WBPh:
@@ -134,6 +137,9 @@ Dasein:
     start: 425
   - end: 433
     start: 432
+Dasein des Menschen:
+  GA 29/30:
+  - start: 487
 Dasein im Menschen:
   GA 29/30:
   - start: 414
@@ -206,6 +212,8 @@ Fehl Gottes:
 Frage nach dem Sein:
   GA 29/30:
   - start: 256
+  - start: 484
+    suffix: f
 Frage nach dem Sinn von Sein:
   SZ:
   - end: 8
@@ -299,6 +307,7 @@ Grundstimmung:
   - start: 411
   - end: 411
     start: 410
+  - start: 487
 Grundstimmung unseres Daseins:
   GA 29/30:
   - end: 409
@@ -358,6 +367,10 @@ Hölderlin, Friedrich:
   - start: 269
     suffix: ff
   reftype: p
+Kant:
+  GA 29/30:
+  - start: 485
+  reftype: p
 Kant und das Problem der Metaphysik:
   GA 29/30:
   - start: 441
@@ -400,6 +413,7 @@ Langeweile:
   - start: 409
   - end: 411
     start: 410
+  - start: 487
 Leere:
   GA 29/30:
   - start: 367
@@ -440,6 +454,10 @@ Mussolini, Benito:
 Mythos:
   WD:
   - start: 273
+Möglichkeit der λόγος:
+  GA 29/30:
+  - end: 487
+    start: 485
 Müller, Johannes:
   GA 29/30:
   - start: 372
@@ -513,6 +531,8 @@ Philosophieren:
   GA 29/30:
   - start: 415
 Plato:
+  GA 29/30:
+  - start: 484
   SZ:
   - start: 3
   reftype: p
@@ -673,6 +693,7 @@ Vernehmen:
   - start: 450
   - start: 454
     suffix: ff
+  - start: 487
 Verwahrlosung:
   EWI:
   - start: 47
@@ -723,6 +744,8 @@ Weltphänomen:
   GA 29/30:
   - start: 450
     suffix: f
+  - start: 483
+  - start: 483
 Wesen des Menschen:
   GA 29/30:
   - end: 408
@@ -737,6 +760,8 @@ Wesen des Menschen:
     suffix: f
   - start: 447
   - start: 446
+  - start: 486
+    suffix: f
 Wissenschaft:
   GA 16:
   - start: 523
@@ -764,6 +789,9 @@ als:
   - start: 441
   - start: 450
   - start: 456
+  - start: 483
+    suffix: f
+  - start: 487
 als solches:
   GA 29/30:
   - start: 416
@@ -855,6 +883,11 @@ unbestimmte Unmittelbare:
   - start: 12
   WBPh:
   - start: 243
+διαίρεσις:
+  GA 29/30:
+  - start: 484
+    suffix: f
+  - start: 487
 ζῷον αλóγον:
   GA 29/30:
   - start: 442
@@ -866,6 +899,9 @@ unbestimmte Unmittelbare:
   - start: 451
   - start: 454
     suffix: f
+κατάφασις:
+  GA 29/30:
+  - start: 484
 κατηγορία:
   WBPh:
   - start: 250
@@ -876,12 +912,17 @@ unbestimmte Unmittelbare:
 κίνησις:
   WBPh:
   - start: 241
+λόγος:
+  GA 29/30:
+  - end: 487
+    start: 484
 λόγος ἀποφαντικός:
   GA 29/30:
   - end: 452
     start: 448
   - end: 454
     start: 452
+  - start: 487
 λόγος:
   GA 29/30:
   - start: 441
@@ -911,6 +952,11 @@ unbestimmte Unmittelbare:
   - start: 256
   - start: 252
   - start: 253
+σύνθεσις:
+  GA 29/30:
+  - start: 484
+    suffix: f
+  - start: 487
 τέλος:
   WBPh:
   - start: 249
@@ -947,10 +993,15 @@ unbestimmte Unmittelbare:
   GA 29/30:
   - start: 449
   - start: 452
+  - start: 484
 ἀλεθεύειν:
   GA 29/30:
   - start: 449
   - start: 452
+  - start: 484
+ἀπόφασις:
+  GA 29/30:
+  - start: 484
 ἀρχή:
   WBPh:
   - start: 244
