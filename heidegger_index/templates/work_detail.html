@@ -8,6 +8,10 @@
 <h1>{{ work.csl_json.title }}</h1>
 <h2>Reference</h2>
 <p>{{ work.reference | safe }}</p>
+{% if work_lemma %}
+  <h2>Mentions of <em>{{ work.csl_json.title }}</em></h2>
+  {% include '_page_ref_list.html' with page_refs=work_lemma verbose_titles=True only %}
+{% endif %}
 <h2>Index terms</h2>
 {% regroup page_refs by lemma as lemma_list %}
 <ul class="lemma-refs">
