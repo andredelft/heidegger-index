@@ -19,6 +19,7 @@ Antiphon:
   WBPh:
   - end: 265
     start: 263
+  - start: 271
   reftype: p
 Aristoteles:
   GA 29/30:
@@ -162,6 +163,10 @@ De anima:
   - end: 455
     start: 454
   reftype: w
+Demokrit:
+  WBPh:
+  - start: 266
+  reftype: p
 Denken:
   GA 16:
   - start: 518
@@ -183,6 +188,9 @@ Dürftiger Zeit:
   WD:
   - start: 269
     suffix: ff
+Elemente:
+  WBPh:
+  - start: 265
 Endlichkeit des Daseins:
   GA 29/30:
   - start: 252
@@ -211,6 +219,10 @@ Etymologie:
 Existenz:
   GA 29/30:
   - start: 257
+Farben:
+  WBPh:
+  - start: 260
+  - start: 262
 Fehl Gottes:
   WD:
   - start: 269
@@ -358,6 +370,9 @@ Hergestelltheit:
   WBPh:
   - start: 248
     suffix: f
+Herstellen:
+  WBPh:
+  - start: 272
 Hitler, Adolf:
   GA 42:
   - start: 40
@@ -379,6 +394,8 @@ Hölderlin, Friedrich:
 Kant:
   GA 29/30:
   - start: 485
+  WBPh:
+  - start: 272
   reftype: p
 Kant und das Problem der Metaphysik:
   GA 29/30:
@@ -412,6 +429,8 @@ Kreutzer, Conradin:
 Kritik der Reinen Vernunft:
   GA 29/30:
   - start: 422
+  WBPh:
+  - start: 272
   reftype: w
 Langeweile:
   EWI:
@@ -570,6 +589,10 @@ Rádl, Emanuel:
 Rätsel:
   SZ:
   - start: 4
+Schein:
+  WBPh:
+  - start: 268
+  - start: 269
 Seiende im Ganzen:
   GA 29/30:
   - start: 251
@@ -585,6 +608,9 @@ Sein:
   GA 29/30:
   - start: 489
   - start: 491
+Sein des Seienden:
+  WBPh:
+  - start: 261
 Sein und Zeit:
   GA 29/30:
   - end: 263
@@ -599,6 +625,9 @@ Sein und Zeit:
 Sein zu Seiendem als Seidendem:
   SZ:
   - start: 4
+Seinsblinden:
+  WBPh:
+  - start: 262
 Seinsgeschichte:
   WD:
   - start: 273
@@ -690,6 +719,10 @@ Trieb:
 Unheimlichkeit:
   GA 29/30:
   - start: 490
+Unverborgenheit:
+  WBPh:
+  - start: 268
+  - start: 271
 Verbergen:
   GA 29/30:
   - start: 449
@@ -766,6 +799,8 @@ Weltphänomen:
   - start: 483
   - start: 483
 Wesen des Menschen:
+  EWI:
+  - start: 70
   GA 29/30:
   - end: 408
     start: 406
@@ -781,6 +816,8 @@ Wesen des Menschen:
   - start: 446
   - start: 486
     suffix: f
+  ZEG:
+  - start: 38
 Wissenschaft:
   GA 16:
   - start: 523
@@ -846,11 +883,6 @@ das Heilige:
 das Ungesprochene:
   WD:
   - start: 273
-das Wesen des Menschen:
-  EWI:
-  - start: 70
-  ZEG:
-  - start: 38
 der Feldberg:
   GA 55:
   - start: 335
@@ -859,6 +891,9 @@ der Feldberg:
 der Wille:
   WD:
   - start: 278
+ex-sistent:
+  WBPh:
+  - start: 262
 formale Anzeige:
   GA 29/30:
   - end: 431
@@ -908,11 +943,19 @@ unbestimmte Unmittelbare:
     suffix: f
   - start: 487
   - start: 490
-ζῷον αλόγον:
+δοκεῖ:
+  WBPh:
+  - start: 270
+  - start: 269
+εἶδος:
+  WBPh:
+  - start: 273
+    suffix: f
+ζῷον αλόγον:
   GA 29/30:
   - start: 442
     suffix: f
-ζῷον λόγον ἔχον:
+ζῷον λόγον ἔχον:
   GA 29/30:
   - start: 442
     suffix: f
@@ -934,7 +977,12 @@ unbestimmte Unmittelbare:
 κίνησις:
   WBPh:
   - start: 241
-λόγος:
+  - start: 268
+  - start: 269
+  - start: 270
+  - start: 271
+  - start: 274
+λόγος:
   GA 29/30:
   - start: 441
   - end: 420
@@ -949,7 +997,9 @@ unbestimmte Unmittelbare:
     start: 487
   WBPh:
   - start: 251
-λόγος ἀποφαντικός:
+  - start: 273
+    suffix: f
+λόγος ἀποφαντικός:
   GA 29/30:
   - end: 452
     start: 448
@@ -960,16 +1010,29 @@ unbestimmte Unmittelbare:
 μεταβολή:
   WBPh:
   - start: 247
+  - start: 269
+μορφή:
+  WBPh:
+  - start: 271
+  - end: 274
+μέθοδος:
+  WBPh:
+  - start: 269
 οὐσία:
   WBPh:
   - start: 257
     suffix: f
   - start: 255
   - start: 262
-σúμβολον:
-  GA 29/30:
-  - end: 447
-    start: 444
+  - start: 264
+  - start: 265
+  - start: 268
+  - start: 270
+πρῶτον ἀρρύθμιστον:
+  WBPh:
+  - start: 266
+  - start: 270
+  - start: 271
 συμβεβηκός:
   WBPh:
   - start: 256
@@ -982,6 +1045,10 @@ unbestimmte Unmittelbare:
   - start: 487
   - start: 490
     suffix: f
+σύμβολον:
+  GA 29/30:
+  - end: 447
+    start: 444
 τέλος:
   WBPh:
   - start: 249
@@ -1000,6 +1067,7 @@ unbestimmte Unmittelbare:
   - start: 256
   - end: 261
     start: 259
+  - start: 270
 φύσις:
   FT:
   - start: 12
@@ -1037,12 +1105,30 @@ unbestimmte Unmittelbare:
   WBPh:
   - start: 244
     suffix: ff
+  - start: 268
+ἀίδιον:
+  WBPh:
+  - start: 267
 ἐπαγωγή:
   WBPh:
   - start: 242
   - start: 259
   - start: 262
+  - start: 268
+ἰδέα:
+  WBPh:
+  - start: 273
+    suffix: f
 ὑποκείμενον:
   WBPh:
   - start: 258
     suffix: f
+ὕλη:
+  WBPh:
+  - start: 271
+  - end: 272
+ῥυθμός:
+  WBPh:
+  - start: 266
+  - start: 265
+  - start: 271
