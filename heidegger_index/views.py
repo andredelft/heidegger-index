@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.views.generic.detail import DetailView
 
 from heidegger_index.models import Lemma, Work, PageReference
-from heidegger_index.settings import BASE_DIR
+from django.conf import settings
 from fuzzysearch import find_near_matches
 import yaml
 
@@ -48,7 +48,7 @@ class LemmaDetailView(DetailView):
     def _find_similar_lemmata(self, subject_lemma: Lemma, max_l_dist=2, num_results=3):
         search_term = subject_lemma.value
 
-        with open(BASE_DIR / "index" / "heidegger-index.yml") as f:
+        with open(settings.BASE_DIR / "index" / "heidegger-index.yml") as f:
             lemmata = yaml.load(f, Loader=yaml.FullLoader).keys()
 
         # Remove subject lemma from list
