@@ -1,21 +1,21 @@
 {% extends '_site_base.html' %}
 
 {% block body %}
-<h1>Heidegger index</h1>
-<p class="description">Managed by: <a href="https://github.com/andredelft" target="_blank" rel="noopener noreferrer">André van Delft</a> &amp; <a href="https://github.com/johannesdewit" target="_blank" rel="noopener noreferrer">Johannes de Wit</a></p>
+<h1 class="font-bold text-5xl py-4">Heidegger index</h1>
+<p>Managed by: <a href="https://github.com/andredelft" target="_blank" rel="noopener noreferrer">André van Delft</a> &amp; <a href="https://github.com/johannesdewit" target="_blank" rel="noopener noreferrer">Johannes de Wit</a></p>
 {% for lemma in lemmas %}
-<h3 class="lemma-header">
-  <a href="{% url 'index:lemma-detail' lemma.slug %}" class="hidden-link">{{ lemma.format }}</a>
+<h3>
+  <a href="{% url 'index:lemma-detail' lemma.slug %}">{{ lemma }}</a>
 </h3>
 {% include '_page_ref_list.html' with page_refs=lemma.pagereference_set.all only %}
 {% endfor %}
-<div class="bibliography">
+<div>
   <h2>Bibliography</h2>
-  <div class="bibliography-wrapper">
+  <div>
     {% for work in works %}
     {% if work.reference %}
-    <a class="entry-wrapper hidden-link button" href="{% url 'index:work-detail' work.slug %}">
-      <div class="entry-label">{{ work.id }}</div>
+    <a href="{% url 'index:work-detail' work.slug %}">
+      <div>{{ work.id }}</div>
       {{ work.reference|safe }}
     </a>
     {% endif %}

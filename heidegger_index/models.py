@@ -45,17 +45,6 @@ class Lemma(models.Model):
     def __str__(self):
         return self.value
 
-    def format(self):
-        format_string = f"<i>{self.value}</i>"
-        if self.type:
-            return SafeString(f"{format_string} ({self.get_type_display()})")
-        else:
-            return SafeString(format_string)
-
-    def format_just_lemma(self):
-        format_string = f"<i>{self.value}</i>"
-        return SafeString(format_string)
-
     def create_sort_key(self):
         self.sort_key = gen_sort_key(self.value)
 
