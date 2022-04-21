@@ -2,7 +2,7 @@ FROM python:3.10-alpine
 RUN apk add build-base
 
 ADD requirements.txt /
-RUN pip install -r requirements.txt
+RUN pip install -r requirements-prod.txt
 
 ADD . /
 

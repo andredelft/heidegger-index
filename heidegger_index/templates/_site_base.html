@@ -5,13 +5,34 @@
     <meta charset="utf-8">
     <title>Heidegger index</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital@0;1&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{% static 'css/index.css' %}"/>
+    <link rel="stylesheet" href="{% static 'styles.css' %}"/>
+    <style>
+    @font-face {
+      font-family: "Greek";
+      src: url("{% static 'fonts/alegreya.ttf' %}");
+      unicode-range: U+0370-03FF, U+1D00-1D7F, U+1D80-1DBF, U+1F00-1FFF, U+2100-214F,
+        U+AB30-AB6F, U+10140-1018F, U+10190-101CF, U+1D200-1D24F;
+    }
+    
+    @font-face {
+      font-family: "Greek";
+      src: url("{% static 'fonts/alegreya.ttf' %}");
+      font-style: italic;
+      unicode-range: U+0370-03FF, U+1D00-1D7F, U+1D80-1DBF, U+1F00-1FFF, U+2100-214F,
+        U+AB30-AB6F, U+10140-1018F, U+10190-101CF, U+1D200-1D24F;
+    }
+    @font-face {
+      font-family: "Crimson Pro";
+      src: url("{% static 'fonts/crimson-pro-regular.ttf' %}");
+    }
+    @font-face {
+      font-family: "Crimson Pro";
+      font-style: italic;
+      src: url("{% static 'fonts/crimson-pro-italic.ttf' %}");
+    }
+    </style>
   </head>
-  <body>
-    <div class="container">
-      {% block body %}{% endblock %}
-    </div>
+  <body class="font-serif">
+    {% block body %}{% endblock %}
   </body>
 </html>

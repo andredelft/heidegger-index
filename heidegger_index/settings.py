@@ -42,6 +42,12 @@ MIDDLEWARE = [
     "whitenoise.middleware.WhiteNoiseMiddleware",
 ]
 
+if DEBUG:
+    INSTALLED_APPS += ["django_browser_reload", "django_tailwind"]
+    MIDDLEWARE += [
+        "django_browser_reload.middleware.BrowserReloadMiddleware",
+    ]
+
 ROOT_URLCONF = "heidegger_index.urls"
 
 TEMPLATES = [
@@ -108,6 +114,8 @@ USE_TZ = True
 
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
+STATICFILES_DIRS = [BASE_DIR / "tailwind" / "dist"]
+
 STATIC_URL = f"/{URL_PREFIX}static/"
 
 STATIC_ROOT = BASE_DIR / "staticfiles"
@@ -124,3 +132,6 @@ INDEX_DIR = BASE_DIR / "index"
 WORK_REFS_FILE = INDEX_DIR / "works.yml"
 INDEX_FILE = INDEX_DIR / "heidegger-index.yml"
 DESCRIPTIONS_DIR = BASE_DIR / "index" / "descriptions"
+
+TAILWIND_STYLES_SRC_PATH = BASE_DIR / "tailwind" / "src" / "styles.css"
+TAILWIND_STYLES_DIST_PATH = BASE_DIR / "tailwind" / "dist" / "styles.css"
