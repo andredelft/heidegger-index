@@ -6,6 +6,8 @@ from pathlib import Path
 from fuzzysearch import find_near_matches
 from betacode.conv import beta_to_uni
 
+from heidegger_index.utils import gen_sort_key
+
 WORKING_DIR = Path("index")
 
 INDEX_FILE = WORKING_DIR / "heidegger-index.yml"
@@ -88,11 +90,14 @@ def add_ref(lemma, work, ref, ref_type=None, betacode=False):
 def find_ref(search_term, max_l_dist=2, num_results=5):
 
     with open(INDEX_FILE) as f:
-        lemmata = yaml.load(f).keys()
+        key_to_lemma = {
+            gen_sort_key(lemma): lemma for lemma in yaml.load(f).keys()
+        }
+        keys = key_to_lemma.keys()
 
     matches = [
-        (lemma, find_near_matches(search_term, lemma, max_l_dist=max_l_dist))
-        for lemma in lemmata
+        (key_to_lemma[key], find_near_matches(gen_sort_key(search_term), key, max_l_dist=max_l_dist))
+        for key in keys
     ]
 
     # Remove unmatched lemmata from list
