@@ -3,7 +3,6 @@ from django.views.generic.detail import DetailView
 
 from heidegger_index.models import Lemma, Work, PageReference
 from heidegger_index.utils import match_lemmata
-from django.conf import settings
 
 
 def index_view(request):
