@@ -2,9 +2,8 @@ from django.shortcuts import render
 from django.views.generic.detail import DetailView
 
 from heidegger_index.models import Lemma, Work, PageReference
+from heidegger_index.utils import match_lemmata
 from django.conf import settings
-from fuzzysearch import find_near_matches
-import yaml
 
 
 def index_view(request):
@@ -45,28 +44,12 @@ class LemmaDetailView(DetailView):
     context_object_name = "lemma"
 
     # Just a basic copy of index.py find_ref
-    def _find_similar_lemmata(self, subject_lemma: Lemma, max_l_dist=2, num_results=3):
+    def _find_similar_lemmata(self, subject_lemma: Lemma):
         search_term = subject_lemma.value
 
-        with open(settings.BASE_DIR / "index" / "heidegger-index.yml") as f:
-            lemmata = yaml.load(f, Loader=yaml.FullLoader).keys()
-
-        # Remove subject lemma from list
-        lemmata = [l for l in lemmata if l != search_term]
-
-        matches = [
-            (lemma, find_near_matches(search_term, lemma, max_l_dist=max_l_dist))
-            for lemma in lemmata
-        ]
-
-        # Remove unmatched lemmata from list
-        matches = [m for m in matches if m[1]]
-
-        # Sort by levensteihn distance first, then by lemma
-        matches.sort(key=lambda match: (min(m.dist for m in match[1]), match[0]))
-
+        matches = match_lemmata(search_term, 2, 3, False)
         similar_lemmata = []
-        for match in matches[:num_results]:
+        for match in matches[:3]:
             similar_lemmata.append(Lemma.objects.get(value=match[0]))
 
         # returns list of similar lemma objects
