@@ -8,6 +8,7 @@ from django.core.management.base import BaseCommand
 from django.conf import settings
 
 from heidegger_index.models import Work, Lemma, PageReference
+from heidegger_index.utils import gen_sort_key
 
 yaml.warnings({"YAMLLoadWarning": False})
 
@@ -47,17 +48,26 @@ class Command(BaseCommand):
             index_data = yaml.load(f)
 
         lemma_objs = dict()
+        sort_keys = dict()
         for i, (value, data) in enumerate(index_data.items()):
             lemma_obj = Lemma(id=i, value=value, type=data.pop("reftype", None))
             description = descriptions.get(value)
             if description:
                 lemma_obj.description = description
             lemma_obj.create_sort_key()
-            lemma_objs[value] = lemma_obj
+            if lemma_obj.sort_key in sort_keys.keys():
+                self.stdout.write(
+                    f'Lemma "{value}" shares sort key "{lemma_obj.sort_key}" with "{sort_keys[lemma_obj.sort_key]}". The first lemma will be omitted.'
+                )
+            else:
+                sort_keys[lemma_obj.sort_key] = value
+                lemma_objs[value] = lemma_obj
 
         Lemma.objects.bulk_create(tqdm(lemma_objs.values(), desc="Populating lemmata"))
 
         pageref_objs = []
+        # Filter all omitted lemmas that share a sort key
+        index_data = {k: v for k, v in index_data.items() if k in lemma_objs.keys()}
         for lemma_value, works in index_data.items():
             for work, page_ref_list in works.items():
 

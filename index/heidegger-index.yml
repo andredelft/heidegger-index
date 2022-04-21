@@ -908,11 +908,11 @@ unbestimmte Unmittelbare:
     suffix: f
   - start: 487
   - start: 490
-ζῷον αλóγον:
+ζῷον αλόγον:
   GA 29/30:
   - start: 442
     suffix: f
-ζῷον λóγον ἔχον:
+ζῷον λόγον ἔχον:
   GA 29/30:
   - start: 442
     suffix: f
@@ -936,10 +936,19 @@ unbestimmte Unmittelbare:
   - start: 241
 λόγος:
   GA 29/30:
+  - start: 441
+  - end: 420
+    start: 418
+  - end: 440
+    start: 438
+  - end: 467
+    start: 442
   - end: 487
     start: 484
   - end: 491
     start: 487
+  WBPh:
+  - start: 251
 λόγος ἀποφαντικός:
   GA 29/30:
   - end: 452
@@ -948,17 +957,6 @@ unbestimmte Unmittelbare:
     start: 452
   - start: 487
   - start: 489
-λόγος:
-  GA 29/30:
-  - start: 441
-  - end: 420
-    start: 418
-  - end: 440
-    start: 438
-  - end: 467
-    start: 442
-  WBPh:
-  - start: 251
 μεταβολή:
   WBPh:
   - start: 247
