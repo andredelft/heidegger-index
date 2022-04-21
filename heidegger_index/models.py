@@ -39,7 +39,7 @@ class Lemma(models.Model):
     value = models.CharField(max_length=100, unique=True)
     type = models.CharField(max_length=1, null=True, choices=TYPES.items())
     description = models.TextField(null=True)
-    sort_key = models.CharField(max_length=100, null=True)
+    sort_key = models.CharField(max_length=100, null=True, unique=True)
     slug = AutoSlugField(populate_from="value", slugify_function=slugify)
 
     def __str__(self):
