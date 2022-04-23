@@ -6,8 +6,7 @@
 <h2 class="mt-8 mb-4 text-3xl font-bold dark:text-white">Reference</h2>
 <div class="text-1.5xl {{ body_text }}">{{ work.reference | safe }}</div>
 {% if work_lemma %}
-  <h2 class="">Mentions of <em>{{ work.csl_json.title }}</em></h2>
-  {% include '_page_ref_list.html' with page_refs=work_lemma %}
+  {% include '_page_ref_list.html' with page_refs=work_lemma page_ref_list_title="Mentions of <em>"|add:work.csl_json.title|add:"</em>" %}
 {% endif %}
 <h2 class="mt-8 mb-4 text-3xl font-bold dark:text-white">Index terms</h2>
 {% include '_lemma_list.html' with lemma_list=page_refs %}

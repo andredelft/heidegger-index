@@ -1,3 +1,6 @@
+{% if page_ref_list_title %}
+  <h2 class="mt-8 mb-4 text-3xl font-bold dark:text-white">{{ page_ref_list_title|safe }}</h3>
+{% endif %}
 <ul class="pl-4 text-xl {{ body_text }}">
   {% regroup page_refs by work as work_groups %}
   {% for work, page_ref_list in work_groups %}

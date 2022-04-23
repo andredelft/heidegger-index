@@ -1,5 +1,5 @@
 {% if lemma_list_title %}
-<h3 class="mt-4 mb-2 text-2xl font-bold dark:text-white">{{ lemma_list_title }}</h3>
+  <h3 class="mt-4 mb-2 text-2xl font-bold dark:text-white">{{ lemma_list_title|safe }}</h3>
 {% endif %}
 <ul class="text-xl pl-4 {{ body_text }}">
   {% regroup lemma_list by lemma as grouped_lemma_list %}
