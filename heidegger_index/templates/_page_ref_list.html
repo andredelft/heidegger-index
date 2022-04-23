@@ -1,11 +1,11 @@
-<ul class="page-refs">
+<ul class="pl-4 text-xl {{ body_text }}">
   {% regroup page_refs by work as work_groups %}
   {% for work, page_ref_list in work_groups %}
-    <li>
+    <li class="pl-4 -indent-4">
       {% if work.reference %}
-        <a href="{% url 'index:work-detail' work.slug %}" class="hidden-link">{{ work }}</a>:
+        <a href="{% url 'index:work-detail' work.slug %}" class="{{ hidden_link_decoration }}">{{ work }}</a>:
       {% else %}
-        {{ work }}:
+        <span class="font-semibold text-black cursor-not-allowed dark:text-white" title="Reference not yet added">{{ work }}</span>:
       {% endif %}
       {{ page_ref_list|join:', ' }}
     </li>

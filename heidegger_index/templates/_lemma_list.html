@@ -1,0 +1,11 @@
+{% if lemma_list_title %}
+<h3 class="mt-4 mb-2 text-2xl font-bold dark:text-white">{{ lemma_list_title }}</h3>
+{% endif %}
+<ul class="text-xl pl-4 {{ body_text }}">
+  {% regroup lemma_list by lemma as grouped_lemma_list %}
+  {% for lemma, page_ref_list in grouped_lemma_list %}
+    <li class="pl-4 -indent-4">
+      <a href="{% url 'index:lemma-detail' lemma.slug %}" class="{{ hidden_link_decoration_medium }}">{{ lemma }}</a>: {{ page_ref_list|join:', ' }}
+    </li>
+  {% endfor %}
+</ul>

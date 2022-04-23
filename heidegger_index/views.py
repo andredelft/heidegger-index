@@ -1,3 +1,4 @@
+from django.http import Http404
 from django.shortcuts import render
 from django.views.generic.detail import DetailView
 
@@ -28,7 +29,7 @@ class WorkDetailView(DetailView):
         if short_title:
             return PageReference.objects.filter(lemma__value=short_title, lemma__type="w")
         else:
-            return PageReference.objects.filter(lemma__value=work.csl_json["title"], lemma__type="w")
+            return PageReference.objects.filter(lemma__value=work.csl_json.get("title"), lemma__type="w")
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -37,6 +38,12 @@ class WorkDetailView(DetailView):
         context["person_list"] = PageReference.objects.filter(work=context["work"], lemma__type="p")
         context["work_list"] = PageReference.objects.filter(work=context["work"], lemma__type="w")
         return context
+    
+    def render_to_response(self, context, **kwargs):
+        if not context["work"].csl_json:
+            raise Http404("Work not found")
+        else:
+            return super().render_to_response(context, **kwargs)
 
 
 class LemmaDetailView(DetailView):
