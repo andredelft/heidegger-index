@@ -9,15 +9,13 @@ prose-blockquote:text-[0.9em] prose-blockquote:leading-normal dark:prose-blockqu
   {{ lemma.description | safe }}
 </div>
 {% endif %}
-{% include '_page_ref_list.html' with page_refs=lemma.pagereference_set.all %}
+{% include '_group_by_work.html' with ref_list=lemma.pagereference_set.all %}
 {% if similar_lemmata %}
-  <h2 class="pl-4 text-xl">Similar lemmata</h2>
-    <ul class="lemma-refs">
-      {% for sim_lem in similar_lemmata %}
-        <li>
-          <a href="{% url 'index:lemma-detail' sim_lem.slug %}" class="{{ hidden_link_decoration }}">{{ sim_lem }}</a>
-        </li>
-      {% endfor %}
-    </ul>
+  <h2 class="mt-16 mb-4 text-3xl font-bold dark:text-white">Similar lemmata</h2>
+  <div class="flex flex-wrap text-xl gap-x-8 gap-y-4">
+    {% for sim_lem in similar_lemmata %}
+      <a href="{% url 'index:lemma-detail' sim_lem.slug %}" class="block whitespace-nowrap {{ hidden_link_decoration }}">{{ sim_lem }}</a>
+    {% endfor %}
+  </div>
 {% endif %}
 {% endblock body %}

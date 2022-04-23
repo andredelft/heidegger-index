@@ -11,7 +11,7 @@
     <h3>
       <a href="{% url 'index:lemma-detail' lemma.slug %}" class="{{ hidden_link_decoration }}">{{ lemma }}</a>
     </h3>
-    {% include '_page_ref_list.html' with page_refs=lemma.pagereference_set.all %}
+    {% include '_group_by_work.html' with ref_list=lemma.pagereference_set.all %}
   </div>
   {% endfor %}
 </div>

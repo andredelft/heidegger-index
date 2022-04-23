@@ -6,14 +6,14 @@
 <h2 class="mt-8 mb-4 text-3xl font-bold dark:text-white">Reference</h2>
 <div class="text-1.5xl {{ body_text }}">{{ work.reference | safe }}</div>
 {% if work_lemma %}
-  {% include '_page_ref_list.html' with page_refs=work_lemma page_ref_list_title="Mentions of <em>"|add:work.csl_json.title|add:"</em>" %}
+  {% include '_group_by_work.html' with ref_list=work_lemma group_title="Mentions of <em>"|add:work.csl_json.title|add:"</em>" %}
 {% endif %}
 <h2 class="mt-8 mb-4 text-3xl font-bold dark:text-white">Index terms</h2>
-{% include '_lemma_list.html' with lemma_list=page_refs %}
+{% include '_group_by_lemma.html' with ref_list=page_refs %}
 {% if person_list %}
-  {% include '_lemma_list.html' with lemma_list=person_list lemma_list_title="People mentioned" %}
+  {% include '_group_by_lemma.html' with ref_list=person_list group_title="People mentioned" %}
 {% endif %}
 {% if work_list %}
-  {% include '_lemma_list.html' with lemma_list=work_list lemma_list_title="Works mentioned" %}
+  {% include '_group_by_lemma.html' with ref_list=work_list group_title="Works mentioned" %}
 {% endif %}
 {% endblock %}
