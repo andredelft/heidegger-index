@@ -34,7 +34,7 @@ class WorkDetailView(DetailView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context["work_lemma"] = self._get_work_lemma(context["work"])
-        context["page_refs"] = PageReference.objects.filter(work=context["work"])
+        context["page_refs"] = PageReference.objects.filter(work=context["work"], lemma__type=None)
         context["person_list"] = PageReference.objects.filter(work=context["work"], lemma__type="p")
         context["work_list"] = PageReference.objects.filter(work=context["work"], lemma__type="w")
         return context
