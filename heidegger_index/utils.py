@@ -1,10 +1,8 @@
 from unidecode import unidecode
 import re
-import yaml
 from fuzzysearch import find_near_matches
 
 from django.template.defaultfilters import slugify as _slugify
-from pathlib import Path
 
 PREFIXES = ["der", "die", "das", "den"]
 
@@ -22,17 +20,12 @@ def gen_sort_key(value):
         value, n = PREFIX_FILTER.subn("", value)
     return value
 
-def match_lemmata(search_term, max_l_dist=2, num_results=5, include_search_term=True):
+def match_lemmata(search_term, index, max_l_dist=2, num_results=5, include_search_term=True):
 
-    BASE_DIR = Path(__file__).resolve().parent.parent
-    INDEX_DIR = BASE_DIR / "index"
-    INDEX_FILE = INDEX_DIR / "heidegger-index.yml"
-
-    with open(INDEX_FILE) as f:
-        key_to_lemma = {
-            gen_sort_key(lemma): lemma for lemma in yaml.load(f).keys()
-        }
-        keys = key_to_lemma.keys()
+    key_to_lemma = {
+        gen_sort_key(lemma): lemma for lemma in index.keys()
+    }
+    keys = key_to_lemma.keys()
 
     if not include_search_term:
         # Remove subject lemma from list

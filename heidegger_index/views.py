@@ -3,7 +3,9 @@ from django.views.generic.detail import DetailView
 
 from heidegger_index.models import Lemma, Work, PageReference
 from heidegger_index.utils import match_lemmata
+from django.conf import settings
 
+import yaml
 
 def index_view(request):
     return render(
@@ -46,7 +48,10 @@ class LemmaDetailView(DetailView):
     def _find_similar_lemmata(self, subject_lemma: Lemma):
         search_term = subject_lemma.value
 
-        matches = match_lemmata(search_term, 2, 3, False)
+        with open(settings.INDEX_FILE) as f:
+            index = yaml.load(f)
+
+        matches = match_lemmata(search_term, index, 2, 3, False)
         similar_lemmata = []
         for match in matches[:3]:
             similar_lemmata.append(Lemma.objects.get(value=match[0]))

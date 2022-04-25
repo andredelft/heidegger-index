@@ -88,7 +88,9 @@ def add_ref(lemma, work, ref, ref_type=None, betacode=False):
 
 
 def find_ref(search_term, max_l_dist=2, num_results=5):
-    matches = match_lemmata(search_term, max_l_dist, num_results, True)
+    with open(INDEX_FILE) as f:
+        index = yaml.load(f)
+    matches = match_lemmata(search_term, index, max_l_dist, num_results, True)
     if matches:
         print("\n".join(f"{m[0]}" for m in matches[:num_results]))
     else:
