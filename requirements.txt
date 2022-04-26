@@ -1,2 +1,4 @@
 django-tailwind @ https://github.com/andredelft/django-tailwind/tarball/master
+betacode==1.0
+pygtrie
 -r requirements-prod.txt
