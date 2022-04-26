@@ -5,4 +5,14 @@
 <h1>{{ lemma.value }}</h1>
 {% if lemma.description %}{{ lemma.description | safe }}{% endif %}
 {% include '_page_ref_list.html' with page_refs=lemma.pagereference_set.all verbose_titles=True only %}
+{% if similar_lemmata %}
+  <h2>Similar lemmata</h2>
+    <ul class="lemma-refs">
+      {% for sim_lem in similar_lemmata %}
+        <li>
+          <a href="{% url 'index:lemma-detail' sim_lem.slug %}" class="hidden-link">{{ sim_lem }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+{% endif %}
 {% endblock body %}
