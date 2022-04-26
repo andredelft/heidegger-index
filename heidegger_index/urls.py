@@ -21,3 +21,6 @@ urlpatterns = (
     if settings.URL_PREFIX
     else [path("", include(namespaced_patterns))]
 )
+
+if settings.DEBUG:
+    urlpatterns.append(path("__reload__/", include("django_browser_reload.urls")))

@@ -1,25 +1,29 @@
 {% extends '_site_base.html' %}
 
 {% block body %}
-<h1>Heidegger index</h1>
-<p class="description">Managed by: <a href="https://github.com/andredelft" target="_blank" rel="noopener noreferrer">André van Delft</a> &amp; <a href="https://github.com/johannesdewit" target="_blank" rel="noopener noreferrer">Johannes de Wit</a></p>
-{% for lemma in lemmas %}
-<h3 class="lemma-header">
-  <a href="{% url 'index:lemma-detail' lemma.slug %}" class="hidden-link">{{ lemma.format }}</a>
-</h3>
-{% include '_page_ref_list.html' with page_refs=lemma.pagereference_set.all only %}
-{% endfor %}
-<div class="bibliography">
-  <h2>Bibliography</h2>
-  <div class="bibliography-wrapper">
-    {% for work in works %}
-    {% if work.reference %}
-    <a class="entry-wrapper hidden-link button" href="{% url 'index:work-detail' work.slug %}">
-      <div class="entry-label">{{ work.id }}</div>
-      {{ work.reference|safe }}
-    </a>
-    {% endif %}
-    {% endfor %}
+<h1 class="py-4 text-5xl font-bold dark:text-white">Heidegger index</h1>
+<p class="pb-12 {{ body_text }}">
+  Managed by: <a href="https://github.com/andredelft" target="_blank" rel="noopener noreferrer" class="{{ link_decoration }}">André van Delft</a> &amp; <a href="https://github.com/johannesdewit" target="_blank" rel="noopener noreferrer" class="{{ link_decoration }}">Johannes de Wit</a>
+</p>
+<div class="flex flex-col gap-4">
+  {% for lemma in lemmas %}
+  <div>
+    <h3>
+      <a href="{% url 'index:lemma-detail' lemma.slug %}" class="{{ hidden_link_decoration }}">{{ lemma }}</a>
+    </h3>
+    {% include '_group_by_work.html' with ref_list=lemma.pagereference_set.all %}
   </div>
+  {% endfor %}
+</div>
+<h2 class="mt-16 mb-8 text-3xl font-bold dark:text-white">Bibliography</h2>
+<div class="flex flex-col gap-8">
+  {% for work in works %}
+  {% if work.reference %}
+  <a href="{% url 'index:work-detail' work.slug %}" class="flex gap-4 text-1.5xl transition-colors hover:bg-slate-200 dark:hover:bg-slate-600 rounded-md p-2">
+    <div class="font-semibold w-28 shrink-0 dark:text-white">{{ work.id }}</div>
+    <div class="leading-snug {{ body_text }}">{{ work.reference|safe }}</div>
+  </a>
+  {% endif %}
+  {% endfor %}
 </div>
 {% endblock %}

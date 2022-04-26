@@ -42,6 +42,12 @@ MIDDLEWARE = [
     "whitenoise.middleware.WhiteNoiseMiddleware",
 ]
 
+if DEBUG:
+    INSTALLED_APPS += ["django_browser_reload", "django_tailwind"]
+    MIDDLEWARE += [
+        "django_browser_reload.middleware.BrowserReloadMiddleware",
+    ]
+
 ROOT_URLCONF = "heidegger_index.urls"
 
 TEMPLATES = [
@@ -55,6 +61,7 @@ TEMPLATES = [
                 "django.template.context_processors.request",
                 "django.contrib.auth.context_processors.auth",
                 "django.contrib.messages.context_processors.messages",
+                "django_tailwind.context_processors.tailwind_classes",
             ],
         },
     },
@@ -108,6 +115,8 @@ USE_TZ = True
 
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
+STATICFILES_DIRS = [BASE_DIR / "tailwind" / "dist"]
+
 STATIC_URL = f"/{URL_PREFIX}static/"
 
 STATIC_ROOT = BASE_DIR / "staticfiles"
@@ -124,3 +133,13 @@ INDEX_DIR = BASE_DIR / "index"
 WORK_REFS_FILE = INDEX_DIR / "works.yml"
 INDEX_FILE = INDEX_DIR / "heidegger-index.yml"
 DESCRIPTIONS_DIR = BASE_DIR / "index" / "descriptions"
+
+TAILWIND_STYLES_SRC_PATH = BASE_DIR / "tailwind" / "src" / "styles.css"
+TAILWIND_STYLES_DIST_PATH = BASE_DIR / "tailwind" / "dist" / "styles.css"
+
+TAILWIND_CLASSES = {
+    "link_decoration": "font-semibold text-black underline decoration-sky-300 dark:text-white",
+    "hidden_link_decoration": "font-semibold text-black underline transition-colors duration-300 decoration-transparent hover:decoration-sky-300 dark:text-white",
+    "hidden_link_decoration_medium": "font-medium text-black underline transition-colors duration-300 decoration-transparent hover:decoration-sky-300 dark:text-white",
+    "body_text": "text-slate-700 dark:text-slate-300",
+}

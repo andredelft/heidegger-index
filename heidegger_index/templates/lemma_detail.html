@@ -1,18 +1,21 @@
 {% extends '_site_base.html' %}
 
 {% block body %}
-<a class="breadcrumb button" href="{% url 'index:home' %}">Home</a>
-<h1>{{ lemma.value }}</h1>
-{% if lemma.description %}{{ lemma.description | safe }}{% endif %}
-{% include '_page_ref_list.html' with page_refs=lemma.pagereference_set.all verbose_titles=True only %}
+{% include '_home_button.html' %}
+<h1 class="py-8 text-5xl font-semibold dark:text-white">{{ lemma.value }}</h1>
+{% if lemma.description %}
+<div class="prose prose-2xl prose-slate dark:prose-invert prose-blockquote:not-italic
+prose-blockquote:text-[0.9em] prose-blockquote:leading-normal dark:prose-blockquote:border-l-slate-600">
+  {{ lemma.description | safe }}
+</div>
+{% endif %}
+{% include '_group_by_work.html' with ref_list=lemma.pagereference_set.all %}
 {% if similar_lemmata %}
-  <h2>Similar lemmata</h2>
-    <ul class="lemma-refs">
-      {% for sim_lem in similar_lemmata %}
-        <li>
-          <a href="{% url 'index:lemma-detail' sim_lem.slug %}" class="hidden-link">{{ sim_lem }}</a>
-        </li>
-      {% endfor %}
-    </ul>
+  <h2 class="mt-16 mb-4 text-3xl font-bold dark:text-white">Similar lemmata</h2>
+  <div class="flex flex-wrap text-xl gap-x-8 gap-y-4">
+    {% for sim_lem in similar_lemmata %}
+      <a href="{% url 'index:lemma-detail' sim_lem.slug %}" class="block whitespace-nowrap {{ hidden_link_decoration }}">{{ sim_lem }}</a>
+    {% endfor %}
+  </div>
 {% endif %}
 {% endblock body %}
