@@ -12,3 +12,4 @@ django-extensions==3.*
 fuzzysearch==0.7.3
 betacode==1.0
 Markdown==3.3.6
+pygtrie
