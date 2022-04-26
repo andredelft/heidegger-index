@@ -49,7 +49,7 @@ class LemmaDetailView(DetailView):
         search_term = subject_lemma.value
 
         with open(settings.INDEX_FILE) as f:
-            index = yaml.load(f)
+            index = yaml.load(f, Loader=yaml.FullLoader)
 
         matches = match_lemmata(search_term, index, 2, 3, False)
         similar_lemmata = []
