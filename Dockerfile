@@ -1,8 +1,8 @@
 FROM python:3.10-alpine
 RUN apk add build-base
 
-ADD requirements-prod.txt /
-RUN pip install -r requirements-prod.txt
+ADD requirements.txt /
+RUN pip install -r requirements.txt
 
 ADD . /
 

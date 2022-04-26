@@ -29,6 +29,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "heidegger_index",
     "django_extensions",
+    "django_tailwind"
 ]
 
 MIDDLEWARE = [
@@ -43,7 +44,7 @@ MIDDLEWARE = [
 ]
 
 if DEBUG:
-    INSTALLED_APPS += ["django_browser_reload", "django_tailwind"]
+    INSTALLED_APPS += ["django_browser_reload"]
     MIDDLEWARE += [
         "django_browser_reload.middleware.BrowserReloadMiddleware",
     ]
