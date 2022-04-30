@@ -69,6 +69,10 @@ Aussagesatz:
     start: 448
   - end: 453
     start: 452
+Aussehen:
+  WBPh:
+  - end: 275
+    start: 273
 Baer, Karl Ernst von:
   GA 29/30:
   - start: 378
@@ -202,6 +206,8 @@ Entbergen:
   - end: 455
     start: 453
   - start: 490
+  WBPh:
+  - start: 277
 Entfernung:
   EWI:
   - start: 2
@@ -366,6 +372,19 @@ Herakles:
   WD:
   - start: 269
   reftype: p
+Heraklit:
+  WBPh:
+  - start: 277
+  reftype: p
+Heraklit, Fragment 1:
+  WBPh:
+  - start: 277
+Heraklit, Fragment 2:
+  WBPh:
+  - start: 277
+Heraklit, Fragment 93:
+  WBPh:
+  - start: 277
 Hergestelltheit:
   WBPh:
   - start: 248
@@ -373,6 +392,7 @@ Hergestelltheit:
 Herstellen:
   WBPh:
   - start: 272
+  - start: 279
 Hitler, Adolf:
   GA 42:
   - start: 40
@@ -391,12 +411,6 @@ Hölderlin, Friedrich:
   - start: 269
     suffix: ff
   reftype: p
-Kant:
-  GA 29/30:
-  - start: 485
-  WBPh:
-  - start: 272
-  reftype: p
 Kant und das Problem der Metaphysik:
   GA 29/30:
   - start: 441
@@ -411,8 +425,10 @@ Kant, Immanuel:
   - start: 429
   - end: 431
     start: 430
+  - start: 485
   WBPh:
   - start: 251
+  - start: 272
   reftype: p
 Kierkegaard, Søren:
   GA 29/30:
@@ -947,6 +963,9 @@ unbestimmte Unmittelbare:
   WBPh:
   - start: 270
   - start: 269
+δύναμις:
+  WBPh:
+  - start: 278
 εἶδος:
   WBPh:
   - start: 273
@@ -962,6 +981,8 @@ unbestimmte Unmittelbare:
   - start: 451
   - start: 454
     suffix: f
+  WBPh:
+  - start: 276
 κατάφασις:
   GA 29/30:
   - start: 484
@@ -982,6 +1003,10 @@ unbestimmte Unmittelbare:
   - start: 270
   - start: 271
   - start: 274
+λέγειν:
+  WBPh:
+  - end: 278
+    start: 276
 λόγος:
   GA 29/30:
   - start: 441
@@ -999,6 +1024,8 @@ unbestimmte Unmittelbare:
   - start: 251
   - start: 273
     suffix: f
+  - end: 278
+    start: 276
 λόγος ἀποφαντικός:
   GA 29/30:
   - end: 452
@@ -1013,8 +1040,9 @@ unbestimmte Unmittelbare:
   - start: 269
 μορφή:
   WBPh:
-  - start: 271
-    end: 274
+  - end: 274
+    start: 271
+  - start: 275
 μέθοδος:
   WBPh:
   - start: 269
@@ -1125,8 +1153,10 @@ unbestimmte Unmittelbare:
     suffix: f
 ὕλη:
   WBPh:
-  - start: 271
-    end: 272
+  - end: 272
+    start: 271
+  - end: 279
+    start: 278
 ῥυθμός:
   WBPh:
   - start: 266

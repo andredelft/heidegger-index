@@ -35,7 +35,7 @@ class Command(BaseCommand):
         ):
             lemma = Path(fpath).stem
             with open(fpath) as f:
-                content = markdown(f.read())
+                content = markdown(f.read(), extensions=["smarty"])
             descriptions[lemma] = content
 
         for work_id, csl_json in tqdm(works_data.items(), desc="Populating works"):
