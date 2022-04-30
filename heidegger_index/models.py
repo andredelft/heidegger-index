@@ -17,8 +17,8 @@ class Work(models.Model):
 
     def __str__(self):
         return self.id
-
-    def save(self, *args, **kwargs):
+    
+    def gen_reference(self):
         if not self.reference and self.csl_json:
             r = requests.post(
                 settings.CITEPROC_ENDPOINT,
@@ -27,6 +27,10 @@ class Work(models.Model):
             )
             r.raise_for_status()
             self.reference = r.content.decode()
+        
+
+    def save(self, *args, **kwargs):
+        self.gen_reference()
 
         super().save(*args, **kwargs)
 

@@ -1,3 +1,4 @@
+from requests import HTTPError
 import yaml
 from tqdm import tqdm
 from glob import glob
@@ -8,7 +9,6 @@ from django.core.management.base import BaseCommand
 from django.conf import settings
 
 from heidegger_index.models import Work, Lemma, PageReference
-from heidegger_index.utils import gen_sort_key
 
 yaml.warnings({"YAMLLoadWarning": False})
 
@@ -38,9 +38,17 @@ class Command(BaseCommand):
                 content = markdown(f.read(), extensions=["smarty"])
             descriptions[lemma] = content
 
-        for work_id, csl_json in tqdm(works_data.items(), desc="Populating works"):
+        work_objs = []
+        for work_id, csl_json in tqdm(works_data.items(), desc="Generating work references"):
             work_obj = Work(id=work_id, csl_json=csl_json)
-            work_obj.save()  # We need the save method for reference generation, hence no bulk_create
+            try:
+                work_obj.gen_reference()
+            except HTTPError as e:
+                self.stdout.write(f"Skipping {work_id} because of HTTP error: {e}")
+            else:
+                work_objs.append(work_obj)
+            
+        Work.objects.bulk_create(tqdm(work_objs, desc="Populating works"))
 
         existing_works = set(works_data.keys())
 
