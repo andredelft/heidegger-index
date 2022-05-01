@@ -50,7 +50,9 @@ class Lemma(models.Model):
     slug = AutoSlugField(populate_from="value", slugify_function=slugify)
 
     # Only applicable to lemmas with type='w'
-    author = models.ForeignKey("self", on_delete=models.SET_NULL, null=True)
+    author = models.ForeignKey(
+        "self", on_delete=models.SET_NULL, null=True, related_name="works"
+    )
     author_name = models.CharField(
         max_length=100, null=True
     )  # Meant as fallback when author does not exist as lemma in the index
