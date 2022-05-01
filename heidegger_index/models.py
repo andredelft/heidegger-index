@@ -5,7 +5,7 @@ from django.conf import settings
 from django.utils.safestring import SafeString
 from django_extensions.db.fields import AutoSlugField
 
-from heidegger_index.constants import LEMMA_TYPES
+from heidegger_index.constants import LEMMA_TYPES, REF_TYPES
 from heidegger_index.utils import gen_sort_key, slugify
 
 
@@ -17,7 +17,7 @@ class Work(models.Model):
 
     def __str__(self):
         return self.id
-    
+
     def gen_reference(self):
         if not self.reference and self.csl_json:
             r = requests.post(
@@ -27,7 +27,6 @@ class Work(models.Model):
             )
             r.raise_for_status()
             self.reference = r.content.decode()
-        
 
     def save(self, *args, **kwargs):
         self.gen_reference()
@@ -41,10 +40,20 @@ class Work(models.Model):
 class Lemma(models.Model):
     TYPES = LEMMA_TYPES
     value = models.CharField(max_length=100, unique=True)
+    parent = models.ForeignKey(
+        "self", on_delete=models.SET_NULL, null=True, related_name="children"
+    )
+    related = models.ManyToManyField("self", symmetrical=True)
     type = models.CharField(max_length=1, null=True, choices=TYPES.items())
     description = models.TextField(null=True)
     sort_key = models.CharField(max_length=100, null=True, unique=True)
     slug = AutoSlugField(populate_from="value", slugify_function=slugify)
+
+    # Only applicable to lemmas with type='w'
+    author = models.ForeignKey("self", on_delete=models.SET_NULL, null=True)
+    author_name = models.CharField(
+        max_length=100, null=True
+    )  # Meant as fallback when author does not exist as lemma in the index
 
     def __str__(self):
         return self.value
@@ -63,8 +72,10 @@ class Lemma(models.Model):
 
 
 class PageReference(models.Model):
+    TYPES = REF_TYPES
     work = models.ForeignKey(Work, on_delete=models.PROTECT)
     lemma = models.ForeignKey(Lemma, on_delete=models.PROTECT)
+    type = models.CharField(max_length=1, choices=TYPES.items(), null=True)
 
     # Datafied page reference
     start = models.IntegerField()
