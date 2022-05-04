@@ -9,7 +9,15 @@
 </div>
 {% endif %}
 {% include '_group_by_work.html' with ref_list=lemma.pagereference_set.all %}
-{% if similar_lemmata %}
+{# Show related lemmata, if not defined show similar lemmata. #}
+{% if related_lemmata %}
+  <h2 class="mt-16 mb-4 text-3xl font-bold dark:text-white">Related lemmata</h2>
+  <div class="flex flex-wrap text-xl gap-x-8 gap-y-4">
+    {% for rel_lem in related_lemmata %}
+      <a href="{% url 'index:lemma-detail' rel_lem.slug %}" class="block whitespace-nowrap {{ hidden_link_decoration }}">{{ rel_lem }}</a>
+    {% endfor %}
+  </div>
+{% elif similar_lemmata %}
   <h2 class="mt-16 mb-4 text-3xl font-bold dark:text-white">Similar lemmata</h2>
   <div class="flex flex-wrap text-xl gap-x-8 gap-y-4">
     {% for sim_lem in similar_lemmata %}

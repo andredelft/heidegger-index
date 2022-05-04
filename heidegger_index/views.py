@@ -38,7 +38,7 @@ class WorkDetailView(DetailView):
         context["person_list"] = PageReference.objects.filter(work=context["work"], lemma__type="p")
         context["work_list"] = PageReference.objects.filter(work=context["work"], lemma__type="w")
         return context
-    
+
     def render_to_response(self, context, **kwargs):
         if not context["work"].csl_json:
             raise Http404("Work not found")
@@ -66,7 +66,15 @@ class LemmaDetailView(DetailView):
         # returns list of similar lemma objects
         return similar_lemmata
 
+    def _get_related_lemmata(self, subject_lemma: Lemma):
+        related_lemmata = []
+        for l in subject_lemma.related.all():
+            related_lemmata.append(Lemma.objects.get(value=l))
+
+        return related_lemmata
+
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context["similar_lemmata"] = self._find_similar_lemmata(context["lemma"])
+        context["similar_lemmata"] =  self._find_similar_lemmata(context["lemma"])
+        context["related_lemmata"] =  self._get_related_lemmata(context["lemma"])
         return context
