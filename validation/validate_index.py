@@ -5,42 +5,17 @@ import yaml
 WORKING_DIR = Path("validation")
 INDEX_DIR = WORKING_DIR.parent / "index"
 INDEX_FILE = INDEX_DIR / "heidegger-index.yml"
-SCHEMA_FILE = WORKING_DIR / "schema.json"
+SCHEMA_FILE = WORKING_DIR / "schema.yml"
 
-schema_trial = {
-    "$schema": "http://json-schema.org/draft-07/schema#",
-
-    "type": "array",
-    "minProperties": 1,
-    "prefixItems": [
-        {"type": "object",
-        "properties": {
-            "type": "object",
-            "properties": {
-                "start": {
-                    "type" : "integer",
-                    "minimum": 0
-                },
-                "end": {
-                    "type" : "integer",
-                    "minimum": 0
-                },
-                "reftype": {
-                    "enum": ["r"]
-                }
-            },
-            "required": ["start"]
-        }
-        },
-        {"reftype": {
-            "enum": ["p", "w"]
-        }}
-    ]
-}
+yaml.warnings({"YAMLLoadWarning": False})
 
 def validate_yaml(file, schema):
-    validate(yaml.load(file), schema)
+    validate(
+        yaml.load(file),
+        yaml.load(schema)
+        )
 
-def validate_index(schema=schema_trial):
+def validate_index():
     with open(INDEX_FILE) as f:
-        validate_yaml(f, schema)
+        with open(SCHEMA_FILE) as s:
+            validate_yaml(f, s)
