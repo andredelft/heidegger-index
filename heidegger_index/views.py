@@ -51,7 +51,6 @@ class LemmaDetailView(DetailView):
     template_name = "lemma_detail.html"
     context_object_name = "lemma"
 
-    # Just a basic copy of index.py find_ref
     def _find_similar_lemmata(self, subject_lemma: Lemma):
         search_term = subject_lemma.value
 
@@ -66,15 +65,25 @@ class LemmaDetailView(DetailView):
         # returns list of similar lemma objects
         return similar_lemmata
 
+    def _get_children(self, subject_lemma: Lemma):
+        if subject_lemma.type == "p":
+            children_of_lemma = Lemma.objects.filter(author=subject_lemma)
+        else:
+            children_of_lemma = Lemma.objects.filter(parent=subject_lemma)
+        # returns list containing either children of the lemma or works if lemma is an author.
+        return children_of_lemma
+
     def _get_related_lemmata(self, subject_lemma: Lemma):
         related_lemmata = []
         for l in subject_lemma.related.all():
             related_lemmata.append(Lemma.objects.get(value=l))
 
+        # returns list of related lemma objects
         return related_lemmata
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context["similar_lemmata"] =  self._find_similar_lemmata(context["lemma"])
+        context["children"] = self._get_children(context["lemma"])
         context["related_lemmata"] =  self._get_related_lemmata(context["lemma"])
+        context["similar_lemmata"] =  self._find_similar_lemmata(context["lemma"])
         return context

@@ -9,7 +9,19 @@
 </div>
 {% endif %}
 {% include '_group_by_work.html' with ref_list=lemma.pagereference_set.all %}
-{# Show related lemmata, if not defined show similar lemmata. #}
+{% if children %}
+  {% if lemma.type == "p" %}
+    <h2 class="mt-16 mb-4 text-3xl font-bold dark:text-white">{{ lemma.value }} is the author of</h2>
+  {% else %}
+    <h2 class="mt-16 mb-4 text-3xl font-bold dark:text-white">Children:</h2>
+  {% endif %}
+  <ul class="text-xl pl-4 {{ body_text }}">
+    {% for child in children %}
+      <a href="{% url 'index:lemma-detail' child.slug %}" class="block whitespace-nowrap {{ hidden_link_decoration }}">{{ child }}</a>
+    {% endfor %}
+  </ul>
+{% endif %}
+{# Show related lemmata, if not defined, show similar lemmata. #}
 {% if related_lemmata %}
   <h2 class="mt-16 mb-4 text-3xl font-bold dark:text-white">Related lemmata</h2>
   <div class="flex flex-wrap text-xl gap-x-8 gap-y-4">
