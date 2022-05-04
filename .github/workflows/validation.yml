@@ -15,9 +15,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
       - name: Validate YAML
-        uses: brittonhayes/validate-yaml@v0.3.0
+        uses: cardinalby/schema-validator-action@v1
         with:
-          # Files to validate
-          files: index/heidegger-index.yml
-          # Path to schema to validate against
-          schemaPath: validation/schema.yml
+          file: 'index/heidegger-index.yml'
+          schema: 'validation/schema.yml'
