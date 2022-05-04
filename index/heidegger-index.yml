@@ -49,6 +49,9 @@ Aristoteles:
   - start: 237
     suffix: ff
   reftype: p
+Atomenergie:
+  GA 16:
+  - start: 523
 Atomzeitalter:
   GA 16:
   - start: 522
@@ -528,6 +531,9 @@ Natur:
 Natura:
   SVG:
   - start: 40
+Neuzeit:
+  GA 16:
+  - start: 523
 Nichts:
   GA 29/30:
   - start: 368
