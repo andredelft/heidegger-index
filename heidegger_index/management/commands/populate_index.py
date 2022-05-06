@@ -35,11 +35,13 @@ class Command(BaseCommand):
         ):
             lemma = Path(fpath).stem
             with open(fpath) as f:
-                content = markdown(f.read(), extensions=["smarty"])
+                content = markdown(f.read(), extensions=["smarty", "footnotes"])
             descriptions[lemma] = content
 
         work_objs = []
-        for work_id, csl_json in tqdm(works_data.items(), desc="Generating work references"):
+        for work_id, csl_json in tqdm(
+            works_data.items(), desc="Generating work references"
+        ):
             work_obj = Work(id=work_id, csl_json=csl_json)
             try:
                 work_obj.gen_reference()
@@ -47,7 +49,7 @@ class Command(BaseCommand):
                 self.stdout.write(f"Skipping {work_id} because of HTTP error: {e}")
             else:
                 work_objs.append(work_obj)
-            
+
         Work.objects.bulk_create(tqdm(work_objs, desc="Populating works"))
 
         existing_works = set(works_data.keys())
