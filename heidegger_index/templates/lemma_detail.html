@@ -1,47 +1,36 @@
 {% extends '_site_base.html' %}
 
+{% block head_title %}{{ lemma.value }}{% endblock head_title %}
+
 {% block body %}
 {% include '_home_button.html' %}
+
 <h1 class="clear-right pb-8 text-5xl font-semibold dark:text-white">{{ lemma.value }}</h1>
+
 {% if lemma.description %}
 <div class="prose prose-2xl prose-slate dark:prose-invert prose-blockquote:not-italic prose-blockquote:text-[0.9em] prose-blockquote:leading-normal dark:prose-blockquote:border-l-slate-600 prose-a:decoration-sky-300">
   {{ lemma.description | safe }}
 </div>
-{% elif lemma.type == "w" and lemma.author %}
-<div class="prose prose-2xl prose-slate dark:prose-invert">
-  {{ lemma.value }} is a work by <a href="{% url 'index:lemma-detail' lemma.author.slug %}" class="{{ hidden_link_decoration }}">{{ lemma.author }}</a>
+{% endif %}
+
+{% if lemma.type == "w" and lemma.author %}
+<div class="pb-8 pl-4 {{ body_text }}">
+  <em>Author</em>: <a href="{% url 'index:lemma-detail' lemma.author.slug %}" class="{{ hidden_link_decoration }}">{{ lemma.author }}</a>
 </div>
 {% endif %}
+
 {% include '_group_by_work.html' with ref_list=lemma.pagereference_set.all %}
 
-{# Show chilren or works #}
-{% if children %}
-  {% if lemma.type == "p" %}
-    <h2 class="mt-16 mb-4 text-3xl font-bold dark:text-white">{{ lemma.value }} is the author of</h2>
-  {% else %}
-    <h2 class="mt-16 mb-4 text-3xl font-bold dark:text-white">Children:</h2>
-  {% endif %}
-  <ul class="text-xl pl-4 {{ body_text }}">
-    {% for child in children %}
-      <a href="{% url 'index:lemma-detail' child.slug %}" class="block whitespace-nowrap {{ hidden_link_decoration }}">{{ child }}</a>
-    {% endfor %}
-  </ul>
+{% if works %}
+{% include '_lemma_list.html' with lemma_list=works title="Works by "|add:lemma.value %}
 {% endif %}
 
-{# Show related lemmata, if not defined, show similar lemmata. #}
-{% if related_lemmata %}
-  <h2 class="mt-16 mb-4 text-3xl font-bold dark:text-white">Related lemmata</h2>
-  <div class="flex flex-wrap text-xl gap-x-8 gap-y-4">
-    {% for rel_lem in related_lemmata %}
-      <a href="{% url 'index:lemma-detail' rel_lem.slug %}" class="block whitespace-nowrap {{ hidden_link_decoration }}">{{ rel_lem }}</a>
-    {% endfor %}
-  </div>
-{% elif similar_lemmata %}
-  <h2 class="mt-16 mb-4 text-3xl font-bold dark:text-white">Similar lemmata</h2>
-  <div class="flex flex-wrap text-xl gap-x-8 gap-y-4">
-    {% for sim_lem in similar_lemmata %}
-      <a href="{% url 'index:lemma-detail' sim_lem.slug %}" class="block whitespace-nowrap {{ hidden_link_decoration }}">{{ sim_lem }}</a>
-    {% endfor %}
-  </div>
+{% if children %}
+{% include '_lemma_list.html' with lemma_list=children title="Children" %}
 {% endif %}
+
+{% if related %}
+{% include '_lemma_list.html' with lemma_list=related title="Related" %}
+{% endif %}
+
 {% endblock body %}

@@ -110,7 +110,7 @@ Befreiung des Daseins im Menschen:
   references:
     GA 29/30:
     - start: 255
-    - reftype: r
+    - type: r
       start: 257
 Benehmen:
   references:
@@ -129,13 +129,13 @@ Benommenheit, Offenheit der:
   references:
     GA 29/30:
     - start: 362
-    - reftype: r
+    - type: r
       start: 363
-    - reftype: r
+    - type: r
       start: 368
-    - reftype: r
+    - type: r
       start: 369
-    - reftype: r
+    - type: r
       start: 370
 Bewegtheit:
   references:
@@ -174,7 +174,7 @@ Darwinismus:
     GA 29/30:
     - start: 377
     - start: 378
-    - reftype: r
+    - type: r
       start: 402
 Dasein:
   references:
@@ -393,7 +393,7 @@ Glanz:
 Gleichgültigkeit:
   references:
     GA 29/30:
-    - reftype: r
+    - type: r
       start: 367
 Gott:
   references:
@@ -403,11 +403,11 @@ Grundriß:
   references:
     EWI:
     - end: 9
-      reftype: r
+      type: r
       start: 8
     GA 61:
     - end: 160
-      reftype: r
+      type: r
       start: 159
     ZW:
     - start: 79
