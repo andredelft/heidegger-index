@@ -110,8 +110,8 @@ Befreiung des Daseins im Menschen:
   references:
     GA 29/30:
     - start: 255
-    - type: r
-      start: 257
+    - start: 257
+      type: r
 Benehmen:
   references:
     GA 29/30:
@@ -129,14 +129,14 @@ Benommenheit, Offenheit der:
   references:
     GA 29/30:
     - start: 362
-    - type: r
-      start: 363
-    - type: r
-      start: 368
-    - type: r
-      start: 369
-    - type: r
-      start: 370
+    - start: 363
+      type: r
+    - start: 368
+      type: r
+    - start: 369
+      type: r
+    - start: 370
+      type: r
 Bewegtheit:
   references:
     WBPh:
@@ -174,8 +174,8 @@ Darwinismus:
     GA 29/30:
     - start: 377
     - start: 378
-    - type: r
-      start: 402
+    - start: 402
+      type: r
 Dasein:
   references:
     GA 29/30:
@@ -199,6 +199,7 @@ Daseinsgeschichte:
     GA 29/30:
     - start: 432
 De Interpretatione:
+  author: Aristoteles
   references:
     GA 29/30:
     - start: 443
@@ -206,14 +207,13 @@ De Interpretatione:
     - end: 450
       start: 448
   type: w
-  author: Aristoteles
 De anima:
+  author: Aristoteles
   references:
     GA 29/30:
     - end: 455
       start: 454
   type: w
-  author: Aristoteles
 Demokrit:
   references:
     WBPh:
@@ -393,8 +393,8 @@ Glanz:
 Gleichgültigkeit:
   references:
     GA 29/30:
-    - type: r
-      start: 367
+    - start: 367
+      type: r
 Gott:
   references:
     GA 29/30:
@@ -403,12 +403,12 @@ Grundriß:
   references:
     EWI:
     - end: 9
-      type: r
       start: 8
+      type: r
     GA 61:
     - end: 160
-      type: r
       start: 159
+      type: r
     ZW:
     - start: 79
 Grundstimmung:
@@ -473,23 +473,23 @@ Heraklit:
     - start: 277
   type: p
 Heraklit, Fragment 1:
+  author: Heraklit
   references:
     WBPh:
     - start: 277
   type: w
-  author: Heraklit
 Heraklit, Fragment 2:
+  author: Heraklit
   references:
     WBPh:
     - start: 277
   type: w
-  author: Heraklit
 Heraklit, Fragment 93:
+  author: Heraklit
   references:
     WBPh:
     - start: 277
   type: w
-  author: Heraklit
 Hergestelltheit:
   references:
     WBPh:
@@ -559,13 +559,13 @@ Kreutzer, Conradin:
       start: 517
   type: p
 Kritik der Reinen Vernunft:
+  author: Kant, Immanuel
   references:
     GA 29/30:
     - start: 422
     WBPh:
     - start: 272
   type: w
-  author: Kant, Immanuel
 Langeweile:
   references:
     EWI:
@@ -1040,11 +1040,11 @@ Wissenschaft:
     GA 16:
     - start: 523
 Wissenschaft der Logik:
+  author: Hegel, Georg Wilhelm Friedrich
   references:
     WBPh:
     - start: 251
   type: w
-  author: Hegel, Georg Wilhelm Friedrich
 Wort:
   references:
     GA 29/30:
@@ -1360,6 +1360,7 @@ unbestimmte Unmittelbare:
     WBPh:
     - start: 246
 φύσει ὄντα:
+  parent: φύσις
   references:
     WBPh:
     - start: 253
@@ -1368,7 +1369,6 @@ unbestimmte Unmittelbare:
       start: 259
     - start: 270
     - start: 281
-  parent: φύσις
 φύσις:
   references:
     FT:
