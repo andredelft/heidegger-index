@@ -75,4 +75,5 @@ class LemmaDetailView(DetailView):
         context["related"] = lemma.related.all()
         if lemma.type == "p":
             context["works"] = lemma.works.all()
+            context["author_short"] = lemma.value.split(",")[0]
         return context

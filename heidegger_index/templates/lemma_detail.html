@@ -22,7 +22,7 @@
 {% include '_group_by_work.html' with ref_list=lemma.pagereference_set.all %}
 
 {% if works %}
-{% include '_lemma_list.html' with lemma_list=works title="Works by "|add:lemma.value %}
+{% include '_lemma_list.html' with lemma_list=works title="Works by "|add:author_short %}
 {% endif %}
 
 {% for child in children %}
