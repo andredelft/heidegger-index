@@ -2,7 +2,6 @@ import requests
 
 from django.db import models
 from django.conf import settings
-from django.utils.safestring import SafeString
 from django_extensions.db.fields import AutoSlugField
 
 from heidegger_index.constants import LEMMA_TYPES, REF_TYPES
@@ -53,9 +52,9 @@ class Lemma(models.Model):
     author = models.ForeignKey(
         "self", on_delete=models.SET_NULL, null=True, related_name="works"
     )
-    author_name = models.CharField(
-        max_length=100, null=True
-    )  # Meant as fallback when author does not exist as lemma in the index
+
+    # Use if lemma is associated with a work
+    work = models.OneToOneField(Work, null=True, on_delete=models.SET_NULL)
 
     def __str__(self):
         return self.value

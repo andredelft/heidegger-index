@@ -8,7 +8,7 @@
 <h1 class="clear-right pb-8 text-5xl font-semibold dark:text-white">{{ lemma.value }}</h1>
 
 {% if lemma.description %}
-<div class="prose prose-2xl prose-slate dark:prose-invert prose-blockquote:not-italic prose-blockquote:text-[0.9em] prose-blockquote:leading-normal dark:prose-blockquote:border-l-slate-600 prose-a:decoration-sky-300">
+<div class="{{ description_prose }}">
   {{ lemma.description | safe }}
 </div>
 {% endif %}
@@ -25,9 +25,15 @@
 {% include '_lemma_list.html' with lemma_list=works title="Works by "|add:lemma.value %}
 {% endif %}
 
-{% if children %}
-{% include '_lemma_list.html' with lemma_list=children title="Children" %}
-{% endif %}
+{% for child in children %}
+  <h2 class="pt-8 pb-4 text-3xl font-semibold dark:text-white" id="{{ child.slug }}">{{ child }}</h2>
+  {% if child.description %}
+  <div class="{{ description_prose }}">
+    {{ child.description | safe }}
+  </div>
+  {% endif %}
+  {% include '_group_by_work.html' with ref_list=child.pagereference_set.all %}
+{% endfor %}
 
 {% if related %}
 {% include '_lemma_list.html' with lemma_list=related title="Related" %}

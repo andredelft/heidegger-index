@@ -1,12 +1,9 @@
 from django.http import Http404
 from django.shortcuts import render
 from django.views.generic.detail import DetailView
+from django.shortcuts import redirect
 
-from heidegger_index.models import Lemma, Work, PageReference
-from heidegger_index.utils import match_lemmata
-from django.conf import settings
-
-import yaml
+from heidegger_index.models import Lemma, Work
 
 
 def index_view(request):
@@ -14,7 +11,7 @@ def index_view(request):
         request,
         "index.html",
         {
-            "lemmas": Lemma.objects.all(),
+            "lemmas": Lemma.objects.filter(parent=None),
             "works": Work.objects.all(),
         },
     )
@@ -46,7 +43,6 @@ class WorkDetailView(DetailView):
         context["person_list"] = work.pagereference_set.filter(lemma__type="p")
         context["work_list"] = work.pagereference_set.filter(lemma__type="w")
         context["head_title"] = self._title()
-        print(context)
         return context
 
     def render_to_response(self, context, **kwargs):
@@ -60,6 +56,17 @@ class LemmaDetailView(DetailView):
     model = Lemma
     template_name = "lemma_detail.html"
     context_object_name = "lemma"
+
+    def get(self, request, *args, **kwargs):
+        self.object = self.get_object()
+        if self.object.work:
+            # Redirect Lemma detail page to corresponding work page
+            return redirect("index:work-detail", slug=self.object.work.slug)
+        elif self.object.parent:
+            return redirect("index:lemma-detail", slug=self.object.parent.slug)
+        else:
+            context = self.get_context_data(object=self.object)
+            return self.render_to_response(context)
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)

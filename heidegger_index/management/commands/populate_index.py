@@ -83,6 +83,11 @@ class Command(BaseCommand):
 
         Lemma.objects.bulk_create(tqdm(lemma_objs.values(), desc="Populating lemmata"))
 
+        work_title_map = {
+            work.csl_json.get("title") or work.csl_json.get("title-short"): work
+            for work in work_objs
+        }
+
         # Loop a second time through lemma_data to set parent, author and related fields
         for lemma_value, lemma_data in index_data.items():
             lemma_obj = lemma_objs[lemma_value]
@@ -95,17 +100,20 @@ class Command(BaseCommand):
                 author = lemma_objs.get(author_value)
                 if author:
                     lemma_obj.author = author
-                lemma_obj.author_value = author_value
 
             for related_lemma_value in lemma_data.get("related", []):
                 lemma_obj.related.add(lemma_objs[related_lemma_value])
 
+            lemma_obj.work = work_title_map.get(lemma_value)
+            if work_title_map.get(lemma_value):
+                print(lemma_obj.work)
+
             lemma_objs[lemma_value] = lemma_obj
 
-        # ManyToMany field 'related' is updated automatically, ForeignKeys 'parent' and 'author' are not
+        # ManyToMany field 'related' is updated automatically, ForeignKeys are not
         Lemma.objects.bulk_update(
             tqdm(lemma_objs.values(), desc="Setting parent and author relations"),
-            ["parent", "author"],
+            ["parent", "author", "work"],
         )
 
         # Populate page references

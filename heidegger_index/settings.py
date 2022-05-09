@@ -29,7 +29,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "heidegger_index",
     "django_extensions",
-    "django_tailwind"
+    "django_tailwind",
 ]
 
 MIDDLEWARE = [
@@ -143,4 +143,5 @@ TAILWIND_CLASSES = {
     "hidden_link_decoration": "font-semibold text-black underline transition-colors duration-300 decoration-transparent hover:decoration-sky-300 dark:text-white",
     "hidden_link_decoration_medium": "font-medium text-black underline transition-colors duration-300 decoration-transparent hover:decoration-sky-300 dark:text-white",
     "body_text": "text-slate-700 dark:text-slate-300",
+    "description_prose": "prose prose-2xl prose-slate dark:prose-invert prose-blockquote:not-italic prose-blockquote:text-[0.9em] prose-blockquote:leading-normal dark:prose-blockquote:border-l-slate-600 prose-a:decoration-sky-300",
 }
