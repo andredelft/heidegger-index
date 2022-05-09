@@ -1,6 +1,6 @@
 # Heidegger index
 
-<https://delve.nu/heidegger-index>
+<https://heidegger.delve.nu/index>
 
 ## Add lemmas to `index/heidegger-index.yml`
 
