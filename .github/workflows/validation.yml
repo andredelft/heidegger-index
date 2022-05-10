@@ -1,0 +1,21 @@
+name: Validation
+
+on:
+  push:
+    branches: [ main, improved-data-model, 'feature/**' ]
+  pull_request:
+    branches: [ main ]
+
+  workflow_dispatch:
+
+jobs:
+  validate_index:
+    runs-on: ubuntu-latest
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3
+      - name: Validate YAML
+        uses: cardinalby/schema-validator-action@v1
+        with:
+          file: 'index/heidegger-index.yml'
+          schema: 'validation/schema.yml'

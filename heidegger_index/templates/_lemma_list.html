@@ -1,0 +1,12 @@
+{% if title %}
+<h2 class="mt-12 mb-4 text-3xl font-bold dark:text-white">{{ title }}</h2>
+{% endif %}
+<ul class="text-1.5xl pl-4 {{ body_text }}">
+  {% for lemma in lemma_list %}
+    <li>
+      <a href="{% url 'index:lemma-detail' lemma.slug %}" class="{{ hidden_link_decoration }}">
+        {{ lemma }}
+      </a>
+    </li>
+  {% endfor %}
+</ul>

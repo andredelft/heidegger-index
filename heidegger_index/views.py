@@ -1,19 +1,17 @@
 from django.http import Http404
 from django.shortcuts import render
 from django.views.generic.detail import DetailView
+from django.shortcuts import redirect
 
-from heidegger_index.models import Lemma, Work, PageReference
-from heidegger_index.utils import match_lemmata
-from django.conf import settings
+from heidegger_index.models import Lemma, Work
 
-import yaml
 
 def index_view(request):
     return render(
         request,
         "index.html",
         {
-            "lemmas": Lemma.objects.all(),
+            "lemmas": Lemma.objects.filter(parent=None),
             "works": Work.objects.all(),
         },
     )
@@ -24,21 +22,29 @@ class WorkDetailView(DetailView):
     template_name = "work_detail.html"
     context_object_name = "work"
 
-    def _get_work_lemma(self, work: Work):
-        short_title = work.csl_json.get("title-short")
-        if short_title:
-            return PageReference.objects.filter(lemma__value=short_title, lemma__type="w")
-        else:
-            return PageReference.objects.filter(lemma__value=work.csl_json.get("title"), lemma__type="w")
+    def _title(self):
+        return self.object.csl_json.get("title-short") or self.object.csl_json.get(
+            "title"
+        )
+
+    def _get_work_lemma(self, work: Work) -> Lemma:
+        return Lemma.objects.get(value=self._title(), type="w")
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context["work_lemma"] = self._get_work_lemma(context["work"])
-        context["page_refs"] = PageReference.objects.filter(work=context["work"], lemma__type=None)
-        context["person_list"] = PageReference.objects.filter(work=context["work"], lemma__type="p")
-        context["work_list"] = PageReference.objects.filter(work=context["work"], lemma__type="w")
+        work = context["work"]
+        try:
+            work_lemma = self._get_work_lemma(work)
+        except Lemma.DoesNotExist:
+            pass
+        else:
+            context["work_lemma"] = work_lemma
+        context["page_refs"] = work.pagereference_set.filter(lemma__type=None)
+        context["person_list"] = work.pagereference_set.filter(lemma__type="p")
+        context["work_list"] = work.pagereference_set.filter(lemma__type="w")
+        context["head_title"] = self._title()
         return context
-    
+
     def render_to_response(self, context, **kwargs):
         if not context["work"].csl_json:
             raise Http404("Work not found")
@@ -51,22 +57,23 @@ class LemmaDetailView(DetailView):
     template_name = "lemma_detail.html"
     context_object_name = "lemma"
 
-    # Just a basic copy of index.py find_ref
-    def _find_similar_lemmata(self, subject_lemma: Lemma):
-        search_term = subject_lemma.value
-
-        with open(settings.INDEX_FILE) as f:
-            index = yaml.load(f, Loader=yaml.FullLoader)
-
-        matches = match_lemmata(search_term, index, 2, 3, False)
-        similar_lemmata = []
-        for match in matches[:3]:
-            similar_lemmata.append(Lemma.objects.get(value=match[0]))
-
-        # returns list of similar lemma objects
-        return similar_lemmata
+    def get(self, request, *args, **kwargs):
+        self.object = self.get_object()
+        if self.object.work:
+            # Redirect Lemma detail page to corresponding work page
+            return redirect("index:work-detail", slug=self.object.work.slug)
+        elif self.object.parent:
+            return redirect("index:lemma-detail", slug=self.object.parent.slug)
+        else:
+            context = self.get_context_data(object=self.object)
+            return self.render_to_response(context)
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context["similar_lemmata"] = self._find_similar_lemmata(context["lemma"])
+        lemma = context["lemma"]
+        context["children"] = lemma.children.all()
+        context["related"] = lemma.related.all()
+        if lemma.type == "p":
+            context["works"] = lemma.works.all()
+            context["author_short"] = lemma.value.split(",")[0]
         return context

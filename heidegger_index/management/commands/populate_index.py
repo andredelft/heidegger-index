@@ -26,9 +26,11 @@ class Command(BaseCommand):
         for Model in [PageReference, Lemma, Work]:
             self._flush_table(Model)
 
+        # Load work data
         with open(settings.WORK_REFS_FILE) as f:
             works_data = yaml.load(f)
 
+        # Load descriptions
         descriptions = {}
         for fpath in tqdm(
             glob(str(settings.DESCRIPTIONS_DIR / "*.md")), desc="Loading descriptions"
@@ -38,6 +40,11 @@ class Command(BaseCommand):
                 content = markdown(f.read(), extensions=["smarty", "footnotes"])
             descriptions[lemma] = content
 
+        # Load index data
+        with open(settings.INDEX_FILE) as f:
+            index_data = yaml.load(f)
+
+        # Populate works
         work_objs = []
         for work_id, csl_json in tqdm(
             works_data.items(), desc="Generating work references"
@@ -54,13 +61,11 @@ class Command(BaseCommand):
 
         existing_works = set(works_data.keys())
 
-        with open(settings.INDEX_FILE) as f:
-            index_data = yaml.load(f)
-
+        # Populate lemmas
         lemma_objs = dict()
         sort_keys = dict()
         for i, (value, data) in enumerate(index_data.items()):
-            lemma_obj = Lemma(id=i, value=value, type=data.pop("reftype", None))
+            lemma_obj = Lemma(id=i, value=value, type=data.get("type", None))
             description = descriptions.get(value)
             if description:
                 lemma_obj.description = description
@@ -73,24 +78,57 @@ class Command(BaseCommand):
                 sort_keys[lemma_obj.sort_key] = value
                 lemma_objs[value] = lemma_obj
 
+        # Filter all omitted lemmas in index_data that share a sort key
+        index_data = {k: v for k, v in index_data.items() if k in lemma_objs.keys()}
+
         Lemma.objects.bulk_create(tqdm(lemma_objs.values(), desc="Populating lemmata"))
 
+        work_title_map = {
+            work.csl_json.get("title") or work.csl_json.get("title-short"): work
+            for work in work_objs
+        }
+
+        # Loop a second time through lemma_data to set parent, author and related fields
+        for lemma_value, lemma_data in index_data.items():
+            lemma_obj = lemma_objs[lemma_value]
+            parent_value = lemma_data.get("parent")
+            if parent_value:
+                lemma_obj.parent = lemma_objs[parent_value]
+
+            author_value = lemma_data.get("author")
+            if author_value:
+                author = lemma_objs.get(author_value)
+                if author:
+                    lemma_obj.author = author
+
+            for related_lemma_value in lemma_data.get("related", []):
+                lemma_obj.related.add(lemma_objs[related_lemma_value])
+
+            lemma_obj.work = work_title_map.get(lemma_value)
+            if work_title_map.get(lemma_value):
+                print(lemma_obj.work)
+
+            lemma_objs[lemma_value] = lemma_obj
+
+        # ManyToMany field 'related' is updated automatically, ForeignKeys are not
+        Lemma.objects.bulk_update(
+            tqdm(lemma_objs.values(), desc="Setting parent and author relations"),
+            ["parent", "author", "work"],
+        )
+
+        # Populate page references
         pageref_objs = []
-        # Filter all omitted lemmas that share a sort key
-        index_data = {k: v for k, v in index_data.items() if k in lemma_objs.keys()}
-        for lemma_value, works in index_data.items():
-            for work, page_ref_list in works.items():
+        for lemma_value, lemma_data in index_data.items():
+            for work, ref_list in lemma_data.get("references", {}).items():
 
                 if work not in existing_works:
                     self.stdout.write(
-                        f"Warning: Work {work} does not exist in {settings.WORK_REFS_FILE.name}, "
-                        "will be added with an empty reference"
+                        f"Warning: Work {work} does not exist in {settings.WORK_REFS_FILE.name}, will be added with an empty reference"
                     )
                     Work(id=work, csl_json={}).save()
                     existing_works.add(work)
 
-                for ref in page_ref_list:
-                    ref.pop("reftype", None)
+                for ref in ref_list:
                     pageref_objs.append(
                         PageReference(
                             work_id=work, lemma=lemma_objs[lemma_value], **ref

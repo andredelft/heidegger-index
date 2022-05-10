@@ -1,19 +1,28 @@
 {% extends '_site_base.html' %}
 
+{% block head_title %}{{ head_title }}{% endblock head_title %}
+
 {% block body %}
 {% include '_home_button.html' %}
+
 <h1 class="clear-right pb-4 text-5xl font-bold dark:text-white">{{ work.csl_json.title }}</h1>
+
 <h2 class="mt-8 mb-4 text-3xl font-bold dark:text-white">Reference</h2>
 <div class="text-1.5xl {{ body_text }}">{{ work.reference | safe }}</div>
-{% if work_lemma %}
-  {% include '_group_by_work.html' with ref_list=work_lemma group_title="Mentions of <em>"|add:work.csl_json.title|add:"</em>" %}
-{% endif %}
+
 <h2 class="mt-8 mb-4 text-3xl font-bold dark:text-white">Index terms</h2>
 {% include '_group_by_lemma.html' with ref_list=page_refs %}
+
 {% if person_list %}
   {% include '_group_by_lemma.html' with ref_list=person_list group_title="People mentioned" %}
 {% endif %}
+
 {% if work_list %}
   {% include '_group_by_lemma.html' with ref_list=work_list group_title="Works mentioned" %}
 {% endif %}
+
+{% if work_lemma %}
+  {% include '_group_by_work.html' with ref_list=work_lemma.pagereference_set.all group_title="Mentions of <em>"|add:work.csl_json.title|add:"</em>" %}
+{% endif %}
+
 {% endblock %}

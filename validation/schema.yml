@@ -1,0 +1,49 @@
+type: object
+description: Index object
+additionalProperties:
+  type: object
+  description: Lemma object
+  properties:
+    references:
+      type: object
+      description: References object
+      additionalProperties:
+        type: array
+        description: List of the page_refs
+        items:
+          type: object
+          properties:
+            start:
+              type: integer
+              minimum: 0
+            end:
+              type: integer
+              minimum: 0
+            type:
+              type: string
+              enum: [r]
+            suffix:
+              type: string
+              enum: [f, ff]
+          required: [start]
+          additionalProperties: False
+    related:
+      type: array
+      description: List of related lemmata
+      items:
+        type: string
+    parent:
+      type: string
+      description: Parent lemma
+    child:
+      type: string
+      description: Child lemma
+    author:
+      type: string
+      description: Author of work
+    type:
+      type: string
+      description: Lemma type
+      enum: [p, w]
+  additionalProperties: False
+  required: [references]

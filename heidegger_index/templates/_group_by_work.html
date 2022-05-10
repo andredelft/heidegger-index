@@ -1,10 +1,10 @@
 {% if group_title %}
   <h2 class="mt-8 mb-4 text-3xl font-bold dark:text-white">{{ group_title|safe }}</h3>
 {% endif %}
-<ul class="pl-4 text-xl {{ body_text }}">
+<ul class="pl-4 text-xl {{ body_text }}{% if inline %} space-x-2{% endif %}">
   {% regroup ref_list by work as work_groups %}
   {% for work, page_refs in work_groups %}
-    <li class="pl-4 -indent-4">
+    <li class="{% if inline %}inline{% else %}pl-4 -indent-4{% endif %}">
       {% if work.reference %}
         <a href="{% url 'index:work-detail' work.slug %}" class="{{ hidden_link_decoration }}">{{ work }}</a>:
       {% else %}

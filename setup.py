@@ -12,9 +12,10 @@ setup(
     include_package_data=True,
     entry_points={
         "console_scripts": [
-            "add-ref=index:ar_click",
-            "find-ref=index:fr_click",
-            "format-refs=index:for_click",
+            "add-ref=index:click_add_ref",
+            "add-rel=index:click_add_rel",
+            "find-ref=index:click_find_ref",
+            "format-refs=index:click_format_refs",
         ]
     },
 )
