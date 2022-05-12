@@ -2,7 +2,7 @@ Abgrund:
   references:
     WD:
     - start: 269
-      suffix: ff
+      suffix: f
 Alltäglichkeit:
   references:
     GA 29/30:
@@ -154,6 +154,14 @@ Bodenständigkeit:
   references:
     GA 16:
     - start: 522
+Brod und Wein:
+  author: Hölderlin, Friedrich
+  references:
+    WD:
+    - start: 269
+    - end: 273
+      start: 271
+  type: w
 Buytendijk, Frederik Jacobus Johannes:
   references:
     GA 29/30:
@@ -233,6 +241,7 @@ Dionysos:
   references:
     WD:
     - start: 269
+    - start: 271
   type: p
 Driesch, Hans:
   references:
@@ -371,6 +380,7 @@ Geschick:
     - start: 25
       suffix: ff
     WD:
+    - start: 271
     - start: 272
     ZuS:
     - start: 12
@@ -390,6 +400,7 @@ Glanz:
     - start: 88
     WD:
     - start: 269
+    - start: 270
 Gleichgültigkeit:
   references:
     GA 29/30:
@@ -399,6 +410,13 @@ Gott:
   references:
     GA 29/30:
     - start: 262
+    WD:
+    - start: 270
+Grund:
+  references:
+    WD:
+    - end: 270
+      start: 269
 Grundriß:
   references:
     EWI:
@@ -521,7 +539,8 @@ Hölderlin, Friedrich:
     - start: 238
     WD:
     - start: 269
-      suffix: ff
+    - end: 273
+      start: 272
   type: p
 Kant und das Problem der Metaphysik:
   references:
@@ -619,6 +638,12 @@ Miteinandersein:
   references:
     GA 29/30:
     - start: 447
+Mnemosyne:
+  author: Hölderlin, Friedrich
+  references:
+    WD:
+    - start: 270
+  type: w
 Mozart, Wolfgang Amadeus:
   references:
     SvG:
@@ -859,6 +884,7 @@ Sprachgeist:
 Spur:
   references:
     WD:
+    - start: 271
     - start: 272
 Stimmung:
   references:
