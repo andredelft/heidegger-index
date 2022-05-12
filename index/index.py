@@ -89,14 +89,16 @@ def add_ref(lemma, work, ref, lemma_type=None, ref_type=None, betacode=False):
                     f"Cannot assign type '{ref_type}' to lemma. Lemma is already defined as being of type '{lemma_entry['type']}'."
                 )
 
-        if lemma_entry.get(work):
-            lemma_entry["references"][work].append(ref_dict)
+        refs = lemma_entry["references"]
+
+        if refs.get(work):
+            refs[work].append(ref_dict)
         else:
-            lemma_entry["references"][work] = [ref_dict]
+            refs[work] = [ref_dict]
             if lemma_type:
                 lemma_entry["type"] = lemma_type
 
-    index[lemma] = lemma_entry
+    index[lemma] = {**lemma_entry, "references": refs}
 
     with open(INDEX_FILE, "w") as f:
         yaml.dump(index, f, allow_unicode=True)
