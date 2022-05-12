@@ -98,7 +98,9 @@ def add_ref(lemma, work, ref, lemma_type=None, ref_type=None, betacode=False):
             if lemma_type:
                 lemma_entry["type"] = lemma_type
 
-    index[lemma] = {**lemma_entry, "references": refs}
+        lemma_entry["references"] = refs
+
+    index[lemma] = lemma_entry
 
     with open(INDEX_FILE, "w") as f:
         yaml.dump(index, f, allow_unicode=True)
