@@ -7,12 +7,14 @@ from heidegger_index.models import Lemma, Work
 
 
 def index_view(request):
+    lemmas = Lemma.objects.filter(parent=None)
     return render(
         request,
         "index.html",
         {
-            "lemmas": Lemma.objects.filter(parent=None),
+            "lemmas": lemmas,
             "works": Work.objects.all(),
+            "alphabet": sorted(set(lemma.first_letter for lemma in lemmas)),
         },
     )
 
