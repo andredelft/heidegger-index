@@ -40,11 +40,8 @@ Aristoteles:
     - end: 68
       start: 67
     - start: 439
-    - start: 441
-    - end: 448
-      start: 442
     - end: 450
-      start: 448
+      start: 441
     - end: 456
       start: 454
     - start: 484
@@ -62,11 +59,15 @@ Aristoteles:
 Atomenergie:
   references:
     GA 16:
-    - start: 523
+    - end: 524
+      start: 523
 Atomzeitalter:
   references:
     GA 16:
     - start: 522
+    - end: 524
+      start: 523
+      type: f
 Augenblick:
   references:
     GA 29/30:
@@ -178,6 +179,7 @@ Darwin, Charles:
     - start: 366
   type: p
 Darwinismus:
+  parent: Darwin, Charles
   references:
     GA 29/30:
     - start: 377
@@ -195,10 +197,12 @@ Dasein:
     - end: 433
       start: 432
 Dasein des Menschen:
+  parent: Dasein
   references:
     GA 29/30:
     - start: 487
 Dasein im Menschen:
+  parent: Dasein
   references:
     GA 29/30:
     - start: 414
@@ -259,6 +263,7 @@ Elemente:
     WBPh:
     - start: 265
 Endlichkeit des Daseins:
+  parent: Dasein
   references:
     GA 29/30:
     - start: 252
@@ -430,6 +435,7 @@ Grundriß:
     ZW:
     - start: 79
 Grundstimmung:
+  parent: Stimmung
   references:
     GA 29/30:
     - end: 254
@@ -886,6 +892,11 @@ Spur:
     WD:
     - start: 271
     - start: 272
+Stanley, Wendell Meredith, 1904-1971:
+  references:
+    GA 16:
+    - start: 525
+  type: p
 Stimmung:
   references:
     GA 29/30:
@@ -904,7 +915,8 @@ System:
 Technik:
   references:
     GA 16:
-    - start: 523
+    - end: 524
+      start: 523
     GA 42:
     - start: 55
 Thomas van Aquin:
@@ -926,8 +938,6 @@ Tod:
     EWI:
     - start: 18
     GA 29/30:
-    - end: 426
-      start: 425
     - end: 426
       start: 425
 Tranzendenz:
@@ -1190,6 +1200,7 @@ rechnende Denken:
       start: 519
     - start: 523
 tiefe Langeweile:
+  parent: Langeweile
   references:
     GA 29/30:
     - end: 410
