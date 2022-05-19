@@ -93,7 +93,8 @@ Aussehen:
     - end: 275
       start: 273
     - start: 283
-    - start: 287
+    - end: 288
+      start: 287
 Baer, Karl Ernst von:
   references:
     GA 29/30:
@@ -151,7 +152,10 @@ Bewegtheit:
     - start: 254
     - start: 264
     - start: 269
-    - start: 282
+    - start: 279
+    - end: 282
+      start: 281
+    - start: 288
   related:
   - κίνησις
 Beziehung zu Seiendem als Solchem:
@@ -406,7 +410,10 @@ Gestellung in das Aussehen:
   parent: Aussehen
   references:
     WBPh:
+    - start: 274
+    - start: 279
     - start: 285
+    - start: 288
   related:
   - μορφή
 Geviert:
@@ -548,6 +555,7 @@ Herstellen:
     - start: 283
     - start: 283
     - start: 287
+    - start: 288
 Hitler, Adolf:
   references:
     GA 42:
@@ -1131,6 +1139,10 @@ Zugänglichkeit des Seienden:
   references:
     GA 29/30:
     - start: 412
+actualitas:
+  references:
+    WBPh:
+    - start: 285
 als:
   references:
     GA 29/30:
@@ -1236,6 +1248,12 @@ natura:
     - start: 40
     WBPh:
     - start: 237
+potentia:
+  references:
+    WBPh:
+    - start: 284
+  related:
+  - actualitas
 rechnende Denken:
   references:
     GA 16:
@@ -1268,6 +1286,9 @@ unbestimmte Unmittelbare:
   references:
     WBPh:
     - start: 286
+    - start: 288
+    - start: 289
+    - start: 291
 διαίρεσις:
   references:
     GA 29/30:
@@ -1292,12 +1313,14 @@ unbestimmte Unmittelbare:
     - start: 273
       suffix: f
     - start: 282
+    - start: 291
   related:
   - Aussehen
 ζῷον:
   references:
     WBPh:
     - start: 286
+    - start: 288
 ζῷον αλόγον:
   references:
     GA 29/30:
@@ -1343,6 +1366,7 @@ unbestimmte Unmittelbare:
     - start: 274
     - start: 283
     - start: 286
+    - start: 291
 λέγειν:
   references:
     WBPh:
@@ -1397,6 +1421,8 @@ unbestimmte Unmittelbare:
     - end: 286
       start: 285
     - start: 286
+    - start: 288
+    - start: 291
 μέθοδος:
   references:
     WBPh:
@@ -1415,6 +1441,10 @@ unbestimmte Unmittelbare:
     - start: 281
     - end: 285
       start: 284
+παράδειγμα:
+  references:
+    WBPh:
+    - start: 288
 ποίησις:
   references:
     WBPh:
@@ -1429,6 +1459,10 @@ unbestimmte Unmittelbare:
     - start: 266
     - start: 270
     - start: 271
+στέρησις:
+  references:
+    WBPh:
+    - start: 292
 συμβεβηκός:
   references:
     WBPh:
@@ -1463,6 +1497,8 @@ unbestimmte Unmittelbare:
     - start: 254
       suffix: f
     - start: 287
+    - start: 288
+    - start: 290
 τόπος:
   references:
     WBPh:
@@ -1478,6 +1514,8 @@ unbestimmte Unmittelbare:
     - start: 270
     - start: 281
     - start: 286
+  related:
+  - κίνησις
 φύσις:
   references:
     FT:
@@ -1490,6 +1528,7 @@ unbestimmte Unmittelbare:
     WBPh:
     - start: 237
       suffix: ff
+    - start: 288
     WD:
     - start: 278
       suffix: f
@@ -1545,11 +1584,13 @@ unbestimmte Unmittelbare:
       start: 284
   related:
   - ἐνέργεια
+  - τέλος
 ἐνέργεια:
   references:
     WBPh:
     - end: 285
       start: 282
+    - start: 289
 ἐπαγωγή:
   references:
     WBPh:
@@ -1564,6 +1605,11 @@ unbestimmte Unmittelbare:
       suffix: f
   related:
   - εἶδος
+ὁδός:
+  references:
+    WBPh:
+    - end: 291
+      start: 289
 ὑποκείμενον:
   references:
     WBPh:
@@ -1579,6 +1625,8 @@ unbestimmte Unmittelbare:
     - start: 281
     - end: 286
       start: 285
+    - start: 288
+    - start: 291
   related:
   - μορφή
 ῥυθμός:
