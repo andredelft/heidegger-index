@@ -5,7 +5,7 @@
 {% block body %}
 {% include '_home_button.html' %}
 
-<h1 class="clear-right pb-4 text-5xl font-bold dark:text-white">{{ work.csl_json.title }}</h1>
+<h1 class="clear-right pb-4 text-5xl italic font-bold dark:text-white">{{ work.csl_json.title }}</h1>
 
 <h2 class="mt-8 mb-4 text-3xl font-bold dark:text-white">Reference</h2>
 <div class="text-1.5xl {{ body_text }}">{{ work.reference | safe }}</div>

@@ -16,7 +16,7 @@
   {% for lemma in letter.list %}
   <div class="my-4">
     <h3 class="leading-tight">
-      <a href="{% url 'index:lemma-detail' lemma.slug %}" class="{{ hidden_link_decoration }}">{{ lemma }}</a>
+      <a href="{% url 'index:lemma-detail' lemma.slug %}" class="{{ hidden_link_decoration }}{% if lemma.type == "w" %} italic{% endif %}">{{ lemma }}</a>
     </h3>
     {% include '_group_by_work.html' with ref_list=lemma.pagereference_set.all inline=True %}
     {% with lemma.children.all as children %}
@@ -46,20 +46,5 @@
   {% endif %}
   {% endfor %}
 </div>
-
-<script>
-  function scrollToWithOffset(id, offset=90) {
-    var element = document.getElementById(id);
-    if (element) {
-      var elementPosition = element.getBoundingClientRect().top;
-      var offsetPosition = elementPosition + window.pageYOffset - offset;
-    
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth',
-      });
-    }
-  }
-  </script>
 
 {% endblock %}

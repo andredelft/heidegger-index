@@ -5,3 +5,18 @@
   {% endfor %}
   </div>
 </div>
+
+<script>
+function scrollToWithOffset(id, offset=90) {
+  var element = document.getElementById(id);
+  if (element) {
+    var elementPosition = element.getBoundingClientRect().top;
+    var offsetPosition = elementPosition + window.pageYOffset - offset;
+  
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: 'smooth',
+    });
+  }
+}
+</script>

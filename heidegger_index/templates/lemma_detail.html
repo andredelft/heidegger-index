@@ -5,7 +5,7 @@
 {% block body %}
 {% include '_home_button.html' %}
 
-<h1 class="clear-right pb-8 text-5xl font-semibold dark:text-white">{{ lemma.value }}</h1>
+<h1 class="clear-right pb-8 text-5xl font-semibold dark:text-white{% if lemma.type == "w" %} italic{% endif %}">{{ lemma }}</h1>
 
 {% if lemma.description %}
 <div class="{{ description_prose }}">
@@ -15,7 +15,7 @@
 
 {% if lemma.type == "w" and lemma.author %}
 <div class="pb-8 pl-4 {{ body_text }}">
-  <em>Author</em>: <a href="{% url 'index:lemma-detail' lemma.author.slug %}" class="{{ hidden_link_decoration }}">{{ lemma.author }}</a>
+  Author: <a href="{% url 'index:lemma-detail' lemma.author.slug %}" class="{{ hidden_link_decoration }}">{{ lemma.author }}</a>
 </div>
 {% endif %}
 
