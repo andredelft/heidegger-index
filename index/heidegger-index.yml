@@ -336,6 +336,24 @@ Frage nach dem Sinn von Sein:
     SZ:
     - end: 8
       start: 1
+Fragment 1 (Heraklit):
+  author: Heraklit
+  references:
+    WBPh:
+    - start: 277
+  type: w
+Fragment 2 (Heraklit):
+  author: Heraklit
+  references:
+    WBPh:
+    - start: 277
+  type: w
+Fragment 93 (Heraklit):
+  author: Heraklit
+  references:
+    WBPh:
+    - start: 277
+  type: w
 Franz Suarez:
   references:
     GA 29/30:
@@ -524,24 +542,6 @@ Heraklit:
     WBPh:
     - start: 277
   type: p
-Heraklit, Fragment 1:
-  author: Heraklit
-  references:
-    WBPh:
-    - start: 277
-  type: w
-Heraklit, Fragment 2:
-  author: Heraklit
-  references:
-    WBPh:
-    - start: 277
-  type: w
-Heraklit, Fragment 93:
-  author: Heraklit
-  references:
-    WBPh:
-    - start: 277
-  type: w
 Hergestelltheit:
   references:
     WBPh:
