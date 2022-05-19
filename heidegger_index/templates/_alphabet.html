@@ -1,0 +1,7 @@
+<div class="sticky w-screen mb-10 -ml-4 overflow-x-auto md:ml-0 md:w-auto top-6">
+  <div class="flex justify-between gap-3 px-4 py-2 mx-4 mb-2 text-3xl rounded-md shadow md:mx-0 md:w-full md:gap-0 bg-slate-100 dark:bg-slate-600 dark:text-white w-fit">
+  {% for letter in alphabet %}
+    <button type="button" onclick="scrollToWithOffset('{{ letter }}')" class="underline transition-colors decoration-transparent hover:decoration-sky-300">{{ letter }}</button>
+  {% endfor %}
+  </div>
+</div>

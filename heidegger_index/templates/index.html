@@ -8,26 +8,31 @@
   Managed by: <a href="https://github.com/andredelft" target="_blank" rel="noopener noreferrer" class="{{ link_decoration }}">André van Delft</a> &amp; <a href="https://github.com/johannesdewit" target="_blank" rel="noopener noreferrer" class="{{ link_decoration }}">Johannes de Wit</a>
 </p>
 
+{% include '_alphabet.html' %}
 
-{% for lemma in lemmas %}
-<div class="my-4">
-  <h3>
-    <a href="{% url 'index:lemma-detail' lemma.slug %}" class="{{ hidden_link_decoration }}">{{ lemma }}</a>
-  </h3>
-  {% include '_group_by_work.html' with ref_list=lemma.pagereference_set.all inline=True %}
-  {% with lemma.children.all as children %}
-  {% if children %}
-  <ol class="pl-4 my-2 text-xl">
-    {% for child in children %}<li>
-      <a class="{{ hidden_link_decoration }}" href="{% url 'index:lemma-detail' lemma.slug %}#{{ child.slug }}">
-        {{ child }}
-      </a>
-      {% include '_group_by_work.html' with ref_list=child.pagereference_set.all inline=True %}
-    </li>{% endfor %}
-  </ol>
-  {% endif %}
-  {% endwith %}
-</div>
+{% regroup lemmas by first_letter as letter_list %}
+{% for letter in letter_list %}
+  <div id="{{ letter.grouper }}" class="mt-12 text-5xl dark:text-white">{{ letter.grouper }}</div>
+  {% for lemma in letter.list %}
+  <div class="my-4">
+    <h3 class="leading-tight">
+      <a href="{% url 'index:lemma-detail' lemma.slug %}" class="{{ hidden_link_decoration }}">{{ lemma }}</a>
+    </h3>
+    {% include '_group_by_work.html' with ref_list=lemma.pagereference_set.all inline=True %}
+    {% with lemma.children.all as children %}
+    {% if children %}
+    <ol class="pl-4 my-2 text-xl">
+      {% for child in children %}<li>
+        <a class="{{ hidden_link_decoration }}" href="{% url 'index:lemma-detail' lemma.slug %}#{{ child.slug }}">
+          {{ child }}
+        </a>
+        {% include '_group_by_work.html' with ref_list=child.pagereference_set.all inline=True %}
+      </li>{% endfor %}
+    </ol>
+    {% endif %}
+    {% endwith %}
+  </div>
+  {% endfor %}
 {% endfor %}
 
 <h2 class="mt-16 mb-8 text-3xl font-bold dark:text-white">Bibliography</h2>
@@ -41,5 +46,20 @@
   {% endif %}
   {% endfor %}
 </div>
+
+<script>
+  function scrollToWithOffset(id, offset=90) {
+    var element = document.getElementById(id);
+    if (element) {
+      var elementPosition = element.getBoundingClientRect().top;
+      var offsetPosition = elementPosition + window.pageYOffset - offset;
+    
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth',
+      });
+    }
+  }
+  </script>
 
 {% endblock %}

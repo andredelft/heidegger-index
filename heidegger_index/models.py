@@ -68,6 +68,10 @@ class Lemma(models.Model):
 
         super().save(*args, **kwargs)
 
+    @property
+    def first_letter(self):
+        return self.sort_key and self.sort_key[0].upper() or ""
+
     class Meta:
         ordering = ["sort_key"]
 
