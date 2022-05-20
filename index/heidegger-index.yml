@@ -1289,6 +1289,7 @@ unbestimmte Unmittelbare:
     - start: 288
     - start: 289
     - start: 291
+    - start: 295
 διαίρεσις:
   references:
     GA 29/30:
@@ -1314,6 +1315,8 @@ unbestimmte Unmittelbare:
       suffix: f
     - start: 282
     - start: 291
+    - end: 295
+      start: 293
   related:
   - Aussehen
 ζῷον:
@@ -1347,6 +1350,8 @@ unbestimmte Unmittelbare:
     - start: 490
 κατηγορία:
   references:
+    VWPh:
+    - start: 293
     WBPh:
     - start: 250
       suffix: f
@@ -1367,6 +1372,8 @@ unbestimmte Unmittelbare:
     - start: 283
     - start: 286
     - start: 291
+    - start: 293
+    - start: 295
 λέγειν:
   references:
     WBPh:
@@ -1395,6 +1402,7 @@ unbestimmte Unmittelbare:
       suffix: f
     - end: 278
       start: 276
+    - start: 293
 λόγος ἀποφαντικός:
   references:
     GA 29/30:
@@ -1421,8 +1429,10 @@ unbestimmte Unmittelbare:
     - end: 286
       start: 285
     - start: 286
-    - start: 288
     - start: 291
+    - start: 292
+    - end: 295
+      start: 293
 μέθοδος:
   references:
     WBPh:
@@ -1441,6 +1451,7 @@ unbestimmte Unmittelbare:
     - start: 281
     - end: 285
       start: 284
+    - start: 293
 παράδειγμα:
   references:
     WBPh:
@@ -1462,7 +1473,8 @@ unbestimmte Unmittelbare:
 στέρησις:
   references:
     WBPh:
-    - start: 292
+    - end: 295
+      start: 292
 συμβεβηκός:
   references:
     WBPh:
@@ -1582,6 +1594,8 @@ unbestimmte Unmittelbare:
       start: 280
     - end: 285
       start: 284
+    - start: 292
+    - start: 293
   related:
   - ἐνέργεια
   - τέλος
@@ -1610,6 +1624,7 @@ unbestimmte Unmittelbare:
     WBPh:
     - end: 291
       start: 289
+    - start: 295
 ὑποκείμενον:
   references:
     WBPh:
@@ -1627,6 +1642,7 @@ unbestimmte Unmittelbare:
       start: 285
     - start: 288
     - start: 291
+    - start: 292
   related:
   - μορφή
 ῥυθμός:
