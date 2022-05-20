@@ -1,6 +1,6 @@
 import click
 
-from .index import add_ref, add_rel, format_refs, find_ref
+from .index import add_ref, add_rel, format_refs, find_ref, add_refs
 
 from heidegger_index.constants import LEMMA_TYPES, REF_TYPES, RELATION_TYPES
 

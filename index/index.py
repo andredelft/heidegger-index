@@ -4,6 +4,7 @@ import click
 import regex as re
 from pathlib import Path
 from betacode.conv import beta_to_uni
+from tqdm import tqdm
 
 from heidegger_index.utils import match_lemmata
 from heidegger_index.constants import (
@@ -163,6 +164,11 @@ def find_ref(search_term, max_l_dist=2, num_results=5):
         print("\n".join(f"{m[0]}" for m in matches[:num_results]))
     else:
         print("No matches found")
+
+
+def add_refs(lemmas, *args, **kwargs):
+    for lemma in tqdm(lemmas, desc="Adding references"):
+        add_ref(lemma, *args, **kwargs)
 
 
 def format_refs(
