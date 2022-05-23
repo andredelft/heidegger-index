@@ -9,6 +9,7 @@ from django.core.management.base import BaseCommand
 from django.conf import settings
 
 from heidegger_index.models import Work, Lemma, PageReference
+from heidegger_index.utils import gen_sort_key
 
 yaml.warnings({"YAMLLoadWarning": False})
 
@@ -31,14 +32,14 @@ class Command(BaseCommand):
             works_data = yaml.load(f)
 
         # Load descriptions
-        descriptions = {}
+        description_by_sort_key = {}
         for fpath in tqdm(
             glob(str(settings.DESCRIPTIONS_DIR / "*.md")), desc="Loading descriptions"
         ):
             lemma = Path(fpath).stem
             with open(fpath) as f:
                 content = markdown(f.read(), extensions=["smarty", "footnotes"])
-            descriptions[lemma] = content
+            description_by_sort_key[gen_sort_key(lemma)] = content
 
         # Load index data
         with open(settings.INDEX_FILE) as f:
@@ -66,10 +67,10 @@ class Command(BaseCommand):
         sort_keys = dict()
         for i, (value, data) in enumerate(index_data.items()):
             lemma_obj = Lemma(id=i, value=value, type=data.get("type", None))
-            description = descriptions.get(value)
+            lemma_obj.create_sort_key()
+            description = description_by_sort_key.get(lemma_obj.sort_key)
             if description:
                 lemma_obj.description = description
-            lemma_obj.create_sort_key()
             if lemma_obj.sort_key in sort_keys.keys():
                 self.stdout.write(
                     f'Lemma "{value}" shares sort key "{lemma_obj.sort_key}" with "{sort_keys[lemma_obj.sort_key]}". The first lemma will be omitted.'
@@ -105,14 +106,12 @@ class Command(BaseCommand):
                 lemma_obj.related.add(lemma_objs[related_lemma_value])
 
             lemma_obj.work = work_title_map.get(lemma_value)
-            if work_title_map.get(lemma_value):
-                print(lemma_obj.work)
 
             lemma_objs[lemma_value] = lemma_obj
 
         # ManyToMany field 'related' is updated automatically, ForeignKeys are not
         Lemma.objects.bulk_update(
-            tqdm(lemma_objs.values(), desc="Setting parent and author relations"),
+            tqdm(lemma_objs.values(), desc="Setting foreign key relations"),
             ["parent", "author", "work"],
         )
 
