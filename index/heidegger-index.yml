@@ -189,6 +189,10 @@ Christus:
   references:
     WD:
     - start: 269
+Dabeibleiben:
+  references:
+    GA 29/30:
+    - start: 11
 Darwin, Charles:
   references:
     GA 29/30:
@@ -217,6 +221,11 @@ Dasein des Menschen:
   references:
     GA 29/30:
     - start: 487
+    - start: 8
+      type: r
+    - end: 13
+      start: 10
+      type: r
 Dasein im Menschen:
   parent: Dasein
   references:
@@ -252,6 +261,8 @@ Denken:
     GA 16:
     - start: 518
       suffix: ff
+    GA 29/30:
+    - start: 13
 Der Feldweg:
   references:
     GA 16:
@@ -303,6 +314,13 @@ Entschlossenheit:
   references:
     GA 29/30:
     - start: 251
+Ergriffenheit:
+  references:
+    GA 29/30:
+    - end: 13
+      start: 12
+    - end: 10
+      start: 9
 Ernst:
   references:
     GA 29/30:
@@ -336,6 +354,10 @@ Frage nach dem Sinn von Sein:
     SZ:
     - end: 8
       start: 1
+Fragen:
+  references:
+    GA 29/30:
+    - start: 13
 Fragment 1 (Heraklit):
   author: Heraklit
   references:
@@ -405,6 +427,12 @@ Gesang:
     WD:
     - start: 274
       suffix: ff
+Geschichte der Metaphysik:
+  parent: Metaphysik
+  references:
+    GA 29/30:
+    - start: 4
+      suffix: f
 Geschick:
   references:
     EWI:
@@ -486,7 +514,9 @@ Grundstimmung:
       start: 410
     - start: 487
     - start: 490
+    - start: 10
 Grundstimmung unseres Daseins:
+  parent: Stimmung
   references:
     GA 29/30:
     - end: 409
@@ -561,6 +591,10 @@ Hitler, Adolf:
     GA 42:
     - start: 40
   type: p
+Holzwege:
+  references:
+    GA 29/30:
+    - start: 11
 Horizont:
   references:
     GA 29/30:
@@ -579,6 +613,10 @@ Hölderlin, Friedrich:
     - end: 273
       start: 272
   type: p
+Inbegrif:
+  references:
+    GA 29/30:
+    - start: 13
 Kant und das Problem der Metaphysik:
   references:
     GA 29/30:
@@ -671,6 +709,15 @@ Metaphysics:
     - end: 285
       start: 284
   type: w
+Metaphysik:
+  references:
+    GA 29/30:
+    - end: 5
+      start: 1
+    - end: 7
+      start: 6
+    - end: 13
+      start: 9
 Miteinandersein:
   references:
     GA 29/30:
@@ -790,21 +837,25 @@ Philosophie:
     - start: 260
     - end: 431
       start: 421
+    - end: 5
+      start: 1
+    - end: 7
+      start: 6
+    - end: 13
+      start: 9
 Philosophieren:
   references:
     GA 29/30:
     - start: 415
+    - end: 7
+      start: 6
 Plato:
   references:
     GA 29/30:
+    - start: 439
     - start: 484
     SZ:
     - start: 3
-  type: p
-Platon:
-  references:
-    GA 29/30:
-    - start: 439
   type: p
 Rand der Möglichkeit:
   references:
@@ -935,6 +986,8 @@ Stimmung:
     GA 29/30:
     - end: 410
       start: 409
+    - end: 10
+      start: 9
 Symbol:
   references:
     GA 29/30:
@@ -1045,6 +1098,11 @@ Vorhandenen:
     - end: 424
       start: 423
     - start: 434
+      suffix: f
+Vorstellen:
+  references:
+    GA 29/30:
+    - start: 12
       suffix: f
 Wachsen:
   references:
@@ -1207,6 +1265,12 @@ der Feldberg:
     - start: 335
     HH:
     - start: 134
+der Mensch:
+  references:
+    GA 29/30:
+    - start: 6
+    - start: 7
+    - start: 10
 der Wille:
   references:
     WD:
@@ -1242,6 +1306,14 @@ im Ganzen:
       suffix: f
     - start: 441
     - start: 457
+    - start: 6
+metaphysischen Begriffe:
+  references:
+    GA 29/30:
+    - end: 10
+      start: 9
+    - end: 13
+      start: 12
 natura:
   references:
     SVG:
