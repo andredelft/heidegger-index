@@ -25,6 +25,8 @@ Antiphon:
     - end: 265
       start: 263
     - start: 271
+    - start: 291
+    - start: 296
   type: p
 Anwesen:
   references:
@@ -55,6 +57,29 @@ Aristoteles:
     WBPh:
     - start: 237
       suffix: ff
+    - start: 299
+    - start: 240
+    - start: 241
+    - start: 242
+    - start: 244
+    - start: 246
+    - start: 252
+    - start: 253
+    - start: 256
+    - start: 259
+    - start: 263
+    - start: 271
+    - start: 278
+    - start: 279
+    - start: 280
+    - start: 281
+    - start: 285
+    - start: 291
+    - start: 293
+    - start: 292
+    - start: 297
+    - start: 298
+    - start: 299
   type: p
 Atomenergie:
   references:
@@ -95,6 +120,7 @@ Aussehen:
     - start: 283
     - end: 288
       start: 287
+    - start: 295
 Baer, Karl Ernst von:
   references:
     GA 29/30:
@@ -156,6 +182,7 @@ Bewegtheit:
     - end: 282
       start: 281
     - start: 288
+    - start: 296
   related:
   - κίνησις
 Beziehung zu Seiendem als Solchem:
@@ -251,6 +278,12 @@ De anima:
     - end: 455
       start: 454
   type: w
+De generatione et corruptione:
+  author: Aristoteles
+  references:
+    WBPh:
+    - start: 293
+  type: w
 Demokrit:
   references:
     WBPh:
@@ -305,6 +338,7 @@ Entbergen:
     - start: 490
     WBPh:
     - start: 277
+    - start: 299
 Entfernung:
   references:
     EWI:
@@ -363,6 +397,12 @@ Fragment 1 (Heraklit):
   references:
     WBPh:
     - start: 277
+  type: w
+Fragment 123 (Heraklit):
+  author: Heraklit
+  references:
+    WBPh:
+    - start: 298
   type: w
 Fragment 2 (Heraklit):
   author: Heraklit
@@ -571,6 +611,7 @@ Heraklit:
   references:
     WBPh:
     - start: 277
+    - start: 298
   type: p
 Hergestelltheit:
   references:
@@ -637,6 +678,7 @@ Kant, Immanuel:
     WBPh:
     - start: 251
     - start: 272
+    - start: 287
   type: p
 Kierkegaard, Søren:
   references:
@@ -703,11 +745,15 @@ Mensch qua Mensch:
   references:
     GA 29/30:
     - start: 414
-Metaphysics:
+Metaphysica:
+  author: Aristoteles
   references:
     WBPh:
+    - start: 282
     - end: 285
       start: 284
+    - start: 294
+    - start: 297
   type: w
 Metaphysik:
   references:
@@ -773,6 +819,7 @@ Natur:
     - end: 241
       start: 237
     - start: 261
+    - start: 298
     WD:
     - start: 277
       suffix: ff
@@ -849,6 +896,41 @@ Philosophieren:
     - start: 415
     - end: 7
       start: 6
+Physica:
+  author: Aristoteles
+  references:
+    WBPh:
+    - start: 240
+    - start: 241
+    - start: 243
+    - start: 244
+      suffix: f
+    - start: 248
+    - start: 252
+    - start: 253
+    - start: 255
+      suffix: f
+    - start: 256
+    - start: 257
+    - start: 259
+    - start: 260
+    - start: 263
+    - start: 265
+      suffix: f
+    - start: 269
+    - start: 271
+    - start: 274
+      suffix: f
+    - start: 279
+    - start: 280
+    - start: 281
+    - start: 285
+    - start: 286
+    - start: 289
+    - start: 291
+    - start: 292
+    - start: 297
+  type: w
 Plato:
   references:
     GA 29/30:
@@ -856,6 +938,8 @@ Plato:
     - start: 484
     SZ:
     - start: 3
+    WBPh:
+    - start: 299
   type: p
 Rand der Möglichkeit:
   references:
@@ -981,6 +1065,11 @@ Stanley, Wendell Meredith, 1904-1971:
     GA 16:
     - start: 525
   type: p
+Sterben:
+  references:
+    WBPh:
+    - start: 295
+      suffix: f
 Stimmung:
   references:
     GA 29/30:
@@ -1362,6 +1451,7 @@ unbestimmte Unmittelbare:
     - start: 289
     - start: 291
     - start: 295
+    - start: 296
 διαίρεσις:
   references:
     GA 29/30:
@@ -1380,6 +1470,7 @@ unbestimmte Unmittelbare:
     - start: 278
     - end: 285
       start: 284
+    - start: 296
 εἶδος:
   references:
     WBPh:
@@ -1389,6 +1480,9 @@ unbestimmte Unmittelbare:
     - start: 291
     - end: 295
       start: 293
+    - start: 297
+    - start: 299
+    - start: 299
   related:
   - Aussehen
 ζῷον:
@@ -1446,6 +1540,8 @@ unbestimmte Unmittelbare:
     - start: 291
     - start: 293
     - start: 295
+    - start: 296
+    - start: 299
 λέγειν:
   references:
     WBPh:
@@ -1475,6 +1571,7 @@ unbestimmte Unmittelbare:
     - end: 278
       start: 276
     - start: 293
+    - start: 299
 λόγος ἀποφαντικός:
   references:
     GA 29/30:
@@ -1505,6 +1602,7 @@ unbestimmte Unmittelbare:
     - start: 292
     - end: 295
       start: 293
+    - start: 296
 μέθοδος:
   references:
     WBPh:
@@ -1524,6 +1622,9 @@ unbestimmte Unmittelbare:
     - end: 285
       start: 284
     - start: 293
+    - start: 295
+    - start: 297
+      suffix: f
 παράδειγμα:
   references:
     WBPh:
@@ -1532,6 +1633,7 @@ unbestimmte Unmittelbare:
   references:
     WBPh:
     - start: 287
+    - start: 297
   related:
   - Herstellen
   - τέχνη
@@ -1583,6 +1685,7 @@ unbestimmte Unmittelbare:
     - start: 287
     - start: 288
     - start: 290
+    - start: 297
 τόπος:
   references:
     WBPh:
@@ -1611,11 +1714,24 @@ unbestimmte Unmittelbare:
     - start: 145
     WBPh:
     - start: 237
-      suffix: ff
-    - start: 288
+    - start: 239
+    - end: 244
+      start: 241
+    - start: 246
+    - start: 248
+    - end: 266
+      start: 252
+    - end: 275
+      start: 268
+    - end: 281
+      start: 278
+    - end: 299
+      start: 285
     WD:
     - start: 278
       suffix: f
+  related:
+  - Physica
 ψεύδεσθαι:
   references:
     GA 29/30:
@@ -1633,6 +1749,10 @@ unbestimmte Unmittelbare:
     - start: 487
     - start: 490
     - start: 488
+ἀλήθεια:
+  references:
+    WBPh:
+    - start: 299
 ἀπόφασις:
   references:
     GA 29/30:
@@ -1655,6 +1775,8 @@ unbestimmte Unmittelbare:
     - start: 244
       suffix: ff
     - start: 268
+    - start: 296
+      suffix: f
 ἀίδιον:
   references:
     WBPh:
@@ -1668,6 +1790,7 @@ unbestimmte Unmittelbare:
       start: 284
     - start: 292
     - start: 293
+    - start: 299
   related:
   - ἐνέργεια
   - τέλος
@@ -1677,6 +1800,8 @@ unbestimmte Unmittelbare:
     - end: 285
       start: 282
     - start: 289
+    - start: 295
+    - start: 299
 ἐπαγωγή:
   references:
     WBPh:
@@ -1691,6 +1816,10 @@ unbestimmte Unmittelbare:
       suffix: f
   related:
   - εἶδος
+ὀσία:
+  references:
+    WBPh:
+    - start: 299
 ὁδός:
   references:
     WBPh:
