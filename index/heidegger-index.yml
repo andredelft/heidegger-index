@@ -1673,16 +1673,13 @@ potentia:
     - start: 284
   related:
   - actualitas
-principium grande:
-  references:
-    SvG:
-    - start: 187
 principium magnum:
   references:
     SvG:
     - start: 171
     - start: 172
     - start: 176
+    - start: 187
   related:
   - Satz vom Grund
   - principium rationis
