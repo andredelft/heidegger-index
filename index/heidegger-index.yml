@@ -121,6 +121,10 @@ Aussehen:
     - end: 288
       start: 287
     - start: 295
+Axiom:
+  references:
+    SvG:
+    - start: 174
 Baer, Karl Ernst von:
   references:
     GA 29/30:
@@ -301,6 +305,11 @@ Der Feldweg:
     GA 16:
     - start: 517
   type: w
+Descartes, René:
+  references:
+    SvG:
+    - start: 174
+  type: p
 Dionysos:
   references:
     WD:
@@ -443,6 +452,9 @@ Gegenstand:
   references:
     GA 16:
     - start: 523
+    SvG:
+    - start: 174
+    - start: 175
 Gegnet:
   references:
     GA 55:
@@ -477,9 +489,6 @@ Geschick:
   references:
     EWI:
     - start: 68
-      suffix: ff
-    SVG:
-    - start: 90
       suffix: ff
     SZ:
     - start: 384
@@ -527,6 +536,12 @@ Gott:
     - start: 270
 Grund:
   references:
+    SvG:
+    - start: 171
+    - start: 172
+    - start: 173
+    - start: 174
+    - start: 175
     WD:
     - end: 270
       start: 269
@@ -542,6 +557,14 @@ Grundriß:
       type: r
     ZW:
     - start: 79
+Grundsatz:
+  references:
+    SvG:
+    - start: 171
+    - start: 172
+    - start: 173
+  related:
+  - Satz vom Grund
 Grundstimmung:
   parent: Stimmung
   references:
@@ -721,6 +744,16 @@ Leere im Ganzen:
   references:
     GA 29/30:
     - start: 251
+Leibniz, Gottfried Wilhelm:
+  references:
+    SvG:
+    - end: 175
+      start: 172
+  related:
+  - Satz vom Grund
+  - principium rationis
+  - principium magnum
+  type: p
 Lichtung:
   references:
     WD:
@@ -777,8 +810,8 @@ Mnemosyne:
 Mozart, Wolfgang Amadeus:
   references:
     SvG:
-    - end: 118
-      start: 117
+    - end: 99
+      start: 100
   type: p
 Mussolini, Benito:
   references:
@@ -941,10 +974,18 @@ Plato:
     WBPh:
     - start: 299
   type: p
+Prinzip:
+  references:
+    SvG:
+    - start: 174
 Rand der Möglichkeit:
   references:
     GA 29/30:
     - start: 257
+Rechenschaft:
+  references:
+    SvG:
+    - start: 175
 Reizbarkeit:
   references:
     GA 29/30:
@@ -965,6 +1006,13 @@ Rätsel:
   references:
     SZ:
     - start: 4
+Satz vom Grund:
+  references:
+    SvG:
+    - start: 171
+    - start: 172
+    - start: 173
+    - start: 175
 Schein:
   references:
     WBPh:
@@ -1139,6 +1187,17 @@ Unverborgenheit:
     - start: 271
     - start: 287
       type: r
+Ursache:
+  references:
+    SvG:
+    - start: 171
+    - start: 172
+Urteil:
+  references:
+    SvG:
+    - start: 173
+    - start: 174
+    - start: 175
 Verbergen:
   references:
     GA 29/30:
@@ -1193,10 +1252,18 @@ Vorstellen:
     GA 29/30:
     - start: 12
       suffix: f
+    SvG:
+    - start: 171
+    - start: 172
+    - start: 174
 Wachsen:
   references:
     WBPh:
     - start: 287
+Wahrheit:
+  references:
+    SvG:
+    - start: 173
 Welt:
   references:
     GA 29/30:
@@ -1405,7 +1472,7 @@ metaphysischen Begriffe:
       start: 12
 natura:
   references:
-    SVG:
+    SvG:
     - start: 40
     WBPh:
     - start: 237
@@ -1415,12 +1482,45 @@ potentia:
     - start: 284
   related:
   - actualitas
+principium magnum:
+  references:
+    SvG:
+    - start: 171
+    - start: 172
+  related:
+  - Satz vom Grund
+  - principium rationis
+principium rationis:
+  references:
+    SvG:
+    - start: 171
+    - start: 172
+  related:
+  - Satz vom Grund
+principium rationisreddendum:
+  references:
+    SvG:
+    - start: 173
+ratio:
+  references:
+    SvG:
+    - start: 173
+    - start: 175
+ratio sufficiens:
+  references:
+    SvG:
+    - start: 175
 rechnende Denken:
   references:
     GA 16:
     - end: 520
       start: 519
     - start: 523
+reddendum:
+  references:
+    SvG:
+    - start: 174
+    - start: 175
 tiefe Langeweile:
   parent: Langeweile
   references:
