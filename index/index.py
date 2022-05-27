@@ -138,11 +138,13 @@ def add_rel(first_lemma, second_lemma, rel_type):
 
         index[second_lemma]["author"] = first_lemma
     elif rel_type == IS_PARENT_OF:
-        if second_lemma_dict.get("children"):
+        if any(
+            lemma_dict.get("parent") == second_lemma for lemma_dict in index.values()
+        ):
             raise click.BadParameter(
-                f"Lemma '{first_lemma}' already has children, and therefore cannot itself be a child"
+                f"Lemma '{second_lemma}' already has children, and therefore cannot itself be a child"
             )
-        elif any(lem_dict.get("parent") == first_lemma for lem_dict in index.values()):
+        elif first_lemma_dict.get("parent"):
             raise click.BadParameter(
                 f"Lemma '{first_lemma}' already has a parent, and therefore cannot itself be a parent"
             )
