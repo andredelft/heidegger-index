@@ -1678,7 +1678,6 @@ principium grande:
     SvG:
     - start: 187
 principium magnum:
-  parent: principium rationis
   references:
     SvG:
     - start: 171
