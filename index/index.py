@@ -176,7 +176,7 @@ def add_refs(lemmas, *args, **kwargs):
         add_ref(lemma, *args, **kwargs)
 
 
-def add_interrelated(lemmas):
+def add_interrelated(*lemmas):
     """Add multiple interrelated lemmas to the index"""
     for pair in combinations(lemmas, 2):
         add_rel(*pair, rel_type=IS_RELATED_TO)
