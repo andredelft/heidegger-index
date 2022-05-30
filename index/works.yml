@@ -261,6 +261,26 @@ WBPh:
   title: Vom Wesen und Begriff der Φὐσις, Aristoteles, Physik B, 1
   title-short: Vom Wesen und Begriff der Φὐσις
   type: chapter
+SvG:
+  id: heideggerSatzVomGrund1997
+  author:
+    - family: Heidegger
+      given: Martin
+  citation-key: heideggerSatzVomGrund1997
+  collection-number: band 10
+  collection-title: Gesamtausgabe
+  editor:
+    - family: Jaeger
+      given: Petra
+  event-place: Frankfurt am Main
+  issued:
+    date-parts:
+    - - 1976
+  language: ger
+  publisher: Vittorio Klostermann
+  publisher-place: Frankfurt am Main
+  title: Der Satz vom Grund
+  type: book
 Vorarb29/30:
   id: heideggerVorarb29/30
   author:

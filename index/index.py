@@ -5,6 +5,7 @@ import regex as re
 from pathlib import Path
 from betacode.conv import beta_to_uni
 from tqdm import tqdm
+from itertools import combinations
 
 from heidegger_index.utils import match_lemmata
 from heidegger_index.constants import (
@@ -137,11 +138,13 @@ def add_rel(first_lemma, second_lemma, rel_type):
 
         index[second_lemma]["author"] = first_lemma
     elif rel_type == IS_PARENT_OF:
-        if second_lemma_dict.get("children"):
+        if any(
+            lemma_dict.get("parent") == second_lemma for lemma_dict in index.values()
+        ):
             raise click.BadParameter(
-                f"Lemma '{first_lemma}' already has children, and therefore cannot itself be a child"
+                f"Lemma '{second_lemma}' already has children, and therefore cannot itself be a child"
             )
-        elif any(lem_dict.get("parent") == first_lemma for lem_dict in index.values()):
+        elif first_lemma_dict.get("parent"):
             raise click.BadParameter(
                 f"Lemma '{first_lemma}' already has a parent, and therefore cannot itself be a parent"
             )
@@ -166,9 +169,19 @@ def find_ref(search_term, max_l_dist=2, num_results=5):
         print("No matches found")
 
 
+# Shorthand functions:
+
+
 def add_refs(lemmas, *args, **kwargs):
+    """Add multiple lemmas with the same reference to the index"""
     for lemma in tqdm(lemmas, desc="Adding references"):
         add_ref(lemma, *args, **kwargs)
+
+
+def add_interrelated(*lemmas):
+    """Add multiple interrelated lemmas to the index"""
+    for pair in combinations(lemmas, 2):
+        add_rel(*pair, rel_type=IS_RELATED_TO)
 
 
 def format_refs(
