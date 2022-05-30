@@ -261,3 +261,22 @@ WBPh:
   title: Vom Wesen und Begriff der Φὐσις, Aristoteles, Physik B, 1
   title-short: Vom Wesen und Begriff der Φὐσις
   type: chapter
+Vorarb29/30:
+  id: heideggerVorarb29/30
+  author:
+    - family: Heidegger
+      given: Martin
+  citation-key: heideggerVorarb29/30
+  container-title: Heidegger Studies
+  ISSN: 08854580, 21539170
+  issued:
+    - year: 1991
+      month: 4
+      day: 2
+  language: ger
+  page: 5-12
+  publisher: Duncker & Humblot GmbH
+  title: "Unbenutzte Vorarbeiten zur Vorlesung vom Wintersemester 1929/30: „Die Grundbegriffe der Metaphysik. Welt — Endlichkeit — Einsamkeit“"
+  title-short: Unbenutzte Vorarbeiten zur „Die Grundbegriffe der Metaphysik“
+  type: article-journal
+  volume: '7'
