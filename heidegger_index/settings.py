@@ -143,5 +143,5 @@ TAILWIND_CLASSES = {
     "hidden_link_decoration": "font-semibold text-black underline transition-colors duration-300 decoration-transparent hover:decoration-sky-300 dark:text-white",
     "hidden_link_decoration_medium": "font-medium text-black underline transition-colors duration-300 decoration-transparent hover:decoration-sky-300 dark:text-white",
     "body_text": "text-slate-700 dark:text-slate-300",
-    "description_prose": "prose prose-xl prose-slate dark:prose-invert prose-blockquote:not-italic prose-blockquote:leading-normal dark:prose-blockquote:border-l-slate-600 prose-a:decoration-sky-300",
+    "description_prose": "prose prose-xl prose-slate dark:prose-invert prose-blockquote:not-italic prose-p:leading-normal dark:prose-blockquote:border-l-slate-600 prose-a:decoration-sky-300",
 }

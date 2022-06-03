@@ -8,7 +8,7 @@
 <h1 class="clear-right pb-8 text-5xl font-semibold dark:text-white{% if lemma.type == "w" %} italic{% endif %}">{{ lemma }}</h1>
 
 {% if lemma.description %}
-<div class="{{ description_prose }}">
+<div class="{{ description_prose }} mb-8">
   {{ lemma.description | safe }}
 </div>
 {% endif %}
@@ -28,7 +28,7 @@
 {% for child in children %}
   <h2 class="pt-8 pb-4 text-3xl font-semibold dark:text-white" id="{{ child.slug }}">{{ child }}</h2>
   {% if child.description %}
-  <div class="{{ description_prose }}">
+  <div class="{{ description_prose }} mb-8">
     {{ child.description | safe }}
   </div>
   {% endif %}

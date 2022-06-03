@@ -282,9 +282,6 @@ Dasein des Menschen:
       type: r
     SvG:
     - start: 179
-Dasein des menschen:
-  references:
-    SvG:
     - start: 189
 Dasein im Menschen:
   parent: Dasein
@@ -360,6 +357,8 @@ Dürftiger Zeit:
     WD:
     - start: 269
       suffix: ff
+  related:
+  - Brod und Wein
 Elemente:
   references:
     WBPh:
@@ -541,7 +540,6 @@ Gesang:
   references:
     WD:
     - start: 274
-      suffix: ff
 Geschichte der Metaphysik:
   parent: Metaphysik
   references:
@@ -603,7 +601,8 @@ Gott:
     GA 29/30:
     - start: 262
     WD:
-    - start: 270
+    - end: 270
+      start: 269
 Großrechenanlage:
   references:
     SvG:
@@ -741,6 +740,10 @@ Herstellen:
     - start: 283
     - start: 287
     - start: 288
+Himmlischen:
+  references:
+    WD:
+    - start: 270
 Hitler, Adolf:
   references:
     GA 42:
@@ -968,7 +971,6 @@ Natur:
     - start: 298
     WD:
     - start: 277
-      suffix: ff
     ZEG:
     - start: 60
   related:
@@ -1238,7 +1240,6 @@ Sprache:
       suffix: f
     WD:
     - start: 274
-      suffix: ff
 Sprachgeist:
   references:
     HH:
@@ -1258,6 +1259,14 @@ Sterben:
     WBPh:
     - start: 295
       suffix: f
+  related:
+  - Sterblichen
+Sterblichen:
+  references:
+    WD:
+    - start: 270
+  related:
+  - Himmlischen
 Stimmung:
   references:
     GA 29/30:
@@ -1458,7 +1467,6 @@ Weltalter:
   references:
     WD:
     - start: 269
-      suffix: ff
 Weltbildung:
   references:
     GA 29/30:
@@ -1473,7 +1481,6 @@ Weltnacht:
   references:
     WD:
     - start: 269
-      suffix: ff
 Weltphänomen:
   references:
     GA 29/30:
@@ -1968,6 +1975,8 @@ unbestimmte Unmittelbare:
     - start: 295
     - end: 299
       start: 297
+  related:
+  - φύσις
 παράδειγμα:
   references:
     WBPh:

@@ -1,0 +1,1 @@
+> Dichter sind die [[Sterblichen]], die mit Ernst den [[Weingott|Dionysos]] singend, die Spur der entflohenen Götter spüren, auf deren Spur bleiben und so den verwandten Sterblichen den Weg spuren zur Wende. (_WD_, p. 272)

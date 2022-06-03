@@ -1,1 +1,1 @@
-> Welt ist nicht das All des Seienden, ist nicht die Zugänglichkeit von Seiendem als solchem, nicht die der Zugänglichkeit zugrundeliegende Offenbarkeit des Seienden als solchen – sondern Welt ist die Offenbarkeit des Seienden als solche im Ganzen. (*GA 29/30*, p. 412)
+> Welt ist nicht das All des Seienden, ist nicht die Zugänglichkeit von Seiendem als solchem, nicht die der Zugänglichkeit zugrundeliegende Offenbarkeit des Seienden als solchen – sondern Welt ist die Offenbarkeit des Seienden als solche [[im Ganzen|Seiende im Ganzen]]. (_GA 29/30_, p. 412)
