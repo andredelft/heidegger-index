@@ -10,6 +10,8 @@ PREFIX_FILTER = re.compile(rf'^(?:{"|".join(PREFIXES)})\s+')
 
 
 def gen_sort_key(value):
+    # Strip surrounding whitespaces
+    value = value.strip()
     # Normalize unicode
     value = unidecode(value)
     # Convert to lowercase

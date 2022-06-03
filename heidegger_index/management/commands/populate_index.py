@@ -3,13 +3,13 @@ import yaml
 from tqdm import tqdm
 from glob import glob
 from pathlib import Path
-from markdown import markdown
 
 from django.core.management.base import BaseCommand
 from django.conf import settings
 
 from heidegger_index.models import Work, Lemma, PageReference
 from heidegger_index.utils import gen_sort_key
+from heidegger_index.md import convert_md
 
 yaml.warnings({"YAMLLoadWarning": False})
 
@@ -38,8 +38,8 @@ class Command(BaseCommand):
         ):
             lemma = Path(fpath).stem
             with open(fpath) as f:
-                content = markdown(f.read(), extensions=["smarty", "footnotes"])
-            description_by_sort_key[gen_sort_key(lemma)] = content
+                md_content = f.read()
+            description_by_sort_key[gen_sort_key(lemma)] = md_content
 
         # Load index data
         with open(settings.INDEX_FILE) as f:
@@ -68,9 +68,6 @@ class Command(BaseCommand):
         for i, (value, data) in enumerate(index_data.items()):
             lemma_obj = Lemma(id=i, value=value, type=data.get("type", None))
             lemma_obj.create_sort_key()
-            description = description_by_sort_key.get(lemma_obj.sort_key)
-            if description:
-                lemma_obj.description = description
             if lemma_obj.sort_key in sort_keys.keys():
                 self.stdout.write(
                     f'Lemma "{value}" shares sort key "{lemma_obj.sort_key}" with "{sort_keys[lemma_obj.sort_key]}". The first lemma will be omitted.'
@@ -90,18 +87,23 @@ class Command(BaseCommand):
         }
 
         # Loop a second time through lemma_data to set parent, author and related fields
+        # and populate descriptions
         for lemma_value, lemma_data in index_data.items():
             lemma_obj = lemma_objs[lemma_value]
+
+            # Parents
             parent_value = lemma_data.get("parent")
             if parent_value:
                 lemma_obj.parent = lemma_objs[parent_value]
 
+            # Authors
             author_value = lemma_data.get("author")
             if author_value:
                 author = lemma_objs.get(author_value)
                 if author:
                     lemma_obj.author = author
 
+            # Related
             for related_lemma_value in lemma_data.get("related", []):
                 lemma_obj.related.add(lemma_objs[related_lemma_value])
 
@@ -109,10 +111,18 @@ class Command(BaseCommand):
 
             lemma_objs[lemma_value] = lemma_obj
 
+            # Descriptions
+            description = description_by_sort_key.get(lemma_obj.sort_key)
+            if description:
+                lemma_obj.description = convert_md(description)
+
         # ManyToMany field 'related' is updated automatically, ForeignKeys are not
         Lemma.objects.bulk_update(
-            tqdm(lemma_objs.values(), desc="Setting foreign key relations"),
-            ["parent", "author", "work"],
+            tqdm(
+                lemma_objs.values(),
+                desc="Setting foreign key relations and descriptions",
+            ),
+            ["parent", "author", "work", "description"],
         )
 
         # Populate page references
