@@ -377,12 +377,9 @@ Duineser Elegien:
   references:
     WD:
     - start: 274
-  type: w
-Duinesier Elegien:
-  references:
-    WD:
     - start: 276
     - start: 278
+  type: w
 Elemente:
   references:
     WBPh:
@@ -1043,10 +1040,8 @@ Natur:
     - start: 261
     - start: 298
     WD:
-    - start: 277
-    - start: 277
-    - start: 278
-    - start: 279
+    - end: 279
+      start: 277
     ZEG:
     - start: 60
   related:
@@ -1318,15 +1313,13 @@ Seinsvergessenheit:
     WD:
     - start: 273
 Sonette an Orpheus:
-  references:
-    WD:
-    - start: 278
-Sonnette an Orpheus:
   author: Rilke, Reiner Maria
   references:
     WD:
     - start: 274
+      suffix: f
     - start: 276
+    - start: 278
   type: w
 Spemann, Hans:
   references:
@@ -1366,7 +1359,6 @@ Spur:
   references:
     WD:
     - start: 271
-    - start: 272
     - start: 272
     - start: 274
     - start: 275
@@ -1624,10 +1616,8 @@ Weltgeschichte:
 Weltnacht:
   references:
     WD:
-    - start: 269
-    - start: 270
-    - start: 271
-    - start: 272
+    - end: 272
+      start: 269
 Weltphänomen:
   references:
     GA 29/30:
@@ -1779,12 +1769,8 @@ der Feldberg:
 dürftiger Zeit:
   references:
     WD:
-    - start: 272
-    - start: 269
-    - start: 270
-    - start: 271
-    - start: 273
-    - start: 274
+    - end: 274
+      start: 272
   related:
   - Brod und Wein
   - Dichter
