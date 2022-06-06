@@ -27,16 +27,17 @@
 </div>
 
 <script>
-  function scrollToWithOffset(id, offset=90) {
-    var element = document.getElementById(id);
+  function scrollToWithOffset(id, offset=96) {
+    const element = document.getElementById(id);
     if (element) {
-      var elementPosition = element.getBoundingClientRect().top;
-      var offsetPosition = elementPosition + window.pageYOffset - offset;
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - offset;
     
       window.scrollTo({
         top: offsetPosition,
         behavior: 'smooth',
       });
+      history.pushState({}, "", `#${id}`);
     }
   }
   </script>
