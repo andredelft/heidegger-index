@@ -46,6 +46,7 @@ class Lemma(models.Model):
     type = models.CharField(max_length=1, null=True, choices=TYPES.items())
     description = models.TextField(null=True)
     sort_key = models.CharField(max_length=100, null=True, unique=True)
+    first_letter = models.CharField(max_length=1, null=True)
     slug = AutoSlugField(populate_from="value", slugify_function=slugify)
 
     # Only applicable to lemmas with type='w'
@@ -61,16 +62,13 @@ class Lemma(models.Model):
 
     def create_sort_key(self):
         self.sort_key = gen_sort_key(self.value)
+        self.first_letter = self.sort_key and self.sort_key[0].upper() or ""
 
     def save(self, *args, **kwargs):
         if not self.sort_key:
             self.create_sort_key()
 
         super().save(*args, **kwargs)
-
-    @property
-    def first_letter(self):
-        return self.sort_key and self.sort_key[0].upper() or ""
 
     class Meta:
         ordering = ["sort_key"]

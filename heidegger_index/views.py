@@ -2,19 +2,31 @@ from django.http import Http404
 from django.shortcuts import render
 from django.views.generic.detail import DetailView
 from django.shortcuts import redirect
+from django.conf import settings
 
 from heidegger_index.models import Lemma, Work
 
+USED_LETTERS = set(Lemma.objects.values_list("first_letter", flat=True))
+ALPHABET = sorted(USED_LETTERS)
+
 
 def index_view(request):
-    lemmas = Lemma.objects.filter(parent=None)
+    start = request.GET.get("start")
+    start_index = ALPHABET.index(start) if start in USED_LETTERS else 0
+    end_index = start_index + settings.PAGINATION_WINDOW
     return render(
         request,
         "index.html",
         {
-            "lemmas": lemmas,
+            "lemmas": Lemma.objects.filter(
+                first_letter__in=ALPHABET[start_index:end_index], parent=None
+            ),
             "works": Work.objects.all(),
-            "alphabet": sorted(set(lemma.first_letter for lemma in lemmas)),
+            "alphabet": {
+                "pre": ALPHABET[:start_index],
+                "selected": ALPHABET[start_index:end_index],
+                "post": ALPHABET[end_index:],
+            },
         },
     )
 
