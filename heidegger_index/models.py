@@ -95,7 +95,7 @@ class PageReference(models.Model):
         if self.end:
             return f"{self.start}–{self.end}"
         elif self.suffix:
-            return f"{self.start}{self.suffix}."
+            return f"{self.start}{self.suffix}"
         else:
             return f"{self.start}"
 
