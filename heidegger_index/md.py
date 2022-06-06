@@ -1,7 +1,7 @@
 import re
 import xml.etree.ElementTree as etree
-from markdown import markdown
-from markdown.extensions import Extension
+from markdown import markdown, util, Extension
+from markdown.blockprocessors import BlockQuoteProcessor
 from markdown.inlinepatterns import InlineProcessor
 
 from django.urls import reverse
@@ -39,8 +39,34 @@ class LemmaLinkInlineProcessor(InlineProcessor):
         return el, m.start(), m.end()
 
 
+class NonLazyBlockQuoteBlockProcessor(BlockQuoteProcessor):
+    """A copy of the BlockQuoteProcessor without ['lazy blockquotes'](https://daringfireball.net/projects/markdown/syntax#blockquote). Taken from: https://github.com/atodorov/Markdown-No-Lazy-BlockQuote-Extension"""
+
+    def run(self, parent, blocks):
+        block = blocks.pop(0)
+        m = self.RE.search(block)
+        if m:
+            before = block[: m.start()]  # Lines before blockquote
+            # Pass lines before blockquote in recursively for parsing forst.
+            self.parser.parseBlocks(parent, [before])
+            # Remove ``> `` from begining of each line.
+            block = "\n".join(
+                [self.clean(line) for line in block[m.start() :].split("\n")]
+            )
+
+        # no lazy blockquotes
+        quote = util.etree.SubElement(parent, "blockquote")
+
+        # Recursively parse block with blockquote as parent.
+        # change parser state so blockquotes embedded in lists use p tags
+        self.parser.state.set("blockquote")
+        self.parser.parseChunk(quote, block)
+        self.parser.state.reset()
+
+
 class HeideggerIndexExtension(Extension):
     def extendMarkdown(self, md):
         md.inlinePatterns.register(
             LemmaLinkInlineProcessor(RE_LEMMA_LINK, md), "lemma_link", 40
         )
+        md.parser.blockprocessors["quote"] = NonLazyBlockQuoteBlockProcessor(md.parser)
