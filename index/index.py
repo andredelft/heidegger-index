@@ -51,7 +51,7 @@ def add_ref(lemma, work, ref, lemma_type=None, ref_type=None, betacode=False):
 
     # Validation: ref
     m = REF_REGEX.search(str(ref).strip())
-    if not m:
+    if not m and ref != "whole":
         raise click.BadParameter(f"Reference '{ref}' is not recognized")
 
     if betacode:
@@ -63,9 +63,12 @@ def add_ref(lemma, work, ref, lemma_type=None, ref_type=None, betacode=False):
 
     # Prepare reference dictionary
     ref_dict = {}
-    for k, v in m.groupdict().items():
-        if v:
-            ref_dict[k] = int(v) if k in REF_INTFIELDS else v
+    if ref == "whole":
+        ref_dict["whole"] = "true"
+    else:
+        for k, v in m.groupdict().items():
+            if v:
+                ref_dict[k] = int(v) if k in REF_INTFIELDS else v
 
     if ref_type:
         ref_dict["type"] = ref_type
