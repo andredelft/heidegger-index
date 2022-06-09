@@ -12,9 +12,12 @@ def index_view(request):
 
     start = request.GET.get("start")
 
-    try:
-        start_index = alphabet.index(start)
-    except ValueError:
+    if start:
+        try:
+            start_index = alphabet.index(start)
+        except ValueError:
+            start_index = 0
+    else:
         start_index = 0
 
     end_index = start_index + settings.PAGINATION_WINDOW
