@@ -99,3 +99,22 @@ class PageReference(models.Model):
 
     class Meta:
         ordering = ["lemma", "work", "start", "end", "suffix"]
+
+
+# Stored aggregates
+
+ALPHABET = []
+
+
+def get_alphabet():
+    global ALPHABET
+
+    if not ALPHABET:
+        print("Generating alphabet...")
+        ALPHABET = list(
+            Lemma.objects.order_by("first_letter")
+            .values_list("first_letter", flat=True)
+            .distinct()
+        )
+
+    return ALPHABET

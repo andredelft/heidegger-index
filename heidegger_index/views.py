@@ -4,28 +4,32 @@ from django.views.generic.detail import DetailView
 from django.shortcuts import redirect
 from django.conf import settings
 
-from heidegger_index.models import Lemma, Work
-
-USED_LETTERS = set(Lemma.objects.values_list("first_letter", flat=True))
-ALPHABET = sorted(USED_LETTERS)
+from heidegger_index.models import Lemma, Work, get_alphabet
 
 
 def index_view(request):
+    alphabet = get_alphabet()
+
     start = request.GET.get("start")
-    start_index = ALPHABET.index(start) if start in USED_LETTERS else 0
+
+    try:
+        start_index = alphabet.index(start)
+    except ValueError:
+        start_index = 0
+
     end_index = start_index + settings.PAGINATION_WINDOW
     return render(
         request,
         "index.html",
         {
             "lemmas": Lemma.objects.filter(
-                first_letter__in=ALPHABET[start_index:end_index], parent=None
+                first_letter__in=alphabet[start_index:end_index], parent=None
             ),
             "works": Work.objects.all(),
             "alphabet": {
-                "pre": ALPHABET[:start_index],
-                "selected": ALPHABET[start_index:end_index],
-                "post": ALPHABET[end_index:],
+                "pre": alphabet[:start_index],
+                "selected": alphabet[start_index:end_index],
+                "post": alphabet[end_index:],
             },
         },
     )
