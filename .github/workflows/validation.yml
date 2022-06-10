@@ -2,7 +2,7 @@ name: Validation
 
 on:
   push:
-    branches: [ main, 'feature/**' ]
+    branches: [ main, 'feature/**', expand-data-model ]
   pull_request:
     branches: [ main ]
 

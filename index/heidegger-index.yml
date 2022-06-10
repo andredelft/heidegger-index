@@ -485,9 +485,9 @@ Fragment 123 (Heraklit):
   references:
     WBPh:
     - start: 298
-  type: w
   related:
   - φύσις
+  type: w
 Fragment 2 (Heraklit):
   author: Heraklit
   references:
@@ -499,9 +499,9 @@ Fragment 52 (Heraklit):
   references:
     WD:
     - start: 280
-  type: w
   related:
   - Weltzeit
+  type: w
 Fragment 93 (Heraklit):
   author: Heraklit
   references:
@@ -1448,15 +1448,6 @@ Stanley, Wendell Meredith, 1904-1971:
     GA 16:
     - start: 525
   type: p
-sterben:
-  references:
-    WBPh:
-    - start: 295
-      suffix: f
-    SvG:
-    - start: 188
-  related:
-  - Sterblichen
 Sterblichen:
   references:
     WD:
@@ -1990,6 +1981,15 @@ reddendum:
     - start: 175
   related:
   - principium reddendae rationis
+sterben:
+  references:
+    SvG:
+    - start: 188
+    WBPh:
+    - start: 295
+      suffix: f
+  related:
+  - Sterblichen
 sufficiens:
   references:
     SvG:

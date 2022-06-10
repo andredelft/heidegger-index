@@ -25,7 +25,11 @@ additionalProperties:
             suffix:
               type: string
               enum: [f, ff]
-          required: [start]
+            whole:
+              type: boolean
+          required: {
+            anyOf: [start, whole]
+          }
           additionalProperties: False
     related:
       type: array
