@@ -27,9 +27,9 @@ additionalProperties:
               enum: [f, ff]
             whole:
               type: boolean
-          required: {
-            anyOf: [start, whole]
-          }
+            anyOf: 
+              required: [whole]
+              required: [start]            
           additionalProperties: False
     related:
       type: array
