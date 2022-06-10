@@ -64,7 +64,7 @@ def add_ref(lemma, work, ref, lemma_type=None, ref_type=None, betacode=False):
     # Prepare reference dictionary
     ref_dict = {}
     if ref == "whole":
-        ref_dict["whole"] = "true"
+        ref_dict["whole"] = True
     else:
         for k, v in m.groupdict().items():
             if v:
@@ -97,7 +97,20 @@ def add_ref(lemma, work, ref, lemma_type=None, ref_type=None, betacode=False):
         refs = lemma_entry["references"]
 
         if refs.get(work):
-            refs[work].append(ref_dict)
+            # Only appends reference if it does not already exist in index.
+            r = refs[work]
+            # Checks whether exact reference is already in the index.
+            if ref_dict in r:
+                raise click.BadParameter(
+                    f"Reference already exists for this lemma."
+                )
+            # Checks whether the work as a whole is not already a reference for the lemma.
+            elif {"whole": True} in r:
+                raise click.BadParameter(
+                    f"This work as a whole is already a reference for this lemma."
+                )
+            else:
+                refs[work].append(ref_dict)
         else:
             refs[work] = [ref_dict]
             if lemma_type:
