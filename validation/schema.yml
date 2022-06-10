@@ -29,7 +29,21 @@ additionalProperties:
               type: boolean
           anyOf: 
             - required: [whole]
-            - required: [start]      
+            - required: [start] 
+          allOf:     
+            - if:
+                anyOf:
+                  - properties: 
+                      end:
+                        type: integer
+                  - properties:
+                      suffix:
+                        type: string
+                  - properties:
+                      type:
+                        const: r
+              then:
+                required: [start]
           additionalProperties: False
     related:
       type: array
