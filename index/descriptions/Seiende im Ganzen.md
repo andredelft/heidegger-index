@@ -1,0 +1,1 @@
+> Am Ende besteht ein wesenhafter Unterschied zwischen dem Erfassen des Ganzen des Sei-enden an sich und dem Sichbefinden inmitten des Seienden im Ganzen. Jenes ist grundsäts-lich unmöglich. Dieses geschieht ständig in unserem Dasein. (*WiM*, p. 109)

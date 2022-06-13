@@ -229,6 +229,7 @@ Beziehung zu Seiendem als Solchem:
 Bezug:
   references:
     WD:
+    - start: 281
     - start: 282
     - start: 283
     - start: 285
@@ -379,7 +380,7 @@ Driesch, Hans:
       start: 380
   type: p
 Duineser Elegien:
-  author: Rilke, Reiner Maria
+  author: Rilke, Rainer Maria
   references:
     WD:
     - start: 274
@@ -485,9 +486,9 @@ Fragment 123 (Heraklit):
   references:
     WBPh:
     - start: 298
-  type: w
   related:
   - φύσις
+  type: w
 Fragment 2 (Heraklit):
   author: Heraklit
   references:
@@ -499,9 +500,9 @@ Fragment 52 (Heraklit):
   references:
     WD:
     - start: 280
-  type: w
   related:
   - Weltzeit
+  type: w
 Fragment 93 (Heraklit):
   author: Heraklit
   references:
@@ -1265,7 +1266,7 @@ Reizbarkeit:
     GA 29/30:
     - end: 373
       start: 372
-Rilke, Reiner Maria:
+Rilke, Rainer Maria:
   references:
     WD:
     - start: 274
@@ -1340,7 +1341,8 @@ Seiende im Ganzen:
     - start: 279
     - start: 282
     - start: 283
-    - start: 284
+    WiM:
+    - start: 109
 Seiendheit:
   references:
     WBPh:
@@ -1384,7 +1386,7 @@ Seinsvergessenheit:
     WD:
     - start: 273
 Sonette an Orpheus:
-  author: Rilke, Reiner Maria
+  author: Rilke, Rainer Maria
   references:
     WD:
     - start: 274
@@ -1435,7 +1437,7 @@ Spur:
     - start: 274
     - start: 275
 Späte Gedichte:
-  author: Rilke, Reiner Maria
+  author: Rilke, Rainer Maria
   references:
     WD:
     - end: 278
@@ -1448,15 +1450,6 @@ Stanley, Wendell Meredith, 1904-1971:
     GA 16:
     - start: 525
   type: p
-sterben:
-  references:
-    WBPh:
-    - start: 295
-      suffix: f
-    SvG:
-    - start: 188
-  related:
-  - Sterblichen
 Sterblichen:
   references:
     WD:
@@ -1901,6 +1894,13 @@ im Ganzen:
     - start: 441
     - start: 457
     - start: 6
+inmitten des Seienden im Ganzen:
+  parent: Seiende im Ganzen
+  references:
+    WD:
+    - start: 284
+    WiM:
+    - start: 109
 metaphysischen Begriffe:
   references:
     GA 29/30:
@@ -1990,6 +1990,15 @@ reddendum:
     - start: 175
   related:
   - principium reddendae rationis
+sterben:
+  references:
+    SvG:
+    - start: 188
+    WBPh:
+    - start: 295
+      suffix: f
+  related:
+  - Sterblichen
 sufficiens:
   references:
     SvG:
