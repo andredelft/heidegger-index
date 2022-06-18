@@ -1362,6 +1362,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   gap: 1rem;
 }
 
+.gap-1 {
+  gap: 0.25rem;
+}
+
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
@@ -1370,10 +1374,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .overflow-x-auto {
   overflow-x: auto;
-}
-
-.scroll-smooth {
-  scroll-behavior: smooth;
 }
 
 .rounded-full {
@@ -1432,6 +1432,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 1rem;
 }
 
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
 .pl-4 {
   padding-left: 1rem;
 }
@@ -1440,20 +1445,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 3rem;
 }
 
-.pb-8 {
-  padding-bottom: 2rem;
-}
-
 .pt-8 {
   padding-top: 2rem;
 }
 
-.pb-4 {
-  padding-bottom: 1rem;
+.pb-8 {
+  padding-bottom: 2rem;
 }
 
-.pt-12 {
-  padding-top: 3rem;
+.pb-4 {
+  padding-bottom: 1rem;
 }
 
 .-indent-4 {
@@ -1716,6 +1717,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:gap-0 {
     gap: 0px;
+  }
+
+  .md\:gap-2 {
+    gap: 0.5rem;
+  }
+
+  .md\:gap-1 {
+    gap: 0.25rem;
   }
 
   .md\:py-24 {
