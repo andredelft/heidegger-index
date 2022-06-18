@@ -5,43 +5,42 @@ EWI:
   collection-editor:
   - family: Klostermann
     given: Vittorio
-  container-title: "Bremer und Freiburger Vortr\xE4ge"
   collection-number: band 79
   collection-title: Gesamtausgabe
+  container-title: Bremer und Freiburger Vorträge
   editor:
   - family: Jaeger
     given: Petra
   id: EWI
   issued:
     date-parts:
-    - - '2005'
+    - - 2005
+  language: german
   publisher: Vittorio Klostermann
   publisher-place: Frankfurt am Main
-  title: "Einblick in das was ist, Bremer Vortr\xE4ge 1949"
+  title: Einblick in das was ist, Bremer Vorträge 1949
   type: chapter
-  language: german
-SZ:
+FW:
   author:
   - family: Heidegger
     given: Martin
-  collection-editor:
-  - family: Klostermann
-    given: Vittorio
-  collection-number: band 2
+  collection-number: band 13
   collection-title: Gesamtausgabe
+  container-title: Aus der Erfahrung des Denkens
   editor:
-  - family: Hermann
-    given: Friedrich-Wilhelm
-    non-dropping-particle: von
-  id: SZ
+  - family: Heidegger
+    given: Hermann
+  event-place: Frankfurt am Main
+  id: FW
   issued:
     date-parts:
-    - - '1977'
+    - - 2002
+  language: german
+  page: 87-90
   publisher: Vittorio Klostermann
   publisher-place: Frankfurt am Main
-  title: Sein und Zeit
-  type: book
-  language: german
+  title: Der Feldweg
+  type: chapter
 G:
   author:
   - family: Heidegger
@@ -49,66 +48,100 @@ G:
   collection-editor:
   - family: Klostermann
     given: Vittorio
-  collection-number: 'band 16'
+  collection-number: band 16
   collection-title: Gesamtausgabe
-  container-title: "Reden und Zeugnisse eines Lebensweg: 1910–1976"
+  container-title: 'Reden und Zeugnisse eines Lebensweg: 1910–1976'
   editor:
   - family: Heidegger
     given: Hermann
   id: G
   issued:
     date-parts:
-    - - '2000'
+    - - 2000
+  language: german
   page: 517-529
   publisher: Vittorio Klostermann
   publisher-place: Frankfurt am Main
   title: Gelassenheit (30. Oktober 1955)
   type: chapter
-  language: german
-"GA 16":
+GA 16:
   author:
   - family: Heidegger
     given: Martin
   collection-editor:
   - family: Klostermann
     given: Vittorio
-  collection-number: 'band 16'
+  collection-number: band 16
   collection-title: Gesamtausgabe
   editor:
   - family: Heidegger
     given: Hermann
-  id: 'GA 16'
+  id: GA 16
   issued:
     date-parts:
-    - - '2000'
+    - - 2000
+  language: german
   publisher: Vittorio Klostermann
   publisher-place: Frankfurt am Main
-  title: "Reden und Zeugnisse eines Lebensweg: 1910–1976"
+  title: 'Reden und Zeugnisse eines Lebensweg: 1910–1976'
+  title-short: Reden und Zeugnisse
   type: book
-  language: german
-"GA 29/30":
+GA 29/30:
   author:
   - family: Heidegger
     given: Martin
   collection-editor:
   - family: Klostermann
     given: Vittorio
-  collection-number: 'band 29/30'
+  collection-number: band 29/30
   collection-title: Gesamtausgabe
   editor:
   - family: Hermann
     given: Friedrich-Wilhelm
     non-dropping-particle: von
-  id: 'GA 29/30'
+  id: GA 29/30
   issued:
     date-parts:
-    - - '1983'
+    - - 1983
+  language: german
   publisher: Vittorio Klostermann
   publisher-place: Frankfurt am Main
+  title: 'Die Grundbegriffe der Metaphysik: Welt, Endlichkeit, Einsamkeit'
   title-short: Die Grundbegriffe der Metaphysik
-  title: "Die Grundbegriffe der Metaphysik: Welt, Endlichkeit, Einsamkeit"
   type: book
+SZ:
+  author:
+  - family: Heidegger
+    given: Martin
+  id: SZ
+  issued:
+    date-parts:
+    - - 1972
   language: german
+  publisher: Max Niemeyer Verlag
+  publisher-place: Tübingen
+  title: Sein und Zeit
+  type: book
+SvG:
+  author:
+  - family: Heidegger
+    given: Martin
+  citation-key: heideggerSatzVomGrund1997
+  collection-number: band 10
+  collection-title: Gesamtausgabe
+  editor:
+  - family: Jaeger
+    given: Petra
+  event-place: Frankfurt am Main
+  id: heideggerSatzVomGrund1997
+  issued:
+    date-parts:
+    - - 1976
+  language: ger
+  publisher: Vittorio Klostermann
+  publisher-place: Frankfurt am Main
+  title: Der Satz vom Grund
+  type: book
 VA:
   author:
   - family: Heidegger
@@ -125,132 +158,46 @@ VA:
   id: VA
   issued:
     date-parts:
-    - - '2000'
+    - - 2000
+  language: german
   publisher: Vittorio Klostermann
   publisher-place: Frankfurt am Main
-  title: "Vortr\xE4ge und Aufs\xE4tze"
+  title: Vorträge und Aufsätze
   type: book
-  language: german
-SZ:
+Vorarb29/30:
+  ISSN: 08854580, 21539170
   author:
   - family: Heidegger
     given: Martin
-  publisher: Max Niemeyer Verlag
-  publisher-place: "T\xFCbingen"
-  id: SZ
+  citation-key: heideggerVorarb29/30
+  container-title: Heidegger Studies
+  id: heideggerVorarb29/30
   issued:
-    date-parts:
-    - - '1972'
-  title: Sein und Zeit
-  type: book
-  language: german
-WD:
-  id: WD
-  author:
-    - family: Heidegger
-      given: Martin
-  collection-number: band 5
-  collection-title: Gesamtausgabe
-  container-title: Holzwege
-  editor:
-    - family: Herrmann
-      given: Friedrich-Wilhelm
-      dropping-particle: von
-  event-place: Frankfurt am Main
-  ISBN: 978-3-465-03236-6 978-3-465-03237-3
-  issued:
-    date-parts:
-    - - '2003'
-  language: german
-  note: 'OCLC: 177280863'
-  page: 269-320
-  publisher: Vittorio Klostermann
-  publisher-place: Frankfurt am Main
-  source: Gemeinsamer Bibliotheksverbund ISBN
-  title: Wozu Dichter?
-  type: chapter
-ZW:
-  id: ZW
-  author:
-    - family: Heidegger
-      given: Martin
-  collection-number: band 5
-  collection-title: Gesamtausgabe
-  container-title: Holzwege
-  editor:
-    - family: Herrmann
-      given: Friedrich-Wilhelm
-      dropping-particle: von
-  event-place: Frankfurt am Main
-  ISBN: 978-3-465-03236-6 978-3-465-03237-3
-  issued:
-    date-parts:
-    - - '2003'
-  language: german
-  note: 'OCLC: 177280863'
-  page: 75-113
-  publisher: Vittorio Klostermann
-  publisher-place: Frankfurt am Main
-  source: Gemeinsamer Bibliotheksverbund ISBN
-  title: Die Zeit des Weltbildes
-  type: chapter
-ZEG:
-  id: ZEG
-  author:
-    - family: Heidegger
-      given: Martin
-  collection-number: band 13
-  collection-title: Gesamtausgabe
-  container-title: Aus der Erfahrung des Denkens
-  editor:
-    - family: Heidegger
-      given: Hermann
-  event-place: Frankfurt am Main
-  issued:
-    date-parts:
-    - - 2002
-  language: german
-  publisher: Vittorio Klostermann
-  publisher-place: Frankfurt am Main
-  title: 'Zur Erörterung der Gelassenheit: Aus einem Feldweggespräch über das Denken'
-  title-short: Zur Erörterung der Gelassenheit
-  type: chapter
-  page: 37-74
-FW:
-  id: FW
-  author:
-    - family: Heidegger
-      given: Martin
-  collection-number: band 13
-  collection-title: Gesamtausgabe
-  container-title: Aus der Erfahrung des Denkens
-  editor:
-    - family: Heidegger
-      given: Hermann
-  event-place: Frankfurt am Main
-  issued:
-    date-parts:
-    - - 2002
-  language: german
-  publisher: Vittorio Klostermann
-  publisher-place: Frankfurt am Main
-  title: Der Feldweg
-  type: chapter
-  page: 87-90
+  - day: 2
+    month: 4
+    year: 1991
+  language: ger
+  page: 5-12
+  publisher: Duncker & Humblot GmbH
+  title: 'Unbenutzte Vorarbeiten zur Vorlesung vom Wintersemester 1929/30: „Die Grundbegriffe
+    der Metaphysik. Welt — Endlichkeit — Einsamkeit“'
+  title-short: Unbenutzte Vorarbeiten zur „Die Grundbegriffe der Metaphysik“
+  type: article-journal
+  volume: '7'
 WBPh:
-  id: heideggerVomWesenUnd1976a
   author:
-    - family: Heidegger
-      given: Martin
+  - family: Heidegger
+    given: Martin
   citation-key: heideggerVomWesenUnd1976a
   collection-number: band 9
   collection-title: Gesamtausgabe
   container-title: Wegmarken
   editor:
-    - family: Herrmann
-      given: Friedrich-Wilhelm
-      dropping-particle: von
+  - dropping-particle: von
+    family: Herrmann
+    given: Friedrich-Wilhelm
   event-place: Frankfurt am Main
+  id: heideggerVomWesenUnd1976a
   issued:
     date-parts:
     - - 1976
@@ -261,42 +208,73 @@ WBPh:
   title: Vom Wesen und Begriff der Φὐσις, Aristoteles, Physik B, 1
   title-short: Vom Wesen und Begriff der Φὐσις
   type: chapter
-SvG:
-  id: heideggerSatzVomGrund1997
+WD:
+  ISBN: 978-3-465-03236-6 978-3-465-03237-3
   author:
-    - family: Heidegger
-      given: Martin
-  citation-key: heideggerSatzVomGrund1997
-  collection-number: band 10
+  - family: Heidegger
+    given: Martin
+  collection-number: band 5
   collection-title: Gesamtausgabe
+  container-title: Holzwege
   editor:
-    - family: Jaeger
-      given: Petra
+  - dropping-particle: von
+    family: Herrmann
+    given: Friedrich-Wilhelm
   event-place: Frankfurt am Main
+  id: WD
   issued:
     date-parts:
-    - - 1976
-  language: ger
+    - - 2003
+  language: german
+  page: 269-320
   publisher: Vittorio Klostermann
   publisher-place: Frankfurt am Main
-  title: Der Satz vom Grund
-  type: book
-Vorarb29/30:
-  id: heideggerVorarb29/30
+  source: Gemeinsamer Bibliotheksverbund ISBN
+  title: Wozu Dichter?
+  type: chapter
+ZEG:
   author:
-    - family: Heidegger
-      given: Martin
-  citation-key: heideggerVorarb29/30
-  container-title: Heidegger Studies
-  ISSN: 08854580, 21539170
+  - family: Heidegger
+    given: Martin
+  collection-number: band 13
+  collection-title: Gesamtausgabe
+  container-title: Aus der Erfahrung des Denkens
+  editor:
+  - family: Heidegger
+    given: Hermann
+  event-place: Frankfurt am Main
+  id: ZEG
   issued:
-    - year: 1991
-      month: 4
-      day: 2
-  language: ger
-  page: 5-12
-  publisher: Duncker & Humblot GmbH
-  title: "Unbenutzte Vorarbeiten zur Vorlesung vom Wintersemester 1929/30: „Die Grundbegriffe der Metaphysik. Welt — Endlichkeit — Einsamkeit“"
-  title-short: Unbenutzte Vorarbeiten zur „Die Grundbegriffe der Metaphysik“
-  type: article-journal
-  volume: '7'
+    date-parts:
+    - - 2002
+  language: german
+  page: 37-74
+  publisher: Vittorio Klostermann
+  publisher-place: Frankfurt am Main
+  title: 'Zur Erörterung der Gelassenheit: Aus einem Feldweggespräch über das Denken'
+  title-short: Zur Erörterung der Gelassenheit
+  type: chapter
+ZW:
+  ISBN: 978-3-465-03236-6 978-3-465-03237-3
+  author:
+  - family: Heidegger
+    given: Martin
+  collection-number: band 5
+  collection-title: Gesamtausgabe
+  container-title: Holzwege
+  editor:
+  - dropping-particle: von
+    family: Herrmann
+    given: Friedrich-Wilhelm
+  event-place: Frankfurt am Main
+  id: ZW
+  issued:
+    date-parts:
+    - - 2003
+  language: german
+  page: 75-113
+  publisher: Vittorio Klostermann
+  publisher-place: Frankfurt am Main
+  source: Gemeinsamer Bibliotheksverbund ISBN
+  title: Die Zeit des Weltbildes
+  type: chapter
