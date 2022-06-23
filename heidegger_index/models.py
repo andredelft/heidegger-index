@@ -9,13 +9,16 @@ from heidegger_index.utils import gen_sort_key, slugify
 
 
 class Work(models.Model):
-    id = models.CharField(max_length=8, primary_key=True)
+    key = models.CharField(max_length=8, unique=True)
     csl_json = models.JSONField()
     reference = models.CharField(max_length=200, null=True)
-    slug = AutoSlugField(populate_from="id")
+    slug = AutoSlugField(populate_from="key")
+    parent = models.ForeignKey(
+        "self", on_delete=models.SET_NULL, null=True, related_name="children"
+    )
 
     def __str__(self):
-        return self.id
+        return self.key
 
     def gen_reference(self):
         if not self.reference and self.csl_json:
@@ -27,13 +30,17 @@ class Work(models.Model):
             r.raise_for_status()
             self.reference = r.content.decode()
 
+    @property
+    def title(self):
+        return self.csl_json.get("title-short") or self.csl_json.get("title") or ""
+
     def save(self, *args, **kwargs):
         self.gen_reference()
 
         super().save(*args, **kwargs)
 
     class Meta:
-        ordering = ["id"]
+        ordering = ["key"]
 
 
 class Lemma(models.Model):
