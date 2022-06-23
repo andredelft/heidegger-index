@@ -64,6 +64,28 @@ G:
   publisher-place: Frankfurt am Main
   title: Gelassenheit (30. Oktober 1955)
   type: chapter
+  title-short: Gelassenheit
+GA 5:
+  author:
+  - family: Heidegger
+    given: Martin
+  collection-editor:
+  - family: Klostermann
+    given: Vittorio
+  collection-number: band 5
+  collection-title: Gesamtausgabe
+  editor:
+  - family: Herrmann
+    given: Friedrich-Wilhelm von
+  id: GA 5
+  issued:
+    date-parts:
+    - - 2003
+  language: german
+  publisher: Vittorio Klostermann
+  publisher-place: Frankfurt am Main
+  title: Holzwege
+  type: book
 GA 16:
   author:
   - family: Heidegger
