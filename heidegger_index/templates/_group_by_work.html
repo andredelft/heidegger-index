@@ -1,5 +1,5 @@
 {% if group_title %}
-  <h2 class="mt-8 mb-4 text-3xl font-bold dark:text-white">{{ group_title|safe }}</h3>
+  {% include 'components/h2.html' with text=group_title|safe %}
 {% endif %}
 <ul class="pl-4 text-xl {{ body_text }}{% if inline %} space-x-2{% endif %}">
   {% regroup ref_list by work as work_groups %}

@@ -4,7 +4,7 @@ from django.views.generic.detail import DetailView
 from django.shortcuts import redirect
 from django.conf import settings
 
-from heidegger_index.models import Lemma, Work, get_alphabet
+from heidegger_index.models import Lemma, PageReference, Work, get_alphabet
 
 
 def index_view(request):
@@ -43,13 +43,8 @@ class WorkDetailView(DetailView):
     template_name = "work_detail.html"
     context_object_name = "work"
 
-    def _title(self):
-        return self.object.csl_json.get("title-short") or self.object.csl_json.get(
-            "title"
-        )
-
     def _get_work_lemma(self, work: Work) -> Lemma:
-        return Lemma.objects.get(value=self._title(), type="w")
+        return Lemma.objects.get(value=work.title, type="w")
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -60,10 +55,11 @@ class WorkDetailView(DetailView):
             pass
         else:
             context["work_lemma"] = work_lemma
-        context["page_refs"] = work.pagereference_set.filter(lemma__type=None)
-        context["person_list"] = work.pagereference_set.filter(lemma__type="p")
-        context["work_list"] = work.pagereference_set.filter(lemma__type="w")
-        context["head_title"] = self._title()
+
+        page_refs = PageReference.objects.filter(work__in=[work, *work.children.all()])
+        context["term_list"] = page_refs.filter(lemma__type=None)
+        context["person_list"] = page_refs.filter(lemma__type="p")
+        context["work_list"] = page_refs.filter(lemma__type="w")
         return context
 
     def render_to_response(self, context, **kwargs):

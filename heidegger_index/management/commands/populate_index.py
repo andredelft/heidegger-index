@@ -1,3 +1,4 @@
+from typing import List
 from requests import HTTPError
 import yaml
 from tqdm import tqdm
@@ -45,22 +46,45 @@ class Command(BaseCommand):
         with open(settings.INDEX_FILE) as f:
             index_data = yaml.load(f)
 
-        # Populate works
+        # Populate works and index by title and by key
         work_objs = []
-        for work_id, csl_json in tqdm(
-            works_data.items(), desc="Generating work references"
+        work_by_title = {}
+        work_by_key = {}
+        for i, (work_key, csl_json) in enumerate(
+            tqdm(works_data.items(), desc="Generating work references")
         ):
-            work_obj = Work(id=work_id, csl_json=csl_json)
+            work_obj = Work(id=i, key=work_key, csl_json=csl_json)
             try:
                 work_obj.gen_reference()
             except HTTPError as e:
-                self.stdout.write(f"Skipping {work_id} because of HTTP error: {e}")
+                self.stdout.write(f"Skipping {work_key} because of HTTP error: {e}")
             else:
                 work_objs.append(work_obj)
 
+            title = work_obj.csl_json.get("title")
+            if title:
+                work_by_title[title] = work_obj
+            short_title = work_obj.csl_json.get("title-short")
+            if short_title:
+                work_by_title[short_title] = work_obj
+
+            work_by_key[work_key] = work_obj
+
         Work.objects.bulk_create(tqdm(work_objs, desc="Populating works"))
 
-        existing_works = set(works_data.keys())
+        # Setting work hierarchy
+        works_with_parents = []
+        for i, work in enumerate(work_objs):
+            container_title = work.csl_json.get("container-title")
+            if container_title:
+                parent = work_by_title.get(container_title)
+                if parent:
+                    work.parent = parent
+                    works_with_parents.append(work)
+
+        Work.objects.bulk_update(
+            tqdm(works_with_parents, desc="Setting work hierarchy"), ["parent"]
+        )
 
         # Populate lemmas
         lemma_objs = dict()
@@ -128,19 +152,22 @@ class Command(BaseCommand):
         # Populate page references
         pageref_objs = []
         for lemma_value, lemma_data in index_data.items():
-            for work, ref_list in lemma_data.get("references", {}).items():
+            for work_key, ref_list in lemma_data.get("references", {}).items():
 
-                if work not in existing_works:
+                if work_key not in work_by_key.keys():
                     self.stdout.write(
-                        f"Warning: Work {work} does not exist in {settings.WORK_REFS_FILE.name}, will be added with an empty reference"
+                        f"Warning: Work {work_key} does not exist in {settings.WORK_REFS_FILE.name}, will be added with an empty reference"
                     )
-                    Work(id=work, csl_json={}).save()
-                    existing_works.add(work)
+                    work_obj = Work(key=work_key, csl_json={})
+                    work_obj.save()
+                    work_by_key[work_key] = work_obj
 
                 for ref in ref_list:
                     pageref_objs.append(
                         PageReference(
-                            work_id=work, lemma=lemma_objs[lemma_value], **ref
+                            work=work_by_key[work_key],
+                            lemma=lemma_objs[lemma_value],
+                            **ref,
                         )
                     )
 

@@ -101,7 +101,7 @@ Aristoteles:
   type: p
 Atomenergie:
   references:
-    GA 16:
+    G:
     - end: 524
       start: 523
     SvG:
@@ -112,7 +112,7 @@ Atomenergie:
     - start: 188
 Atomzeitalter:
   references:
-    GA 16:
+    G:
     - start: 522
     - end: 524
       start: 523
@@ -239,7 +239,7 @@ Blick der Entschlossenheit:
     - start: 251
 Bodenständigkeit:
   references:
-    GA 16:
+    G:
     - start: 522
 Brod und Wein:
   author: Hölderlin, Friedrich
@@ -337,7 +337,7 @@ Demokrit:
   type: p
 Denken:
   references:
-    GA 16:
+    G:
     - start: 518
       suffix: ff
     GA 29/30:
@@ -346,7 +346,7 @@ Denken:
     - start: 276
 Der Feldweg:
   references:
-    GA 16:
+    G:
     - start: 517
   type: w
 Descartes, René:
@@ -542,7 +542,7 @@ Gebrochenheit des Daseins:
     - start: 252
 Gedankenlosigkeit:
   references:
-    GA 16:
+    G:
     - end: 519
       start: 518
 Gefahr:
@@ -554,7 +554,7 @@ Gefahr:
     - start: 281
 Gegenstand:
   references:
-    GA 16:
+    G:
     - start: 523
     SvG:
     - start: 174
@@ -745,7 +745,7 @@ Haben der Welt:
       start: 262
 Hebel, Johann Peter:
   references:
-    GA 16:
+    G:
     - start: 521
   type: p
 Hegel, Georg Wilhelm Friedrich:
@@ -764,7 +764,7 @@ Heilige:
     - start: 274
 Heimat:
   references:
-    GA 16:
+    G:
     - end: 522
       start: 520
 Heimweh:
@@ -882,7 +882,7 @@ Kierkegaard, Søren:
   type: p
 Kreutzer, Conradin:
   references:
-    GA 16:
+    G:
     - end: 518
       start: 517
   type: p
@@ -1064,14 +1064,14 @@ Müller, Johannes:
   type: p
 Nachdenken:
   references:
-    GA 16:
+    G:
     - start: 521
 Natur:
   references:
     EWI:
     - start: 41
       suffix: ff
-    GA 16:
+    G:
     - start: 523
     GA 29/30:
     - end: 404
@@ -1100,7 +1100,7 @@ Naturwissenschaft:
     - start: 278
 Neuzeit:
   references:
-    GA 16:
+    G:
     - start: 523
     SvG:
     - start: 177
@@ -1447,7 +1447,7 @@ Späte Gedichte:
   type: w
 Stanley, Wendell Meredith, 1904-1971:
   references:
-    GA 16:
+    G:
     - start: 525
   type: p
 Sterblichen:
@@ -1482,7 +1482,7 @@ System:
       suffix: f
 Technik:
   references:
-    GA 16:
+    G:
     - end: 524
       start: 523
     GA 42:
@@ -1750,7 +1750,7 @@ Wille:
       suffix: f
 Wissenschaft:
   references:
-    GA 16:
+    G:
     - start: 523
     SvG:
     - start: 181
@@ -1841,11 +1841,11 @@ besinnliche Denken:
   - besinnliche Nachdenken
 besinnliche Nachdenken:
   references:
-    GA 16:
+    G:
     - start: 520
 bodenständig:
   references:
-    GA 16:
+    G:
     - start: 521
       suffix: f
 der Feldberg:
@@ -1974,7 +1974,7 @@ rechnen:
     - start: 189
 rechnende Denken:
   references:
-    GA 16:
+    G:
     - end: 520
       start: 519
     - start: 523
