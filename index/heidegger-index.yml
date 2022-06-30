@@ -133,9 +133,8 @@ Atomenergie:
 Atomzeitalter:
   references:
     G:
-    - start: 522
-    - end: 524
-      start: 523
+    - end: 525
+      start: 522
     SvG:
     - start: 178
     - start: 179
@@ -261,6 +260,7 @@ Bodenständigkeit:
   references:
     G:
     - start: 522
+    - start: 526
 Brod und Wein:
   author: Hölderlin, Friedrich
   references:
@@ -1159,6 +1159,7 @@ Nachdenken:
   references:
     G:
     - start: 521
+    - start: 526
 Natur:
   references:
     EWI:
@@ -1620,6 +1621,8 @@ Technik:
     G:
     - end: 524
       start: 523
+    - start: 526
+      type: r
     GA 42:
     - start: 55
     SvG:
@@ -1992,6 +1995,9 @@ begegnen:
     - start: 397
 besinnliche Denken:
   references:
+    G:
+    - end: 526
+      start: 525
     SvG:
     - start: 178
     - start: 182
@@ -2063,6 +2069,10 @@ inmitten des Seienden im Ganzen:
     - start: 284
     WiM:
     - start: 109
+ja-und-nein-sagen:
+  references:
+    G:
+    - start: 527
 metaphysischen Begriffe:
   references:
     GA 29/30:
@@ -2150,6 +2160,7 @@ rechnende Denken:
     - end: 520
       start: 519
     - start: 523
+    - start: 525
     SvG:
     - start: 178
   related:
@@ -2176,6 +2187,12 @@ sufficiens:
   references:
     SvG:
     - start: 175
+technische Gegenstand:
+  parent: Gegenstand
+  references:
+    G:
+    - end: 527
+      start: 526
 tiefe Langeweile:
   parent: Langeweile
   references:
@@ -2368,6 +2385,7 @@ weil:
     - start: 293
     - start: 299
 λόγος ἀποφαντικός:
+  parent: λόγος
   references:
     GA 29/30:
     - end: 452
