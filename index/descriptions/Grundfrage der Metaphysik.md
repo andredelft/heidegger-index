@@ -1,0 +1,1 @@
+Warum ist überhaupt Seiendes und nicht vielmehr Nichts?

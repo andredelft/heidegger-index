@@ -70,6 +70,9 @@ Anwesen:
     - start: 271
 Aristoteles:
   references:
+    EM:
+    - start: 18
+    - start: 62
     GA 29/30:
     - end: 57
       start: 48
@@ -139,6 +142,11 @@ Atomzeitalter:
     - start: 178
     - start: 179
     - start: 189
+Aufgehen:
+  references:
+    EM:
+    - start: 16
+    - start: 19
 Augenblick:
   references:
     GA 29/30:
@@ -168,6 +176,10 @@ Aussehen:
     - end: 288
       start: 287
     - start: 295
+Außer-ordentliche:
+  references:
+    EM:
+    - start: 10
 Axiom:
   references:
     SvG:
@@ -275,6 +287,10 @@ Buytendijk, Frederik Jacobus Johannes:
     - end: 376
       start: 375
   type: p
+Christentum:
+  references:
+    EM:
+    - start: 16
 Christus:
   references:
     WD:
@@ -333,6 +349,8 @@ Daseinsgeschichte:
 De Interpretatione:
   author: Aristoteles
   references:
+    EM:
+    - start: 62
     GA 29/30:
     - start: 443
       suffix: ff
@@ -393,6 +411,11 @@ Dichter:
     - start: 272
     - start: 273
     - start: 274
+Ding:
+  references:
+    EM:
+    - start: 16
+    - start: 17
 Dionysos:
   references:
     WD:
@@ -594,6 +617,8 @@ Gefahr:
     - start: 281
 Gegenstand:
   references:
+    EM:
+    - start: 62
     G:
     - start: 523
     SvG:
@@ -642,6 +667,8 @@ Geschichte der Metaphysik:
       suffix: f
 Geschick:
   references:
+    EM:
+    - start: 17
     EWI:
     - start: 68
       suffix: ff
@@ -717,6 +744,11 @@ Gott:
     - start: 271
     - start: 274
     - start: 275
+Grammatik:
+  references:
+    EM:
+    - end: 63
+      start: 58
 Großrechenanlage:
   references:
     SvG:
@@ -750,6 +782,13 @@ Grund:
     - start: 278
     - start: 279
     - start: 280
+Grundfrage der Metaphysik:
+  references:
+    EM:
+    - start: 3
+    - start: 14
+    WiM:
+    - start: 121
 Grundriß:
   references:
     EWI:
@@ -801,8 +840,10 @@ Grundverhältnis:
   references:
     GA 29/30:
     - start: 400
-Göttern:
+Götter:
   references:
+    EM:
+    - start: 17
     WBPh:
     - start: 238
   related:
@@ -922,6 +963,11 @@ Inbegrif:
   references:
     GA 29/30:
     - start: 13
+Infinitiv:
+  references:
+    EM:
+    - end: 60
+      start: 59
 Information:
   references:
     SvG:
@@ -1096,6 +1142,8 @@ Mensch qua Mensch:
 Metaphysica:
   author: Aristoteles
   references:
+    EM:
+    - start: 18
     WBPh:
     - start: 282
     - end: 285
@@ -1125,6 +1173,10 @@ Miteinandersein:
   references:
     GA 29/30:
     - start: 447
+Mittelalter:
+  references:
+    EM:
+    - start: 16
 Mnemosyne:
   author: Hölderlin, Friedrich
   references:
@@ -1165,6 +1217,10 @@ Nachdenken:
     - start: 526
 Natur:
   references:
+    EM:
+    - end: 17
+      start: 15
+    - start: 19
     EWI:
     - start: 41
       suffix: ff
@@ -1204,11 +1260,15 @@ Neuzeit:
     - start: 153
 Nichts:
   references:
+    EM:
+    - start: 14
     GA 29/30:
     - start: 368
     - start: 433
 Nietzsche, Friedrich:
   references:
+    EM:
+    - start: 15
     GA 42:
     - end: 42
       start: 39
@@ -1223,6 +1283,11 @@ Nihilismus:
     GA 42:
     - end: 42
       start: 39
+Nomen:
+  references:
+    EM:
+    - start: 61
+    - start: 63
 Novalis:
   references:
     GA 29/30:
@@ -1271,9 +1336,18 @@ Pessimismus:
     - start: 271
 Pflanze:
   references:
+    EM:
+    - start: 17
+    - start: 19
     WD:
     - start: 277
     - start: 278
+Phaidros:
+  author: Plato
+  references:
+    EM:
+    - start: 19
+  type: w
 Philosophie:
   references:
     GA 29/30:
@@ -1289,6 +1363,9 @@ Philosophie:
       start: 9
 Philosophieren:
   references:
+    EM:
+    - start: 14
+    - start: 15
     GA 29/30:
     - start: 415
     - end: 7
@@ -1328,8 +1405,20 @@ Physica:
     - start: 292
     - start: 297
   type: w
+Physik:
+  references:
+    EM:
+    - start: 17
+Physische:
+  references:
+    EM:
+    - end: 19
+      start: 18
 Plato:
   references:
+    EM:
+    - start: 19
+    - start: 61
     GA 29/30:
     - start: 439
     - start: 484
@@ -1338,6 +1427,10 @@ Plato:
     WBPh:
     - start: 299
   type: p
+Platon:
+  references:
+    EM:
+    - start: 62
 Princip:
   references:
     SvG:
@@ -1352,6 +1445,12 @@ Prinzip:
   related:
   - Axiom
   - Grundsatz
+Psychische:
+  references:
+    EM:
+    - start: 18
+  related:
+  - Physische
 Rand der Möglichkeit:
   references:
     GA 29/30:
@@ -1440,8 +1539,19 @@ Schwerkraft:
     - start: 285
 Seiende als solches:
   references:
+    EM:
+    - start: 18
+    - start: 19
     WD:
     - start: 276
+Seiende als solches im Ganzen:
+  parent: Seiende im Ganzen
+  references:
+    EM:
+    - start: 15
+    - start: 18
+  related:
+  - Seiende als solches
 Seiende im Ganzen:
   references:
     GA 29/30:
@@ -1456,8 +1566,8 @@ Seiende im Ganzen:
     - start: 279
     - start: 282
     - start: 283
-    WiM:
-    - start: 109
+  related:
+  - im Ganzen
 Seiendheit:
   references:
     WBPh:
@@ -1518,10 +1628,18 @@ Sonette an Orpheus:
     - start: 278
     - start: 282
   type: w
+Sophistes:
+  author: Plato
+  references:
+    EM:
+    - end: 62
+      start: 61
+  type: w
 Sophokles:
   references:
     SvG:
     - start: 154
+  type: p
 Spemann, Hans:
   references:
     GA 29/30:
@@ -1552,6 +1670,9 @@ Spinoza, Baruch:
   type: p
 Sprache:
   references:
+    EM:
+    - start: 60
+    - start: 62
     GA 29/30:
     - start: 442
       suffix: f
@@ -1609,6 +1730,11 @@ Subjekt:
   references:
     SvG:
     - start: 175
+Substantiv:
+  references:
+    EM:
+    - end: 61
+      start: 59
 Symbol:
   references:
     GA 29/30:
@@ -1646,6 +1772,9 @@ Thomas van Aquin:
   type: p
 Tier:
   references:
+    EM:
+    - start: 17
+    - start: 19
     GA 29/30:
     - start: 412
     - end: 445
@@ -1730,6 +1859,13 @@ Verbergen:
     - end: 455
       start: 453
     - start: 490
+Verbum:
+  references:
+    EM:
+    - start: 59
+    - start: 60
+    - start: 61
+    - start: 63
 Vereinzelung:
   references:
     GA 29/30:
@@ -2065,6 +2201,10 @@ im Ganzen:
     - start: 441
     - start: 457
     - start: 6
+infinitivus:
+  references:
+    EM:
+    - start: 63
 inmitten des Seienden im Ganzen:
   parent: Seiende im Ganzen
   references:
@@ -2085,6 +2225,8 @@ metaphysischen Begriffe:
       start: 12
 natura:
   references:
+    EM:
+    - start: 15
     SvG:
     - start: 40
     WBPh:
@@ -2305,6 +2447,10 @@ weil:
   related:
   - ζῷον αλόγον
   - animal rationale
+θέσις:
+  references:
+    EM:
+    - start: 18
 κατάφασις:
   references:
     GA 29/30:
@@ -2313,12 +2459,11 @@ weil:
     - start: 490
 κατηγορία:
   references:
-    VWPh:
-    - start: 293
     WBPh:
     - start: 250
       suffix: f
     - start: 284
+    - start: 293
 κρίνειν:
   references:
     WBPh:
@@ -2356,6 +2501,8 @@ weil:
   - λόγος
 λόγος:
   references:
+    EM:
+    - start: 62
     GA 29/30:
     - start: 441
     - end: 420
@@ -2423,6 +2570,10 @@ weil:
   references:
     WBPh:
     - start: 269
+νόμος:
+  references:
+    EM:
+    - start: 18
 οὐσία:
   references:
     SvG:
@@ -2457,6 +2608,14 @@ weil:
   related:
   - Herstellen
   - τέχνη
+πρᾶγμα:
+  references:
+    EM:
+    - start: 62
+πρᾶχις:
+  references:
+    EM:
+    - start: 62
 πρῶτον ἀρρύθμιστον:
   parent: ῥυθμός
   references:
@@ -2464,6 +2623,10 @@ weil:
     - start: 266
     - start: 270
     - start: 271
+πτῶσις:
+  references:
+    EM:
+    - start: 63
 στέρησις:
   references:
     WBPh:
@@ -2497,6 +2660,8 @@ weil:
     - start: 249
 τέχνη:
   references:
+    EM:
+    - start: 19
     WBPh:
     - start: 249
       suffix: f
@@ -2513,6 +2678,8 @@ weil:
 φύσει ὄντα:
   parent: φύσις
   references:
+    EM:
+    - start: 19
     WBPh:
     - start: 253
     - start: 256
@@ -2525,6 +2692,10 @@ weil:
   - κίνησις
 φύσις:
   references:
+    EM:
+    - end: 19
+      start: 15
+    - start: 60
     FT:
     - start: 12
     GA 29/30:
@@ -2586,7 +2757,7 @@ weil:
 ἀρχὴ κινήσεως:
   parent: κίνησις
   references:
-    WBP:
+    WBPh:
     - start: 245
     - start: 251
     - start: 248
@@ -2638,6 +2809,10 @@ weil:
     - start: 259
     - start: 262
     - start: 268
+ἔκλισις:
+  references:
+    EM:
+    - start: 63
 ἰδέα:
   references:
     WBPh:
@@ -2653,6 +2828,11 @@ weil:
     - start: 295
   related:
   - μέθοδος
+ὄνομα:
+  references:
+    EM:
+    - end: 62
+      start: 61
 ὑποκείμενον:
   references:
     WBPh:
@@ -2679,3 +2859,8 @@ weil:
     - start: 266
     - start: 265
     - start: 271
+ῥῆμα:
+  references:
+    EM:
+    - end: 62
+      start: 61
