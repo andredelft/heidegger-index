@@ -530,6 +530,7 @@ Fragment 30 (Heraklit):
   references:
     SvG:
     - start: 168
+  type: w
 Fragment 52 (Heraklit):
   author: Heraklit
   references:
@@ -539,6 +540,8 @@ Fragment 52 (Heraklit):
     - start: 280
   related:
   - Weltzeit
+  - αἰών
+  - Geschick
   type: w
 Fragment 93 (Heraklit):
   author: Heraklit
