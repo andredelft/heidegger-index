@@ -133,6 +133,10 @@ Atomenergie:
     - start: 181
     - start: 182
     - start: 188
+Atomtechnik:
+  references:
+    G:
+    - start: 527
 Atomzeitalter:
   references:
     G:
@@ -638,6 +642,8 @@ Gegnet:
     - start: 47
 Geheimnis:
   references:
+    G:
+    - start: 528
     GA 29/30:
     - start: 255
     SvG:
@@ -649,6 +655,9 @@ Geist:
     - start: 241
 Gelassenheit:
   references:
+    G:
+    - start: 527
+    - start: 528
     ZEG:
     - start: 40
       suffix: ff
@@ -1226,6 +1235,7 @@ Natur:
       suffix: ff
     G:
     - start: 523
+    - start: 527
     GA 29/30:
     - end: 404
       start: 402
@@ -1752,6 +1762,7 @@ Technik:
       start: 523
     - start: 526
       type: r
+    - start: 527
     GA 42:
     - start: 55
     SvG:
@@ -1961,6 +1972,8 @@ Weil:
     - start: 185
 Welt:
   references:
+    G:
+    - start: 527
     GA 29/30:
     - start: 251
     - end: 253
