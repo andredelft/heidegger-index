@@ -542,6 +542,8 @@ Fragment 1 (Heraklit):
 Fragment 123 (Heraklit):
   author: Heraklit
   references:
+    GA 29/30:
+    - start: 41
     WBPh:
     - start: 298
   related:
@@ -573,6 +575,8 @@ Fragment 52 (Heraklit):
 Fragment 93 (Heraklit):
   author: Heraklit
   references:
+    GA 29/30:
+    - start: 40
     WBPh:
     - start: 277
   type: w
@@ -968,10 +972,11 @@ Hölderlin, Friedrich:
     - start: 273
     - start: 276
   type: p
-Inbegrif:
+Inbegriff:
   references:
     GA 29/30:
     - start: 13
+    - start: 36
 Infinitiv:
   references:
     EM:
@@ -1137,6 +1142,8 @@ Mensch:
     - start: 6
     - start: 7
     - start: 10
+    - start: 39
+    - start: 40
     SvG:
     - start: 176
     - start: 189
@@ -1169,6 +1176,8 @@ Metaphysik:
       start: 6
     - end: 13
       start: 9
+    - end: 38
+      start: 36
     SvG:
     - start: 184
     WD:
@@ -1239,6 +1248,8 @@ Natur:
     GA 29/30:
     - end: 404
       start: 402
+    - end: 39
+      start: 38
     SvG:
     - start: 178
     WBPh:
@@ -1371,6 +1382,8 @@ Philosophie:
       start: 6
     - end: 13
       start: 9
+    - end: 37
+      start: 36
 Philosophieren:
   references:
     EM:
@@ -1861,6 +1874,11 @@ Urteil:
     - start: 173
     - start: 174
     - start: 175
+Urwort:
+  references:
+    GA 29/30:
+    - end: 38
+      start: 37
 Verbergen:
   references:
     GA 29/30:
@@ -1946,6 +1964,10 @@ Wachsen:
   references:
     WBPh:
     - start: 287
+Wachstum:
+  references:
+    GA 29/30:
+    - start: 38
 Wagnis:
   references:
     WD:
@@ -1957,6 +1979,11 @@ Wahrheit:
   references:
     SvG:
     - start: 173
+Walten:
+  references:
+    GA 29/30:
+    - end: 40
+      start: 38
 Warum:
   references:
     SvG:
@@ -2075,6 +2102,7 @@ Wort:
     GA 29/30:
     - end: 447
       start: 446
+    - start: 40
 Zeitalter:
   references:
     SvG:
@@ -2168,6 +2196,10 @@ causa:
   references:
     SvG:
     - start: 165
+das Wachsende:
+  references:
+    GA 29/30:
+    - start: 38
 der Feldberg:
   references:
     GA 55:
@@ -2240,6 +2272,8 @@ natura:
   references:
     EM:
     - start: 15
+    GA 29/30:
+    - start: 38
     SvG:
     - start: 40
     WBPh:
@@ -2528,6 +2562,8 @@ weil:
       start: 484
     - end: 491
       start: 487
+    - end: 41
+      start: 40
     SvG:
     - start: 158
     - start: 159
@@ -2688,6 +2724,14 @@ weil:
   references:
     WBPh:
     - start: 246
+φυσικά:
+  references:
+    GA 29/30:
+    - start: 38
+φύειν:
+  references:
+    GA 29/30:
+    - start: 38
 φύσει ὄντα:
   parent: φύσις
   references:
@@ -2714,6 +2758,8 @@ weil:
     GA 29/30:
     - start: 38
       suffix: ff
+    - end: 41
+      start: 38
     HH:
     - start: 145
     SvG:
@@ -2739,6 +2785,8 @@ weil:
     - end: 278
       start: 277
   related:
+  - φυσικά
+  - φύειν
   - Physica
   - Natur
 ψεύδεσθαι:
