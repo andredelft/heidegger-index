@@ -104,11 +104,14 @@ def add_ref(lemma, work, ref, lemma_type=None, ref_type=None, betacode=False):
                 raise click.BadParameter(
                     f"Reference already exists for this lemma."
                 )
+            # UNCOMMENT THIS IF YOU WANT TO PREVENT NEW REFERENCES BEING ADDED IF "WHOLE" 
+            # IS TRUE.
             # Checks whether the work as a whole is not already a reference for the lemma.
-            elif {"whole": True} in r:
-                raise click.BadParameter(
-                    f"This work as a whole is already a reference for this lemma."
-                )
+            # 
+            # elif {"whole": True} in r:
+            #     raise click.BadParameter(
+            #         f"This work as a whole is already a reference for this lemma."
+            #     )
             else:
                 refs[work].append(ref_dict)
         else:
