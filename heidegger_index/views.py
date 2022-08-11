@@ -2,19 +2,38 @@ from django.http import Http404
 from django.shortcuts import render
 from django.views.generic.detail import DetailView
 from django.shortcuts import redirect
+from django.conf import settings
 
-from heidegger_index.models import Lemma, Work
+from heidegger_index.models import Lemma, PageReference, Work, get_alphabet
 
 
 def index_view(request):
-    lemmas = Lemma.objects.filter(parent=None)
+    alphabet = get_alphabet()
+
+    start = request.GET.get("start")
+
+    if start:
+        try:
+            start_index = alphabet.index(start)
+        except ValueError:
+            start_index = 0
+    else:
+        start_index = 0
+
+    end_index = start_index + settings.PAGINATION_WINDOW
     return render(
         request,
         "index.html",
         {
-            "lemmas": lemmas,
+            "lemmas": Lemma.objects.filter(
+                first_letter__in=alphabet[start_index:end_index], parent=None
+            ),
             "works": Work.objects.all(),
-            "alphabet": sorted(set(lemma.first_letter for lemma in lemmas)),
+            "alphabet": {
+                "pre": alphabet[:start_index],
+                "selected": alphabet[start_index:end_index],
+                "post": alphabet[end_index:],
+            },
         },
     )
 
@@ -24,13 +43,8 @@ class WorkDetailView(DetailView):
     template_name = "work_detail.html"
     context_object_name = "work"
 
-    def _title(self):
-        return self.object.csl_json.get("title-short") or self.object.csl_json.get(
-            "title"
-        )
-
     def _get_work_lemma(self, work: Work) -> Lemma:
-        return Lemma.objects.get(value=self._title(), type="w")
+        return Lemma.objects.get(value=work.title, type="w")
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -41,10 +55,11 @@ class WorkDetailView(DetailView):
             pass
         else:
             context["work_lemma"] = work_lemma
-        context["page_refs"] = work.pagereference_set.filter(lemma__type=None)
-        context["person_list"] = work.pagereference_set.filter(lemma__type="p")
-        context["work_list"] = work.pagereference_set.filter(lemma__type="w")
-        context["head_title"] = self._title()
+
+        page_refs = PageReference.objects.filter(work__in=[work, *work.children.all()])
+        context["term_list"] = page_refs.filter(lemma__type=None)
+        context["person_list"] = page_refs.filter(lemma__type="p")
+        context["work_list"] = page_refs.filter(lemma__type="w")
         return context
 
     def render_to_response(self, context, **kwargs):

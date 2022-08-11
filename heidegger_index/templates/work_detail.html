@@ -1,17 +1,26 @@
 {% extends '_site_base.html' %}
 
-{% block head_title %}{{ head_title }}{% endblock head_title %}
+{% block head_title %}{{ work.title }}{% endblock head_title %}
 
 {% block body %}
 {% include '_home_button.html' %}
 
-<h1 class="clear-right pb-4 text-5xl italic font-bold dark:text-white">{{ work.csl_json.title }}</h1>
+{% include 'components/h1.html' with text=work.csl_json.title class="clear-right italic" only %}
 
-<h2 class="mt-8 mb-4 text-3xl font-bold dark:text-white">Reference</h2>
+{% if work.parent %}
+<p class="{{ body_text }}">Appears in <a href="{% url 'index:work-detail' work.parent.slug %}" class="{{ hidden_link_decoration }} italic">{{ work.parent.title }}</a></p>
+{% endif %}
+
+{% if work.children.all %}
+{% include 'components/h2.html' with text="Sections" %}
+{% include '_work_list.html' with works=work.children.all  %}
+{% endif %}
+
+{% include 'components/h2.html' with text="Reference" only %}
 <div class="text-1.5xl {{ body_text }}">{{ work.reference | safe }}</div>
 
-<h2 class="mt-8 mb-4 text-3xl font-bold dark:text-white">Index terms</h2>
-{% include '_group_by_lemma.html' with ref_list=page_refs %}
+{% include 'components/h2.html' with text="Index terms" only %}
+{% include '_group_by_lemma.html' with ref_list=term_list %}
 
 {% if person_list %}
   {% include '_group_by_lemma.html' with ref_list=person_list group_title="People mentioned" %}

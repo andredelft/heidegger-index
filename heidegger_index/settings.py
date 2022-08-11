@@ -145,3 +145,5 @@ TAILWIND_CLASSES = {
     "body_text": "text-slate-700 dark:text-slate-300",
     "description_prose": "prose prose-xl prose-slate dark:prose-invert prose-blockquote:not-italic prose-p:leading-normal dark:prose-blockquote:border-l-slate-600 prose-a:decoration-sky-300",
 }
+
+PAGINATION_WINDOW = 5

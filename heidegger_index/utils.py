@@ -20,6 +20,8 @@ def gen_sort_key(value):
     value, n = PREFIX_FILTER.subn("", value)
     while n:
         value, n = PREFIX_FILTER.subn("", value)
+    # Add leading zero's to numbers to improve number sorting
+    value = re.sub("\d+", lambda m: f"{m.group():0>5}", value)
     return value
 
 

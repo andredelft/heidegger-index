@@ -9,13 +9,16 @@ from heidegger_index.utils import gen_sort_key, slugify
 
 
 class Work(models.Model):
-    id = models.CharField(max_length=8, primary_key=True)
+    key = models.CharField(max_length=8, unique=True)
     csl_json = models.JSONField()
     reference = models.CharField(max_length=200, null=True)
-    slug = AutoSlugField(populate_from="id")
+    slug = AutoSlugField(populate_from="key")
+    parent = models.ForeignKey(
+        "self", on_delete=models.SET_NULL, null=True, related_name="children"
+    )
 
     def __str__(self):
-        return self.id
+        return self.key
 
     def gen_reference(self):
         if not self.reference and self.csl_json:
@@ -27,13 +30,17 @@ class Work(models.Model):
             r.raise_for_status()
             self.reference = r.content.decode()
 
+    @property
+    def title(self):
+        return self.csl_json.get("title-short") or self.csl_json.get("title") or ""
+
     def save(self, *args, **kwargs):
         self.gen_reference()
 
         super().save(*args, **kwargs)
 
     class Meta:
-        ordering = ["id"]
+        ordering = ["key"]
 
 
 class Lemma(models.Model):
@@ -46,6 +53,7 @@ class Lemma(models.Model):
     type = models.CharField(max_length=1, null=True, choices=TYPES.items())
     description = models.TextField(null=True)
     sort_key = models.CharField(max_length=100, null=True, unique=True)
+    first_letter = models.CharField(max_length=1, null=True)
     slug = AutoSlugField(populate_from="value", slugify_function=slugify)
 
     # Only applicable to lemmas with type='w'
@@ -61,16 +69,13 @@ class Lemma(models.Model):
 
     def create_sort_key(self):
         self.sort_key = gen_sort_key(self.value)
+        self.first_letter = self.sort_key and self.sort_key[0].upper() or ""
 
     def save(self, *args, **kwargs):
         if not self.sort_key:
             self.create_sort_key()
 
         super().save(*args, **kwargs)
-
-    @property
-    def first_letter(self):
-        return self.sort_key and self.sort_key[0].upper() or ""
 
     class Meta:
         ordering = ["sort_key"]
@@ -101,3 +106,22 @@ class PageReference(models.Model):
 
     class Meta:
         ordering = ["lemma", "work", "start", "end", "suffix"]
+
+
+# Stored aggregates
+
+ALPHABET = []
+
+
+def get_alphabet():
+    global ALPHABET
+
+    if not ALPHABET:
+        print("Generating alphabet...")
+        ALPHABET = list(
+            Lemma.objects.order_by("first_letter")
+            .values_list("first_letter", flat=True)
+            .distinct()
+        )
+
+    return ALPHABET

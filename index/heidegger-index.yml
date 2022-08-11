@@ -1,5 +1,10 @@
 Abgrund:
   references:
+    SvG:
+    - start: 165
+    - start: 166
+    - start: 167
+    - start: 169
     WD:
     - end: 270
       start: 269
@@ -16,6 +21,11 @@ Alltäglichkeit:
     - end: 400
       start: 398
     - start: 405
+Anaximander:
+  references:
+    SvG:
+    - start: 158
+  type: p
 Anspruch:
   references:
     GA 29/30:
@@ -35,6 +45,11 @@ Anthropologie:
     GA 29/30:
     - start: 406
     - start: 408
+Antigonä:
+  references:
+    SvG:
+    - start: 15
+  type: p
 Antiphon:
   references:
     WBPh:
@@ -46,12 +61,18 @@ Antiphon:
   type: p
 Anwesen:
   references:
+    SvG:
+    - start: 159
+    - start: 161
     WBPh:
     - start: 281
     WD:
     - start: 271
 Aristoteles:
   references:
+    EM:
+    - start: 18
+    - start: 62
     GA 29/30:
     - end: 57
       start: 48
@@ -72,6 +93,8 @@ Aristoteles:
       suffix: f
     SZ:
     - start: 3
+    SvG:
+    - start: 158
     WBPh:
     - start: 237
       suffix: ff
@@ -101,7 +124,7 @@ Aristoteles:
   type: p
 Atomenergie:
   references:
-    GA 16:
+    G:
     - end: 524
       start: 523
     SvG:
@@ -110,16 +133,24 @@ Atomenergie:
     - start: 181
     - start: 182
     - start: 188
+Atomtechnik:
+  references:
+    G:
+    - start: 527
 Atomzeitalter:
   references:
-    GA 16:
-    - start: 522
-    - end: 524
-      start: 523
+    G:
+    - end: 525
+      start: 522
     SvG:
     - start: 178
     - start: 179
     - start: 189
+Aufgehen:
+  references:
+    EM:
+    - start: 16
+    - start: 19
 Augenblick:
   references:
     GA 29/30:
@@ -149,6 +180,10 @@ Aussehen:
     - end: 288
       start: 287
     - start: 295
+Außer-ordentliche:
+  references:
+    EM:
+    - start: 10
 Axiom:
   references:
     SvG:
@@ -229,6 +264,7 @@ Beziehung zu Seiendem als Solchem:
 Bezug:
   references:
     WD:
+    - start: 281
     - start: 282
     - start: 283
     - start: 285
@@ -238,8 +274,9 @@ Blick der Entschlossenheit:
     - start: 251
 Bodenständigkeit:
   references:
-    GA 16:
+    G:
     - start: 522
+    - start: 526
 Brod und Wein:
   author: Hölderlin, Friedrich
   references:
@@ -254,6 +291,10 @@ Buytendijk, Frederik Jacobus Johannes:
     - end: 376
       start: 375
   type: p
+Christentum:
+  references:
+    EM:
+    - start: 16
 Christus:
   references:
     WD:
@@ -285,6 +326,8 @@ Dasein:
       start: 425
     - end: 433
       start: 432
+    SvG:
+    - start: 167
 Dasein des Menschen:
   parent: Dasein
   references:
@@ -310,6 +353,8 @@ Daseinsgeschichte:
 De Interpretatione:
   author: Aristoteles
   references:
+    EM:
+    - start: 62
     GA 29/30:
     - start: 443
       suffix: ff
@@ -336,16 +381,20 @@ Demokrit:
   type: p
 Denken:
   references:
-    GA 16:
+    G:
     - start: 518
       suffix: ff
     GA 29/30:
     - start: 13
     WD:
     - start: 276
+Denkweg:
+  references:
+    SvG:
+    - start: 168
 Der Feldweg:
   references:
-    GA 16:
+    G:
     - start: 517
   type: w
 Descartes, René:
@@ -366,6 +415,11 @@ Dichter:
     - start: 272
     - start: 273
     - start: 274
+Ding:
+  references:
+    EM:
+    - start: 16
+    - start: 17
 Dionysos:
   references:
     WD:
@@ -379,7 +433,7 @@ Driesch, Hans:
       start: 380
   type: p
 Duineser Elegien:
-  author: Rilke, Reiner Maria
+  author: Rilke, Rainer Maria
   references:
     WD:
     - start: 274
@@ -409,6 +463,7 @@ Entbergen:
     - end: 455
       start: 453
     - start: 490
+    - start: 41
     WBPh:
     - start: 277
     - start: 299
@@ -421,6 +476,11 @@ Entschlossenheit:
   references:
     GA 29/30:
     - start: 251
+Entzug:
+  references:
+    SvG:
+    - start: 164
+    - start: 165
 Erde:
   references:
     SvG:
@@ -483,6 +543,8 @@ Fragment 1 (Heraklit):
 Fragment 123 (Heraklit):
   author: Heraklit
   references:
+    GA 29/30:
+    - start: 41
     WBPh:
     - start: 298
   related:
@@ -494,17 +556,25 @@ Fragment 2 (Heraklit):
     WBPh:
     - start: 277
   type: w
+Fragment 30 (Heraklit):
+  references:
+    SvG:
+    - start: 168
+  type: w
 Fragment 52 (Heraklit):
   author: Heraklit
   references:
+    SvG:
+    - start: 168
     WD:
     - start: 280
   related:
   - Weltzeit
-  type: w
 Fragment 93 (Heraklit):
   author: Heraklit
   references:
+    GA 29/30:
+    - start: 40
     WBPh:
     - start: 277
   type: w
@@ -541,7 +611,7 @@ Gebrochenheit des Daseins:
     - start: 252
 Gedankenlosigkeit:
   references:
-    GA 16:
+    G:
     - end: 519
       start: 518
 Gefahr:
@@ -553,7 +623,9 @@ Gefahr:
     - start: 281
 Gegenstand:
   references:
-    GA 16:
+    EM:
+    - start: 62
+    G:
     - start: 523
     SvG:
     - start: 174
@@ -561,6 +633,7 @@ Gegenstand:
     - start: 176
     - start: 177
     - start: 182
+    - start: 164
     WD:
     - start: 283
 Gegnet:
@@ -571,14 +644,22 @@ Gegnet:
     - start: 47
 Geheimnis:
   references:
+    G:
+    - start: 528
     GA 29/30:
     - start: 255
+    SvG:
+    - start: 167
+    - start: 169
 Geist:
   references:
     WBPh:
     - start: 241
 Gelassenheit:
   references:
+    G:
+    - start: 527
+    - start: 528
     ZEG:
     - start: 40
       suffix: ff
@@ -597,11 +678,16 @@ Geschichte der Metaphysik:
       suffix: f
 Geschick:
   references:
+    EM:
+    - start: 17
     EWI:
     - start: 68
       suffix: ff
     SZ:
     - start: 384
+    SvG:
+    - start: 163
+    - start: 169
     VA:
     - start: 25
       suffix: ff
@@ -613,6 +699,12 @@ Geschick:
     ZuS:
     - start: 12
       suffix: f
+Geschick des Seins:
+  parent: Geschick
+  references:
+    SvG:
+    - start: 153
+    - start: 156
 Gestellung in das Aussehen:
   parent: Aussehen
   references:
@@ -655,12 +747,19 @@ Gott:
   references:
     GA 29/30:
     - start: 262
+    SvG:
+    - start: 167
     WD:
     - end: 270
       start: 269
     - start: 271
     - start: 274
     - start: 275
+Grammatik:
+  references:
+    EM:
+    - end: 63
+      start: 58
 Großrechenanlage:
   references:
     SvG:
@@ -674,12 +773,33 @@ Grund:
       start: 181
     - end: 189
       start: 186
+    - start: 153
+    - start: 155
+    - start: 156
+    - start: 159
+    - start: 161
+    - start: 162
+    - start: 163
+    - start: 164
+    - start: 164
+    - start: 165
+    - start: 166
+    - start: 167
+    - start: 168
+    - start: 169
     WD:
     - end: 270
       start: 269
     - start: 278
     - start: 279
     - start: 280
+Grundfrage der Metaphysik:
+  references:
+    EM:
+    - start: 3
+    - start: 14
+    WiM:
+    - start: 121
 Grundriß:
   references:
     EWI:
@@ -731,8 +851,10 @@ Grundverhältnis:
   references:
     GA 29/30:
     - start: 400
-Göttern:
+Götter:
   references:
+    EM:
+    - start: 17
     WBPh:
     - start: 238
   related:
@@ -744,7 +866,7 @@ Haben der Welt:
       start: 262
 Hebel, Johann Peter:
   references:
-    GA 16:
+    G:
     - start: 521
   type: p
 Hegel, Georg Wilhelm Friedrich:
@@ -763,7 +885,7 @@ Heilige:
     - start: 274
 Heimat:
   references:
-    GA 16:
+    G:
     - end: 522
       start: 520
 Heimweh:
@@ -780,6 +902,11 @@ Herakles:
   type: p
 Heraklit:
   references:
+    SvG:
+    - start: 161
+    - start: 163
+    - start: 168
+    - start: 169
     WBPh:
     - start: 277
     - start: 298
@@ -831,6 +958,8 @@ Humboldt, Alexander von:
   type: p
 Hölderlin, Friedrich:
   references:
+    SvG:
+    - start: 154
     WBPh:
     - start: 238
     WD:
@@ -841,14 +970,26 @@ Hölderlin, Friedrich:
     - start: 273
     - start: 276
   type: p
-Inbegrif:
+Inbegriff:
   references:
     GA 29/30:
     - start: 13
+    - start: 36
+Infinitiv:
+  references:
+    EM:
+    - end: 60
+      start: 59
 Information:
   references:
     SvG:
     - start: 182
+Kalkül:
+  references:
+    SvG:
+    - start: 154
+    - start: 155
+    - start: 167
 Kant und das Problem der Metaphysik:
   references:
     GA 29/30:
@@ -879,9 +1020,13 @@ Kierkegaard, Søren:
     - end: 43
       start: 42
   type: p
+Kind:
+  references:
+    SvG:
+    - start: 168
 Kreutzer, Conradin:
   references:
-    GA 16:
+    G:
     - end: 518
       start: 517
   type: p
@@ -975,6 +1120,15 @@ Materialismus:
     SvG:
     - start: 179
     - start: 180
+Maß:
+  references:
+    SvG:
+    - start: 166
+Maßgabe:
+  references:
+    SvG:
+    - start: 166
+    - start: 167
 Meister Eckhart:
   references:
     GA 42:
@@ -986,9 +1140,12 @@ Mensch:
     - start: 6
     - start: 7
     - start: 10
+    - start: 39
+    - start: 40
     SvG:
     - start: 176
     - start: 189
+    - start: 167
     WD:
     - start: 280
     - start: 285
@@ -999,6 +1156,8 @@ Mensch qua Mensch:
 Metaphysica:
   author: Aristoteles
   references:
+    EM:
+    - start: 18
     WBPh:
     - start: 282
     - end: 285
@@ -1015,6 +1174,8 @@ Metaphysik:
       start: 6
     - end: 13
       start: 9
+    - end: 38
+      start: 36
     SvG:
     - start: 184
     WD:
@@ -1028,6 +1189,10 @@ Miteinandersein:
   references:
     GA 29/30:
     - start: 447
+Mittelalter:
+  references:
+    EM:
+    - start: 16
 Mnemosyne:
   author: Hölderlin, Friedrich
   references:
@@ -1063,18 +1228,26 @@ Müller, Johannes:
   type: p
 Nachdenken:
   references:
-    GA 16:
+    G:
     - start: 521
+    - start: 526
 Natur:
   references:
+    EM:
+    - end: 17
+      start: 15
+    - start: 19
     EWI:
     - start: 41
       suffix: ff
-    GA 16:
+    G:
     - start: 523
+    - start: 527
     GA 29/30:
     - end: 404
       start: 402
+    - end: 39
+      start: 38
     SvG:
     - start: 178
     WBPh:
@@ -1099,17 +1272,22 @@ Naturwissenschaft:
     - start: 278
 Neuzeit:
   references:
-    GA 16:
+    G:
     - start: 523
     SvG:
     - start: 177
+    - start: 153
 Nichts:
   references:
+    EM:
+    - start: 14
     GA 29/30:
     - start: 368
     - start: 433
 Nietzsche, Friedrich:
   references:
+    EM:
+    - start: 15
     GA 42:
     - end: 42
       start: 39
@@ -1124,6 +1302,11 @@ Nihilismus:
     GA 42:
     - end: 42
       start: 39
+Nomen:
+  references:
+    EM:
+    - start: 61
+    - start: 63
 Novalis:
   references:
     GA 29/30:
@@ -1172,9 +1355,18 @@ Pessimismus:
     - start: 271
 Pflanze:
   references:
+    EM:
+    - start: 17
+    - start: 19
     WD:
     - start: 277
     - start: 278
+Phaidros:
+  author: Plato
+  references:
+    EM:
+    - start: 19
+  type: w
 Philosophie:
   references:
     GA 29/30:
@@ -1188,8 +1380,13 @@ Philosophie:
       start: 6
     - end: 13
       start: 9
+    - end: 37
+      start: 36
 Philosophieren:
   references:
+    EM:
+    - start: 14
+    - start: 15
     GA 29/30:
     - start: 415
     - end: 7
@@ -1229,8 +1426,20 @@ Physica:
     - start: 292
     - start: 297
   type: w
+Physik:
+  references:
+    EM:
+    - start: 17
+Physische:
+  references:
+    EM:
+    - end: 19
+      start: 18
 Plato:
   references:
+    EM:
+    - start: 19
+    - start: 61
     GA 29/30:
     - start: 439
     - start: 484
@@ -1239,6 +1448,10 @@ Plato:
     WBPh:
     - start: 299
   type: p
+Platon:
+  references:
+    EM:
+    - start: 62
 Princip:
   references:
     SvG:
@@ -1247,9 +1460,18 @@ Prinzip:
   references:
     SvG:
     - start: 174
+    - start: 163
+    - start: 164
+    - start: 165
   related:
   - Axiom
   - Grundsatz
+Psychische:
+  references:
+    EM:
+    - start: 18
+  related:
+  - Physische
 Rand der Möglichkeit:
   references:
     GA 29/30:
@@ -1260,12 +1482,21 @@ Rechenschaft:
     - start: 175
     - start: 176
     - start: 189
+    - start: 162
+Rechnung:
+  references:
+    SvG:
+    - start: 153
+    - start: 155
+    - start: 156
+    - start: 157
+    - start: 168
 Reizbarkeit:
   references:
     GA 29/30:
     - end: 373
       start: 372
-Rilke, Reiner Maria:
+Rilke, Rainer Maria:
   references:
     WD:
     - start: 274
@@ -1296,6 +1527,11 @@ Satz vom Grund:
     - start: 184
     - start: 187
     - start: 188
+    - start: 153
+    - start: 156
+    - start: 158
+    - start: 160
+    - start: 168
 Schein:
   references:
     WBPh:
@@ -1324,8 +1560,19 @@ Schwerkraft:
     - start: 285
 Seiende als solches:
   references:
+    EM:
+    - start: 18
+    - start: 19
     WD:
     - start: 276
+Seiende als solches im Ganzen:
+  parent: Seiende im Ganzen
+  references:
+    EM:
+    - start: 15
+    - start: 18
+  related:
+  - Seiende als solches
 Seiende im Ganzen:
   references:
     GA 29/30:
@@ -1340,7 +1587,13 @@ Seiende im Ganzen:
     - start: 279
     - start: 282
     - start: 283
-    - start: 284
+  related:
+  - im Ganzen
+Seienden im Ganzen:
+  references:
+    GA 29/30:
+    - end: 39
+      start: 38
 Seiendheit:
   references:
     WBPh:
@@ -1376,15 +1629,23 @@ Seinsblinden:
     - start: 262
 Seinsgeschichte:
   references:
+    SvG:
+    - start: 155
+    - start: 164
     WD:
     - start: 273
       suffix: f
+Seinsgeschick:
+  references:
+    SvG:
+    - start: 158
+    - start: 168
 Seinsvergessenheit:
   references:
     WD:
     - start: 273
 Sonette an Orpheus:
-  author: Rilke, Reiner Maria
+  author: Rilke, Rainer Maria
   references:
     WD:
     - start: 274
@@ -1393,11 +1654,29 @@ Sonette an Orpheus:
     - start: 278
     - start: 282
   type: w
+Sophistes:
+  author: Plato
+  references:
+    EM:
+    - end: 62
+      start: 61
+  type: w
+Sophokles:
+  references:
+    SvG:
+    - start: 154
+  type: p
 Spemann, Hans:
   references:
     GA 29/30:
     - start: 381
   type: p
+Spiel:
+  references:
+    SvG:
+    - start: 167
+    - start: 168
+    - start: 169
 Spiel mit der Sprache:
   references:
     GA 29/30:
@@ -1417,6 +1696,9 @@ Spinoza, Baruch:
   type: p
 Sprache:
   references:
+    EM:
+    - start: 60
+    - start: 62
     GA 29/30:
     - start: 442
       suffix: f
@@ -1427,6 +1709,10 @@ Sprachgeist:
   references:
     HH:
     - start: 135
+Sprung:
+  references:
+    SvG:
+    - start: 166
 Spur:
   references:
     WD:
@@ -1435,7 +1721,7 @@ Spur:
     - start: 274
     - start: 275
 Späte Gedichte:
-  author: Rilke, Reiner Maria
+  author: Rilke, Rainer Maria
   references:
     WD:
     - end: 278
@@ -1445,11 +1731,13 @@ Späte Gedichte:
   type: w
 Stanley, Wendell Meredith, 1904-1971:
   references:
-    GA 16:
+    G:
     - start: 525
   type: p
 Sterblichen:
   references:
+    SvG:
+    - start: 167
     WD:
     - start: 270
     - start: 271
@@ -1468,6 +1756,11 @@ Subjekt:
   references:
     SvG:
     - start: 175
+Substantiv:
+  references:
+    EM:
+    - end: 61
+      start: 59
 Symbol:
   references:
     GA 29/30:
@@ -1480,9 +1773,12 @@ System:
       suffix: f
 Technik:
   references:
-    GA 16:
+    G:
     - end: 524
       start: 523
+    - start: 526
+      type: r
+    - start: 527
     GA 42:
     - start: 55
     SvG:
@@ -1503,6 +1799,9 @@ Thomas van Aquin:
   type: p
 Tier:
   references:
+    EM:
+    - start: 17
+    - start: 19
     GA 29/30:
     - start: 412
     - end: 445
@@ -1520,9 +1819,14 @@ Tod:
       start: 425
     SvG:
     - start: 188
+    - start: 167
     WD:
     - start: 274
     - start: 275
+Tonart:
+  references:
+    SvG:
+    - start: 166
 Tranzendenz:
   references:
     GA 29/30:
@@ -1546,6 +1850,8 @@ Unheimlichkeit:
     - start: 490
 Unverborgenheit:
   references:
+    SvG:
+    - start: 159
     WBPh:
     - start: 268
     - start: 271
@@ -1563,12 +1869,19 @@ Ursache:
     SvG:
     - start: 171
     - start: 172
+    - start: 164
+    - start: 165
 Urteil:
   references:
     SvG:
     - start: 173
     - start: 174
     - start: 175
+Urwort:
+  references:
+    GA 29/30:
+    - end: 38
+      start: 37
 Verbergen:
   references:
     GA 29/30:
@@ -1578,6 +1891,14 @@ Verbergen:
     - end: 455
       start: 453
     - start: 490
+    - start: 41
+Verbum:
+  references:
+    EM:
+    - start: 59
+    - start: 60
+    - start: 61
+    - start: 63
 Vereinzelung:
   references:
     GA 29/30:
@@ -1600,6 +1921,12 @@ Vernunft:
   references:
     SvG:
     - start: 176
+    - start: 155
+    - start: 156
+    - start: 157
+    - start: 162
+    - start: 165
+    - start: 168
 Verwahrlosung:
   references:
     EWI:
@@ -1635,10 +1962,16 @@ Vorstellen:
     - start: 177
     - start: 183
     - start: 188
+    - start: 156
+    - start: 162
 Wachsen:
   references:
     WBPh:
     - start: 287
+Wachstum:
+  references:
+    GA 29/30:
+    - start: 38
 Wagnis:
   references:
     WD:
@@ -1650,11 +1983,17 @@ Wahrheit:
   references:
     SvG:
     - start: 173
+Walten:
+  references:
+    GA 29/30:
+    - end: 40
+      start: 38
 Warum:
   references:
     SvG:
     - start: 185
     - start: 186
+    - start: 169
   related:
   - Weil
 Weil:
@@ -1664,6 +2003,8 @@ Weil:
     - start: 185
 Welt:
   references:
+    G:
+    - start: 527
     GA 29/30:
     - start: 251
     - end: 253
@@ -1696,6 +2037,7 @@ Weltgeschichte:
   references:
     SvG:
     - start: 180
+    - start: 157
 Weltnacht:
   references:
     WD:
@@ -1748,7 +2090,7 @@ Wille:
       suffix: f
 Wissenschaft:
   references:
-    GA 16:
+    G:
     - start: 523
     SvG:
     - start: 181
@@ -1764,6 +2106,7 @@ Wort:
     GA 29/30:
     - end: 447
       start: 446
+    - start: 40
 Zeitalter:
   references:
     SvG:
@@ -1783,6 +2126,10 @@ Zuspruch:
     - start: 183
     - start: 187
     - start: 188
+Zwiesel:
+  references:
+    SvG:
+    - start: 155
 actualitas:
   references:
     WBPh:
@@ -1832,6 +2179,9 @@ begegnen:
     - start: 397
 besinnliche Denken:
   references:
+    G:
+    - end: 526
+      start: 525
     SvG:
     - start: 178
     - start: 182
@@ -1839,13 +2189,21 @@ besinnliche Denken:
   - besinnliche Nachdenken
 besinnliche Nachdenken:
   references:
-    GA 16:
+    G:
     - start: 520
 bodenständig:
   references:
-    GA 16:
+    G:
     - start: 521
       suffix: f
+causa:
+  references:
+    SvG:
+    - start: 165
+das Wachsende:
+  references:
+    GA 29/30:
+    - start: 38
 der Feldberg:
   references:
     GA 55:
@@ -1892,6 +2250,21 @@ im Ganzen:
     - start: 441
     - start: 457
     - start: 6
+infinitivus:
+  references:
+    EM:
+    - start: 63
+inmitten des Seienden im Ganzen:
+  parent: Seiende im Ganzen
+  references:
+    WD:
+    - start: 284
+    WiM:
+    - start: 109
+ja-und-nein-sagen:
+  references:
+    G:
+    - start: 527
 metaphysischen Begriffe:
   references:
     GA 29/30:
@@ -1901,6 +2274,10 @@ metaphysischen Begriffe:
       start: 12
 natura:
   references:
+    EM:
+    - start: 15
+    GA 29/30:
+    - start: 38
     SvG:
     - start: 40
     WBPh:
@@ -1953,6 +2330,16 @@ ratio:
     - start: 175
     - start: 176
     - start: 189
+    - start: 153
+    - start: 155
+    - start: 156
+    - start: 157
+    - start: 158
+    - start: 160
+    - start: 162
+    - start: 163
+    - start: 165
+    - start: 168
   related:
   - rechnen
   - Rechenschaft
@@ -1965,10 +2352,11 @@ rechnen:
     - start: 189
 rechnende Denken:
   references:
-    GA 16:
+    G:
     - end: 520
       start: 519
     - start: 523
+    - start: 525
     SvG:
     - start: 178
   related:
@@ -1979,6 +2367,7 @@ reddendum:
     - start: 173
     - start: 174
     - start: 175
+    - start: 155
   related:
   - principium reddendae rationis
 sterben:
@@ -1994,6 +2383,12 @@ sufficiens:
   references:
     SvG:
     - start: 175
+technische Gegenstand:
+  parent: Gegenstand
+  references:
+    G:
+    - end: 527
+      start: 526
 tiefe Langeweile:
   parent: Langeweile
   references:
@@ -2006,12 +2401,28 @@ unbestimmte Unmittelbare:
   references:
     SZ:
     - start: 3
+weil:
+  references:
+    SvG:
+    - start: 169
+Ödipus:
+  references:
+    SvG:
+    - start: 154
+  type: p
 αἰτία:
   references:
     FT:
     - start: 12
+    SvG:
+    - start: 165
     WBPh:
     - start: 243
+αἰών:
+  references:
+    SvG:
+    - start: 168
+    - start: 169
 γεν:
   references:
     WBPh:
@@ -2087,6 +2498,10 @@ unbestimmte Unmittelbare:
   related:
   - ζῷον αλόγον
   - animal rationale
+θέσις:
+  references:
+    EM:
+    - start: 18
 κατάφασις:
   references:
     GA 29/30:
@@ -2095,12 +2510,11 @@ unbestimmte Unmittelbare:
     - start: 490
 κατηγορία:
   references:
-    VWPh:
-    - start: 293
     WBPh:
     - start: 250
       suffix: f
     - start: 284
+    - start: 293
 κρίνειν:
   references:
     WBPh:
@@ -2121,8 +2535,17 @@ unbestimmte Unmittelbare:
     - start: 295
     - start: 296
     - start: 299
+κόσμος:
+  references:
+    SvG:
+    - start: 168
 λέγειν:
   references:
+    GA 29/30:
+    - start: 41
+    SvG:
+    - start: 160
+    - start: 161
     WBPh:
     - end: 278
       start: 276
@@ -2131,6 +2554,8 @@ unbestimmte Unmittelbare:
   - λόγος
 λόγος:
   references:
+    EM:
+    - start: 62
     GA 29/30:
     - start: 441
     - end: 420
@@ -2143,6 +2568,19 @@ unbestimmte Unmittelbare:
       start: 484
     - end: 491
       start: 487
+    - end: 41
+      start: 40
+    SvG:
+    - start: 158
+    - start: 159
+    - start: 160
+    - start: 161
+    - start: 162
+    - start: 163
+    - start: 164
+    - start: 165
+    - start: 166
+    - start: 168
     WBPh:
     - start: 251
     - start: 273
@@ -2152,6 +2590,7 @@ unbestimmte Unmittelbare:
     - start: 293
     - start: 299
 λόγος ἀποφαντικός:
+  parent: λόγος
   references:
     GA 29/30:
     - end: 452
@@ -2186,8 +2625,14 @@ unbestimmte Unmittelbare:
   references:
     WBPh:
     - start: 269
+νόμος:
+  references:
+    EM:
+    - start: 18
 οὐσία:
   references:
+    SvG:
+    - start: 157
     WBPh:
     - start: 257
       suffix: f
@@ -2218,6 +2663,14 @@ unbestimmte Unmittelbare:
   related:
   - Herstellen
   - τέχνη
+πρᾶγμα:
+  references:
+    EM:
+    - start: 62
+πρᾶχις:
+  references:
+    EM:
+    - start: 62
 πρῶτον ἀρρύθμιστον:
   parent: ῥυθμός
   references:
@@ -2225,6 +2678,10 @@ unbestimmte Unmittelbare:
     - start: 266
     - start: 270
     - start: 271
+πτῶσις:
+  references:
+    EM:
+    - start: 63
 στέρησις:
   references:
     WBPh:
@@ -2258,6 +2715,8 @@ unbestimmte Unmittelbare:
     - start: 249
 τέχνη:
   references:
+    EM:
+    - start: 19
     WBPh:
     - start: 249
       suffix: f
@@ -2271,9 +2730,19 @@ unbestimmte Unmittelbare:
   references:
     WBPh:
     - start: 246
+φυσικά:
+  references:
+    GA 29/30:
+    - start: 38
+φύειν:
+  references:
+    GA 29/30:
+    - start: 38
 φύσει ὄντα:
   parent: φύσις
   references:
+    EM:
+    - start: 19
     WBPh:
     - start: 253
     - start: 256
@@ -2286,13 +2755,23 @@ unbestimmte Unmittelbare:
   - κίνησις
 φύσις:
   references:
+    EM:
+    - end: 19
+      start: 15
+    - start: 60
     FT:
     - start: 12
     GA 29/30:
     - start: 38
       suffix: ff
+    - end: 41
+      start: 38
     HH:
     - start: 145
+    SvG:
+    - start: 157
+    - start: 163
+    - start: 168
     WBPh:
     - start: 237
     - start: 239
@@ -2312,6 +2791,8 @@ unbestimmte Unmittelbare:
     - end: 278
       start: 277
   related:
+  - φυσικά
+  - φύειν
   - Physica
   - Natur
 ψεύδεσθαι:
@@ -2343,7 +2824,7 @@ unbestimmte Unmittelbare:
 ἀρχὴ κινήσεως:
   parent: κίνησις
   references:
-    WBP:
+    WBPh:
     - start: 245
     - start: 251
     - start: 248
@@ -2353,6 +2834,10 @@ unbestimmte Unmittelbare:
   - φύσις
 ἀρχή:
   references:
+    SvG:
+    - start: 163
+    - start: 165
+    - start: 168
     WBPh:
     - start: 244
       suffix: ff
@@ -2391,6 +2876,10 @@ unbestimmte Unmittelbare:
     - start: 259
     - start: 262
     - start: 268
+ἔκλισις:
+  references:
+    EM:
+    - start: 63
 ἰδέα:
   references:
     WBPh:
@@ -2406,6 +2895,11 @@ unbestimmte Unmittelbare:
     - start: 295
   related:
   - μέθοδος
+ὄνομα:
+  references:
+    EM:
+    - end: 62
+      start: 61
 ὑποκείμενον:
   references:
     WBPh:
@@ -2432,3 +2926,8 @@ unbestimmte Unmittelbare:
     - start: 266
     - start: 265
     - start: 271
+ῥῆμα:
+  references:
+    EM:
+    - end: 62
+      start: 61

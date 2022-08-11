@@ -1,0 +1,9 @@
+<ul class="text-2xl pl-4 {{ body_text }} list-disc list-inside marker:text-slate-400">
+  {% for work in works %}
+    <li>
+      <a href="{% url 'index:work-detail' work.slug %}" class="italic {{ hidden_link_decoration }}">
+        {{ work.title }}
+      </a>
+    </li>
+  {% endfor %}
+</ul>

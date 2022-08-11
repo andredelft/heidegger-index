@@ -8,11 +8,17 @@
   Managed by: <a href="https://github.com/andredelft" target="_blank" rel="noopener noreferrer" class="{{ link_decoration }}">André van Delft</a> &amp; <a href="https://github.com/johannesdewit" target="_blank" rel="noopener noreferrer" class="{{ link_decoration }}">Johannes de Wit</a>
 </p>
 
-{% include '_alphabet.html' %}
+{% include '_toc.html' %}
+
+{% if alphabet.pre %}
+  <div>
+  <a href="{% url 'index:home' %}?start={{ alphabet.pre|last }}#{{ alphabet.pre|last }}" class="{{ hidden_link_decoration }}">← Previous</a>
+  </div>
+{% endif %}
 
 {% regroup lemmas by first_letter as letter_list %}
 {% for letter in letter_list %}
-  <div id="{{ letter.grouper }}" class="mt-12 text-5xl dark:text-white">{{ letter.grouper }}</div>
+  <div id="{{ letter.grouper }}" class="mt-12 text-5xl dark:text-white scroll-mt-24">{{ letter.grouper }}</div>
   {% for lemma in letter.list %}
   <div class="my-4">
     <h3 class="leading-tight">
@@ -35,12 +41,18 @@
   {% endfor %}
 {% endfor %}
 
-<h2 class="mt-16 mb-8 text-3xl font-bold dark:text-white" id="bibliography">Bibliography</h2>
+{% if alphabet.post %}
+  <div class="pt-8">
+    <a href="{% url 'index:home' %}?start={{ alphabet.post|first }}#{{ alphabet.post|first }}" class="{{ hidden_link_decoration }}">Next →</a>
+  </div>
+{% endif %}
+
+<h2 class="mt-16 mb-8 text-3xl font-bold dark:text-white scroll-mt-24" id="bibliography">Bibliography</h2>
 <div class="flex flex-col gap-8">
   {% for work in works %}
   {% if work.reference %}
   <a href="{% url 'index:work-detail' work.slug %}" class="flex gap-4 text-1.5xl transition-colors hover:bg-slate-200 dark:hover:bg-slate-600 rounded-md p-2">
-    <div class="w-16 font-semibold md:w-28 shrink-0 dark:text-white">{{ work.id }}</div>
+    <div class="w-16 font-semibold md:w-28 shrink-0 dark:text-white">{{ work.key }}</div>
     <div class="leading-snug {{ body_text }}">{{ work.reference|safe }}</div>
   </a>
   {% endif %}

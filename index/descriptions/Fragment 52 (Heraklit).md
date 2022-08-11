@@ -1,4 +1,4 @@
-> Αἰὼν παῖς ἐστι παίζων πεσσεύων· παιδὸς ἡ βασιληίη
+> [[Αἰὼν]] παῖς ἐστι παίζων πεσσεύων· παιδὸς ἡ βασιληίη
 
 > De levensloop is als een kind die met dobbelstenen speelt. Dat kind bekleedt het koningschap. (Heraclitus, _Spreuken_, vert. door Cornelis Verhoeven)
 
