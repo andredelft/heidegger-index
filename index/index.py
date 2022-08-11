@@ -51,7 +51,7 @@ def add_ref(lemma, work, ref, lemma_type=None, ref_type=None, betacode=False):
 
     # Validation: ref
     m = REF_REGEX.search(str(ref).strip())
-    if not m:
+    if not m and ref != "whole":
         raise click.BadParameter(f"Reference '{ref}' is not recognized")
 
     if betacode:
@@ -63,9 +63,12 @@ def add_ref(lemma, work, ref, lemma_type=None, ref_type=None, betacode=False):
 
     # Prepare reference dictionary
     ref_dict = {}
-    for k, v in m.groupdict().items():
-        if v:
-            ref_dict[k] = int(v) if k in REF_INTFIELDS else v
+    if ref == "whole":
+        ref_dict["whole"] = True
+    else:
+        for k, v in m.groupdict().items():
+            if v:
+                ref_dict[k] = int(v) if k in REF_INTFIELDS else v
 
     if ref_type:
         ref_dict["type"] = ref_type
@@ -94,7 +97,23 @@ def add_ref(lemma, work, ref, lemma_type=None, ref_type=None, betacode=False):
         refs = lemma_entry["references"]
 
         if refs.get(work):
-            refs[work].append(ref_dict)
+            # Only appends reference if it does not already exist in index.
+            r = refs[work]
+            # Checks whether exact reference is already in the index.
+            if ref_dict in r:
+                raise click.BadParameter(
+                    f"Reference already exists for this lemma."
+                )
+            # UNCOMMENT THIS IF YOU WANT TO PREVENT NEW REFERENCES BEING ADDED IF "WHOLE" 
+            # IS TRUE.
+            # Checks whether the work as a whole is not already a reference for the lemma.
+            # 
+            # elif {"whole": True} in r:
+            #     raise click.BadParameter(
+            #         f"This work as a whole is already a reference for this lemma."
+            #     )
+            else:
+                refs[work].append(ref_dict)
         else:
             refs[work] = [ref_dict]
             if lemma_type:
