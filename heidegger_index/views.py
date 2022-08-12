@@ -68,6 +68,8 @@ class WorkDetailView(DetailView):
         else:
             return super().render_to_response(context, **kwargs)
 
+class WorkDetailViewMD(WorkDetailView):
+    template_name = "markdown/work_detail.md"
 
 class LemmaDetailView(DetailView):
     model = Lemma
