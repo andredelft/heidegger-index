@@ -3,6 +3,7 @@
 {% block head_title %}{{ work.title }}{% endblock head_title %}
 
 {% block body %}
+{% include '_work_export_button.html' %}
 {% include '_home_button.html' %}
 
 {% include 'components/h1.html' with text=work.csl_json.title class="clear-right italic" only %}
