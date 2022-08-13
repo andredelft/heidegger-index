@@ -96,3 +96,6 @@ class LemmaDetailView(DetailView):
             context["works"] = lemma.works.all()
             context["author_short"] = lemma.value.split(",")[0]
         return context
+
+class LemmaDetailViewMD(LemmaDetailView):
+    template_name = "markdown/lemma_detail.md"

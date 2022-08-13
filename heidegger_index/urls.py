@@ -2,15 +2,15 @@ from django.urls import include, path
 from django.views.generic import RedirectView
 from django.conf import settings
 
-from heidegger_index.views import LemmaDetailView, index_view, WorkDetailView, WorkDetailViewMD
+from heidegger_index.views import LemmaDetailView, index_view, WorkDetailView, WorkDetailViewMD, LemmaDetailViewMD
 
 namespaced_patterns = (
     [
         path("", index_view, name="home"),
         path("work/<slug>", WorkDetailView.as_view(), name="work-detail"),
-        # TODO: Make sure the plain text does allow unicode characters!
-        path("work/<slug>/md", WorkDetailViewMD.as_view(content_type='text/plain'), name="work-md"),
         path("lemma/<slug>", LemmaDetailView.as_view(), name="lemma-detail"),
+        path("md/work/<slug>", WorkDetailViewMD.as_view(content_type='text/markdown'), name="work-md-export"),
+        path("md/lemma/<slug>", LemmaDetailViewMD.as_view(content_type='text/markdown'), name="lemma-md-export"),
     ],
     "index",
 )
