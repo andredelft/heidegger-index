@@ -1,0 +1,1 @@
+> Die gegebene schöne Ordnung \[Kosmos\] aller Dinge, dieselbe in allem, ist weder von einem der Götter noch von einem der Menschen geschaffen worden, sondern sie war immer, ist und wird sein: Feuer, ewig lebendig, nach Maßen entflammend und nach \[denselben\] Maßen erlöschend. (_Die Vorsokratiker_, redactie en vertaling door Jaap Mansfeld, p. 263)
