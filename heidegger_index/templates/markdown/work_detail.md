@@ -8,5 +8,4 @@
 {% if person_list %}{% include 'markdown/_group_by_lemma.md' with ref_list=person_list group_title="People mentioned" %}{% endif %}
 {% if work_list %}{% include 'markdown/_group_by_lemma.md' with ref_list=work_list group_title="Works mentioned" %}{% endif %}
 
-Source:
-André van Delft and Johannes de Wit, _{{ work.title }} – Heidegger index_ (2022) \<<https://heidegger.delve.nu{% url 'index:work-detail' work.slug %}>\>.
+{% include 'markdown/_source.md' with type=work %}

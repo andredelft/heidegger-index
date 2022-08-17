@@ -13,4 +13,4 @@ See [the index bibliography](https://heidegger.delve.nu/index/#bibliography) for
   {% endif %}
   {% include 'markdown/_group_by_work.md' with ref_list=child.pagereference_set.all %}
 {% endfor %}
-Source: André van Delft and Johannes de Wit, _{{ lemma }} – Heidegger index_ (2022) \<<https://heidegger.delve.nu{% url 'index:lemma-detail' lemma.slug %}>\>.
+{% include 'markdown/_source.md' with type="lemma" %}
