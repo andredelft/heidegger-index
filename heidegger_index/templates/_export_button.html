@@ -2,10 +2,12 @@
   <a 
   {% if type == "work" %}
     href="{% url 'index:work-md-export' work.slug %}"
+    title="Export work as markdown" 
   {% elif type == "lemma" %}
     href="{% url 'index:lemma-md-export' lemma.slug %}"
+    title="Export lemma as markdown" 
   {% endif %}
-    title="Export as markdown" role="button" class="block p-2 transition-all duration-700 dark:text-slate-200"
+    role="button" class="block p-2 transition-all duration-700 dark:text-slate-200"
   >
       <svg xmlns="http://www.w3.org/2000/svg" class="w-full h-full" fill="currentColor" viewBox="0 0 256 256">
       <rect width="256" height="256" fill="none"></rect>
