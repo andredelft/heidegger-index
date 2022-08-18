@@ -2,4 +2,6 @@
 
 > Der Fürst, dem das Orakel von Delphi gehört, erklärt nicht, verbirgt nicht, sondern deutet an. (_Die Vorsokratiker_, redactie en vertaling door Jaap Mansfeld, p. 253)
 
+> De heer van wie het orakel in Delphi is, zegt niet en verbergt niet, maar geeft een teken. (Heraclitus, _Spreuken_, vert. door Cornelis Verhoeven, p. 29)
+
 > "Der Herr, dessen das Orakel zu Delphi ist, spricht weder aus, noch verbirgt er, sonder gibt ein Zeichen \[be-deutet\]." Hier wird klar: Der Gegenbegriff des λέγειν, des 'zum Worte bringens', ist das κρύπτειν, das Verborgen- und in der Verborgenheit Halten. (_GA 29/30_, p. 41)

@@ -1,6 +1,6 @@
-> [[φύσις]] κρύπτεσθαι φιλεῖ
+> [[φύσις]] κρύπτεσθαι φιλεῖ.
 
-> De natuur houdt ervan zich te verbergen (Cornelis Verhoeven)
+> De natuur houdt ervan zich te verbergen. (Heraclitus, _Spreuken_, vert. door Cornelis Verhoeven, p.33)
 
 > Natur \[…\] pflegt sich versteckt zu halten. (_Die Vorsokratiker_, redactie en vertaling door Jaap Mansfeld, p. 253)
 
