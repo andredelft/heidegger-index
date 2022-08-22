@@ -2875,14 +2875,17 @@ weil:
     - start: 490
     - start: 488
 ἀληθέα:
+  parent: ἀλήθεια
   references:
     GA 29/30:
-    - end: 44
-      start: 42
+    - start: 42
 ἀλήθεια:
   references:
     WBPh:
     - start: 299
+    GA 29/30:
+    - end: 44
+      start: 43
 ἀπόφασις:
   references:
     GA 29/30:
