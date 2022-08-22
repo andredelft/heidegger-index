@@ -2759,12 +2759,6 @@ weil:
       start: 282
     WBPh:
     - start: 249
-τέχνε ὄντα:
-  references:
-    GA 29/30:
-    - start: 46
-  related:
-  - φύσει ὄντα
 τέχνη:
   references:
     EM:
@@ -2778,6 +2772,13 @@ weil:
     - start: 288
     - start: 290
     - start: 297
+τέχνῃ ὄντα:
+  parent: τέχνη
+  references:
+    GA 29/30:
+    - start: 46
+  related:
+  - φύσει ὄντα
 τόπος:
   references:
     WBPh:
@@ -2881,11 +2882,11 @@ weil:
     - start: 42
 ἀλήθεια:
   references:
-    WBPh:
-    - start: 299
     GA 29/30:
     - end: 44
       start: 43
+    WBPh:
+    - start: 299
 ἀπόφασις:
   references:
     GA 29/30:
