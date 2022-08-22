@@ -8,4 +8,4 @@
 {% if person_list %}{% include 'markdown/_group_by_lemma.md' with ref_list=person_list group_title="People mentioned" %}{% endif %}
 {% if work_list %}{% include 'markdown/_group_by_lemma.md' with ref_list=work_list group_title="Works mentioned" %}{% endif %}
 
-{% include 'markdown/_source.md' with type=work %}
+{% include 'markdown/_source.md' with type='work' %}
