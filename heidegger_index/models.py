@@ -1,5 +1,4 @@
 import requests
-from markdownify import markdownify
 
 from django.db import models
 from django.conf import settings
@@ -13,7 +12,6 @@ class Work(models.Model):
     key = models.CharField(max_length=8, unique=True)
     csl_json = models.JSONField()
     reference = models.CharField(max_length=200, null=True)
-    reference_md = models.CharField(max_length=200, null=True)
     slug = AutoSlugField(populate_from="key")
     parent = models.ForeignKey(
         "self", on_delete=models.SET_NULL, null=True, related_name="children"
@@ -31,8 +29,6 @@ class Work(models.Model):
             )
             r.raise_for_status()
             self.reference = r.content.decode()
-        if not self.reference_md and self.csl_json:
-            self.reference_md = markdownify(self.reference)
 
     @property
     def title(self):
@@ -56,7 +52,6 @@ class Lemma(models.Model):
     related = models.ManyToManyField("self", symmetrical=True)
     type = models.CharField(max_length=1, null=True, choices=TYPES.items())
     description = models.TextField(null=True)
-    description_md = models.TextField(null=True)
     sort_key = models.CharField(max_length=100, null=True, unique=True)
     first_letter = models.CharField(max_length=1, null=True)
     slug = AutoSlugField(populate_from="value", slugify_function=slugify)

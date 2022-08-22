@@ -1,7 +1,7 @@
 # {% if lemma.type == "w" %}_{% endif %}{{ lemma }}{% if lemma.type == "w" %}_{% endif %}
 {% if lemma.type == "w" and lemma.author %}Author: [{{ lemma.author }}](https://heidegger.delve.nu/index{% url 'index:lemma-detail' lemma.author.slug %})
 {% endif %}
-{% if lemma.description_md %}{{ lemma.description_md | safe }}
+{% if description_md %}{{ description_md | safe }}
 {% endif %}
 ## Occurences
 See [the index bibliography](https://heidegger.delve.nu/index/#bibliography) for an explanation of the abbreviations used.

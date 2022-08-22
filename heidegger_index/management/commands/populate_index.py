@@ -138,7 +138,6 @@ class Command(BaseCommand):
             # Descriptions
             description = description_by_sort_key.get(lemma_obj.sort_key)
             if description:
-                lemma_obj.description_md = description
                 lemma_obj.description = convert_md(description)
 
         # ManyToMany field 'related' is updated automatically, ForeignKeys are not
@@ -147,7 +146,7 @@ class Command(BaseCommand):
                 lemma_objs.values(),
                 desc="Setting foreign key relations and descriptions",
             ),
-            ["parent", "author", "work", "description", "description_md"],
+            ["parent", "author", "work", "description"],
         )
 
         # Populate page references

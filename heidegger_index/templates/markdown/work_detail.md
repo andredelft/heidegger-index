@@ -1,7 +1,7 @@
 # Index of {{ work.csl_json.title }}
 
 ## Work reference
-{{ work.reference_md | safe }}
+{{ reference_md | safe }}
 
 ## Index terms
 {% include 'markdown/_group_by_lemma.md' with ref_list=term_list %}
