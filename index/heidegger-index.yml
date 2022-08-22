@@ -91,6 +91,8 @@ Aristoteles:
     - start: 488
     - start: 490
       suffix: f
+    - start: 42
+    - start: 44
     SZ:
     - start: 3
     SvG:
@@ -464,6 +466,7 @@ Entbergen:
       start: 453
     - start: 490
     - start: 41
+    - start: 44
     WBPh:
     - start: 277
     - start: 299
@@ -540,6 +543,11 @@ Fragment 1 (Heraklit):
     WBPh:
     - start: 277
   type: w
+Fragment 112 (Heraklit):
+  references:
+    GA 29/30:
+    - start: 41
+      suffix: f
 Fragment 123 (Heraklit):
   author: Heraklit
   references:
@@ -558,6 +566,8 @@ Fragment 2 (Heraklit):
   type: w
 Fragment 30 (Heraklit):
   references:
+    GA 29/30:
+    - start: 47
     SvG:
     - start: 168
   type: w
@@ -573,6 +583,10 @@ Fragment 52 (Heraklit):
   - αἰών
   - Geschick
   type: w
+Fragment 54 (Heraklit):
+  references:
+    GA 29/30:
+    - start: 44
 Fragment 93 (Heraklit):
   author: Heraklit
   references:
@@ -600,6 +614,10 @@ Fähigkeit:
   references:
     GA 29/30:
     - start: 489
+Ganze des Seiende:
+  references:
+    GA 29/30:
+    - start: 44
 Ganze des Seienden:
   references:
     GA 29/30:
@@ -1251,6 +1269,8 @@ Natur:
       start: 402
     - end: 39
       start: 38
+    - end: 47
+      start: 46
     SvG:
     - start: 178
     WBPh:
@@ -1385,6 +1405,9 @@ Philosophie:
       start: 9
     - end: 37
       start: 36
+    - start: 42
+    - start: 45
+    - start: 47
 Philosophieren:
   references:
     EM:
@@ -1597,6 +1620,8 @@ Seienden im Ganzen:
     GA 29/30:
     - end: 39
       start: 38
+    - start: 42
+    - start: 47
 Seiendheit:
   references:
     WBPh:
@@ -1619,6 +1644,7 @@ Sein und Zeit:
       start: 425
     - start: 433
     - start: 441
+    - start: 44
     ZEG:
     - start: 63
   type: w
@@ -1885,6 +1911,7 @@ Urwort:
     GA 29/30:
     - end: 38
       start: 37
+    - start: 45
 Verbergen:
   references:
     GA 29/30:
@@ -1991,6 +2018,16 @@ Walten:
     GA 29/30:
     - end: 40
       start: 38
+    - start: 42
+    - end: 47
+      start: 46
+Walten des Seienden:
+  parent: Walten
+  references:
+    GA 29/30:
+    - end: 45
+      start: 44
+    - start: 42
 Warum:
   references:
     SvG:
@@ -2268,6 +2305,10 @@ ja-und-nein-sagen:
   references:
     G:
     - start: 527
+menschliche Dasein:
+  references:
+    GA 29/30:
+    - start: 44
 metaphysischen Begriffe:
   references:
     GA 29/30:
@@ -2573,6 +2614,8 @@ weil:
       start: 487
     - end: 41
       start: 40
+    - start: 42
+    - start: 44
     SvG:
     - start: 158
     - start: 159
@@ -2716,6 +2759,12 @@ weil:
       start: 282
     WBPh:
     - start: 249
+τέχνε ὄντα:
+  references:
+    GA 29/30:
+    - start: 46
+  related:
+  - φύσει ὄντα
 τέχνη:
   references:
     EM:
@@ -2737,6 +2786,10 @@ weil:
   references:
     GA 29/30:
     - start: 38
+φυσιολόγοι:
+  references:
+    GA 29/30:
+    - start: 42
 φύειν:
   references:
     GA 29/30:
@@ -2746,6 +2799,8 @@ weil:
   references:
     EM:
     - start: 19
+    GA 29/30:
+    - start: 46
     WBPh:
     - start: 253
     - start: 256
@@ -2769,6 +2824,10 @@ weil:
       suffix: ff
     - end: 41
       start: 38
+    - end: 48
+      start: 46
+    - end: 45
+      start: 42
     HH:
     - start: 145
     SvG:
@@ -2815,6 +2874,11 @@ weil:
     - start: 487
     - start: 490
     - start: 488
+ἀληθέα:
+  references:
+    GA 29/30:
+    - end: 44
+      start: 42
 ἀλήθεια:
   references:
     WBPh:
