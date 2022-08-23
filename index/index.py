@@ -6,6 +6,7 @@ from pathlib import Path
 from betacode.conv import beta_to_uni
 from tqdm import tqdm
 from itertools import combinations
+from pyCTS import CTS_URN
 
 from heidegger_index.utils import match_lemmata
 from heidegger_index.constants import (
@@ -187,6 +188,67 @@ def find_ref(search_term, max_l_dist=2, num_results=5):
     else:
         print("No matches found")
 
+
+def add_urn(lemma, lemma_type, urn=None, overwrite=False):
+    """Add a urn to a lemma of type 'author' or 'work'"""
+
+    # Open index file
+    with open(INDEX_FILE) as f:
+        index = yaml.load(f)
+
+    # Validation: lemma exists
+    if lemma not in index:
+        raise click.BadParameter(f"Lemma '{lemma}' not found in index.")
+
+    # Validation: lemma type is correct
+    if lemma_type not in LEMMA_TYPES:
+        raise click.BadParameter(f"'{lemma_type}' is not a valid lemma type.")
+
+    lemma_dict = index[lemma]
+
+    # Validation: lemma in index is of same type as lemma_type
+    if lemma_type != lemma_dict.get("type"):
+        raise click.BadParameter(f"Lemma is in the index as '{lemma_dict.get('type')}', not as '{lemma_type}'.")
+
+    if urn:
+        # Validation: urn is defined well.
+        try:
+            cts_urn = CTS_URN(urn)
+        except (TypeError, ValueError):
+            raise click.BadParameter(f"'{urn}' is not a valid CTS URN.")
+        if lemma_type == PERSON:
+            # Validation: urn is defined well for the type.
+            if cts_urn.work:
+                raise click.BadParameter(f"'{urn}' contains a work namespace. Only define up to textgroup for authors.")
+        if lemma_type == WORK:
+            # Validation: urn is defined well for the type.
+            if not cts_urn.work:
+                raise click.BadParameter(f"'{urn}' does not contain a work namespace. Please provide a valid URN.")
+        # Validation: urn is not already defined
+        md_dict = {}
+        md_dict["cts_urn"] = urn
+        try:
+            lemma_urn_in_index = lemma_dict["metadata"].get("cts_urn")
+        except:
+            lemma_dict["metadata"] = md_dict
+        else:
+            if lemma_urn_in_index:
+                if overwrite:
+                    lemma_dict["metadata"] = md_dict
+                else:
+                    if lemma_urn_in_index == urn:
+                        raise click.BadParameter(f"'{lemma}' has this URN already assigned to it.")
+                    else:
+                        raise click.BadParameter(f"'{lemma}' already has the following URN defined: '{lemma_urn_in_index}'.")
+    else:
+        # If urn is not defined
+        raise click.BadParameter(f"No URN specified.")
+
+    index[lemma] = lemma_dict
+
+    # Close and write index file.
+    with open(INDEX_FILE, "w") as f:
+        yaml.dump(index, f, allow_unicode=True)
 
 # Shorthand functions:
 

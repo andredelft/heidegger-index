@@ -14,6 +14,7 @@ setup(
         "console_scripts": [
             "add-ref=index:click_add_ref",
             "add-rel=index:click_add_rel",
+            "add-urn=index:click_add_urn",
             "find-ref=index:click_find_ref",
             "format-refs=index:click_format_refs",
         ]

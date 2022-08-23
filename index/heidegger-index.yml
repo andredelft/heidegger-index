@@ -949,6 +949,8 @@ Herakles:
     - start: 269
   type: p
 Heraklit:
+  metadata:
+    cts_urn: urn:cts:greekLit:tlg0626
   references:
     EM:
     - start: 66
