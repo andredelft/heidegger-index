@@ -14,34 +14,37 @@
 {% endif %}
 
 {% if lemma.type == "w" and lemma.urn and work_full_text%}
-<div>
-  <p>
+<div class="{{ source_text }}">
+  <p class="indent-4">
     {{ work_full_text }}
   </p>
-  <p>
-    From: <a 
+  <p class="text-sm text-right">
+  Source: <a 
     href="{{ 'https://scaife.perseus.org/reader/' }}{{ lemma.urn | safe }}" 
     title="Read full text of {{ lemma.value }} on Perseus"
     target="_blank" rel="noopener noreferrer"
     class="{{ hidden_link_decoration }}"
     >
-    {{ 'https://scaife.perseus.org/reader/' }}{{ lemma.urn | safe }}
+    <cite>Perseus Digital Library</cite>
     </a>
   </p>
 </div>
 {% elif lemma.type and lemma.urn %}
 <div>
+  <p class="text-xl pb-8">
   <a 
   href="{{ 'https://scaife.perseus.org/reader/' }}{{ lemma.urn | safe }}" 
   title="View {{ lemma.value }} on Perseus"
   target="_blank" rel="noopener noreferrer"
+  class="{{ hidden_link_decoration }}"
   >
   {% if lemma.type == "w" %}
-  Read full text of <em>{{ lemma.value }}</em> on Perseus
+  Read full text of <em>{{ lemma.value }}</em> on <cite>Perseus Digital Library</cite>
   {% elif lemma.type == "p" %}
-  Read works of <em>{{ lemma.value }}</em> on Perseus
+  Read works of {{ lemma.value }} on <cite>Perseus Digital Library</cite>
   {% endif %}
   </a>
+  </p>
 </div>
 {% endif %}
 
