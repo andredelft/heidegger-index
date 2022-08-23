@@ -1,8 +1,10 @@
 import requests
+import uuid
 
 from django.db import models
 from django.conf import settings
 from django_extensions.db.fields import AutoSlugField
+from django.core.validators import URLValidator
 
 from heidegger_index.constants import LEMMA_TYPES, REF_TYPES
 from heidegger_index.utils import gen_sort_key, slugify
@@ -52,7 +54,12 @@ class Lemma(models.Model):
     related = models.ManyToManyField("self", symmetrical=True)
     type = models.CharField(max_length=1, null=True, choices=TYPES.items())
     description = models.TextField(null=True)
-    urn = models.CharField(max_length=100, null=True, unique=True)
+    urn = models.URLField(
+        max_length=100, 
+        null=True, 
+        validators=[URLValidator(schemes=['urn'])], 
+        unique=True
+    )
     sort_key = models.CharField(max_length=100, null=True, unique=True)
     first_letter = models.CharField(max_length=1, null=True)
     slug = AutoSlugField(populate_from="value", slugify_function=slugify)
