@@ -546,10 +546,12 @@ Fragment 1 (Heraklit):
     - start: 277
   type: w
 Fragment 112 (Heraklit):
+  author: Heraklit
   references:
     GA 29/30:
     - start: 41
       suffix: f
+  type: w
 Fragment 123 (Heraklit):
   author: Heraklit
   references:
@@ -567,6 +569,7 @@ Fragment 2 (Heraklit):
     - start: 277
   type: w
 Fragment 30 (Heraklit):
+  author: Heraklit
   references:
     GA 29/30:
     - start: 47
@@ -586,9 +589,11 @@ Fragment 52 (Heraklit):
   - Geschick
   type: w
 Fragment 54 (Heraklit):
+  author: Heraklit
   references:
     GA 29/30:
     - start: 44
+  type: w
 Fragment 93 (Heraklit):
   author: Heraklit
   references:
