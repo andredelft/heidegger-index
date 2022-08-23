@@ -52,6 +52,7 @@ class Lemma(models.Model):
     related = models.ManyToManyField("self", symmetrical=True)
     type = models.CharField(max_length=1, null=True, choices=TYPES.items())
     description = models.TextField(null=True)
+    urn = models.CharField(max_length=100, null=True, unique=True)
     sort_key = models.CharField(max_length=100, null=True, unique=True)
     first_letter = models.CharField(max_length=1, null=True)
     slug = AutoSlugField(populate_from="value", slugify_function=slugify)

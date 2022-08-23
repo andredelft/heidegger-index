@@ -90,7 +90,11 @@ class Command(BaseCommand):
         lemma_objs = dict()
         sort_keys = dict()
         for i, (value, data) in enumerate(index_data.items()):
-            lemma_obj = Lemma(id=i, value=value, type=data.get("type", None))
+            try:
+                md = data["metadata"]
+            except:
+                md = {}
+            lemma_obj = Lemma(id=i, value=value, type=data.get("type", None), urn=md.get("cts_urn", None))
             lemma_obj.create_sort_key()
             if lemma_obj.sort_key in sort_keys.keys():
                 self.stdout.write(

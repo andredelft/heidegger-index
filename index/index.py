@@ -252,7 +252,6 @@ def add_urn(lemma, lemma_type, urn=None, overwrite=False):
 
 # Shorthand functions:
 
-
 def add_refs(lemmas, *args, **kwargs):
     """Add multiple lemmas with the same reference to the index"""
     for lemma in tqdm(lemmas, desc="Adding references"):

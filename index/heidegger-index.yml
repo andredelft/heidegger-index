@@ -547,6 +547,8 @@ Fragen:
     - start: 13
 Fragment 1 (Heraklit):
   author: Heraklit
+  metadata:
+    cts_urn: urn:cts:greekLit:tlg0626.tlg002:1
   references:
     WBPh:
     - start: 277
@@ -570,6 +572,8 @@ Fragment 123 (Heraklit):
   type: w
 Fragment 2 (Heraklit):
   author: Heraklit
+  metadata:
+    cts_urn: urn:cts:greekLit:tlg0626.tlg002:2
   references:
     WBPh:
     - start: 277

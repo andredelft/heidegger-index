@@ -13,6 +13,46 @@
 </div>
 {% endif %}
 
+{% if lemma.type == "w" and lemma.urn %}
+{% if work_full_text %}
+<div>
+  <p>
+    {{ work_full_text }}
+  </p>
+  <p>
+    From: <a 
+    href="{{ 'https://scaife.perseus.org/reader/' }}{{ lemma.urn | safe }}" 
+    title="Read full text of {{ lemma.value }} on Perseus"
+    target="_blank" rel="noopener noreferrer"
+    class="{{ hidden_link_decoration }}"
+    >
+    {{ 'https://scaife.perseus.org/reader/' }}{{ lemma.urn | safe }}
+    </a>
+  </p>
+</div>
+{% else %}
+<div>
+  <a 
+  href="{{ 'https://scaife.perseus.org/reader/' }}{{ lemma.urn | safe }}" 
+  title="Read full text of {{ lemma.value }} on Perseus"
+  target="_blank" rel="noopener noreferrer"
+  >
+  Read full text of <em>{{ lemma.value }}</em> on Perseus
+  </a>
+</div>
+  {% endif %}
+{% elif lemma.type == "p" and lemma.urn %}
+<div>
+  <a 
+  href="{{ 'https://scaife.perseus.org/reader/' }}{{ lemma.urn | safe }}" 
+  title="Read works of {{ lemma.value }} on Perseus"
+  target="_blank" rel="noopener noreferrer"
+  >
+  Read works of <em>{{ lemma.value }}</em> on Perseus
+  </a>
+</div>
+{% endif %}
+
 {% if lemma.description %}
 <div class="{{ description_prose }} mb-8">
   {{ lemma.description | safe }}
