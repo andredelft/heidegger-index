@@ -1,5 +1,3 @@
-> ὁ ἄναξ, οὗ τὸ μαντεῖόν ἐστι τὸ ἐν Δελφοῖς, οὔτε λέγει οὔτε κρύπτει ἀλλὰ σιμαίνει.
-
 > Der Fürst, dem das Orakel von Delphi gehört, erklärt nicht, verbirgt nicht, sondern deutet an. (_Die Vorsokratiker_, redactie en vertaling door Jaap Mansfeld, p. 253)
 
 > De heer van wie het orakel in Delphi is, zegt niet en verbergt niet, maar geeft een teken. (Heraclitus, _Spreuken_, vert. door Cornelis Verhoeven, p. 29)

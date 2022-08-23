@@ -93,7 +93,7 @@ class LemmaDetailView(DetailView):
         lemma = context["lemma"]
         context["children"] = lemma.children.all()
         context["related"] = lemma.related.all()
-        if lemma.type == "w":
+        if lemma.type == "w" and lemma.urn:
             p_link = 'https://scaife-cts.perseus.org/api/cts?request=GetPassage&urn=' + lemma.urn
             p_response = requests.get(p_link)
             parsed_xml = BeautifulSoup(p_response.text, 'html.parser')

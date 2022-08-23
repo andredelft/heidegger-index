@@ -1,5 +1,3 @@
-> διὸ δεῖ ἕπεσθαι 〈τῷ ξυνῷ – τουτέστι〉 τῷ κοινῷ, ξυνὸς γὰρ ὁ κοινός· τοῦ λόγου δ’ ἐόντος ξυνοῦ ζώουσιν οἱ πολλοὶ ὡς ἰδίαν ἔχοντες φρόνησιν.
-
 > Daher hat man sich dem Allgemeinen anzuchließen – _d.h. dem Gemeinschaflichen, denn der gemeinschaftliche \[Logos\] ist allgemein;_ ungeachtet der Tatsache aber, daß die Auslegung eine allgemeine ist, leben die Leute, als ob sie über eine private Einsicht verfügten. (_Die Vorsokratiker_, redactie en vertaling door Jaap Mansfeld, p. 245)
 
 > Daarom is het nodig het spoor te volgen van wat verbindend is. En ofschoon de gedachtengang verbindend is, leven de meeste mensen alsof zij een inzicht hebben dat losstaat van elk verband. (N.B. Verhoevens Griekse editie mist de volgende zinsnede: "〈 – τουτέστι〉 τῷ κοινῷ, ξυνὸς γὰρ ὁ κοινός·" Heraclitus, _Spreuken_, vert. door Cornelis Verhoeven, p. 13)
