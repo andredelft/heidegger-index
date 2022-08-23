@@ -373,6 +373,8 @@ De Interpretatione:
   type: w
 De anima:
   author: Aristoteles
+  metadata:
+    cts_urn: urn:cts:greekLit:tlg0086.tlg002
   references:
     GA 29/30:
     - end: 455
