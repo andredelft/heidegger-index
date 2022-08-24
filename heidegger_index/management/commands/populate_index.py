@@ -149,7 +149,7 @@ class Command(BaseCommand):
         Lemma.objects.bulk_update(
             tqdm(
                 lemma_objs.values(),
-                desc="Setting foreign key relations, descriptions and work text",
+                desc="Setting foreign key relations and descriptions",
             ),
             ["parent", "author", "work", "description"],
         )
