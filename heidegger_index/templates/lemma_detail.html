@@ -13,10 +13,10 @@
 </div>
 {% endif %}
 
-{% if lemma.type == "w" and lemma.urn and work_full_text%}
+{% if lemma.type == "w" and lemma.text %}
 <div class="{{ source_text }}">
   <p class="indent-4">
-    {{ work_full_text }}
+    {{ lemma.text }}
   </p>
   <p class="text-sm text-right">
   Source: <a 
@@ -29,7 +29,7 @@
     </a>
   </p>
 </div>
-{% elif lemma.type and lemma.urn %}
+{% elif lemma.type and lemma.urn and not lemma.text %}
 <div>
   <p class="text-xl pb-8">
   <a 

@@ -90,11 +90,12 @@ class Command(BaseCommand):
         lemma_objs = dict()
         sort_keys = dict()
         for i, (value, data) in enumerate(index_data.items()):
-            try:
-                md = data["metadata"]
-            except:
-                md = {}
+            md = data.get("metadata", {})
             lemma_obj = Lemma(id=i, value=value, type=data.get("type", None), urn=md.get("cts_urn", None))
+            try:
+                lemma_obj.load_work_text()
+            except HTTPError as e:
+                self.stdout.write(f"Skipping {lemma_obj} because of HTTP error: {e}")
             lemma_obj.create_sort_key()
             if lemma_obj.sort_key in sort_keys.keys():
                 self.stdout.write(
@@ -115,7 +116,7 @@ class Command(BaseCommand):
         }
 
         # Loop a second time through lemma_data to set parent, author and related fields
-        # and populate descriptions
+        # and populate descriptions and full work texts
         for lemma_value, lemma_data in index_data.items():
             lemma_obj = lemma_objs[lemma_value]
 
@@ -148,7 +149,7 @@ class Command(BaseCommand):
         Lemma.objects.bulk_update(
             tqdm(
                 lemma_objs.values(),
-                desc="Setting foreign key relations and descriptions",
+                desc="Setting foreign key relations, descriptions and work text",
             ),
             ["parent", "author", "work", "description"],
         )

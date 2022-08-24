@@ -1,4 +1,6 @@
 import requests
+from bs4 import BeautifulSoup
+from pyCTS import CTS_URN
 
 from django.db import models
 from django.conf import settings
@@ -59,6 +61,7 @@ class Lemma(models.Model):
         validators=[URLValidator(schemes=['urn'])], 
         unique=True
     )
+    text = models.TextField(null=True)
     sort_key = models.CharField(max_length=100, null=True, unique=True)
     first_letter = models.CharField(max_length=1, null=True)
     slug = AutoSlugField(populate_from="value", slugify_function=slugify)
@@ -83,6 +86,17 @@ class Lemma(models.Model):
             self.create_sort_key()
 
         super().save(*args, **kwargs)
+
+    def load_work_text(self):
+        if not self.text and self.urn and self.type == "w":
+            lemma_urn = CTS_URN(self.urn)
+            if not lemma_urn.passage_component:
+                self.text = None
+            else:
+                p_link = 'https://scaife-cts.perseus.org/api/cts?request=GetPassage&urn=' + self.urn
+                p_response = requests.get(p_link)
+                parsed_xml = BeautifulSoup(p_response.text, 'html.parser')
+                self.text = parsed_xml.p.contents[-1].string
 
     class Meta:
         ordering = ["sort_key"]

@@ -6,8 +6,7 @@ from django.shortcuts import redirect
 from django.conf import settings
 
 import requests
-from bs4 import BeautifulSoup
-from pyCTS import CTS_URN
+
 
 from heidegger_index.models import Lemma, PageReference, Work, get_alphabet
 
@@ -95,15 +94,6 @@ class LemmaDetailView(DetailView):
         lemma = context["lemma"]
         context["children"] = lemma.children.all()
         context["related"] = lemma.related.all()
-        try:
-            lemma_urn = CTS_URN(lemma.urn)
-            if lemma.type == "w" and lemma_urn.passage_component:
-                p_link = 'https://scaife-cts.perseus.org/api/cts?request=GetPassage&urn=' + lemma.urn
-                p_response = requests.get(p_link)
-                parsed_xml = BeautifulSoup(p_response.text, 'html.parser')
-                context["work_full_text"] = parsed_xml.p.contents[-1].string
-        except:
-            pass
         if lemma.type == "p":
             context["works"] = lemma.works.all()
             context["author_short"] = lemma.value.split(",")[0]
