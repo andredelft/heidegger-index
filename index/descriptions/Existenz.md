@@ -1,0 +1,1 @@
+> ἐξίστασθαι – 'Existenz', 'existeren' bedeutet für die Griechen gerade: nicht-sein. Die Gedankenlosigkeit und Verblasenheit, in der man das Wort 'Existenz' und 'existeren' zur Bezeichnung des Seins gebraucht, belegt erneut die Entfremdung gegenüber dem Sein und einer ursprünglich mächtigen und bestimmten Auslegung seiner. (*EM*, p. 68)

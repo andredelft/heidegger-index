@@ -61,6 +61,8 @@ Antiphon:
   type: p
 Anwesen:
   references:
+    EM:
+    - start: 65
     SvG:
     - start: 159
     - start: 161
@@ -73,6 +75,8 @@ Aristoteles:
     EM:
     - start: 18
     - start: 62
+    - start: 64
+    - start: 65
     GA 29/30:
     - end: 57
       start: 48
@@ -177,6 +181,8 @@ Aussagesatz:
       start: 452
 Aussehen:
   references:
+    EM:
+    - start: 65
     WBPh:
     - end: 275
       start: 273
@@ -588,6 +594,12 @@ Fragment 52 (Heraklit):
   - αἰών
   - Geschick
   type: w
+Fragment 53 (Heraklit):
+  author: Heraklit
+  references:
+    EM:
+    - start: 66
+  type: w
 Fragment 54 (Heraklit):
   author: Heraklit
   references:
@@ -794,6 +806,7 @@ Grammatik:
     EM:
     - end: 63
       start: 58
+    - start: 64
 Großrechenanlage:
   references:
     SvG:
@@ -937,6 +950,8 @@ Herakles:
   type: p
 Heraklit:
   references:
+    EM:
+    - start: 66
     SvG:
     - start: 161
     - start: 163
@@ -1025,6 +1040,10 @@ Kalkül:
     - start: 154
     - start: 155
     - start: 167
+Kampf:
+  references:
+    EM:
+    - start: 66
 Kant und das Problem der Metaphysik:
   references:
     GA 29/30:
@@ -1102,6 +1121,8 @@ Leere im Ganzen:
     - start: 251
 Leibniz, Gottfried Wilhelm:
   references:
+    EM:
+    - start: 65
     SvG:
     - end: 175
       start: 172
@@ -1203,6 +1224,8 @@ Metaphysica:
   type: w
 Metaphysik:
   references:
+    EM:
+    - start: 65
     GA 29/30:
     - end: 5
       start: 1
@@ -1275,6 +1298,7 @@ Natur:
     - end: 17
       start: 15
     - start: 19
+    - start: 65
     EWI:
     - start: 41
       suffix: ff
@@ -1661,6 +1685,8 @@ Sein:
     - start: 491
 Sein des Seienden:
   references:
+    EM:
+    - start: 64
     WBPh:
     - start: 261
 Sein und Zeit:
@@ -1756,6 +1782,7 @@ Sprache:
     EM:
     - start: 60
     - start: 62
+    - start: 63
     GA 29/30:
     - start: 442
       suffix: f
@@ -2532,6 +2559,8 @@ weil:
     - start: 296
 εἶδος:
   references:
+    EM:
+    - start: 65
     WBPh:
     - start: 273
       suffix: f
@@ -2631,6 +2660,7 @@ weil:
   references:
     EM:
     - start: 62
+    - start: 66
     GA 29/30:
     - start: 441
     - end: 420
@@ -2685,6 +2715,8 @@ weil:
     - start: 286
 μορφή:
   references:
+    EM:
+    - start: 65
     WBPh:
     - end: 274
       start: 271
@@ -2708,6 +2740,8 @@ weil:
     - start: 18
 οὐσία:
   references:
+    EM:
+    - start: 65
     SvG:
     - start: 157
     WBPh:
@@ -2728,12 +2762,18 @@ weil:
       start: 297
   related:
   - φύσις
+παρουσία:
+  references:
+    EM:
+    - start: 65
 παράδειγμα:
   references:
     WBPh:
     - start: 288
 ποίησις:
   references:
+    EM:
+    - start: 44
     WBPh:
     - start: 287
     - start: 297
@@ -2744,7 +2784,7 @@ weil:
   references:
     EM:
     - start: 62
-πρᾶχις:
+πρᾶξις:
   references:
     EM:
     - start: 62
@@ -2759,6 +2799,13 @@ weil:
   references:
     EM:
     - start: 63
+    - start: 64
+  related:
+  - Nomen
+πόλεμος:
+  references:
+    EM:
+    - start: 66
 στέρησις:
   references:
     WBPh:
@@ -2785,6 +2832,8 @@ weil:
       start: 444
 τέλος:
   references:
+    EM:
+    - start: 64
     VWPh:
     - end: 283
       start: 282
@@ -2849,6 +2898,8 @@ weil:
     - end: 19
       start: 15
     - start: 60
+    - start: 65
+    - start: 66
     FT:
     - start: 12
     GA 29/30:
@@ -2952,6 +3003,8 @@ weil:
     - start: 267
 ἐντελέχεια:
   references:
+    EM:
+    - start: 64
     WBPh:
     - end: 282
       start: 280
@@ -2978,12 +3031,18 @@ weil:
     - start: 259
     - start: 262
     - start: 268
-ἔκλισις:
+ἔγκλισις:
   references:
     EM:
     - start: 63
+    - start: 64
+  related:
+  - πτῶσις
+  - Verbum
 ἰδέα:
   references:
+    EM:
+    - start: 65
     WBPh:
     - start: 273
       suffix: f
