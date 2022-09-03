@@ -9,8 +9,8 @@ See [the index bibliography]({% buildfullurl '/index/#bibliography' %}) for an e
 {% if works %}{% include 'markdown/_lemma_list.md' with lemma_list=works title="Works by "|add:author_short %}
 {% endif %}
 {% for child in children %}## {{ child }}
-  {% if child.description %}{{ child.description | safe }}
-  {% endif %}
-  {% include 'markdown/_group_by_work.md' with ref_list=child.pagereference_set.all %}
+{% if child.description %}{{ child.description | safe }}
+{% endif %}
+{% include 'markdown/_group_by_work.md' with ref_list=child.pagereference_set.all %}
 {% endfor %}
 {% include 'markdown/_source.md' with type="lemma" %}
