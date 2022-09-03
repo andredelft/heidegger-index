@@ -1525,6 +1525,10 @@ video {
   margin-top: 1rem;
 }
 
+.mr-0 {
+  margin-right: 0px;
+}
+
 .block {
   display: block;
 }
@@ -1726,6 +1730,10 @@ video {
   padding-bottom: 1rem;
 }
 
+.pr-0 {
+  padding-right: 0px;
+}
+
 .text-right {
   text-align: right;
 }
@@ -1775,6 +1783,11 @@ video {
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .font-semibold {
