@@ -112,5 +112,5 @@ class LemmaDetailViewMD(LemmaDetailView):
         context = super().get_context_data(**kwargs)
         lemma = context["lemma"]
         if lemma.description:
-            context["description_md"] = markdownify(lemma.description)
+            context["description_md"] = markdownify(lemma.description, strip=['p'])
         return context
