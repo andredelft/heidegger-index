@@ -13,14 +13,14 @@
 </div>
 {% endif %}
 
-{% if lemma.type == "w" and lemma.text %}
+{% if lemma.type == "w" and lemma.perseus_content %}
 <div class="{{ source_text }}">
-  <p class="indent-4">
-    {{ lemma.text }}
+  <p class="pl-4">
+    {{ lemma.perseus_content }}
   </p>
-  <p class="text-sm text-right">
+  <p class="text-lg text-right">
   Source: <a 
-    href="{{ 'https://scaife.perseus.org/reader/' }}{{ lemma.urn | safe }}" 
+    href="{ 'https://scaife.perseus.org/reader/' }{{ lemma.urn | safe }}" 
     title="Read full text of {{ lemma.value }} on Perseus"
     target="_blank" rel="noopener noreferrer"
     class="{{ hidden_link_decoration }}"
@@ -29,7 +29,7 @@
     </a>
   </p>
 </div>
-{% elif lemma.type and lemma.urn and not lemma.text %}
+{% elif lemma.type and lemma.urn and not lemma.perseux_content %}
 <div>
   <p class="text-xl pb-8">
   <a 
