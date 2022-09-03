@@ -1,10 +1,11 @@
+{% load fullurl %}
 # {% if lemma.type == "w" %}_{% endif %}{{ lemma }}{% if lemma.type == "w" %}_{% endif %}
-{% if lemma.type == "w" and lemma.author %}Author: [{{ lemma.author }}](https://heidegger.delve.nu/index{% url 'index:lemma-detail' lemma.author.slug %})
+{% if lemma.type == "w" and lemma.author %}Author: [{{ lemma.author }}]({% fullurl 'index:lemma-detail' lemma.author.slug %})
 {% endif %}
 {% if description_md %}{{ description_md | safe }}
 {% endif %}
 ## Occurences
-See [the index bibliography](https://heidegger.delve.nu/index/#bibliography) for an explanation of the abbreviations used.
+See [the index bibliography]({% buildfullurl '/index/#bibliography' %}) for an explanation of the abbreviations used.
 {% include 'markdown/_group_by_work.md' with ref_list=lemma.pagereference_set.all %}
 {% if works %}{% include 'markdown/_lemma_list.md' with lemma_list=works title="Works by "|add:author_short %}
 {% endif %}

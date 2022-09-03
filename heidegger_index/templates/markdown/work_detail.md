@@ -1,3 +1,4 @@
+{% load fullurl %}
 # Index of {{ work.csl_json.title }}
 
 ## Work reference
