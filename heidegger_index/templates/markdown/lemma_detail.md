@@ -1,5 +1,4 @@
-{% load fullurl %}
-# {% if lemma.type == "w" %}_{% endif %}{{ lemma }}{% if lemma.type == "w" %}_{% endif %}
+{% load fullurl %}# {% if lemma.type == "w" %}_{% endif %}{{ lemma }}{% if lemma.type == "w" %}_{% endif %}
 {% if lemma.type == "w" and lemma.author %}Author: [{{ lemma.author }}]({% fullurl 'index:lemma-detail' lemma.author.slug %})
 {% endif %}
 {% if description_md %}{{ description_md | safe }}

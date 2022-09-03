@@ -1,5 +1,4 @@
-{% load fullurl %}
-# Index of {{ work.csl_json.title }}
+{% load fullurl %}# Index of {{ work.csl_json.title }}
 
 ## Work reference
 {{ reference_md | safe }}
