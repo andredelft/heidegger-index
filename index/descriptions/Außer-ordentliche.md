@@ -1,1 +1,1 @@
-> [[Philosophieren]] ist Fragen nach dem Außer-ordentlichen. (_EM_, p. 10)
+> [[Philosophieren]] ist Fragen nach dem Außer-ordentlichen. [@EM, p. 10]

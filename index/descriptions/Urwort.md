@@ -1,1 +1,1 @@
-> Unter einem Urwort verstehenwir ein solcher, das aus einer wesentlcihen und ursprünglichen menschheitlichen Erfahrung als deren _Ausspruch_ sich gebildet hat. (_GA 29/30_, p. 37)
+> Unter einem Urwort verstehenwir ein solcher, das aus einer wesentlcihen und ursprünglichen menschheitlichen Erfahrung als deren _Ausspruch_ sich gebildet hat. [@GA 29/30, p. 37]
