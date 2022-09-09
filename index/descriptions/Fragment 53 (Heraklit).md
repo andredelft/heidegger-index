@@ -1,3 +1,3 @@
 > πόλεμος πάντων μὲν πατήρ ἐστι, πάντων δὲ βασιλεύς, καὶ τοὺς μὲν θεοὺς ἔδειχε τοὺς δὲ ἀνθρώπους, τὸς μὲν δοὺλους ἐποὶησε τοὺς δὲ ἐλευθέρους
 
-> Auseinandersetzung ist allem ([[Anwesenden|Anwesen]]) zwar Erzeuger (der aufgehen läßt), allem aber (auch) waltender Bewahrer. Sie läßt nämlich die einen als [[Götter]] erscheinen, die anderen als [[Menschen|Mensch]], die einen stellt die her(aus) als Knechte, die anderen aber als Freie. (*EM*, p. 66)
+> Auseinandersetzung ist allem ([[Anwesenden|Anwesen]]) zwar Erzeuger (der aufgehen läßt), allem aber (auch) waltender Bewahrer. Sie läßt nämlich die einen als [[Götter]] erscheinen, die anderen als [[Menschen|Mensch]], die einen stellt die her(aus) als Knechte, die anderen aber als Freie. [@EM, p. 66]

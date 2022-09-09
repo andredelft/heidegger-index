@@ -2834,11 +2834,10 @@ weil:
   references:
     EM:
     - start: 64
-    VWPh:
-    - end: 283
-      start: 282
     WBPh:
     - start: 249
+    - end: 283
+      start: 282
 τέχνη:
   references:
     EM:
