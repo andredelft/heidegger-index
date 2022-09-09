@@ -3,6 +3,7 @@
 {% block head_title %}{{ lemma.value }}{% endblock head_title %}
 
 {% block body %}
+{% include '_export_button.html' with type="lemma" %}
 {% include '_home_button.html' %}
 
 <h1 class="clear-right pb-8 text-5xl font-semibold dark:text-white{% if lemma.type == "w" %} italic{% endif %}">{{ lemma }}</h1>
