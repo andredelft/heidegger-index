@@ -610,6 +610,8 @@ Fragment 52 (Heraklit):
   type: w
 Fragment 53 (Heraklit):
   author: Heraklit
+  metadata:
+    cts_urn: urn:cts:greekLit:tlg0626.tlg002:53
   references:
     EM:
     - start: 66
