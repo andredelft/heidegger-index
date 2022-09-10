@@ -1,8 +1,12 @@
 from django.http import Http404
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from django.views.generic.detail import DetailView
+from django.views.generic.base import RedirectView
 from django.shortcuts import redirect
 from django.conf import settings
+
+import requests
+
 
 from heidegger_index.models import Lemma, PageReference, Work, get_alphabet
 
@@ -94,3 +98,8 @@ class LemmaDetailView(DetailView):
             context["works"] = lemma.works.all()
             context["author_short"] = lemma.value.split(",")[0]
         return context
+
+class URNRedirectView(LemmaDetailView):
+    def get(self, *args, **kwargs):
+        lemma = get_object_or_404(Lemma, urn=kwargs['urn'])
+        return redirect("index:lemma-detail", slug=lemma.slug)

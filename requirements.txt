@@ -13,3 +13,4 @@ Unidecode==1.*
 django-extensions==3.*
 fuzzysearch==0.7.3
 Markdown==3.3.6
+pyCTS==0.2.2

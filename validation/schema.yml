@@ -4,6 +4,14 @@ additionalProperties:
   type: object
   description: Lemma object
   properties:
+    metadata:
+      type: object
+      description: Metadata object
+      properties:
+        cts_urn:
+          type: string
+          description: CTS URN
+      additionalProperties: False
     references:
       type: object
       description: References object
@@ -65,3 +73,5 @@ additionalProperties:
       enum: [p, w]
   additionalProperties: False
   required: [references]
+  dependentRequired:
+    metadata: [type]

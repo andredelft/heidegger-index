@@ -49,6 +49,25 @@ def click_add_rel(first_lemma, second_lemma, rel_type):
 
 
 @click.command()
+@click.argument("lemma", type=str)
+@click.argument(
+    "lemma_type",
+    type=click.Choice(LEMMA_TYPES.keys()),
+)
+@click.argument("urn", type=str)
+@click.option(
+    "-f",
+    "--force",
+    "overwrite",
+    is_flag=True,
+    default=False,
+    help="Overwrite URN if lemma already has a urn defined."
+)
+def click_add_urn(lemma, lemma_type, urn, overwrite):
+    add_urn(lemma, lemma_type, urn, overwrite)
+
+
+@click.command()
 @click.argument("search_term", type=str)
 def click_find_ref(search_term):
     find_ref(search_term)

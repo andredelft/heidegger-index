@@ -1525,6 +1525,10 @@ video {
   margin-top: 1rem;
 }
 
+.mr-0 {
+  margin-right: 0px;
+}
+
 .block {
   display: block;
 }
@@ -1726,8 +1730,20 @@ video {
   padding-bottom: 1rem;
 }
 
+.pr-0 {
+  padding-right: 0px;
+}
+
+.text-right {
+  text-align: right;
+}
+
 .-indent-4 {
   text-indent: -1rem;
+}
+
+.indent-4 {
+  text-indent: 1rem;
 }
 
 .font-serif {
@@ -1757,6 +1773,21 @@ video {
 .text-5xl {
   font-size: 3rem;
   line-height: 1;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .font-semibold {
@@ -1883,6 +1914,10 @@ video {
 
 .prose-p\:leading-normal :is(:where(p):not(:where([class~="not-prose"] *))) {
   line-height: 1.5;
+}
+
+.prose-p\:leading-snug :is(:where(p):not(:where([class~="not-prose"] *))) {
+  line-height: 1.375;
 }
 
 .prose-a\:decoration-sky-300 :is(:where(a):not(:where([class~="not-prose"] *))) {
