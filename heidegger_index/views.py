@@ -4,8 +4,6 @@ from django.views.generic.detail import DetailView
 from django.shortcuts import redirect
 from django.conf import settings
 
-from markdownify import markdownify
-
 from heidegger_index.models import Lemma, PageReference, Work, get_alphabet
 
 def index_view(request):
@@ -72,13 +70,6 @@ class WorkDetailView(DetailView):
 class WorkDetailViewMD(WorkDetailView):
     template_name = "markdown/work_detail.md"
 
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        work = context["work"]
-        if work.reference:
-            context["reference_md"] = markdownify(work.reference)
-        return context
-
 class LemmaDetailView(DetailView):
     model = Lemma
     template_name = "lemma_detail.html"
@@ -111,6 +102,4 @@ class LemmaDetailViewMD(LemmaDetailView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         lemma = context["lemma"]
-        if lemma.description:
-            context["description_md"] = markdownify(lemma.description, strip=['p'])
         return context

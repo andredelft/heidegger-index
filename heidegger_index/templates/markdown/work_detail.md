@@ -1,7 +1,7 @@
-{% load fullurl %}# Index of {{ work.csl_json.title }}
+{% load fullurl %}{% load markdownify_filter %}# Index of {{ work.csl_json.title }}
 
 ## Work reference
-{{ reference_md | safe }}
+{{ work.reference | markdownify | safe }}
 
 ## Index terms
 {% include 'markdown/_group_by_lemma.md' with ref_list=term_list %}

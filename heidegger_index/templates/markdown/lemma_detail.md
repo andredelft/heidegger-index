@@ -1,7 +1,7 @@
-{% load fullurl %}# {% if lemma.type == "w" %}_{% endif %}{{ lemma }}{% if lemma.type == "w" %}_{% endif %}
+{% load fullurl %}{% load markdownify_filter %}# {% if lemma.type == "w" %}_{% endif %}{{ lemma }}{% if lemma.type == "w" %}_{% endif %}
 {% if lemma.type == "w" and lemma.author %}Author: [{{ lemma.author }}]({% fullurl 'index:lemma-detail' lemma.author.slug %})
 {% endif %}
-{% if description_md %}{{ description_md | safe }}
+{% if lemma.description %}{{ lemma.description | markdownify | safe }}
 {% endif %}
 ## Occurences
 See [the index bibliography]({% buildfullurl '/index/#bibliography' %}) for an explanation of the abbreviations used.
@@ -9,7 +9,7 @@ See [the index bibliography]({% buildfullurl '/index/#bibliography' %}) for an e
 {% if works %}{% include 'markdown/_lemma_list.md' with lemma_list=works title="Works by "|add:author_short %}
 {% endif %}
 {% for child in children %}## {{ child }}
-{% if child.description %}{{ child.description | safe }}
+{% if child.description %}{{ child.description | markdownify | safe }}
 {% endif %}
 {% include 'markdown/_group_by_work.md' with ref_list=child.pagereference_set.all %}
 {% endfor %}
