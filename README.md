@@ -56,6 +56,26 @@ $ add-rel --help
 Usage: add-rel [OPTIONS] FIRST_LEMMA SECOND_LEMMA [p|a|r]
 ```
 
+## Add a URN to lemmata in `index/heidegger-index.yml`
+
+A Python function to add URNs to the lemma metadata. For now, we limit ourselves to the URNs used by [Perseus](https://scaife.perseus.org/). If the URN refers to a passage in the [Perseus Digital Library](https://scaife.perseus.org/) this passage will be rendered on the work lemma page. The lemma will also be accessible by the URN like so: `/index/lemma/example:urn:to:lemma`.
+
+```pycon
+>>> from index import add_urn
+>>> add_urn('Aristoteles', 'p', 'urn:cts:greekLit:tlg0086') # Aristoteles can be found at this URN in Perseus and in the index.
+```
+
+A terminal command is also added:
+
+```sh
+$ add-ref --help
+
+Usage: add-urn [OPTIONS] LEMMA [p|w] URN
+
+Options:
+  -f, --force  Overwrite URN if lemma already has a urn defined.
+```
+
 ## Search for an existing reference
 
 A terminal command `find-ref` is provided to search through existing references. It provides flexible matching, e.g.:
