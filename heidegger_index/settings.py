@@ -30,6 +30,8 @@ INSTALLED_APPS = [
     "heidegger_index",
     "django_extensions",
     "django_tailwind",
+    "markdownify_filter",
+    "fullurl",
 ]
 
 MIDDLEWARE = [

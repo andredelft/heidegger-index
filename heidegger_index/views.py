@@ -10,7 +10,6 @@ import requests
 
 from heidegger_index.models import Lemma, PageReference, Work, get_alphabet
 
-
 def index_view(request):
     alphabet = get_alphabet()
 
@@ -72,6 +71,8 @@ class WorkDetailView(DetailView):
         else:
             return super().render_to_response(context, **kwargs)
 
+class WorkDetailViewMD(WorkDetailView):
+    template_name = "markdown/work_detail.md"
 
 class LemmaDetailView(DetailView):
     model = Lemma
@@ -99,6 +100,14 @@ class LemmaDetailView(DetailView):
             context["author_short"] = lemma.value.split(",")[0]
         return context
 
+class LemmaDetailViewMD(LemmaDetailView):
+    template_name = "markdown/lemma_detail.md"
+    
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        lemma = context["lemma"]
+        return context
+        
 class URNRedirectView(LemmaDetailView):
     def get(self, *args, **kwargs):
         lemma = get_object_or_404(Lemma, urn=kwargs['urn'])

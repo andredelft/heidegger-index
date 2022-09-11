@@ -1,7 +1,9 @@
 django-tailwind @ https://github.com/andredelft/django-tailwind/tarball/master
+django-markdownify-filter @ https://github.com/johannesdewit/django-markdownify-filter/tarball/master
 betacode==1.0
 pygtrie
 Django==4.*
+django-fullurl
 gunicorn==20.*
 whitenoise==5.*
 PyYAML==5.*
