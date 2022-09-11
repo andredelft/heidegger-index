@@ -14,6 +14,24 @@
 </div>
 {% endif %}
 
+{% if lemma.type == "w" and lemma.perseus_content %}
+<div class="{{ source_text }}">
+  <p class="pl-4">
+    {{ lemma.perseus_content }}
+  </p>
+  <p class="text-lg text-right">
+  Source: <a 
+    href="https://scaife.perseus.org/reader/{{ lemma.urn | safe }}" 
+    title="Read full text of {{ lemma.value }} on Perseus"
+    target="_blank" rel="noopener noreferrer"
+    class="{{ hidden_link_decoration }}"
+    >
+    <cite>Perseus Digital Library</cite>
+    </a>
+  </p>
+</div>
+{% endif %}
+
 {% if lemma.description %}
 <div class="{{ description_prose }} mb-8">
   {{ lemma.description | safe }}
@@ -40,4 +58,22 @@
 {% include '_lemma_list.html' with lemma_list=related title="Related" %}
 {% endif %}
 
+{% if lemma.type and lemma.urn and not lemma.perseus_content %}
+<div>
+  <p class="mt-12 text-lg">
+  <a 
+  href="https://scaife.perseus.org/reader/{{ lemma.urn | safe }}" 
+  title="View {{ lemma.value }} on Perseus"
+  target="_blank" rel="noopener noreferrer"
+  class="{{ hidden_link_decoration }}"
+  >
+  {% if lemma.type == "w" %}
+  Read full text of <em>{{ lemma.value }}</em> on <cite>Perseus Digital Library</cite>
+  {% elif lemma.type == "p" %}
+  Read works of {{ lemma.value }} on <cite>Perseus Digital Library</cite>
+  {% endif %}
+  </a>
+  </p>
+</div>
+{% endif %}
 {% endblock body %}

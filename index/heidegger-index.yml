@@ -373,6 +373,8 @@ De Interpretatione:
   type: w
 De anima:
   author: Aristoteles
+  metadata:
+    cts_urn: urn:cts:greekLit:tlg0086.tlg002
   references:
     GA 29/30:
     - end: 455
@@ -547,12 +549,16 @@ Fragen:
     - start: 13
 Fragment 1 (Heraklit):
   author: Heraklit
+  metadata:
+    cts_urn: urn:cts:greekLit:tlg0626.tlg002:1
   references:
     WBPh:
     - start: 277
   type: w
 Fragment 112 (Heraklit):
   author: Heraklit
+  metadata:
+    cts_urn: urn:cts:greekLit:tlg0626.tlg002:112
   references:
     GA 29/30:
     - start: 41
@@ -560,6 +566,8 @@ Fragment 112 (Heraklit):
   type: w
 Fragment 123 (Heraklit):
   author: Heraklit
+  metadata:
+    cts_urn: urn:cts:greekLit:tlg0626.tlg002:123
   references:
     GA 29/30:
     - start: 41
@@ -570,12 +578,16 @@ Fragment 123 (Heraklit):
   type: w
 Fragment 2 (Heraklit):
   author: Heraklit
+  metadata:
+    cts_urn: urn:cts:greekLit:tlg0626.tlg002:2
   references:
     WBPh:
     - start: 277
   type: w
 Fragment 30 (Heraklit):
   author: Heraklit
+  metadata:
+    cts_urn: urn:cts:greekLit:tlg0626.tlg002:30
   references:
     GA 29/30:
     - start: 47
@@ -584,6 +596,8 @@ Fragment 30 (Heraklit):
   type: w
 Fragment 52 (Heraklit):
   author: Heraklit
+  metadata:
+    cts_urn: urn:cts:greekLit:tlg0626.tlg002:52
   references:
     SvG:
     - start: 168
@@ -596,18 +610,24 @@ Fragment 52 (Heraklit):
   type: w
 Fragment 53 (Heraklit):
   author: Heraklit
+  metadata:
+    cts_urn: urn:cts:greekLit:tlg0626.tlg002:53
   references:
     EM:
     - start: 66
   type: w
 Fragment 54 (Heraklit):
   author: Heraklit
+  metadata:
+    cts_urn: urn:cts:greekLit:tlg0626.tlg002:54
   references:
     GA 29/30:
     - start: 44
   type: w
 Fragment 93 (Heraklit):
   author: Heraklit
+  metadata:
+    cts_urn: urn:cts:greekLit:tlg0626.tlg002:93
   references:
     GA 29/30:
     - start: 40
@@ -949,6 +969,8 @@ Herakles:
     - start: 269
   type: p
 Heraklit:
+  metadata:
+    cts_urn: urn:cts:greekLit:tlg0626
   references:
     EM:
     - start: 66
