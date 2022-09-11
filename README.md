@@ -68,7 +68,7 @@ A Python function to add URNs to the lemma metadata. For now, we limit ourselves
 A terminal command is also added:
 
 ```sh
-$ add-ref --help
+$ add-urn --help
 
 Usage: add-urn [OPTIONS] LEMMA [p|w] URN
 
