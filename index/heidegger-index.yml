@@ -1257,6 +1257,10 @@ Metaphysik:
       start: 9
     - end: 38
       start: 36
+    - start: 50
+      type: r
+    - end: 52
+      start: 51
     SvG:
     - start: 184
     WD:
@@ -1477,6 +1481,8 @@ Philosophie:
     - start: 42
     - start: 45
     - start: 47
+    - start: 48
+    - start: 50
 Philosophieren:
   references:
     EM:
@@ -1488,7 +1494,11 @@ Philosophieren:
       start: 6
 Physica:
   author: Aristoteles
+  metadata:
+    cts_urn: urn:cts:greekLit:tlg0086.tlg031
   references:
+    GA 29/30:
+    - start: 50
     WBPh:
     - start: 240
     - start: 241
@@ -1525,6 +1535,10 @@ Physik:
   references:
     EM:
     - start: 17
+    GA 29/30:
+    - start: 49
+  related:
+  - ἐπιστήμη φυσική
 Physische:
   references:
     EM:
@@ -1676,7 +1690,14 @@ Seiende als solches im Ganzen:
 Seiende im Ganzen:
   references:
     GA 29/30:
+    - end: 39
+      start: 38
+    - start: 42
+    - start: 47
     - start: 251
+    - end: 50
+      start: 49
+    - start: 52
     WBPh:
     - start: 238
     - start: 261
@@ -1689,13 +1710,6 @@ Seiende im Ganzen:
     - start: 283
   related:
   - im Ganzen
-Seienden im Ganzen:
-  references:
-    GA 29/30:
-    - end: 39
-      start: 38
-    - start: 42
-    - start: 47
 Seiendheit:
   references:
     WBPh:
@@ -2098,6 +2112,7 @@ Walten:
     - start: 42
     - end: 47
       start: 46
+    - start: 48
 Walten des Seienden:
   parent: Walten
   references:
@@ -2211,9 +2226,14 @@ Wissenschaft:
   references:
     G:
     - start: 523
+    GA 29/30:
+    - end: 49
+      start: 48
     SvG:
     - start: 181
     - start: 185
+  related:
+  - ἐπιστήμη
 Wissenschaft der Logik:
   author: Hegel, Georg Wilhelm Friedrich
   references:
@@ -2760,6 +2780,11 @@ weil:
   references:
     EM:
     - start: 18
+οὐσια:
+  references:
+    GA 29/30:
+    - end: 52
+      start: 50
 οὐσία:
   references:
     EM:
@@ -2903,6 +2928,8 @@ weil:
     - start: 19
     GA 29/30:
     - start: 46
+    - end: 52
+      start: 49
     WBPh:
     - start: 253
     - start: 256
@@ -2932,6 +2959,8 @@ weil:
       start: 46
     - end: 45
       start: 42
+    - end: 52
+      start: 48
     HH:
     - start: 145
     SvG:
@@ -3052,6 +3081,15 @@ weil:
     - start: 259
     - start: 262
     - start: 268
+ἐπιστήμη:
+  references:
+    GA 29/30:
+    - start: 49
+ἐπιστήμη φυσική:
+  parent: ἐπιστήμη
+  references:
+    GA 29/30:
+    - start: 49
 ἔγκλισις:
   references:
     EM:
