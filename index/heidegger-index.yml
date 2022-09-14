@@ -227,10 +227,12 @@ Benommenheit:
     - start: 443
     - start: 489
 Benommenheit des Tieres:
+  parent: Benommenheit
   references:
     GA 29/30:
     - start: 362
 Benommenheit, Offenheit der:
+  parent: Benommenheit
   references:
     GA 29/30:
     - start: 362
@@ -357,6 +359,7 @@ Dasein im Menschen:
     GA 29/30:
     - start: 414
 Daseinsgeschichte:
+  parent: Dasein
   references:
     GA 29/30:
     - start: 432
