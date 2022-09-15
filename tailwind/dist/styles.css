@@ -1525,10 +1525,6 @@ video {
   margin-top: 1rem;
 }
 
-.mr-0 {
-  margin-right: 0px;
-}
-
 .block {
   display: block;
 }
@@ -1649,6 +1645,10 @@ video {
   overflow-x: auto;
 }
 
+.break-words {
+  overflow-wrap: break-word;
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
@@ -1730,20 +1730,12 @@ video {
   padding-bottom: 1rem;
 }
 
-.pr-0 {
-  padding-right: 0px;
-}
-
 .text-right {
   text-align: right;
 }
 
 .-indent-4 {
   text-indent: -1rem;
-}
-
-.indent-4 {
-  text-indent: 1rem;
 }
 
 .font-serif {
@@ -1775,19 +1767,9 @@ video {
   line-height: 1;
 }
 
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
-}
-
-.text-base {
-  font-size: 1rem;
-  line-height: 1.5rem;
 }
 
 .font-semibold {
