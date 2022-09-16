@@ -1987,6 +1987,17 @@ video {
   }
 }
 
+@media (min-width: 640px) {
+  .sm\:w-28 {
+    width: 7rem;
+  }
+
+  .sm\:break-normal {
+    overflow-wrap: normal;
+    word-break: normal;
+  }
+}
+
 @media (min-width: 768px) {
   .md\:mx-0 {
     margin-left: 0px;
@@ -2007,6 +2018,11 @@ video {
 
   .md\:w-28 {
     width: 7rem;
+  }
+
+  .md\:break-normal {
+    overflow-wrap: normal;
+    word-break: normal;
   }
 
   .md\:py-24 {
