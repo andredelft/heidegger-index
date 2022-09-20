@@ -517,6 +517,10 @@ Etymologie:
     EWI:
     - end: 15
       start: 13
+Europa:
+  references:
+    G:
+    - start: 523
 Existenz:
   references:
     GA 29/30:
@@ -2168,6 +2172,10 @@ Weltbildung:
     - end: 414
       start: 413
     - start: 419
+Weltganze:
+  references:
+    G:
+    - start: 523
 Weltgeschichte:
   references:
     SvG:
