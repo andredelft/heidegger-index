@@ -93,8 +93,9 @@ class LemmaDetailView(DetailView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         lemma = context["lemma"]
-        context["children"] = lemma.children.all()
-        context["related"] = lemma.related.all()
+        children = lemma.children.all()
+        context["children"] = children
+        context["related"] = Lemma.objects.filter(related__in=[lemma, *children])
         if lemma.type == "p":
             context["works"] = lemma.works.all()
             context["author_short"] = lemma.value.split(",")[0]
