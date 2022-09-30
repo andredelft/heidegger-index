@@ -3113,6 +3113,8 @@ weil:
   references:
     GA 29/30:
     - start: 49
+    GA 21:
+    - start: 1
 ἐπιστήμη λογική:
   parent: ἐπιστήμη
   references:
