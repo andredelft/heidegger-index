@@ -38,6 +38,12 @@ REF_INTFIELDS = {"start", "end"}
 
 def add_ref(lemma, work, ref, lemma_type=None, ref_type=None, betacode=False):
 
+    if isinstance(ref, list):
+        # Allow ref to be a list, call add_ref for each item and terminate function
+        for r in ref:
+            add_ref(lemma, work, r, lemma_type, ref_type, betacode)
+        return
+
     # Validation: lemma_type
     if lemma_type and lemma_type not in LEMMA_TYPES:
         raise click.BadParameter(
@@ -102,13 +108,11 @@ def add_ref(lemma, work, ref, lemma_type=None, ref_type=None, betacode=False):
             r = refs[work]
             # Checks whether exact reference is already in the index.
             if ref_dict in r:
-                raise click.BadParameter(
-                    f"Reference already exists for this lemma."
-                )
-            # UNCOMMENT THIS IF YOU WANT TO PREVENT NEW REFERENCES BEING ADDED IF "WHOLE" 
+                raise click.BadParameter(f"Reference already exists for this lemma.")
+            # UNCOMMENT THIS IF YOU WANT TO PREVENT NEW REFERENCES BEING ADDED IF "WHOLE"
             # IS TRUE.
             # Checks whether the work as a whole is not already a reference for the lemma.
-            # 
+            #
             # elif {"whole": True} in r:
             #     raise click.BadParameter(
             #         f"This work as a whole is already a reference for this lemma."
@@ -208,7 +212,9 @@ def add_urn(lemma, lemma_type, urn=None, overwrite=False):
 
     # Validation: lemma in index is of same type as lemma_type
     if lemma_type != lemma_dict.get("type"):
-        raise click.BadParameter(f"Lemma is in the index as '{lemma_dict.get('type')}', not as '{lemma_type}'.")
+        raise click.BadParameter(
+            f"Lemma is in the index as '{lemma_dict.get('type')}', not as '{lemma_type}'."
+        )
 
     if urn:
         # Validation: urn is defined well.
@@ -219,11 +225,15 @@ def add_urn(lemma, lemma_type, urn=None, overwrite=False):
         if lemma_type == PERSON:
             # Validation: urn is defined well for the type.
             if cts_urn.work:
-                raise click.BadParameter(f"'{urn}' contains a work namespace. Only define up to textgroup for authors.")
+                raise click.BadParameter(
+                    f"'{urn}' contains a work namespace. Only define up to textgroup for authors."
+                )
         if lemma_type == WORK:
             # Validation: urn is defined well for the type.
             if not cts_urn.work:
-                raise click.BadParameter(f"'{urn}' does not contain a work namespace. Please provide a valid URN.")
+                raise click.BadParameter(
+                    f"'{urn}' does not contain a work namespace. Please provide a valid URN."
+                )
         # Validation: urn is not already defined
         md_dict = {}
         md_dict["cts_urn"] = urn
@@ -237,9 +247,13 @@ def add_urn(lemma, lemma_type, urn=None, overwrite=False):
                     lemma_dict["metadata"] = md_dict
                 else:
                     if lemma_urn_in_index == urn:
-                        raise click.BadParameter(f"'{lemma}' has this URN already assigned to it.")
+                        raise click.BadParameter(
+                            f"'{lemma}' has this URN already assigned to it."
+                        )
                     else:
-                        raise click.BadParameter(f"'{lemma}' already has the following URN defined: '{lemma_urn_in_index}'.")
+                        raise click.BadParameter(
+                            f"'{lemma}' already has the following URN defined: '{lemma_urn_in_index}'."
+                        )
     else:
         # If urn is not defined
         raise click.BadParameter(f"No URN specified.")
@@ -250,7 +264,9 @@ def add_urn(lemma, lemma_type, urn=None, overwrite=False):
     with open(INDEX_FILE, "w") as f:
         yaml.dump(index, f, allow_unicode=True)
 
+
 # Shorthand functions:
+
 
 def add_refs(lemmas, *args, **kwargs):
     """Add multiple lemmas with the same reference to the index"""
