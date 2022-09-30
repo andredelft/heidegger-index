@@ -320,3 +320,21 @@ EM:
   publisher-place: Frankfurt am Main
   title: Einführung in die Metaphysik
   type: book
+GA 21:
+  author:
+    - family: Heidegger
+      given: Martin
+  citation-key: heideggerLogikFrageNach1976
+  collection-number: band 21
+  collection-title: Gesamtausgabe
+  editor:
+    - family: Biemel
+      given: Walter
+  event-place: Frankfurt am Main
+  issued:
+    - year: 1976
+  language: ger
+  publisher: Vittorio Klostermann
+  publisher-place: Frankfurt am Main
+  title: Logik. Die Frage nach der Wahrheit
+  type: book

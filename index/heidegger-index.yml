@@ -2976,8 +2976,8 @@ weil:
     - start: 12
     GA 21:
     - start: 1
-    - start: 4
     - start: 3
+      suffix: f
     GA 29/30:
     - start: 38
       suffix: ff
@@ -3150,7 +3150,7 @@ weil:
     GA 21:
     - start: 1
     - start: 3
-    - start: 4
+      suffix: f
 ἰδέα:
   references:
     EM:
