@@ -874,6 +874,12 @@ Grundfrage der Metaphysik:
     - start: 14
     WiM:
     - start: 121
+Grundlegung zur Metaphysik der Sitten:
+  author: Kant, Immanuel
+  references:
+    GA 21:
+    - start: 4
+  type: w
 Grundriß:
   references:
     EWI:
@@ -1542,6 +1548,8 @@ Physik:
   references:
     EM:
     - start: 17
+    GA 21:
+    - start: 1
     GA 29/30:
     - start: 49
   related:
@@ -2237,6 +2245,8 @@ Wissenschaft:
   references:
     G:
     - start: 523
+    GA 21:
+    - start: 1
     GA 29/30:
     - end: 49
       start: 48
@@ -2714,6 +2724,9 @@ weil:
     EM:
     - start: 62
     - start: 66
+    GA 21:
+    - end: 4
+      start: 1
     GA 29/30:
     - start: 441
     - end: 420
@@ -2961,6 +2974,10 @@ weil:
     - start: 66
     FT:
     - start: 12
+    GA 21:
+    - start: 1
+    - start: 4
+    - start: 3
     GA 29/30:
     - start: 38
       suffix: ff
@@ -3096,11 +3113,30 @@ weil:
   references:
     GA 29/30:
     - start: 49
+ἐπιστήμη λογική:
+  parent: ἐπιστήμη
+  references:
+    GA 21:
+    - start: 1
+  related:
+  - λόγος
 ἐπιστήμη φυσική:
   parent: ἐπιστήμη
   references:
+    GA 21:
+    - start: 1
     GA 29/30:
     - start: 49
+  related:
+  - φύσις
+ἐπιστήμη ἠθική:
+  parent: ἐπιστήμη
+  references:
+    GA 21:
+    - start: 1
+      suffix: f
+  related:
+  - ἦθος
 ἔγκλισις:
   references:
     EM:
@@ -3109,6 +3145,12 @@ weil:
   related:
   - πτῶσις
   - Verbum
+ἦθος:
+  references:
+    GA 21:
+    - start: 1
+    - start: 3
+    - start: 4
 ἰδέα:
   references:
     EM:
