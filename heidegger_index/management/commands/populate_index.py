@@ -23,7 +23,19 @@ class Command(BaseCommand):
             for object_type, no_objects in info.items():
                 self.stdout.write(f"- {object_type}: {no_objects}")
 
+    def add_arguments(self, parser):
+        parser.add_argument(
+            "--no-external-calls",
+            "-n",
+            action="store_true",
+            help="Run without external calls to speed up the populate script (but skip some fields).",
+        )
+
+        return super().add_arguments(parser)
+
     def handle(self, *args, **kwargs):
+        perform_external_calls = not kwargs.get("no_external_calls")
+
         # Clean DB
         for Model in [PageReference, Lemma, Work]:
             self._flush_table(Model)
@@ -54,12 +66,17 @@ class Command(BaseCommand):
             tqdm(works_data.items(), desc="Generating work references")
         ):
             work_obj = Work(id=i, key=work_key, csl_json=csl_json)
-            try:
-                work_obj.gen_reference()
-            except HTTPError as e:
-                self.stdout.write(f"Skipping {work_key} because of HTTP error: {e}")
+            if perform_external_calls:
+                try:
+                    work_obj.gen_reference()
+                except HTTPError as e:
+                    self.stdout.write(
+                        f"Skipping {work_key} reference generation because of HTTP error: {e}"
+                    )
             else:
-                work_objs.append(work_obj)
+                work_obj.reference = "—"
+
+            work_objs.append(work_obj)
 
             title = work_obj.csl_json.get("title")
             if title:
@@ -89,13 +106,23 @@ class Command(BaseCommand):
         # Populate lemmas
         lemma_objs = dict()
         sort_keys = dict()
-        for i, (value, data) in enumerate(index_data.items()):
+        for i, (value, data) in enumerate(
+            tqdm(index_data.items(), desc="Preparing lemmata for populate")
+        ):
             md = data.get("metadata", {})
-            lemma_obj = Lemma(id=i, value=value, type=data.get("type", None), urn=md.get("cts_urn", None))
-            try:
-                lemma_obj.load_work_text()
-            except HTTPError as e:
-                self.stdout.write(f"Skipping {lemma_obj} because of HTTP error: {e}")
+            lemma_obj = Lemma(
+                id=i,
+                value=value,
+                type=data.get("type", None),
+                urn=md.get("cts_urn", None),
+            )
+            if perform_external_calls:
+                try:
+                    lemma_obj.load_work_text()
+                except HTTPError as e:
+                    self.stdout.write(
+                        f"Skipping {lemma_obj} because of HTTP error: {e}"
+                    )
             lemma_obj.create_sort_key()
             if lemma_obj.sort_key in sort_keys.keys():
                 self.stdout.write(
