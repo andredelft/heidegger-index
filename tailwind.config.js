@@ -3,7 +3,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        serif: ["Greek", "Crimson Pro"],
+        serif: ["Alegreya Greek", "Crimson Pro"],
       },
       fontSize: {
         "1.5xl": ["1.375rem", "2rem"],

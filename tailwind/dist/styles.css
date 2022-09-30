@@ -1739,7 +1739,7 @@ video {
 }
 
 .font-serif {
-  font-family: Greek, Crimson Pro;
+  font-family: Alegreya Greek, Crimson Pro;
 }
 
 .text-xl {
@@ -2014,15 +2014,6 @@ video {
 
   .md\:w-full {
     width: 100%;
-  }
-
-  .md\:w-28 {
-    width: 7rem;
-  }
-
-  .md\:break-normal {
-    overflow-wrap: normal;
-    word-break: normal;
   }
 
   .md\:py-24 {
