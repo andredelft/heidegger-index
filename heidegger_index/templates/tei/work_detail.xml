@@ -1,0 +1,24 @@
+<teiHeader>
+    <fileDesc>
+     <titleStmt>
+      <title>
+   <!-- title of the resource -->
+      </title>
+     </titleStmt>
+     <publicationStmt>
+      <p>
+   <!-- Information about distribution of the resource -->
+      </p>
+     </publicationStmt>
+     <sourceDesc>
+        <p>Born digital.</p>
+     </sourceDesc>
+    </fileDesc>
+   </teiHeader>
+
+
+<div type="index">
+    <list type="index">
+
+    </list>
+</div>
