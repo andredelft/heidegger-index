@@ -74,6 +74,9 @@ class WorkDetailView(DetailView):
 class WorkDetailViewMD(WorkDetailView):
     template_name = "markdown/work_detail.md"
 
+class WorkDetailViewXML(WorkDetailView):
+    template_name = "tei/work_detail.xml"
+
 class LemmaDetailView(DetailView):
     model = Lemma
     template_name = "lemma_detail.html"

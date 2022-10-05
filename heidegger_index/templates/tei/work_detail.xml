@@ -1,24 +1,31 @@
-<teiHeader>
-    <fileDesc>
-     <titleStmt>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="en">
+      <fileDesc>
+      <titleStmt>
       <title>
    <!-- title of the resource -->
       </title>
-     </titleStmt>
-     <publicationStmt>
+      </titleStmt>
+      <publicationStmt>
       <p>
    <!-- Information about distribution of the resource -->
       </p>
-     </publicationStmt>
-     <sourceDesc>
-        <p>Born digital.</p>
-     </sourceDesc>
-    </fileDesc>
+      </publicationStmt>
+      <sourceDesc>
+         <p>Born digital.</p>
+      </sourceDesc>
+      </fileDesc>
    </teiHeader>
-
-
-<div type="index">
-    <list type="index">
-
-    </list>
-</div>
+   <text xml:lang="en">
+      <div type="index">
+         <head>Index</head>
+            {% include './_group_by_lemma.xml' with ref_list=term_list %}
+         {% if person_list %}
+            {% include './_group_by_lemma.xml' with ref_list=person_list group_title="Index of People" %}
+         {% endif %}
+         {% if person_list %}
+            {% include './_group_by_lemma.xml' with ref_list=work_list group_title="Index of Works" %}
+         {% endif %}
+      </div>
+   </text>
+</TEI>
