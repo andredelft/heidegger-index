@@ -1,11 +1,6 @@
 <list type="index">
-  {% if group_title %}
-  <head>{{ group_title }}</head>
-  {% endif %}
-  {% regroup ref_list by lemma as lemma_groups %}
-  {% for lemma, page_ref_list in lemma_groups %}
-  <item>{% if lemma.type == 'p' %}<name type="person">{{ lemma }}</name>{% else %}{{ lemma }}{% endif %}
-    {% for ref in page_ref_list%}<ref>{{ ref }}</ref>{% if forloop.last %}.{% else %}, {% endif %}{% endfor %}
-  </item>
-  {% endfor %}
-</list>
+            {% if group_title %}<head>{{ group_title }}</head>{% endif %}{% regroup ref_list by lemma as lemma_groups %}{% for lemma, page_ref_list in lemma_groups %}
+            <item>{% if lemma.type == 'p' %}<name type="person">{{ lemma }}</name>{% else %}{{ lemma }}{% endif %}
+              {% for ref in page_ref_list%}<ref>{{ ref }}</ref>{% if forloop.last %}.{% else %}, {% endif %}{% endfor %}
+            </item>{% endfor %}
+          </list>

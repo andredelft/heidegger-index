@@ -19,13 +19,9 @@
    <text xml:lang="en">
       <div type="index">
          <head>Index</head>
-            {% include './_group_by_lemma.xml' with ref_list=term_list %}
-         {% if person_list %}
-            {% include './_group_by_lemma.xml' with ref_list=person_list group_title="Index of People" %}
-         {% endif %}
-         {% if person_list %}
-            {% include './_group_by_lemma.xml' with ref_list=work_list group_title="Index of Works" %}
-         {% endif %}
+         {% include './_group_by_lemma.xml' with ref_list=term_list %}
+         {% if person_list %}{% include './_group_by_lemma.xml' with ref_list=person_list group_title="Index of People" %}{% endif %}
+         {% if work_list %}{% include './_group_by_lemma.xml' with ref_list=work_list group_title="Index of Works" %}{% endif %}
       </div>
    </text>
 </TEI>
