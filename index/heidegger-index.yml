@@ -1704,6 +1704,8 @@ Seiende als solches im Ganzen:
   - Seiende als solches
 Seiende im Ganzen:
   references:
+    GA 28:
+    - start: 24
     GA 29/30:
     - end: 39
       start: 38
@@ -1713,6 +1715,8 @@ Seiende im Ganzen:
     - end: 50
       start: 49
     - start: 52
+    GA 9:
+    - start: 190
     WBPh:
     - start: 238
     - start: 261
@@ -2913,6 +2917,8 @@ weil:
   references:
     EM:
     - start: 19
+    GA 28:
+    - start: 25
     WBPh:
     - start: 249
       suffix: f
@@ -2939,8 +2945,15 @@ weil:
     - start: 38
 φυσιολόγοι:
   references:
+    GA 22:
+    - start: 216
+    GA 28:
+    - start: 24
     GA 29/30:
     - start: 42
+  related:
+  - φύσις
+  - λόγος
 φύειν:
   references:
     GA 29/30:
@@ -2978,6 +2991,9 @@ weil:
     - start: 1
     - start: 3
       suffix: f
+    GA 28:
+    - end: 25
+      start: 23
     GA 29/30:
     - start: 38
       suffix: ff
@@ -3018,6 +3034,7 @@ weil:
   - φύειν
   - Physica
   - Natur
+  - Seiende im Ganzen
 ψεύδεσθαι:
   references:
     GA 29/30:
@@ -3111,10 +3128,10 @@ weil:
     - start: 268
 ἐπιστήμη:
   references:
-    GA 29/30:
-    - start: 49
     GA 21:
     - start: 1
+    GA 29/30:
+    - start: 49
 ἐπιστήμη λογική:
   parent: ἐπιστήμη
   references:
