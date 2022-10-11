@@ -1114,12 +1114,16 @@ Haben der Welt:
     - end: 263
       start: 262
 Hebel, Johann Peter:
+  metadata:
+    gnd_id: 118547453
   references:
     G:
     - start: 521
     - start: 529
   type: p
 Hegel, Georg Wilhelm Friedrich:
+  metadata:
+    gnd_id: 118547739
   references:
     GA 1:
     - start: 56

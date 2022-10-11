@@ -11,6 +11,9 @@ additionalProperties:
         cts_urn:
           type: string
           description: CTS URN
+        gnd_id:
+          type: integer
+          description: Gemeinsame Normdatei identifier
       additionalProperties: False
     references:
       type: object
