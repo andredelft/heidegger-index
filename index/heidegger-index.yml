@@ -71,6 +71,8 @@ Anwesen:
     WD:
     - start: 271
 Aristoteles:
+  metadata:
+    cts_urn: urn:cts:greekLit:tlg0086
   references:
     EM:
     - start: 18
@@ -365,6 +367,8 @@ Daseinsgeschichte:
     - start: 432
 De Interpretatione:
   author: Aristoteles
+  metadata:
+    cts_urn: urn:cts:greekLit:tlg0086.tlg017
   references:
     EM:
     - start: 62
@@ -385,6 +389,8 @@ De anima:
   type: w
 De generatione et corruptione:
   author: Aristoteles
+  metadata:
+    cts_urn: urn:cts:greekLit:tlg0086.tlg013
   references:
     WBPh:
     - start: 293
@@ -816,6 +822,11 @@ Goethe, Johann Wolfgang von:
     - start: 185
     - start: 188
   type: p
+Goethesch:
+  parent: Goethe, Johann Wolfgang von
+  references:
+    GA 29/30:
+    - start: 39
 Gott:
   references:
     GA 29/30:
@@ -1472,6 +1483,8 @@ Pflanze:
     - start: 278
 Phaidros:
   author: Plato
+  metadata:
+    cts_urn: urn:cts:greekLit:tlg0059.tlg012
   references:
     EM:
     - start: 19
@@ -1560,6 +1573,8 @@ Physische:
     - end: 19
       start: 18
 Plato:
+  metadata:
+    cts_urn: urn:cts:greekLit:tlg0059
   references:
     EM:
     - start: 19
@@ -1573,6 +1588,7 @@ Plato:
     - start: 299
   type: p
 Platon:
+  parent: Plato
   references:
     EM:
     - start: 62
@@ -1794,12 +1810,16 @@ Sonette an Orpheus:
   type: w
 Sophistes:
   author: Plato
+  metadata:
+    cts_urn: urn:cts:greekLit:tlg0059.tlg007
   references:
     EM:
     - end: 62
       start: 61
   type: w
 Sophokles:
+  metadata:
+    cts_urn: urn:cts:greekLit:tlg0011
   references:
     SvG:
     - start: 154
