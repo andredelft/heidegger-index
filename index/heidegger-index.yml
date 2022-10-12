@@ -1700,7 +1700,7 @@ Nomen:
     - start: 63
 Novalis:
   metadata:
-    gnd-id: 118588893
+    gnd_id: 118588893
   references:
     GA 29/30:
     - start: 7
