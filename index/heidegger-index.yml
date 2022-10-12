@@ -342,6 +342,8 @@ Brod und Wein:
       start: 271
   type: w
 Buytendijk, Frederik Jacobus Johannes:
+  metadata:
+    gnd_id: 118845195
   references:
     GA 29/30:
     - end: 376
@@ -572,6 +574,8 @@ Dostojevski:
     - start: 56
   type: p
 Driesch, Hans:
+  metadata:
+    gnd_id: 118527479
   references:
     GA 29/30:
     - end: 381
@@ -788,6 +792,8 @@ Fragment VIII (Parmenides):
     - start: 103
   type: w
 Franz Joseph Strauß:
+  metadata:
+    gnd_id: 118619063
   references:
     SvG:
     - start: 178
@@ -966,6 +972,8 @@ Gleichgültigkeit:
       type: r
     - start: 115
 Goethe, Johann Wolfgang von:
+  metadata:
+    gnd_id: 118540238
   references:
     SvG:
     - start: 181
@@ -1199,6 +1207,8 @@ Himmlischen:
     - start: 270
     - start: 271
 Hitler, Adolf:
+  metadata:
+    gnd_id: 118551655
   references:
     Sch:
     - start: 40
@@ -1222,6 +1232,8 @@ Husserl, Edmund:
     - start: 56
   type: p
 Hölderlin, Friedrich:
+  metadata:
+    gnd_id: 118551981
   references:
     GA 1:
     - start: 56
@@ -1281,6 +1293,8 @@ Kant und das Problem der Metaphysik:
     - start: 441
   type: w
 Kant, Immanuel:
+  metadata:
+    gnd_id: 118559796
   references:
     GA 29/30:
     - end: 423
@@ -1295,6 +1309,8 @@ Kant, Immanuel:
     - start: 287
   type: p
 Kierkegaard, Søren:
+  metadata:
+    gnd_id: 118562002
   references:
     GA 1:
     - start: 56
