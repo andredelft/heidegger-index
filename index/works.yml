@@ -131,19 +131,6 @@ GA 29/30:
   title: 'Die Grundbegriffe der Metaphysik: Welt, Endlichkeit, Einsamkeit'
   title-short: Die Grundbegriffe der Metaphysik
   type: book
-SZ:
-  author:
-  - family: Heidegger
-    given: Martin
-  id: SZ
-  issued:
-    date-parts:
-    - - 1972
-  language: german
-  publisher: Max Niemeyer Verlag
-  publisher-place: Tübingen
-  title: Sein und Zeit
-  type: book
 SvG:
   author:
   - family: Heidegger
@@ -163,6 +150,19 @@ SvG:
   publisher: Vittorio Klostermann
   publisher-place: Frankfurt am Main
   title: Der Satz vom Grund
+  type: book
+SZ:
+  author:
+  - family: Heidegger
+    given: Martin
+  id: SZ
+  issued:
+    date-parts:
+    - - 1972
+  language: german
+  publisher: Max Niemeyer Verlag
+  publisher-place: Tübingen
+  title: Sein und Zeit
   type: book
 VA:
   author:
@@ -338,3 +338,67 @@ GA 21:
   publisher-place: Frankfurt am Main
   title: Logik. Die Frage nach der Wahrheit
   type: book
+Sch:
+  id: heideggerSch
+  author:
+    - family: Heidegger
+      given: Martin
+  citation-key: heideggerSch
+  collection-number: band 42
+  collection-title: Gesamtausgabe
+  editor:
+    - family: Schüßler
+      given: Ingrid
+  event-place: Frankfurt am Main
+  issued:
+    - year: 1988
+  language: ger
+  number-of-pages: '289'
+  publisher: Vittorio Klostermann
+  publisher-place: Frankfurt am Main
+  title: 'Schelling: Vom Wesen der menschlichen Freiheit (1809)'
+  type: book
+W:
+  id: heideggerW
+  author:
+    - family: Heidegger
+      given: Martin
+  editor:
+    - family: Herrmann
+      given: Friedrich-Wilhelm
+      dropping-particle: von
+  citation-key: heideggerW
+  collection-number: band 9
+  collection-title: Gesamtausgabe
+  event-place: Frankfurt am Main
+  ISBN: 978-3-465-03372-1
+  issued:
+    - year: 1976
+  language: ger
+  number-of-pages: x, 487
+  publisher: Vittorio Klostermann
+  publisher-place: Frankfurt am Main
+  title: Wegmarken
+  type: book
+WiM:
+  id: heideggerWiM
+  author:
+    - family: Heidegger
+      given: Martin
+  citation-key: heideggerWiM
+  collection-number: band 9
+  collection-title: Martin Heidegger Gesamtausgabe
+  container-title: Wegmarken
+  editor:
+    - family: Herrmann
+      given: Friedrich-Wilhelm
+      dropping-particle: von
+  event-place: Frankfurt am Main
+  ISBN: 3-465-02862-7
+  issued:
+    - year: 1976
+  page: 103-122
+  publisher: Vittorio Klostermann
+  publisher-place: Frankfurt am Main
+  title: Was ist Metaphysik?
+  type: chapter

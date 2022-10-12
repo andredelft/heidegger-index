@@ -1036,7 +1036,7 @@ Himmlischen:
     - start: 271
 Hitler, Adolf:
   references:
-    GA 42:
+    Sch:
     - start: 40
   type: p
 Holzwege:
@@ -1116,7 +1116,7 @@ Kierkegaard, Søren:
   references:
     GA 29/30:
     - start: 226
-    GA 42:
+    Sch:
     - end: 43
       start: 42
   type: p
@@ -1234,7 +1234,7 @@ Maßgabe:
     - start: 167
 Meister Eckhart:
   references:
-    GA 42:
+    Sch:
     - start: 42
   type: p
 Mensch:
@@ -1316,7 +1316,7 @@ Mozart, Wolfgang Amadeus:
   type: p
 Mussolini, Benito:
   references:
-    GA 42:
+    Sch:
     - start: 40
   type: p
 Mythos:
@@ -1402,7 +1402,7 @@ Nietzsche, Friedrich:
   references:
     EM:
     - start: 15
-    GA 42:
+    Sch:
     - end: 42
       start: 39
     WBPh:
@@ -1413,7 +1413,7 @@ Nietzsche, Friedrich:
   type: p
 Nihilismus:
   references:
-    GA 42:
+    Sch:
     - end: 42
       start: 39
 Nomen:
@@ -1464,7 +1464,7 @@ Otto Hahn:
   type: p
 Pascal, Blaise:
   references:
-    GA 42:
+    Sch:
     - start: 54
     SZ:
     - start: 4
@@ -1731,7 +1731,7 @@ Seiende im Ganzen:
     - end: 50
       start: 49
     - start: 52
-    GA 9:
+    W:
     - start: 190
     WBPh:
     - start: 238
@@ -1848,7 +1848,7 @@ Spielraum:
     - start: 107
 Spinoza, Baruch:
   references:
-    GA 42:
+    Sch:
     - end: 61
       start: 59
   type: p
@@ -1938,7 +1938,7 @@ Technik:
     - start: 526
       type: r
     - start: 527
-    GA 42:
+    Sch:
     - start: 55
     SvG:
     - start: 177
