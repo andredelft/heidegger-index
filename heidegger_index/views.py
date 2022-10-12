@@ -113,3 +113,8 @@ class URNRedirectView(LemmaDetailView):
     def get(self, *args, **kwargs):
         lemma = get_object_or_404(Lemma, urn=kwargs['urn'])
         return redirect("index:lemma-detail", slug=lemma.slug)
+
+class GNDRedirectView(LemmaDetailView):
+    def get(self, *args, **kwargs):
+        lemma = get_object_or_404(Lemma, gnd_id=kwargs['gnd_id'])
+        return redirect("index:lemma-detail", slug=lemma.slug)

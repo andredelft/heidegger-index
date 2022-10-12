@@ -1321,6 +1321,8 @@ Kreisbewegung der Philosophie:
     - start: 276
       suffix: f
 Kreutzer, Conradin:
+  metadata:
+    gnd_id: 11871600X
   references:
     G:
     - end: 518

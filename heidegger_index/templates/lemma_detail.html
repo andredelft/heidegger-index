@@ -76,4 +76,18 @@
   </p>
 </div>
 {% endif %}
+{% if lemma.gnd_id %}
+<div>
+  <p class="mt-12 text-lg">
+  <a
+    href="http://d-nb.info/gnd/{{ lemma.gnd_id | safe }}"
+    title="View GND entry of {{ lemma.value}}."
+    target="_blank" rel="noopener noreferrer"
+    class="{{ hidden_link_decoration }}"
+  >
+  GND-number: {{ lemma.gnd_id | safe }}
+  </a>
+  </p>
+</div>
+{% endif %}
 {% endblock body %}

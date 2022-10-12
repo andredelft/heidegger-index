@@ -2,7 +2,7 @@ from django.urls import include, path, re_path
 from django.views.generic import RedirectView
 from django.conf import settings
 
-from heidegger_index.views import LemmaDetailView, index_view, WorkDetailView, WorkDetailViewMD, LemmaDetailViewMD, URNRedirectView
+from heidegger_index.views import LemmaDetailView, index_view, WorkDetailView, WorkDetailViewMD, LemmaDetailViewMD, URNRedirectView, GNDRedirectView
 
 namespaced_patterns = (
     [
@@ -14,6 +14,11 @@ namespaced_patterns = (
             r"^lemma/(?P<urn>urn:cts:([A-Za-z0-9()+,\-.:=@;$_!*']|%[0-9A-Fa-f]{2})+)", 
             URNRedirectView.as_view(),
             name="urn-redirect"
+        ),
+        re_path(
+            r"^gnd/(?P<gnd_id>1[\d]{7,8}[0-9X])$",
+            GNDRedirectView.as_view(),
+            name="gnd-redirect"
         ),
         path("lemma/<slug>", LemmaDetailView.as_view(), name="lemma-detail"),
     ],
