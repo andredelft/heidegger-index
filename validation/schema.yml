@@ -10,9 +10,13 @@ additionalProperties:
       properties:
         cts_urn:
           type: string
+          pattern: ^urn:cts:([A-Za-z0-9()+,\-.:=@;$_!*']|%[0-9A-Fa-f]{2})+$
           description: CTS URN
         gnd_id:
-          type: integer
+          anyOf:
+            - type: string
+            - type: integer
+          pattern: ^1[0-9]{7,8}[0-9X]$
           description: Gemeinsame Normdatei identifier
       additionalProperties: False
     references:
