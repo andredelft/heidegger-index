@@ -36,7 +36,7 @@ E.g.:
 
 ```sh
 add-ref Grundriß ZW 79
-add-ref --ref-type p 'Kierkegaard, Søren' 'GA 29/30' 226
+add-ref --lemma-type p 'Kierkegaard, Søren' 'GA 29/30' 226
 ```
 
 ## Add relations to `index/heidegger-index.yml`
