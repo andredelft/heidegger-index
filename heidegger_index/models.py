@@ -1,3 +1,4 @@
+from turtle import Turtle
 import requests
 from bs4 import BeautifulSoup
 from pyCTS import CTS_URN
@@ -124,6 +125,23 @@ class PageReference(models.Model):
             return f"{self.start}{self.suffix}"
         else:
             return f"{self.start}"
+
+    def refers_to_page(self, page):
+        try:
+            page = int(page)
+        except TypeError:
+            raise TypeError
+        
+        if page >= self.start and page < self.end or page == self.end :
+            return True
+        elif self.suffix == "f" and page == self.start + 1:
+            return True
+        elif self.suffix == "ff" and page == self.start + 2:
+            return True
+        else:
+            return False
+
+    # TODO: Add filter for a range of pages.
 
     class Meta:
         ordering = ["lemma", "work", "start", "end", "suffix"]
