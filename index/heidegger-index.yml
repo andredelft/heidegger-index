@@ -937,10 +937,14 @@ Grundverhalten:
   references:
     GA 29/30:
     - start: 14
+  related:
+  - Grundverhältnis
 Grundverhältnis:
   references:
     GA 29/30:
     - start: 400
+  related:
+  - Grundverhalten
 Götter:
   references:
     EM:
