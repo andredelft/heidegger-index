@@ -1959,6 +1959,13 @@ Technologie:
   references:
     SvG:
     - start: 179
+'Theologische Schriften 3: Gebet 3':
+  author: Hebel, Johann Peter
+  references:
+    G:
+    - start: 521
+    - start: 529
+  type: w
 Thomas van Aquin:
   references:
     GA 29/30:
@@ -2437,6 +2444,12 @@ ganz Andere:
   references:
     GA 29/30:
     - start: 440
+gedeihen:
+  references:
+    G:
+    - start: 521
+    - start: 528
+    - start: 526
 im Ganzen:
   references:
     GA 29/30:
