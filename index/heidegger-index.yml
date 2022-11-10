@@ -647,6 +647,13 @@ Fragment 93 (Heraklit):
     WBPh:
     - start: 277
   type: w
+Fragment VIII (Parmenides):
+  author: Parmenides
+  metadata:
+    cts_urn: urn:cts:greekLit:tlg1562
+  references:
+    EM:
+    - start: 103
 Franz Joseph Strauß:
   references:
     SvG:
@@ -1471,6 +1478,11 @@ Otto Hahn:
     SvG:
     - start: 178
   type: p
+Parmenides:
+  references:
+    EM:
+    - start: 103
+  type: p
 Pascal, Blaise:
   references:
     SZ:
@@ -1690,6 +1702,9 @@ Satz vom Grund:
     - start: 168
 Schein:
   references:
+    EM:
+    - end: 107
+      start: 105
     WBPh:
     - start: 268
     - start: 269
@@ -2248,6 +2263,11 @@ Weltzeit:
     WD:
     - start: 269
     - start: 280
+Werden:
+  references:
+    EM:
+    - end: 105
+      start: 103
 Wesen des Lebens:
   references:
     GA 29/30:
@@ -2931,6 +2951,12 @@ weil:
     - start: 64
   related:
   - Nomen
+πάντα ῥεῖ:
+  references:
+    EM:
+    - start: 104
+  related:
+  - Heraklit
 πόλεμος:
   references:
     EM:
