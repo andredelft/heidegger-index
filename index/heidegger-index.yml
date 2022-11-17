@@ -597,6 +597,14 @@ Fragment 2 (Heraklit):
     WBPh:
     - start: 277
   type: w
+Fragment 29 (Heraklit):
+  author: Heraklit
+  metadata:
+    cts_urn: urn:cts:greekLit:tlg0626.tlg002:29
+  references:
+    EM:
+    - start: 111
+  type: w
 Fragment 30 (Heraklit):
   author: Heraklit
   metadata:
@@ -1238,6 +1246,11 @@ Materialismus:
     SvG:
     - start: 179
     - start: 180
+Matthias Claudius:
+  references:
+    EM:
+    - start: 107
+  type: p
 Maß:
   references:
     SvG:
@@ -1469,6 +1482,12 @@ Offenheit für das Geheimnis:
     G:
     - end: 529
       start: 528
+Olympischen Oden:
+  author: Pindar
+  references:
+    EM:
+    - start: 108
+  type: w
 Optimismus:
   references:
     WD:
@@ -1595,6 +1614,12 @@ Physische:
     EM:
     - end: 19
       start: 18
+Pindar:
+  references:
+    EM:
+    - start: 108
+    - start: 110
+  type: p
 Plato:
   metadata:
     cts_urn: urn:cts:greekLit:tlg0059
@@ -1635,6 +1660,12 @@ Psychische:
     - start: 18
   related:
   - Physische
+Pythischen Oden:
+  author: Pindar
+  references:
+    EM:
+    - start: 108
+  type: w
 Rand der Möglichkeit:
   references:
     GA 29/30:
@@ -1674,6 +1705,10 @@ Rilke, Rainer Maria:
     - end: 285
       start: 283
   type: p
+Ruhm:
+  references:
+    EM:
+    - start: 110
 Rádl, Emanuel:
   references:
     GA 29/30:
@@ -1683,6 +1718,11 @@ Rätsel:
   references:
     SZ:
     - start: 4
+Sapphos:
+  references:
+    EM:
+    - start: 107
+  type: p
 Satz vom Grund:
   references:
     SvG:
@@ -2042,6 +2082,8 @@ Unheimlichkeit:
     - start: 490
 Unverborgenheit:
   references:
+    EM:
+    - start: 109
     SvG:
     - start: 159
     WBPh:
@@ -2524,6 +2566,10 @@ natura:
     - start: 40
     WBPh:
     - start: 237
+objektiv:
+  references:
+    EM:
+    - start: 109
 potentia:
   references:
     WBPh:
@@ -2622,6 +2668,10 @@ sterben:
       suffix: f
   related:
   - Sterblichen
+subjektiv:
+  references:
+    EM:
+    - start: 109
 sufficiens:
   references:
     SvG:
@@ -2691,6 +2741,11 @@ weil:
     WBPh:
     - start: 270
     - start: 269
+δόχα:
+  references:
+    EM:
+    - end: 112
+      start: 110
 δύναμις:
   references:
     WBPh:
@@ -2702,6 +2757,7 @@ weil:
   references:
     EM:
     - start: 65
+    - start: 111
     WBPh:
     - start: 273
       suffix: f
@@ -3034,8 +3090,18 @@ weil:
   related:
   - φύσις
   - λόγος
+φυά:
+  references:
+    EM:
+    - start: 108
+  related:
+  - φύσις
+  - φύειν
+  - Pindar
 φύειν:
   references:
+    EM:
+    - start: 108
     GA 29/30:
     - start: 38
 φύσει ὄντα:
@@ -3065,6 +3131,10 @@ weil:
     - start: 60
     - start: 65
     - start: 66
+    - start: 108
+      suffix: f
+    - start: 111
+      suffix: f
     FT:
     - start: 12
     GA 21:
@@ -3139,6 +3209,8 @@ weil:
     - start: 42
 ἀλήθεια:
   references:
+    EM:
+    - start: 109
     GA 29/30:
     - end: 44
       start: 43
@@ -3254,6 +3326,7 @@ weil:
   references:
     EM:
     - start: 65
+    - start: 111
     WBPh:
     - start: 273
       suffix: f

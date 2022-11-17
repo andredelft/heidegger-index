@@ -1,0 +1,1 @@
+> Hier genüge der Hinweis, daß z.B. für *[[Pindar]]* die φυά die Grundbestimmung des Daseins ausmacht [...]; φυά meint jenes, was einer ursprünglich und eigentlich schon ist: das schon Ge-Wesende im Unterschied zum nachher erzwungenen und verzwungenen Gemächte und Getue. [@EM, p. 108] 
