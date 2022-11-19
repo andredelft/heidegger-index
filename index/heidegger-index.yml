@@ -309,6 +309,7 @@ Christentum:
   references:
     EM:
     - start: 16
+    - start: 80
 Christus:
   references:
     WD:
@@ -1084,6 +1085,13 @@ Hölderlin, Friedrich:
     - start: 273
     - start: 276
   type: p
+In lieblicher Bläue blühet...:
+  author: Hölderlin, Friedrich
+  references:
+    EM:
+    - start: 114
+      suffix: f
+  type: w
 Inbegriff:
   references:
     GA 29/30:
@@ -1130,6 +1138,15 @@ Kant, Immanuel:
     - start: 272
     - start: 287
   type: p
+Karl Reinhardt:
+  references:
+    EM:
+    - start: 115
+    SZ:
+    - start: 295
+  type: p
+  related:
+  - Sophokles
 Kierkegaard, Søren:
   references:
     GA 29/30:
@@ -1431,6 +1448,7 @@ Nietzsche, Friedrich:
   references:
     EM:
     - start: 15
+    - start: 80
     Sch:
     - end: 42
       start: 39
@@ -1464,6 +1482,13 @@ Objekt:
     - start: 175
     WBPh:
     - start: 249
+Oedipus Tyrannus:
+  author: Sophokles
+  references:
+    EM:
+    - start: 114
+      suffix: f
+  type: w
 Offenbarkeit des Seienden im Ganze:
   references:
     GA 29/30:
@@ -1627,6 +1652,8 @@ Plato:
     EM:
     - start: 19
     - start: 61
+    - start: 62
+    - start: 80
     GA 29/30:
     - start: 439
     - start: 484
@@ -1635,11 +1662,6 @@ Plato:
     WBPh:
     - start: 299
   type: p
-Platon:
-  parent: Plato
-  references:
-    EM:
-    - start: 62
 Princip:
   references:
     SvG:
@@ -1709,6 +1731,8 @@ Ruhm:
   references:
     EM:
     - start: 110
+    - start: 114
+      suffix: f
 Rádl, Emanuel:
   references:
     GA 29/30:
@@ -1828,6 +1852,8 @@ Sein des Seienden:
     - start: 261
 Sein und Zeit:
   references:
+    EM:
+    - start: 80
     GA 29/30:
     - end: 263
       start: 262
@@ -1887,6 +1913,9 @@ Sophokles:
   metadata:
     cts_urn: urn:cts:greekLit:tlg0011
   references:
+    EM:
+    - start: 114
+      suffix: f
     SvG:
     - start: 154
   type: p
@@ -2672,6 +2701,7 @@ subjektiv:
   references:
     EM:
     - start: 109
+    - start: 112
 sufficiens:
   references:
     SvG:
@@ -2741,7 +2771,7 @@ weil:
     WBPh:
     - start: 270
     - start: 269
-δόχα:
+δόξα:
   references:
     EM:
     - end: 112
@@ -3134,7 +3164,6 @@ weil:
     - start: 108
       suffix: f
     - start: 111
-      suffix: f
     FT:
     - start: 12
     GA 21:
@@ -3308,6 +3337,10 @@ weil:
       suffix: f
   related:
   - ἦθος
+ἐυδαιμονία:
+  references:
+    EM:
+    - start: 115
 ἔγκλισις:
   references:
     EM:
@@ -3316,6 +3349,10 @@ weil:
   related:
   - πτῶσις
   - Verbum
+ἔκλισις:
+  references:
+    EM:
+    - start: 116
 ἦθος:
   references:
     GA 21:
@@ -3327,6 +3364,7 @@ weil:
     EM:
     - start: 65
     - start: 111
+    - start: 113
     WBPh:
     - start: 273
       suffix: f
