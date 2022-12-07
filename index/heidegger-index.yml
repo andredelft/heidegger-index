@@ -1144,9 +1144,9 @@ Karl Reinhardt:
     - start: 115
     SZ:
     - start: 295
-  type: p
   related:
   - Sophokles
+  type: p
 Kierkegaard, Søren:
   references:
     GA 29/30:
@@ -1159,11 +1159,12 @@ Kind:
   references:
     SvG:
     - start: 168
-Kreis:
+Kreisbewegung der Philosophie:
   references:
     GA 29/30:
     - end: 267
       start: 266
+    - start: 276
 Kreutzer, Conradin:
   references:
     G:
@@ -1576,6 +1577,8 @@ Philosophie:
     - start: 50
     - end: 267
       start: 266
+    - start: 276
+      suffix: f
 Philosophieren:
   references:
     EM:
