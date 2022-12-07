@@ -1,0 +1,12 @@
+# WRK:
+#   complete: no
+#   index_author:
+#   - family: Doe
+#     given: John
+#   - family: Doe
+#     given: Jane
+#   sections_complete:
+#   - end: 32
+#     start: 25
+#   - start: 20
+
