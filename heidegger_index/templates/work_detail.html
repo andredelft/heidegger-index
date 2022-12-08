@@ -20,6 +20,12 @@
 {% include 'components/h2.html' with text="Reference" only %}
 <div class="text-1.5xl {{ body_text }}">{{ work.reference | safe }}</div>
 
+{% if work_lemma.description %}
+<div class="{{ description_prose }} mb-8">
+  {{ work_lemma.description | safe }}
+</div>
+{% endif %}
+
 {% include 'components/h2.html' with text="Index terms" only %}
 {% include '_group_by_lemma.html' with ref_list=term_list %}
 

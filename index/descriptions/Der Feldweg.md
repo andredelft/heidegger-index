@@ -1,0 +1,1 @@
+> Bei jedem Aufenthalt erscheint der gewiesene Weg für den Rückblick und aus dem Vorblick in einem anderen Licht, mit anderem Ton und weckt andere Deutungen. Einige Züge freilich, einem selbst kaum erkennbar, führen nach derselben Weise durch die Gegenden des Denkens. Deren Gesicht zeigt sich in der kleinen 1947/48 geschriebenen Schrift ‘Der Feldweg’. [@GA 1, p. 55]
