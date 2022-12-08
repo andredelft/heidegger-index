@@ -79,6 +79,8 @@ Aristoteles:
     - start: 62
     - start: 64
     - start: 65
+    GA 1:
+    - start: 55
     GA 29/30:
     - end: 57
       start: 48
@@ -291,6 +293,11 @@ Bodenständigkeit:
     G:
     - start: 522
     - start: 526
+Brentano, Franz:
+  references:
+    GA 1:
+    - start: 56
+  type: p
 Brod und Wein:
   author: Hölderlin, Friedrich
   references:
@@ -418,6 +425,8 @@ Der Feldweg:
   references:
     G:
     - start: 517
+    GA 1:
+    - start: 55
   type: w
 Descartes, René:
   references:
@@ -447,6 +456,11 @@ Dionysos:
     WD:
     - start: 269
     - start: 271
+  type: p
+Dostojevski:
+  references:
+    GA 1:
+    - start: 56
   type: p
 Driesch, Hans:
   references:
@@ -982,6 +996,8 @@ Hebel, Johann Peter:
   type: p
 Hegel, Georg Wilhelm Friedrich:
   references:
+    GA 1:
+    - start: 56
     GA 29/30:
     - start: 420
     SZ:
@@ -1071,8 +1087,15 @@ Humboldt, Alexander von:
     SZ:
     - start: 166
   type: p
+Husserl, Edmund:
+  references:
+    GA 1:
+    - start: 56
+  type: p
 Hölderlin, Friedrich:
   references:
+    GA 1:
+    - start: 56
     SvG:
     - start: 154
     WBPh:
@@ -1151,6 +1174,8 @@ Kierkegaard, Søren:
   references:
     GA 29/30:
     - start: 226
+    GA 1:
+    - start: 56
     Sch:
     - end: 43
       start: 42
@@ -1450,6 +1475,8 @@ Nietzsche, Friedrich:
     EM:
     - start: 15
     - start: 80
+    GA 1:
+    - start: 56
     Sch:
     - end: 42
       start: 39
@@ -1710,6 +1737,15 @@ Rechnung:
     - start: 156
     - start: 157
     - start: 168
+Reinhardt, Karl:
+  references:
+    EM:
+    - start: 115
+    SZ:
+    - start: 295
+  related:
+  - Sophokles
+  type: p
 Reizbarkeit:
   references:
     GA 29/30:
@@ -1722,6 +1758,8 @@ Revolution der Technik:
     - start: 528
 Rilke, Rainer Maria:
   references:
+    GA 1:
+    - start: 56
     WD:
     - start: 274
     - start: 275
@@ -1775,6 +1813,11 @@ Schein:
     WBPh:
     - start: 268
     - start: 269
+Schelling, Friedrich von:
+  references:
+    GA 1:
+    - start: 56
+  type: p
 Schmertz:
   references:
     WD:
@@ -1857,6 +1900,8 @@ Sein und Zeit:
   references:
     EM:
     - start: 80
+    GA 1:
+    - start: 56
     GA 29/30:
     - end: 263
       start: 262
@@ -2091,6 +2136,11 @@ Tonart:
   references:
     SvG:
     - start: 166
+Trakl, Georg:
+  references:
+    GA 1:
+    - start: 56
+  type: p
 Tranzendenz:
   references:
     GA 29/30:
@@ -2208,6 +2258,12 @@ Vom Wesen des Grundes:
     GA 29/30:
     - start: 261
     - start: 441
+  type: w
+Von der mannigfachen Bedeutung des Seienden nach Aristoteles:
+  author: Brentano, Franz
+  references:
+    GA 1:
+    - start: 56
   type: w
 Vorhandenen:
   references:
