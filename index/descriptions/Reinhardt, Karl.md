@@ -1,0 +1,1 @@
+> Die jüngste Sophoklesauslegung (1933), die wir Karl _Reinhardt_ verdanken, komt dem griechischen Dasein und Sein deshalb wesentlich näher als alle bisherigen Versuche, weil Reinhardt aus den Grundbezüngen von Sein, Unverborgenheit und Schein das tragische Geschehen sieht und befragt. [@EM, p. 115]
