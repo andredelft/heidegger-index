@@ -784,6 +784,12 @@ Geschichte der Metaphysik:
     GA 29/30:
     - start: 4
       suffix: f
+Geschichte der Philosophie:
+  parent: Philosophie
+  references:
+    GA 29/30:
+    - start: 259
+      suffix: f
 Geschick:
   references:
     EM:
@@ -1162,21 +1168,12 @@ Kant, Immanuel:
     - start: 272
     - start: 287
   type: p
-Reinhardt, Karl:
-  references:
-    EM:
-    - start: 115
-    SZ:
-    - start: 295
-  related:
-  - Sophokles
-  type: p
 Kierkegaard, Søren:
   references:
-    GA 29/30:
-    - start: 226
     GA 1:
     - start: 56
+    GA 29/30:
+    - start: 226
     Sch:
     - end: 43
       start: 42
@@ -1939,6 +1936,11 @@ Seinsvergessenheit:
   references:
     WD:
     - start: 273
+Selbigkeit der Philosophie:
+  parent: Philosophie
+  references:
+    GA 29/30:
+    - start: 259
 Sonette an Orpheus:
   author: Rilke, Rainer Maria
   references:
