@@ -673,7 +673,7 @@ Fragment 93 (Heraklit):
 Fragment VIII (Parmenides):
   author: Parmenides
   metadata:
-    cts_urn: urn:cts:greekLit:tlg1562.tlg002.1st1K-grc1:7
+    cts_urn: urn:cts:greekLit:tlg1562.tlg002:7
   references:
     EM:
     - start: 103
