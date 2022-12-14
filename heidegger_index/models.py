@@ -95,12 +95,8 @@ class Lemma(models.Model):
             else:
                 p_link = 'https://scaife-cts.perseus.org/api/cts?request=GetPassage&urn=' + self.urn
                 p_response = requests.get(p_link)
-                parsed_xml = BeautifulSoup(p_response.text, 'lxml')
-                while parsed_xml.p.bibl:
-                    parsed_xml.p.bibl.decompose()
-                while parsed_xml.p.label:
-                    parsed_xml.p.label.decompose()
-                self.perseus_content = str(parsed_xml.p.get_text())
+                parsed_xml = BeautifulSoup(p_response.text, 'html.parser')
+                self.perseus_content = parsed_xml.p.contents[-1].string
 
     class Meta:
         ordering = ["sort_key"]
