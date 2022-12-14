@@ -2,9 +2,7 @@ name: Validation
 
 on:
   push:
-    branches: [ main, 'feature/**' ]
-  pull_request:
-    branches: [ main ]
+    branches-ignore: [ main ]
 
   workflow_dispatch:
 
