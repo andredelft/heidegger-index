@@ -673,7 +673,7 @@ Fragment 93 (Heraklit):
 Fragment VIII (Parmenides):
   author: Parmenides
   metadata:
-    cts_urn: urn:cts:greekLit:tlg1562
+    cts_urn: urn:cts:greekLit:tlg1562.tlg002.1st1K-grc1:7
   references:
     EM:
     - start: 103
@@ -1510,6 +1510,8 @@ Objekt:
     - start: 249
 Oedipus Tyrannus:
   author: Sophokles
+  metadata:
+    cts_urn: urn:cts:greekLit:tlg0011.tlg004
   references:
     EM:
     - start: 114
@@ -1535,6 +1537,8 @@ Offenheit für das Geheimnis:
       start: 528
 Olympischen Oden:
   author: Pindar
+  metadata:
+    cts_urn: urn:cts:greekLit:tlg0033.tlg001
   references:
     EM:
     - start: 108
@@ -1549,6 +1553,8 @@ Otto Hahn:
     - start: 178
   type: p
 Parmenides:
+  metadata:
+    cts_urn: urn:cts:greekLit:tlg1562
   references:
     EM:
     - start: 103
@@ -1668,6 +1674,8 @@ Physische:
     - end: 19
       start: 18
 Pindar:
+  metadata:
+    cts_urn: urn:cts:greekLit:tlg0033
   references:
     EM:
     - start: 108
@@ -1712,6 +1720,8 @@ Psychische:
   - Physische
 Pythischen Oden:
   author: Pindar
+  metadata:
+    cts_urn: urn:cts:greekLit:tlg0033.tlg002
   references:
     EM:
     - start: 108
