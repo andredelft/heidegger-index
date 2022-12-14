@@ -1,5 +1,5 @@
 # WRK:
-#   complete: no
+#   complete: False
 #   index_author:
 #   - family: Doe
 #     given: John
@@ -10,3 +10,12 @@
 #     start: 25
 #   - start: 20
 
+G:
+  complete: True
+  index_author:
+  - family: Delft
+    given : André
+    dropping-particle: van
+  - family: Wit
+    given: Johannes
+    dropping-particle: de
