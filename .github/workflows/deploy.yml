@@ -7,6 +7,7 @@ on:
 jobs:
   validate-index:
     runs-on: ubuntu-latest
+    steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - name: Checkout repository
       uses: actions/checkout@v3
