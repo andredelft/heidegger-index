@@ -223,10 +223,11 @@ def add_metadata(md_type, lemma, lemma_type, md_value=None, overwrite=False):
             else:
                 continue
 
-    lemma_dict = index[lemma]
-
+    
     # Validation: lemma exists
-    if lemma not in index:
+    try:
+        lemma_dict = index[lemma]
+    except KeyError:
         raise click.BadParameter(f"Lemma '{lemma}' not found in index.")
 
     # Validation: lemma type is correct

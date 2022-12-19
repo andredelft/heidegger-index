@@ -9,6 +9,7 @@ from django.core.validators import RegexValidator, URLValidator
 
 from heidegger_index.constants import LEMMA_TYPES, REF_TYPES
 from heidegger_index.utils import gen_sort_key, slugify
+from heidegger_index.validators import validate_gnd
 
 
 class Work(models.Model):
@@ -67,8 +68,8 @@ class Lemma(models.Model):
     gnd_id = models.CharField(
         null=True,
         unique=True,
-        max_length=10,
-        validators=[RegexValidator(regex='^(1[\d]{7,8}[0-9X])$')]
+        max_length=11,
+        validators=[validate_gnd]
     )
     sort_key = models.CharField(max_length=100, null=True, unique=True)
     first_letter = models.CharField(max_length=1, null=True)

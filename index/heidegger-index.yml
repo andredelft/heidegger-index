@@ -569,6 +569,8 @@ Dionysos:
     - start: 271
   type: p
 Dostojevski:
+  metadata:
+    gnd_id: '118527053'
   references:
     GA 1:
     - start: 56
@@ -792,8 +794,6 @@ Fragment VIII (Parmenides):
     - start: 103
   type: w
 Franz Joseph Strauß:
-  metadata:
-    gnd_id: 118619063
   references:
     SvG:
     - start: 178
@@ -1160,8 +1160,6 @@ Heimweh:
       start: 10
     - start: 33
 Herakles:
-  metadata:
-    gnd_id: '118639552'
   references:
     WD:
     - start: 269
@@ -1210,8 +1208,6 @@ Himmlischen:
     - start: 270
     - start: 271
 Hitler, Adolf:
-  metadata:
-    gnd_id: 118551655
   references:
     Sch:
     - start: 40
@@ -2050,6 +2046,8 @@ Scheler, Max:
     - start: 283
   type: p
 Schelling, Friedrich von:
+  metadata:
+    gnd_id: '118607057'
   references:
     GA 1:
     - start: 56

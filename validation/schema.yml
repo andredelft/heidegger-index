@@ -16,7 +16,7 @@ additionalProperties:
           anyOf:
             - type: string
             - type: integer
-          pattern: ^1[0-9]{7,8}[0-9X]$
+          pattern: ^1[012]?\d{7}[0-9X]|[47]\d{6}-\d|[1-9]\d{0,7}-[0-9X]|3\d{7}[0-9X]$
           description: Gemeinsame Normdatei identifier
       additionalProperties: False
     references:

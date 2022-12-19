@@ -16,7 +16,7 @@ namespaced_patterns = (
             name="urn-redirect"
         ),
         re_path(
-            r"^gnd/(?P<gnd_id>1[\d]{7,8}[0-9X])$",
+            r"^gnd/(?P<gnd_id>1[012]?\d{7}[0-9X]|[47]\d{6}-\d|[1-9]\d{0,7}-[0-9X]|3\d{7}[0-9X])$",
             GNDRedirectView.as_view(),
             name="gnd-redirect"
         ),

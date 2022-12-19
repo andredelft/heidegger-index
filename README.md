@@ -58,7 +58,7 @@ Usage: add-rel [OPTIONS] FIRST_LEMMA SECOND_LEMMA [p|a|r]
 
 ## Add metadata to lemmata in `index/heidegger-index.yml`
 
-A Python function to add URNs or GND id's to the lemma metadata. For now, we limit ourselves to the URNs used by [Perseus](https://scaife.perseus.org/) and [GND id's](https://gnd.network/Webs/gnd/EN/Home/home_node.html). 
+A Python function to add URNs or GND id's to the lemma metadata. For now, we limit ourselves to the URNs used by [Perseus](https://scaife.perseus.org/) and [GND id's](https://gnd.network/Webs/gnd/EN/Home/home_node.html) that allow a link to [Zeno.org](http://zeno.org) (`http://zeno.org/pnd/<thegndid>`) for browsing public-domain versions of the works / authors we refer to. 
 
 If the URN refers to a passage in the [Perseus Digital Library](https://scaife.perseus.org/) this passage will be rendered on the work lemma page. The lemma will also be accessible by the URN like so: `/index/lemma/example:urn:to:lemma`.
 
