@@ -10,6 +10,7 @@ from pyCTS import CTS_URN
 
 from heidegger_index.utils import match_lemmata
 from heidegger_index.constants import (
+    METADATA_TYPES,
     LEMMA_TYPES,
     PERSON,
     WORK,
@@ -193,12 +194,36 @@ def find_ref(search_term, max_l_dist=2, num_results=5):
         print("No matches found")
 
 
-def add_urn(lemma, lemma_type, urn=None, overwrite=False):
-    """Add a urn to a lemma of type 'author' or 'work'"""
+def add_metadata(md_type, lemma, lemma_type, md_value=None, overwrite=False):
+    """Add metadata to a lemma of type 'author' or 'work'"""
+
+    # Validation: metadata type is correct
+    if not md_type in METADATA_TYPES:
+        raise click.BadParameter(f"'{md_type} is not a valid metadata type.'")
 
     # Open index file
     with open(INDEX_FILE) as f:
         index = yaml.load(f)
+
+    # Validation: {md_type: md_value} is not already present in index.
+    for l in index:
+        # If the lemma already has this value, other logic takes care of it.
+        if l == str(lemma):
+            continue
+
+        lemma_dict = index[l]
+        try:
+            lemma_md_dict = lemma_dict["metadata"]
+            lemma_md_value = lemma_md_dict[str(md_type)]
+        except KeyError:
+            continue
+        else:
+            if lemma_md_value == str(md_value):
+                raise click.BadParameter(f"{md_value} is already defined as {md_type} for {l}. {md_type} must be unique.""")
+            else:
+                continue
+
+    lemma_dict = index[lemma]
 
     # Validation: lemma exists
     if lemma not in index:
@@ -208,20 +233,18 @@ def add_urn(lemma, lemma_type, urn=None, overwrite=False):
     if lemma_type not in LEMMA_TYPES:
         raise click.BadParameter(f"'{lemma_type}' is not a valid lemma type.")
 
-    lemma_dict = index[lemma]
-
     # Validation: lemma in index is of same type as lemma_type
     if lemma_type != lemma_dict.get("type"):
         raise click.BadParameter(
             f"Lemma is in the index as '{lemma_dict.get('type')}', not as '{lemma_type}'."
         )
 
-    if urn:
+    if md_type == 'cts_urn':
         # Validation: urn is defined well.
         try:
-            cts_urn = CTS_URN(urn)
+            cts_urn = CTS_URN(md_value)
         except (TypeError, ValueError):
-            raise click.BadParameter(f"'{urn}' is not a valid CTS URN.")
+            raise click.BadParameter(f"'{md_value}' is not a valid CTS URN.")
         if lemma_type == PERSON:
             # Validation: urn is defined well for the type.
             if cts_urn.work:
@@ -232,32 +255,41 @@ def add_urn(lemma, lemma_type, urn=None, overwrite=False):
             # Validation: urn is defined well for the type.
             if not cts_urn.work:
                 raise click.BadParameter(
-                    f"'{urn}' does not contain a work namespace. Please provide a valid URN."
+                    f"'{md_value}' does not contain a work namespace. Please provide a valid URN."
                 )
-        # Validation: urn is not already defined
-        md_dict = {}
-        md_dict["cts_urn"] = urn
+        
+        # TODO: GND validation
+
+    md_dict = {}
+    md_dict[md_type] = md_value
+
+    # Validation: md is not already defined
+    try:
+        lemma_md_dict = lemma_dict["metadata"]
+    except KeyError:
+        lemma_dict["metadata"] = md_dict
+    else: 
+        # Validation: md[md_type] is not already defined.
         try:
-            lemma_urn_in_index = lemma_dict["metadata"].get("cts_urn")
-        except:
-            lemma_dict["metadata"] = md_dict
+            lemma_md_value_in_index = lemma_md_dict[str(md_type)]
+        except KeyError:
+            lemma_md_dict.update({str(md_type): str(md_value)})
         else:
-            if lemma_urn_in_index:
+            if lemma_md_value_in_index:
                 if overwrite:
-                    lemma_dict["metadata"] = md_dict
+                    lemma_md_dict.update({str(md_type): str(md_value)})
                 else:
-                    if lemma_urn_in_index == urn:
+                    if lemma_md_value_in_index == md_value:
                         raise click.BadParameter(
-                            f"'{lemma}' has this URN already assigned to it."
+                            f"'{lemma}' has this {md_type} already assigned to it."
                         )
                     else:
                         raise click.BadParameter(
-                            f"'{lemma}' already has the following URN defined: '{lemma_urn_in_index}'."
+                            f"'{lemma}' already has the following {md_type} defined: '{lemma_md_value_in_index}'."
                         )
-    else:
-        # If urn is not defined
-        raise click.BadParameter(f"No URN specified.")
 
+        lemma_dict["metadata"] = lemma_md_dict
+        
     index[lemma] = lemma_dict
 
     # Close and write index file.

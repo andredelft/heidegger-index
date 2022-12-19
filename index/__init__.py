@@ -2,7 +2,7 @@ import click
 
 from .index import *
 
-from heidegger_index.constants import LEMMA_TYPES, REF_TYPES, RELATION_TYPES
+from heidegger_index.constants import METADATA_TYPES, LEMMA_TYPES, REF_TYPES, RELATION_TYPES
 
 
 @click.command()
@@ -49,12 +49,16 @@ def click_add_rel(first_lemma, second_lemma, rel_type):
 
 
 @click.command()
+@click.argument(
+    "metadata_type",
+    type=click.Choice(METADATA_TYPES.keys()),
+)
 @click.argument("lemma", type=str)
 @click.argument(
     "lemma_type",
     type=click.Choice(LEMMA_TYPES.keys()),
 )
-@click.argument("urn", type=str)
+@click.argument("md_value", type=str)
 @click.option(
     "-f",
     "--force",
@@ -63,8 +67,8 @@ def click_add_rel(first_lemma, second_lemma, rel_type):
     default=False,
     help="Overwrite URN if lemma already has a urn defined."
 )
-def click_add_urn(lemma, lemma_type, urn, overwrite):
-    add_urn(lemma, lemma_type, urn, overwrite)
+def click_add_metadata(metadata_type, lemma, lemma_type, md_value, overwrite):
+    add_metadata(metadata_type, lemma, lemma_type, md_value, overwrite)
 
 
 @click.command()

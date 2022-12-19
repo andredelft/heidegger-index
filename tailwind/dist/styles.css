@@ -1525,6 +1525,10 @@ video {
   margin-top: 1rem;
 }
 
+.mt-24 {
+  margin-top: 6rem;
+}
+
 .block {
   display: block;
 }
@@ -1730,6 +1734,10 @@ video {
   padding-bottom: 1rem;
 }
 
+.pt-12 {
+  padding-top: 3rem;
+}
+
 .text-right {
   text-align: right;
 }
@@ -1770,6 +1778,11 @@ video {
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .font-semibold {

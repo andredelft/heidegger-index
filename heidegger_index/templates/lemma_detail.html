@@ -77,8 +77,9 @@
 </div>
 {% endif %}
 {% if lemma.gnd_id %}
-<div>
-  <p class="mt-12 text-lg">
+<div class="mt-12">
+  <h3 class="text-xl font-bold">Metadata</h3>
+  <p class="text-lg">
   <a
     href="http://d-nb.info/gnd/{{ lemma.gnd_id | safe }}"
     title="View GND entry of {{ lemma.value}}."

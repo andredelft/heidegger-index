@@ -1160,6 +1160,8 @@ Heimweh:
       start: 10
     - start: 33
 Herakles:
+  metadata:
+    gnd_id: '118639552'
   references:
     WD:
     - start: 269
@@ -1167,6 +1169,7 @@ Herakles:
 Heraklit:
   metadata:
     cts_urn: urn:cts:greekLit:tlg0626
+    gnd_id: '118549421'
   references:
     EM:
     - start: 66
