@@ -213,6 +213,8 @@ Axiom:
     SvG:
     - start: 174
 Bachofen, Johann Jakob:
+  metadata:
+    gnd_id: '118505645'
   references:
     GA 29/30:
     - start: 105
@@ -1324,6 +1326,8 @@ Kind:
     SvG:
     - start: 168
 Klages, Ludwig:
+  metadata:
+    gnd_id: 11856269X
   references:
     GA 29/30:
     - start: 105
@@ -1672,6 +1676,8 @@ Nietsche, Friedrich:
       start: 107
   type: p
 Nietzsche, Friedrich:
+  metadata:
+    gnd_id: '118587943'
   references:
     EM:
     - start: 15
@@ -2039,6 +2045,8 @@ Schein:
     - start: 268
     - start: 269
 Scheler, Max:
+  metadata:
+    gnd_id: '118606964'
   references:
     GA 29/30:
     - end: 106
@@ -2218,6 +2226,8 @@ Spemann, Hans:
     - start: 381
   type: p
 Spengler, Oswald:
+  metadata:
+    gnd_id: '118616110'
   references:
     GA 29/30:
     - start: 105
@@ -2744,6 +2754,8 @@ Zeitlichkeit des Daseins:
     GA 29/30:
     - start: 253
 Ziegler, Leopold:
+  metadata:
+    gnd_id: '118636782'
   references:
     GA 29/30:
     - start: 106

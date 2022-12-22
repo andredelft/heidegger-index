@@ -20,6 +20,8 @@ from heidegger_index.constants import (
     IS_AUTHOR_OF,
     IS_RELATED_TO,
 )
+from heidegger_index.validators import validate_gnd
+from django.core.exceptions import ValidationError
 
 
 WORKING_DIR = Path("index")
@@ -259,7 +261,12 @@ def add_metadata(md_type, lemma, lemma_type, md_value=None, overwrite=False):
                     f"'{md_value}' does not contain a work namespace. Please provide a valid URN."
                 )
         
-        # TODO: GND validation
+    elif md_type == 'gnd_id':
+        # Validation: gnd_id is defined well.
+        try:
+            validate_gnd(md_value)
+        except ValidationError:
+            raise click.BadParameter(f"'{md_value}' is not a valid {md_type}.")
 
     md_dict = {}
     md_dict[md_type] = md_value

@@ -5,6 +5,8 @@ import re
 ## https://wiki.dnb.de/pages/viewpage.action?pageId=48139522
 
 def validate_gnd(value):
+    # ONLY WORKS FOR PND / POST-2012 entries.
+
     # Validate type
     if type(value) == str or type(value) == int:
         # Validate with regex according to https://www.wikidata.org/wiki/Property:P227
@@ -15,6 +17,9 @@ def validate_gnd(value):
                 f"{value} is not syntactically valid."
                 )
 
+        if type(value) == str:
+            value = re.sub(r"[^0-9X]", "", value)
+
         sum = 0
         for i, d in enumerate(reversed(value)):
             if i == 0:
@@ -22,15 +27,15 @@ def validate_gnd(value):
                 continue
             sum = sum + (int(d) * (i + 1))
 
-        print(f"control digit: {control_digit}")
-        print(f"{sum}")
+        print(sum)
+        print(control_digit)
 
-        cd_calculated = ((11 - (sum % 11)) % 11)
+        cd_calculated =  ((11 - (sum % 11)) % 11)
         if cd_calculated == 10:
             cd_calculated = 'X'
-
-        print(cd_calculated)
         
+        print(cd_calculated)
+
         if str(cd_calculated) != str(control_digit):
             raise ValidationError(
                 f"{value}'s control digit is not valid."
