@@ -202,6 +202,11 @@ Axiom:
   references:
     SvG:
     - start: 174
+Bachofen, Johann Jakob:
+  references:
+    GA 29/30:
+    - start: 105
+  type: p
 Baer, Karl Ernst von:
   references:
     GA 29/30:
@@ -427,6 +432,65 @@ Der Feldweg:
     - start: 517
     GA 1:
     - start: 55
+  type: w
+Der Geist als Widersacher der Seele:
+  author: Klages, Ludwig
+  references:
+    GA 29/30:
+    - start: 105
+  type: w
+Der Mensch im Weltalter des Ausgleichs:
+  author: Scheler, Max
+  references:
+    GA 29/30:
+    - start: 106
+  type: w
+Der Untergang des Abendlandes:
+  author: Spengler, Oswald
+  references:
+    GA 29/30:
+    - start: 105
+  type: w
+Der Wille zur Macht 1003:
+  references:
+    GA 29/30:
+    - start: 108
+  type: w
+Der Wille zur Macht 1005:
+  references:
+    GA 29/30:
+    - end: 109
+      start: 108
+  related:
+  - NL 9[42] 12.354
+  type: w
+Der Wille zur Macht 1049:
+  references:
+    GA 29/30:
+    - start: 109
+  related:
+  - NL 2[106] 12.113
+  type: w
+Der Wille zur Macht 1050:
+  references:
+    GA 29/30:
+    - end: 110
+      start: 109
+  related:
+  - NL 14[14] 13.224f
+  type: w
+Der Wille zur Macht 1052:
+  references:
+    GA 29/30:
+    - start: 110
+  related:
+  - NL 14[89] 13.265ff
+  type: w
+Der europäische Geist:
+  author: Ziegler, Leopold
+  references:
+    GA 29/30:
+    - start: 106
   type: w
 Descartes, René:
   references:
@@ -1136,6 +1200,13 @@ Information:
   references:
     SvG:
     - start: 182
+JGB Aus hohen Bergen 5.243:
+  author: Nietzsche, Friedrich
+  references:
+    GA 29/30:
+    - start: 108
+      type: r
+  type: w
 Kalkül:
   references:
     SvG:
@@ -1182,6 +1253,11 @@ Kind:
   references:
     SvG:
     - start: 168
+Klages, Ludwig:
+  references:
+    GA 29/30:
+    - start: 105
+  type: p
 Kreisbewegung der Philosophie:
   references:
     GA 29/30:
@@ -1404,6 +1480,32 @@ Müller, Johannes:
     GA 29/30:
     - start: 372
   type: p
+NL 14[14] 13.224f:
+  references:
+    GA 29/30:
+    - end: 110
+      start: 109
+  type: w
+NL 14[89] 13.265ff:
+  references:
+    GA 29/30:
+    - start: 110
+  type: w
+NL 2[106] 12.113:
+  author: Nietzsche, Friedrich
+  references:
+    GA 29/30:
+    - start: 109
+      type: r
+  type: w
+NL 9[42] 12.354:
+  author: Nietzsche, Friedrich
+  references:
+    GA 29/30:
+    - end: 109
+      start: 108
+      type: r
+  type: w
 Nachdenken:
   references:
     G:
@@ -1468,6 +1570,13 @@ Nichts:
     - start: 368
     - start: 433
     - start: 267
+Nietsche, Friedrich:
+  references:
+    GA 29/30:
+    - start: 105
+    - end: 111
+      start: 107
+  type: p
 Nietzsche, Friedrich:
   references:
     EM:
@@ -1821,6 +1930,12 @@ Schein:
     WBPh:
     - start: 268
     - start: 269
+Scheler, Max:
+  references:
+    GA 29/30:
+    - end: 106
+      start: 105
+  type: p
 Schelling, Friedrich von:
   references:
     GA 1:
@@ -1984,6 +2099,11 @@ Spemann, Hans:
   references:
     GA 29/30:
     - start: 381
+  type: p
+Spengler, Oswald:
+  references:
+    GA 29/30:
+    - start: 105
   type: p
 Spiel:
   references:
@@ -2486,6 +2606,11 @@ Zeitlichkeit des Daseins:
   references:
     GA 29/30:
     - start: 253
+Ziegler, Leopold:
+  references:
+    GA 29/30:
+    - start: 106
+  type: p
 Zoologie:
   references:
     GA 29/30:
