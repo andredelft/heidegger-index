@@ -129,7 +129,7 @@ STATIC_ROOT = BASE_DIR / "staticfiles"
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-CITEPROC_ENDPOINT = "https://labs.brill.com/citeproc"
+CITEPROC_ENDPOINT = "https://citeproc.delve.nu"
 CITEPROC_STYLE = "mhra"
 
 INDEX_DIR = BASE_DIR / "index"
