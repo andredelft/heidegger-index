@@ -51,6 +51,9 @@ Anthropologie:
     - start: 406
     - start: 408
     - start: 115
+    SZ:
+    - end: 50
+      start: 48
 Antigonä:
   references:
     SvG:
@@ -301,6 +304,11 @@ Bezug:
     - start: 282
     - start: 283
     - start: 285
+Biologie:
+  references:
+    SZ:
+    - start: 49
+      suffix: f
 Blick der Entschlossenheit:
   references:
     GA 29/30:
@@ -1075,6 +1083,7 @@ Götter:
   related:
   - Gott
 Haben der Welt:
+  parent: Welt
   references:
     GA 29/30:
     - end: 263
@@ -1858,6 +1867,11 @@ Psychische:
     - start: 18
   related:
   - Physische
+Psychologie:
+  references:
+    SZ:
+    - start: 49
+      suffix: f
 Pythischen Oden:
   author: Pindar
   metadata:
@@ -2701,6 +2715,8 @@ animal rationale:
   references:
     GA 29/30:
     - start: 442
+    SZ:
+    - start: 48
     SvG:
     - start: 189
 antiken Ontologie:
@@ -3078,6 +3094,8 @@ wesentliche Möglichkeit des Seins:
     - start: 451
     - start: 454
       suffix: f
+    SZ:
+    - start: 48
     WBPh:
     - start: 276
   related:
