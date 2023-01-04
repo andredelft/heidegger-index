@@ -60,7 +60,7 @@ class WorkDetailView(DetailView):
             context["work_lemma"] = work_lemma
 
         page_refs = PageReference.objects.filter(work__in=[work, *work.children.all()])
-        context["term_list"] = page_refs.filter(lemma__type=[None, "g"])
+        context["term_list"] = page_refs.filter(lemma__type=None) | page_refs.filter(lemma__type="g")
         context["person_list"] = page_refs.filter(lemma__type="p")
         context["work_list"] = page_refs.filter(lemma__type="w")
         return context
