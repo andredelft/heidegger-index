@@ -1,9 +1,10 @@
 from django.http import Http404
 from django.shortcuts import render, get_object_or_404
 from django.views.generic.detail import DetailView
-from django.views.generic.base import RedirectView
 from django.shortcuts import redirect
 from django.conf import settings
+
+from heidegger_index.constants import GND, URN
 
 import requests
 
@@ -116,5 +117,5 @@ class URNRedirectView(LemmaDetailView):
 
 class GNDRedirectView(LemmaDetailView):
     def get(self, *args, **kwargs):
-        lemma = get_object_or_404(Lemma, gnd_id=kwargs['gnd_id'])
+        lemma = get_object_or_404(Lemma, gnd=kwargs['gnd'])
         return redirect("index:lemma-detail", slug=lemma.slug)

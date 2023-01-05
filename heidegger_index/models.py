@@ -5,7 +5,7 @@ from pyCTS import CTS_URN
 from django.db import models
 from django.conf import settings
 from django_extensions.db.fields import AutoSlugField
-from django.core.validators import RegexValidator, URLValidator
+from django.core.validators import URLValidator
 
 from heidegger_index.constants import LEMMA_TYPES, REF_TYPES
 from heidegger_index.utils import gen_sort_key, slugify
@@ -63,9 +63,8 @@ class Lemma(models.Model):
         unique=True
     )
     perseus_content = models.TextField(null=True)
-    # Should match https://de.wikipedia.org/wiki/Gemeinsame_Normdatei#Entitätsidentifikator
-    # TODO: write own validator according to https://de.wikipedia.org/wiki/Personennamendatei#Aufbau
-    gnd_id = models.CharField(
+
+    gnd = models.CharField(
         null=True,
         unique=True,
         max_length=11,

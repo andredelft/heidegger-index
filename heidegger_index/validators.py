@@ -2,15 +2,20 @@ from django.core.exceptions import ValidationError
 
 import re
 
+GND_REGEX = "1[012]?\d{7}[0-9X]|[47]\d{6}-\d|[1-9]\d{0,7}-[0-9X]|3\d{7}[0-9X]"
+
+
 ## https://wiki.dnb.de/pages/viewpage.action?pageId=48139522
+# Should match https://de.wikipedia.org/wiki/Gemeinsame_Normdatei#Entitätsidentifikator
+# and https://de.wikipedia.org/wiki/Personennamendatei#Aufbau
 
 def validate_gnd(value):
     # ONLY WORKS FOR PND / POST-2012 entries.
 
     # Validate type
     if type(value) == str or type(value) == int:
+        value = str(value)
         # Validate with regex according to https://www.wikidata.org/wiki/Property:P227
-        GND_REGEX = r"1[012]?\d{7}[0-9X]|[47]\d{6}-\d|[1-9]\d{0,7}-[0-9X]|3\d{7}[0-9X]"
         regex = re.compile(GND_REGEX, re.IGNORECASE)
         if not regex.match(value):
             raise ValidationError(
@@ -27,14 +32,9 @@ def validate_gnd(value):
                 continue
             sum = sum + (int(d) * (i + 1))
 
-        print(sum)
-        print(control_digit)
-
         cd_calculated =  ((11 - (sum % 11)) % 11)
         if cd_calculated == 10:
             cd_calculated = 'X'
-        
-        print(cd_calculated)
 
         if str(cd_calculated) != str(control_digit):
             raise ValidationError(

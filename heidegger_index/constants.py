@@ -3,9 +3,9 @@ WORK = "w"
 GEOGRAPHICAL = "g"
 LEMMA_TYPES = {PERSON: "person", WORK: "work", GEOGRAPHICAL: "geographical"}
 
-URN = "cts_urn"
-GND = "gnd_id"
-METADATA_TYPES = {URN: "cts_urn", GND: "gnd_id"}
+URN = "urn"
+GND = "gnd"
+METADATA_TYPES = {URN: "urn", GND: "gnd"}
 
 RELATED = "r"
 REF_TYPES = {RELATED: "related"}

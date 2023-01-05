@@ -13,9 +13,7 @@ additionalProperties:
           pattern: ^urn:cts:([A-Za-z0-9()+,\-.:=@;$_!*']|%[0-9A-Fa-f]{2})+$
           description: CTS URN
         gnd_id:
-          anyOf:
-            - type: string
-            - type: integer
+          type: string
           pattern: ^1[012]?\d{7}[0-9X]|[47]\d{6}-\d|[1-9]\d{0,7}-[0-9X]|3\d{7}[0-9X]$
           description: Gemeinsame Normdatei identifier
       additionalProperties: False

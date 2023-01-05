@@ -10,6 +10,8 @@ from pyCTS import CTS_URN
 
 from heidegger_index.utils import match_lemmata
 from heidegger_index.constants import (
+    GND,
+    URN,
     METADATA_TYPES,
     LEMMA_TYPES,
     PERSON,
@@ -201,7 +203,7 @@ def add_metadata(md_type, lemma, lemma_type, md_value=None, overwrite=False):
 
     # Validation: metadata type is correct
     if not md_type in METADATA_TYPES:
-        raise click.BadParameter(f"'{md_type} is not a valid metadata type.'")
+        raise click.BadParameter(f"{md_type} is not a valid metadata type.")
 
     # Open index file
     with open(INDEX_FILE) as f:
@@ -242,7 +244,7 @@ def add_metadata(md_type, lemma, lemma_type, md_value=None, overwrite=False):
             f"Lemma is in the index as '{lemma_dict.get('type')}', not as '{lemma_type}'."
         )
 
-    if md_type == 'cts_urn':
+    if md_type == URN:
         # Validation: urn is defined well.
         try:
             cts_urn = CTS_URN(md_value)
@@ -261,12 +263,14 @@ def add_metadata(md_type, lemma, lemma_type, md_value=None, overwrite=False):
                     f"'{md_value}' does not contain a work namespace. Please provide a valid URN."
                 )
         
-    elif md_type == 'gnd_id':
+    elif md_type == GND:
         # Validation: gnd_id is defined well.
         try:
-            validate_gnd(md_value)
-        except ValidationError:
-            raise click.BadParameter(f"'{md_value}' is not a valid {md_type}.")
+            validate_gnd(str(md_value))
+        except ValidationError as e:
+            raise click.BadParameter(f"'{md_value}' is not a valid {md_type}: {e}")
+        
+        md_value = str(md_value)
 
     md_dict = {}
     md_dict[md_type] = md_value
