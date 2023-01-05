@@ -136,6 +136,7 @@ INDEX_DIR = BASE_DIR / "index"
 WORK_REFS_FILE = INDEX_DIR / "works.yml"
 INDEX_FILE = INDEX_DIR / "heidegger-index.yml"
 DESCRIPTIONS_DIR = BASE_DIR / "index" / "descriptions"
+COMPLETE_WORKS_FILE = INDEX_DIR / "completely-indexed.yml"
 
 TAILWIND_STYLES_SRC_PATH = BASE_DIR / "tailwind" / "src" / "styles.css"
 TAILWIND_STYLES_DIST_PATH = BASE_DIR / "tailwind" / "dist" / "styles.css"
