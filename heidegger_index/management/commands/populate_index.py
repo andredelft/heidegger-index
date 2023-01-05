@@ -116,7 +116,7 @@ class Command(BaseCommand):
                 value=value,
                 type=data.get("type", None),
                 urn=md.get(URN, None),
-                gnd_id=md.get(GND, None)
+                gnd=md.get(GND, None)
             )
             if perform_external_calls:
                 try:
