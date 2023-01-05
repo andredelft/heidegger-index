@@ -131,6 +131,27 @@ GA 29/30:
   title: 'Die Grundbegriffe der Metaphysik: Welt, Endlichkeit, Einsamkeit'
   title-short: Die Grundbegriffe der Metaphysik
   type: book
+GA 55:
+  id: heideggerGA55
+  author:
+    - family: Heidegger
+      given: Martin
+  citation-key: heideggerGA55
+  collection-number: band 55
+  collection-title: Martin Heidegger Gesamtausgabe
+  editor:
+    - family: Frings
+      given: Manfred S.
+  event-place: Frankfurt am Main
+  ISBN: 978-3-465-02648-8
+  issued:
+    - year: 1979
+  language: ger
+  number-of-pages: XII, 406
+  publisher: Vittorio Klostermann
+  publisher-place: Frankfurt am Main
+  title: Heraklit
+  type: book
 SvG:
   author:
   - family: Heidegger
