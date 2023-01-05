@@ -70,7 +70,7 @@ additionalProperties:
     type:
       type: string
       description: Lemma type
-      enum: [p, w]
+      enum: [p, w, g]
   additionalProperties: False
   required: [references]
   dependentRequired:

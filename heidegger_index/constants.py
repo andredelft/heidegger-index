@@ -1,6 +1,7 @@
 PERSON = "p"
 WORK = "w"
-LEMMA_TYPES = {PERSON: "person", WORK: "work"}
+GEOGRAPHICAL = "g"
+LEMMA_TYPES = {PERSON: "person", WORK: "work", GEOGRAPHICAL: "geographical"}
 
 RELATED = "r"
 REF_TYPES = {RELATED: "related"}

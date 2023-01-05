@@ -26,7 +26,7 @@ $ add-ref --help
 Usage: add-ref [OPTIONS] LEMMA WORK REF
 
 Options:
-  -l, --lemma-type [p|w]  Type of lemma (p: person, w: work)
+  -l, --lemma-type [p|w|g]  Type of lemma (p: person, w: work, g: geographical name)
   -r, --ref-type [r]      Type of lemma (r: related)
   -b, --betacode          Convert lemma from betacode to unicode
   --help                  Show this message and exit.
