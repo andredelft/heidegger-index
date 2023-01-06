@@ -11,14 +11,14 @@ namespaced_patterns = (
         path("lemma/<slug>.md", LemmaDetailViewMD.as_view(content_type='text/markdown'), name="lemma-md-export"),
         path("work/<slug>", WorkDetailView.as_view(), name="work-detail"),
         re_path(
-            r"^lemma/(?P<urn>urn:cts:([A-Za-z0-9()+,\-.:=@;$_!*']|%[0-9A-Fa-f]{2})+)", 
-            URNRedirectView.as_view(),
-            name="urn-redirect"
+            r"^gnd/(?P<gnd>1[012]?\d{7}[0-9X]|[47]\d{6}-\d|[1-9]\d{0,7}-[0-9X]|3\d{7}[0-9X])$",
+            LemmaDetailView.as_view(),
+            name="gnd-redirect"
         ),
         re_path(
-            r"^gnd/(?P<gnd>1[012]?\d{7}[0-9X]|[47]\d{6}-\d|[1-9]\d{0,7}-[0-9X]|3\d{7}[0-9X])$",
-            GNDRedirectView.as_view(),
-            name="gnd-redirect"
+            r"^lemma/(?P<urn>urn:cts:([A-Za-z0-9()+,\-.:=@;$_!*']|%[0-9A-Fa-f]{2})+)", 
+            LemmaDetailView.as_view(),
+            name="urn-redirect"
         ),
         path("lemma/<slug>", LemmaDetailView.as_view(), name="lemma-detail"),
     ],
