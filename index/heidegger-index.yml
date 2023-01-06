@@ -2191,6 +2191,7 @@ Spemann, Hans:
   references:
     GA 29/30:
     - start: 381
+    - start: 280
   type: p
 Spengler, Oswald:
   references:
@@ -2351,6 +2352,7 @@ Tierpsychologie:
   references:
     GA 29/30:
     - start: 278
+    - start: 266
   related:
   - Psychologie
 Tod:
