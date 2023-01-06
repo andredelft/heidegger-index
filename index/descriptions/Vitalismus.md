@@ -1,0 +1,1 @@
+> Vitalismus, teleologische Betrachtung des [[Leben|Lebens]]. Diese Betrachtung des Lebens ist mit ebenso großen Mißverständnissen belastet wie die [[Mechanizismus|mechanistische Auffassung des Lebens]].[@GA 29/30, p. 278]
