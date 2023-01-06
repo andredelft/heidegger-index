@@ -51,6 +51,7 @@ Anthropologie:
     - start: 406
     - start: 408
     - start: 115
+    - start: 283
     SZ:
     - end: 50
       start: 48
@@ -306,9 +307,18 @@ Bezug:
     - start: 285
 Biologie:
   references:
+    GA 29/30:
+    - end: 279
+      start: 277
     SZ:
     - start: 49
       suffix: f
+  related:
+  - Naturwissenschaft
+  - Zoologie
+  - Leben
+  - Mechanizismus
+  - Vitalismus
 Blick der Entschlossenheit:
   references:
     GA 29/30:
@@ -336,7 +346,15 @@ Buytendijk, Frederik Jacobus Johannes:
     GA 29/30:
     - end: 376
       start: 375
+  related:
+  - Tierpsychologie
   type: p
+Chemie:
+  references:
+    GA 29/30:
+    - start: 278
+  related:
+  - Naturwissenschaft
 Christentum:
   references:
     EM:
@@ -391,6 +409,7 @@ Dasein des Menschen:
     - end: 13
       start: 10
       type: r
+    - start: 282
     SvG:
     - start: 179
     - start: 189
@@ -639,6 +658,8 @@ Existenz:
     GA 29/30:
     - start: 257
     - start: 13
+    - start: 279
+    - start: 282
 Farben:
   references:
     WBPh:
@@ -1006,6 +1027,10 @@ Grund:
     - start: 278
     - start: 279
     - start: 280
+Grundbegriffe:
+  references:
+    GA 29/30:
+    - start: 279
 Grundfrage der Metaphysik:
   references:
     EM:
@@ -1256,9 +1281,6 @@ Kant, Immanuel:
     GA 29/30:
     - end: 423
       start: 421
-    - start: 421
-    - end: 423
-      start: 422
     - start: 429
     - end: 431
       start: 430
@@ -1293,6 +1315,7 @@ Kreisbewegung der Philosophie:
     - end: 267
       start: 266
     - start: 276
+      suffix: f
 Kreutzer, Conradin:
   references:
     G:
@@ -1326,11 +1349,17 @@ Langeweile:
     - start: 487
 Leben:
   references:
+    GA 29/30:
+    - end: 279
+      start: 277
+    - start: 282
     WD:
     - start: 278
       suffix: f
     - start: 277
     - start: 283
+  related:
+  - Vitalismus
 Leere:
   references:
     GA 29/30:
@@ -1411,6 +1440,10 @@ Maßgabe:
     SvG:
     - start: 166
     - start: 167
+Mechanizismus:
+  references:
+    GA 29/30:
+    - start: 278
 Meister Eckhart:
   references:
     Sch:
@@ -1464,6 +1497,7 @@ Metaphysik:
       type: r
     - end: 52
       start: 51
+    - start: 279
     SvG:
     - start: 184
     WD:
@@ -1758,6 +1792,8 @@ Philosophie:
       start: 266
     - start: 276
       suffix: f
+    - end: 282
+      start: 280
 Philosophieren:
   references:
     EM:
@@ -1768,6 +1804,8 @@ Philosophieren:
     - end: 7
       start: 6
     - start: 114
+    - start: 257
+      suffix: f
 Physica:
   author: Aristoteles
   metadata:
@@ -1815,8 +1853,10 @@ Physik:
     - start: 1
     GA 29/30:
     - start: 49
+    - start: 278
   related:
   - ἐπιστήμη φυσική
+  - Naturwissenschaft
 Physische:
   references:
     EM:
@@ -1980,12 +2020,19 @@ Scheler, Max:
     GA 29/30:
     - end: 106
       start: 105
+    - start: 283
   type: p
 Schelling, Friedrich von:
   references:
     GA 1:
     - start: 56
   type: p
+Schicksal:
+  references:
+    GA 29/30:
+    - start: 279
+      suffix: f
+    - start: 282
 Schmertz:
   references:
     WD:
@@ -2299,6 +2346,13 @@ Tier:
     - start: 277
     - start: 278
     - start: 280
+Tierpsychologie:
+  parent: Tier
+  references:
+    GA 29/30:
+    - start: 278
+  related:
+  - Psychologie
 Tod:
   references:
     EWI:
@@ -2433,6 +2487,13 @@ Verwandlung:
     GA 29/30:
     - start: 428
       suffix: f
+    - start: 259
+Vitalismus:
+  references:
+    GA 29/30:
+    - start: 278
+  related:
+  - Mechanizismus
 Vom Wesen des Grundes:
   references:
     GA 29/30:
@@ -2579,10 +2640,12 @@ Werden:
     - end: 105
       start: 103
 Wesen des Lebens:
+  parent: Leben
   references:
     GA 29/30:
     - end: 267
       start: 265
+    - start: 283
 Wesen des Menschen:
   references:
     EWI:
@@ -2627,6 +2690,8 @@ Wissenschaft:
     GA 29/30:
     - end: 49
       start: 48
+    - end: 282
+      start: 277
     SvG:
     - start: 181
     - start: 185
@@ -2663,6 +2728,9 @@ Zoologie:
     GA 29/30:
     - end: 277
       start: 274
+    - start: 282
+  related:
+  - Tier
 Zugänglichkeit des Lebendiges:
   references:
     GA 29/30:
@@ -2684,6 +2752,9 @@ Zweideutigkeit des Philosophierens:
     GA 29/30:
     - start: 114
     - start: 31
+    - start: 276
+      suffix: f
+    - start: 258
 Zwiesel:
   references:
     SvG:
