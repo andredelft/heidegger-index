@@ -232,6 +232,10 @@ Bedrängnis im Ganzen:
   references:
     GA 29/30:
     - start: 251
+Befragte:
+  references:
+    GA 29/30:
+    - start: 423
 Befreiung:
   references:
     GA 29/30:
@@ -684,6 +688,10 @@ Frage nach dem Sinn von Sein:
     SZ:
     - end: 8
       start: 1
+Fragen:
+  references:
+    GA 29/30:
+    - start: 423
 Fragment 1 (Heraklit):
   author: Heraklit
   metadata:
@@ -1289,6 +1297,8 @@ Kant, Immanuel:
     - start: 251
     - start: 272
     - start: 287
+  related:
+  - dialektische Schein
   type: p
 Kierkegaard, Søren:
   references:
@@ -1806,6 +1816,7 @@ Philosophieren:
     - start: 114
     - start: 257
       suffix: f
+    - start: 422
 Physica:
   author: Aristoteles
   metadata:
@@ -2844,6 +2855,12 @@ der Feldberg:
     HH:
     - start: 134
   type: g
+dialektische Schein:
+  parent: Schein
+  references:
+    GA 29/30:
+    - end: 422
+      start: 421
 dürftiger Zeit:
   references:
     WD:
