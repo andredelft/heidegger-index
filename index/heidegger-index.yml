@@ -1126,6 +1126,9 @@ Hebel, Johann Peter:
     G:
     - start: 521
     - start: 529
+    GA 16:
+    - start: 117
+      suffix: f
   type: p
 Hegel, Georg Wilhelm Friedrich:
   references:
@@ -1537,6 +1540,11 @@ Mozart, Wolfgang Amadeus:
     - end: 99
       start: 100
   type: p
+Mundart:
+  references:
+    GA 16:
+    - start: 117
+      suffix: f
 Mussolini, Benito:
   references:
     Sch:
@@ -2018,6 +2026,13 @@ Satz vom Grund:
     - start: 158
     - start: 160
     - start: 168
+Schatzkästlein des rheinischen Hausfreundes:
+  author: Hebel, Johann Peter
+  references:
+    GA 16:
+    - start: 117
+      suffix: f
+  type: w
 Schein:
   references:
     EM:
@@ -2238,6 +2253,9 @@ Sprache:
     - start: 60
     - start: 62
     - start: 63
+    GA 16:
+    - start: 117
+      suffix: f
     GA 29/30:
     - start: 442
       suffix: f
