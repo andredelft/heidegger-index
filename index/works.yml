@@ -86,6 +86,26 @@ GA 5:
   publisher-place: Frankfurt am Main
   title: Holzwege
   type: book
+GA 13:
+  id: GA13
+  author:
+    - family: Heidegger
+      given: Martin
+  citation-key: heideggerGA13
+  collection-number: band 13
+  collection-title: Gesamtausgabe
+  editor:
+    - family: Heidegger
+      given: Hermann
+  event-place: Frankfurt am Main
+  issued:
+    - year: 1983
+  language: ger
+  publisher: Vittorio Klostermann
+  publisher-place: Frankfurt am Main
+  title: Aus der Erfahrung des Denkens
+  title-short: GA 13
+  type: book
 GA 16:
   author:
   - family: Heidegger
