@@ -1126,7 +1126,7 @@ Hebel, Johann Peter:
     G:
     - start: 521
     - start: 529
-    GA 16:
+    GA 13:
     - start: 117
       suffix: f
   type: p
@@ -1542,7 +1542,7 @@ Mozart, Wolfgang Amadeus:
   type: p
 Mundart:
   references:
-    GA 16:
+    GA 13:
     - start: 117
       suffix: f
 Mussolini, Benito:
@@ -2029,7 +2029,7 @@ Satz vom Grund:
 Schatzkästlein des rheinischen Hausfreundes:
   author: Hebel, Johann Peter
   references:
-    GA 16:
+    GA 13:
     - start: 117
       suffix: f
   type: w
@@ -2253,7 +2253,7 @@ Sprache:
     - start: 60
     - start: 62
     - start: 63
-    GA 16:
+    GA 13:
     - start: 117
       suffix: f
     GA 29/30:
