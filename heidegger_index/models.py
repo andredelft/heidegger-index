@@ -1,7 +1,7 @@
-from turtle import Turtle
 import requests
 from bs4 import BeautifulSoup
 from pyCTS import CTS_URN
+import re
 
 from django.db import models
 from django.conf import settings
@@ -11,6 +11,7 @@ from django.core.validators import URLValidator
 from heidegger_index.constants import LEMMA_TYPES, REF_TYPES
 from heidegger_index.utils import gen_sort_key, slugify
 
+PAGE_RANGE_REGEX = "^(?P<start>\d{1,4})-?(?P<end>\d{0,4})(?P<suffix>[f]{0,2})$"
 
 class Work(models.Model):
     key = models.CharField(max_length=8, unique=True)
@@ -57,10 +58,10 @@ class Lemma(models.Model):
     type = models.CharField(max_length=1, null=True, choices=TYPES.items())
     description = models.TextField(null=True)
     urn = models.URLField(
-        max_length=100, 
-        null=True, 
-        validators=[URLValidator(schemes=['urn'])], 
-        unique=True
+        max_length=100,
+        null=True,
+        validators=[URLValidator(schemes=["urn"])],
+        unique=True,
     )
     perseus_content = models.TextField(null=True)
     sort_key = models.CharField(max_length=100, null=True, unique=True)
@@ -94,9 +95,12 @@ class Lemma(models.Model):
             if not lemma_urn.passage_component:
                 self.perseus_content = None
             else:
-                p_link = 'https://scaife-cts.perseus.org/api/cts?request=GetPassage&urn=' + self.urn
+                p_link = (
+                    "https://scaife-cts.perseus.org/api/cts?request=GetPassage&urn="
+                    + self.urn
+                )
                 p_response = requests.get(p_link)
-                parsed_xml = BeautifulSoup(p_response.text, 'html.parser')
+                parsed_xml = BeautifulSoup(p_response.text, "html.parser")
                 self.perseus_content = parsed_xml.p.contents[-1].string
 
     class Meta:
@@ -131,21 +135,42 @@ class PageReference(models.Model):
             page = int(page)
         except TypeError:
             raise TypeError
-        
+
         if self.end:
-            if page >= self.start and page <= self.end :
+            if page >= self.start and page <= self.end:
                 return True
         if not self.end and self.start:
             if page == self.start:
                 return True
-        elif self.suffix == "f" and page == self.start + 1:
-            return True
-        elif self.suffix == "ff" and page == self.start + 2:
-            return True
+            elif self.suffix == "f" and page == self.start + 1:
+                return True
+            elif self.suffix == "ff" and page == self.start + 2:
+                return True
         else:
             return False
 
-    # TODO: Add filter for a range of pages.
+    def refers_to_page_range(self, page_range):
+        if not type(page_range) == dict:
+            page_range = re.fullmatch(PAGE_RANGE_REGEX, page_range)
+
+            if not page_range:
+                raise ValueError("Not a valid page range given.")
+
+        page_start = int(page_range["start"])
+
+        if not page_range["end"] and page_range["suffix"]:
+            page_end = int(page_range["start"]) + len(page_range["suffix"])
+        elif not page_range["end"] and not page_range["suffix"]:
+            page_end = int(page_range["start"])
+        else:
+            page_end = int(page_range["end"])
+        for i in range(page_start, page_end + 1):
+            if self.refers_to_page(i):
+                return True
+            else:
+                continue
+
+        return False
 
     class Meta:
         ordering = ["lemma", "work", "start", "end", "suffix"]
