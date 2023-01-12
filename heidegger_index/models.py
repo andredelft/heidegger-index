@@ -132,8 +132,12 @@ class PageReference(models.Model):
         except TypeError:
             raise TypeError
         
-        if page >= self.start and page < self.end or page == self.end :
-            return True
+        if self.end:
+            if page >= self.start and page <= self.end :
+                return True
+        if not self.end and self.start:
+            if page == self.start:
+                return True
         elif self.suffix == "f" and page == self.start + 1:
             return True
         elif self.suffix == "ff" and page == self.start + 2:

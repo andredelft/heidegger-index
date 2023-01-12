@@ -9,8 +9,9 @@ namespaced_patterns = (
         path("", index_view, name="home"),
         path("work/<slug>.md", WorkDetailViewMD.as_view(content_type='text/markdown'), name="work-md-export"),
         path("lemma/<slug>.md", LemmaDetailViewMD.as_view(content_type='text/markdown'), name="lemma-md-export"),
-        path("work/<slug>/<int:page>", WorkDetailView.as_view(), name="work-detail-select-pages"),
         path("work/<slug>", WorkDetailView.as_view(), name="work-detail"),
+        path("work/<slug>/<int:page>", WorkDetailView.as_view(), name="work-detail-select-pages"),
+
         re_path(
             r"^lemma/(?P<urn>urn:cts:([A-Za-z0-9()+,\-.:=@;$_!*']|%[0-9A-Fa-f]{2})+)$", 
             URNRedirectView.as_view(),
