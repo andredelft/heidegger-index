@@ -67,8 +67,10 @@ class WorkDetailView(DetailView):
                 if ref.refers_to_page(self.kwargs["page"]):
                     page_refs_with_page.append(ref.id)
             
+            context["page_filter"] = True
             page_refs = PageReference.objects.filter(id__in=page_refs_with_page)
         except KeyError:
+            context["page_filter"] = False
             page_refs = PageReference.objects.filter(work__in=[work, *work.children.all()])
         context["term_list"] = page_refs.filter(lemma__type=None)
         context["person_list"] = page_refs.filter(lemma__type="p")
