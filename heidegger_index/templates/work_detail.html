@@ -6,7 +6,9 @@
 {% if not page_filter %}{% include '_export_button.html' with type="work" %}{% endif %}
 {% include '_home_button.html' %}
 
+{% if page_filter %}<a href="{% url 'index:work-detail' work.slug %}">{% endif %}
 {% include 'components/h1.html' with text=work.csl_json.title class="clear-right italic" only %}
+{% if page_filter %}</a>{% endif %}
 
 {% if work.parent %}
 <p class="{{ body_text }}">Appears in <a href="{% url 'index:work-detail' work.parent.slug %}" class="{{ hidden_link_decoration }} italic">{{ work.parent.title }}</a></p>
