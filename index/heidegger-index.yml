@@ -676,6 +676,8 @@ Existenz:
     - start: 282
     - end: 428
       start: 426
+    - end: 433
+      start: 432
 Farben:
   references:
     WBPh:
@@ -2545,6 +2547,14 @@ Verwandlung:
     - start: 428
       suffix: f
     - start: 259
+Verwandlung des Daseins:
+  parent: Dasein
+  references:
+    GA 29/30:
+    - start: 433
+    - start: 423
+    - start: 428
+      suffix: ff
 Vitalismus:
   references:
     GA 29/30:
@@ -2573,6 +2583,7 @@ Vorhandenen:
     - end: 428
       start: 427
     - start: 431
+    - start: 432
 Vorstellen:
   references:
     GA 29/30:
@@ -2935,6 +2946,8 @@ formale Anzeige:
     - end: 431
       start: 421
     - start: 441
+    - start: 432
+    - start: 435
 fragen:
   references:
     GA 29/30:
@@ -3138,8 +3151,9 @@ vulgäre Verstand:
     - end: 428
       start: 426
     - start: 422
-    - end: 431
+    - end: 433
       start: 430
+    - start: 434
 weil:
   references:
     SvG:
