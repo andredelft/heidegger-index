@@ -15,6 +15,13 @@ Abwesen:
   references:
     WD:
     - start: 271
+Adversus mathematicos VII, 16:
+  metadata:
+    cts_urn: urn:cts:greekLit:tlg0544.tlg002:7.16
+  references:
+    GA 29/30:
+    - start: 55
+  type: w
 Alltäglichkeit:
   references:
     GA 29/30:
@@ -718,6 +725,14 @@ Fragment 1 (Heraklit):
     WBPh:
     - start: 277
   type: w
+Fragment 108 (Heraklit):
+  author: Heraklit
+  metadata:
+    cts_urn: urn:cts:greekLit:tlg0626.tlg002:108
+  references:
+    GA 29/30:
+    - start: 34
+  type: w
 Fragment 112 (Heraklit):
   author: Heraklit
   metadata:
@@ -808,7 +823,7 @@ Fragment 93 (Heraklit):
 Fragment VIII (Parmenides):
   author: Parmenides
   metadata:
-    cts_urn: urn:cts:greekLit:tlg1562.tlg002.1st1K-grc1:7
+    cts_urn: urn:cts:greekLit:tlg1562.tlg002:7
   references:
     EM:
     - start: 103
