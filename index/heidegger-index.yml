@@ -2089,6 +2089,10 @@ Schein:
     GA 29/30:
     - end: 430
       start: 429
+    - start: 16
+      suffix: f
+    - start: 19
+    - start: 21
     WBPh:
     - start: 268
     - start: 269
@@ -2858,6 +2862,10 @@ Zweideutigkeit des Philosophierens:
     - start: 276
       suffix: f
     - start: 258
+    - end: 17
+      start: 15
+    - end: 20
+      start: 17
 Zwiesel:
   references:
     SvG:
