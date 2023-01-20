@@ -57,6 +57,46 @@ def match_lemmata(search_term, index, max_l_dist=2, include_search_term=True):
     return matches
 
 
+def contains_page(reference: dict, page: int) -> bool:
+
+    if reference["end"]:
+        if page >= reference["start"] and page <= reference["end"]:
+            return True
+    if not reference["end"] and reference["start"]:
+        if page == reference["start"]:
+            return True
+        elif reference["suffix"] == "f" and page == reference["start"] + 1:
+            return True
+        elif reference["suffix"] == "ff" and page == reference["start"] + 2:
+            return True
+
+    return False
+
+
+def contains_page_range(reference: dict, page_range) -> bool:
+    if not type(page_range) == dict:
+        page_range = re.fullmatch(REF_REGEX, page_range)
+
+        if not page_range:
+            raise ValueError("Not a valid page range given.")
+
+    page_start = int(page_range["start"])
+
+    if not page_range["end"] and page_range["suffix"]:
+        page_end = int(page_range["start"]) + len(page_range["suffix"])
+    elif not page_range["end"] and not page_range["suffix"]:
+        page_end = int(page_range["start"])
+    else:
+        page_end = int(page_range["end"])
+    for i in range(page_start, page_end + 1):
+        if contains_page(reference, i):
+            return True
+        else:
+            continue
+
+    return False
+
+
 def slugify(value):
     """Slugify function extended with `unidecode` for better unicode representation"""
     return _slugify(unidecode(value))

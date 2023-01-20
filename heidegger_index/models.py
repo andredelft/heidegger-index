@@ -9,8 +9,13 @@ from django_extensions.db.fields import AutoSlugField
 from django.core.validators import URLValidator
 
 from heidegger_index.constants import LEMMA_TYPES, REF_TYPES
-from heidegger_index.utils import gen_sort_key, slugify, REF_REGEX
-
+from heidegger_index.utils import (
+    gen_sort_key,
+    slugify,
+    REF_REGEX,
+    contains_page,
+    contains_page_range,
+)
 
 
 class Work(models.Model):
@@ -130,45 +135,9 @@ class PageReference(models.Model):
         else:
             return f"{self.start}"
 
-    def refers_to_page(self, page):
-        try:
-            page = int(page)
-        except TypeError:
-            raise TypeError
-
-        if self.end:
-            if page >= self.start and page <= self.end:
-                return True
-        if not self.end and self.start:
-            if page == self.start:
-                return True
-            elif self.suffix == "f" and page == self.start + 1:
-                return True
-            elif self.suffix == "ff" and page == self.start + 2:
-                return True
-
-        return False
-
-    def refers_to_page_range(self, page_range):
-        if not type(page_range) == dict:
-            page_range = re.fullmatch(REF_REGEX, page_range)
-
-            if not page_range:
-                raise ValueError("Not a valid page range given.")
-
-        page_start = int(page_range["start"])
-
-        if not page_range["end"] and page_range["suffix"]:
-            page_end = int(page_range["start"]) + len(page_range["suffix"])
-        elif not page_range["end"] and not page_range["suffix"]:
-            page_end = int(page_range["start"])
-        else:
-            page_end = int(page_range["end"])
-        for i in range(page_start, page_end + 1):
-            if self.refers_to_page(i):
-                return True
-            else:
-                continue
+    def refers_to_page_range(self, page_range: dict) -> bool:
+        if contains_page_range(self.__dict__, page_range):
+            return True
 
         return False
 
