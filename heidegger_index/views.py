@@ -4,9 +4,6 @@ from django.views.generic.detail import DetailView
 from django.shortcuts import redirect
 from django.conf import settings
 
-import requests
-
-
 from heidegger_index.models import Lemma, PageReference, Work, get_alphabet
 
 
