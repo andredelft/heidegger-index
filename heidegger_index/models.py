@@ -1,7 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
 from pyCTS import CTS_URN
-import re
 
 from django.db import models
 from django.conf import settings
@@ -12,8 +11,6 @@ from heidegger_index.constants import LEMMA_TYPES, REF_TYPES
 from heidegger_index.utils import (
     gen_sort_key,
     slugify,
-    REF_REGEX,
-    contains_page,
     contains_page_range,
 )
 
