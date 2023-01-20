@@ -8,6 +8,8 @@ PREFIXES = ["der", "die", "das", "den"]
 
 PREFIX_FILTER = re.compile(rf'^(?:{"|".join(PREFIXES)})\s+')
 
+REF_REGEX = re.compile(r"^(?P<start>\d+)(?:-(?P<end>\d+)|(?P<suffix>f{1,2})\.?)?$")
+
 
 def gen_sort_key(value):
     # Strip surrounding whitespaces

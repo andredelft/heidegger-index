@@ -9,9 +9,9 @@ from django_extensions.db.fields import AutoSlugField
 from django.core.validators import URLValidator
 
 from heidegger_index.constants import LEMMA_TYPES, REF_TYPES
-from heidegger_index.utils import gen_sort_key, slugify
+from heidegger_index.utils import gen_sort_key, slugify, REF_REGEX
 
-PAGE_RANGE_REGEX = "^(?P<start>\d{1,4})-?(?P<end>\d{0,4})(?P<suffix>[f]{0,2})$"
+
 
 class Work(models.Model):
     key = models.CharField(max_length=8, unique=True)
@@ -146,12 +146,12 @@ class PageReference(models.Model):
                 return True
             elif self.suffix == "ff" and page == self.start + 2:
                 return True
-        else:
-            return False
+
+        return False
 
     def refers_to_page_range(self, page_range):
         if not type(page_range) == dict:
-            page_range = re.fullmatch(PAGE_RANGE_REGEX, page_range)
+            page_range = re.fullmatch(REF_REGEX, page_range)
 
             if not page_range:
                 raise ValueError("Not a valid page range given.")

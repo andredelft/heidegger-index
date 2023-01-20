@@ -8,7 +8,7 @@ from tqdm import tqdm
 from itertools import combinations
 from pyCTS import CTS_URN
 
-from heidegger_index.utils import match_lemmata
+from heidegger_index.utils import match_lemmata, REF_REGEX
 from heidegger_index.constants import (
     LEMMA_TYPES,
     PERSON,
@@ -32,7 +32,6 @@ CITEPROC_ENDPOINT = "https://labs.brill.com/citeproc"
 
 yaml.warnings({"YAMLLoadWarning": False})
 
-REF_REGEX = re.compile(r"^(?P<start>\d+)(?:-(?P<end>\d+)|(?P<suffix>f{1,2})\.?)?$")
 REF_INTFIELDS = {"start", "end"}
 
 

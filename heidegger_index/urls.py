@@ -2,6 +2,7 @@ from django.urls import include, path, re_path
 from django.views.generic import RedirectView
 from django.conf import settings
 
+from heidegger_index.utils import REF_REGEX
 from heidegger_index.views import (
     LemmaDetailView,
     index_view,
@@ -11,21 +12,22 @@ from heidegger_index.views import (
     URNRedirectView,
 )
 
+
 namespaced_patterns = (
     [
         path("", index_view, name="home"),
+        path(
+            "work/<slug:slug>.md",
+            WorkDetailViewMD.as_view(content_type="text/markdown"),
+            name="work-md-export",
+        ),
         path(
             "work/<slug:slug>/",
             include(
                 [
                     path("", WorkDetailView.as_view(), name="work-detail"),
-                    path(
-                        ".md",
-                        WorkDetailViewMD.as_view(content_type="text/markdown"),
-                        name="work-md-export",
-                    ),
                     re_path(
-                        r"^(?P<page_range>(?P<page_start>[0-9]{1,4})-?(?P<page_end>[0-9]{0,4})(?P<suffix>[f]{0,2}))$",
+                        r"(?P<page_range>" + REF_REGEX.pattern + ")",
                         WorkDetailView.as_view(),
                         name="work-detail-select-pages",
                     ),
