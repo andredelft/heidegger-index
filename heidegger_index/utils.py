@@ -75,7 +75,7 @@ def contains_page(reference: dict, page: int) -> bool:
 
 def contains_page_range(reference: dict, page_range) -> bool:
     if not type(page_range) == dict:
-        page_range = re.fullmatch(REF_REGEX, page_range)
+        page_range = re.fullmatch(REF_REGEX, page_range).groupdict()
 
         if not page_range:
             raise ValueError("Not a valid page range given.")
