@@ -59,15 +59,15 @@ def match_lemmata(search_term, index, max_l_dist=2, include_search_term=True):
 
 def contains_page(reference: dict, page: int) -> bool:
 
-    if reference["end"]:
-        if page >= reference["start"] and page <= reference["end"]:
+    if reference.get("end"):
+        if page >= reference.get("start") and page <= reference.get("end"):
             return True
-    if not reference["end"] and reference["start"]:
-        if page == reference["start"]:
+    if not reference.get("end") and reference.get("start"):
+        if page == reference.get("start"):
             return True
-        elif reference["suffix"] == "f" and page == reference["start"] + 1:
+        elif reference.get("suffix") == "f" and page == reference.get("start") + 1:
             return True
-        elif reference["suffix"] == "ff" and page == reference["start"] + 2:
+        elif reference.get("suffix") == "ff" and page == reference.get("start") + 2:
             return True
 
     return False
@@ -80,14 +80,14 @@ def contains_page_range(reference: dict, page_range) -> bool:
         if not page_range:
             raise ValueError("Not a valid page range given.")
 
-    page_start = int(page_range["start"])
+    page_start = int(page_range.get("start"))
 
-    if not page_range["end"] and page_range["suffix"]:
-        page_end = int(page_range["start"]) + len(page_range["suffix"])
-    elif not page_range["end"] and not page_range["suffix"]:
+    if not page_range.get("end") and page_range.get("suffix"):
+        page_end = int(page_range["start"]) + len(page_range.get("suffix"))
+    elif not page_range.get("end") and not page_range.get("suffix"):
         page_end = int(page_range["start"])
     else:
-        page_end = int(page_range["end"])
+        page_end = int(page_range.get("end"))
     for i in range(page_start, page_end + 1):
         if contains_page(reference, i):
             return True
