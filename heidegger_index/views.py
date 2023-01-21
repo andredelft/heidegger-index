@@ -1,14 +1,11 @@
 from django.http import Http404
 from django.shortcuts import render, get_object_or_404
 from django.views.generic.detail import DetailView
-from django.views.generic.base import RedirectView
 from django.shortcuts import redirect
 from django.conf import settings
 
-import requests
-
-
 from heidegger_index.models import Lemma, PageReference, Work, get_alphabet
+
 
 def index_view(request):
     alphabet = get_alphabet()
@@ -59,8 +56,22 @@ class WorkDetailView(DetailView):
         else:
             context["work_lemma"] = work_lemma
 
-        page_refs = PageReference.objects.filter(work__in=[work, *work.children.all()])
-        context["term_list"] = page_refs.filter(lemma__type=None) | page_refs.filter(lemma__type="g")
+        try:
+            page_refs_with_page = []
+            for ref in PageReference.objects.filter(
+                work__in=[work, *work.children.all()]
+            ):
+                if ref.refers_to_page_range(self.kwargs["page_range"]):
+                    page_refs_with_page.append(ref.id)
+
+            context["page_filter"] = True
+            page_refs = PageReference.objects.filter(id__in=page_refs_with_page)
+        except KeyError:
+            context["page_filter"] = False
+            page_refs = PageReference.objects.filter(
+                work__in=[work, *work.children.all()]
+            )
+        context["term_list"] = page_refs.filter(lemma__type=None)
         context["person_list"] = page_refs.filter(lemma__type="p")
         context["work_list"] = page_refs.filter(lemma__type="w")
         return context
@@ -71,8 +82,10 @@ class WorkDetailView(DetailView):
         else:
             return super().render_to_response(context, **kwargs)
 
+
 class WorkDetailViewMD(WorkDetailView):
     template_name = "markdown/work_detail.md"
+
 
 class LemmaDetailView(DetailView):
     model = Lemma
@@ -101,15 +114,17 @@ class LemmaDetailView(DetailView):
             context["author_short"] = lemma.value.split(",")[0]
         return context
 
+
 class LemmaDetailViewMD(LemmaDetailView):
     template_name = "markdown/lemma_detail.md"
-    
+
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         lemma = context["lemma"]
         return context
-        
+
+
 class URNRedirectView(LemmaDetailView):
     def get(self, *args, **kwargs):
-        lemma = get_object_or_404(Lemma, urn=kwargs['urn'])
+        lemma = get_object_or_404(Lemma, urn=kwargs["urn"])
         return redirect("index:lemma-detail", slug=lemma.slug)

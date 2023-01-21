@@ -8,7 +8,7 @@ from tqdm import tqdm
 from itertools import combinations
 from pyCTS import CTS_URN
 
-from heidegger_index.utils import match_lemmata
+from heidegger_index.utils import match_lemmata, contains_page_range, REF_REGEX
 from heidegger_index.constants import (
     LEMMA_TYPES,
     PERSON,
@@ -32,11 +32,12 @@ CITEPROC_ENDPOINT = "https://labs.brill.com/citeproc"
 
 yaml.warnings({"YAMLLoadWarning": False})
 
-REF_REGEX = re.compile(r"^(?P<start>\d+)(?:-(?P<end>\d+)|(?P<suffix>f{1,2})\.?)?$")
 REF_INTFIELDS = {"start", "end"}
 
 
-def add_ref(lemma, work, ref, lemma_type=None, ref_type=None, betacode=False):
+def add_ref(
+    lemma, work, ref, lemma_type=None, ref_type=None, betacode=False, force=False
+):
 
     if isinstance(ref, list):
         # Allow ref to be a list, call add_ref for each item and terminate function
@@ -106,19 +107,40 @@ def add_ref(lemma, work, ref, lemma_type=None, ref_type=None, betacode=False):
         if refs.get(work):
             # Only appends reference if it does not already exist in index.
             r = refs[work]
-            # Checks whether exact reference is already in the index.
-            if ref_dict in r:
-                raise click.BadParameter(f"Reference already exists for this lemma.")
-            # UNCOMMENT THIS IF YOU WANT TO PREVENT NEW REFERENCES BEING ADDED IF "WHOLE"
-            # IS TRUE.
-            # Checks whether the work as a whole is not already a reference for the lemma.
-            #
-            # elif {"whole": True} in r:
-            #     raise click.BadParameter(
-            #         f"This work as a whole is already a reference for this lemma."
-            #     )
-            else:
-                refs[work].append(ref_dict)
+
+            if not force:
+                # Checks whether exact reference is already in the index.
+                if ref_dict in r:
+                    raise click.BadParameter(
+                        f"Reference already exists for this lemma."
+                        f"\nUse option '--force' to ignore this warning and force adding '{ref}' to '{lemma}'."
+                        f"\nThis will lead to duplicate references in the index."
+                    )
+                # UNCOMMENT THIS IF YOU WANT TO PREVENT NEW REFERENCES BEING ADDED IF "WHOLE"
+                # IS TRUE.
+                # Checks whether the work as a whole is not already a reference for the lemma.
+                #
+                # elif {"whole": True} in r:
+                #     raise click.BadParameter(
+                #         f"This work as a whole is already a reference for this lemma."
+                #     )
+
+                else:
+                    # Check whether pages are allready all in the index
+                    for i in r:
+                        if contains_page_range(i, ref_dict):
+                            if i.get("end"):
+                                dash = "-"
+                            else:
+                                dash = ""
+                            raise click.BadParameter(
+                                f"Reference '{i.get('start')}{dash}{i.get('end', '')}{i.get('suffix', '')}' already exists for this lemma."
+                                f"\nUse option '--force' to ignore this warning and force adding '{ref}' to '{lemma}'."
+                                f"\nThis will lead to pages occuring multiple times in seperate references."
+                            )
+
+            refs[work].append(ref_dict)
+
         else:
             refs[work] = [ref_dict]
             if lemma_type:
