@@ -147,7 +147,6 @@ Aristoteles:
     - start: 292
     - start: 297
     - start: 298
-    - start: 299
   type: p
 Atomenergie:
   references:
@@ -928,7 +927,6 @@ Gesang:
   references:
     WD:
     - start: 274
-    - start: 274
     - start: 275
     - start: 285
 Geschichte der Metaphysik:
@@ -1233,7 +1231,6 @@ Herstellen:
     WBPh:
     - start: 272
     - start: 279
-    - start: 283
     - start: 283
     - start: 287
     - start: 288
@@ -2171,8 +2168,6 @@ Seiende im Ganzen:
     WD:
     - start: 276
     - start: 279
-    - start: 276
-    - start: 279
     - start: 282
     - start: 283
   related:
@@ -2315,7 +2310,6 @@ Sprache:
     - start: 442
       suffix: f
     WD:
-    - start: 274
     - start: 274
 Sprachgeist:
   references:
@@ -2734,7 +2728,6 @@ Weltphänomen:
     GA 29/30:
     - start: 450
       suffix: f
-    - start: 483
     - start: 483
 Weltzeit:
   references:
@@ -3279,7 +3272,6 @@ wesentliche Möglichkeit des Seins:
     - end: 295
       start: 293
     - start: 297
-    - start: 299
     - start: 299
   related:
   - Aussehen
