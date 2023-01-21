@@ -15,9 +15,11 @@ additionalProperties:
     references:
       type: object
       description: References object
+      uniqueItems: True
       additionalProperties:
         type: array
         description: List of the page_refs
+        uniqueItems: True
         items:
           type: object
           properties:
@@ -56,6 +58,7 @@ additionalProperties:
     related:
       type: array
       description: List of related lemmata
+      uniqueItems: True
       items:
         type: string
     parent:
