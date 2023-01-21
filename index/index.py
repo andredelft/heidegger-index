@@ -1,7 +1,6 @@
 import yaml
 import requests
 import click
-import regex as re
 from pathlib import Path
 from betacode.conv import beta_to_uni
 from tqdm import tqdm
