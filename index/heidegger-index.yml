@@ -1213,6 +1213,11 @@ Heimweh:
     - start: 33
     - start: 28
 Herakles:
+<<<<<<< Updated upstream
+=======
+  metadata:
+    gnd: '118639552'
+>>>>>>> Stashed changes
   references:
     WD:
     - start: 269
