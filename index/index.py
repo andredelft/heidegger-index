@@ -275,7 +275,7 @@ def add_metadata(md_type, lemma, lemma_type, md_value=None, overwrite=False):
             # Validation: urn is defined well for the type.
             if cts_urn.work:
                 raise click.BadParameter(
-                    f"'{urn}' contains a work namespace. Only define up to textgroup for authors."
+                    f"'{cts_urn}' contains a work namespace. Only define up to textgroup for authors."
                 )
         if lemma_type == WORK:
             # Validation: urn is defined well for the type.

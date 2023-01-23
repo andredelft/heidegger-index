@@ -17,7 +17,7 @@ Abwesen:
     - start: 271
 Adversus mathematicos VII, 16:
   metadata:
-    cts_urn: urn:cts:greekLit:tlg0544.tlg002:7.16
+    urn: urn:cts:greekLit:tlg0544.tlg002:7.16
   references:
     GA 29/30:
     - start: 55
@@ -738,7 +738,7 @@ Fragment 1 (Heraklit):
 Fragment 108 (Heraklit):
   author: Heraklit
   metadata:
-    cts_urn: urn:cts:greekLit:tlg0626.tlg002:108
+    urn: urn:cts:greekLit:tlg0626.tlg002:108
   references:
     GA 29/30:
     - start: 34
@@ -833,7 +833,7 @@ Fragment 93 (Heraklit):
 Fragment VIII (Parmenides):
   author: Parmenides
   metadata:
-    cts_urn: urn:cts:greekLit:tlg1562.tlg002:7
+    urn: urn:cts:greekLit:tlg1562.tlg002:7
   references:
     EM:
     - start: 103
@@ -1213,11 +1213,8 @@ Heimweh:
     - start: 33
     - start: 28
 Herakles:
-<<<<<<< Updated upstream
-=======
   metadata:
     gnd: '118639552'
->>>>>>> Stashed changes
   references:
     WD:
     - start: 269
