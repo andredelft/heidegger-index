@@ -4,6 +4,8 @@ from django.views.generic.detail import DetailView
 from django.shortcuts import redirect
 from django.conf import settings
 
+from heidegger_index.constants import GND, URN
+
 from heidegger_index.models import Lemma, PageReference, Work, get_alphabet
 
 
@@ -126,5 +128,11 @@ class LemmaDetailViewMD(LemmaDetailView):
 
 class URNRedirectView(LemmaDetailView):
     def get(self, *args, **kwargs):
-        lemma = get_object_or_404(Lemma, urn=kwargs["urn"])
+        lemma = get_object_or_404(Lemma, urn=kwargs['urn'])
+        return redirect("index:lemma-detail", slug=lemma.slug)
+
+
+class GNDRedirectView(LemmaDetailView):
+    def get(self, *args, **kwargs):
+        lemma = get_object_or_404(Lemma, gnd=kwargs['gnd'])
         return redirect("index:lemma-detail", slug=lemma.slug)

@@ -11,6 +11,7 @@ from django.conf import settings
 from heidegger_index.models import Work, Lemma, PageReference
 from heidegger_index.utils import gen_sort_key
 from heidegger_index.md import convert_md
+from heidegger_index.constants import GND, URN
 
 yaml.warnings({"YAMLLoadWarning": False})
 
@@ -114,7 +115,8 @@ class Command(BaseCommand):
                 id=i,
                 value=value,
                 type=data.get("type", None),
-                urn=md.get("cts_urn", None),
+                urn=md.get(URN, None),
+                gnd=md.get(GND, None)
             )
             if perform_external_calls:
                 try:

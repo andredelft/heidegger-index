@@ -3,6 +3,10 @@ WORK = "w"
 GEOGRAPHICAL = "g"
 LEMMA_TYPES = {PERSON: "person", WORK: "work", GEOGRAPHICAL: "geographical"}
 
+URN = "urn"
+GND = "gnd"
+METADATA_TYPES = {URN: "urn", GND: "gnd"}
+
 RELATED = "r"
 REF_TYPES = {RELATED: "related"}
 

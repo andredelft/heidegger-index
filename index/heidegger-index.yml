@@ -89,7 +89,7 @@ Anwesen:
     - start: 271
 Aristoteles:
   metadata:
-    cts_urn: urn:cts:greekLit:tlg0086
+    urn: urn:cts:greekLit:tlg0086
   references:
     EM:
     - start: 18
@@ -221,6 +221,8 @@ Axiom:
     SvG:
     - start: 174
 Bachofen, Johann Jakob:
+  metadata:
+    gnd: '118505645'
   references:
     GA 29/30:
     - start: 105
@@ -354,6 +356,8 @@ Brod und Wein:
       start: 271
   type: w
 Buytendijk, Frederik Jacobus Johannes:
+  metadata:
+    gnd: '118845195'
   references:
     GA 29/30:
     - end: 376
@@ -440,7 +444,7 @@ Daseinsgeschichte:
 De Interpretatione:
   author: Aristoteles
   metadata:
-    cts_urn: urn:cts:greekLit:tlg0086.tlg017
+    urn: urn:cts:greekLit:tlg0086.tlg017
   references:
     EM:
     - start: 62
@@ -453,7 +457,7 @@ De Interpretatione:
 De anima:
   author: Aristoteles
   metadata:
-    cts_urn: urn:cts:greekLit:tlg0086.tlg002
+    urn: urn:cts:greekLit:tlg0086.tlg002
   references:
     GA 29/30:
     - end: 455
@@ -462,7 +466,7 @@ De anima:
 De generatione et corruptione:
   author: Aristoteles
   metadata:
-    cts_urn: urn:cts:greekLit:tlg0086.tlg013
+    urn: urn:cts:greekLit:tlg0086.tlg013
   references:
     WBPh:
     - start: 293
@@ -581,11 +585,15 @@ Dionysos:
     - start: 271
   type: p
 Dostojevski:
+  metadata:
+    gnd: '118527053'
   references:
     GA 1:
     - start: 56
   type: p
 Driesch, Hans:
+  metadata:
+    gnd: '118527479'
   references:
     GA 29/30:
     - end: 381
@@ -722,7 +730,7 @@ Fragen:
 Fragment 1 (Heraklit):
   author: Heraklit
   metadata:
-    cts_urn: urn:cts:greekLit:tlg0626.tlg002:1
+    urn: urn:cts:greekLit:tlg0626.tlg002:1
   references:
     WBPh:
     - start: 277
@@ -738,7 +746,7 @@ Fragment 108 (Heraklit):
 Fragment 112 (Heraklit):
   author: Heraklit
   metadata:
-    cts_urn: urn:cts:greekLit:tlg0626.tlg002:112
+    urn: urn:cts:greekLit:tlg0626.tlg002:112
   references:
     GA 29/30:
     - start: 41
@@ -747,7 +755,7 @@ Fragment 112 (Heraklit):
 Fragment 123 (Heraklit):
   author: Heraklit
   metadata:
-    cts_urn: urn:cts:greekLit:tlg0626.tlg002:123
+    urn: urn:cts:greekLit:tlg0626.tlg002:123
   references:
     GA 29/30:
     - start: 41
@@ -759,7 +767,7 @@ Fragment 123 (Heraklit):
 Fragment 2 (Heraklit):
   author: Heraklit
   metadata:
-    cts_urn: urn:cts:greekLit:tlg0626.tlg002:2
+    urn: urn:cts:greekLit:tlg0626.tlg002:2
   references:
     WBPh:
     - start: 277
@@ -767,7 +775,7 @@ Fragment 2 (Heraklit):
 Fragment 29 (Heraklit):
   author: Heraklit
   metadata:
-    cts_urn: urn:cts:greekLit:tlg0626.tlg002:29
+    urn: urn:cts:greekLit:tlg0626.tlg002:29
   references:
     EM:
     - start: 111
@@ -775,7 +783,7 @@ Fragment 29 (Heraklit):
 Fragment 30 (Heraklit):
   author: Heraklit
   metadata:
-    cts_urn: urn:cts:greekLit:tlg0626.tlg002:30
+    urn: urn:cts:greekLit:tlg0626.tlg002:30
   references:
     GA 29/30:
     - start: 47
@@ -785,7 +793,7 @@ Fragment 30 (Heraklit):
 Fragment 52 (Heraklit):
   author: Heraklit
   metadata:
-    cts_urn: urn:cts:greekLit:tlg0626.tlg002:52
+    urn: urn:cts:greekLit:tlg0626.tlg002:52
   references:
     SvG:
     - start: 168
@@ -799,7 +807,7 @@ Fragment 52 (Heraklit):
 Fragment 53 (Heraklit):
   author: Heraklit
   metadata:
-    cts_urn: urn:cts:greekLit:tlg0626.tlg002:53
+    urn: urn:cts:greekLit:tlg0626.tlg002:53
   references:
     EM:
     - start: 66
@@ -807,7 +815,7 @@ Fragment 53 (Heraklit):
 Fragment 54 (Heraklit):
   author: Heraklit
   metadata:
-    cts_urn: urn:cts:greekLit:tlg0626.tlg002:54
+    urn: urn:cts:greekLit:tlg0626.tlg002:54
   references:
     GA 29/30:
     - start: 44
@@ -815,7 +823,7 @@ Fragment 54 (Heraklit):
 Fragment 93 (Heraklit):
   author: Heraklit
   metadata:
-    cts_urn: urn:cts:greekLit:tlg0626.tlg002:93
+    urn: urn:cts:greekLit:tlg0626.tlg002:93
   references:
     GA 29/30:
     - start: 40
@@ -1008,6 +1016,8 @@ Gleichgültigkeit:
       type: r
     - start: 115
 Goethe, Johann Wolfgang von:
+  metadata:
+    gnd: '118540238'
   references:
     SvG:
     - start: 181
@@ -1157,6 +1167,8 @@ Haben der Welt:
     - end: 263
       start: 262
 Hebel, Johann Peter:
+  metadata:
+    gnd: '118547453'
   references:
     G:
     - start: 521
@@ -1168,6 +1180,8 @@ Hebel, Johann Peter:
     - start: 530
   type: p
 Hegel, Georg Wilhelm Friedrich:
+  metadata:
+    gnd: '118547739'
   references:
     GA 1:
     - start: 56
@@ -1205,7 +1219,8 @@ Herakles:
   type: p
 Heraklit:
   metadata:
-    cts_urn: urn:cts:greekLit:tlg0626
+    gnd: '118549421'
+    urn: urn:cts:greekLit:tlg0626
   references:
     EM:
     - start: 66
@@ -1264,17 +1279,23 @@ Horizont:
   references:
     GA 29/30:
     - start: 252
-Humboldt, Alexander von:
+Humboldt, Wilhelm von:
+  metadata:
+    gnd: '118554727'
   references:
     SZ:
     - start: 166
   type: p
 Husserl, Edmund:
+  metadata:
+    gnd: '118555006'
   references:
     GA 1:
     - start: 56
   type: p
 Hölderlin, Friedrich:
+  metadata:
+    gnd: '118551981'
   references:
     GA 1:
     - start: 56
@@ -1334,6 +1355,8 @@ Kant und das Problem der Metaphysik:
     - start: 441
   type: w
 Kant, Immanuel:
+  metadata:
+    gnd: '118559796'
   references:
     GA 29/30:
     - end: 423
@@ -1350,6 +1373,8 @@ Kant, Immanuel:
   - dialektische Schein
   type: p
 Kierkegaard, Søren:
+  metadata:
+    gnd: '118562002'
   references:
     GA 1:
     - start: 56
@@ -1364,6 +1389,8 @@ Kind:
     SvG:
     - start: 168
 Klages, Ludwig:
+  metadata:
+    gnd: 11856269X
   references:
     GA 29/30:
     - start: 105
@@ -1376,6 +1403,8 @@ Kreisbewegung der Philosophie:
     - start: 276
       suffix: f
 Kreutzer, Conradin:
+  metadata:
+    gnd: 11871600X
   references:
     G:
     - end: 518
@@ -1720,6 +1749,8 @@ Nietsche, Friedrich:
       start: 107
   type: p
 Nietzsche, Friedrich:
+  metadata:
+    gnd: '118587943'
   references:
     EM:
     - start: 15
@@ -1746,6 +1777,8 @@ Nomen:
     - start: 61
     - start: 63
 Novalis:
+  metadata:
+    gnd: '118588893'
   references:
     GA 29/30:
     - start: 7
@@ -1762,7 +1795,7 @@ Objekt:
 Oedipus Tyrannus:
   author: Sophokles
   metadata:
-    cts_urn: urn:cts:greekLit:tlg0011.tlg004
+    urn: urn:cts:greekLit:tlg0011.tlg004
   references:
     EM:
     - start: 114
@@ -1789,7 +1822,7 @@ Offenheit für das Geheimnis:
 Olympischen Oden:
   author: Pindar
   metadata:
-    cts_urn: urn:cts:greekLit:tlg0033.tlg001
+    urn: urn:cts:greekLit:tlg0033.tlg001
   references:
     EM:
     - start: 108
@@ -1805,7 +1838,7 @@ Otto Hahn:
   type: p
 Parmenides:
   metadata:
-    cts_urn: urn:cts:greekLit:tlg1562
+    urn: urn:cts:greekLit:tlg1562
   references:
     EM:
     - start: 103
@@ -1832,7 +1865,7 @@ Pflanze:
 Phaidros:
   author: Plato
   metadata:
-    cts_urn: urn:cts:greekLit:tlg0059.tlg012
+    urn: urn:cts:greekLit:tlg0059.tlg012
   references:
     EM:
     - start: 19
@@ -1881,7 +1914,7 @@ Philosophieren:
 Physica:
   author: Aristoteles
   metadata:
-    cts_urn: urn:cts:greekLit:tlg0086.tlg031
+    urn: urn:cts:greekLit:tlg0086.tlg031
   references:
     GA 29/30:
     - start: 50
@@ -1936,7 +1969,7 @@ Physische:
       start: 18
 Pindar:
   metadata:
-    cts_urn: urn:cts:greekLit:tlg0033
+    urn: urn:cts:greekLit:tlg0033
   references:
     EM:
     - start: 108
@@ -1944,7 +1977,7 @@ Pindar:
   type: p
 Plato:
   metadata:
-    cts_urn: urn:cts:greekLit:tlg0059
+    urn: urn:cts:greekLit:tlg0059
   references:
     EM:
     - start: 19
@@ -1991,7 +2024,7 @@ Psychologie:
 Pythischen Oden:
   author: Pindar
   metadata:
-    cts_urn: urn:cts:greekLit:tlg0033.tlg002
+    urn: urn:cts:greekLit:tlg0033.tlg002
   references:
     EM:
     - start: 108
@@ -2107,6 +2140,8 @@ Schein:
     - start: 268
     - start: 269
 Scheler, Max:
+  metadata:
+    gnd: '118606964'
   references:
     GA 29/30:
     - end: 106
@@ -2114,6 +2149,8 @@ Scheler, Max:
     - start: 283
   type: p
 Schelling, Friedrich von:
+  metadata:
+    gnd: '118607057'
   references:
     GA 1:
     - start: 56
@@ -2261,7 +2298,7 @@ Sonette an Orpheus:
 Sophistes:
   author: Plato
   metadata:
-    cts_urn: urn:cts:greekLit:tlg0059.tlg007
+    urn: urn:cts:greekLit:tlg0059.tlg007
   references:
     EM:
     - end: 62
@@ -2269,7 +2306,7 @@ Sophistes:
   type: w
 Sophokles:
   metadata:
-    cts_urn: urn:cts:greekLit:tlg0011
+    urn: urn:cts:greekLit:tlg0011
   references:
     EM:
     - start: 114
@@ -2284,6 +2321,8 @@ Spemann, Hans:
     - start: 280
   type: p
 Spengler, Oswald:
+  metadata:
+    gnd: '118616110'
   references:
     GA 29/30:
     - start: 105
@@ -2843,6 +2882,8 @@ Zeitlichkeit des Daseins:
     GA 29/30:
     - start: 253
 Ziegler, Leopold:
+  metadata:
+    gnd: '118636782'
   references:
     GA 29/30:
     - start: 106

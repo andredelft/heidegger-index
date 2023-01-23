@@ -13,6 +13,7 @@ from heidegger_index.utils import (
     slugify,
     contains_page_range,
 )
+from heidegger_index.validators import validate_gnd
 
 
 class Work(models.Model):
@@ -66,6 +67,13 @@ class Lemma(models.Model):
         unique=True,
     )
     perseus_content = models.TextField(null=True)
+
+    gnd = models.CharField(
+        null=True,
+        unique=True,
+        max_length=11,
+        validators=[validate_gnd]
+    )
     sort_key = models.CharField(max_length=100, null=True, unique=True)
     first_letter = models.CharField(max_length=1, null=True)
     slug = AutoSlugField(populate_from="value", slugify_function=slugify)

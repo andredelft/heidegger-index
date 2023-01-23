@@ -56,21 +56,26 @@ $ add-rel --help
 Usage: add-rel [OPTIONS] FIRST_LEMMA SECOND_LEMMA [p|a|r]
 ```
 
-## Add a URN to lemmata in `index/heidegger-index.yml`
+## Add metadata to lemmata in `index/heidegger-index.yml`
 
-A Python function to add URNs to the lemma metadata. For now, we limit ourselves to the URNs used by [Perseus](https://scaife.perseus.org/). If the URN refers to a passage in the [Perseus Digital Library](https://scaife.perseus.org/) this passage will be rendered on the work lemma page. The lemma will also be accessible by the URN like so: `/index/lemma/example:urn:to:lemma`.
+A Python function to add URNs or GND id's to the lemma metadata. For now, we limit ourselves to the URNs used by [Perseus](https://scaife.perseus.org/) and [GND id's](https://gnd.network/Webs/gnd/EN/Home/home_node.html).
+
+If the URN refers to a passage in the [Perseus Digital Library](https://scaife.perseus.org/) this passage will be rendered on the work lemma page. The lemma will also be accessible by the URN like so: `/index/lemma/example:urn:to:lemma`.
+
+If the GND id is added to a lemma it is accessible via the id in the url: `/index/gnd/<thegndid>`.
 
 ```pycon
->>> from index import add_urn
->>> add_urn('Aristoteles', 'p', 'urn:cts:greekLit:tlg0086') # Aristoteles can be found at this URN in Perseus and in the index.
+>>> from index import add_metadata
+>>> add_metadata('cts_urn', 'Aristoteles', 'p', 'urn:cts:greekLit:tlg0086') # Aristoteles can be found at this URN in Perseus and in the index.
+>>> add_metadata('gnd_id', 'Goethe, Johann Wolfgang von', 'p', '118540238') # Goethe can be found at this id in the index.
 ```
 
 A terminal command is also added:
 
 ```sh
-$ add-urn --help
+$ add-metadata --help
 
-Usage: add-urn [OPTIONS] LEMMA [p|w] URN
+Usage: add-metadata [OPTIONS] [cts_urn|gnd_id] LEMMA [p|w] URN
 
 Options:
   -f, --force  Overwrite URN if lemma already has a urn defined.

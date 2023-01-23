@@ -10,8 +10,8 @@ from heidegger_index.views import (
     WorkDetailViewMD,
     LemmaDetailViewMD,
     URNRedirectView,
+    GNDRedirectView
 )
-
 
 namespaced_patterns = (
     [
@@ -45,6 +45,12 @@ namespaced_patterns = (
             URNRedirectView.as_view(),
             name="urn-redirect",
         ),
+        re_path(
+            r"^gnd/(?P<gnd>1[012]?\d{7}[0-9X]|[47]\d{6}-\d|[1-9]\d{0,7}-[0-9X]|3\d{7}[0-9X])$",
+            GNDRedirectView.as_view(),
+            name="gnd-redirect"
+        ),
+        path("lemma/<slug>", LemmaDetailView.as_view(), name="lemma-detail"),
     ],
     "index",
 )
