@@ -43,7 +43,7 @@ class Command(BaseCommand):
 
         # Load work data
         with open(settings.WORK_REFS_FILE) as f:
-            works_data = yaml.load(f)      
+            works_data = yaml.load(f)
 
         # Load descriptions
         description_by_sort_key = {}
@@ -63,12 +63,10 @@ class Command(BaseCommand):
         work_objs = []
         work_by_title = {}
         work_by_key = {}
-
         for i, (work_key, csl_json) in enumerate(
             tqdm(works_data.items(), desc="Generating work references")
         ):
             work_obj = Work(id=i, key=work_key, csl_json=csl_json)
-
             if perform_external_calls:
                 try:
                     work_obj.gen_reference()
