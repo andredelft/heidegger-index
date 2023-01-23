@@ -4,6 +4,8 @@ from django.views.generic.detail import DetailView
 from django.shortcuts import redirect
 from django.conf import settings
 
+from heidegger_index.constants import GND, URN
+
 import requests
 
 
@@ -78,37 +80,6 @@ class LemmaDetailView(DetailView):
     template_name = "lemma_detail.html"
     context_object_name = "lemma"
 
-    def get_object(self, queryset=None):
-        """
-        CRUDE COPY OF get_object()
-        """
-        if queryset is None:
-            queryset = self.get_queryset()
-
-        slug = self.kwargs.get(self.slug_url_kwarg)
-        gnd = self.kwargs.get('gnd')
-        urn = self.kwargs.get('urn')
-        if slug is not None:
-            slug_field = self.get_slug_field()
-            queryset = queryset.filter(**{slug_field: slug})
-        if gnd is not None and slug is None:
-            queryset = queryset.filter(gnd=gnd)
-        if urn is not None and slug is None and gnd is None:
-            queryset = queryset.filter(urn=urn)
-        # If none of those are defined, it's an error.
-        if slug is None and gnd is None and urn is None:
-            raise AttributeError(
-                "Generic detail view %s must be called with either an object "
-                "slug, urn or gnd in the URLconf." % self.__class__.__name__
-            )
-        try:
-            # Get the single item from the filtered queryset
-            obj = queryset.get()
-        except queryset.model.DoesNotExist:
-            raise Http404(_("No %(verbose_name)s found matching the query") %
-                        {'verbose_name': queryset.model._meta.verbose_name})
-        return obj
-
     def get(self, request, *args, **kwargs):
         self.object = self.get_object()
         if self.object.work:
@@ -138,3 +109,13 @@ class LemmaDetailViewMD(LemmaDetailView):
         context = super().get_context_data(**kwargs)
         lemma = context["lemma"]
         return context
+        
+class URNRedirectView(LemmaDetailView):
+    def get(self, *args, **kwargs):
+        lemma = get_object_or_404(Lemma, urn=kwargs['urn'])
+        return redirect("index:lemma-detail", slug=lemma.slug)
+
+class GNDRedirectView(LemmaDetailView):
+    def get(self, *args, **kwargs):
+        lemma = get_object_or_404(Lemma, gnd=kwargs['gnd'])
+        return redirect("index:lemma-detail", slug=lemma.slug)
