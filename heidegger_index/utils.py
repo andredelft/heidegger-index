@@ -8,6 +8,8 @@ PREFIXES = ["der", "die", "das", "den"]
 
 PREFIX_FILTER = re.compile(rf'^(?:{"|".join(PREFIXES)})\s+')
 
+REF_REGEX = re.compile(r"^(?P<start>\d+)(?:-(?P<end>\d+)|(?P<suffix>f{1,2})\.?)?$")
+
 
 def gen_sort_key(value):
     # Strip surrounding whitespaces
@@ -53,6 +55,46 @@ def match_lemmata(search_term, index, max_l_dist=2, include_search_term=True):
     matches.sort(key=lambda match: (min(m.dist for m in match[1]), match[0]))
 
     return matches
+
+
+def contains_page(reference: dict, page: int) -> bool:
+
+    if reference.get("end"):
+        if page >= reference.get("start") and page <= reference.get("end"):
+            return True
+    if not reference.get("end") and reference.get("start"):
+        if page == reference.get("start"):
+            return True
+        elif reference.get("suffix") == "f" and page == reference.get("start") + 1:
+            return True
+        elif reference.get("suffix") == "ff" and page == reference.get("start") + 2:
+            return True
+
+    return False
+
+
+def contains_page_range(reference: dict, page_range) -> bool:
+    if not type(page_range) == dict:
+        page_range = re.fullmatch(REF_REGEX, page_range).groupdict()
+
+        if not page_range:
+            raise ValueError("Not a valid page range given.")
+
+    page_start = int(page_range.get("start"))
+
+    if not page_range.get("end") and page_range.get("suffix"):
+        page_end = int(page_range["start"]) + len(page_range.get("suffix"))
+    elif not page_range.get("end") and not page_range.get("suffix"):
+        page_end = int(page_range["start"])
+    else:
+        page_end = int(page_range.get("end"))
+    for i in range(page_start, page_end + 1):
+        if contains_page(reference, i):
+            return True
+        else:
+            continue
+
+    return False
 
 
 def slugify(value):

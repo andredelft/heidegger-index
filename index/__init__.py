@@ -33,8 +33,16 @@ from heidegger_index.constants import METADATA_TYPES, LEMMA_TYPES, REF_TYPES, RE
     default=False,
     help="Convert lemma from betacode to unicode",
 )
-def click_add_ref(lemma, work, ref, lemma_type, ref_type, betacode):
-    add_ref(lemma, work, ref, lemma_type, ref_type, betacode)
+@click.option(
+    "-f",
+    "--force",
+    "force",
+    is_flag=True,
+    default=False,
+    help="Force reference to be added to lemma",
+)
+def click_add_ref(lemma, work, ref, lemma_type, ref_type, betacode, force):
+    add_ref(lemma, work, ref, lemma_type, ref_type, betacode, force)
 
 
 @click.command()

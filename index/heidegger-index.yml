@@ -15,6 +15,13 @@ Abwesen:
   references:
     WD:
     - start: 271
+Adversus mathematicos VII, 16:
+  metadata:
+    cts_urn: urn:cts:greekLit:tlg0544.tlg002:7.16
+  references:
+    GA 29/30:
+    - start: 55
+  type: w
 Alltäglichkeit:
   references:
     GA 29/30:
@@ -140,7 +147,6 @@ Aristoteles:
     - start: 292
     - start: 297
     - start: 298
-    - start: 299
   type: p
 Atomenergie:
   references:
@@ -178,6 +184,8 @@ Augenblick:
     GA 29/30:
     - start: 251
     - start: 257
+    - start: 427
+      suffix: f
 Ausbeutung:
   references:
     EWI:
@@ -234,6 +242,10 @@ Bedrängnis im Ganzen:
   references:
     GA 29/30:
     - start: 251
+Befragte:
+  references:
+    GA 29/30:
+    - start: 423
 Befreiung:
   references:
     GA 29/30:
@@ -401,6 +413,8 @@ Dasein:
       start: 425
     - end: 433
       start: 432
+    - end: 29
+      start: 28
     SvG:
     - start: 167
 Dasein des Menschen:
@@ -593,6 +607,11 @@ Duineser Elegien:
     - start: 276
     - start: 278
   type: w
+Eigentlichkeit:
+  references:
+    GA 29/30:
+    - end: 427
+      start: 426
 Elemente:
   references:
     WBPh:
@@ -630,6 +649,9 @@ Entschlossenheit:
   references:
     GA 29/30:
     - start: 251
+    - start: 427
+  related:
+  - Augenblick
 Entzug:
   references:
     SvG:
@@ -637,8 +659,12 @@ Entzug:
     - start: 165
 Erde:
   references:
+    GA 16:
+    - start: 530
     SvG:
     - start: 189
+  related:
+  - Theologische Schriften 3, Gebet 3
 Ergriffenheit:
   references:
     GA 29/30:
@@ -668,6 +694,11 @@ Existenz:
     - start: 13
     - start: 279
     - start: 282
+    - end: 428
+      start: 426
+    - end: 433
+      start: 432
+    - start: 28
 Farben:
   references:
     WBPh:
@@ -692,6 +723,10 @@ Frage nach dem Sinn von Sein:
     SZ:
     - end: 8
       start: 1
+Fragen:
+  references:
+    GA 29/30:
+    - start: 423
 Fragment 1 (Heraklit):
   author: Heraklit
   metadata:
@@ -699,6 +734,14 @@ Fragment 1 (Heraklit):
   references:
     WBPh:
     - start: 277
+  type: w
+Fragment 108 (Heraklit):
+  author: Heraklit
+  metadata:
+    cts_urn: urn:cts:greekLit:tlg0626.tlg002:108
+  references:
+    GA 29/30:
+    - start: 34
   type: w
 Fragment 112 (Heraklit):
   author: Heraklit
@@ -790,7 +833,7 @@ Fragment 93 (Heraklit):
 Fragment VIII (Parmenides):
   author: Parmenides
   metadata:
-    urn: urn:cts:greekLit:tlg1562.tlg002.1st1K-grc1:7
+    cts_urn: urn:cts:greekLit:tlg1562.tlg002:7
   references:
     EM:
     - start: 103
@@ -895,7 +938,6 @@ Gesang:
   references:
     WD:
     - start: 274
-    - start: 274
     - start: 275
     - start: 285
 Geschichte der Metaphysik:
@@ -991,6 +1033,7 @@ Gott:
   references:
     GA 29/30:
     - start: 262
+    - start: 28
     SvG:
     - start: 167
     WD:
@@ -1130,6 +1173,11 @@ Hebel, Johann Peter:
     G:
     - start: 521
     - start: 529
+    GA 13:
+    - start: 117
+      suffix: f
+    GA 16:
+    - start: 530
   type: p
 Hegel, Georg Wilhelm Friedrich:
   metadata:
@@ -1154,6 +1202,8 @@ Heimat:
     G:
     - end: 522
       start: 520
+    GA 16:
+    - start: 530
 Heimweh:
   references:
     GA 29/30:
@@ -1161,6 +1211,7 @@ Heimweh:
     - end: 12
       start: 10
     - start: 33
+    - start: 28
 Herakles:
   references:
     WD:
@@ -1201,9 +1252,15 @@ Herstellen:
     - start: 272
     - start: 279
     - start: 283
-    - start: 283
     - start: 287
     - start: 288
+Himmel:
+  references:
+    GA 16:
+    - start: 530
+  related:
+  - Theologische Schriften 3, Gebet 3
+  - Äther
 Himmlischen:
   references:
     WD:
@@ -1312,6 +1369,8 @@ Kant, Immanuel:
     - start: 251
     - start: 272
     - start: 287
+  related:
+  - dialektische Schein
   type: p
 Kierkegaard, Søren:
   metadata:
@@ -1455,6 +1514,11 @@ Materialismus:
     SvG:
     - start: 179
     - start: 180
+Mathematik:
+  references:
+    GA 29/30:
+    - end: 25
+      start: 23
 Matthias Claudius:
   references:
     EM:
@@ -1556,6 +1620,11 @@ Mozart, Wolfgang Amadeus:
     - end: 99
       start: 100
   type: p
+Mundart:
+  references:
+    GA 13:
+    - start: 117
+      suffix: f
 Mussolini, Benito:
   references:
     Sch:
@@ -1839,6 +1908,9 @@ Philosophieren:
     - start: 114
     - start: 257
       suffix: f
+    - start: 422
+    - end: 29
+      start: 27
 Physica:
   author: Aristoteles
   metadata:
@@ -1934,6 +2006,10 @@ Prinzip:
   related:
   - Axiom
   - Grundsatz
+Problem der menschlichen Freiheit:
+  references:
+    GA 29/30:
+    - start: 429
 Psychische:
   references:
     EM:
@@ -2040,11 +2116,26 @@ Satz vom Grund:
     - start: 158
     - start: 160
     - start: 168
+Schatzkästlein des rheinischen Hausfreundes:
+  author: Hebel, Johann Peter
+  references:
+    GA 13:
+    - start: 117
+      suffix: f
+  type: w
 Schein:
   references:
     EM:
     - end: 107
       start: 105
+    GA 29/30:
+    - end: 430
+      start: 429
+    - start: 16
+      suffix: f
+    - start: 19
+    - start: 21
+    - start: 28
     WBPh:
     - start: 268
     - start: 269
@@ -2070,6 +2161,7 @@ Schicksal:
     - start: 279
       suffix: f
     - start: 282
+    - start: 28
 Schmertz:
   references:
     WD:
@@ -2125,8 +2217,6 @@ Seiende im Ganzen:
     - start: 238
     - start: 261
     WD:
-    - start: 276
-    - start: 279
     - start: 276
     - start: 279
     - start: 282
@@ -2228,6 +2318,7 @@ Spemann, Hans:
   references:
     GA 29/30:
     - start: 381
+    - start: 280
   type: p
 Spengler, Oswald:
   metadata:
@@ -2265,11 +2356,13 @@ Sprache:
     - start: 60
     - start: 62
     - start: 63
+    GA 13:
+    - start: 117
+      suffix: f
     GA 29/30:
     - start: 442
       suffix: f
     WD:
-    - start: 274
     - start: 274
 Sprachgeist:
   references:
@@ -2363,6 +2456,8 @@ Theologische Schriften 3, Gebet 3:
     G:
     - start: 521
     - start: 529
+    GA 16:
+    - start: 530
   type: w
 Thomas van Aquin:
   references:
@@ -2390,6 +2485,7 @@ Tierpsychologie:
   references:
     GA 29/30:
     - start: 278
+    - start: 266
   related:
   - Psychologie
 Tod:
@@ -2427,6 +2523,13 @@ Trieb:
       start: 7
     - start: 11
     - start: 33
+Uneigentlichkeit:
+  references:
+    GA 29/30:
+    - start: 426
+    - start: 428
+  related:
+  - Eigentlichkeit
 Ungesprochene:
   references:
     WD:
@@ -2527,6 +2630,14 @@ Verwandlung:
     - start: 428
       suffix: f
     - start: 259
+Verwandlung des Daseins:
+  parent: Dasein
+  references:
+    GA 29/30:
+    - start: 433
+    - start: 423
+    - start: 428
+      suffix: ff
 Vitalismus:
   references:
     GA 29/30:
@@ -2548,10 +2659,14 @@ Von der mannigfachen Bedeutung des Seienden nach Aristoteles:
 Vorhandenen:
   references:
     GA 29/30:
-    - end: 424
+    - end: 425
       start: 423
     - start: 434
       suffix: f
+    - end: 428
+      start: 427
+    - start: 431
+    - start: 432
 Vorstellen:
   references:
     GA 29/30:
@@ -2586,6 +2701,16 @@ Wahrheit:
   references:
     SvG:
     - start: 173
+Wahrheit der Philosophie:
+  parent: Philosophie
+  references:
+    GA 29/30:
+    - end: 25
+      start: 22
+    - start: 28
+      suffix: f
+  related:
+  - Wahrheit
 Walten:
   references:
     GA 29/30:
@@ -2666,7 +2791,6 @@ Weltphänomen:
     GA 29/30:
     - start: 450
       suffix: f
-    - start: 483
     - start: 483
 Weltzeit:
   references:
@@ -2796,6 +2920,17 @@ Zweideutigkeit des Philosophierens:
     - start: 276
       suffix: f
     - start: 258
+    - end: 17
+      start: 15
+    - end: 20
+      start: 17
+    - end: 29
+      start: 28
+Zweideutigkeit des Philosphierens:
+  references:
+    GA 29/30:
+    - end: 22
+      start: 21
 Zwiesel:
   references:
     SvG:
@@ -2818,6 +2953,9 @@ als:
     - start: 483
       suffix: f
     - start: 487
+    - end: 425
+      start: 423
+    - start: 484
 als solches:
   references:
     GA 29/30:
@@ -2868,6 +3006,8 @@ bodenständig:
     G:
     - start: 521
       suffix: f
+    GA 29/30:
+    - start: 431
 causa:
   references:
     SvG:
@@ -2883,6 +3023,12 @@ der Feldberg:
     HH:
     - start: 134
   type: g
+dialektische Schein:
+  parent: Schein
+  references:
+    GA 29/30:
+    - end: 422
+      start: 421
 dürftiger Zeit:
   references:
     WD:
@@ -2906,6 +3052,8 @@ formale Anzeige:
     - end: 431
       start: 421
     - start: 441
+    - start: 432
+    - start: 435
 fragen:
   references:
     GA 29/30:
@@ -3103,6 +3251,15 @@ unbestimmte Unmittelbare:
   references:
     SZ:
     - start: 3
+vulgäre Verstand:
+  references:
+    GA 29/30:
+    - end: 428
+      start: 426
+    - start: 422
+    - end: 433
+      start: 430
+    - start: 434
 weil:
   references:
     SvG:
@@ -3111,6 +3268,14 @@ wesentliche Möglichkeit des Seins:
   references:
     GA 29/30:
     - start: 115
+Äther:
+  references:
+    G:
+    - start: 521
+    GA 16:
+    - start: 530
+  related:
+  - Theologische Schriften 3, Gebet 3
 Ödipus:
   references:
     SvG:
@@ -3179,7 +3344,6 @@ wesentliche Möglichkeit des Seins:
     - end: 295
       start: 293
     - start: 297
-    - start: 299
     - start: 299
   related:
   - Aussehen
