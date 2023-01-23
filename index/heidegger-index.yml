@@ -409,6 +409,8 @@ Dasein:
       start: 425
     - end: 433
       start: 432
+    - end: 29
+      start: 28
     SvG:
     - start: 167
 Dasein des Menschen:
@@ -688,6 +690,7 @@ Existenz:
       start: 426
     - end: 433
       start: 432
+    - start: 28
 Farben:
   references:
     WBPh:
@@ -1020,6 +1023,7 @@ Gott:
   references:
     GA 29/30:
     - start: 262
+    - start: 28
     SvG:
     - start: 167
     WD:
@@ -1193,6 +1197,7 @@ Heimweh:
     - end: 12
       start: 10
     - start: 33
+    - start: 28
 Herakles:
   references:
     WD:
@@ -1480,6 +1485,11 @@ Materialismus:
     SvG:
     - start: 179
     - start: 180
+Mathematik:
+  references:
+    GA 29/30:
+    - end: 25
+      start: 23
 Matthias Claudius:
   references:
     EM:
@@ -1866,6 +1876,8 @@ Philosophieren:
     - start: 257
       suffix: f
     - start: 422
+    - end: 29
+      start: 27
 Physica:
   author: Aristoteles
   metadata:
@@ -2090,6 +2102,7 @@ Schein:
       suffix: f
     - start: 19
     - start: 21
+    - start: 28
     WBPh:
     - start: 268
     - start: 269
@@ -2111,6 +2124,7 @@ Schicksal:
     - start: 279
       suffix: f
     - start: 282
+    - start: 28
 Schmertz:
   references:
     WD:
@@ -2648,6 +2662,16 @@ Wahrheit:
   references:
     SvG:
     - start: 173
+Wahrheit der Philosophie:
+  parent: Philosophie
+  references:
+    GA 29/30:
+    - end: 25
+      start: 22
+    - start: 28
+      suffix: f
+  related:
+  - Wahrheit
 Walten:
   references:
     GA 29/30:
@@ -2859,6 +2883,13 @@ Zweideutigkeit des Philosophierens:
       start: 15
     - end: 20
       start: 17
+    - end: 29
+      start: 28
+Zweideutigkeit des Philosphierens:
+  references:
+    GA 29/30:
+    - end: 22
+      start: 21
 Zwiesel:
   references:
     SvG:
