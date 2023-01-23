@@ -43,11 +43,7 @@ class Command(BaseCommand):
 
         # Load work data
         with open(settings.WORK_REFS_FILE) as f:
-            works_data = yaml.load(f)
-        
-        # Load complete works file
-        with open(settings.COMPLETE_WORKS_FILE) as f:
-            completion_data = yaml.load(f)            
+            works_data = yaml.load(f)      
 
         # Load descriptions
         description_by_sort_key = {}
@@ -67,15 +63,11 @@ class Command(BaseCommand):
         work_objs = []
         work_by_title = {}
         work_by_key = {}
-        complete_status_by_key = {}
-
-        for complete_work_key, complete_work_data in completion_data.items():
-            complete_status_by_key[complete_work_key] = complete_work_data.get("complete", False)
 
         for i, (work_key, csl_json) in enumerate(
             tqdm(works_data.items(), desc="Generating work references")
         ):
-            work_obj = Work(id=i, key=work_key, csl_json=csl_json, complete=complete_status_by_key.get(work_key, False))
+            work_obj = Work(id=i, key=work_key, csl_json=csl_json)
 
             if perform_external_calls:
                 try:

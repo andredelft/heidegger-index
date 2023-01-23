@@ -24,8 +24,7 @@ class Work(models.Model):
     parent = models.ForeignKey(
         "self", on_delete=models.SET_NULL, null=True, related_name="children"
     )
-    complete = models.BooleanField(default=False)
-
+    
     def __str__(self):
         return self.key
 
