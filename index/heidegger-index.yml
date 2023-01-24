@@ -28,6 +28,7 @@ Alltäglichkeit:
     - end: 400
       start: 398
     - start: 405
+    - start: 31
 Anaximander:
   references:
     SvG:
@@ -1324,7 +1325,9 @@ Inbegriff:
   references:
     GA 29/30:
     - start: 13
+    - start: 31
     - start: 36
+      suffix: f
 Infinitiv:
   references:
     EM:
@@ -1443,6 +1446,7 @@ Leben:
     - end: 279
       start: 277
     - start: 282
+    - start: 33
     WD:
     - start: 278
       suffix: f
@@ -1913,6 +1917,8 @@ Philosophieren:
     - start: 422
     - end: 29
       start: 27
+    - end: 35
+      start: 31
 Physica:
   author: Aristoteles
   metadata:
@@ -2857,6 +2863,8 @@ Wissenschaft:
       start: 48
     - end: 282
       start: 277
+    - end: 33
+      start: 32
     SvG:
     - start: 181
     - start: 185
@@ -2926,13 +2934,11 @@ Zweideutigkeit des Philosophierens:
       start: 15
     - end: 20
       start: 17
-    - end: 29
-      start: 28
-Zweideutigkeit des Philosphierens:
-  references:
-    GA 29/30:
     - end: 22
       start: 21
+    - end: 29
+      start: 28
+    - start: 33
 Zwiesel:
   references:
     SvG:
