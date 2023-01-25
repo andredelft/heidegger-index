@@ -556,6 +556,12 @@ Der europäische Geist:
     GA 29/30:
     - start: 106
   type: w
+Descartes:
+  references:
+    GA 29/30:
+    - end: 84
+      start: 82
+  type: p
 Descartes, René:
   references:
     SvG:
@@ -673,6 +679,8 @@ Ergriffenheit:
       start: 12
     - end: 10
       start: 9
+    - start: 86
+    - start: 87
   related:
   - ergreifen
 Ernst:
@@ -709,6 +717,15 @@ Fehl Gottes:
   references:
     WD:
     - start: 269
+Fichte, Johann Gottlieb:
+  metadata:
+    gnd: '118532847'
+  references:
+    GA 29/30:
+    - start: 83
+    - start: 84
+      type: r
+  type: p
 Forschung:
   references:
     SvG:
@@ -728,6 +745,9 @@ Fragen:
   references:
     GA 29/30:
     - start: 423
+    - start: 13
+    - end: 87
+      start: 86
 Fragment 1 (Heraklit):
   author: Heraklit
   metadata:
@@ -845,10 +865,12 @@ Franz Joseph Strauß:
     - start: 178
   type: p
 Franz Suarez:
+  metadata:
+    gnd: '118619799'
   references:
     GA 29/30:
-    - start: 77
-      suffix: ff
+    - end: 81
+      start: 77
   type: p
 Fuge:
   references:
@@ -1122,6 +1144,10 @@ Grundsatz:
   related:
   - Satz vom Grund
   - Axiom
+Grundstimmug:
+  references:
+    GA 29/30:
+    - start: 87
 Grundstimmung:
   parent: Stimmung
   references:
@@ -1188,6 +1214,7 @@ Hegel, Georg Wilhelm Friedrich:
     - start: 56
     GA 29/30:
     - start: 420
+    - start: 82
     SZ:
     - start: 3
     WBPh:
@@ -1314,6 +1341,10 @@ Hölderlin, Friedrich:
     - start: 273
     - start: 276
   type: p
+Ich:
+  references:
+    GA 29/30:
+    - start: 84
 In lieblicher Bläue blühet...:
   author: Hölderlin, Friedrich
   references:
@@ -1328,6 +1359,9 @@ Inbegriff:
     - start: 31
     - start: 36
       suffix: f
+    - start: 82
+    - start: 84
+    - start: 86
 Infinitiv:
   references:
     EM:
@@ -1597,6 +1631,8 @@ Metaphysik:
     - end: 52
       start: 51
     - start: 279
+    - end: 87
+      start: 56
     SvG:
     - start: 184
     WD:
@@ -1723,6 +1759,8 @@ Natur:
   - natura
 Naturwissenschaft:
   references:
+    GA 29/30:
+    - start: 85
     SvG:
     - start: 180
     WD:
@@ -1736,6 +1774,10 @@ Neuzeit:
   references:
     G:
     - start: 523
+    GA 29/30:
+    - start: 82
+      suffix: ff
+      type: r
     SvG:
     - start: 177
     - start: 153
@@ -1919,6 +1961,8 @@ Philosophieren:
       start: 27
     - end: 35
       start: 31
+    - end: 87
+      start: 85
 Physica:
   author: Aristoteles
   metadata:
@@ -2219,6 +2263,8 @@ Seiende im Ganzen:
     - end: 50
       start: 49
     - start: 52
+    - start: 82
+    - start: 85
     W:
     - start: 190
     WBPh:
@@ -2419,6 +2465,7 @@ Stimmung:
       start: 409
     - end: 10
       start: 9
+    - start: 87
 Subjekt:
   references:
     SvG:
@@ -2876,6 +2923,12 @@ Wissenschaft der Logik:
     WBPh:
     - start: 251
   type: w
+Wissenschaftslehre:
+  author: Fichte, Johann Gottlieb
+  references:
+    GA 29/30:
+    - start: 83
+  type: w
 Wort:
   references:
     GA 29/30:
@@ -3050,6 +3103,9 @@ ergreifen:
     GA 29/30:
     - end: 113
       start: 112
+    - start: 87
+  related:
+  - Ergriffenheit
 ex-sistent:
   references:
     WBPh:
@@ -3062,10 +3118,6 @@ formale Anzeige:
     - start: 441
     - start: 432
     - start: 435
-fragen:
-  references:
-    GA 29/30:
-    - start: 13
 ganz Andere:
   references:
     GA 29/30:
