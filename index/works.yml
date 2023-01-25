@@ -65,6 +65,14 @@ G:
   title: Gelassenheit (30. Oktober 1955)
   type: chapter
   title-short: Gelassenheit
+  index-status: complete
+  index-author:
+  - family: Delft
+    given : André
+    dropping-particle: van
+  - family: Wit
+    given: Johannes
+    dropping-particle: de
 GA 5:
   author:
   - family: Heidegger
@@ -151,6 +159,7 @@ GA 29/30:
   title: 'Die Grundbegriffe der Metaphysik: Welt, Endlichkeit, Einsamkeit'
   title-short: Die Grundbegriffe der Metaphysik
   type: book
+  index-status: incomplete
 GA 55:
   id: heideggerGA55
   author:

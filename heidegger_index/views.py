@@ -58,6 +58,8 @@ class WorkDetailView(DetailView):
         else:
             context["work_lemma"] = work_lemma
 
+        context["index_status"] = work.csl_json.get('index-status', None)
+
         try:
             page_refs_with_page = []
             for ref in PageReference.objects.filter(
