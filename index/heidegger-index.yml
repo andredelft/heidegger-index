@@ -402,6 +402,7 @@ Da-sein:
     - start: 105
     - start: 110
     - start: 112
+    - start: 113
 Dabeibleiben:
   references:
     GA 29/30:
@@ -978,6 +979,7 @@ Gegenstand:
     - start: 283
     WiM:
     - start: 107
+    - start: 113
 Gegnet:
   references:
     GA 55:
@@ -2778,6 +2780,8 @@ Verwandlung:
     - start: 428
       suffix: f
     - start: 259
+    WiM:
+    - start: 113
 Verwandlung des Daseins:
   parent: Dasein
   references:
