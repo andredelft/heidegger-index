@@ -22,6 +22,10 @@ Adversus mathematicos VII, 16:
     GA 29/30:
     - start: 55
   type: w
+Alltaglichkeit:
+  references:
+    WiM:
+    - start: 110
 Alltäglichkeit:
   references:
     GA 29/30:
@@ -39,6 +43,11 @@ Angriff:
     GA 29/30:
     - start: 112
     - start: 31
+Angst:
+  references:
+    WiM:
+    - end: 113
+      start: 111
 Anspruch:
   references:
     GA 29/30:
@@ -247,6 +256,8 @@ Befragte:
   references:
     GA 29/30:
     - start: 423
+    WiM:
+    - start: 107
 Befreiung:
   references:
     GA 29/30:
@@ -387,6 +398,10 @@ Da-sein:
     GA 29/30:
     - start: 113
     - start: 31
+    WiM:
+    - start: 105
+    - start: 110
+    - start: 112
 Dabeibleiben:
   references:
     GA 29/30:
@@ -418,6 +433,9 @@ Dasein:
       start: 28
     SvG:
     - start: 167
+    WiM:
+    - start: 103
+    - start: 110
 Dasein des Menschen:
   parent: Dasein
   references:
@@ -432,11 +450,16 @@ Dasein des Menschen:
     SvG:
     - start: 179
     - start: 189
+    WiM:
+    - start: 111
 Dasein im Menschen:
   parent: Dasein
   references:
     GA 29/30:
     - start: 414
+    - start: 31
+    WiM:
+    - start: 112
 Daseinsgeschichte:
   parent: Dasein
   references:
@@ -708,6 +731,9 @@ Existenz:
     - end: 433
       start: 432
     - start: 28
+    WiM:
+    - end: 106
+      start: 104
 Farben:
   references:
     WBPh:
@@ -748,6 +774,10 @@ Fragen:
     - start: 13
     - end: 87
       start: 86
+    WiM:
+    - start: 103
+    - end: 108
+      start: 106
 Fragment 1 (Heraklit):
   author: Heraklit
   metadata:
@@ -872,10 +902,20 @@ Franz Suarez:
     - end: 81
       start: 77
   type: p
+Freude:
+  references:
+    WiM:
+    - start: 110
 Fuge:
   references:
     GA 29/30:
     - start: 445
+Furcht:
+  references:
+    WiM:
+    - start: 111
+  related:
+  - Angst
 Fähigkeit:
   references:
     GA 29/30:
@@ -887,8 +927,15 @@ Ganze des Seienden:
     - start: 44
     WD:
     - start: 283
+    WiM:
+    - start: 105
+    - start: 109
   related:
   - Seiende im Ganzen
+Ganze des Seienden,:
+  references:
+    WiM:
+    - start: 110
 Gebrochenheit des Daseins:
   references:
     GA 29/30:
@@ -908,6 +955,12 @@ Gefahr:
     WD:
     - start: 280
     - start: 281
+Gefühl:
+  references:
+    WiM:
+    - start: 110
+  related:
+  - Stimmung
 Gegenstand:
   references:
     EM:
@@ -923,6 +976,8 @@ Gegenstand:
     - start: 164
     WD:
     - start: 283
+    WiM:
+    - start: 107
 Gegnet:
   references:
     GA 55:
@@ -1030,6 +1085,10 @@ Gleiche:
   references:
     WD:
     - start: 278
+Gleichgültichkeit:
+  references:
+    WiM:
+    - start: 110
 Gleichgültigkeit:
   references:
     G:
@@ -1038,6 +1097,9 @@ Gleichgültigkeit:
     - start: 367
       type: r
     - start: 115
+    WiM:
+    - start: 107
+    - start: 111
 Goethe, Johann Wolfgang von:
   metadata:
     gnd: '118540238'
@@ -1158,6 +1220,9 @@ Grundstimmung:
     - start: 490
     - start: 10
     - start: 87
+    WiM:
+    - end: 112
+      start: 111
 Grundstimmung unseres Daseins:
   parent: Stimmung
   references:
@@ -1216,6 +1281,8 @@ Hegel, Georg Wilhelm Friedrich:
     - start: 3
     WBPh:
     - start: 251
+    WiM:
+    - start: 103
   type: p
 Heilige:
   references:
@@ -1471,6 +1538,8 @@ Langeweile:
     - end: 411
       start: 410
     - start: 487
+    WiM:
+    - start: 110
 Leben:
   references:
     GA 29/30:
@@ -1536,6 +1605,9 @@ Logik:
       start: 418
     - end: 440
       start: 438
+    WiM:
+    - end: 108
+      start: 108
 Maas:
   references:
     WD:
@@ -1639,6 +1711,8 @@ Metaphysik:
     - start: 279
     - start: 283
     - start: 285
+    WiM:
+    - start: 103
 Miteinandersein:
   references:
     GA 29/30:
@@ -1786,6 +1860,9 @@ Nichts:
     - start: 368
     - start: 433
     - start: 267
+    WiM:
+    - end: 122
+      start: 105
 Nietsche, Friedrich:
   references:
     GA 29/30:
@@ -1847,6 +1924,7 @@ Oedipus Tyrannus:
       suffix: f
   type: w
 Offenbarkeit des Seienden im Ganze:
+  parent: Seiende im Ganzen
   references:
     GA 29/30:
     - end: 413
@@ -1941,6 +2019,8 @@ Philosophie:
       suffix: f
     - end: 282
       start: 280
+    WiM:
+    - start: 103
 Philosophieren:
   references:
     EM:
@@ -2272,8 +2352,16 @@ Seiende im Ganzen:
     - start: 279
     - start: 282
     - start: 283
+    WiM:
+    - end: 111
+      start: 111
   related:
   - im Ganzen
+Seienden im Ganzen:
+  references:
+    WiM:
+    - end: 112
+      start: 111
 Seiendheit:
   references:
     WBPh:
@@ -2463,6 +2551,9 @@ Stimmung:
     - end: 10
       start: 9
     - start: 87
+    WiM:
+    - end: 111
+      start: 110
 Subjekt:
   references:
     SvG:
@@ -2590,6 +2681,11 @@ Unheimlichkeit:
   references:
     GA 29/30:
     - start: 490
+    WiM:
+    - start: 111
+      type: r
+    - start: 112
+      type: r
 Unverborgenheit:
   references:
     EM:
@@ -2912,6 +3008,9 @@ Wissenschaft:
     SvG:
     - start: 181
     - start: 185
+    WiM:
+    - end: 107
+      start: 103
   related:
   - ἐπιστήμη
 Wissenschaft der Logik:
@@ -3143,6 +3242,9 @@ im Ganzen:
     - start: 441
     - start: 457
     - start: 6
+    WiM:
+    - end: 111
+      start: 110
 infinitivus:
   references:
     EM:
@@ -3153,7 +3255,7 @@ inmitten des Seienden im Ganzen:
     WD:
     - start: 284
     WiM:
-    - start: 109
+    - start: 110
 ja-und-nein-sagen:
   references:
     G:
@@ -3304,6 +3406,8 @@ tiefe Langeweile:
       start: 409
     - end: 256
       start: 251
+    WiM:
+    - start: 110
 unbestimmte Unmittelbare:
   references:
     SZ:
