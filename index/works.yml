@@ -437,6 +437,11 @@ WiM:
     - family: Heidegger
       given: Martin
   citation-key: heideggerWiM
+  index-status: complete
+  index-author:
+    - family: Wit
+      given: Johannes
+      dropping-particle: de
   collection-number: band 9
   collection-title: Martin Heidegger Gesamtausgabe
   container-title: Wegmarken

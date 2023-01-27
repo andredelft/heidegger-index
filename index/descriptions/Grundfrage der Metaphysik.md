@@ -1,1 +1,1 @@
-Warum ist überhaupt Seiendes und nicht vielmehr Nichts?
+> Warum ist überhaupt Seiendes und nicht vielmehr Nichts? [@WiM, p. 122]

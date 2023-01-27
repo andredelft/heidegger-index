@@ -11,6 +11,10 @@ Abgrund:
     - start: 271
     - start: 272
     - start: 274
+Absolute:
+  references:
+    WiM:
+    - start: 119
 Abwesen:
   references:
     WD:
@@ -22,10 +26,6 @@ Adversus mathematicos VII, 16:
     GA 29/30:
     - start: 55
   type: w
-Alltaglichkeit:
-  references:
-    WiM:
-    - start: 110
 Alltäglichkeit:
   references:
     GA 29/30:
@@ -34,6 +34,7 @@ Alltäglichkeit:
     - start: 405
     - start: 31
     WiM:
+    - start: 110
     - start: 116
       type: r
 Anaximander:
@@ -404,10 +405,8 @@ Da-sein:
     WiM:
     - start: 105
     - start: 110
-    - start: 112
-    - start: 113
-    - start: 114
-    - start: 115
+    - end: 115
+      start: 112
 Dabeibleiben:
   references:
     GA 29/30:
@@ -442,9 +441,10 @@ Dasein:
     WiM:
     - start: 103
     - start: 110
-    - start: 115
-    - start: 116
-    - start: 117
+    - end: 122
+      start: 120
+    - end: 118
+      start: 115
 Dasein des Menschen:
   parent: Dasein
   references:
@@ -656,6 +656,10 @@ Elemente:
   references:
     WBPh:
     - start: 265
+Endlichkeit:
+  references:
+    WiM:
+    - start: 118
 Endlichkeit des Daseins:
   parent: Dasein
   references:
@@ -744,6 +748,8 @@ Existenz:
     WiM:
     - end: 106
       start: 104
+    - start: 121
+    - start: 122
 Farben:
   references:
     WBPh:
@@ -772,6 +778,9 @@ Frage nach dem Sein:
     - start: 256
     - start: 484
       suffix: f
+    WiM:
+    - end: 120
+      start: 119
 Frage nach dem Sinn von Sein:
   references:
     SZ:
@@ -788,7 +797,8 @@ Fragen:
     - start: 103
     - end: 108
       start: 106
-    - start: 117
+    - end: 121
+      start: 117
 Fragment 1 (Heraklit):
   author: Heraklit
   metadata:
@@ -1140,6 +1150,8 @@ Gott:
     - start: 271
     - start: 274
     - start: 275
+    WiM:
+    - start: 119
 Grammatik:
   references:
     EM:
@@ -1188,7 +1200,7 @@ Grundfrage der Metaphysik:
     - start: 3
     - start: 14
     WiM:
-    - start: 121
+    - start: 122
 Grundlegung zur Metaphysik der Sitten:
   author: Kant, Immanuel
   references:
@@ -1296,6 +1308,7 @@ Hegel, Georg Wilhelm Friedrich:
     - start: 251
     WiM:
     - start: 103
+    - start: 120
   type: p
 Heilige:
   references:
@@ -1622,6 +1635,7 @@ Logik:
     - end: 108
       start: 107
     - start: 117
+    - start: 120
 Maas:
   references:
     WD:
@@ -1680,6 +1694,8 @@ Mensch:
     WD:
     - start: 280
     - start: 285
+    WiM:
+    - start: 122
 Mensch qua Mensch:
   references:
     GA 29/30:
@@ -1727,6 +1743,8 @@ Metaphysik:
     - start: 285
     WiM:
     - start: 103
+    - end: 122
+      start: 118
 Miteinandersein:
   references:
     GA 29/30:
@@ -2011,6 +2029,14 @@ Phaidros:
     EM:
     - start: 19
   type: w
+Phaidros 279a:
+  author: Plato
+  metadata:
+    urn: urn:cts:greekLit:tlg0059.tlg012:279
+  references:
+    WiM:
+    - start: 122
+  type: w
 Philosophie:
   references:
     GA 29/30:
@@ -2058,6 +2084,8 @@ Philosophieren:
       start: 31
     - end: 87
       start: 85
+    WiM:
+    - start: 122
 Physica:
   author: Aristoteles
   metadata:
@@ -2375,6 +2403,9 @@ Seiende im Ganzen:
     WiM:
     - end: 115
       start: 111
+    - start: 122
+    - end: 120
+      start: 118
   related:
   - im Ganzen
 Seiendheit:
@@ -2386,6 +2417,8 @@ Sein:
     GA 29/30:
     - start: 489
     - start: 491
+    WiM:
+    - start: 120
 Sein des Seienden:
   references:
     EM:
@@ -2676,6 +2709,9 @@ Tranzendenz:
   references:
     GA 29/30:
     - start: 447
+    WiM:
+    - start: 118
+    - start: 120
 Trieb:
   references:
     GA 29/30:
@@ -2808,6 +2844,10 @@ Verwandlung des Daseins:
     - start: 423
     - start: 428
       suffix: ff
+Verwunderung:
+  references:
+    WiM:
+    - start: 121
 Vitalismus:
   references:
     GA 29/30:
@@ -3033,6 +3073,8 @@ Wissenschaft:
     WiM:
     - end: 107
       start: 103
+    - end: 122
+      start: 120
   related:
   - ἐπιστήμη
 Wissenschaft der Logik:
@@ -3040,6 +3082,8 @@ Wissenschaft der Logik:
   references:
     WBPh:
     - start: 251
+    WiM:
+    - start: 120
   type: w
 Wissenschaftslehre:
   author: Fichte, Johann Gottlieb
@@ -3148,6 +3192,10 @@ animal rationale:
     - start: 48
     SvG:
     - start: 189
+antike Metaphysik:
+  references:
+    WiM:
+    - start: 119
 antiken Ontologie:
   references:
     SZ:
@@ -3233,6 +3281,7 @@ existieren:
     WiM:
     - start: 115
       suffix: f
+    - start: 122
   related:
   - Existenz
 formale Anzeige:
