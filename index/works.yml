@@ -185,14 +185,14 @@ SvG:
   author:
   - family: Heidegger
     given: Martin
-  citation-key: heideggerSatzVomGrund1997
+  citation-key: heideggerSvG
   collection-number: band 10
   collection-title: Gesamtausgabe
   editor:
   - family: Jaeger
     given: Petra
   event-place: Frankfurt am Main
-  id: heideggerSatzVomGrund1997
+  id: heideggerSvG
   issued:
     date-parts:
     - - 1976
@@ -260,7 +260,7 @@ WBPh:
   author:
   - family: Heidegger
     given: Martin
-  citation-key: heideggerVomWesenUnd1976a
+  citation-key: heideggerWBPh
   collection-number: band 9
   collection-title: Gesamtausgabe
   container-title: Wegmarken
@@ -269,7 +269,7 @@ WBPh:
     family: Herrmann
     given: Friedrich-Wilhelm
   event-place: Frankfurt am Main
-  id: heideggerVomWesenUnd1976a
+  id: WBPh
   issued:
     date-parts:
     - - 1976
@@ -334,6 +334,7 @@ ZW:
   collection-number: band 5
   collection-title: Gesamtausgabe
   container-title: Holzwege
+  citation-key: heideggerZW
   editor:
   - dropping-particle: von
     family: Herrmann
@@ -361,7 +362,7 @@ EM:
   - family: Jaeger
     given: Petra
   event-place: Frankfurt am Main
-  id: heideggerSatzVomGrund1997
+  id: heideggerEM
   issued:
     date-parts:
     - - 1983
@@ -374,7 +375,7 @@ GA 21:
   author:
     - family: Heidegger
       given: Martin
-  citation-key: heideggerLogikFrageNach1976
+  citation-key: heideggerGA21
   collection-number: band 21
   collection-title: Gesamtausgabe
   editor:

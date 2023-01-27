@@ -33,6 +33,9 @@ Alltäglichkeit:
       start: 398
     - start: 405
     - start: 31
+    WiM:
+    - start: 116
+      type: r
 Anaximander:
   references:
     SvG:
@@ -403,6 +406,8 @@ Da-sein:
     - start: 110
     - start: 112
     - start: 113
+    - start: 114
+    - start: 115
 Dabeibleiben:
   references:
     GA 29/30:
@@ -437,6 +442,9 @@ Dasein:
     WiM:
     - start: 103
     - start: 110
+    - start: 115
+    - start: 116
+    - start: 117
 Dasein des Menschen:
   parent: Dasein
   references:
@@ -453,6 +461,7 @@ Dasein des Menschen:
     - start: 189
     WiM:
     - start: 111
+    - start: 114
 Dasein im Menschen:
   parent: Dasein
   references:
@@ -779,6 +788,7 @@ Fragen:
     - start: 103
     - end: 108
       start: 106
+    - start: 117
 Fragment 1 (Heraklit):
   author: Heraklit
   metadata:
@@ -903,6 +913,10 @@ Franz Suarez:
     - end: 81
       start: 77
   type: p
+Freiheit:
+  references:
+    WiM:
+    - start: 115
 Freude:
   references:
     WiM:
@@ -931,12 +945,11 @@ Ganze des Seienden:
     WiM:
     - start: 105
     - start: 109
+    - start: 110
+    - start: 113
+      type: r
   related:
   - Seiende im Ganzen
-Ganze des Seienden,:
-  references:
-    WiM:
-    - start: 110
 Gebrochenheit des Daseins:
   references:
     GA 29/30:
@@ -977,9 +990,6 @@ Gegenstand:
     - start: 164
     WD:
     - start: 283
-    WiM:
-    - start: 107
-    - start: 113
 Gegnet:
   references:
     GA 55:
@@ -1076,6 +1086,10 @@ Geviert:
     EWI:
     - start: 17
       suffix: ff
+Geworfenheit:
+  references:
+    WiM:
+    - start: 117
 Glanz:
   references:
     FW:
@@ -1087,10 +1101,6 @@ Gleiche:
   references:
     WD:
     - start: 278
-Gleichgültichkeit:
-  references:
-    WiM:
-    - start: 110
 Gleichgültigkeit:
   references:
     G:
@@ -1101,6 +1111,7 @@ Gleichgültigkeit:
     - start: 115
     WiM:
     - start: 107
+    - start: 110
     - start: 111
 Goethe, Johann Wolfgang von:
   metadata:
@@ -1609,7 +1620,8 @@ Logik:
       start: 438
     WiM:
     - end: 108
-      start: 108
+      start: 107
+    - start: 117
 Maas:
   references:
     WD:
@@ -1925,6 +1937,10 @@ Oedipus Tyrannus:
     - start: 114
       suffix: f
   type: w
+Offenbarkeit des Seienden:
+  references:
+    WiM:
+    - start: 114
 Offenbarkeit des Seienden im Ganze:
   parent: Seiende im Ganzen
   references:
@@ -2321,6 +2337,8 @@ Seiende als solches:
     - start: 19
     WD:
     - start: 276
+    WiM:
+    - start: 114
 Seiende als solches im Ganzen:
   parent: Seiende im Ganzen
   references:
@@ -2355,15 +2373,10 @@ Seiende im Ganzen:
     - start: 282
     - start: 283
     WiM:
-    - end: 111
+    - end: 115
       start: 111
   related:
   - im Ganzen
-Seienden im Ganzen:
-  references:
-    WiM:
-    - end: 112
-      start: 111
 Seiendheit:
   references:
     WBPh:
@@ -2655,6 +2668,10 @@ Trakl, Georg:
     GA 1:
     - start: 56
   type: p
+Transzendenz:
+  references:
+    WiM:
+    - start: 115
 Tranzendenz:
   references:
     GA 29/30:
@@ -2688,6 +2705,7 @@ Unheimlichkeit:
       type: r
     - start: 112
       type: r
+    - start: 113
 Unverborgenheit:
   references:
     EM:
@@ -3210,6 +3228,13 @@ ex-sistent:
   references:
     WBPh:
     - start: 262
+existieren:
+  references:
+    WiM:
+    - start: 115
+      suffix: f
+  related:
+  - Existenz
 formale Anzeige:
   references:
     GA 29/30:
