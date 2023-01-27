@@ -33,6 +33,8 @@ Alltäglichkeit:
       start: 398
     - start: 405
     - start: 31
+    SZ:
+    - start: 134
     WiM:
     - start: 110
     - start: 116
@@ -256,6 +258,11 @@ Bedrängnis im Ganzen:
   references:
     GA 29/30:
     - start: 251
+Befindlichkeit:
+  references:
+    SZ:
+    - end: 137
+      start: 134
 Befragte:
   references:
     GA 29/30:
@@ -436,6 +443,9 @@ Dasein:
       start: 432
     - end: 29
       start: 28
+    SZ:
+    - end: 137
+      start: 134
     SvG:
     - start: 167
     WiM:
@@ -724,6 +734,11 @@ Ernst:
   references:
     GA 29/30:
     - start: 258
+Erschlossenheit:
+  references:
+    SZ:
+    - end: 137
+      start: 135
 Etymologie:
   references:
     EWI:
@@ -745,11 +760,18 @@ Existenz:
     - end: 433
       start: 432
     - start: 28
+    SZ:
+    - start: 135
+    - start: 137
     WiM:
     - end: 106
       start: 104
     - start: 121
     - start: 122
+Faktizität:
+  references:
+    SZ:
+    - start: 135
 Farben:
   references:
     WBPh:
@@ -1098,6 +1120,9 @@ Geviert:
       suffix: ff
 Geworfenheit:
   references:
+    SZ:
+    - start: 135
+    - start: 137
     WiM:
     - start: 117
 Glanz:
@@ -1442,6 +1467,15 @@ In lieblicher Bläue blühet...:
     - start: 114
       suffix: f
   type: w
+In-der-Welt-sein:
+  references:
+    SZ:
+    - start: 135
+    - start: 137
+In-sein:
+  references:
+    SZ:
+    - start: 137
 Inbegriff:
   references:
     GA 29/30:
@@ -1745,6 +1779,10 @@ Metaphysik:
     - start: 103
     - end: 122
       start: 118
+Mitdasein:
+  references:
+    SZ:
+    - start: 137
 Miteinandersein:
   references:
     GA 29/30:
@@ -2599,6 +2637,9 @@ Stimmung:
     - end: 10
       start: 9
     - start: 87
+    SZ:
+    - end: 137
+      start: 134
     WiM:
     - end: 111
       start: 110
@@ -2874,6 +2915,9 @@ Vorhandenen:
       start: 427
     - start: 431
     - start: 432
+    SZ:
+    - start: 135
+    - start: 136
 Vorstellen:
   references:
     GA 29/30:
@@ -2965,6 +3009,8 @@ Welt:
       suffix: f
     - start: 442
       suffix: f
+    SZ:
+    - start: 137
     WD:
     - start: 274
 Weltalter:
@@ -3127,6 +3173,10 @@ Zugänglichkeit des Seienden:
   references:
     GA 29/30:
     - start: 412
+Zuhandene:
+  references:
+    SZ:
+    - start: 137
 Zuspruch:
   references:
     SvG:
@@ -3275,6 +3325,9 @@ ex-sistent:
     - start: 262
 existieren:
   references:
+    SZ:
+    - start: 134
+    - start: 136
     WiM:
     - start: 115
       suffix: f
@@ -3293,6 +3346,9 @@ ganz Andere:
   references:
     GA 29/30:
     - start: 440
+    WiM:
+    - start: 114
+      type: r
 gedeihen:
   references:
     G:
