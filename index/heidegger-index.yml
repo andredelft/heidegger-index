@@ -50,7 +50,7 @@ Angriff:
 Angst:
   references:
     WiM:
-    - end: 113
+    - end: 118
       start: 111
 Anspruch:
   references:
@@ -2703,13 +2703,10 @@ Trakl, Georg:
   type: p
 Transzendenz:
   references:
-    WiM:
-    - start: 115
-Tranzendenz:
-  references:
     GA 29/30:
     - start: 447
     WiM:
+    - start: 115
     - start: 118
     - start: 120
 Trieb:
