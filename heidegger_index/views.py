@@ -98,10 +98,11 @@ class LemmaDetailView(DetailView):
 
     def get(self, request, *args, **kwargs):
         self.object = self.get_object()
-        if self.object.work:
+        if self.object.work and self.object.type == "w":
             # Redirect Lemma detail page to corresponding work page
             return redirect("index:work-detail", slug=self.object.work.slug)
         elif self.object.parent:
+            # Redirect Lemma detail page to corresponding parent page
             return redirect("index:lemma-detail", slug=self.object.parent.slug)
         else:
             context = self.get_context_data(object=self.object)
