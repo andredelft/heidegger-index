@@ -1933,13 +1933,6 @@ Nichts:
     WiM:
     - end: 122
       start: 105
-Nietsche, Friedrich:
-  references:
-    GA 29/30:
-    - start: 105
-    - end: 111
-      start: 107
-  type: p
 Nietzsche, Friedrich:
   metadata:
     gnd: '118587943'
@@ -1949,6 +1942,10 @@ Nietzsche, Friedrich:
     - start: 80
     GA 1:
     - start: 56
+    GA 29/30:
+    - start: 105
+    - end: 111
+      start: 107
     Sch:
     - end: 42
       start: 39
