@@ -66,8 +66,8 @@ If the GND id is added to a lemma it is accessible via the id in the url: `/inde
 
 ```pycon
 >>> from index import add_metadata
->>> add_metadata('cts_urn', 'Aristoteles', 'p', 'urn:cts:greekLit:tlg0086') # Aristoteles can be found at this URN in Perseus and in the index.
->>> add_metadata('gnd_id', 'Goethe, Johann Wolfgang von', 'p', '118540238') # Goethe can be found at this id in the index.
+>>> add_metadata('urn', 'Aristoteles', 'p', 'urn:cts:greekLit:tlg0086') # Aristoteles can be found at this URN in Perseus and in the index.
+>>> add_metadata('gnd', 'Goethe, Johann Wolfgang von', 'p', '118540238') # Goethe can be found at this id in the index.
 ```
 
 A terminal command is also added:
@@ -75,7 +75,7 @@ A terminal command is also added:
 ```sh
 $ add-metadata --help
 
-Usage: add-metadata [OPTIONS] [cts_urn|gnd_id] LEMMA [p|w] URN
+Usage: add-metadata [OPTIONS] [urn|gnd] LEMMA [p|w] URN
 
 Options:
   -f, --force  Overwrite URN if lemma already has a urn defined.
