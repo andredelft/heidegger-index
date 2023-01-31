@@ -33,6 +33,8 @@ Alltäglichkeit:
       start: 398
     - start: 405
     - start: 31
+    - start: 423
+    - start: 428
     SZ:
     - start: 134
     WiM:
@@ -1415,6 +1417,11 @@ Hitler, Adolf:
   references:
     Sch:
     - start: 40
+  type: p
+Hobbes, Thomas:
+  references:
+    GA 29/30:
+    - start: 477
   type: p
 Holzwege:
   references:
@@ -2834,9 +2841,8 @@ Verbum:
 Vereinzelung:
   references:
     GA 29/30:
-    - start: 251
     - end: 253
-      start: 252
+      start: 251
 Verhalten:
   references:
     SZ:
@@ -2905,7 +2911,7 @@ Vorhandenen:
   references:
     GA 29/30:
     - end: 425
-      start: 423
+      start: 422
     - start: 434
       suffix: f
     - end: 428
@@ -2993,13 +2999,10 @@ Welt:
     G:
     - start: 527
     GA 29/30:
-    - start: 251
     - end: 253
       start: 251
-    - start: 261
-    - start: 262
-    - start: 263
-    - start: 264
+    - end: 264
+      start: 261
     - end: 413
       start: 411
     - start: 434
@@ -3072,11 +3075,8 @@ Wesen des Menschen:
     - start: 413
       suffix: f
     - start: 419
-    - start: 442
-      suffix: f
-    - start: 444
-      suffix: f
-    - start: 447
+    - end: 447
+      start: 442
     - start: 446
     - start: 486
       suffix: f
@@ -3180,6 +3180,10 @@ Zuspruch:
     - start: 183
     - start: 187
     - start: 188
+Zweideutigkeit der Philosophie:
+  references:
+    GA 29/30:
+    - start: 258
 Zweideutigkeit des Philosophierens:
   parent: Philosophieren
   references:
@@ -3549,6 +3553,10 @@ vulgäre Verstand:
     - end: 433
       start: 430
     - start: 434
+    - start: 258
+      suffix: f
+  related:
+  - Alltäglichkeit
 weil:
   references:
     SvG:
