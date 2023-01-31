@@ -204,6 +204,11 @@ Augenblick:
     - start: 257
     - start: 427
       suffix: f
+Aus der Erfahrung des Denkens:
+  references:
+    GA 16:
+    - start: 487
+  type: w
 Ausbeutung:
   references:
     EWI:
@@ -541,6 +546,8 @@ Der Feldweg:
     - start: 517
     GA 1:
     - start: 55
+    GA 16:
+    - start: 487
   type: w
 Der Geist als Widersacher der Seele:
   author: Klages, Ludwig
@@ -1589,6 +1596,13 @@ Kritik der Reinen Vernunft:
     WBPh:
     - start: 272
   type: w
+Kuinzige:
+  references:
+    FW:
+    - start: 90
+    GA 16:
+    - start: 487
+    - start: 737
 Kulturphilosophie:
   references:
     GA 29/30:
@@ -1982,6 +1996,11 @@ Novalis:
       start: 10
     - start: 33
   type: p
+Oberschwaben:
+  references:
+    GA 16:
+    - start: 487
+  type: g
 Objekt:
   references:
     SvG:
