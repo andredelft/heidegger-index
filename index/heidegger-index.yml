@@ -1,3 +1,8 @@
+4 Ezra 7. 12:
+  references:
+    GA 29/30:
+    - start: 396
+  type: w
 Abgrund:
   references:
     SvG:
@@ -1934,6 +1939,12 @@ Naturwissenschaft:
     - start: 180
     WD:
     - start: 278
+Neovitalismus:
+  references:
+    GA 29/30:
+    - start: 381
+  related:
+  - Driesch, Hans
 Neugier:
   references:
     GA 29/30:
@@ -2076,6 +2087,11 @@ Pascal, Blaise:
     - start: 4
     Sch:
     - start: 54
+  type: p
+Paulus:
+  references:
+    GA 29/30:
+    - start: 396
   type: p
 Pessimismus:
   references:
@@ -2328,6 +2344,12 @@ Rilke, Rainer Maria:
     - end: 285
       start: 283
   type: p
+Romans 8. 19:
+  author: Paulus
+  references:
+    GA 29/30:
+    - start: 396
+  type: w
 Ruhm:
   references:
     EM:
@@ -2955,6 +2977,7 @@ Vitalismus:
     - start: 278
   related:
   - Mechanizismus
+  - Neovitalismus
 Vom Wesen des Grundes:
   references:
     GA 29/30:
@@ -3645,6 +3668,7 @@ vulgäre Verstand:
     - start: 258
       suffix: f
     - start: 276
+    - start: 264
   related:
   - Alltäglichkeit
 weil:
