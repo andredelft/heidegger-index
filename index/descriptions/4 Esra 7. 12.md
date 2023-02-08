@@ -2,9 +2,9 @@
 
 > En de ingangen dezer wereld zijn eng geworden, en droevig, en moeilijk; ook weinig in getal, en kwaad, en vol gevaar, en met arbeid zeer bezet. (4 Ezra 7.12, Statenvertaling) [Bron](https://www.statenvertaling.net/bijbel/4ezr/7.html)
 
-> en de ingangen naar deze wereld
-> zijn nauw geworden, en smartelijk,
-> en moeitevol; weinig in getal echter,
-> en kwaad, van gevaren vol en
-> van grote moeiten vervuld;
+> en de ingangen naar deze wereld  
+> zijn nauw geworden, en smartelijk,  
+> en moeitevol; weinig in getal echter,  
+> en kwaad, van gevaren vol en  
+> van grote moeiten vervuld;  
 > (4 Ezra 7. 12, Gooische Bijbel)
