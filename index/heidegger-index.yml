@@ -64,8 +64,8 @@ Angst:
 Anspruch:
   references:
     GA 29/30:
-    - start: 429
     - start: 428
+      suffix: f
     SvG:
     - start: 177
     - start: 180
@@ -312,11 +312,8 @@ Benommenheit, Offenheit der:
     - start: 362
     - start: 363
       type: r
-    - start: 368
-      type: r
-    - start: 369
-      type: r
-    - start: 370
+    - end: 370
+      start: 368
       type: r
 Bestand:
   references:
@@ -346,8 +343,8 @@ Bewußtsein:
   references:
     GA 29/30:
     - start: 305
+      suffix: f
     - start: 298
-    - start: 306
 Beziehung zu Seiendem als Solchem:
   references:
     GA 29/30:
@@ -1307,7 +1304,6 @@ Grundstimmung:
     - end: 254
       start: 251
     - start: 256
-    - start: 411
     - end: 411
       start: 410
     - start: 487
@@ -1874,12 +1870,10 @@ Mitexistieren:
 Mitgehen:
   references:
     GA 29/30:
-    - end: 302
+    - end: 304
       start: 296
-    - start: 303
-      suffix: f
     - start: 308
-    - start: 309
+      suffix: f
   related:
   - Einfühlung
   - Mitexistieren
@@ -2660,9 +2654,8 @@ Selbigkeit der Philosophie:
 Sich versetzen:
   references:
     GA 29/30:
-    - start: 307
-    - start: 308
-    - start: 309
+    - end: 309
+      start: 307
 Sichversetzen:
   references:
     GA 29/30:
@@ -2894,10 +2887,8 @@ Tier:
     - start: 298
       suffix: f
     - start: 303
-    - start: 307
-    - start: 308
-    - start: 309
-    - start: 310
+    - end: 310
+      start: 307
     WD:
     - start: 277
     - start: 278
@@ -3290,7 +3281,7 @@ Wesen des Tieres:
   references:
     GA 29/30:
     - start: 309
-    - start: 310
+      suffix: f
 Wie wenn am Feiertage...:
   author: Hölderlin, Friedrich
   references:
@@ -3427,7 +3418,7 @@ absoluten Idealismus:
   references:
     GA 29/30:
     - start: 305
-    - start: 306
+      suffix: f
 actualitas:
   references:
     WBPh:
@@ -3440,7 +3431,7 @@ als:
     - start: 435
       suffix: f
     - start: 440
-    - start: 441
+      suffix: f
     - start: 450
     - start: 456
     - start: 483
@@ -3448,7 +3439,6 @@ als:
     - start: 487
     - end: 425
       start: 423
-    - start: 484
 als solches:
   references:
     GA 29/30:
