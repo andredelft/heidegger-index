@@ -465,6 +465,7 @@ Dasein:
     - start: 277
     - start: 279
     - start: 301
+    - start: 309
     SZ:
     - end: 137
       start: 134
@@ -1348,6 +1349,11 @@ Haben der Welt:
     GA 29/30:
     - end: 263
       start: 262
+Haustier:
+  parent: Tier
+  references:
+    GA 29/30:
+    - start: 308
 Hebel, Johann Peter:
   metadata:
     gnd: '118547453'
@@ -1864,6 +1870,7 @@ Mitexistieren:
   references:
     GA 29/30:
     - start: 301
+    - start: 308
 Mitgehen:
   references:
     GA 29/30:
@@ -1871,6 +1878,8 @@ Mitgehen:
       start: 296
     - start: 303
       suffix: f
+    - start: 308
+    - start: 309
   related:
   - Einfühlung
   - Mitexistieren
@@ -1878,6 +1887,7 @@ Mitsein:
   references:
     GA 29/30:
     - start: 301
+    - start: 308
   related:
   - Mitexistieren
   - Mitgehen
@@ -2169,6 +2179,8 @@ Pflanze:
     EM:
     - start: 17
     - start: 19
+    GA 29/30:
+    - start: 307
     WD:
     - start: 277
     - start: 278
@@ -2645,6 +2657,12 @@ Selbigkeit der Philosophie:
   references:
     GA 29/30:
     - start: 259
+Sich versetzen:
+  references:
+    GA 29/30:
+    - start: 307
+    - start: 308
+    - start: 309
 Sichversetzen:
   references:
     GA 29/30:
@@ -2876,6 +2894,10 @@ Tier:
     - start: 298
       suffix: f
     - start: 303
+    - start: 307
+    - start: 308
+    - start: 309
+    - start: 310
     WD:
     - start: 277
     - start: 278
@@ -3196,6 +3218,11 @@ Weltalter:
     - start: 269
     - start: 270
     - start: 272
+Weltarmut des Tieres:
+  references:
+    GA 29/30:
+    - start: 309
+      suffix: f
 Weltbildung:
   references:
     GA 29/30:
@@ -3259,6 +3286,11 @@ Wesen des Menschen:
       suffix: f
     ZEG:
     - start: 38
+Wesen des Tieres:
+  references:
+    GA 29/30:
+    - start: 309
+    - start: 310
 Wie wenn am Feiertage...:
   author: Hölderlin, Friedrich
   references:
@@ -3343,6 +3375,7 @@ Zoologie:
     - end: 277
       start: 274
     - start: 282
+    - start: 310
   related:
   - Tier
 Zugänglichkeit des Lebendiges:
@@ -3599,6 +3632,7 @@ menschliche Dasein:
     - start: 44
     - start: 302
     - start: 306
+    - start: 307
 metaphysischen Begriffe:
   references:
     GA 29/30:
