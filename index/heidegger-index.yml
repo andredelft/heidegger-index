@@ -1682,6 +1682,7 @@ Leben:
     - start: 33
     - start: 283
     - start: 292
+    - start: 311
     WD:
     - start: 278
       suffix: f
@@ -2140,6 +2141,10 @@ Optimismus:
   references:
     WD:
     - start: 271
+Organismus:
+  references:
+    GA 29/30:
+    - start: 311
 Otto Hahn:
   references:
     SvG:
@@ -2616,6 +2621,7 @@ Sein und Zeit:
     - start: 433
     - start: 441
     - start: 44
+    - start: 313
     Vorarb29/30:
     - start: 6
     ZEG:
@@ -3644,6 +3650,11 @@ objektiv:
   references:
     EM:
     - start: 109
+organische Chemie:
+  parent: Chemie
+  references:
+    GA 29/30:
+    - start: 311
 positive Forschung:
   references:
     GA 29/30:

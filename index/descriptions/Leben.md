@@ -1,0 +1,1 @@
+> Alles Lebende ist _[[Organismus]]_. … Darin liegt zugleich: Der Begriff einer ‘lebendigen Substanz’, einer lebenden Masse, eines ‘Lebensstoffes’ ist ein Unbegriff. Denn mit ‘Stoff’ und ‘Substanz’ in dieser Bedeutung ist gerade das Organismushafte des Lebendigen Geleugnet.[@GA29/30, p. 311]
