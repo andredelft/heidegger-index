@@ -256,6 +256,8 @@ Bachofen, Johann Jakob:
     - start: 105
   type: p
 Baer, Karl Ernst von:
+  metadata:
+    gnd: '118505831'
   references:
     GA 29/30:
     - start: 378
@@ -362,6 +364,9 @@ Biologie:
     GA 29/30:
     - end: 279
       start: 277
+    - start: 313
+    - end: 318
+      start: 316
     SZ:
     - start: 49
       suffix: f
@@ -435,6 +440,8 @@ Dabeibleiben:
     GA 29/30:
     - start: 11
 Darwin, Charles:
+  metadata:
+    gnd: '118523813'
   references:
     GA 29/30:
     - start: 366
@@ -623,15 +630,12 @@ Der europäische Geist:
     GA 29/30:
     - start: 106
   type: w
-Descartes:
+Descartes, René:
   references:
     GA 29/30:
     - end: 84
       start: 82
     - start: 305
-  type: p
-Descartes, René:
-  references:
     SvG:
     - start: 174
   type: p
@@ -1636,13 +1640,9 @@ Kritik der Reinen Vernunft:
   references:
     GA 29/30:
     - start: 422
+    - start: 306
     WBPh:
     - start: 272
-  type: w
-Kritik der reinen Vernunft:
-  references:
-    GA 29/30:
-    - start: 306
   type: w
 Kuinzige:
   references:
@@ -1683,6 +1683,8 @@ Leben:
     - start: 283
     - start: 292
     - start: 311
+    - start: 313
+    - start: 317
     WD:
     - start: 278
       suffix: f
@@ -1690,6 +1692,11 @@ Leben:
     - start: 283
   related:
   - Vitalismus
+Lebensbewegung:
+  parent: Leben
+  references:
+    GA 29/30:
+    - start: 317
 Leere:
   references:
     GA 29/30:
@@ -1754,6 +1761,10 @@ Maschine:
   references:
     EWI:
     - start: 35
+    GA 29/30:
+    - end: 316
+      start: 312
+    - start: 318
     SvG:
     - start: 179
 Materialismus:
@@ -1784,6 +1795,10 @@ Mechanizismus:
   references:
     GA 29/30:
     - start: 278
+    - start: 313
+    - start: 317
+      suffix: f
+      type: r
 Meister Eckhart:
   references:
     Sch:
@@ -1791,6 +1806,8 @@ Meister Eckhart:
   type: p
 Mensch:
   references:
+    GA 16:
+    - start: 530
     GA 29/30:
     - start: 6
     - start: 7
@@ -2141,10 +2158,22 @@ Optimismus:
   references:
     WD:
     - start: 271
-Organismus:
+Organ:
+  references:
+    GA 29/30:
+    - start: 312
+    - end: 318
+      start: 316
+Organismisch:
   references:
     GA 29/30:
     - start: 311
+Organismus:
+  references:
+    GA 29/30:
+    - start: 318
+    - end: 316
+      start: 311
 Otto Hahn:
   references:
     SvG:
@@ -2421,6 +2450,14 @@ Rilke, Rainer Maria:
     - start: 279
     - end: 285
       start: 283
+  type: p
+Roux, Wilhelm:
+  metadata:
+    gnd: '118750038'
+  references:
+    GA 29/30:
+    - start: 312
+    - start: 314
   type: p
 Ruhm:
   references:
@@ -2895,10 +2932,14 @@ Tier:
     - start: 303
     - end: 310
       start: 307
+    - end: 317
+      start: 316
     WD:
     - start: 277
     - start: 278
     - start: 280
+  related:
+  - Weltarmut
 Tierpsychologie:
   parent: Tier
   references:
@@ -3086,6 +3127,7 @@ Vitalismus:
   references:
     GA 29/30:
     - start: 278
+    - start: 318
   related:
   - Mechanizismus
   - Neovitalismus
@@ -3188,6 +3230,7 @@ Weil:
     SvG:
     - start: 186
     - start: 185
+    - start: 169
 Welt:
   references:
     G:
@@ -3203,6 +3246,7 @@ Welt:
       suffix: f
     - start: 442
       suffix: f
+    - start: 313
     SZ:
     - start: 137
     Vorarb29/30:
@@ -3215,17 +3259,28 @@ Weltalter:
     - start: 269
     - start: 270
     - start: 272
+Weltarmut:
+  parent: Welt
+  references:
+    GA 29/30:
+    - end: 310
+      start: 307
+  related:
+  - Weltbildung
+  - Weltbildung
 Weltarmut des Tieres:
   references:
     GA 29/30:
     - start: 309
       suffix: f
 Weltbildung:
+  parent: Welt
   references:
     GA 29/30:
     - end: 414
       start: 413
     - start: 419
+    - start: 313
 Weltganze:
   references:
     G:
@@ -3235,6 +3290,15 @@ Weltgeschichte:
     SvG:
     - start: 180
     - start: 157
+Weltlosigkeit:
+  parent: Welt
+  references:
+    GA 29/30:
+    - end: 291
+      start: 289
+  related:
+  - Weltbildung
+  - Weltarmut
 Weltnacht:
   references:
     WD:
@@ -3263,6 +3327,7 @@ Wesen des Lebens:
     - end: 267
       start: 265
     - start: 283
+    - start: 318
 Wesen des Menschen:
   references:
     EWI:
@@ -3317,6 +3382,8 @@ Wissenschaft:
       start: 1
     - start: 15
       suffix: f
+    - start: 317
+      suffix: f
     SvG:
     - start: 181
     - start: 185
@@ -3359,6 +3426,12 @@ Zeitlichkeit des Daseins:
   references:
     GA 29/30:
     - start: 253
+Zeug:
+  references:
+    GA 29/30:
+    - end: 314
+      start: 312
+    - start: 316
 Ziegler, Leopold:
   metadata:
     gnd: '118636782'
@@ -3520,10 +3593,6 @@ der Feldberg:
     HH:
     - start: 134
   type: g
-der Mensch:
-  references:
-    GA 16:
-    - start: 530
 dialektische Schein:
   parent: Schein
   references:
@@ -3787,9 +3856,12 @@ unbestimmte Unmittelbare:
     SZ:
     - start: 3
 von Uexküll, Jakob Johann:
+  metadata:
+    gnd: '118763407'
   references:
     GA 29/30:
     - start: 284
+    - start: 315
   type: p
 vulgäre Verstand:
   references:
@@ -3808,10 +3880,6 @@ vulgäre Verstand:
       suffix: f
   related:
   - Alltäglichkeit
-weil:
-  references:
-    SvG:
-    - start: 169
 wesentliche Möglichkeit des Seins:
   references:
     GA 29/30:
@@ -4065,15 +4133,13 @@ wesentliche Möglichkeit des Seins:
   references:
     EM:
     - start: 18
-οὐσια:
-  references:
-    GA 29/30:
-    - end: 52
-      start: 50
 οὐσία:
   references:
     EM:
     - start: 65
+    GA 29/30:
+    - end: 52
+      start: 50
     SvG:
     - start: 157
     WBPh:
