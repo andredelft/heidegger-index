@@ -2938,6 +2938,16 @@ Tier:
     - start: 277
     - start: 278
     - start: 280
+    ZS:
+    - start: 19
+    - start: 26
+    - start: 113
+      suffix: f
+    - start: 119
+    - start: 268
+    - start: 306
+      suffix: f
+    - start: 356
   related:
   - Weltarmut
 Tierpsychologie:
