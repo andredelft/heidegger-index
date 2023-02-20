@@ -533,6 +533,12 @@ Daseinsgeschichte:
   references:
     GA 29/30:
     - start: 432
+De Anima:
+  references:
+    GA 19:
+    - start: 18
+      suffix: f
+  type: w
 De Interpretatione:
   author: Aristoteles
   metadata:
@@ -1724,6 +1730,9 @@ Langeweile:
     - start: 110
 Leben:
   references:
+    GA 19:
+    - start: 18
+      suffix: f
     GA 29/30:
     - end: 279
       start: 277
@@ -1857,6 +1866,9 @@ Mensch:
   references:
     GA 16:
     - start: 530
+    GA 19:
+    - start: 17
+    - start: 71
     GA 29/30:
     - start: 6
     - start: 7
@@ -4088,6 +4100,9 @@ wesentliche Möglichkeit des Seins:
       suffix: f
 ζῷον λόγον ἔχον:
   references:
+    GA 19:
+    - start: 17
+    - start: 71
     GA 29/30:
     - start: 442
       suffix: f
@@ -4526,6 +4541,10 @@ wesentliche Möglichkeit des Seins:
     GA 29/30:
     - start: 484
     - start: 490
+ἀπόφασις:
+  references:
+    GA 19:
+    - start: 18
 ἀρχὴ κινήσεως:
   parent: κίνησις
   references:
