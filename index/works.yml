@@ -389,6 +389,24 @@ GA 21:
   publisher-place: Frankfurt am Main
   title: Logik. Die Frage nach der Wahrheit
   type: book
+GA 63:
+  author:
+    - family: Heidegger
+      given: Martin
+  citation-key: heideggerGA63
+  collection-number: band 63
+  collection-title: Gesamtausgabe
+  editor:
+    - family: Bröcker-Oltmanns
+      given: Käte
+  event-place: Frankfurt am Main
+  issued:
+    - year: 1988
+  language: ger
+  publisher: Vittorio Klostermann
+  publisher-place: Frankfurt am Main
+  title: Ontologie (Hermeneutik der Faktizität)
+  type: book
 Sch:
   id: heideggerSch
   author:

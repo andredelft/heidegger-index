@@ -141,6 +141,8 @@ Aristoteles:
       suffix: f
     - start: 42
     - start: 44
+    GA 63:
+    - start: 21
     SZ:
     - start: 3
     SvG:
@@ -209,6 +211,13 @@ Augenblick:
     - start: 257
     - start: 427
       suffix: f
+Augustin:
+  metadata:
+    urn: urn:cts:latinLit:stoa0040
+  references:
+    GA 63:
+    - start: 23
+  type: p
 Aus der Erfahrung des Denkens:
   references:
     GA 16:
@@ -408,6 +417,13 @@ Buytendijk, Frederik Jacobus Johannes:
   related:
   - Tierpsychologie
   type: p
+Calvin, Johannes:
+  metadata:
+    gnd: '118518534'
+  references:
+    GA 63:
+    - start: 24
+  type: p
 Chemie:
   references:
     GA 29/30:
@@ -470,6 +486,9 @@ Dasein:
     - start: 279
     - start: 301
     - start: 309
+    GA 63:
+    - start: 21
+    - start: 25
     SZ:
     - end: 137
       start: 134
@@ -1095,6 +1114,14 @@ Gelassenheit zu den Dingen:
     G:
     - end: 529
       start: 527
+Genesis 1. 26 (LXX):
+  metadata:
+    urn: urn:cts:greekLit:tlg0527.tlg001:1.26
+  references:
+    GA 63:
+    - start: 22
+    - start: 28
+  type: w
 Gerede:
   references:
     GA 29/30:
@@ -1434,6 +1461,10 @@ Hergestelltheit:
     WBPh:
     - start: 248
       suffix: f
+Hermeneutik:
+  references:
+    GA 63:
+    - start: 25
 Herrschaft:
   references:
     SvG:
@@ -1512,6 +1543,22 @@ Hölderlin, Friedrich:
     - start: 273
     - start: 276
   type: p
+I Cor. 11. 7:
+  author: Paulus
+  metadata:
+    urn: urn:cts:greekLit:tlg0031.tlg007:11.7
+  references:
+    GA 63:
+    - start: 22
+  type: w
+II Cor. 3. 18:
+  author: Paulus
+  metadata:
+    urn: urn:cts:greekLit:tlg0031.tlg008:3.18
+  references:
+    GA 63:
+    - start: 22
+  type: w
 Ich:
   references:
     GA 29/30:
@@ -1604,6 +1651,8 @@ Kierkegaard, Søren:
     - start: 56
     GA 29/30:
     - start: 226
+    GA 63:
+    - start: 111
     Sch:
     - end: 43
       start: 42
@@ -1814,6 +1863,10 @@ Mensch:
     - start: 10
     - start: 39
     - start: 40
+    GA 63:
+    - start: 21
+      suffix: f
+    - start: 24
     SvG:
     - start: 176
     - start: 189
@@ -2197,6 +2250,9 @@ Paulus:
   references:
     GA 29/30:
     - start: 396
+    GA 63:
+    - start: 111
+    - start: 22
   type: p
 Pessimismus:
   references:
@@ -2339,6 +2395,10 @@ Physische:
     EM:
     - end: 19
       start: 18
+Phänomenologie:
+  references:
+    GA 63:
+    - start: 110
 Pindar:
   metadata:
     urn: urn:cts:greekLit:tlg0033
@@ -2482,6 +2542,14 @@ Römer 8. 19:
     GA 29/30:
     - start: 396
   type: w
+Römer 8. 29:
+  author: Paulus
+  metadata:
+    urn: urn:cts:greekLit:tlg0031.tlg006:8.29
+  references:
+    GA 63:
+    - start: 22
+  type: w
 Sapphos:
   references:
     EM:
@@ -2535,6 +2603,9 @@ Scheler, Max:
     - end: 106
       start: 105
     - start: 283
+    GA 63:
+    - start: 24
+      suffix: f
   type: p
 Schelling, Friedrich von:
   metadata:
@@ -2873,6 +2944,13 @@ System:
     GA 29/30:
     - start: 431
       suffix: f
+Tatian:
+  metadata:
+    urn: urn:cts:greekLit:tlg1766
+  references:
+    GA 63:
+    - start: 22
+  type: p
 Tatsache:
   references:
     GA 29/30:
@@ -2906,11 +2984,13 @@ Theologische Schriften 3, Gebet 3:
     GA 16:
     - start: 530
   type: w
-Thomas van Aquin:
+Thomas v. Aquin:
   references:
     GA 29/30:
     - start: 69
       suffix: ff
+    GA 63:
+    - start: 23
     SZ:
     - start: 3
   type: p
@@ -3257,6 +3337,8 @@ Welt:
     - start: 442
       suffix: f
     - start: 313
+    GA 63:
+    - start: 21
     SZ:
     - start: 137
     Vorarb29/30:
@@ -3502,6 +3584,14 @@ Zwiesel:
   references:
     SvG:
     - start: 155
+Zwingli, Huldrych:
+  metadata:
+    gnd: '118637533'
+  references:
+    GA 63:
+    - start: 23
+      suffix: f
+  type: p
 absoluten Idealismus:
   references:
     GA 29/30:
@@ -3536,6 +3626,9 @@ animal rationale:
   references:
     GA 29/30:
     - start: 442
+    GA 63:
+    - end: 28
+      start: 26
     SZ:
     - start: 48
     SvG:
@@ -3707,6 +3800,11 @@ menschliche Dasein:
     - start: 302
     - start: 306
     - start: 307
+menschliches Dasein:
+  references:
+    GA 63:
+    - start: 21
+    - start: 26
 metaphysischen Begriffe:
   references:
     GA 29/30:
@@ -3996,6 +4094,10 @@ wesentliche Möglichkeit des Seins:
     - start: 451
     - start: 454
       suffix: f
+    GA 63:
+    - start: 21
+      suffix: f
+    - start: 27
     SZ:
     - start: 48
     WBPh:
@@ -4081,6 +4183,8 @@ wesentliche Möglichkeit des Seins:
       start: 40
     - start: 42
     - start: 44
+    GA 63:
+    - start: 21
     SvG:
     - start: 158
     - start: 159
