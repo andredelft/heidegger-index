@@ -77,6 +77,8 @@ Anspruch:
   - Zuspruch
 Anthropologie:
   references:
+    GA 21:
+    - start: 216
     GA 29/30:
     - start: 406
     - start: 408
@@ -268,6 +270,8 @@ Baer, Karl Ernst von:
   metadata:
     gnd: '118505831'
   references:
+    GA 21:
+    - start: 215
     GA 29/30:
     - start: 378
   type: p
@@ -370,6 +374,9 @@ Bezug:
     - start: 285
 Biologie:
   references:
+    GA 21:
+    - start: 215
+      suffix: f
     GA 29/30:
     - end: 279
       start: 277
@@ -472,6 +479,9 @@ Darwinismus:
       type: r
 Dasein:
   references:
+    GA 21:
+    - end: 217
+      start: 214
     GA 29/30:
     - start: 251
     - end: 411
@@ -818,6 +828,8 @@ Europa:
     - start: 523
 Existenz:
   references:
+    GA 25:
+    - start: 20
     GA 29/30:
     - start: 257
     - start: 13
@@ -1580,6 +1592,11 @@ In lieblicher Bläue blühet...:
   type: w
 In-der-Welt-sein:
   references:
+    GA 21:
+    - start: 214
+      suffix: f
+    GA 25:
+    - start: 20
     SZ:
     - start: 135
     - start: 137
@@ -1733,6 +1750,14 @@ Leben:
     GA 19:
     - start: 18
       suffix: f
+    GA 21:
+    - start: 216
+    GA 22:
+    - start: 207
+    - end: 311
+      start: 309
+    GA 25:
+    - start: 20
     GA 29/30:
     - end: 279
       start: 277
@@ -1755,6 +1780,10 @@ Lebensbewegung:
   references:
     GA 29/30:
     - start: 317
+Lebensphilosophie:
+  references:
+    GA 21:
+    - start: 216
 Leere:
   references:
     GA 29/30:
@@ -1869,6 +1898,9 @@ Mensch:
     GA 19:
     - start: 17
     - start: 71
+    GA 22:
+    - start: 310
+      suffix: f
     GA 29/30:
     - start: 6
     - start: 7
@@ -2062,6 +2094,8 @@ Natur:
     G:
     - start: 523
     - start: 527
+    GA 20:
+    - start: 262
     GA 29/30:
     - end: 404
       start: 402
@@ -2069,6 +2103,8 @@ Natur:
       start: 38
     - end: 47
       start: 46
+    SZ:
+    - start: 70
     SvG:
     - start: 178
     WBPh:
@@ -2511,6 +2547,13 @@ Revolution der Technik:
   references:
     G:
     - start: 528
+Rickert, Heinrich:
+  metadata:
+    gnd: '118600605'
+  references:
+    GA 21:
+    - start: 216
+  type: p
 Rilke, Rainer Maria:
   references:
     GA 1:
@@ -3011,6 +3054,8 @@ Tier:
     EM:
     - start: 17
     - start: 19
+    GA 21:
+    - start: 215
     GA 29/30:
     - start: 412
     - end: 445
@@ -3085,6 +3130,8 @@ Transzendenz:
     - start: 120
 Trieb:
   references:
+    GA 22:
+    - start: 311
     GA 29/30:
     - start: 362
     - start: 363
@@ -3094,6 +3141,12 @@ Trieb:
     - start: 33
 Umwelt der Tiere:
   references:
+    GA 20:
+    - start: 305
+    GA 21:
+    - start: 215
+    GA 25:
+    - start: 20
     GA 29/30:
     - start: 284
   related:
@@ -3247,6 +3300,10 @@ Von der mannigfachen Bedeutung des Seienden nach Aristoteles:
   type: w
 Vorhandenen:
   references:
+    GA 20:
+    - start: 262
+    GA 25:
+    - start: 20
     GA 29/30:
     - end: 425
       start: 422
@@ -3337,6 +3394,8 @@ Welt:
   references:
     G:
     - start: 527
+    GA 25:
+    - start: 20
     GA 29/30:
     - end: 253
       start: 251
@@ -3807,6 +3866,10 @@ ja-und-nein-sagen:
 menschliche Dasein:
   parent: Dasein
   references:
+    GA 22:
+    - start: 207
+    GA 25:
+    - start: 20
     GA 29/30:
     - start: 44
     - start: 302
@@ -3814,6 +3877,8 @@ menschliche Dasein:
     - start: 307
 menschliches Dasein:
   references:
+    GA 22:
+    - start: 311
     GA 63:
     - start: 21
     - start: 26
@@ -3978,6 +4043,8 @@ von Uexküll, Jakob Johann:
   metadata:
     gnd: '118763407'
   references:
+    GA 21:
+    - start: 215
     GA 29/30:
     - start: 284
     - start: 315
@@ -4084,6 +4151,9 @@ wesentliche Möglichkeit des Seins:
   - Aussehen
 ζωή:
   references:
+    GA 22:
+    - start: 185
+      suffix: ff
     WD:
     - start: 278
   related:
@@ -4103,6 +4173,9 @@ wesentliche Möglichkeit des Seins:
     GA 19:
     - start: 17
     - start: 71
+    GA 22:
+    - start: 186
+    - start: 310
     GA 29/30:
     - start: 442
       suffix: f
@@ -4182,6 +4255,9 @@ wesentliche Möglichkeit des Seins:
     GA 21:
     - end: 4
       start: 1
+    GA 22:
+    - start: 310
+      suffix: f
     GA 29/30:
     - start: 441
     - end: 420
