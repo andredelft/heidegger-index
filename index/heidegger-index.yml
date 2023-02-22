@@ -33,6 +33,8 @@ Adversus mathematicos VII, 16:
   type: w
 Alltäglichkeit:
   references:
+    GA 18:
+    - start: 51
     GA 29/30:
     - end: 400
       start: 398
@@ -175,6 +177,15 @@ Aristoteles:
     - start: 297
     - start: 298
   type: p
+Ars rhetorica:
+  author: Aristoteles
+  references:
+    GA 18:
+    - start: 48
+      suffix: f
+    - start: 57
+      suffix: f
+  type: w
 Atomenergie:
   references:
     G:
@@ -376,6 +387,8 @@ Biologie:
   references:
     GA 21:
     - start: 215
+    GA 24:
+    - start: 271
       suffix: f
     GA 29/30:
     - end: 279
@@ -479,9 +492,14 @@ Darwinismus:
       type: r
 Dasein:
   references:
+    GA 18:
+    - start: 17
+      suffix: f
     GA 21:
     - end: 217
       start: 214
+    GA 27:
+    - start: 71
     GA 29/30:
     - start: 251
     - end: 411
@@ -514,6 +532,8 @@ Dasein:
 Dasein des Menschen:
   parent: Dasein
   references:
+    GA 18:
+    - start: 20
     GA 29/30:
     - start: 487
     - start: 8
@@ -538,17 +558,15 @@ Dasein im Menschen:
     - start: 305
     WiM:
     - start: 112
+Daseins des Menschen:
+  references:
+    GA 18:
+    - start: 47
 Daseinsgeschichte:
   parent: Dasein
   references:
     GA 29/30:
     - start: 432
-De Anima:
-  references:
-    GA 19:
-    - start: 18
-      suffix: f
-  type: w
 De Interpretatione:
   author: Aristoteles
   metadata:
@@ -567,9 +585,24 @@ De anima:
   metadata:
     urn: urn:cts:greekLit:tlg0086.tlg002
   references:
+    GA 18:
+    - start: 53
+    - start: 235
+      suffix: ff
+    GA 19:
+    - start: 18
+      suffix: f
     GA 29/30:
     - end: 455
       start: 454
+  type: w
+De animalium motione:
+  author: Aristoteles
+  metadata:
+    urn: urn:cts:greekLit:tlg0086.tlg021
+  references:
+    GA 18:
+    - start: 239
   type: w
 De generatione et corruptione:
   author: Aristoteles
@@ -578,6 +611,18 @@ De generatione et corruptione:
   references:
     WBPh:
     - start: 293
+  type: w
+De partibus animalium:
+  author: Aristoteles
+  metadata:
+    urn: urn:cts:greekLit:tlg0086.tlg030
+  references:
+    GA 18:
+    - start: 237
+      suffix: f
+    - start: 240
+    - end: 234
+      start: 229
   type: w
 Demokrit:
   references:
@@ -814,6 +859,9 @@ Ernst:
     - start: 258
 Erschlossenheit:
   references:
+    GA 18:
+    - start: 52
+    - start: 326
     SZ:
     - end: 137
       start: 135
@@ -830,6 +878,8 @@ Existenz:
   references:
     GA 25:
     - start: 20
+    GA 27:
+    - start: 71
     GA 29/30:
     - start: 257
     - start: 13
@@ -1576,6 +1626,20 @@ In lieblicher Bläue blühet...:
   type: w
 In-der-Welt-sein:
   references:
+    GA 18:
+    - start: 18
+    - start: 21
+      type: r
+    - end: 49
+      start: 47
+    - end: 57
+      start: 55
+    - start: 99
+      suffix: f
+    - start: 237
+      suffix: f
+    - start: 325
+      suffix: f
     GA 21:
     - start: 214
       suffix: f
@@ -1585,6 +1649,11 @@ In-der-Welt-sein:
     - start: 135
     - start: 137
     - start: 246
+In-die-Welt-sein:
+  references:
+    GA 18:
+    - start: 51
+      suffix: f
 In-sein:
   references:
     SZ:
@@ -1615,6 +1684,13 @@ JGB Nachgesang:
     - start: 108
       type: r
   type: w
+Jaeger, Werner Wilhelm:
+  metadata:
+    gnd: '118711350'
+  references:
+    GA 18:
+    - start: 239
+  type: p
 Kalkül:
   references:
     SvG:
@@ -1667,6 +1743,8 @@ Kierkegaard, Søren:
   type: p
 Kind:
   references:
+    GA 27:
+    - start: 311
     SvG:
     - start: 168
 Klages, Ludwig:
@@ -1732,6 +1810,20 @@ Langeweile:
     - start: 110
 Leben:
   references:
+    GA 18:
+    - start: 18
+    - start: 20
+      suffix: f
+    - end: 50
+      start: 46
+    - end: 54
+      start: 51
+    - start: 99
+      suffix: ff
+    - start: 138
+    - end: 239
+      start: 237
+    - start: 325
     GA 19:
     - start: 18
       suffix: f
@@ -1743,6 +1835,9 @@ Leben:
       start: 309
     GA 25:
     - start: 20
+    GA 27:
+    - start: 71
+    - start: 148
     GA 29/30:
     - end: 279
       start: 277
@@ -1771,6 +1866,8 @@ Lebensbewegung:
     - start: 317
 Lebensphilosophie:
   references:
+    GA 18:
+    - start: 21
     GA 21:
     - start: 216
 Leere:
@@ -1884,6 +1981,9 @@ Mensch:
   references:
     GA 16:
     - start: 530
+    GA 18:
+    - start: 18
+    - start: 21
     GA 19:
     - start: 17
     - start: 71
@@ -1964,6 +2064,12 @@ Mitdasein:
     - start: 137
 Miteinandersein:
   references:
+    GA 18:
+    - end: 50
+      start: 45
+    - start: 55
+      suffix: f
+    - start: 138
     GA 29/30:
     - start: 447
 Mitexistieren:
@@ -2085,6 +2191,9 @@ Natur:
     - start: 527
     GA 20:
     - start: 262
+    GA 27:
+    - start: 71
+      suffix: f
     GA 29/30:
     - end: 404
       start: 402
@@ -2300,6 +2409,12 @@ Pflanze:
     EM:
     - start: 17
     - start: 19
+    GA 18:
+    - start: 99
+    - start: 237
+    GA 27:
+    - start: 71
+    - start: 148
     GA 29/30:
     - start: 307
     WD:
@@ -2461,6 +2576,17 @@ Plato:
     WBPh:
     - start: 299
   type: p
+Politica:
+  author: Aristoteles
+  references:
+    GA 18:
+    - start: 45
+      suffix: f
+    - start: 49
+      suffix: f
+    - start: 52
+    - start: 57
+  type: w
 Princip:
   references:
     SvG:
@@ -2874,6 +3000,10 @@ Spiel:
     - start: 167
     - start: 168
     - start: 169
+Spiel der Tiere:
+  references:
+    GA 27:
+    - start: 311
 Spiel mit der Sprache:
   references:
     GA 29/30:
@@ -2900,6 +3030,9 @@ Sprache:
     GA 13:
     - start: 117
       suffix: f
+    GA 18:
+    - start: 20
+      suffix: f
     GA 29/30:
     - start: 442
       suffix: f
@@ -2910,6 +3043,15 @@ Sprachgeist:
   references:
     HH:
     - start: 135
+Sprechen:
+  references:
+    GA 18:
+    - start: 17
+    - end: 21
+      start: 19
+    - end: 47
+      start: 45
+    - start: 55
 Sprung:
   references:
     SvG:
@@ -2967,6 +3109,11 @@ Subjeckt:
   references:
     Vorarb29/30:
     - start: 7
+Subject/Object:
+  references:
+    GA 18:
+    - start: 56
+      suffix: f
 Subjekt:
   references:
     GA 29/30:
@@ -3088,6 +3235,8 @@ Tod:
   references:
     EWI:
     - start: 18
+    GA 18:
+    - start: 21
     GA 29/30:
     - end: 426
       start: 425
@@ -3128,8 +3277,16 @@ Trieb:
       start: 7
     - start: 11
     - start: 33
+Umwelt:
+  references:
+    GA 18:
+    - start: 48
+    - start: 51
 Umwelt der Tiere:
   references:
+    GA 18:
+    - start: 54
+    - start: 99
     GA 20:
     - start: 305
     GA 21:
@@ -3289,6 +3446,8 @@ Von der mannigfachen Bedeutung des Seienden nach Aristoteles:
   type: w
 Vorhandenen:
   references:
+    GA 18:
+    - start: 325
     GA 20:
     - start: 262
     GA 25:
@@ -3383,6 +3542,8 @@ Welt:
   references:
     G:
     - start: 527
+    GA 18:
+    - start: 18
     GA 25:
     - start: 20
     GA 29/30:
@@ -4140,6 +4301,8 @@ wesentliche Möglichkeit des Seins:
   - Aussehen
 ζωή:
   references:
+    GA 18:
+    - start: 18
     GA 22:
     - start: 185
       suffix: ff
@@ -4159,6 +4322,17 @@ wesentliche Möglichkeit des Seins:
       suffix: f
 ζῷον λόγον ἔχον:
   references:
+    GA 18:
+    - start: 18
+    - start: 20
+      suffix: f
+    - start: 43
+    - start: 45
+      suffix: f
+    - start: 49
+      suffix: f
+    - start: 56
+    - start: 99
     GA 19:
     - start: 17
     - start: 71
@@ -4199,6 +4373,15 @@ wesentliche Möglichkeit des Seins:
       suffix: f
     - start: 284
     - start: 293
+κοινωνία:
+  references:
+    GA 18:
+    - start: 46
+    - end: 50
+      start: 48
+    - start: 56
+  related:
+  - Miteinandersein
 κρίνειν:
   references:
     WBPh:
@@ -4241,6 +4424,14 @@ wesentliche Möglichkeit des Seins:
     EM:
     - start: 62
     - start: 66
+    GA 18:
+    - end: 21
+      start: 17
+    - start: 47
+    - end: 52
+      start: 49
+    - end: 57
+      start: 55
     GA 21:
     - end: 4
       start: 1
@@ -4495,6 +4686,8 @@ wesentliche Möglichkeit des Seins:
   references:
     EM:
     - start: 19
+    GA 18:
+    - start: 239
     GA 29/30:
     - start: 46
     - end: 52
@@ -4522,6 +4715,8 @@ wesentliche Möglichkeit des Seins:
     - start: 111
     FT:
     - start: 12
+    GA 18:
+    - start: 45
     GA 21:
     - start: 1
     - start: 3
@@ -4743,6 +4938,11 @@ wesentliche Möglichkeit des Seins:
     EM:
     - end: 62
       start: 61
+ὄργανον:
+  references:
+    GA 18:
+    - start: 238
+      suffix: f
 ὑποκείμενον:
   references:
     WBPh:
@@ -4750,6 +4950,9 @@ wesentliche Möglichkeit des Seins:
       suffix: f
 ὕλη:
   references:
+    GA 18:
+    - start: 238
+      suffix: f
     WBPh:
     - end: 272
       start: 271
