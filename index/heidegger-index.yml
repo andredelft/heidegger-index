@@ -1561,22 +1561,6 @@ Hölderlin, Friedrich:
     - start: 273
     - start: 276
   type: p
-Ⅰ Cor. 11. 7:
-  author: Paulus
-  metadata:
-    urn: urn:cts:greekLit:tlg0031.tlg007:11.7
-  references:
-    GA 63:
-    - start: 22
-  type: w
-Ⅱ Cor. 3. 18:
-  author: Paulus
-  metadata:
-    urn: urn:cts:greekLit:tlg0031.tlg008:3.18
-  references:
-    GA 63:
-    - start: 22
-  type: w
 Ich:
   references:
     GA 29/30:
@@ -1600,6 +1584,7 @@ In-der-Welt-sein:
     SZ:
     - start: 135
     - start: 137
+    - start: 246
 In-sein:
   references:
     SZ:
@@ -1768,6 +1753,10 @@ Leben:
     - start: 311
     - start: 313
     - start: 317
+    SZ:
+    - start: 246
+      suffix: f
+    - start: 346
     WD:
     - start: 278
       suffix: f
@@ -4785,3 +4774,19 @@ wesentliche Möglichkeit des Seins:
     EM:
     - end: 62
       start: 61
+Ⅰ Cor. 11. 7:
+  author: Paulus
+  metadata:
+    urn: urn:cts:greekLit:tlg0031.tlg007:11.7
+  references:
+    GA 63:
+    - start: 22
+  type: w
+Ⅱ Cor. 3. 18:
+  author: Paulus
+  metadata:
+    urn: urn:cts:greekLit:tlg0031.tlg008:3.18
+  references:
+    GA 63:
+    - start: 22
+  type: w
