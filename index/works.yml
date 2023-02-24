@@ -476,3 +476,131 @@ WiM:
   publisher-place: Frankfurt am Main
   title: Was ist Metaphysik?
   type: chapter
+GA 18:
+  id: heideggerGA18
+  author:
+    - family: Heidegger
+      given: Martin
+  citation-key: heideggerGA18
+  collection-number: band 18
+  collection-title: Martin Heidegger Gesamtausgabe
+  editor:
+    - family: Michalski
+      given: Mark
+  event-place: Frankfurt am Main
+  ISBN: 3-465-03162-8
+  issued:
+    - year: 2002
+  language: ger
+  note: Marburger Vorlesung Sommersemester 1924
+  number-of-pages: XIII, 418
+  publisher: Vittorio Klostermann
+  publisher-place: Frankfurt am Main
+  title: Grundbegriffe der Aristotelischen Philosophie
+  type: book
+GA 19:
+  id: heideggerGA19
+  author:
+    - family: Heidegger
+      given: Martin
+  citation-key: heideggerGA19
+  collection-number: band 19
+  collection-title: Martin Heidegger Gesamtausgabe
+  editor:
+    - family: Schüßler
+      given: Ingeborg
+  event-place: Frankfurt am Main
+  issued:
+    - year: 1992
+  language: ger
+  number-of-pages: xxxi, 668
+  publisher: Vittorio Klostermann
+  publisher-place: Frankfurt am Main
+  title: 'Platon: Sophistes'
+  type: book
+GA 20:
+  id: heideggerGA20
+  author:
+    - family: Heidegger
+      given: Martin
+  citation-key: heideggerGA20
+  collection-number: band 20
+  collection-title: Martin Heidegger Gesamtausgabe
+  editor:
+    - family: Jaeger
+      given: Petra
+  event-place: Frankfurt am Main
+  issued:
+    - year: 1979
+  language: ger
+  number-of-pages: xii, 447
+  publisher: Vittorio Klostermann
+  publisher-place: Frankfurt am Main
+  title: Prolegomena zur Geschichte des Zeitbegriffs
+  type: book
+GA 22:
+  id: heideggerGA22
+  author:
+    - family: Heidegger
+      given: Martin
+  citation-key: heideggerGA22
+  collection-number: band 22
+  editor:
+    - family: Blust
+      given: Franz-Karl
+  event-place: Frankfurt am Main
+  ISBN: 978-3-465-03346-2
+  issued:
+    - year: 1993
+  language: ger
+  note: Marburger Vorlesung Sommersemester 1926
+  number-of-pages: XIII, 343
+  publisher: Vittorio Klostermann
+  publisher-place: Frankfurt am Main
+  title: Die Grundbegriffe der antiken Philosophie
+  type: book
+GA 24:
+  id: heideggerGA24
+  author:
+    - family: Heidegger
+      given: Martin
+  citation-key: heideggerGA24
+  collection-number: band 24
+  collection-title: Martin Heidegger Gesamtausgabe
+  editor:
+    - family: Herrmann
+      given: Friedrich-Wilhelm
+      dropping-particle: von
+  event-place: Frankfurt am Main
+  issued:
+    - year: 1975
+  language: ger
+  number-of-pages: x, 475
+  publisher: Vittorio Klostermann
+  publisher-place: Frankfurt am Main
+  title: Die Grundprobleme der Phänomenologie
+  type: book
+GA 27:
+  id: heideggerGA27
+  author:
+    - family: Heidegger
+      given: Martin
+  citation-key: heideggerGA27
+  collection-title: Martin Heidegger Gesamtausgabe
+  editor:
+    - family: Saame
+      given: Otto
+    - family: Saame-Speidel
+      given: Ina
+  event-place: Frankfurt am Main
+  ISBN: 3-465-02893-7
+  issued:
+    - year: 1996
+  language: ger
+  note: Freiburger Vorlesung Wintersemester 1928/29
+  number-of-pages: X, 404
+  publisher: Vittorio Klostermann
+  publisher-place: Frankfurt am Main
+  title: Einleitung in die Philosophie
+  type: book
+  volume: band 27
