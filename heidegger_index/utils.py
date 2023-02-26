@@ -10,10 +10,86 @@ PREFIX_FILTER = re.compile(rf'^(?:{"|".join(PREFIXES)})\s+')
 
 REF_REGEX = re.compile(r"^(?P<start>\d+)(?:-(?P<end>\d+)|(?P<suffix>f{1,2})\.?)?$")
 
+# This is the NUMBER FORM unicode block
+NUMERIC_UNICODE_VALUES = {
+    188: 0.25,
+    189: 0.5,
+    190: 0.75,
+    8528: 0.142857,
+    8529: 0.111,
+    8530: 0.1,
+    8531: 0.333,
+    8532: 0.666,
+    8533: 0.2,
+    8534: 0.4,
+    8535: 0.6,
+    8536: 0.8,
+    8537: 0.166,
+    8538: 0.833,
+    8539: 0.125,
+    8540: 0.375,
+    8541: 0.625,
+    8542: 0.875,
+    8543: 1,
+    8544: 1,
+    8545: 2,
+    8546: 3,
+    8547: 4,
+    8548: 5,
+    8549: 6,
+    8550: 7,
+    8551: 8,
+    8552: 9,
+    8553: 10,
+    8554: 11,
+    8555: 12,
+    8556: 50,
+    8557: 100,
+    8558: 500,
+    8559: 1000,
+    8560: 1,
+    8561: 2,
+    8562: 3,
+    8563: 4,
+    8564: 5,
+    8565: 6,
+    8566: 7,
+    8567: 8,
+    8568: 9,
+    8569: 10,
+    8570: 11,
+    8571: 12,
+    8572: 50,
+    8573: 100,
+    8574: 500,
+    8575: 1000,
+    8576: 1000,
+    8577: 5000,
+    8578: 10000,
+    8579: 100,
+    8580: 100,
+    8581: 6,
+    8582: 50,
+    8583: 50000,
+    8584: 100000,
+    8585: 0,
+    8586: 10,
+    8587: 11,
+}
 
-def gen_sort_key(value):
+
+def convert_numeric_unicode(value: str) -> str:
+    new_value = ""
+    for char in value:
+        new_value += str(NUMERIC_UNICODE_VALUES.get(ord(char), char))
+    return new_value
+
+
+def gen_sort_key(value: str) -> str:
     # Strip surrounding whitespaces
     value = value.strip()
+    # Convert numeric unicode to value
+    value = convert_numeric_unicode(value)
     # Normalize unicode
     value = unidecode(value)
     # Convert to lowercase

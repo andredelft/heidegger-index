@@ -69,10 +69,7 @@ class Lemma(models.Model):
     perseus_content = models.TextField(null=True)
 
     gnd = models.CharField(
-        null=True,
-        unique=True,
-        max_length=11,
-        validators=[validate_gnd]
+        null=True, unique=True, max_length=11, validators=[validate_gnd]
     )
     sort_key = models.CharField(max_length=100, null=True, unique=True)
     first_letter = models.CharField(max_length=1, null=True)
@@ -91,7 +88,10 @@ class Lemma(models.Model):
 
     def create_sort_key(self):
         self.sort_key = gen_sort_key(self.value)
-        self.first_letter = self.sort_key and self.sort_key[0].upper() or ""
+        first_letter = self.sort_key[0].upper() if self.sort_key else ""
+        if ord("0") <= ord(first_letter) <= ord("9"):
+            first_letter = "#"
+        self.first_letter = first_letter
 
     def save(self, *args, **kwargs):
         if not self.sort_key:

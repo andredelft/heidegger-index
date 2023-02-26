@@ -1585,6 +1585,10 @@ video {
   width: 1.5rem;
 }
 
+.w-12 {
+  width: 3rem;
+}
+
 .w-screen {
   width: 100vw;
 }
@@ -1593,14 +1597,6 @@ video {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-}
-
-.w-8 {
-  width: 2rem;
-}
-
-.w-12 {
-  width: 3rem;
 }
 
 .max-w-3xl {
@@ -1647,8 +1643,8 @@ video {
   justify-content: space-between;
 }
 
-.gap-1 {
-  gap: 0.25rem;
+.gap-\[4px\] {
+  gap: 4px;
 }
 
 .gap-8 {
@@ -1657,6 +1653,10 @@ video {
 
 .gap-4 {
   gap: 1rem;
+}
+
+.gap-\[2px\] {
+  gap: 2px;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
