@@ -323,6 +323,13 @@ Benehmen:
     - start: 450
     - end: 349
       start: 344
+    - end: 352
+      start: 350
+    - start: 359
+      suffix: f
+    - end: 372
+      start: 362
+    - start: 375
 Benommenheit:
   references:
     GA 29/30:
@@ -330,20 +337,26 @@ Benommenheit:
     - start: 489
     - start: 347
       suffix: ff
-Benommenheit des Tieres:
-  parent: Benommenheit
-  references:
-    GA 29/30:
-    - start: 362
+    - start: 354
+    - end: 362
+      start: 358
+    - start: 368
+    - start: 375
+    - start: 376
+      suffix: ff
+    - start: 396
 Benommenheit, Offenheit der:
   parent: Benommenheit
   references:
     GA 29/30:
-    - start: 362
     - start: 363
-      type: r
     - end: 370
       start: 368
+      type: r
+    - end: 362
+      start: 359
+    - start: 391
+      suffix: f
       type: r
 Bestand:
   references:
@@ -400,6 +413,10 @@ Biologie:
     - start: 313
     - end: 318
       start: 316
+    - start: 378
+      type: r
+    - end: 383
+      start: 379
     SZ:
     - start: 49
       suffix: f
@@ -418,6 +435,13 @@ Bodenständigkeit:
     G:
     - start: 522
     - start: 526
+Boveri, Theodor:
+  metadata:
+    gnd: '118662449'
+  references:
+    GA 29/30:
+    - start: 386
+  type: p
 Brentano, Franz:
   references:
     GA 1:
@@ -494,6 +518,8 @@ Darwinismus:
     - start: 378
     - start: 402
       type: r
+    - start: 382
+    - start: 384
 Dasein:
   references:
     GA 18:
@@ -518,6 +544,7 @@ Dasein:
     - start: 279
     - start: 301
     - start: 309
+    - start: 395
     GA 63:
     - start: 21
     - start: 25
@@ -733,6 +760,8 @@ Dichten:
     - start: 276
 Dichter:
   references:
+    GA 29/30:
+    - start: 396
     SvG:
     - start: 185
     WD:
@@ -765,6 +794,7 @@ Driesch, Hans:
     GA 29/30:
     - end: 381
       start: 380
+    - start: 382
   type: p
 Duineser Elegien:
   author: Rilke, Rainer Maria
@@ -791,6 +821,7 @@ Eigentümlichkeit:
     - end: 343
       start: 341
     - start: 347
+    - start: 376
 Einfühlung:
   references:
     GA 29/30:
@@ -1422,6 +1453,7 @@ Grundstimmung:
     - start: 490
     - start: 10
     - start: 87
+    - start: 395
     WiM:
     - end: 112
       start: 111
@@ -1647,6 +1679,8 @@ In-der-Welt-sein:
       type: r
     - end: 49
       start: 47
+    - start: 51
+      suffix: f
     - end: 57
       start: 55
     - start: 99
@@ -1664,11 +1698,6 @@ In-der-Welt-sein:
     - start: 135
     - start: 137
     - start: 246
-In-die-Welt-sein:
-  references:
-    GA 18:
-    - start: 51
-      suffix: f
 In-sein:
   references:
     SZ:
@@ -1864,6 +1893,9 @@ Leben:
     - start: 313
     - start: 317
     - start: 329
+    - start: 384
+    - start: 387
+      suffix: f
     SZ:
     - start: 246
       suffix: f
@@ -1988,6 +2020,8 @@ Mechanizismus:
     - start: 317
       suffix: f
       type: r
+    - start: 380
+    - start: 381
 Meister Eckhart:
   references:
     Sch:
@@ -2012,6 +2046,8 @@ Mensch:
     - start: 10
     - start: 39
     - start: 40
+    - start: 394
+      suffix: f
     GA 63:
     - start: 21
       suffix: f
@@ -2355,6 +2391,10 @@ Offene:
     - start: 277
     - start: 284
     - start: 285
+Offenheit der Benommenheit:
+  references:
+    GA 29/30:
+    - start: 377
 Offenheit für das Geheimnis:
   parent: Geheimnis
   references:
@@ -2385,6 +2425,7 @@ Organ:
       start: 323
     - start: 335
       suffix: ff
+    - start: 377
 Organismisch:
   references:
     GA 29/30:
@@ -2395,6 +2436,13 @@ Organismus:
     - start: 318
     - end: 316
       start: 311
+    - start: 374
+      suffix: ff
+    - start: 378
+    - end: 384
+      start: 380
+    - end: 388
+      start: 385
 Otto Hahn:
   references:
     SvG:
@@ -2484,6 +2532,7 @@ Philosophie:
       suffix: f
     - end: 282
       start: 280
+    - start: 383
     Vorarb29/30:
     - start: 6
     - start: 7
@@ -2725,6 +2774,7 @@ Rádl, Emanuel:
   references:
     GA 29/30:
     - start: 365
+    - start: 356
   type: p
 Rätsel:
   references:
@@ -3015,6 +3065,7 @@ Spemann, Hans:
     GA 29/30:
     - start: 381
     - start: 280
+    - start: 387
   type: p
 Spengler, Oswald:
   metadata:
@@ -3033,6 +3084,8 @@ Spiel der Tiere:
   references:
     GA 27:
     - start: 311
+    GA 29/30:
+    - start: 364
 Spiel mit der Sprache:
   references:
     GA 29/30:
@@ -3244,8 +3297,20 @@ Tier:
     - start: 336
       suffix: f
     - start: 340
-    - end: 349
+    - end: 378
       start: 343
+    - end: 382
+      start: 379
+    - start: 383
+      suffix: f
+    - start: 385
+      suffix: f
+    - start: 388
+    - start: 389
+    - start: 390
+      suffix: ff
+    - end: 396
+      start: 393
     WD:
     - start: 277
     - start: 278
@@ -3279,6 +3344,8 @@ Tod:
     GA 29/30:
     - end: 426
       start: 425
+    - start: 387
+      suffix: f
     SvG:
     - start: 188
     - start: 167
@@ -3310,8 +3377,6 @@ Trieb:
     GA 22:
     - start: 311
     GA 29/30:
-    - start: 362
-    - start: 363
     - end: 9
       start: 7
     - start: 11
@@ -3325,6 +3390,19 @@ Trieb:
       suffix: f
     - start: 346
       suffix: f
+    - start: 349
+    - end: 354
+      start: 350
+    - start: 357
+    - end: 363
+      start: 360
+    - start: 369
+    - start: 370
+    - end: 374
+      start: 371
+    - start: 376
+      suffix: f
+    - start: 385
 Umwelt:
   references:
     GA 18:
@@ -3343,6 +3421,12 @@ Umwelt der Tiere:
     - start: 20
     GA 29/30:
     - start: 284
+    - start: 375
+      suffix: f
+    - start: 377
+      type: r
+    - start: 383
+    - start: 384
   related:
   - von Uexküll, Jakob Johann
 Uneigentlichkeit:
@@ -3480,6 +3564,7 @@ Vitalismus:
     - start: 325
       suffix: f
       type: r
+    - start: 381
   related:
   - Mechanizismus
   - Neovitalismus
@@ -3512,6 +3597,8 @@ Vorhandenen:
       start: 427
     - start: 431
     - start: 432
+    - start: 360
+      suffix: f
     SZ:
     - start: 135
     - start: 136
@@ -3609,6 +3696,8 @@ Welt:
     - start: 442
       suffix: f
     - start: 313
+    - end: 392
+      start: 389
     GA 63:
     - start: 21
     SZ:
@@ -3630,6 +3719,13 @@ Weltarmut:
     - end: 310
       start: 307
     - start: 331
+    - start: 359
+    - start: 371
+    - start: 388
+    - start: 389
+    - start: 391
+    - end: 396
+      start: 392
   related:
   - Weltbildung
 Weltbildung:
@@ -3679,6 +3775,10 @@ Werden:
     EM:
     - end: 105
       start: 103
+Wesen des Lebends:
+  references:
+    GA 29/30:
+    - start: 387
 Wesen des Lebens:
   parent: Leben
   references:
@@ -3687,6 +3787,9 @@ Wesen des Lebens:
       start: 265
     - start: 283
     - start: 318
+    - start: 371
+    - start: 378
+    - start: 385
 Wesen des Menschen:
   references:
     EWI:
@@ -3715,6 +3818,12 @@ Wesen des Tieres:
     - start: 331
     - start: 343
     - start: 348
+    - start: 349
+    - start: 354
+    - start: 368
+    - start: 378
+    - start: 388
+    - start: 389
 Wesen des lebens:
   references:
     GA 29/30:
@@ -3750,6 +3859,7 @@ Wissenschaft:
       suffix: f
     - start: 317
       suffix: f
+    - start: 379
     SvG:
     - start: 181
     - start: 185
@@ -3829,6 +3939,9 @@ Zugänglichkeit des Seienden:
   references:
     GA 29/30:
     - start: 412
+    - start: 389
+    - start: 390
+    - start: 391
 Zuhandene:
   references:
     SZ:
@@ -4051,6 +4164,7 @@ im Ganzen:
     - start: 441
     - start: 457
     - start: 6
+    - start: 395
     Vorarb29/30:
     - start: 6
     - start: 7
@@ -4257,11 +4371,10 @@ von Uexküll, Jakob Johann:
     GA 29/30:
     - start: 284
     - start: 315
-  type: p
-von Uexküll, Johann Jakob:
-  references:
-    GA 29/30:
     - start: 327
+    - start: 365
+    - start: 382
+      suffix: f
   type: p
 vulgäre Verstand:
   references:
@@ -4297,6 +4410,10 @@ wesentliche Möglichkeit des Seins:
     SvG:
     - start: 154
   type: p
+Ökologie:
+  references:
+    GA 29/30:
+    - start: 382
 αἰτία:
   references:
     FT:
