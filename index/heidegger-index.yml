@@ -565,6 +565,7 @@ Dasein des Menschen:
   references:
     GA 18:
     - start: 20
+    - start: 47
     GA 29/30:
     - start: 487
     - start: 8
@@ -589,10 +590,6 @@ Dasein im Menschen:
     - start: 305
     WiM:
     - start: 112
-Daseins des Menschen:
-  references:
-    GA 18:
-    - start: 47
 Daseinsgeschichte:
   parent: Dasein
   references:
@@ -1886,6 +1883,7 @@ Leben:
     - end: 279
       start: 277
     - start: 282
+      suffix: f
     - start: 33
     - start: 283
     - start: 292
@@ -4150,8 +4148,6 @@ im Ganzen:
   references:
     GA 29/30:
     - start: 251
-    - end: 412
-      start: 411
     - start: 8
     - end: 13
       start: 11
