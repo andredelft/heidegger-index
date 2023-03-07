@@ -879,6 +879,7 @@ Erde:
   references:
     GA 16:
     - start: 530
+    - start: 531
     SvG:
     - start: 189
   related:
@@ -1566,6 +1567,11 @@ Heraklit:
     - start: 277
     - start: 298
   type: p
+Herder, Johann Gottfried:
+  references:
+    GA 16:
+    - start: 531
+  type: p
 Hergestelltheit:
   references:
     WBPh:
@@ -1595,6 +1601,7 @@ Himmel:
   references:
     GA 16:
     - start: 530
+    - start: 531
   related:
   - Theologische Schriften 3, Gebet 3
   - Äther
@@ -2029,6 +2036,7 @@ Mensch:
   references:
     GA 16:
     - start: 530
+    - start: 531
     GA 18:
     - start: 18
     - start: 21
@@ -3110,6 +3118,8 @@ Sprache:
     GA 13:
     - start: 117
       suffix: f
+    GA 16:
+    - start: 531
     GA 18:
     - start: 20
       suffix: f
