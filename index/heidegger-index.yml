@@ -2493,6 +2493,8 @@ Pflanze:
     - start: 148
     GA 29/30:
     - start: 307
+    UK:
+    - start: 31
     WD:
     - start: 277
     - start: 278
@@ -3319,6 +3321,8 @@ Tier:
       suffix: ff
     - end: 396
       start: 393
+    UK:
+    - start: 31
     WD:
     - start: 277
     - start: 278
@@ -3734,6 +3738,9 @@ Weltarmut:
     - start: 391
     - end: 396
       start: 392
+    UK:
+    - start: 31
+      type: r
   related:
   - Weltbildung
 Weltbildung:

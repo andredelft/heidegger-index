@@ -604,3 +604,28 @@ GA 27:
   title: Einleitung in die Philosophie
   type: book
   volume: band 27
+UK:
+  ISBN: 978-3-465-03236-6 978-3-465-03237-3
+  author:
+  - family: Heidegger
+    given: Martin
+  collection-number: band 5
+  collection-title: Gesamtausgabe
+  container-title: Holzwege
+  citation-key: heideggerUK
+  editor:
+  - dropping-particle: von
+    family: Herrmann
+    given: Friedrich-Wilhelm
+  event-place: Frankfurt am Main
+  id: UK
+  issued:
+    date-parts:
+    - - 2003
+  language: german
+  page: 1-74
+  publisher: Vittorio Klostermann
+  publisher-place: Frankfurt am Main
+  source: Gemeinsamer Bibliotheksverbund ISBN
+  title: Der Ursprung des Kunstwerkes
+  type: chapter
