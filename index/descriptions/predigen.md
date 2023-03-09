@@ -1,0 +1,1 @@
+> Predigen ist das leteinische praedicare. Das heißt: etwas vorsagen, dadurch kundtun, dadurch r¨hmen und so das zu-Sagende in seinem Glanz erscheinen lassen. Dieses 'predigen' ist das Wesen des dichterischen Sagens. [@HF, p. 143]

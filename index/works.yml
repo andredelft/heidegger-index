@@ -136,6 +136,27 @@ GA 16:
   title: 'Reden und Zeugnisse eines Lebensweg: 1910–1976'
   title-short: Reden und Zeugnisse
   type: book
+HF:
+  author:
+  - family: Heidegger
+    given: Martin
+  collection-number: band 13
+  collection-title: Gesamtausgabe
+  container-title: Aus der Erfahrung des Denkens
+  editor:
+  - family: Heidegger
+    given: Hermann
+  event-place: Frankfurt am Main
+  id: HF
+  issued:
+    date-parts:
+    - - 2002
+  language: german
+  page: 133-154
+  publisher: Vittorio Klostermann
+  publisher-place: Frankfurt am Main
+  title: 'Hebel – Der Hausfreund'
+  type: chapter
 GA 29/30:
   author:
   - family: Heidegger

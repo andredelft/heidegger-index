@@ -1643,8 +1643,8 @@ video {
   justify-content: space-between;
 }
 
-.gap-\[4px\] {
-  gap: 4px;
+.gap-\[2px\] {
+  gap: 2px;
 }
 
 .gap-8 {
@@ -1653,10 +1653,6 @@ video {
 
 .gap-4 {
   gap: 1rem;
-}
-
-.gap-\[2px\] {
-  gap: 2px;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -1767,7 +1763,7 @@ video {
 }
 
 .font-serif {
-  font-family: Alegreya Greek, Crimson Pro;
+  font-family: Alegreya Greek, Crimson Pro, ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 }
 
 .text-xl {

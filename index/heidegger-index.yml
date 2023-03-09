@@ -1,3 +1,7 @@
+' Hausfreund':
+  references:
+    HF:
+    - start: 143
 4 Esra 7. 12:
   references:
     GA 29/30:
@@ -31,6 +35,15 @@ Adversus mathematicos VII, 16:
     GA 29/30:
     - start: 55
   type: w
+Allemannischen Gedichte:
+  author: Hebel, Johann Peter
+  references:
+    HF:
+    - start: 134
+      suffix: f
+    - start: 137
+      suffix: f
+  type: w
 Alltäglichkeit:
   references:
     GA 18:
@@ -48,6 +61,11 @@ Alltäglichkeit:
     - start: 110
     - start: 116
       type: r
+Alpen:
+  references:
+    HF:
+    - start: 134
+  type: g
 Anaximander:
   references:
     SvG:
@@ -286,6 +304,15 @@ Baer, Karl Ernst von:
     GA 29/30:
     - start: 378
   type: p
+Basel-Lörrach:
+  references:
+    HF:
+    - start: 133
+  type: g
+Bauen:
+  references:
+    HF:
+    - start: 138
 Bedeutung:
   references:
     GA 29/30:
@@ -520,6 +547,11 @@ Darwinismus:
       type: r
     - start: 382
     - start: 384
+Das Habermus:
+  references:
+    HF:
+    - start: 145
+  type: w
 Dasein:
   references:
     GA 18:
@@ -691,6 +723,11 @@ Der Mensch im Weltalter des Ausgleichs:
     GA 29/30:
     - start: 106
   type: w
+Der Sommerabend:
+  references:
+    HF:
+    - start: 145
+  type: w
 Der Untergang des Abendlandes:
   author: Spengler, Oswald
   references:
@@ -747,6 +784,10 @@ Descartes, René:
     SvG:
     - start: 174
   type: p
+Dialekt:
+  references:
+    HF:
+    - start: 134
 Dialektik:
   references:
     GA 29/30:
@@ -766,6 +807,12 @@ Dichter:
     - start: 272
     - start: 273
     - start: 274
+Die Wiese:
+  author: Hebel, Johann Peter
+  references:
+    HF:
+    - start: 134
+  type: w
 Ding:
   references:
     EM:
@@ -880,6 +927,9 @@ Erde:
     GA 16:
     - start: 530
     - start: 531
+    HF:
+    - start: 134
+    - start: 139
     SvG:
     - start: 189
   related:
@@ -1127,6 +1177,11 @@ Freude:
   references:
     WiM:
     - start: 110
+Fricktal:
+  references:
+    HF:
+    - start: 134
+  type: g
 Fuge:
   references:
     GA 29/30:
@@ -1200,7 +1255,7 @@ Gegnet:
   references:
     GA 55:
     - start: 335
-    HH:
+    ZEG:
     - start: 47
 Geheimnis:
   references:
@@ -1334,6 +1389,8 @@ Goethe, Johann Wolfgang von:
   metadata:
     gnd: '118540238'
   references:
+    HF:
+    - start: 145
     SvG:
     - start: 181
     - start: 185
@@ -1487,6 +1544,16 @@ Haben der Welt:
     GA 29/30:
     - end: 263
       start: 262
+Hausfreund:
+  references:
+    HF:
+    - start: 135
+    - start: 137
+    - start: 140
+    - start: 141
+    - start: 142
+    - start: 144
+      suffix: f
 Haustier:
   parent: Tier
   references:
@@ -1504,6 +1571,9 @@ Hebel, Johann Peter:
       suffix: f
     GA 16:
     - start: 530
+    HF:
+    - end: 154
+      start: 133
   type: p
 Hegel, Georg Wilhelm Friedrich:
   metadata:
@@ -1516,6 +1586,8 @@ Hegel, Georg Wilhelm Friedrich:
     - start: 82
     - start: 305
       suffix: f
+    HF:
+    - start: 137
     SZ:
     - start: 3
     WBPh:
@@ -1602,6 +1674,8 @@ Himmel:
     GA 16:
     - start: 530
     - start: 531
+    HF:
+    - start: 139
   related:
   - Theologische Schriften 3, Gebet 3
   - Äther
@@ -1668,6 +1742,10 @@ Ich:
     - start: 84
     - start: 305
     - start: 302
+Illustrierte Zeitung:
+  references:
+    HF:
+    - start: 136
 In lieblicher Bläue blühet...:
   author: Hölderlin, Friedrich
   references:
@@ -1775,6 +1853,11 @@ Kant, Immanuel:
   related:
   - dialektische Schein
   type: p
+Karlsruhe:
+  references:
+    HF:
+    - start: 133
+  type: g
 Kierkegaard, Søren:
   metadata:
     gnd: '118562002'
@@ -1802,6 +1885,10 @@ Klages, Ludwig:
     GA 29/30:
     - start: 105
   type: p
+Kopernikus:
+  references:
+    HF:
+    - start: 144
 Kreisbewegung der Philosophie:
   references:
     GA 29/30:
@@ -2163,6 +2250,13 @@ Mnemosyne:
     WD:
     - start: 270
   type: w
+Mond:
+  references:
+    HF:
+    - start: 140
+    - start: 141
+    - start: 144
+      suffix: f
 Mozart, Wolfgang Amadeus:
   references:
     SvG:
@@ -2234,6 +2328,10 @@ Nachdenken:
     - start: 526
     - end: 529
       start: 528
+Nachstellen:
+  references:
+    EWI:
+    - start: 68
 Natur:
   references:
     EM:
@@ -2259,6 +2357,9 @@ Natur:
       start: 38
     - end: 47
       start: 46
+    HF:
+    - end: 145
+      start: 144
     SZ:
     - start: 70
     SvG:
@@ -2277,14 +2378,26 @@ Natur:
     - start: 60
   related:
   - natura
+Naturlichkeit:
+  references:
+    HF:
+    - start: 144
+      suffix: f
 Naturwissenschaft:
   references:
     GA 29/30:
     - start: 85
+    HF:
+    - start: 144
+      suffix: f
     SvG:
     - start: 180
     WD:
     - start: 278
+Naturwissenshchaft:
+  references:
+    HF:
+    - start: 140
 Neovitalismus:
   references:
     GA 29/30:
@@ -2744,6 +2857,11 @@ Revolution der Technik:
   references:
     G:
     - start: 528
+Rheinknie:
+  references:
+    HF:
+    - start: 133
+  type: g
 Rickert, Heinrich:
   metadata:
     gnd: '118600605'
@@ -2832,6 +2950,9 @@ Schatzkästlein des rheinischen Hausfreundes:
     GA 13:
     - start: 117
       suffix: f
+    HF:
+    - start: 137
+    - start: 138
   type: w
 Schein:
   references:
@@ -2888,6 +3009,17 @@ Schutz:
     WD:
     - start: 277
     - start: 280
+Schwaben:
+  references:
+    HF:
+    - start: 134
+  type: g
+Schwarzwald:
+  references:
+    HF:
+    - start: 133
+    - start: 134
+  type: g
 Schwerkraft:
   references:
     WD:
@@ -3049,6 +3181,12 @@ Sonette an Orpheus:
     - start: 278
     - start: 282
   type: w
+Sonne:
+  references:
+    HF:
+    - start: 141
+    - start: 144
+      suffix: f
 Sophistes:
   author: Plato
   metadata:
@@ -3130,11 +3268,15 @@ Sprache:
       suffix: f
     - start: 298
     - start: 346
+    HF:
+    - start: 135
+    - start: 137
+    - start: 138
     WD:
     - start: 274
 Sprachgeist:
   references:
-    HH:
+    HF:
     - start: 135
 Sprechen:
   references:
@@ -3181,6 +3323,11 @@ Sterblichen:
     - start: 274
   related:
   - Himmlischen
+Sterne:
+  references:
+    HF:
+    - start: 144
+      suffix: f
 Stimmung:
   references:
     GA 29/30:
@@ -3218,6 +3365,11 @@ Substantiv:
     EM:
     - end: 61
       start: 59
+Sundgau:
+  references:
+    HF:
+    - start: 134
+  type: g
 Symbol:
   references:
     GA 29/30:
@@ -3358,6 +3510,8 @@ Tod:
       start: 425
     - start: 387
       suffix: f
+    HF:
+    - start: 139
     SvG:
     - start: 188
     - start: 167
@@ -3580,6 +3734,11 @@ Vitalismus:
   related:
   - Mechanizismus
   - Neovitalismus
+Vogesen:
+  references:
+    HF:
+    - start: 134
+  type: g
 Vom Wesen des Grundes:
   references:
     GA 29/30:
@@ -3712,6 +3871,9 @@ Welt:
       start: 389
     GA 63:
     - start: 21
+    HF:
+    - start: 139
+    - start: 143
     SZ:
     - start: 137
     Vorarb29/30:
@@ -3755,6 +3917,11 @@ Weltganze:
   references:
     G:
     - start: 523
+Weltgebäude:
+  references:
+    HF:
+    - start: 139
+      suffix: f
 Weltgeschichte:
   references:
     SvG:
@@ -3900,6 +4067,12 @@ Wissenschaftslehre:
     GA 29/30:
     - start: 83
   type: w
+Wohnen:
+  references:
+    HF:
+    - start: 138
+    - start: 139
+    - start: 143
 Wort:
   references:
     GA 29/30:
@@ -4060,6 +4233,10 @@ auf der Stelle zur Stelle:
     - start: 40
     VA:
     - start: 17
+aufheben:
+  references:
+    HF:
+    - start: 137
 begegnen:
   references:
     GA 29/30:
@@ -4101,7 +4278,7 @@ der Feldberg:
   references:
     GA 55:
     - start: 335
-    HH:
+    HF:
     - start: 134
   type: g
 dialektische Schein:
@@ -4254,6 +4431,10 @@ potentia:
     - start: 284
   related:
   - actualitas
+predigen:
+  references:
+    HF:
+    - start: 143
 principium magnum:
   references:
     SvG:
@@ -4913,7 +5094,7 @@ wesentliche Möglichkeit des Seins:
     GA 29/30:
     - end: 52
       start: 38
-    HH:
+    HF:
     - start: 145
     SvG:
     - start: 157
