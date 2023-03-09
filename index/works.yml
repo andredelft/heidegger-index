@@ -252,7 +252,7 @@ Vorarb29/30:
   page: 5-12
   publisher: Duncker & Humblot GmbH
   title: 'Unbenutzte Vorarbeiten zur Vorlesung vom Wintersemester 1929/30: „Die Grundbegriffe
-    der Metaphysik. Welt — Endlichkeit — Einsamkeit“'
+    der Metaphysik. Welt – Endlichkeit – Einsamkeit“'
   title-short: Unbenutzte Vorarbeiten zur „Die Grundbegriffe der Metaphysik“
   type: article-journal
   volume: '7'
@@ -474,6 +474,7 @@ WiM:
   page: 103-122
   publisher: Vittorio Klostermann
   publisher-place: Frankfurt am Main
+  language: de-DE
   title: Was ist Metaphysik?
   type: chapter
 GA 18:
@@ -587,6 +588,7 @@ GA 27:
       given: Martin
   citation-key: heideggerGA27
   collection-title: Martin Heidegger Gesamtausgabe
+  collection-number: band 27
   editor:
     - family: Saame
       given: Otto
@@ -596,14 +598,13 @@ GA 27:
   ISBN: 3-465-02893-7
   issued:
     - year: 1996
-  language: ger
+  language: de-DE
   note: Freiburger Vorlesung Wintersemester 1928/29
   number-of-pages: X, 404
   publisher: Vittorio Klostermann
   publisher-place: Frankfurt am Main
   title: Einleitung in die Philosophie
   type: book
-  volume: band 27
 UK:
   ISBN: 978-3-465-03236-6 978-3-465-03237-3
   author:
@@ -622,7 +623,7 @@ UK:
   issued:
     date-parts:
     - - 2003
-  language: german
+  language: de-DE
   page: 1-74
   publisher: Vittorio Klostermann
   publisher-place: Frankfurt am Main
