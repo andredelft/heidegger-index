@@ -40,6 +40,13 @@ Allemannischen Gedichte:
     - start: 137
       suffix: f
   type: w
+Allgemeine Betrachtung über das Weltgebäude:
+  parent: Schatzkästlein des rheinischen Hausfreundes
+  references:
+    HF:
+    - start: 143
+      suffix: f
+  type: w
 Alltäglichkeit:
   references:
     GA 18:
@@ -205,6 +212,8 @@ Atomenergie:
     G:
     - end: 524
       start: 523
+    HF:
+    - start: 146
     SvG:
     - start: 179
     - start: 180
@@ -385,6 +394,13 @@ Bestand:
   references:
     SvG:
     - start: 182
+Betrachtungen über das Weltgebäude. Der Mond.:
+  parent: Schatzkästlein des rheinischen Hausfreundes
+  references:
+    HF:
+    - start: 139
+      suffix: f
+  type: w
 Bewegtheit:
   references:
     WBPh:
@@ -798,6 +814,9 @@ Dichter:
   references:
     GA 29/30:
     - start: 396
+    HF:
+    - start: 147
+    - start: 150
     SvG:
     - start: 185
     WD:
@@ -805,6 +824,10 @@ Dichter:
     - start: 272
     - start: 273
     - start: 274
+Dichtung:
+  references:
+    HF:
+    - start: 146
 Die Wiese:
   author: Hebel, Johann Peter
   references:
@@ -928,6 +951,7 @@ Erde:
     HF:
     - start: 134
     - start: 139
+    - start: 150
     SvG:
     - start: 189
   related:
@@ -1154,6 +1178,11 @@ Fragment VIII (Parmenides):
     EM:
     - start: 103
   type: w
+Fragwürdige:
+  references:
+    HH:
+    - end: 146
+      start: 145
 Franz Joseph Strauß:
   references:
     SvG:
@@ -1389,6 +1418,7 @@ Goethe, Johann Wolfgang von:
   references:
     HF:
     - start: 145
+    - start: 149
     SvG:
     - start: 181
     - start: 185
@@ -1545,10 +1575,13 @@ Haben der Welt:
 Hausfreund:
   references:
     HF:
+    - start: 133
     - start: 135
-    - start: 137
-    - end: 145
-      start: 140
+    - end: 144
+      start: 137
+    - start: 146
+      suffix: f
+    - start: 149
 Haustier:
   parent: Tier
   references:
@@ -1567,8 +1600,14 @@ Hebel, Johann Peter:
     GA 16:
     - start: 530
     HF:
-    - end: 154
+    - end: 138
       start: 133
+    - end: 143
+      start: 140
+    - start: 145
+    - end: 148
+      start: 147
+    - start: 150
   type: p
 Hegel, Georg Wilhelm Friedrich:
   metadata:
@@ -1671,6 +1710,7 @@ Himmel:
     - start: 531
     HF:
     - start: 139
+    - start: 150
   related:
   - Theologische Schriften 3, Gebet 3
   - Äther
@@ -2268,6 +2308,10 @@ Mussolini, Benito:
     Sch:
     - start: 40
   type: p
+Muttersprache:
+  references:
+    HF:
+    - start: 148
 Mythos:
   references:
     GA 29/30:
@@ -2353,7 +2397,7 @@ Natur:
     - end: 47
       start: 46
     HF:
-    - end: 145
+    - end: 146
       start: 144
     SZ:
     - start: 70
@@ -2383,16 +2427,13 @@ Naturwissenschaft:
     GA 29/30:
     - start: 85
     HF:
+    - start: 140
     - start: 144
       suffix: f
     SvG:
     - start: 180
     WD:
     - start: 278
-Naturwissenshchaft:
-  references:
-    HF:
-    - start: 140
 Neovitalismus:
   references:
     GA 29/30:
@@ -2947,7 +2988,8 @@ Schatzkästlein des rheinischen Hausfreundes:
       suffix: f
     HF:
     - start: 137
-    - start: 138
+      suffix: f
+    - start: 147
   type: w
 Schein:
   references:
@@ -3238,6 +3280,8 @@ Spielraum:
     - start: 64
     SZ:
     - start: 107
+    HF:
+    - start: 150
 Spinoza, Baruch:
   references:
     Sch:
@@ -3265,14 +3309,20 @@ Sprache:
     - start: 346
     HF:
     - start: 135
-    - start: 137
-    - start: 138
+    - end: 137
+      start: 138
+    - end: 150
+      start: 147
     WD:
     - start: 274
 Sprachgeist:
   references:
     HF:
     - start: 135
+Sprachmaschine:
+  references:
+    HF:
+    - start: 149
 Sprechen:
   references:
     GA 18:
@@ -3398,6 +3448,8 @@ Technik:
     - start: 527
     GA 29/30:
     - start: 115
+    HF:
+    - start: 146
     Sch:
     - start: 55
     SvG:
@@ -3416,6 +3468,8 @@ Theologische Schriften 3, Gebet 3:
     - start: 529
     GA 16:
     - start: 530
+    HF:
+    - start: 150
   type: w
 Thomas v. Aquin:
   references:
@@ -3605,6 +3659,8 @@ Unheimlichkeit:
   references:
     GA 29/30:
     - start: 490
+    HF:
+    - start: 148
     WiM:
     - start: 111
       type: r
@@ -3985,6 +4041,8 @@ Wesen des Menschen:
     - start: 446
     - start: 486
       suffix: f
+    HF:
+    - start: 149
     ZEG:
     - start: 38
 Wesen des Tieres:
@@ -4066,8 +4124,10 @@ Wohnen:
   references:
     HF:
     - start: 138
-    - start: 139
+      suffix: f
     - start: 143
+    - end: 147
+      start: 146
 Wort:
   references:
     GA 29/30:
@@ -4282,6 +4342,11 @@ dialektische Schein:
     GA 29/30:
     - end: 422
       start: 421
+dichterisch wohnet der Mensch auf dieser Erde:
+  parent: In lieblicher Bläue blühet...
+  references:
+    HF:
+    - start: 147
 dürftiger Zeit:
   references:
     WD:
@@ -4551,6 +4616,11 @@ unbestimmte Unmittelbare:
   references:
     SZ:
     - start: 3
+verbauern:
+  references:
+    HF:
+    - end: 146
+      start: 145
 von Uexküll, Jakob Johann:
   metadata:
     gnd: '118763407'

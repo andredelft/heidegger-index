@@ -137,6 +137,7 @@ GA 16:
   title-short: Reden und Zeugnisse
   type: book
 HF:
+  index-status: complete
   author:
   - family: Heidegger
     given: Martin
@@ -152,7 +153,7 @@ HF:
     date-parts:
     - - 2002
   language: german
-  page: 133-154
+  page: 133-150
   publisher: Vittorio Klostermann
   publisher-place: Frankfurt am Main
   title: 'Hebel – Der Hausfreund'

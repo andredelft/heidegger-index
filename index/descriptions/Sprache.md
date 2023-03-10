@@ -1,0 +1,1 @@
+> Wann immer und wie immer der Mensch spricht, er spricht nur, indem er zuor schon auf die Sprache hört. Dabei ist auch das überhören der Sprache noch eine Art des Hörens. [...] _Eigentlich spricht die Sprache, nicht der mensch. Der Mensch spricht erst, insofern er jeweils der Sprache ent-spricht_. [@HF, p. 148]

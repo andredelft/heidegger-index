@@ -1,0 +1,1 @@
+> [[Johann Peter Hebel|Hebel, Johann Peter]] ist [[Dichter]] in der Gestalt des Hausfreundes. [... W]ir künnen darauf merken, daß und wie das Dichterische des menschlichen [[Wohnens|Wohnen]] des Dichter braucht, der in einem hohen und weiten Sinne der Freund ist: dem Haus der Welt. [@HF, p. 147]
