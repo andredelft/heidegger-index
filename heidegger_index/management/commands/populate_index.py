@@ -25,17 +25,30 @@ class Command(BaseCommand):
                 self.stdout.write(f"- {object_type}: {no_objects}")
 
     def add_arguments(self, parser):
+        # By default we perform external calls (Perseus, Citeproc, etc.) only in production (DEBUG == False),
+        # not in development (DEBUG == True). Either -e or -n can be used to overwrite this behaviour.
+        parser.add_argument(
+            "--external-calls",
+            "-e",
+            action="store_true",
+            help=f"Run with external calls (population script will be complete, but slower). Deafult: {not settings.DEBUG}",
+        )
         parser.add_argument(
             "--no-external-calls",
             "-n",
             action="store_true",
-            help="Run without external calls to speed up the populate script (but skip some fields).",
+            help=f"Run without external calls to speed up the populate script (but skip some fields). Default: {bool(settings.DEBUG)}",
         )
 
         return super().add_arguments(parser)
 
     def handle(self, *args, **kwargs):
-        perform_external_calls = not kwargs.get("no_external_calls")
+        if kwargs.get("external_calls"):
+            perform_external_calls = True
+        elif kwargs.get("no_external_calls"):
+            perform_external_calls = False
+        else:
+            perform_external_calls = not settings.DEBUG
 
         # Clean DB
         for Model in [PageReference, Lemma, Work]:
@@ -116,7 +129,7 @@ class Command(BaseCommand):
                 value=value,
                 type=data.get("type", None),
                 urn=md.get(URN, None),
-                gnd=md.get(GND, None)
+                gnd=md.get(GND, None),
             )
             if perform_external_calls:
                 try:
