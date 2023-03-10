@@ -1,19 +1,5 @@
-<div class="sticky z-10 float-right w-16 h-16 mb-4 ml-4 duration-300 rounded-full bg-slate-50 text-slate-700 top-6 drop-shadow dark:drop-shadow-md dark:bg-slate-700 transition-color hover:bg-slate-200 dark:hover:bg-slate-600">
-  <a 
-  {% if type == "work" %}
-    href="{% url 'index:work-md-export' work.slug %}"
-    title="Export work as markdown" 
-  {% elif type == "lemma" %}
-    href="{% url 'index:lemma-md-export' lemma.slug %}"
-    title="Export lemma as markdown" 
-  {% endif %}
-    role="button" class="block p-2 transition-all duration-700 dark:text-slate-200"
-  >
-      <svg xmlns="http://www.w3.org/2000/svg" class="w-full h-full" fill="currentColor" viewBox="0 0 256 256">
-      <rect width="256" height="256" fill="none"></rect>
-      <polyline points="86 58 128 16 170 58" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline>
-      <line x1="128" y1="128" x2="128" y2="16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
-      <path d="M176,96h24a8,8,0,0,1,8,8V208a8,8,0,0,1-8,8H56a8,8,0,0,1-8-8V104a8,8,0,0,1,8-8H80" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path>
-    </svg>
-  </a>
-</div>
+{% if type == "work" %}
+  {% include 'components/nav_button.html' with icon_name="upload-simple" href="index:work-md-export" title="Export work as markdown" slug=work.slug %}
+{% elif type == "lemma" %}
+  {% include 'components/nav_button.html' with icon_name="upload-simple" href="index:lemma-md-export" title="Export lemma as markdown" slug=lemma.slug %}
+{% endif %}

@@ -1,18 +1,9 @@
 {% if status == "complete" %}
-<div title="This work has been completely indexed and reviewed." class="z-9 inline-flex align-top w-6 h-6 ml-0 duration-300 rounded-full text-green-600  drop-shadow dark:drop-shadow-md transition-color hover:bg-slate-200 dark:hover:bg-slate-600">
-    <svg xmlns="http://www.w3.org/2000/svg" class="w-full h-full" fill="currentColor" viewBox="0 0 256 256">
-        <rect width="256" height="256" fill="none"></rect>
-        <polyline points="172 104 113.3 160 84 132" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline>
-        <circle cx="128" cy="128" r="96" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></circle>
-    </svg>
+<div title="This work has been completely indexed and reviewed." class="inline-flex w-6 h-6 ml-0 text-green-600 align-top duration-300 rounded-full z-9 transition-color hover:bg-slate-200 dark:hover:bg-slate-600">
+    <i class="ph-check-circle"></i>
 </div>
 {% elif status == "incomplete" %}
-<div title="This work has not been completely indexed." class="z-9 inline-flex align-top w-12 h-6 ml-0 duration-300 rounded-full text-slate-600 dark:text-slate-100 drop-shadow dark:drop-shadow-md transition-color hover:bg-slate-200 dark:hover:bg-slate-600">
-    <svg xmlns="http://www.w3.org/2000/svg" class="w-full h-full" fill="currentColor" viewBox="0 0 256 256">
-        <rect width="256" height="256" fill="none"></rect>
-        <circle cx="128" cy="128" r="96" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></circle>
-        <polyline points="120 120 128 120 128 176 136 176" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline>
-        <circle cx="126" cy="84" r="12"></circle>
-    </svg>
+<div title="This work has not been completely indexed." class="inline-flex w-12 h-6 ml-0 align-top duration-300 rounded-full z-9 text-slate-600 dark:text-slate-100 transition-color hover:bg-slate-200 dark:hover:bg-slate-600">
+    <i class="ph-info"></i>
 </div>
 {% endif %}
