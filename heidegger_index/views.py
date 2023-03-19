@@ -4,8 +4,6 @@ from django.views.generic.detail import DetailView
 from django.shortcuts import redirect
 from django.conf import settings
 
-from heidegger_index.constants import GND, URN
-
 from heidegger_index.models import Lemma, PageReference, Work, get_alphabet
 
 
@@ -58,7 +56,7 @@ class WorkDetailView(DetailView):
         else:
             context["work_lemma"] = work_lemma
 
-        context["index_status"] = work.csl_json.get('index-status', None)
+        context["index_status"] = work.csl_json.get("index-status", None)
 
         try:
             page_refs_with_page = []
@@ -125,17 +123,16 @@ class LemmaDetailViewMD(LemmaDetailView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        lemma = context["lemma"]
         return context
 
 
 class URNRedirectView(LemmaDetailView):
     def get(self, *args, **kwargs):
-        lemma = get_object_or_404(Lemma, urn=kwargs['urn'])
+        lemma = get_object_or_404(Lemma, urn=kwargs["urn"])
         return redirect("index:lemma-detail", slug=lemma.slug)
 
 
 class GNDRedirectView(LemmaDetailView):
     def get(self, *args, **kwargs):
-        lemma = get_object_or_404(Lemma, gnd=kwargs['gnd'])
+        lemma = get_object_or_404(Lemma, gnd=kwargs["gnd"])
         return redirect("index:lemma-detail", slug=lemma.slug)

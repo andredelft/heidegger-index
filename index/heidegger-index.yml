@@ -1659,6 +1659,7 @@ Herakles:
   type: p
 Heraklit:
   metadata:
+    dk: 22
     gnd: '118549421'
     urn: urn:cts:greekLit:tlg0626
   references:
@@ -2606,6 +2607,7 @@ Otto Hahn:
   type: p
 Parmenides:
   metadata:
+    dk: 28
     urn: urn:cts:greekLit:tlg1562
   references:
     EM:

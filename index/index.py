@@ -8,19 +8,7 @@ from itertools import combinations
 from pyCTS import CTS_URN
 
 from heidegger_index.utils import match_lemmata, contains_page_range, REF_REGEX
-from heidegger_index.constants import (
-    GND,
-    URN,
-    METADATA_TYPES,
-    LEMMA_TYPES,
-    PERSON,
-    WORK,
-    REF_TYPES,
-    RELATION_TYPES,
-    IS_PARENT_OF,
-    IS_AUTHOR_OF,
-    IS_RELATED_TO,
-)
+from heidegger_index.constants import LemmaType, MetadataType, RefType, RelationType
 from heidegger_index.validators import validate_gnd
 from django.core.exceptions import ValidationError
 
@@ -42,24 +30,21 @@ REF_INTFIELDS = {"start", "end"}
 def add_ref(
     lemma, work, ref, lemma_type=None, ref_type=None, betacode=False, force=False
 ):
-
     if isinstance(ref, list):
         # Allow ref to be a list, call add_ref for each item and terminate function
         for r in ref:
             add_ref(lemma, work, r, lemma_type, ref_type, betacode)
         return
 
-    # Validation: lemma_type
-    if lemma_type and lemma_type not in LEMMA_TYPES:
-        raise click.BadParameter(
-            f"Lemma type must be one of: {', '.join(LEMMA_TYPES.values())}"
-        )
-
-    # Validation: ref_type
-    if ref_type and ref_type not in REF_TYPES:
-        raise click.BadParameter(
-            f"Reference type must be one of: {', '.join(REF_TYPES.values())}"
-        )
+    try:
+        if lemma_type:
+            # Validation: lemma_type
+            LemmaType(lemma_type)
+        if ref_type:
+            # Validation: ref_type
+            RefType(ref_type)
+    except ValueError as e:
+        raise click.BadParameter(e)
 
     # Validation: ref
     m = REF_REGEX.search(str(ref).strip())
@@ -95,7 +80,7 @@ def add_ref(
             lemma_entry["type"] = lemma_type
     else:
         # This triggers if the lemma is already present in the index.
-        if lemma_type in LEMMA_TYPES:
+        if lemma_type:
             # Raise error if the type given does not match the one already assigned to the lemma.
             if "type" not in lemma_entry:
                 raise click.BadParameter(
@@ -159,7 +144,6 @@ def add_ref(
 
 
 def add_rel(first_lemma, second_lemma, rel_type):
-
     # Open index file
     with open(INDEX_FILE) as f:
         index = yaml.load(f)
@@ -171,39 +155,43 @@ def add_rel(first_lemma, second_lemma, rel_type):
     if second_lemma not in index:
         raise click.BadParameter(f"Lemma '{second_lemma}' not found in index")
 
-    # Validation: rel_type is valid
-    if rel_type not in RELATION_TYPES:
-        raise click.BadParameter(
-            f"Relation type must be one of: {', '.join(RELATION_TYPES.values())}"
-        )
+    try:
+        # Validation: rel_type is valid
+        RelationType(rel_type)
+    except ValueError as e:
+        raise click.BadParameter(e)
 
     first_lemma_dict = index[first_lemma]
     second_lemma_dict = index[second_lemma]
 
-    if rel_type == IS_AUTHOR_OF:
-        if first_lemma_dict.get("type") != PERSON:
-            raise click.BadParameter(f"Lemma '{first_lemma}' is not a person")
-        if second_lemma_dict.get("type") != WORK:
-            raise click.BadParameter(f"Lemma '{second_lemma}' is not a work")
+    match rel_type:
+        case RelationType.IS_AUTHOR_OF.value:
+            if first_lemma_dict.get("type") != LemmaType.PERSON.value:
+                raise click.BadParameter(f"Lemma '{first_lemma}' is not a person")
+            if second_lemma_dict.get("type") != LemmaType.WORK.value:
+                raise click.BadParameter(f"Lemma '{second_lemma}' is not a work")
 
-        index[second_lemma]["author"] = first_lemma
-    elif rel_type == IS_PARENT_OF:
-        if any(
-            lemma_dict.get("parent") == second_lemma for lemma_dict in index.values()
-        ):
-            raise click.BadParameter(
-                f"Lemma '{second_lemma}' already has children, and therefore cannot itself be a child"
-            )
-        elif first_lemma_dict.get("parent"):
-            raise click.BadParameter(
-                f"Lemma '{first_lemma}' already has a parent, and therefore cannot itself be a parent"
-            )
+            index[second_lemma]["author"] = first_lemma
+        case RelationType.IS_PARENT_OF.value:
+            if any(
+                lemma_dict.get("parent") == second_lemma
+                for lemma_dict in index.values()
+            ):
+                raise click.BadParameter(
+                    f"Lemma '{second_lemma}' already has children, and therefore cannot itself be a child"
+                )
+            elif first_lemma_dict.get("parent"):
+                raise click.BadParameter(
+                    f"Lemma '{first_lemma}' already has a parent, and therefore cannot itself be a parent"
+                )
 
-        index[second_lemma]["parent"] = first_lemma
-    elif rel_type == IS_RELATED_TO:
-        index[second_lemma]["related"] = second_lemma_dict.get("related", []) + [
-            first_lemma
-        ]
+            index[second_lemma]["parent"] = first_lemma
+        case RelationType.IS_RELATED_TO.value:
+            index[second_lemma]["related"] = second_lemma_dict.get("related", []) + [
+                first_lemma
+            ]
+        case _:
+            print("No match")
 
     with open(INDEX_FILE, "w") as f:
         yaml.dump(index, f, allow_unicode=True)
@@ -223,8 +211,10 @@ def add_metadata(md_type, lemma, lemma_type, md_value=None, overwrite=False):
     """Add metadata to a lemma of type 'author' or 'work'"""
 
     # Validation: metadata type is correct
-    if not md_type in METADATA_TYPES:
-        raise click.BadParameter(f"{md_type} is not a valid metadata type.")
+    try:
+        MetadataType(md_type)
+    except ValueError as e:
+        raise click.BadParameter(e)
 
     # Open index file
     with open(INDEX_FILE) as f:
@@ -244,11 +234,10 @@ def add_metadata(md_type, lemma, lemma_type, md_value=None, overwrite=False):
             continue
         else:
             if lemma_md_value == str(md_value):
-                raise click.BadParameter(f"{md_value} is already defined as {md_type} for {l}. {md_type} must be unique.""")
-            else:
-                continue
+                raise click.BadParameter(
+                    f"{md_value} is already defined as {md_type} for {l}. {md_type} must be unique."
+                )
 
-    
     # Validation: lemma exists
     try:
         lemma_dict = index[lemma]
@@ -256,8 +245,11 @@ def add_metadata(md_type, lemma, lemma_type, md_value=None, overwrite=False):
         raise click.BadParameter(f"Lemma '{lemma}' not found in index.")
 
     # Validation: lemma type is correct
-    if lemma_type not in LEMMA_TYPES:
-        raise click.BadParameter(f"'{lemma_type}' is not a valid lemma type.")
+    if lemma_type:
+        try:
+            LemmaType(lemma_type)
+        except ValueError as e:
+            raise click.BadParameter(e)
 
     # Validation: lemma in index is of same type as lemma_type
     if lemma_type != lemma_dict.get("type"):
@@ -265,33 +257,40 @@ def add_metadata(md_type, lemma, lemma_type, md_value=None, overwrite=False):
             f"Lemma is in the index as '{lemma_dict.get('type')}', not as '{lemma_type}'."
         )
 
-    if md_type == URN:
-        # Validation: urn is defined well.
-        try:
-            cts_urn = CTS_URN(md_value)
-        except (TypeError, ValueError):
-            raise click.BadParameter(f"'{md_value}' is not a valid CTS URN.")
-        if lemma_type == PERSON:
-            # Validation: urn is defined well for the type.
-            if cts_urn.work:
-                raise click.BadParameter(
-                    f"'{cts_urn}' contains a work namespace. Only define up to textgroup for authors."
-                )
-        if lemma_type == WORK:
-            # Validation: urn is defined well for the type.
-            if not cts_urn.work:
-                raise click.BadParameter(
-                    f"'{md_value}' does not contain a work namespace. Please provide a valid URN."
-                )
-        
-    elif md_type == GND:
-        # Validation: gnd_id is defined well.
-        try:
-            validate_gnd(str(md_value))
-        except ValidationError as e:
-            raise click.BadParameter(f"'{md_value}' is not a valid {md_type}: {e}")
-        
-        md_value = str(md_value)
+    match md_type:
+        case MetadataType.URN:
+            # Validation: urn is defined well.
+            try:
+                cts_urn = CTS_URN(md_value)
+            except (TypeError, ValueError):
+                raise click.BadParameter(f"'{md_value}' is not a valid CTS URN.")
+            if lemma_type == LemmaType.PERSON:
+                # Validation: urn is defined well for the type.
+                if cts_urn.work:
+                    raise click.BadParameter(
+                        f"'{cts_urn}' contains a work namespace. Only define up to textgroup for authors."
+                    )
+            if lemma_type == LemmaType.WORK:
+                # Validation: urn is defined well for the type.
+                if not cts_urn.work:
+                    raise click.BadParameter(
+                        f"'{md_value}' does not contain a work namespace. Please provide a valid URN."
+                    )
+
+        case MetadataType.GND:
+            # Validation: gnd_id is defined well.
+            try:
+                validate_gnd(str(md_value))
+            except ValidationError as e:
+                raise click.BadParameter(f"'{md_value}' is not a valid {md_type}: {e}")
+
+            md_value = str(md_value)
+
+        case MetadataType.DIELS_KRANZ:
+            try:
+                md_value = int(md_value)
+            except ValueError:
+                raise click.BadParameter(f"'{md_value}' is not a valid {md_type}")
 
     md_dict = {}
     md_dict[md_type] = md_value
@@ -301,16 +300,16 @@ def add_metadata(md_type, lemma, lemma_type, md_value=None, overwrite=False):
         lemma_md_dict = lemma_dict["metadata"]
     except KeyError:
         lemma_dict["metadata"] = md_dict
-    else: 
+    else:
         # Validation: md[md_type] is not already defined.
         try:
             lemma_md_value_in_index = lemma_md_dict[str(md_type)]
         except KeyError:
-            lemma_md_dict.update({str(md_type): str(md_value)})
+            lemma_md_dict.update({str(md_type): md_value})
         else:
             if lemma_md_value_in_index:
                 if overwrite:
-                    lemma_md_dict.update({str(md_type): str(md_value)})
+                    lemma_md_dict.update({str(md_type): md_value})
                 else:
                     if lemma_md_value_in_index == md_value:
                         raise click.BadParameter(
@@ -322,7 +321,7 @@ def add_metadata(md_type, lemma, lemma_type, md_value=None, overwrite=False):
                         )
 
         lemma_dict["metadata"] = lemma_md_dict
-        
+
     index[lemma] = lemma_dict
 
     # Close and write index file.
@@ -342,7 +341,7 @@ def add_refs(lemmas, *args, **kwargs):
 def add_interrelated(*lemmas):
     """Add multiple interrelated lemmas to the index"""
     for pair in combinations(lemmas, 2):
-        add_rel(*pair, rel_type=IS_RELATED_TO)
+        add_rel(*pair, rel_type=RelationType.IS_RELATED_TO)
 
 
 def format_refs(

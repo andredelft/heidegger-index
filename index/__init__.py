@@ -1,8 +1,7 @@
 import click
 
 from .index import *
-
-from heidegger_index.constants import METADATA_TYPES, LEMMA_TYPES, REF_TYPES, RELATION_TYPES
+from heidegger_index.constants import LemmaType, RefType, MetadataType
 
 
 @click.command()
@@ -14,16 +13,16 @@ from heidegger_index.constants import METADATA_TYPES, LEMMA_TYPES, REF_TYPES, RE
     "--lemma-type",
     "lemma_type",
     default=None,
-    type=click.Choice(LEMMA_TYPES.keys()),
-    help=f"Type of lemma ({', '.join(k + ': ' + v for k, v in LEMMA_TYPES.items())})",
+    type=click.Choice(LemmaType.list_values()),
+    help=f"Lemma type ({LemmaType.display_values()})",
 )
 @click.option(
     "-r",
     "--ref-type",
     "ref_type",
     default=None,
-    type=click.Choice(REF_TYPES.keys()),
-    help=f"Type of lemma ({', '.join(k + ': ' + v for k, v in REF_TYPES.items())})",
+    type=click.Choice(RefType.list_values()),
+    help=f"Reference type ({RefType.display_values()})",
 )
 @click.option(
     "-b",
@@ -50,7 +49,7 @@ def click_add_ref(lemma, work, ref, lemma_type, ref_type, betacode, force):
 @click.argument("second_lemma", type=str)
 @click.argument(
     "rel_type",
-    type=click.Choice(RELATION_TYPES.keys()),
+    type=click.Choice(RelationType.list_values()),
 )
 def click_add_rel(first_lemma, second_lemma, rel_type):
     add_rel(first_lemma, second_lemma, rel_type)
@@ -59,12 +58,12 @@ def click_add_rel(first_lemma, second_lemma, rel_type):
 @click.command()
 @click.argument(
     "metadata_type",
-    type=click.Choice(METADATA_TYPES.keys()),
+    type=click.Choice(MetadataType.list_values()),
 )
 @click.argument("lemma", type=str)
 @click.argument(
     "lemma_type",
-    type=click.Choice(LEMMA_TYPES.keys()),
+    type=click.Choice(LemmaType.list_values()),
 )
 @click.argument("md_value", type=str)
 @click.option(
@@ -73,7 +72,7 @@ def click_add_rel(first_lemma, second_lemma, rel_type):
     "overwrite",
     is_flag=True,
     default=False,
-    help="Overwrite URN if lemma already has a urn defined."
+    help="Overwrite URN if lemma already has a urn defined.",
 )
 def click_add_metadata(metadata_type, lemma, lemma_type, md_value, overwrite):
     add_metadata(metadata_type, lemma, lemma_type, md_value, overwrite)
