@@ -11,7 +11,6 @@ from django.conf import settings
 from heidegger_index.models import Work, Lemma, PageReference
 from heidegger_index.utils import gen_sort_key
 from heidegger_index.md import convert_md
-from heidegger_index.constants import GND, URN
 
 yaml.warnings({"YAMLLoadWarning": False})
 
@@ -128,8 +127,7 @@ class Command(BaseCommand):
                 id=i,
                 value=value,
                 type=data.get("type", None),
-                urn=md.get(URN, None),
-                gnd=md.get(GND, None),
+                **md,
             )
             if perform_external_calls:
                 try:
@@ -200,7 +198,6 @@ class Command(BaseCommand):
         pageref_objs = []
         for lemma_value, lemma_data in index_data.items():
             for work_key, ref_list in lemma_data.get("references", {}).items():
-
                 if work_key not in work_by_key.keys():
                     self.stdout.write(
                         f"Warning: Work {work_key} does not exist in {settings.WORK_REFS_FILE.name}, will be added with an empty reference"

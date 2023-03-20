@@ -7,7 +7,7 @@ from django.conf import settings
 from django_extensions.db.fields import AutoSlugField
 from django.core.validators import URLValidator
 
-from heidegger_index.constants import LEMMA_TYPES, REF_TYPES
+from heidegger_index.constants import LemmaType, RefType, MetadataType
 from heidegger_index.utils import (
     gen_sort_key,
     slugify,
@@ -52,15 +52,16 @@ class Work(models.Model):
 
 
 class Lemma(models.Model):
-    TYPES = LEMMA_TYPES
     value = models.CharField(max_length=100, unique=True)
     parent = models.ForeignKey(
         "self", on_delete=models.SET_NULL, null=True, related_name="children"
     )
     related = models.ManyToManyField("self", symmetrical=True)
-    type = models.CharField(max_length=1, null=True, choices=TYPES.items())
+    type = models.CharField(max_length=1, null=True, choices=LemmaType.list_choices())
     description = models.TextField(null=True)
+
     urn = models.URLField(
+        MetadataType.URN.label,
         max_length=100,
         null=True,
         validators=[URLValidator(schemes=["urn"])],
@@ -69,8 +70,15 @@ class Lemma(models.Model):
     perseus_content = models.TextField(null=True)
 
     gnd = models.CharField(
-        null=True, unique=True, max_length=11, validators=[validate_gnd]
+        MetadataType.GND.label,
+        null=True,
+        unique=True,
+        max_length=11,
+        validators=[validate_gnd],
     )
+
+    dk = models.IntegerField(MetadataType.DIELS_KRANZ.label, null=True)
+
     sort_key = models.CharField(max_length=100, null=True, unique=True)
     first_letter = models.CharField(max_length=1, null=True)
     slug = AutoSlugField(populate_from="value", slugify_function=slugify)
@@ -118,10 +126,9 @@ class Lemma(models.Model):
 
 
 class PageReference(models.Model):
-    TYPES = REF_TYPES
     work = models.ForeignKey(Work, on_delete=models.PROTECT)
     lemma = models.ForeignKey(Lemma, on_delete=models.PROTECT)
-    type = models.CharField(max_length=1, choices=TYPES.items(), null=True)
+    type = models.CharField(max_length=1, choices=RefType.list_choices(), null=True)
 
     # Datafied page reference
     start = models.IntegerField()

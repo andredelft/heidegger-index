@@ -16,6 +16,9 @@ additionalProperties:
           type: string
           pattern: ^1[012]?\d{7}[0-9X]|[47]\d{6}-\d|[1-9]\d{0,7}-[0-9X]|3\d{7}[0-9X]$
           description: Gemeinsame Normdatei identifier
+        dk:
+          type: integer
+          description: Diels-Kranz ID
       additionalProperties: False
     references:
       type: object

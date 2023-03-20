@@ -1,20 +1,23 @@
-PERSON = "p"
-WORK = "w"
-GEOGRAPHICAL = "g"
-LEMMA_TYPES = {PERSON: "person", WORK: "work", GEOGRAPHICAL: "geographical"}
+from .enum import LabelEnum
 
-URN = "urn"
-GND = "gnd"
-METADATA_TYPES = {URN: "urn", GND: "gnd"}
 
-RELATED = "r"
-REF_TYPES = {RELATED: "related"}
+class LemmaType(LabelEnum):
+    PERSON = "p", "person"
+    WORK = "w", "work"
+    GEOGRAPHICAL = "g", "geographical"
 
-IS_PARENT_OF = "p"
-IS_AUTHOR_OF = "a"
-IS_RELATED_TO = "r"
-RELATION_TYPES = {
-    IS_PARENT_OF: "is parent of",
-    IS_AUTHOR_OF: "is author of",
-    IS_RELATED_TO: "is related to",
-}
+
+class MetadataType(LabelEnum):
+    URN = "urn", "Uniform Resource Name"
+    GND = "gnd", "Gemeinsame Normdatei"
+    DIELS_KRANZ = "dk", "Diels-Kranz ID"
+
+
+class RefType(LabelEnum):
+    RELATED = "r", "related"
+
+
+class RelationType(LabelEnum):
+    IS_PARENT_OF = "p", "is parent of"
+    IS_AUTHOR_OF = "a", "is author of"
+    IS_RELATED_TO = "r", "is related to"
