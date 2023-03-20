@@ -2466,6 +2466,11 @@ Nichts:
     - start: 368
     - start: 433
     - start: 267
+    GA 61:
+    - start: 153
+      suffix: f
+    - end: 148
+      start: 145
     WiM:
     - end: 122
       start: 105
@@ -4388,6 +4393,11 @@ formale Anzeige:
       start: 421
     - start: 441
     - start: 435
+    GA 61:
+    - start: 32
+      suffix: ff
+    - start: 141
+      suffix: f
 ganz Andere:
   references:
     GA 29/30:
