@@ -17,5 +17,7 @@ class LabelEnum(str, Enum):
         return [member.value for member in cls]
 
     @classmethod
-    def list_choices(cls) -> tuple[str, str]:
+    def list_choices(cls) -> list[tuple[str, str]]:
+        """List the enum options in a format compatible with the Django `choices` field,
+        e.g. a collection of tuples with the values and human readable labels."""
         return [(member.value, member.label) for member in cls]
