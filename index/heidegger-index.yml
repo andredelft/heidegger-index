@@ -394,6 +394,13 @@ Bestand:
   references:
     SvG:
     - start: 182
+Bethe, Albrecht:
+  metadata:
+    gnd: '117589934'
+  references:
+    GA 29/30:
+    - start: 356
+  type: p
 Betrachtungen über das Weltgebäude. Der Mond.:
   parent: Schatzkästlein des rheinischen Hausfreundes
   references:
