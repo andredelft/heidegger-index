@@ -679,6 +679,7 @@ Darwinismus:
     - start: 384
 Das Habermus:
   author: Hebel, Johann Peter
+  parent: Allemannischen Gedichte
   references:
     HF:
     - start: 145
@@ -948,6 +949,7 @@ Dichtung:
     - start: 146
 Die Wiese:
   author: Hebel, Johann Peter
+  parent: Allemannischen Gedichte
   references:
     HF:
     - start: 134
