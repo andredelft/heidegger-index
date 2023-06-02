@@ -1099,6 +1099,10 @@ Erschlossenheit:
     SZ:
     - end: 137
       start: 135
+Eschatologie des Seins:
+  references:
+    SA:
+    - start: 327
 Etymologie:
   references:
     EWI:
@@ -1633,6 +1637,8 @@ Hegel, Georg Wilhelm Friedrich:
     - start: 137
     SZ:
     - start: 3
+    SA:
+    - start: 323
     WBPh:
     - start: 251
     WiM:
@@ -3221,6 +3227,11 @@ Sich versetzen:
   related:
   - Einfühlung
   - Mitgehen
+Simplicius:
+  references:
+    SA:
+    - start: 325
+  type: p
 Solipsismus:
   references:
     GA 29/30:
@@ -3488,6 +3499,11 @@ Theologische Schriften 3, Gebet 3:
     HF:
     - start: 150
   type: w
+Theophrastus:
+  references:
+    SA:
+    - start: 323
+  type: p
 Thomas v. Aquin:
   references:
     GA 29/30:
@@ -4695,6 +4711,12 @@ wesentliche Möglichkeit des Seins:
   references:
     GA 29/30:
     - start: 382
+Φυσικῶν δόξαι:
+  author: Theophrast
+  references:
+    SA:
+    - start: 324
+  type: w
 αἰτία:
   references:
     FT:
@@ -4912,6 +4934,8 @@ wesentliche Möglichkeit des Seins:
     - start: 44
     GA 63:
     - start: 21
+    SA:
+    - start: 324
     SvG:
     - start: 158
     - start: 159
@@ -5118,6 +5142,8 @@ wesentliche Möglichkeit des Seins:
     - start: 24
     GA 29/30:
     - start: 42
+    SA:
+    - start: 324
   related:
   - φύσις
   - λόγος
@@ -5146,6 +5172,8 @@ wesentliche Möglichkeit des Seins:
     - start: 46
     - end: 52
       start: 49
+    SA:
+    - start: 324
     WBPh:
     - start: 253
     - start: 256
@@ -5183,6 +5211,8 @@ wesentliche Möglichkeit des Seins:
       start: 38
     HF:
     - start: 145
+    SA:
+    - start: 324
     SvG:
     - start: 157
     - start: 163
@@ -5360,6 +5390,8 @@ wesentliche Möglichkeit des Seins:
     - start: 1
     - start: 3
       suffix: f
+    SA:
+    - start: 324
 ἰδέα:
   references:
     EM:
