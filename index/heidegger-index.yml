@@ -625,6 +625,8 @@ DK22B53:
   references:
     EM:
     - start: 66
+  related:
+  - πόλεμος
   type: w
 DK22B54:
   author: Heraklit
@@ -1635,10 +1637,10 @@ Hegel, Georg Wilhelm Friedrich:
       suffix: f
     HF:
     - start: 137
-    SZ:
-    - start: 3
     SA:
     - start: 323
+    SZ:
+    - start: 3
     WBPh:
     - start: 251
     WiM:
@@ -3604,6 +3606,10 @@ Tonart:
   references:
     SvG:
     - start: 166
+Tragödie:
+  references:
+    EM:
+    - start: 153
 Trakl, Georg:
   references:
     GA 1:
@@ -5347,6 +5353,8 @@ wesentliche Möglichkeit des Seins:
 ἐπιστήμη λογική:
   parent: ἐπιστήμη
   references:
+    EM:
+    - start: 128
     GA 21:
     - start: 1
   related:
