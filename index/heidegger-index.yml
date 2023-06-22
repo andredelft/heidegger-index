@@ -533,15 +533,7 @@ Christus:
   references:
     WD:
     - start: 269
-DK18B8:
-  author: Parmenides
-  metadata:
-    urn: urn:cts:greekLit:tlg1562.tlg002:7
-  references:
-    EM:
-    - start: 103
-  type: w
-DK22B1:
+DK22 B1:
   author: Heraklit
   metadata:
     urn: urn:cts:greekLit:tlg0626.tlg002:1
@@ -549,7 +541,7 @@ DK22B1:
     WBPh:
     - start: 277
   type: w
-DK22B108:
+DK22 B108:
   author: Heraklit
   metadata:
     urn: urn:cts:greekLit:tlg0626.tlg002:108
@@ -557,7 +549,7 @@ DK22B108:
     GA 29/30:
     - start: 34
   type: w
-DK22B112:
+DK22 B112:
   author: Heraklit
   metadata:
     urn: urn:cts:greekLit:tlg0626.tlg002:112
@@ -566,7 +558,7 @@ DK22B112:
     - start: 41
       suffix: f
   type: w
-DK22B123:
+DK22 B123:
   author: Heraklit
   metadata:
     urn: urn:cts:greekLit:tlg0626.tlg002:123
@@ -578,7 +570,7 @@ DK22B123:
   related:
   - φύσις
   type: w
-DK22B2:
+DK22 B2:
   author: Heraklit
   metadata:
     urn: urn:cts:greekLit:tlg0626.tlg002:2
@@ -586,7 +578,7 @@ DK22B2:
     WBPh:
     - start: 277
   type: w
-DK22B29:
+DK22 B29:
   author: Heraklit
   metadata:
     urn: urn:cts:greekLit:tlg0626.tlg002:29
@@ -594,7 +586,7 @@ DK22B29:
     EM:
     - start: 111
   type: w
-DK22B30:
+DK22 B30:
   author: Heraklit
   metadata:
     urn: urn:cts:greekLit:tlg0626.tlg002:30
@@ -604,7 +596,7 @@ DK22B30:
     SvG:
     - start: 168
   type: w
-DK22B52:
+DK22 B52:
   author: Heraklit
   metadata:
     urn: urn:cts:greekLit:tlg0626.tlg002:52
@@ -618,7 +610,7 @@ DK22B52:
   - αἰών
   - Geschick
   type: w
-DK22B53:
+DK22 B53:
   author: Heraklit
   metadata:
     urn: urn:cts:greekLit:tlg0626.tlg002:53
@@ -628,7 +620,7 @@ DK22B53:
   related:
   - πόλεμος
   type: w
-DK22B54:
+DK22 B54:
   author: Heraklit
   metadata:
     urn: urn:cts:greekLit:tlg0626.tlg002:54
@@ -636,7 +628,7 @@ DK22B54:
     GA 29/30:
     - start: 44
   type: w
-DK22B93:
+DK22 B93:
   author: Heraklit
   metadata:
     urn: urn:cts:greekLit:tlg0626.tlg002:93
@@ -645,6 +637,37 @@ DK22B93:
     - start: 40
     WBPh:
     - start: 277
+  type: w
+DK28 B1:
+  references:
+    EM:
+    - start: 120
+  related:
+  - δόξα
+  type: w
+DK28 B2:
+  references:
+    EM:
+    - start: 118
+      suffix: f
+  related:
+  - ἀλήθεια
+  type: w
+DK28 B6:
+  references:
+    EM:
+    - start: 119
+      suffix: f
+  related:
+  - λέγειν
+  type: w
+DK28 B8:
+  author: Parmenides
+  metadata:
+    urn: urn:cts:greekLit:tlg1562.tlg002:7
+  references:
+    EM:
+    - start: 103
   type: w
 Da-sein:
   parent: Dasein
@@ -2550,8 +2573,8 @@ Oedipus Tyrannus:
     urn: urn:cts:greekLit:tlg0011.tlg004
   references:
     EM:
-    - start: 114
-      suffix: f
+    - end: 116
+      start: 114
   type: w
 Offenbarkeit des Seienden:
   references:
@@ -3019,7 +3042,7 @@ Schatzkästlein des rheinischen Hausfreundes:
 Schein:
   references:
     EM:
-    - end: 107
+    - end: 122
       start: 105
     GA 29/30:
     - end: 430
@@ -4766,6 +4789,7 @@ wesentliche Möglichkeit des Seins:
     EM:
     - end: 112
       start: 110
+    - start: 120
 δύναμις:
   references:
     WBPh:
@@ -5201,6 +5225,8 @@ wesentliche Möglichkeit des Seins:
     - start: 108
       suffix: f
     - start: 111
+    - start: 117
+    - start: 120
     FT:
     - start: 12
     GA 18:
