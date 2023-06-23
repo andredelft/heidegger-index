@@ -83,6 +83,5 @@ additionalProperties:
       description: Lemma type
       enum: [p, w, g]
   additionalProperties: False
-  required: [references]
   dependentRequired:
     metadata: [type]
