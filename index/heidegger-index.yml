@@ -533,7 +533,7 @@ Christus:
   references:
     WD:
     - start: 269
-DK22 B1:
+DK 22B1:
   author: Heraklit
   metadata:
     urn: urn:cts:greekLit:tlg0626.tlg002:1
@@ -541,7 +541,7 @@ DK22 B1:
     WBPh:
     - start: 277
   type: w
-DK22 B108:
+DK 22B108:
   author: Heraklit
   metadata:
     urn: urn:cts:greekLit:tlg0626.tlg002:108
@@ -549,7 +549,7 @@ DK22 B108:
     GA 29/30:
     - start: 34
   type: w
-DK22 B112:
+DK 22B112:
   author: Heraklit
   metadata:
     urn: urn:cts:greekLit:tlg0626.tlg002:112
@@ -558,7 +558,7 @@ DK22 B112:
     - start: 41
       suffix: f
   type: w
-DK22 B123:
+DK 22B123:
   author: Heraklit
   metadata:
     urn: urn:cts:greekLit:tlg0626.tlg002:123
@@ -570,7 +570,7 @@ DK22 B123:
   related:
   - φύσις
   type: w
-DK22 B2:
+DK 22B2:
   author: Heraklit
   metadata:
     urn: urn:cts:greekLit:tlg0626.tlg002:2
@@ -578,7 +578,7 @@ DK22 B2:
     WBPh:
     - start: 277
   type: w
-DK22 B29:
+DK 22B29:
   author: Heraklit
   metadata:
     urn: urn:cts:greekLit:tlg0626.tlg002:29
@@ -586,7 +586,7 @@ DK22 B29:
     EM:
     - start: 111
   type: w
-DK22 B30:
+DK 22B30:
   author: Heraklit
   metadata:
     urn: urn:cts:greekLit:tlg0626.tlg002:30
@@ -596,7 +596,7 @@ DK22 B30:
     SvG:
     - start: 168
   type: w
-DK22 B52:
+DK 22B52:
   author: Heraklit
   metadata:
     urn: urn:cts:greekLit:tlg0626.tlg002:52
@@ -610,7 +610,7 @@ DK22 B52:
   - αἰών
   - Geschick
   type: w
-DK22 B53:
+DK 22B53:
   author: Heraklit
   metadata:
     urn: urn:cts:greekLit:tlg0626.tlg002:53
@@ -620,7 +620,7 @@ DK22 B53:
   related:
   - πόλεμος
   type: w
-DK22 B54:
+DK 22B54:
   author: Heraklit
   metadata:
     urn: urn:cts:greekLit:tlg0626.tlg002:54
@@ -628,7 +628,7 @@ DK22 B54:
     GA 29/30:
     - start: 44
   type: w
-DK22 B93:
+DK 22B93:
   author: Heraklit
   metadata:
     urn: urn:cts:greekLit:tlg0626.tlg002:93
@@ -638,14 +638,14 @@ DK22 B93:
     WBPh:
     - start: 277
   type: w
-DK28 B1:
+DK 28B1:
   references:
     EM:
     - start: 120
   related:
   - δόξα
   type: w
-DK28 B2:
+DK 28B2:
   references:
     EM:
     - start: 118
@@ -653,7 +653,7 @@ DK28 B2:
   related:
   - ἀλήθεια
   type: w
-DK28 B6:
+DK 28B6:
   references:
     EM:
     - start: 119
@@ -661,7 +661,7 @@ DK28 B6:
   related:
   - λέγειν
   type: w
-DK28 B8:
+DK 28B8:
   author: Parmenides
   metadata:
     urn: urn:cts:greekLit:tlg1562.tlg002:7
