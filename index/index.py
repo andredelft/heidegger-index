@@ -91,7 +91,7 @@ def add_ref(
                     f"Cannot assign type '{ref_type}' to lemma. Lemma is already defined as being of type '{lemma_entry['type']}'."
                 )
 
-        refs = lemma_entry["references"]
+        refs = lemma_entry.get("references", {})
 
         if refs.get(work):
             # Only appends reference if it does not already exist in index.

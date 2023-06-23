@@ -538,8 +538,13 @@ DK 22B1:
   metadata:
     urn: urn:cts:greekLit:tlg0626.tlg002:1
   references:
+    EM:
+    - start: 136
+    - start: 137
     WBPh:
     - start: 277
+  related:
+  - λόγος
   type: w
 DK 22B108:
   author: Heraklit
@@ -563,6 +568,8 @@ DK 22B123:
   metadata:
     urn: urn:cts:greekLit:tlg0626.tlg002:123
   references:
+    EM:
+    - start: 122
     GA 29/30:
     - start: 41
     WBPh:
@@ -570,13 +577,30 @@ DK 22B123:
   related:
   - φύσις
   type: w
+DK 22B124:
+  author: Heraklit
+  references:
+    EM:
+    - start: 142
+  type: w
+DK 22B19:
+  author: Heraklit
+  references:
+    EM:
+    - start: 141
+  type: w
 DK 22B2:
   author: Heraklit
   metadata:
     urn: urn:cts:greekLit:tlg0626.tlg002:2
   references:
+    EM:
+    - start: 136
+    - start: 137
     WBPh:
     - start: 277
+  related:
+  - λόγος
   type: w
 DK 22B29:
   author: Heraklit
@@ -595,6 +619,18 @@ DK 22B30:
     - start: 47
     SvG:
     - start: 168
+  type: w
+DK 22B34:
+  author: Heraklit
+  references:
+    EM:
+    - start: 138
+  type: w
+DK 22B50:
+  author: Heraklit
+  references:
+    EM:
+    - start: 137
   type: w
 DK 22B52:
   author: Heraklit
@@ -617,6 +653,7 @@ DK 22B53:
   references:
     EM:
     - start: 66
+    - start: 121
   related:
   - πόλεμος
   type: w
@@ -625,8 +662,40 @@ DK 22B54:
   metadata:
     urn: urn:cts:greekLit:tlg0626.tlg002:54
   references:
+    EM:
+    - start: 142
     GA 29/30:
     - start: 44
+  type: w
+DK 22B7:
+  author: Heraklit
+  references:
+    EM:
+    - start: 141
+  type: w
+DK 22B72:
+  author: Heraklit
+  references:
+    EM:
+    - start: 138
+      suffix: f
+  type: w
+DK 22B73:
+  author: Heraklit
+  references:
+    EM:
+    - start: 137
+DK 22B8:
+  author: Heraklit
+  references:
+    EM:
+    - start: 140
+  type: w
+DK 22B9:
+  author: Heraklit
+  references:
+    EM:
+    - start: 141
   type: w
 DK 22B93:
   author: Heraklit
@@ -638,14 +707,26 @@ DK 22B93:
     WBPh:
     - start: 277
   type: w
-DK 28B1:
+DK 22B97:
+  author: Heraklit
   references:
     EM:
-    - start: 120
+    - start: 141
+  type: w
+DK 28B1:
+  author: Parmenides
   related:
   - δόξα
   type: w
+DK 28B1 28–32:
+  author: Parmenides
+  parent: DK 28B1
+  references:
+    EM:
+    - start: 120
+  type: w
 DK 28B2:
+  author: Parmenides
   references:
     EM:
     - start: 118
@@ -654,6 +735,7 @@ DK 28B2:
   - ἀλήθεια
   type: w
 DK 28B6:
+  author: Parmenides
   references:
     EM:
     - start: 119
@@ -848,6 +930,9 @@ Demokrit:
   type: p
 Denken:
   references:
+    EM:
+    - end: 204
+      start: 124
     G:
     - start: 518
       suffix: ff
@@ -1651,6 +1736,9 @@ Hegel, Georg Wilhelm Friedrich:
   metadata:
     gnd: '118547739'
   references:
+    EM:
+    - end: 130
+      start: 129
     GA 1:
     - start: 56
     GA 29/30:
@@ -1705,6 +1793,7 @@ Heraklit:
   references:
     EM:
     - start: 66
+    - start: 143
     SvG:
     - start: 161
     - start: 163
@@ -1774,6 +1863,11 @@ Holzwege:
   references:
     GA 29/30:
     - start: 11
+Homer:
+  references:
+    EM:
+    - start: 133
+  type: p
 Horizont:
   references:
     GA 29/30:
@@ -1893,6 +1987,12 @@ Jaeger, Werner Wilhelm:
     GA 18:
     - start: 239
   type: p
+Johannesevangelium:
+  references:
+    EM:
+    - start: 135
+    - start: 143
+  type: w
 Kalkül:
   references:
     SvG:
@@ -1913,6 +2013,8 @@ Kant, Immanuel:
   metadata:
     gnd: '118559796'
   references:
+    EM:
+    - start: 129
     GA 29/30:
     - end: 423
       start: 421
@@ -2099,6 +2201,7 @@ Leibniz, Gottfried Wilhelm:
   references:
     EM:
     - start: 65
+    - start: 129
     SvG:
     - end: 175
       start: 172
@@ -2476,6 +2579,16 @@ Naturwissenschaft:
     - start: 180
     WD:
     - start: 278
+Nem. III:
+  author: Pindar
+  parent: Nemeischen Oden
+  references:
+    EM:
+    - start: 121
+  type: w
+Nemeischen Oden:
+  author: Pindar
+  type: w
 Neovitalismus:
   references:
     GA 29/30:
@@ -2567,6 +2680,8 @@ Objekt:
     - start: 175
     WBPh:
     - start: 249
+Odyssee:
+  author: Homer
 Oedipus Tyrannus:
   author: Sophokles
   metadata:
@@ -2603,13 +2718,17 @@ Offenheit für das Geheimnis:
     G:
     - end: 529
       start: 528
+Ol. X:
+  author: Pindar
+  parent: Olympischen Oden
+  references:
+    EM:
+    - start: 108
+  type: w
 Olympischen Oden:
   author: Pindar
   metadata:
     urn: urn:cts:greekLit:tlg0033.tlg001
-  references:
-    EM:
-    - start: 108
   type: w
 Optimismus:
   references:
@@ -2650,6 +2769,12 @@ Otto Hahn:
     SvG:
     - start: 178
   type: p
+Oydssee XXIV:
+  author: Homer
+  parent: Odyssee
+  references:
+    EM:
+    - start: 133
 Parmenides:
   metadata:
     dk: 28
@@ -2657,6 +2782,7 @@ Parmenides:
   references:
     EM:
     - start: 103
+    - start: 134
   type: p
 Pascal, Blaise:
   references:
@@ -2806,6 +2932,12 @@ Physica:
     - start: 292
     - start: 297
   type: w
+Physica Θ:
+  parent: Physica
+  references:
+    EM:
+    - start: 133
+  type: w
 Physik:
   references:
     EM:
@@ -2895,13 +3027,17 @@ Psychologie:
     SZ:
     - start: 49
       suffix: f
+Pyth. II:
+  author: Pindar
+  parent: Pythischen Oden
+  references:
+    EM:
+    - start: 108
+  type: w
 Pythischen Oden:
   author: Pindar
   metadata:
     urn: urn:cts:greekLit:tlg0033.tlg002
-  references:
-    EM:
-    - start: 108
   type: w
 Rand der Möglichkeit:
   references:
@@ -3044,6 +3180,8 @@ Schein:
     EM:
     - end: 122
       start: 105
+    - start: 124
+      suffix: f
     GA 29/30:
     - end: 430
       start: 429
@@ -3888,6 +4026,9 @@ Vorhandenen:
     - start: 136
 Vorstellen:
   references:
+    EM:
+    - start: 126
+      suffix: f
     GA 29/30:
     - start: 12
       suffix: f
@@ -4790,6 +4931,10 @@ wesentliche Möglichkeit des Seins:
     - end: 112
       start: 110
     - start: 120
+δόχα:
+  references:
+    EM:
+    - start: 138
 δύναμις:
   references:
     WBPh:
@@ -4922,6 +5067,9 @@ wesentliche Möglichkeit des Seins:
     - start: 168
 λέγειν:
   references:
+    EM:
+    - end: 133
+      start: 132
     GA 29/30:
     - start: 41
     SvG:
@@ -4938,6 +5086,11 @@ wesentliche Möglichkeit des Seins:
     EM:
     - start: 62
     - start: 66
+    - start: 128
+    - end: 133
+      start: 131
+    - end: 145
+      start: 137
     GA 18:
     - end: 21
       start: 17
@@ -5102,6 +5255,11 @@ wesentliche Möglichkeit des Seins:
   references:
     EM:
     - start: 66
+    - start: 121
+πόλις:
+  references:
+    EM:
+    - start: 100
 στέρησις:
   references:
     WBPh:
@@ -5160,6 +5318,11 @@ wesentliche Möglichkeit des Seins:
   references:
     WBPh:
     - start: 246
+φυς/σις:
+  references:
+    EM:
+    - start: 133
+      suffix: f
 φυσικά:
   references:
     GA 29/30:
@@ -5227,6 +5390,13 @@ wesentliche Möglichkeit des Seins:
     - start: 111
     - start: 117
     - start: 120
+    - start: 122
+    - start: 129
+    - end: 132
+      start: 131
+    - start: 100
+    - start: 142
+    - start: 144
     FT:
     - start: 12
     GA 18:
@@ -5299,6 +5469,7 @@ wesentliche Möglichkeit des Seins:
   references:
     EM:
     - start: 109
+    - start: 129
     GA 29/30:
     - end: 44
       start: 43
@@ -5432,6 +5603,7 @@ wesentliche Möglichkeit des Seins:
     - start: 65
     - start: 111
     - start: 113
+    - start: 129
     WBPh:
     - start: 273
       suffix: f
