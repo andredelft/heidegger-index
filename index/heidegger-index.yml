@@ -70,6 +70,8 @@ Alpen:
     - start: 134
   type: g
 Anaximander:
+  metadata:
+    dk: 12
   references:
     SvG:
     - start: 158
@@ -110,6 +112,23 @@ Anthropologie:
     SZ:
     - end: 50
       start: 48
+Antigone (Sophokles):
+  author: Sophokles
+  type: w
+Antigone, Erste Chorlied:
+  author: Sophokles
+  parent: Antigone (Sophokles)
+  references:
+    EM:
+    - end: 170
+      start: 153
+    GA 13:
+    - end: 36
+      start: 35
+  related:
+  - τέχνη
+  - δίκη
+  type: w
 Antigonä:
   references:
     SvG:
@@ -533,6 +552,14 @@ Christus:
   references:
     WD:
     - start: 269
+DK 12B1:
+  author: Anaximander
+  references:
+    EM:
+    - start: 175
+  related:
+  - δίκη
+  type: w
 DK 22B1:
   author: Heraklit
   metadata:
@@ -691,6 +718,14 @@ DK 22B8:
     EM:
     - start: 140
   type: w
+DK 22B80:
+  author: Heraklit
+  references:
+    EM:
+    - start: 175
+  related:
+  - δίκη
+  type: w
 DK 22B9:
   author: Heraklit
   references:
@@ -717,6 +752,7 @@ DK 28B1:
   author: Parmenides
   related:
   - δόξα
+  - δίκη
   type: w
 DK 28B1 28–32:
   author: Parmenides
@@ -4913,6 +4949,10 @@ wesentliche Möglichkeit des Seins:
     - start: 291
     - start: 295
     - start: 296
+δεινόν:
+  references:
+    EM:
+    - start: 159
 διαίρεσις:
   references:
     GA 29/30:
@@ -4925,6 +4965,10 @@ wesentliche Möglichkeit des Seins:
     WBPh:
     - start: 270
     - start: 269
+δίκη:
+  references:
+    EM:
+    - start: 175
 δόξα:
   references:
     EM:
