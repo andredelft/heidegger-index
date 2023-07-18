@@ -31,9 +31,20 @@ Adversus mathematicos VII, 16:
     GA 29/30:
     - start: 55
   type: w
+Alemannische Gedichte (Rezension):
+  author: Goethe, Johann Wolfgang von
+  references:
+    GA 16:
+    - start: 532
+  related:
+  - Allemannischen Gedichte
+  type: w
 Allemannischen Gedichte:
   author: Hebel, Johann Peter
   references:
+    GA 16:
+    - start: 532
+      suffix: f
     HF:
     - start: 134
       suffix: f
@@ -1212,8 +1223,8 @@ Entzug:
 Erde:
   references:
     GA 16:
-    - start: 530
-    - start: 531
+    - end: 532
+      start: 530
     HF:
     - start: 134
     - start: 139
@@ -1575,6 +1586,8 @@ Goethe, Johann Wolfgang von:
   metadata:
     gnd: '118540238'
   references:
+    GA 16:
+    - start: 532
     HF:
     - start: 145
     - start: 149
@@ -1872,8 +1885,8 @@ Herstellen:
 Himmel:
   references:
     GA 16:
-    - start: 530
-    - start: 531
+    - end: 532
+      start: 530
     HF:
     - start: 139
     - start: 150
@@ -2007,6 +2020,8 @@ Infinitiv:
       start: 59
 Information:
   references:
+    GA 16:
+    - start: 532
     SvG:
     - start: 182
 JGB Nachgesang:
@@ -2338,8 +2353,9 @@ Meister Eckhart:
 Mensch:
   references:
     GA 16:
-    - start: 530
-    - start: 531
+    - end: 532
+      start: 530
+      suffix: f
     GA 18:
     - start: 18
     - start: 21
@@ -3526,6 +3542,7 @@ Sprache:
       suffix: f
     GA 16:
     - start: 531
+    - start: 532
     GA 18:
     - start: 20
       suffix: f
