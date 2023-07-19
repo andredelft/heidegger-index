@@ -85,3 +85,4 @@ additionalProperties:
   additionalProperties: False
   dependentRequired:
     metadata: [type]
+    parent: [references]
