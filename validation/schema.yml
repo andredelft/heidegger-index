@@ -18,6 +18,7 @@ additionalProperties:
           description: Gemeinsame Normdatei identifier
         dk:
           type: integer
+          minimum: 1
           description: Diels-Kranz ID
       additionalProperties: False
     references:
@@ -85,4 +86,15 @@ additionalProperties:
   additionalProperties: False
   dependentRequired:
     metadata: [type]
-    parent: [references]
+    parent: [references]    
+  allOf:
+    - if:
+        properties:
+          type:
+            const: p
+      then:
+        properties:
+          metadata:
+            properties:
+              dk:
+                maximum: 90
