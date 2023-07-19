@@ -1,4 +1,7 @@
+4 Esra:
+  type: w
 4 Esra 7. 12:
+  parent: 4 Esra
   references:
     GA 29/30:
     - start: 396
@@ -24,6 +27,10 @@ Abwesen:
   references:
     WD:
     - start: 271
+Adversus mathematicos:
+  metadata:
+    urn: urn:cts:greekLit:tlg0544.tlg002
+  type: w
 Adversus mathematicos VII, 16:
   metadata:
     urn: urn:cts:greekLit:tlg0544.tlg002:7.16
@@ -1052,12 +1059,17 @@ Der Untergang des Abendlandes:
     GA 29/30:
     - start: 105
   type: w
+Der Wille zur Macht:
+  author: Nietzsche, Friedrich
+  type: w
 Der Wille zur Macht 1003:
+  parent: Der Wille zur Macht
   references:
     GA 29/30:
     - start: 108
   type: w
 Der Wille zur Macht 1005:
+  parent: Der Wille zur Macht
   references:
     GA 29/30:
     - end: 109
@@ -1066,6 +1078,7 @@ Der Wille zur Macht 1005:
   - NL 9[42] 12.354
   type: w
 Der Wille zur Macht 1049:
+  parent: Der Wille zur Macht
   references:
     GA 29/30:
     - start: 109
@@ -1073,6 +1086,7 @@ Der Wille zur Macht 1049:
   - NL 2[106] 12.113
   type: w
 Der Wille zur Macht 1050:
+  parent: Der Wille zur Macht
   references:
     GA 29/30:
     - end: 110
@@ -1081,6 +1095,7 @@ Der Wille zur Macht 1050:
   - NL 14[14] 13.224f
   type: w
 Der Wille zur Macht 1052:
+  parent: Der Wille zur Macht
   references:
     GA 29/30:
     - start: 110
@@ -1504,7 +1519,12 @@ Gelassenheit zu den Dingen:
     G:
     - end: 529
       start: 527
+Genesis (LXX):
+  metadata:
+    urn: urn:cts:greekLit:tlg0527.tlg001
+  type: w
 Genesis 1. 26 (LXX):
+  parent: Genesis (LXX)
   metadata:
     urn: urn:cts:greekLit:tlg0527.tlg001:1.26
   references:
@@ -2052,8 +2072,12 @@ Information:
     - start: 532
     SvG:
     - start: 182
+Jenseits von Gut und Böse:
+  author: Nietzsche, Friedrich
+  type: w
 JGB Nachgesang:
   author: Nietzsche, Friedrich
+  parent: Jenseits von Gut und Böse
   references:
     GA 29/30:
     - start: 108
@@ -2911,6 +2935,7 @@ Phaidros:
   type: w
 Phaidros 279a:
   author: Plato
+  parent: Phaidros
   metadata:
     urn: urn:cts:greekLit:tlg0059.tlg012:279
   references:
@@ -3206,10 +3231,16 @@ Rätsel:
   references:
     SZ:
     - start: 4
+Römer:
+  author: Paulus
+  metadata:
+    urn: urn:cts:greekLit:tlg0031.tlg006
+  type: w
 Römer 8. 19:
   author: Paulus
   metadata:
     urn: urn:cts:greekLit:tlg0031.tlg006:8.19
+  parent: Römer
   references:
     GA 29/30:
     - start: 396
@@ -3218,6 +3249,7 @@ Römer 8. 29:
   author: Paulus
   metadata:
     urn: urn:cts:greekLit:tlg0031.tlg006:8.29
+  parent: Römer
   references:
     GA 63:
     - start: 22
@@ -5750,16 +5782,28 @@ wesentliche Möglichkeit des Seins:
     EM:
     - end: 62
       start: 61
-Ⅰ Cor. 11. 7:
+Ⅰ Korinther:
   author: Paulus
+  metadata:
+    urn: urn:cts:greekLit:tlg0031.tlg007
+  type: w
+Ⅰ Kor. 11. 7:
+  author: Paulus
+  parent: Ⅰ Korinther
   metadata:
     urn: urn:cts:greekLit:tlg0031.tlg007:11.7
   references:
     GA 63:
     - start: 22
   type: w
-Ⅱ Cor. 3. 18:
+Ⅱ Korinther:
   author: Paulus
+  metadata:
+    urn: urn:cts:greekLit:tlg0031.tlg008
+  type: w
+Ⅱ Kor. 3. 18:
+  author: Paulus
+  parent: Ⅱ Korinther
   metadata:
     urn: urn:cts:greekLit:tlg0031.tlg008:3.18
   references:
