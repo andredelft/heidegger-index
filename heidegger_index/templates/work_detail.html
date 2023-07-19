@@ -28,9 +28,9 @@
 {% include 'components/h2.html' with text="Reference" only %}
 <div class="text-1.5xl {{ body_text }}">{{ work.reference | safe }}</div>
 
-{% if work_lemma.description %}
-<div class="{{ description_prose }} mb-8">
-  {{ work_lemma.description | safe }}
+{% if work.description %}
+<div class="mt-8 {{ description_prose }} mb-8">
+  {{ work.description | safe }}
 </div>
 {% endif %}
 

@@ -2,7 +2,7 @@
 
 ## Work reference
 {{ work.reference | markdownify | safe }}
-
+{{ work.description | markdownify |safe }}
 ## Index terms
 {% include 'markdown/_group_by_lemma.md' with ref_list=term_list %}
 {% if person_list %}{% include 'markdown/_group_by_lemma.md' with ref_list=person_list group_title="People mentioned" %}{% endif %}
