@@ -617,12 +617,16 @@ DK 22B123:
   type: w
 DK 22B124:
   author: Heraklit
+  metadata:
+    urn: urn:cts:greekLit:tlg0626.tlg002:124
   references:
     EM:
     - start: 142
   type: w
 DK 22B19:
   author: Heraklit
+  metadata:
+    urn: urn:cts:greekLit:tlg0626.tlg002:19
   references:
     EM:
     - start: 141
@@ -660,12 +664,16 @@ DK 22B30:
   type: w
 DK 22B34:
   author: Heraklit
+  metadata:
+    urn: urn:cts:greekLit:tlg0626.tlg002:34
   references:
     EM:
     - start: 138
   type: w
 DK 22B50:
   author: Heraklit
+  metadata:
+    urn: urn:cts:greekLit:tlg0626.tlg002:50
   references:
     EM:
     - start: 137
@@ -707,12 +715,16 @@ DK 22B54:
   type: w
 DK 22B7:
   author: Heraklit
+  metadata:
+    urn: urn:cts:greekLit:tlg0626.tlg002:7
   references:
     EM:
     - start: 141
   type: w
 DK 22B72:
   author: Heraklit
+  metadata:
+    urn: urn:cts:greekLit:tlg0626.tlg002:72
   references:
     EM:
     - start: 138
@@ -720,17 +732,23 @@ DK 22B72:
   type: w
 DK 22B73:
   author: Heraklit
+  metadata:
+    urn: urn:cts:greekLit:tlg0626.tlg002:73
   references:
     EM:
     - start: 137
 DK 22B8:
   author: Heraklit
+  metadata:
+    urn: urn:cts:greekLit:tlg0626.tlg002:8
   references:
     EM:
     - start: 140
   type: w
 DK 22B80:
   author: Heraklit
+  metadata:
+    urn: urn:cts:greekLit:tlg0626.tlg002:80
   references:
     EM:
     - start: 175
@@ -739,6 +757,8 @@ DK 22B80:
   type: w
 DK 22B9:
   author: Heraklit
+  metadata:
+    urn: urn:cts:greekLit:tlg0626.tlg002:9
   references:
     EM:
     - start: 141
@@ -755,12 +775,16 @@ DK 22B93:
   type: w
 DK 22B97:
   author: Heraklit
+  metadata:
+    urn: urn:cts:greekLit:tlg0626.tlg002:97
   references:
     EM:
     - start: 141
   type: w
 DK 28B1:
   author: Parmenides
+  metadata:
+    urn: urn:cts:greekLit:tlg1562.tlg002:1
   related:
   - δόξα
   - δίκη
@@ -774,6 +798,8 @@ DK 28B1 28–32:
   type: w
 DK 28B2:
   author: Parmenides
+  metadata:
+    urn: urn:cts:greekLit:tlg1562.tlg002:2
   references:
     EM:
     - start: 118
@@ -783,6 +809,8 @@ DK 28B2:
   type: w
 DK 28B6:
   author: Parmenides
+  metadata:
+    urn: urn:cts:greekLit:tlg1562.tlg002:6
   references:
     EM:
     - start: 119
