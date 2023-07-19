@@ -120,8 +120,12 @@ class Lemma(models.Model):
                     + self.urn
                 )
                 p_response = requests.get(p_link)
-                parsed_xml = BeautifulSoup(p_response.text, "html.parser")
-                self.perseus_content = parsed_xml.p.contents[-1].string
+                parsed_xml = BeautifulSoup(p_response.text, 'lxml')
+                while parsed_xml.p.bibl:
+                    parsed_xml.p.bibl.decompose()
+                while parsed_xml.p.label:
+                    parsed_xml.p.label.decompose()
+                self.perseus_content = str(parsed_xml.p.get_text())
 
     class Meta:
         ordering = ["sort_key"]

@@ -744,6 +744,7 @@ DK 22B73:
   references:
     EM:
     - start: 137
+  type: w
 DK 22B8:
   author: Heraklit
   metadata:
