@@ -1,4 +1,5 @@
 {% extends '_site_base.html' %}
+{% load i18n %}
 
 {% block head_title %}{{ lemma.value }}{% endblock head_title %}
 
@@ -10,7 +11,7 @@
 
 {% if lemma.type == "w" and lemma.author %}
 <div class="pb-8 pl-4 {{ body_text }}">
-  Author: <a href="{% url 'index:lemma-detail' lemma.author.slug %}" class="{{ hidden_link_decoration }}">{{ lemma.author }}</a>
+  {% translate "Author" %}: <a href="{% url 'index:lemma-detail' lemma.author.slug %}" class="{{ hidden_link_decoration }}">{{ lemma.author }}</a>
 </div>
 {% endif %}
 
@@ -20,7 +21,7 @@
     {{ lemma.perseus_content }}
   </p>
   <p class="text-lg text-right">
-  Source: <a 
+  {% translate "Source" %}: <a 
     href="https://scaife.perseus.org/reader/{{ lemma.urn | safe }}" 
     title="Read full text of {{ lemma.value }} on Perseus"
     target="_blank" rel="noopener noreferrer"
@@ -68,9 +69,9 @@
   class="{{ hidden_link_decoration }}"
   >
   {% if lemma.type == "w" %}
-  Read full text of <em>{{ lemma.value }}</em> on <cite>Perseus Digital Library</cite>
+  {% translate "Read full text of" %} <em>{{ lemma.value }}</em> {% translate "on" %} <cite>Perseus Digital Library</cite>
   {% elif lemma.type == "p" %}
-  Read works of {{ lemma.value }} on <cite>Perseus Digital Library</cite>
+  {% translate "Read works of" %} {{ lemma.value }} {% translate "on" %} <cite>Perseus Digital Library</cite>
   {% endif %}
   </a>
   </p>

@@ -1,4 +1,5 @@
 {% extends '_site_base.html' %}
+{% load i18n %}
 
 {% block head_title %}{{ work.title }}{% endblock head_title %}
 
@@ -16,7 +17,7 @@
 
 
 {% if work.parent %}
-<p class="{{ body_text }}">Appears in <a href="{% url 'index:work-detail' work.parent.slug %}" class="{{ hidden_link_decoration }} italic">{{ work.parent.title }}</a></p>
+<p class="{{ body_text }}">{% translate "Appears in" %} <a href="{% url 'index:work-detail' work.parent.slug %}" class="{{ hidden_link_decoration }} italic">{{ work.parent.title }}</a></p>
 {% endif %}
 
 {% if work.children.all %}

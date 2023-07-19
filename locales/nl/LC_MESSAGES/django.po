@@ -1,0 +1,66 @@
+# Nederlandse vertaling.
+# Copyright (C) 2023 André van Delft & Johannes de Wit
+# This file is distributed under the MIT license.
+# André van Delft <andrevandelft@outlook.com>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-07-19 08:37+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: André van Delft <andrevandelft@outlook.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: heidegger_index/templates/_site_base.html:8
+#: heidegger_index/templates/index.html:6
+#: heidegger_index/templates/index.html:9
+msgid "Heidegger index"
+msgstr "Heidegger-index"
+
+#: heidegger_index/templates/index.html:11
+msgid "Managed by"
+msgstr "Beheerd door"
+
+#: heidegger_index/templates/index.html:18
+msgid "Previous"
+msgstr "Vorige"
+
+#: heidegger_index/templates/index.html:49
+msgid "Next"
+msgstr "Volgende"
+
+#: heidegger_index/templates/index.html:53
+msgid "Bibliography"
+msgstr "Bibliografie"
+
+#: heidegger_index/templates/lemma_detail.html:14
+msgid "Author"
+msgstr "Auteur"
+
+#: heidegger_index/templates/lemma_detail.html:24
+msgid "Source"
+msgstr "Bron"
+
+#: heidegger_index/templates/lemma_detail.html:72
+msgid "Read full text of"
+msgstr "Lees de volledige tekst van"
+
+#: heidegger_index/templates/lemma_detail.html:72
+#: heidegger_index/templates/lemma_detail.html:74
+msgid "on"
+msgstr "in de"
+
+#: heidegger_index/templates/lemma_detail.html:74
+msgid "Read works of"
+msgstr "Lees de werken van"
+
+#: heidegger_index/templates/work_detail.html:20
+msgid "Appears in"
+msgstr "Verschenen in"

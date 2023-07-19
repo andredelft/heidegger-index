@@ -1,18 +1,21 @@
 {% extends '_site_base.html' %}
+{% load i18n %}
 
-{% block full_head_title %}Heidegger index{% endblock full_head_title %}
+{% get_available_languages as languages %}
+
+{% block full_head_title %}{% translate "Heidegger index" %}{% endblock full_head_title %}
 
 {% block body %}
-<h1 class="py-4 text-5xl font-bold dark:text-white">Heidegger index</h1>
+<h1 class="py-4 text-5xl font-bold dark:text-white">{% translate "Heidegger index" %}</h1>
 <p class="pb-12 {{ body_text }}">
-  Managed by: <a href="https://github.com/andredelft" target="_blank" rel="noopener noreferrer" class="{{ link_decoration }}">André van Delft</a> &amp; <a href="https://github.com/johannesdewit" target="_blank" rel="noopener noreferrer" class="{{ link_decoration }}">Johannes de Wit</a>
+  {% translate "Managed by" %}: <a href="https://github.com/andredelft" target="_blank" rel="noopener noreferrer" class="{{ link_decoration }}">André van Delft</a> &amp; <a href="https://github.com/johannesdewit" target="_blank" rel="noopener noreferrer" class="{{ link_decoration }}">Johannes de Wit</a>
 </p>
 
 {% include '_toc.html' %}
 
 {% if alphabet.pre %}
   <div>
-  <a href="{% url 'index:home' %}?start={{ alphabet.pre|last }}#{{ alphabet.pre|last }}" class="{{ hidden_link_decoration }}">← Previous</a>
+  <a href="{% url 'index:home' %}?start={{ alphabet.pre|last }}#{{ alphabet.pre|last }}" class="{{ hidden_link_decoration }}">← {% translate "Previous" %}</a>
   </div>
 {% endif %}
 
@@ -43,11 +46,11 @@
 
 {% if alphabet.post %}
   <div class="pt-8">
-    <a href="{% url 'index:home' %}?start={{ alphabet.post|first }}#{{ alphabet.post|first }}" class="{{ hidden_link_decoration }}">Next →</a>
+    <a href="{% url 'index:home' %}?start={{ alphabet.post|first }}#{{ alphabet.post|first }}" class="{{ hidden_link_decoration }}">{% translate "Next" %} →</a>
   </div>
 {% endif %}
 
-<h2 class="mt-16 mb-8 text-3xl font-bold dark:text-white scroll-mt-24" id="bibliography">Bibliography</h2>
+<h2 class="mt-16 mb-8 text-3xl font-bold dark:text-white scroll-mt-24" id="bibliography">{% translate "Bibliography" %}</h2>
 <div class="flex flex-col gap-8">
   {% for work in works %}
   {% if work.reference %}
