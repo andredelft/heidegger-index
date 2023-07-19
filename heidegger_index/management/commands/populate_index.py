@@ -89,6 +89,11 @@ class Command(BaseCommand):
             else:
                 work_obj.reference = "—"
 
+            # Descriptions
+            description = description_by_sort_key.get(work_key)
+            if description:
+                work_obj.description = convert_md(description)
+
             work_objs.append(work_obj)
 
             title = work_obj.csl_json.get("title")
@@ -99,6 +104,7 @@ class Command(BaseCommand):
                 work_by_title[short_title] = work_obj
 
             work_by_key[work_key] = work_obj
+
 
         Work.objects.bulk_create(tqdm(work_objs, desc="Populating works"))
 

@@ -24,6 +24,8 @@ class Work(models.Model):
     parent = models.ForeignKey(
         "self", on_delete=models.SET_NULL, null=True, related_name="children"
     )
+    description = models.TextField(null=True)
+
 
     def __str__(self):
         return self.key
