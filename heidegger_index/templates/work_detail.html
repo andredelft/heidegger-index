@@ -21,11 +21,13 @@
 {% endif %}
 
 {% if work.children.all %}
-{% include 'components/h2.html' with text="Sections" %}
+{% translate "Sections" as sections %}
+{% include 'components/h2.html' with text=sections %}
 {% include '_work_list.html' with works=work.children.all  %}
 {% endif %}
 
-{% include 'components/h2.html' with text="Reference" only %}
+{% translate "Reference" as reference %}
+{% include 'components/h2.html' with text=reference only %}
 <div class="text-1.5xl {{ body_text }}">{{ work.reference | safe }}</div>
 
 {% if work.description %}
@@ -34,19 +36,23 @@
 </div>
 {% endif %}
 
-{% include 'components/h2.html' with text="Index terms" only %}
+{% translate "Index terms" as index_terms %}
+{% include 'components/h2.html' with text=index_terms only %}
 {% include '_group_by_lemma.html' with ref_list=term_list %}
 
+{% translate "People mentioned" as people_mentioned %}
 {% if person_list %}
-  {% include '_group_by_lemma.html' with ref_list=person_list group_title="People mentioned" %}
+  {% include '_group_by_lemma.html' with ref_list=person_list group_title=people_mentioned %}
 {% endif %}
 
+{% translate "Works mentioned" as works_mentioned %}
 {% if work_list %}
-  {% include '_group_by_lemma.html' with ref_list=work_list group_title="Works mentioned" %}
+  {% include '_group_by_lemma.html' with ref_list=work_list group_title=works_mentioned %}
 {% endif %}
 
+{% blocktrans with title=work.csl_json.title asvar mentions_of %}Mentions of <em>{{ title }}</em>{% endblocktrans %}
 {% if work_lemma %}
-  {% include '_group_by_work.html' with ref_list=work_lemma.pagereference_set.all group_title="Mentions of <em>"|add:work.csl_json.title|add:"</em>" %}
+  {% include '_group_by_work.html' with ref_list=work_lemma.pagereference_set.all group_title=mentions_of %}
 {% endif %}
 
 {% endblock %}

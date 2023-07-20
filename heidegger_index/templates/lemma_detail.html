@@ -41,8 +41,9 @@
 
 {% include '_group_by_work.html' with ref_list=lemma.pagereference_set.all %}
 
+{% blocktrans asvar works_by %}Works by {{ author_short }}{% endblocktrans %}
 {% if works %}
-{% include '_lemma_list.html' with lemma_list=works title="Works by "|add:author_short %}
+{% include '_lemma_list.html' with lemma_list=works title=works_by %}
 {% endif %}
 
 {% for child in children %}
@@ -55,24 +56,25 @@
   {% include '_group_by_work.html' with ref_list=child.pagereference_set.all %}
 {% endfor %}
 
+{% translate "Related" as related_txt %}
 {% if related %}
-{% include '_lemma_list.html' with lemma_list=related title="Related" %}
+{% include '_lemma_list.html' with lemma_list=related title=related_txt %}
 {% endif %}
 
 {% if lemma.type and lemma.urn and not lemma.perseus_content %}
 <div>
   <p class="mt-12 text-lg">
   <a 
-  href="https://scaife.perseus.org/reader/{{ lemma.urn | safe }}" 
-  title="View {{ lemma.value }} on Perseus"
-  target="_blank" rel="noopener noreferrer"
-  class="{{ hidden_link_decoration }}"
+    href="https://scaife.perseus.org/reader/{{ lemma.urn | safe }}" 
+    title="{% blocktrans with lemma_value=lemma.value %}View {{ lemma_value }} on Perseus{% endblocktrans %}"
+    target="_blank" rel="noopener noreferrer"
+    class="{{ hidden_link_decoration }}"
   >
-  {% if lemma.type == "w" %}
-  {% translate "Read full text of" %} <em>{{ lemma.value }}</em> {% translate "on" %} <cite>Perseus Digital Library</cite>
-  {% elif lemma.type == "p" %}
-  {% translate "Read works of" %} {{ lemma.value }} {% translate "on" %} <cite>Perseus Digital Library</cite>
-  {% endif %}
+    {% if lemma.type == "w" %}
+    {% blocktranslate with lemma_value=lemma.value %}Read full text of <em>{{ lemma_value }}</em> on <cite>Perseus Digital Library</cite>{% endblocktranslate %}
+    {% elif lemma.type == "p" %}
+    {% blocktranslate with lemma_value=lemma.value %}Read works of <em>{{ lemma_value }}</em> on <cite>Perseus Digital Library</cite>{% endblocktranslate %}
+    {% endif %}
   </a>
   </p>
 </div>
