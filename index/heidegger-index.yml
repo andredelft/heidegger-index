@@ -34,6 +34,7 @@ Adversus mathematicos:
 Adversus mathematicos VII, 16:
   metadata:
     urn: urn:cts:greekLit:tlg0544.tlg002:7.16
+  parent: Adversus mathematicos
   references:
     GA 29/30:
     - start: 55
@@ -1524,9 +1525,9 @@ Genesis (LXX):
     urn: urn:cts:greekLit:tlg0527.tlg001
   type: w
 Genesis 1. 26 (LXX):
-  parent: Genesis (LXX)
   metadata:
     urn: urn:cts:greekLit:tlg0527.tlg001:1.26
+  parent: Genesis (LXX)
   references:
     GA 63:
     - start: 22
@@ -2072,9 +2073,6 @@ Information:
     - start: 532
     SvG:
     - start: 182
-Jenseits von Gut und Böse:
-  author: Nietzsche, Friedrich
-  type: w
 JGB Nachgesang:
   author: Nietzsche, Friedrich
   parent: Jenseits von Gut und Böse
@@ -2090,6 +2088,9 @@ Jaeger, Werner Wilhelm:
     GA 18:
     - start: 239
   type: p
+Jenseits von Gut und Böse:
+  author: Nietzsche, Friedrich
+  type: w
 Johannesevangelium:
   references:
     EM:
@@ -2337,6 +2338,13 @@ Liebe:
     WD:
     - start: 274
     - start: 275
+Lina Kromer:
+  metadata:
+    gnd: '116553235'
+  references:
+    GA 13:
+    - start: 253
+  type: p
 Logik:
   references:
     GA 29/30:
@@ -2584,18 +2592,23 @@ Müller, Johannes:
     - start: 372
   type: p
 NL 14[14] 13.224f:
+  author: Nietzsche, Friedrich
+  parent: Nachlass (Friedrich Nietzsche)
   references:
     GA 29/30:
     - end: 110
       start: 109
   type: w
 NL 14[89] 13.265ff:
+  author: Nietzsche, Friedrich
+  parent: Nachlass (Friedrich Nietzsche)
   references:
     GA 29/30:
     - start: 110
   type: w
 NL 2[106] 12.113:
   author: Nietzsche, Friedrich
+  parent: Nachlass (Friedrich Nietzsche)
   references:
     GA 29/30:
     - start: 109
@@ -2603,6 +2616,7 @@ NL 2[106] 12.113:
   type: w
 NL 9[42] 12.354:
   author: Nietzsche, Friedrich
+  parent: Nachlass (Friedrich Nietzsche)
   references:
     GA 29/30:
     - end: 109
@@ -2616,6 +2630,9 @@ Nachdenken:
     - start: 526
     - end: 529
       start: 528
+Nachlass (Friedrich Nietzsche):
+  author: Nietzsche, Friedrich
+  type: w
 Nachstellen:
   references:
     EWI:
@@ -2935,9 +2952,9 @@ Phaidros:
   type: w
 Phaidros 279a:
   author: Plato
-  parent: Phaidros
   metadata:
     urn: urn:cts:greekLit:tlg0059.tlg012:279
+  parent: Phaidros
   references:
     WiM:
     - start: 122
@@ -5782,16 +5799,25 @@ wesentliche Möglichkeit des Seins:
     EM:
     - end: 62
       start: 61
+Ⅰ Kor. 11. 7:
+  author: Paulus
+  metadata:
+    urn: urn:cts:greekLit:tlg0031.tlg007:11.7
+  parent: Ⅰ Korinther
+  references:
+    GA 63:
+    - start: 22
+  type: w
 Ⅰ Korinther:
   author: Paulus
   metadata:
     urn: urn:cts:greekLit:tlg0031.tlg007
   type: w
-Ⅰ Kor. 11. 7:
+Ⅱ Kor. 3. 18:
   author: Paulus
-  parent: Ⅰ Korinther
   metadata:
-    urn: urn:cts:greekLit:tlg0031.tlg007:11.7
+    urn: urn:cts:greekLit:tlg0031.tlg008:3.18
+  parent: Ⅱ Korinther
   references:
     GA 63:
     - start: 22
@@ -5800,13 +5826,4 @@ wesentliche Möglichkeit des Seins:
   author: Paulus
   metadata:
     urn: urn:cts:greekLit:tlg0031.tlg008
-  type: w
-Ⅱ Kor. 3. 18:
-  author: Paulus
-  parent: Ⅱ Korinther
-  metadata:
-    urn: urn:cts:greekLit:tlg0031.tlg008:3.18
-  references:
-    GA 63:
-    - start: 22
   type: w
