@@ -428,6 +428,10 @@ Benommenheit, Offenheit der:
     - start: 391
       suffix: f
       type: r
+Besinnung:
+  references:
+    GA 16:
+    - start: 574
 Bestand:
   references:
     SvG:
@@ -1868,6 +1872,7 @@ Heimat:
       start: 520
     GA 16:
     - start: 530
+    - start: 574
 Heimweh:
   references:
     GA 29/30:
@@ -2630,6 +2635,8 @@ Nachdenken:
     - start: 526
     - end: 529
       start: 528
+    GA 16:
+    - start: 574
 Nachlass (Friedrich Nietzsche):
   author: Nietzsche, Friedrich
   type: w
@@ -4522,6 +4529,10 @@ Zuhandene:
   references:
     SZ:
     - start: 137
+Zukunft:
+  references:
+    GA 16:
+    - start: 574
 Zuspruch:
   references:
     SvG:
