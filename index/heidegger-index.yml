@@ -269,6 +269,8 @@ Atomzeitalter:
       start: 522
     - start: 528
     - start: 529
+    GA 16:
+    - start: 577
     SvG:
     - start: 178
     - start: 179
@@ -1873,8 +1875,17 @@ Heimat:
     GA 16:
     - start: 530
     - start: 574
+    - start: 575
+    - start: 576
+    - start: 578
+    - start: 579
+    - start: 580
 Heimweh:
   references:
+    GA 16:
+    - start: 578
+    - start: 579
+    - start: 580
     GA 29/30:
     - start: 7
     - end: 12
@@ -2192,6 +2203,8 @@ Kreutzer, Conradin:
     - end: 518
       start: 517
     - start: 529
+    GA 16:
+    - start: 581
   type: p
 Kritik der Reinen Vernunft:
   author: Kant, Immanuel
@@ -2222,6 +2235,8 @@ Langeweile:
   references:
     EWI:
     - start: 39
+    GA 16:
+    - start: 579
     GA 29/30:
     - start: 115
       suffix: ff
@@ -2637,6 +2652,7 @@ Nachdenken:
       start: 528
     GA 16:
     - start: 574
+    - start: 582
 Nachlass (Friedrich Nietzsche):
   author: Nietzsche, Friedrich
   type: w
@@ -3774,6 +3790,13 @@ Technik:
     - start: 526
       type: r
     - start: 527
+    GA 16:
+    - start: 577
+    - start: 578
+    - start: 579
+      type: r
+    - start: 580
+      type: r
     GA 29/30:
     - start: 115
     HF:
@@ -3955,6 +3978,10 @@ Trieb:
     - start: 376
       suffix: f
     - start: 385
+Umheimliche:
+  references:
+    GA 16:
+    - start: 578
 Umwelt:
   references:
     GA 18:
@@ -3992,6 +4019,16 @@ Ungesprochene:
   references:
     WD:
     - start: 273
+Unheimische:
+  references:
+    GA 16:
+    - start: 575
+    - start: 576
+    - start: 577
+    - start: 578
+    - start: 579
+    - start: 580
+    - start: 581
 Unheimlichkeit:
   references:
     GA 29/30:
@@ -4533,6 +4570,7 @@ Zukunft:
   references:
     GA 16:
     - start: 574
+    - start: 575
 Zuspruch:
   references:
     SvG:
@@ -4961,6 +4999,11 @@ tiefe Langeweile:
       start: 251
     WiM:
     - start: 110
+tiefe Langeweilie:
+  references:
+    GA 16:
+    - start: 579
+    - start: 580
 unbestimmte Unmittelbare:
   references:
     SZ:
