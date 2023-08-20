@@ -4992,6 +4992,9 @@ technische Gegenstand:
 tiefe Langeweile:
   parent: Langeweile
   references:
+    GA 16:
+    - start: 579
+    - start: 580
     GA 29/30:
     - end: 410
       start: 409
@@ -4999,11 +5002,6 @@ tiefe Langeweile:
       start: 251
     WiM:
     - start: 110
-tiefe Langeweilie:
-  references:
-    GA 16:
-    - start: 579
-    - start: 580
 unbestimmte Unmittelbare:
   references:
     SZ:
