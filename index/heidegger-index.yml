@@ -55,7 +55,7 @@ Alemannische Gedichte (Rezension):
     JPH G:
     - start: 532
   related:
-  - Allemannischen Gedichte
+  - Allemannische Gedichte
   type: w
 Allemannische Gedichte:
   author: Hebel, Johann Peter
@@ -892,7 +892,7 @@ Darwinismus:
     - start: 384
 Das Gewitter:
   author: Hebel, Johann Peter
-  parent: Allemannischen Gedichte
+  parent: Allemannische Gedichte
   references:
     JPH Z:
     - end: 511
@@ -900,7 +900,7 @@ Das Gewitter:
   type: w
 Das Habermus:
   author: Hebel, Johann Peter
-  parent: Allemannischen Gedichte
+  parent: Allemannische Gedichte
   references:
     HF:
     - start: 145
@@ -1084,7 +1084,7 @@ Der Mensch im Weltalter des Ausgleichs:
   type: w
 Der Sommerabend:
   author: Hebel, Johann Peter
-  parent: Allemannischen Gedichte
+  parent: Allemannische Gedichte
   references:
     HF:
     - start: 145
@@ -1188,7 +1188,7 @@ Dichtung:
     - start: 146
 Die Vergänglichkeit:
   author: Hebel, Johann Peter
-  parent: Allemannischen Gedichte
+  parent: Allemannische Gedichte
   references:
     JPH Z:
     - end: 509
@@ -1196,7 +1196,7 @@ Die Vergänglichkeit:
   type: w
 Die Wiese:
   author: Hebel, Johann Peter
-  parent: Allemannischen Gedichte
+  parent: Allemannische Gedichte
   references:
     HF:
     - start: 134
