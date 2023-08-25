@@ -203,6 +203,52 @@ GA 55:
   publisher-place: Frankfurt am Main
   title: Heraklit
   type: book
+JPH G:
+  author:
+  - family: Heidegger
+    given: Martin
+  collection-editor:
+  - family: Klostermann
+    given: Vittorio
+  collection-number: band 16
+  collection-title: Gesamtausgabe
+  container-title: 'Reden und Zeugnisse eines Lebensweg: 1910–1976'
+  editor:
+  - family: Heidegger
+    given: Hermann
+  id: JPH G
+  issued:
+    date-parts:
+    - - 2000
+  language: german
+  page: 530-533
+  publisher: Vittorio Klostermann
+  publisher-place: Frankfurt am Main
+  title: Johann Peter Hebel (Göppingen, 9. November 1955, Volkshochschule)
+  type: chapter
+JPH Z:
+  author:
+  - family: Heidegger
+    given: Martin
+  collection-editor:
+  - family: Klostermann
+    given: Vittorio
+  collection-number: band 16
+  collection-title: Gesamtausgabe
+  container-title: 'Reden und Zeugnisse eines Lebensweg: 1910–1976'
+  editor:
+  - family: Heidegger
+    given: Hermann
+  id: JPH Z
+  issued:
+    date-parts:
+    - - 2000
+  language: german
+  page: 491-515
+  publisher: Vittorio Klostermann
+  publisher-place: Frankfurt am Main
+  title: Johann Peter Hebel (Zähringer Rede vom 5. September 1954)
+  type: chapter
 SvG:
   author:
   - family: Heidegger
