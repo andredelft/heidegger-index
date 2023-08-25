@@ -39,6 +39,16 @@ Adversus mathematicos VII, 16:
     GA 29/30:
     - start: 55
   type: w
+Alemannische Gedichte:
+  author: Hebel, Johann Peter
+  references:
+    GA 13:
+    - end: 125
+      start: 123
+    JPH Z:
+    - end: 497
+      start: 492
+  type: w
 Alemannische Gedichte (Rezension):
   author: Goethe, Johann Wolfgang von
   references:
@@ -47,13 +57,7 @@ Alemannische Gedichte (Rezension):
   related:
   - Allemannischen Gedichte
   type: w
-Alemannischen Gedichte:
-  references:
-    JPH Z:
-    - end: 497
-      start: 492
-  type: w
-Allemannischen Gedichte:
+Allemannische Gedichte:
   author: Hebel, Johann Peter
   references:
     HF:
@@ -1867,6 +1871,8 @@ Hebel, Johann Peter:
     GA 13:
     - start: 117
       suffix: f
+    - end: 125
+      start: 123
     HF:
     - end: 138
       start: 133
@@ -3368,6 +3374,8 @@ Schatzkästlein des rheinischen Hausfreundes:
     GA 13:
     - start: 117
       suffix: f
+    - end: 125
+      start: 124
     HF:
     - start: 137
       suffix: f
