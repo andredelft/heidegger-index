@@ -47,6 +47,12 @@ Alemannische Gedichte (Rezension):
   related:
   - Allemannischen Gedichte
   type: w
+Alemannischen Gedichte:
+  references:
+    JPH Z:
+    - end: 497
+      start: 492
+  type: w
 Allemannischen Gedichte:
   author: Hebel, Johann Peter
   references:
@@ -445,6 +451,13 @@ Bethe, Albrecht:
     GA 29/30:
     - start: 356
   type: p
+Betrachtung über ein Vogelnest:
+  author: Hebel, Johann Peter
+  references:
+    JPH Z:
+    - end: 501
+      start: 498
+  type: w
 Betrachtungen über das Weltgebäude. Der Mond.:
   parent: Schatzkästlein des rheinischen Hausfreundes
   references:
@@ -873,12 +886,22 @@ Darwinismus:
       type: r
     - start: 382
     - start: 384
+Das Gewitter:
+  author: Hebel, Johann Peter
+  references:
+    JPH Z:
+    - end: 511
+      start: 509
+  type: w
 Das Habermus:
   author: Hebel, Johann Peter
   parent: Allemannischen Gedichte
   references:
     HF:
     - start: 145
+    JPH Z:
+    - end: 514
+      start: 511
   type: w
 Dasein:
   references:
@@ -1059,6 +1082,9 @@ Der Sommerabend:
   references:
     HF:
     - start: 145
+    JPH Z:
+    - end: 504
+      start: 502
   type: w
 Der Untergang des Abendlandes:
   author: Spengler, Oswald
@@ -1154,6 +1180,13 @@ Dichtung:
   references:
     HF:
     - start: 146
+Die Vergänglichkeit:
+  author: Hebel, Johann Peter
+  references:
+    JPH Z:
+    - end: 509
+      start: 504
+  type: w
 Die Wiese:
   author: Hebel, Johann Peter
   parent: Allemannischen Gedichte
@@ -1785,6 +1818,12 @@ Grundverhältnis:
     - start: 400
   related:
   - Grundverhalten
+Gute Antwort:
+  author: Hebel, Johann Peter
+  references:
+    JPH Z:
+    - start: 498
+  type: w
 Götter:
   references:
     EM:
@@ -3326,6 +3365,9 @@ Schatzkästlein des rheinischen Hausfreundes:
     - start: 137
       suffix: f
     - start: 147
+    JPH Z:
+    - end: 497
+      start: 496
   type: w
 Schein:
   references:
@@ -3978,6 +4020,11 @@ Trieb:
     - start: 376
       suffix: f
     - start: 385
+Trost:
+  references:
+    JPH Z:
+    - start: 515
+  type: w
 Umheimliche:
   references:
     GA 16:
