@@ -42,7 +42,7 @@ Adversus mathematicos VII, 16:
 Alemannische Gedichte (Rezension):
   author: Goethe, Johann Wolfgang von
   references:
-    GA 16:
+    JPH G:
     - start: 532
   related:
   - Allemannischen Gedichte
@@ -56,7 +56,7 @@ Alemannischen Gedichte:
 Allemannischen Gedichte:
   author: Hebel, Johann Peter
   references:
-    GA 16:
+    JPH G:
     - start: 532
       suffix: f
     HF:
@@ -1305,7 +1305,7 @@ Entzug:
     - start: 165
 Erde:
   references:
-    GA 16:
+    JPH G:
     - end: 532
       start: 530
     HF:
@@ -1674,7 +1674,7 @@ Goethe, Johann Wolfgang von:
   metadata:
     gnd: '118540238'
   references:
-    GA 16:
+    JPH G:
     - start: 532
     HF:
     - start: 145
@@ -1863,8 +1863,10 @@ Hebel, Johann Peter:
     GA 13:
     - start: 117
       suffix: f
-    GA 16:
+    JPH G:
     - start: 530
+    - end: 533
+      start: 532
     HF:
     - end: 138
       start: 133
@@ -1912,13 +1914,14 @@ Heimat:
     - end: 522
       start: 520
     GA 16:
-    - start: 530
     - start: 574
     - start: 575
     - start: 576
     - start: 578
     - start: 579
     - start: 580
+    JPH G:
+    - start: 530
 Heimweh:
   references:
     GA 16:
@@ -1958,7 +1961,7 @@ Heraklit:
   type: p
 Herder, Johann Gottfried:
   references:
-    GA 16:
+    JPH G:
     - start: 531
   type: p
 Hergestelltheit:
@@ -1988,7 +1991,7 @@ Herstellen:
     - start: 288
 Himmel:
   references:
-    GA 16:
+    JPH G:
     - end: 532
       start: 530
     HF:
@@ -2124,7 +2127,7 @@ Infinitiv:
       start: 59
 Information:
   references:
-    GA 16:
+    JPH G:
     - start: 532
     SvG:
     - start: 182
@@ -2471,7 +2474,7 @@ Meister Eckhart:
   type: p
 Mensch:
   references:
-    GA 16:
+    JPH G:
     - end: 532
       start: 530
       suffix: f
@@ -3682,7 +3685,7 @@ Sprache:
     GA 13:
     - start: 117
       suffix: f
-    GA 16:
+    JPH G:
     - start: 531
     - start: 532
     GA 18:
@@ -3859,7 +3862,7 @@ Theologische Schriften 3, Gebet 3:
     G:
     - start: 521
     - start: 529
-    GA 16:
+    JPH G:
     - start: 530
     HF:
     - start: 150
@@ -5097,7 +5100,7 @@ wesentliche Möglichkeit des Seins:
   references:
     G:
     - start: 521
-    GA 16:
+    JPH G:
     - start: 530
   related:
   - Theologische Schriften 3, Gebet 3
