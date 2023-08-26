@@ -1166,6 +1166,9 @@ Dialektik:
     - start: 306
 Dichten:
   references:
+    GA 13:
+    - end: 124
+      start: 123
     WD:
     - start: 276
 Dichter:
@@ -1923,6 +1926,9 @@ Heimat:
     G:
     - end: 522
       start: 520
+    GA 13:
+    - end: 124
+      start: 123
     GA 16:
     - start: 574
     - start: 575
@@ -1934,6 +1940,10 @@ Heimat:
     - start: 530
 Heimweh:
   references:
+    GA 13:
+    - start: 123
+      type: r
+    - start: 124
     GA 16:
     - start: 578
     - start: 579
@@ -2205,6 +2215,8 @@ Kant, Immanuel:
   type: p
 Karlsruhe:
   references:
+    GA 13:
+    - start: 123
     HF:
     - start: 133
   type: g
@@ -2433,6 +2445,11 @@ Maas:
   references:
     WD:
     - start: 273
+Markgräflerland:
+  references:
+    GA 13:
+    - start: 123
+  type: g
 Maschine:
   references:
     EWI:
