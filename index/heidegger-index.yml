@@ -27,6 +27,12 @@ Abwesen:
   references:
     WD:
     - start: 271
+Act. Apost. XIX, 34:
+  author: Paulus
+  references:
+    GA 55:
+    - start: 14
+  type: w
 Adversus mathematicos:
   metadata:
     urn: urn:cts:greekLit:tlg0544.tlg002
@@ -255,6 +261,15 @@ Ars rhetorica:
     - start: 57
       suffix: f
   type: w
+Artemis:
+  references:
+    GA 55:
+    - end: 19
+      start: 13
+    - start: 10
+  related:
+  - Act. Apost. XIX, 34
+  type: p
 Atomenergie:
   references:
     G:
@@ -602,6 +617,22 @@ DK 12B1:
   related:
   - δίκη
   type: w
+DK 22A1:
+  references:
+    GA 55:
+    - end: 13
+      start: 10
+    - start: 19
+  type: w
+DK 22A9:
+  author: Aristoteles
+  references:
+    GA 55:
+    - end: 10
+      start: 6
+  related:
+  - Heraklit
+  type: w
 DK 22B1:
   author: Heraklit
   metadata:
@@ -631,6 +662,12 @@ DK 22B112:
     GA 29/30:
     - start: 41
       suffix: f
+  type: w
+DK 22B121:
+  author: Heraklit
+  references:
+    GA 55:
+    - start: 12
   type: w
 DK 22B123:
   author: Heraklit
@@ -5290,6 +5327,10 @@ wesentliche Möglichkeit des Seins:
   related:
   - ζῷον αλόγον
   - animal rationale
+θαυμάζειν:
+  references:
+    GA 55:
+    - start: 12
 θέσις:
   references:
     EM:
@@ -5535,6 +5576,9 @@ wesentliche Möglichkeit des Seins:
   references:
     EM:
     - start: 100
+    GA 55:
+    - start: 11
+      suffix: f
 στέρησις:
   references:
     WBPh:
@@ -5593,11 +5637,6 @@ wesentliche Möglichkeit des Seins:
   references:
     WBPh:
     - start: 246
-φυς/σις:
-  references:
-    EM:
-    - start: 133
-      suffix: f
 φυσικά:
   references:
     GA 29/30:
@@ -5660,6 +5699,7 @@ wesentliche Möglichkeit des Seins:
     - start: 60
     - start: 65
     - start: 66
+    - start: 100
     - start: 108
       suffix: f
     - start: 111
@@ -5669,7 +5709,8 @@ wesentliche Möglichkeit des Seins:
     - start: 129
     - end: 132
       start: 131
-    - start: 100
+    - start: 133
+      suffix: f
     - start: 142
     - start: 144
     FT:
