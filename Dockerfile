@@ -1,4 +1,5 @@
-FROM python:3.11
+FROM python:3.10-alpine
+RUN apk add build-base gettext
 ADD . /
 ENV PORT=8000
 EXPOSE $PORT
