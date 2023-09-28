@@ -1,0 +1,31 @@
+.bibliography {
+  &__item {
+    @include link-unstyled;
+    display: flex;
+    column-gap: 0.5rem;
+    align-items: start;
+    padding: 0.25rem 0;
+    border-radius: 0.2em;
+    transition: background-color 300ms, color 300ms;
+
+    &:hover,
+    &:focus {
+      background-color: $slate-100;
+      color: var(--links-color);
+
+      @include dark {
+        background-color: $slate-800;
+      }
+    }
+  }
+
+  &__item-key {
+    flex-shrink: 0;
+    width: 5em;
+  }
+
+  .csl-entry {
+    font-size: 0.9em;
+    line-height: 1.5;
+  }
+}

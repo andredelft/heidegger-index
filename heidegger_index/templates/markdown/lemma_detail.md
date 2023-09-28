@@ -1,5 +1,5 @@
 {% load fullurl %}{% load markdownify_filter %}# {% if lemma.type == "w" %}_{% endif %}{{ lemma }}{% if lemma.type == "w" %}_{% endif %}
-{% if lemma.type == "w" and lemma.author %}Author: [{{ lemma.author }}]({% fullurl 'index:lemma-detail' lemma.author.slug %})
+{% if lemma.type == "w" and lemma.author %}Author: [{{ lemma.author }}]({% fullurl 'lemma-detail' lemma.author.slug %})
 {% endif %}
 {% if lemma.description %}{{ lemma.description | markdownify | safe }}
 {% endif %}

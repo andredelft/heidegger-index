@@ -6,6 +6,7 @@ from django.db import models
 from django.conf import settings
 from django_extensions.db.fields import AutoSlugField
 from django.core.validators import URLValidator
+from django.utils.safestring import mark_safe
 
 from heidegger_index.constants import LemmaType, RefType, MetadataType
 from heidegger_index.utils import (
@@ -26,7 +27,6 @@ class Work(models.Model):
     )
     description = models.TextField(null=True)
 
-
     def __str__(self):
         return self.key
 
@@ -44,6 +44,13 @@ class Work(models.Model):
     def title(self):
         return self.csl_json.get("title-short") or self.csl_json.get("title") or ""
 
+    def display(self):
+        return mark_safe(f'<span class="work">{self.title}</span>')
+
+    def display_full(self):
+        title = self.csl_json.get("title")
+        return mark_safe(f'<span class="work">{title}</span>') if title else ""
+
     def save(self, *args, **kwargs):
         self.gen_reference()
 
@@ -51,6 +58,13 @@ class Work(models.Model):
 
     class Meta:
         ordering = ["key"]
+
+
+class LemmaManager(models.Manager):
+    # Get a custom ordering where lemma's that start with a number appear after those that start with letters
+    def alpha_numeric_ordering(self, *args, **kwargs):
+        qs = self.get_queryset().filter(*args, **kwargs)
+        return sorted(qs, key=lambda l: (1 if l.first_letter == "#" else 0, l.sort_key))
 
 
 class Lemma(models.Model):
@@ -93,6 +107,8 @@ class Lemma(models.Model):
     # Use if lemma is associated with a work
     work = models.OneToOneField(Work, null=True, on_delete=models.SET_NULL)
 
+    objects = LemmaManager()
+
     def __str__(self):
         return self.value
 
@@ -122,6 +138,15 @@ class Lemma(models.Model):
                 p_response = requests.get(p_link)
                 parsed_xml = BeautifulSoup(p_response.text, "html.parser")
                 self.perseus_content = parsed_xml.p.contents[-1].string
+
+    def display(self):
+        if self.type:
+            lemma_type = LemmaType.get_label(self.type)
+            class_name = f"lemma lemma--{lemma_type}"
+        else:
+            class_name = "lemma"
+
+        return mark_safe(f'<span class="{class_name}">{self}</span>')
 
     class Meta:
         ordering = ["sort_key"]
@@ -174,5 +199,13 @@ def get_alphabet():
             .values_list("first_letter", flat=True)
             .distinct()
         )
+
+        # If we have numbers, put the group on the end of the list
+        try:
+            ALPHABET.remove("#")
+        except ValueError:
+            pass
+        else:
+            ALPHABET.append("#")
 
     return ALPHABET

@@ -11,6 +11,7 @@ def index_view(request):
     alphabet = get_alphabet()
 
     start = request.GET.get("start")
+    print("Start", start)
 
     if start:
         try:
@@ -23,9 +24,9 @@ def index_view(request):
     end_index = start_index + settings.PAGINATION_WINDOW
     return render(
         request,
-        "index.html",
+        "lemma_list.html",
         {
-            "lemmas": Lemma.objects.filter(
+            "lemmas": Lemma.objects.alpha_numeric_ordering(
                 first_letter__in=alphabet[start_index:end_index], parent=None
             ),
             "works": Work.objects.all(),
@@ -98,10 +99,10 @@ class LemmaDetailView(DetailView):
         self.object = self.get_object()
         if self.object.work and self.object.type == "w":
             # Redirect Lemma detail page to corresponding work page
-            return redirect("index:work-detail", slug=self.object.work.slug)
+            return redirect("work-detail", slug=self.object.work.slug)
         elif self.object.parent:
             # Redirect Lemma detail page to corresponding parent page
-            return redirect("index:lemma-detail", slug=self.object.parent.slug)
+            return redirect("lemma-detail", slug=self.object.parent.slug)
         else:
             context = self.get_context_data(object=self.object)
             return self.render_to_response(context)
@@ -129,10 +130,10 @@ class LemmaDetailViewMD(LemmaDetailView):
 class URNRedirectView(LemmaDetailView):
     def get(self, *args, **kwargs):
         lemma = get_object_or_404(Lemma, urn=kwargs["urn"])
-        return redirect("index:lemma-detail", slug=lemma.slug)
+        return redirect("lemma-detail", slug=lemma.slug)
 
 
 class GNDRedirectView(LemmaDetailView):
     def get(self, *args, **kwargs):
         lemma = get_object_or_404(Lemma, gnd=kwargs["gnd"])
-        return redirect("index:lemma-detail", slug=lemma.slug)
+        return redirect("lemma-detail", slug=lemma.slug)

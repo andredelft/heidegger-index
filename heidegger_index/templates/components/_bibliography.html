@@ -1,0 +1,19 @@
+{% load i18n %}
+
+{% block body %}
+<h2 id="bibliography">{% translate "Bibliografie" %}</h2>
+<div class="bibliography">
+  {% for work in works %}
+    {% if work.reference %}
+      <a href="{% url "work-detail" work.slug %}" class="bibliography__item">
+        <div class="bibliography__item-key">
+          <span class="badge badge--secondary">
+            {{ work.key }}
+          </span>
+        </div>
+        {{ work.reference|safe }}
+      </a>
+    {% endif %}
+  {% endfor %}
+</div>
+{% endblock body%}

@@ -10,58 +10,55 @@ from heidegger_index.views import (
     WorkDetailViewMD,
     LemmaDetailViewMD,
     URNRedirectView,
-    GNDRedirectView
+    GNDRedirectView,
 )
 
-namespaced_patterns = (
-    [
-        path("", index_view, name="home"),
-        path(
-            "work/<slug:slug>.md",
-            WorkDetailViewMD.as_view(content_type="text/markdown"),
-            name="work-md-export",
+urlpatterns_wo_prefix = [
+    path("", index_view, name="home"),
+    path(
+        "work/<slug:slug>.md",
+        WorkDetailViewMD.as_view(content_type="text/markdown"),
+        name="work-md-export",
+    ),
+    path(
+        "work/<slug:slug>/",
+        include(
+            [
+                path("", WorkDetailView.as_view(), name="work-detail"),
+                re_path(
+                    r"(?P<page_range>" + REF_REGEX.pattern + ")",
+                    WorkDetailView.as_view(),
+                    name="work-detail-select-pages",
+                ),
+            ]
         ),
-        path(
-            "work/<slug:slug>/",
-            include(
-                [
-                    path("", WorkDetailView.as_view(), name="work-detail"),
-                    re_path(
-                        r"(?P<page_range>" + REF_REGEX.pattern + ")",
-                        WorkDetailView.as_view(),
-                        name="work-detail-select-pages",
-                    ),
-                ]
-            ),
-        ),
-        path("lemma/<slug:slug>", LemmaDetailView.as_view(), name="lemma-detail"),
-        path(
-            "lemma/<slug:slug>.md",
-            LemmaDetailViewMD.as_view(content_type="text/markdown"),
-            name="lemma-md-export",
-        ),
-        re_path(
-            r"^lemma/(?P<urn>urn:cts:([A-Za-z0-9()+,\-.:=@;$_!*']|%[0-9A-Fa-f]{2})+)$",
-            URNRedirectView.as_view(),
-            name="urn-redirect",
-        ),
-        re_path(
-            r"^gnd/(?P<gnd>1[012]?\d{7}[0-9X]|[47]\d{6}-\d|[1-9]\d{0,7}-[0-9X]|3\d{7}[0-9X])$",
-            GNDRedirectView.as_view(),
-            name="gnd-redirect"
-        ),
-        path("lemma/<slug>", LemmaDetailView.as_view(), name="lemma-detail"),
-    ],
-    "index",
-)
+    ),
+    path("lemma/<slug:slug>", LemmaDetailView.as_view(), name="lemma-detail"),
+    path(
+        "lemma/<slug:slug>.md",
+        LemmaDetailViewMD.as_view(content_type="text/markdown"),
+        name="lemma-md-export",
+    ),
+    re_path(
+        r"^lemma/(?P<urn>urn:cts:([A-Za-z0-9()+,\-.:=@;$_!*']|%[0-9A-Fa-f]{2})+)$",
+        URNRedirectView.as_view(),
+        name="urn-redirect",
+    ),
+    re_path(
+        r"^gnd/(?P<gnd>1[012]?\d{7}[0-9X]|[47]\d{6}-\d|[1-9]\d{0,7}-[0-9X]|3\d{7}[0-9X])$",
+        GNDRedirectView.as_view(),
+        name="gnd-redirect",
+    ),
+    path("lemma/<slug>", LemmaDetailView.as_view(), name="lemma-detail"),
+]
 
 urlpatterns = (
     [
         path("", RedirectView.as_view(url=settings.URL_PREFIX)),
-        path(settings.URL_PREFIX, include(namespaced_patterns)),
+        path(settings.URL_PREFIX, include(urlpatterns_wo_prefix)),
     ]
     if settings.URL_PREFIX
-    else [path("", include(namespaced_patterns))]
+    else [path("", include(urlpatterns_wo_prefix))]
 )
 
 if settings.DEBUG:

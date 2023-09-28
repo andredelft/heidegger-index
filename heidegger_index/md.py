@@ -33,7 +33,7 @@ class LemmaLinkInlineProcessor(InlineProcessor):
             el = etree.Element("span")
             print(f"Markdown conversion: link to {lemma} not found")
         else:
-            href = reverse("index:lemma-detail", kwargs={"slug": lemma_obj.slug})
+            href = reverse("lemma-detail", kwargs={"slug": lemma_obj.slug})
             el = etree.Element("a", href=href)
 
         el.text = display_value.strip()
@@ -61,9 +61,8 @@ class WorkCitationInlineProcessor(InlineProcessor):
             work_el.attrib["class"] = "italic"
             print(f"Markdown conversion: cited work {work_key} does not exist")
         else:
-            href = reverse("index:work-detail", kwargs={"slug": work_obj.slug})
+            href = reverse("work-detail", kwargs={"slug": work_obj.slug})
             work_el = etree.SubElement(el, "a", href=href)
-            work_el.attrib["class"] = settings.TAILWIND_CLASSES["link_decoration"]
 
         work_el.text = work_key
 

@@ -1,0 +1,63 @@
+<div id="navigation-bar" class="navigation">
+  <div class="navigation__letter-selector-wrapper">
+    <label for="letter-selector" class="navigation__selector-label">
+      <i class="icon-magnifying-glass"></i>
+      <span id="selected-letter">{{ alphabet.selected|first }}</span>
+    </label>
+    <select id="letter-selector" name="letter-selector" class="navigation__letter-selector">
+      {% for letter in alphabet.pre %}
+        <option value="{{ letter }}">{{ letter }}</option>
+      {% endfor %}
+      {% for letter in alphabet.selected %}
+        <option value="{{ letter }}"{% if forloop.first %} selected{% endif %}>{{ letter }}</option>
+      {% endfor %}
+      {% for letter in alphabet.post %}
+        <option value="{{ letter }}">{{ letter }}</option>
+      {% endfor %}
+    </select>
+  </div>
+  <i class="navigation__loading-indicator icon-circle-notch"></i>
+  <button id="bibliography-button" class="navigation__bibliography-button">
+    <i class="icon-books"></i>
+  </button>
+</div>
+
+
+<script>
+  const letterSelector = document.getElementById('letter-selector');
+  const bibliographyButton = document.getElementById('bibliography-button');
+  const navigationBar = document.getElementById('navigation-bar');
+  const bilbiography = document.getElementById('bibliography');
+  const selectedLetter = document.getElementById('selected-letter');
+
+  function scrollToWithOffset(element, offset=55) {
+    const elementPosition = element.getBoundingClientRect().top;
+    const offsetPosition = elementPosition + window.pageYOffset - offset;
+  
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: 'smooth',
+    });
+  }
+
+  letterSelector.addEventListener('change', (e) => {
+    const letter = e.target.value;
+    const letterEl = document.getElementById(e.target.value);
+    const encodedLetter = encodeURIComponent(letter)
+
+    selectedLetter.textContent = letter;
+
+    if (letterEl) {
+      scrollToWithOffset(letterEl);
+      history.pushState({}, "", `#${encodedLetter}`);
+    } else {
+      navigationBar.classList.add('loading');
+      window.location = `{% url 'home' %}?start=${encodedLetter}#${encodedLetter}`;
+    }
+  })
+
+  bibliographyButton.addEventListener('click', (e) => {
+    scrollToWithOffset(bibliography);
+  })
+</script>
+

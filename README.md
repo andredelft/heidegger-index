@@ -141,13 +141,3 @@ A Django project is included with models into which `index/heidegger-index.yml` 
    ```
 
 5. Navigate to <http://localhost:8000>.
-
-## Tailwind
-
-For styling, we make use of [Tailwind](https://tailwindcss.com). When editing the HTML, make sure to run the following command in a separate terminal window:
-
-```sh
-python manage.py tailwind
-```
-
-This will watch the HTML files and automatically render the necessary CSS into the stylesheet. Include the CSS changes into the commits.
