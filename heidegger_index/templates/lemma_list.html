@@ -3,7 +3,7 @@
 
 {% get_available_languages as languages %}
 
-{% block full_head_title %}{% translate "Heidegger index" %}{% endblock full_head_title %}
+{% block full_head_title %}{% translate "Heidegger-index" %}{% endblock full_head_title %}
 
 {% block body %}
 
@@ -23,7 +23,7 @@
   {% if alphabet.pre %}
   <a href="{% url 'home' %}?start={{ alphabet.pre|last }}#{{ alphabet.pre|last }}" class="button button--small">
     <i class="icon-caret-up"></i>
-    {% translate "More" %}
+    {% translate "Meer" %}
   </a>
   {% endif %}
 
@@ -57,7 +57,7 @@
     
   {% if alphabet.post %}
   <a href="{% url 'home' %}?start={{ alphabet.post|first }}#{{ alphabet.post|first }}" class="button button--small">
-    {% translate "More" %}
+    {% translate "Meer" %}
     <i class="icon-caret-down"></i>
   </a>
   {% endif %}

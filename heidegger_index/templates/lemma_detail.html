@@ -67,19 +67,15 @@
 
 <div class="action-menu">
   <a class="action-menu__item icon-export" href="{% url "lemma-md-export" lemma.slug %}" download>
-    Exporteer als Markdown
+    {% translate "Exporteer als Markdown" %}
   </a>
   {% if lemma.type and lemma.urn and not lemma.perseus_content %}
   <a class="action-menu__item icon-book-open" href="https://scaife.perseus.org/reader/{{ lemma.urn | safe }}" target="_blank">
     <span>
       {% if lemma.type == "w" %}
-        {% blocktranslate with lemma=lemma.display %}
-          Lees de volledige tekst van {{ lemma }} op de <cite>Perseus Digital Library</cite>
-        {% endblocktranslate %}
+        {% blocktranslate with lemma=lemma.display %}Lees de volledige tekst van {{ lemma }} op de <cite>Perseus Digital Library</cite>{% endblocktranslate %}
       {% elif lemma.type == "p" %}
-        {% blocktranslate with lemma=lemma.display %}
-          Lees werken van {{ lemma }} op de <cite>Perseus Digital Library</cite>
-        {% endblocktranslate %}
+        {% blocktranslate with lemma=lemma.display %}Lees werken van {{ lemma }} op de <cite>Perseus Digital Library</cite>{% endblocktranslate %}
       {% endif %}
     </span>
   </a>

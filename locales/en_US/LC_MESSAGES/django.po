@@ -1,0 +1,79 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-28 06:19+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: André van Delft\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: heidegger_index/templates/_site_base.html:8
+#: heidegger_index/templates/lemma_list.html:6
+msgid "Heidegger-index"
+msgstr "Heidegger index"
+
+#: heidegger_index/templates/components/_bibliography.html:4
+msgid "Bibliografie"
+msgstr "Bibliography"
+
+#: heidegger_index/templates/components/ref_list/_group_by_work.html:12
+msgid "Referentie nog niet toegevoegd"
+msgstr "Reference not yet added"
+
+#: heidegger_index/templates/lemma_detail.html:25
+msgid "Bron"
+msgstr "Source"
+
+#: heidegger_index/templates/lemma_detail.html:46
+#, python-format
+msgid "Werken van %(author_short)s"
+msgstr "Works from %(author_short)s"
+
+#: heidegger_index/templates/lemma_detail.html:60
+msgid "Gerelateerd"
+msgstr "Related"
+
+#: heidegger_index/templates/lemma_detail.html:70
+#: heidegger_index/templates/work_detail.html:54
+msgid "Exporteer als Markdown"
+msgstr "Export as Markdown"
+
+#: heidegger_index/templates/lemma_detail.html:76
+#, fuzzy, python-format
+msgid ""
+"Lees de volledige tekst van %(lemma)s op de <cite>Perseus Digital Library</"
+"cite>"
+msgstr "Read full text of %(lemma)s on <cite>Perseus Digital Library</cite>"
+
+#: heidegger_index/templates/lemma_detail.html:78
+#, fuzzy, python-format
+msgid "Lees werken van %(lemma)s op de <cite>Perseus Digital Library</cite>"
+msgstr "Read works of %(lemma)s on <cite>Perseus Digital Library</cite>"
+
+#: heidegger_index/templates/lemma_list.html:26
+#: heidegger_index/templates/lemma_list.html:60
+msgid "Meer"
+msgstr "More"
+
+#: heidegger_index/templates/work_detail.html:36
+msgid "Personen"
+msgstr "Persons"
+
+#: heidegger_index/templates/work_detail.html:41
+msgid "Werken"
+msgstr "Works"
+
+#: heidegger_index/templates/work_detail.html:46
+#, python-format
+msgid "Referenties aan <em>%(title)s</em>"
+msgstr "Mentions of <em>%(title)s</em>"

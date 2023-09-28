@@ -104,12 +104,12 @@ AUTH_PASSWORD_VALIDATORS = [
 
 # Internationalization
 
-LANGUAGE_CODE = "en-us"
+LANGUAGE_CODE = "nl"
 
 TIME_ZONE = "UTC"
 
 USE_I18N = True
-SUPPORTED_LOCALES = ["nl"]
+SUPPORTED_LOCALES = ["en_US"]
 LOCALE_PATHS = [BASE_DIR / "locales"]
 LOCALE_IGNORE_PATTERNS = ["venv"]
 
