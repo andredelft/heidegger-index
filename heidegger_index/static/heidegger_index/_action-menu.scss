@@ -6,7 +6,7 @@
     display: flex;
     gap: 0.5em;
     text-decoration: none;
-    align-items: center;
+    align-items: flex-start;
     line-height: 1.3;
     margin: 0.5em 0;
     font-weight: 400;
@@ -14,6 +14,10 @@
 
     text-decoration: underline transparent;
     transition: $transition-colors;
+
+    &::before {
+      margin-top: 0.1em;
+    }
 
     i {
       display: flex;
