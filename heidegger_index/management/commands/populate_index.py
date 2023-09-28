@@ -12,8 +12,6 @@ from heidegger_index.models import Work, Lemma, PageReference
 from heidegger_index.utils import gen_sort_key
 from heidegger_index.md import convert_md
 
-yaml.warnings({"YAMLLoadWarning": False})
-
 
 class Command(BaseCommand):
     def _flush_table(self, Model):
@@ -55,7 +53,7 @@ class Command(BaseCommand):
 
         # Load work data
         with open(settings.WORK_REFS_FILE) as f:
-            works_data = yaml.load(f)
+            works_data = yaml.safe_load(f)
 
         # Load descriptions
         description_by_sort_key = {}
@@ -69,7 +67,7 @@ class Command(BaseCommand):
 
         # Load index data
         with open(settings.INDEX_FILE) as f:
-            index_data = yaml.load(f)
+            index_data = yaml.safe_load(f)
 
         # Populate works and index by title and by key
         work_objs = []

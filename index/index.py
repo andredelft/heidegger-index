@@ -22,8 +22,6 @@ OUTPUT_FILE = WORKING_DIR / "works.html"
 CITATION_STYLE = "mhra"  # Modern humanities research association
 CITEPROC_ENDPOINT = "https://labs.brill.com/citeproc"
 
-yaml.warnings({"YAMLLoadWarning": False})
-
 REF_INTFIELDS = {"start", "end"}
 
 
@@ -56,7 +54,7 @@ def add_ref(
 
     # Open index file
     with open(INDEX_FILE) as f:
-        index = yaml.load(f)
+        index = yaml.safe_load(f)
 
     # Prepare reference dictionary
     ref_dict = {}
@@ -140,13 +138,13 @@ def add_ref(
     index[lemma] = lemma_entry
 
     with open(INDEX_FILE, "w") as f:
-        yaml.dump(index, f, allow_unicode=True)
+        yaml.safe_dump(index, f, allow_unicode=True)
 
 
 def add_rel(first_lemma, second_lemma, rel_type):
     # Open index file
     with open(INDEX_FILE) as f:
-        index = yaml.load(f)
+        index = yaml.safe_load(f)
 
     # Validation: first_lemma and second_lemma exist
     if first_lemma not in index:
@@ -194,12 +192,12 @@ def add_rel(first_lemma, second_lemma, rel_type):
             print("No match")
 
     with open(INDEX_FILE, "w") as f:
-        yaml.dump(index, f, allow_unicode=True)
+        yaml.safe_dump(index, f, allow_unicode=True)
 
 
 def find_ref(search_term, max_l_dist=2, num_results=5):
     with open(INDEX_FILE) as f:
-        index = yaml.load(f)
+        index = yaml.safe_load(f)
     matches = match_lemmata(search_term, index, max_l_dist, True)
     if matches:
         print("\n".join(f"{m[0]}" for m in matches[:num_results]))
@@ -218,7 +216,7 @@ def add_metadata(md_type, lemma, lemma_type, md_value=None, overwrite=False):
 
     # Open index file
     with open(INDEX_FILE) as f:
-        index = yaml.load(f)
+        index = yaml.safe_load(f)
 
     # Validation: {md_type: md_value} is not already present in index.
     for l in index:
@@ -326,7 +324,7 @@ def add_metadata(md_type, lemma, lemma_type, md_value=None, overwrite=False):
 
     # Close and write index file.
     with open(INDEX_FILE, "w") as f:
-        yaml.dump(index, f, allow_unicode=True)
+        yaml.safe_dump(index, f, allow_unicode=True)
 
 
 # Shorthand functions:
@@ -351,7 +349,7 @@ def format_refs(
     output_file=OUTPUT_FILE,
 ):
     with open(work_refs_file) as f:
-        refs = yaml.load(f)
+        refs = yaml.safe_load(f)
 
     r = requests.post(
         citeproc_endpoint,

@@ -5,7 +5,7 @@ Django==4.*
 django-fullurl
 gunicorn==20.*
 whitenoise==5.*
-PyYAML==5.*
+PyYAML==6.*
 requests==2.*
 click==8.*
 tqdm==4.*

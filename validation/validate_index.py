@@ -7,11 +7,9 @@ INDEX_DIR = WORKING_DIR.parent / "index"
 INDEX_FILE = INDEX_DIR / "heidegger-index.yml"
 SCHEMA_FILE = WORKING_DIR / "schema.yml"
 
-yaml.warnings({"YAMLLoadWarning": False})
-
 
 def validate_yaml(file, schema):
-    validate(yaml.load(file), yaml.load(schema))
+    validate(yaml.safe_load(file), yaml.safe_load(schema))
 
 
 def validate_index():
