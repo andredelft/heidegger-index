@@ -7,6 +7,10 @@
 .lemma-detail {
   padding: 3rem 0;
 
+  &__title {
+    align-items: flex-start;
+  }
+
   &__author {
     margin: -0.5rem 0 2rem;
   }
