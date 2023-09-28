@@ -1,0 +1,17 @@
+{% load i18n %}
+{% regroup ref_list by work as work_groups %}
+{% if group_title %}
+<h2>{{ group_title|safe }}</h2>
+{% endif %}
+<ul class="group-by-work{% if inline %} group-by-work--inline{% endif %}">
+  {% for work, page_refs in work_groups %}
+    <li class="group-by-work__item">
+      {% if work.reference %}
+        <a class="badge badge--secondary group-by-work__work" href="{% url 'work-detail' work.slug %}">{{ work }}</a>
+      {% else %}
+        <span class="badge badge--secondary group-by-work__work group-by-work__work--missing" title="{% translate "Referentie nog niet toegevoegd" %}">{{ work }}</span>
+      {% endif %}
+      <span class="group-by-work__refs">{{ page_refs|join:', ' }}</span>
+    </li>
+  {% endfor %}
+</ul>

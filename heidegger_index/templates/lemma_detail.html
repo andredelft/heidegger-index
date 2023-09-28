@@ -4,79 +4,88 @@
 {% block head_title %}{{ lemma.value }}{% endblock head_title %}
 
 {% block body %}
-{% include '_export_button.html' with type="lemma" %}
-{% include '_home_button.html' %}
 
-<h1 class="clear-right pb-8 text-5xl font-semibold dark:text-white{% if lemma.type == "w" %} italic{% endif %}">{{ lemma }}</h1>
+<a href="{% url "home" %}" class="menu-button icon-bookmarks-simple"></a>
+
+<div class="lemma-detail">
+
+<h1>{{ lemma.display }}</h1>
 
 {% if lemma.type == "w" and lemma.author %}
-<div class="pb-8 pl-4 {{ body_text }}">
-  {% translate "Author" %}: <a href="{% url 'index:lemma-detail' lemma.author.slug %}" class="{{ hidden_link_decoration }}">{{ lemma.author }}</a>
+<div class="lemma-detail__author">
+  <a class="badge badge--secondary badge--large icon-user" href="{% url 'lemma-detail' lemma.author.slug %}">
+    {{ lemma.author.display }}
+  </a>
 </div>
 {% endif %}
 
 {% if lemma.type == "w" and lemma.perseus_content %}
-<div class="{{ source_text }}">
-  <p class="pl-4">
-    {{ lemma.perseus_content }}
-  </p>
-  <p class="text-lg text-right">
-  {% translate "Source" %}: <a 
-    href="https://scaife.perseus.org/reader/{{ lemma.urn | safe }}" 
-    title="Read full text of {{ lemma.value }} on Perseus"
-    target="_blank" rel="noopener noreferrer"
-    class="{{ hidden_link_decoration }}"
-    >
-    <cite>Perseus Digital Library</cite>
-    </a>
-  </p>
-</div>
+<blockquote>
+  {{ lemma.perseus_content }} 
+  ({% translate "Bron" %}: 
+  <a href="https://scaife.perseus.org/reader/{{ lemma.urn | safe }}" title="Read full text of {{ lemma.value }} on Perseus" target="_blank" rel="noopener noreferrer"><cite>Perseus Digital Library</cite></a>)
+</blockquote>
 {% endif %}
 
 {% if lemma.description %}
-<div class="{{ description_prose }} mb-8">
   {{ lemma.description | safe }}
-</div>
 {% endif %}
 
-{% include '_group_by_work.html' with ref_list=lemma.pagereference_set.all %}
-
-{% blocktrans asvar works_by %}Works by {{ author_short }}{% endblocktrans %}
-{% if works %}
-{% include '_lemma_list.html' with lemma_list=works title=works_by %}
-{% endif %}
+{% include 'components/ref_list/_group_by_work.html' with ref_list=lemma.pagereference_set.all %}
 
 {% for child in children %}
-  <h2 class="pt-8 pb-4 text-3xl font-semibold dark:text-white" id="{{ child.slug }}">{{ child }}</h2>
+<h2 id="{{ child.slug }}">{{ child }}</h2>
   {% if child.description %}
-  <div class="{{ description_prose }} mb-8">
     {{ child.description | safe }}
-  </div>
   {% endif %}
-  {% include '_group_by_work.html' with ref_list=child.pagereference_set.all %}
+  {% include 'components/ref_list/_group_by_work.html' with ref_list=child.pagereference_set.all %}
 {% endfor %}
 
-{% translate "Related" as related_txt %}
-{% if related %}
-{% include '_lemma_list.html' with lemma_list=related title=related_txt %}
+{% if works %}
+<h2 class="h3 icon-books">
+  {% blocktrans %}Werken van {{ author_short }}{% endblocktrans %}
+</h2>
+<ul class="work-list">
+  {% for work_lemma in works %}
+  <li>
+    <a href="{% url 'lemma-detail' work_lemma.slug %}">
+      {{ work_lemma.display }}
+    </a>
+  </li>
+  {% endfor %}
+</ul>
 {% endif %}
 
-{% if lemma.type and lemma.urn and not lemma.perseus_content %}
-<div>
-  <p class="mt-12 text-lg">
-  <a 
-    href="https://scaife.perseus.org/reader/{{ lemma.urn | safe }}" 
-    title="{% blocktrans with lemma_value=lemma.value %}View {{ lemma_value }} on Perseus{% endblocktrans %}"
-    target="_blank" rel="noopener noreferrer"
-    class="{{ hidden_link_decoration }}"
-  >
-    {% if lemma.type == "w" %}
-    {% blocktranslate with lemma_value=lemma.value %}Read full text of <em>{{ lemma_value }}</em> on <cite>Perseus Digital Library</cite>{% endblocktranslate %}
-    {% elif lemma.type == "p" %}
-    {% blocktranslate with lemma_value=lemma.value %}Read works of <em>{{ lemma_value }}</em> on <cite>Perseus Digital Library</cite>{% endblocktranslate %}
-    {% endif %}
-  </a>
-  </p>
+{% if related %}
+<h2 class="h3 icon-link">{% translate "Gerelateerd" %}</h2>
+<div class="lemma-detail__related">
+  {% for lemma in related %}
+    <a class="badge badge--secondary" href="{% url "lemma-detail" lemma.slug %}">{{ lemma }}</a>
+  {% endfor %}
 </div>
 {% endif %}
+
+<div class="action-menu">
+  <a class="action-menu__item icon-export" href="{% url "lemma-md-export" lemma.slug %}" download>
+    Exporteer als Markdown
+  </a>
+  {% if lemma.type and lemma.urn and not lemma.perseus_content %}
+  <a class="action-menu__item icon-book-open" href="https://scaife.perseus.org/reader/{{ lemma.urn | safe }}" target="_blank">
+    <span>
+      {% if lemma.type == "w" %}
+        {% blocktranslate with lemma=lemma.display %}
+          Lees de volledige tekst van {{ lemma }} op de <cite>Perseus Digital Library</cite>
+        {% endblocktranslate %}
+      {% elif lemma.type == "p" %}
+        {% blocktranslate with lemma=lemma.display %}
+          Lees werken van {{ lemma }} op de <cite>Perseus Digital Library</cite>
+        {% endblocktranslate %}
+      {% endif %}
+    </span>
+  </a>
+  {% endif %}
+</div>
+
+
+</div>
 {% endblock body %}

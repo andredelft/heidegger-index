@@ -1,0 +1,68 @@
+{% extends '_site_base.html' %}
+{% load i18n %}
+
+{% get_available_languages as languages %}
+
+{% block full_head_title %}{% translate "Heidegger index" %}{% endblock full_head_title %}
+
+{% block body %}
+
+<a href="/" class="menu-button">
+  <i class="icon-house"></i>
+</a>
+
+{% include 'components/_navigation.html' %}
+
+{% regroup lemmas by first_letter as letter_list %}
+
+{% if not alphabet.pre %}
+  {% include "components/_intro.html" %}
+{% endif %}
+
+<div class="lemma-list">
+  {% if alphabet.pre %}
+  <a href="{% url 'home' %}?start={{ alphabet.pre|last }}#{{ alphabet.pre|last }}" class="button button--small">
+    <i class="icon-caret-up"></i>
+    {% translate "More" %}
+  </a>
+  {% endif %}
+
+  <div class="lemma-list__items">
+    {% for letter in letter_list %}
+      <div class="lemma-list__group">
+        <h2 id="{{ letter.grouper }}" class="lemma-list__letter">{{ letter.grouper }}</h2>
+        {% for lemma in letter.list %}
+          <h3 class="lemma-list__lemma">
+            <a href="{% url 'lemma-detail' lemma.slug %}">{{ lemma.display }}</a>
+          </h3>
+          {% include 'components/ref_list/_group_by_work.html' with ref_list=lemma.pagereference_set.all inline=True %}
+          {% with lemma.children.all as children %}
+            {% if children %}
+              {% for child in children %}
+              <div class="lemma-list__child">
+                <h4 class="lemma-list__child-lemma">
+                  <a href="{% url 'lemma-detail' lemma.slug %}#{{ child.slug }}">
+                    {{ child.display }}
+                  </a>
+                </h4>
+                {% include 'components/ref_list/_group_by_work.html' with ref_list=child.pagereference_set.all inline=True %}
+              </div>
+              {% endfor %}
+            {% endif %}
+          {% endwith %}
+        {% endfor %}
+      </div>
+    {% endfor %}
+  </div>
+    
+  {% if alphabet.post %}
+  <a href="{% url 'home' %}?start={{ alphabet.post|first }}#{{ alphabet.post|first }}" class="button button--small">
+    {% translate "More" %}
+    <i class="icon-caret-down"></i>
+  </a>
+  {% endif %}
+</div>
+
+{% include 'components/_bibliography.html' %}
+
+{% endblock %}

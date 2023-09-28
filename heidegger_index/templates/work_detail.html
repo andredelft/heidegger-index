@@ -4,55 +4,57 @@
 {% block head_title %}{{ work.title }}{% endblock head_title %}
 
 {% block body %}
-{% if not page_filter %}{% include '_export_button.html' with type="work" %}{% endif %}
-{% include '_home_button.html' %}
+<a href="{% url "home" %}" class="menu-button icon-bookmarks-simple"></a>
 
-{% if page_filter %}<a href="{% url 'index:work-detail' work.slug %}">{% endif %}
-<div class="flex">
-  {% if page_filter %}<a href="{% url 'index:work-detail' work.slug %}">{% endif %}
-  {% include 'components/h1.html' with text=work.csl_json.title class="clear-right italic" only %}
-  {% if page_filter %}</a>{% endif %}
-  {% if index_status %}{% include '_status_icon.html' with status=index_status only%}{% endif %}
-</div>  
-
+<div class="work-detail">
+<h1 class="work-detail__title">{{ work.csl_json.title|safe }}</h1>
+{% if page_filter %}</a>{% endif %}
 
 {% if work.parent %}
-<p class="{{ body_text }}">{% translate "Appears in" %} <a href="{% url 'index:work-detail' work.parent.slug %}" class="{{ hidden_link_decoration }} italic">{{ work.parent.title }}</a></p>
-{% endif %}
-
-{% if work.children.all %}
-{% translate "Sections" as sections %}
-{% include 'components/h2.html' with text=sections %}
-{% include '_work_list.html' with works=work.children.all  %}
-{% endif %}
-
-{% translate "Reference" as reference %}
-{% include 'components/h2.html' with text=reference only %}
-<div class="text-1.5xl {{ body_text }}">{{ work.reference | safe }}</div>
-
-{% if work.description %}
-<div class="mt-8 {{ description_prose }} mb-8">
-  {{ work.description | safe }}
+<div class="work-detail__parent">
+  <a href="{% url "work-detail" work.parent.slug %}" class="icon-book badge badge--secondary badge--large">{{ work.parent.title }}</a>
 </div>
 {% endif %}
 
-{% translate "Index terms" as index_terms %}
-{% include 'components/h2.html' with text=index_terms only %}
-{% include '_group_by_lemma.html' with ref_list=term_list %}
+{% if work.children.all %}
+<ul class="work-list">
+  {% for work in work.children.all %}
+    <li>
+      <a href="{% url "work-detail" work.slug %}">{{ work.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+{% endif %}
 
-{% translate "People mentioned" as people_mentioned %}
+{% if work.description %}
+  {{ work.description | safe }}
+{% endif %}
+
+{% include 'components/ref_list/_group_by_lemma.html' with ref_list=term_list %}
+
 {% if person_list %}
-  {% include '_group_by_lemma.html' with ref_list=person_list group_title=people_mentioned %}
+  <h3 class="icon-user">{% translate "Personen" %}</h3>
+  {% include 'components/ref_list/_group_by_lemma.html' with ref_list=person_list group_title=people_mentioned %}
 {% endif %}
 
-{% translate "Works mentioned" as works_mentioned %}
 {% if work_list %}
-  {% include '_group_by_lemma.html' with ref_list=work_list group_title=works_mentioned %}
+  <h3 class="icon-books">{% translate "Werken" %}</h3>
+  {% include 'components/ref_list/_group_by_lemma.html' with ref_list=work_list group_title=works_mentioned %}
 {% endif %}
 
-{% blocktrans with title=work.csl_json.title asvar mentions_of %}Mentions of <em>{{ title }}</em>{% endblocktrans %}
 {% if work_lemma %}
-  {% include '_group_by_work.html' with ref_list=work_lemma.pagereference_set.all group_title=mentions_of %}
+  <h3>{% blocktrans with title=work.csl_json.title %}Referenties aan <em>{{ title }}</em>{% endblocktrans %}</h3>
+  {% include 'components/ref_list/_group_by_work.html' with ref_list=work_lemma.pagereference_set.all group_title=mentions_of %}
 {% endif %}
+
+{{ work.reference | safe }}
+
+<div class="action-menu">
+  <a class="action-menu__item icon-export" href="{% url "work-md-export" work.slug %}" download>
+    Exporteer als Markdown
+  </a>
+</div>
+</div>
+
 
 {% endblock %}

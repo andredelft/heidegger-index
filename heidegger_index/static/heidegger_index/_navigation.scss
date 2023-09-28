@@ -1,0 +1,145 @@
+.navigation {
+  $letter-selector-width: 2.9rem;
+  $button-height: 40px;
+  $border-width: 1.5px;
+  $border: #{$border-width} solid #{transparentize($slate-300, 0.5)};
+
+  min-height: $button-height;
+  min-width: $button-height;
+
+  position: fixed;
+  left: 1rem;
+  bottom: 1rem;
+  width: fit-content;
+  margin: 0 auto;
+  font-size: 1.2em;
+  display: flex;
+  background-color: transparentize($white, 0.5);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 0.3em;
+  border: $border;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 300ms;
+  overflow: hidden;
+
+  @include dark {
+    background-color: transparentize($slate-700, 0.5);
+  }
+
+  @include breakpoint(md) {
+    top: calc(2rem + #{40px - $button-height / 2 - $border-width});
+    left: 0;
+    right: 0;
+    bottom: auto;
+  }
+
+  &:focus-within {
+    border-color: $theme-600;
+
+    @include dark {
+      border-color: $theme-400;
+    }
+  }
+
+  &__letter-selector-wrapper {
+    border-right: $border;
+  }
+
+  &__selector-label {
+    width: $letter-selector-width;
+    display: flex;
+    align-items: center;
+    padding-left: 0.2rem;
+  }
+
+  #selected-letter {
+    flex-grow: 1;
+    display: inline-flex;
+    justify-content: center;
+  }
+
+  &__loading-indicator::before {
+    display: none;
+  }
+
+  &__selector-label {
+    height: $button-height;
+  }
+
+  &__letter-selector {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    flex-shrink: 0;
+    color: transparent;
+    background-color: transparent;
+    cursor: pointer;
+    width: $letter-selector-width;
+    display: block;
+    height: 100%;
+    outline: none;
+  }
+
+  &__bibliography-button {
+    height: $button-height;
+    font-size: inherit;
+    color: inherit;
+    background: none;
+    border: none;
+    padding: 0 0.2em;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  &__letter-selector-wrapper,
+  &__bibliography-button {
+    transition: background-color 300ms;
+    &:hover {
+      background-color: $slate-100;
+    }
+    &:active {
+      background-color: $slate-200;
+    }
+
+    @include dark {
+      &:hover {
+        background-color: $slate-700;
+      }
+      &:active {
+        background-color: $slate-600;
+      }
+    }
+  }
+}
+
+.loading {
+  .navigation {
+    &__loading-indicator::before {
+      display: inline;
+      animation: spin 1500ms linear infinite;
+    }
+
+    &__letter-selector,
+    &__bibliography-button {
+      display: none;
+    }
+
+    &__selector-label {
+      display: none;
+    }
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

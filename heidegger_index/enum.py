@@ -21,3 +21,7 @@ class LabelEnum(str, Enum):
         """List the enum options in a format compatible with the Django `choices` field,
         e.g. a collection of tuples with the values and human readable labels."""
         return [(member.value, member.label) for member in cls]
+
+    @classmethod
+    def get_label(cls, value) -> str:
+        return next(member.label for member in cls if member.value == value)

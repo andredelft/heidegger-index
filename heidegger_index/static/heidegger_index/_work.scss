@@ -1,0 +1,39 @@
+.work {
+  font-style: italic;
+}
+
+.work-detail {
+  padding: 3rem 0;
+
+  &__title {
+    font-style: italic;
+  }
+
+  &__parent {
+    margin: -0.5rem 0 2rem;
+    font-style: italic;
+  }
+
+  .csl-entry {
+    margin: 3em 0;
+    font-size: 0.85em;
+  }
+}
+
+.work-list {
+  margin: 1em 0 2.5em;
+  > li {
+    margin: 0.1em 0;
+    &:first-of-type {
+      margin-top: 0;
+    }
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  a {
+    @include link-hidden;
+    font-style: italic;
+  }
+}

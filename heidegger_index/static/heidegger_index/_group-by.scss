@@ -1,0 +1,51 @@
+.group-by-work {
+  list-style-type: none;
+  padding: 0;
+  margin-left: 0.7em;
+  text-indent: -0.7em;
+
+  &--inline {
+    text-indent: 0;
+
+    .group-by-work__item {
+      margin: 0;
+      display: inline;
+      margin-right: 0.4em;
+    }
+  }
+
+  &__item {
+    margin: 0.3em 0;
+    padding: 0;
+    font-size: 0.9em;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  &__work {
+    margin-right: 0.05rem;
+
+    &--missing {
+      cursor: not-allowed;
+    }
+  }
+}
+
+.group-by-lemma {
+  list-style: none;
+  padding: 0;
+  font-size: 0.9em;
+  margin-left: 0.7em;
+  text-indent: -0.7em;
+
+  > li {
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    @include link-hidden;
+  }
+}

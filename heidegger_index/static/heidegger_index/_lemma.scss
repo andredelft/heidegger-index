@@ -1,0 +1,52 @@
+.lemma {
+  &--work {
+    font-style: italic;
+  }
+}
+
+.lemma-detail {
+  padding: 3rem 0;
+
+  &__author {
+    margin: -0.5rem 0 2rem;
+  }
+
+  &__related {
+    font-size: 1.3em;
+  }
+}
+
+.lemma-list {
+  margin: 3rem 0;
+
+  &__group {
+    margin: 3rem 0;
+  }
+
+  &__letter {
+    margin-bottom: 0.3em;
+  }
+
+  &__lemma,
+  &__child-lemma {
+    > a {
+      @include link-hidden;
+    }
+  }
+
+  &__lemma {
+    font-size: 1.1em;
+    margin-bottom: 0.1em;
+    margin-top: 0.5em;
+  }
+
+  &__child {
+    margin-left: 0.7em;
+  }
+
+  &__child-lemma {
+    font-size: 0.9em;
+    margin-bottom: 0.1em;
+    margin-top: 0.5em;
+  }
+}
