@@ -17,3 +17,6 @@ Markdown==3.3.6
 pyCTS==0.2.2
 beautifulsoup4==4.11.1
 aenum==3.*
+django-compressor==4.*
+django-libsass==0.*
+python-decouple==3.*
