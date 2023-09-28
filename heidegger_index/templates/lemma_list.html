@@ -30,7 +30,7 @@
       <div class="lemma-list__group">
         <h2 id="{{ letter.grouper }}" class="lemma-list__letter">{{ letter.grouper }}</h2>
         {% for lemma in letter.list %}
-          <h3 class="lemma-list__lemma">
+          <h3 class="lemma-list__lemma {{ lemma.icon }}">
             <a href="{% url 'lemma-detail' lemma.slug %}">{{ lemma.display }}</a>
           </h3>
           {% include 'components/ref_list/_group_by_work.html' with ref_list=lemma.pagereference_set.all inline=True %}

@@ -44,9 +44,15 @@ class Work(models.Model):
     def title(self):
         return self.csl_json.get("title-short") or self.csl_json.get("title") or ""
 
+    @property
+    def icon(self):
+        return "icon-book-open" if self.parent else "icon-book"
+
+    @property
     def display(self):
         return mark_safe(f'<span class="work">{self.title}</span>')
 
+    @property
     def display_full(self):
         title = self.csl_json.get("title")
         return mark_safe(f'<span class="work">{title}</span>') if title else ""
@@ -139,6 +145,7 @@ class Lemma(models.Model):
                 parsed_xml = BeautifulSoup(p_response.text, "html.parser")
                 self.perseus_content = parsed_xml.p.contents[-1].string
 
+    @property
     def display(self):
         if self.type:
             lemma_type = LemmaType.get_label(self.type)
@@ -147,6 +154,18 @@ class Lemma(models.Model):
             class_name = "lemma"
 
         return mark_safe(f'<span class="{class_name}">{self}</span>')
+
+    @property
+    def icon(self):
+        match self.type:
+            case "w":
+                return "icon-book"
+            case "p":
+                return "icon-user"
+            case "g":
+                return "icon-map-pin-line"
+            case _:
+                return ""
 
     class Meta:
         ordering = ["sort_key"]

@@ -7,7 +7,7 @@
 <a href="{% url "home" %}" class="menu-button icon-bookmarks-simple"></a>
 
 <div class="work-detail">
-<h1 class="work-detail__title">{{ work.csl_json.title|safe }}</h1>
+<h1 class="work-detail__title {{ work.icon }}">{{ work.csl_json.title|safe }}</h1>
 {% if page_filter %}</a>{% endif %}
 
 {% if work.parent %}
