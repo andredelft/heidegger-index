@@ -623,6 +623,8 @@ DK 22A1:
     - end: 13
       start: 10
     - start: 19
+  related:
+  - θαυμάζειν
   type: w
 DK 22A9:
   author: Aristoteles
@@ -678,6 +680,9 @@ DK 22B123:
     - start: 122
     GA 29/30:
     - start: 41
+    GA 55:
+    - end: 127
+      start: 109
     WBPh:
     - start: 298
   related:
@@ -690,6 +695,15 @@ DK 22B124:
   references:
     EM:
     - start: 142
+  type: w
+DK 22B16:
+  author: Heraklit
+  metadata:
+    urn: urn:cts:greekLit:tlg0626.tlg002:16
+  references:
+    GA 55:
+    - end: 85
+      start: 44
   type: w
 DK 22B19:
   author: Heraklit
@@ -727,8 +741,12 @@ DK 22B30:
   references:
     GA 29/30:
     - start: 47
+    GA 55:
+    - start: 104
     SvG:
     - start: 168
+  related:
+  - ἀείζωον
   type: w
 DK 22B34:
   author: Heraklit
@@ -805,6 +823,7 @@ DK 22B73:
   references:
     EM:
     - start: 137
+  type: w
 DK 22B8:
   author: Heraklit
   metadata:
@@ -1374,6 +1393,10 @@ Ergriffenheit:
     - start: 87
   related:
   - ergreifen
+Erlebnis:
+  references:
+    GA 55:
+    - start: 90
 Ernst:
   references:
     GA 29/30:
@@ -2101,6 +2124,12 @@ Husserl, Edmund:
     GA 29/30:
     - start: 338
   type: p
+Hyperion:
+  author: Hölderlin, Friedrich
+  references:
+    GA 55:
+    - start: 31
+  type: w
 Hölderlin, Friedrich:
   metadata:
     gnd: '118551981'
@@ -2250,6 +2279,10 @@ Kant, Immanuel:
   related:
   - dialektische Schein
   type: p
+Karl Reinhardt:
+  references:
+    GA 55:
+    - start: 63
 Karlsruhe:
   references:
     GA 13:
@@ -2448,6 +2481,8 @@ Letztes:
     - start: 3
 Lichtung:
   references:
+    GA 55:
+    - start: 17
     WD:
     - start: 273
 Lichtung des Seins:
@@ -5277,15 +5312,29 @@ wesentliche Möglichkeit des Seins:
     GA 22:
     - start: 185
       suffix: ff
+    GA 55:
+    - start: 104
     WD:
     - start: 278
+ζῆν:
+  references:
+    GA 55:
+    - start: 90
+    - start: 104
+    - start: 95
   related:
-  - ζῷον
+  - ζωή
 ζῷον:
   references:
+    GA 55:
+    - start: 90
+    - start: 95
     WBPh:
     - start: 286
     - start: 288
+  related:
+  - ζωή
+  - ζῆν
 ζῷον αλόγον:
   references:
     GA 29/30:
@@ -5379,6 +5428,8 @@ wesentliche Möglichkeit des Seins:
     - start: 299
 κόσμος:
   references:
+    GA 55:
+    - start: 31
     SvG:
     - start: 168
 λέγειν:
@@ -5727,6 +5778,12 @@ wesentliche Möglichkeit des Seins:
     GA 29/30:
     - end: 52
       start: 38
+    GA 55:
+    - end: 90
+      start: 87
+    - start: 96
+    - end: 103
+      start: 101
     HF:
     - start: 145
     SA:
@@ -5767,6 +5824,15 @@ wesentliche Möglichkeit des Seins:
     - start: 484
     - start: 490
     - start: 488
+ἀείζωον:
+  references:
+    GA 55:
+    - start: 104
+    - start: 90
+  related:
+  - ζωή
+  - ζῆν
+  - ζῷον
 ἀλεθεύειν:
   references:
     GA 29/30:
@@ -5789,6 +5855,8 @@ wesentliche Möglichkeit des Seins:
     GA 29/30:
     - end: 44
       start: 43
+    GA 55:
+    - start: 103
     WBPh:
     - start: 299
 ἀπόφασις:
