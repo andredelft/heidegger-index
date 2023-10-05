@@ -5278,9 +5278,6 @@ wesentliche Möglichkeit des Seins:
     - end: 112
       start: 110
     - start: 120
-δόχα:
-  references:
-    EM:
     - start: 138
 δύναμις:
   references:
@@ -5317,14 +5314,14 @@ wesentliche Möglichkeit des Seins:
     WD:
     - start: 278
 ζῆν:
+  parent: ζωή
   references:
     GA 55:
     - start: 90
     - start: 104
     - start: 95
-  related:
-  - ζωή
 ζῷον:
+  parent: ζωή
   references:
     GA 55:
     - start: 90
@@ -5332,9 +5329,6 @@ wesentliche Möglichkeit des Seins:
     WBPh:
     - start: 286
     - start: 288
-  related:
-  - ζωή
-  - ζῆν
 ζῷον αλόγον:
   references:
     GA 29/30:
@@ -5825,15 +5819,13 @@ wesentliche Möglichkeit des Seins:
     - start: 490
     - start: 488
 ἀείζωον:
+  parent: ζωή
   references:
     GA 55:
     - start: 104
     - start: 90
-  related:
-  - ζωή
-  - ζῆν
-  - ζῷον
 ἀλεθεύειν:
+  parent: ἀλήθεια
   references:
     GA 29/30:
     - start: 449
