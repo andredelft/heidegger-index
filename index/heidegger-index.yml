@@ -66,6 +66,8 @@ Alemannische Gedichte (Rezension):
 Allemannische Gedichte:
   author: Hebel, Johann Peter
   references:
+    GA 97:
+    - start: 215
     HF:
     - start: 134
       suffix: f
@@ -189,6 +191,15 @@ Anwesen:
     - start: 281
     WD:
     - start: 271
+Apollon:
+  references:
+    GA 55:
+    - start: 16
+    - start: 18
+    - start: 25
+  related:
+  - DK 22B93
+  type: p
 Aristoteles:
   metadata:
     urn: urn:cts:greekLit:tlg0086
@@ -267,6 +278,8 @@ Artemis:
     - end: 19
       start: 13
     - start: 10
+    - end: 27
+      start: 25
   related:
   - Act. Apost. XIX, 34
   type: p
@@ -618,11 +631,13 @@ DK 12B1:
   - δίκη
   type: w
 DK 22A1:
+  author: Diogenes Laertius
   references:
     GA 55:
     - end: 13
       start: 10
     - start: 19
+    - start: 22
   related:
   - θαυμάζειν
   type: w
@@ -632,6 +647,7 @@ DK 22A9:
     GA 55:
     - end: 10
       start: 6
+    - start: 22
   related:
   - Heraklit
   type: w
@@ -857,6 +873,8 @@ DK 22B93:
   references:
     GA 29/30:
     - start: 40
+    GA 55:
+    - start: 18
     WBPh:
     - start: 277
   type: w
@@ -1265,6 +1283,8 @@ Ding:
     EM:
     - start: 16
     - start: 17
+Diogenes Laertius:
+  type: p
 Dionysos:
   references:
     WD:
@@ -2969,6 +2989,12 @@ Objekt:
     - start: 249
 Odyssee:
   author: Homer
+Odyssee XX:
+  parent: Odyssee
+  references:
+    GA 55:
+    - start: 16
+  type: w
 Oedipus Tyrannus:
   author: Sophokles
   metadata:
@@ -4800,6 +4826,8 @@ animal rationale:
   references:
     GA 29/30:
     - start: 442
+    GA 55:
+    - start: 25
     GA 63:
     - end: 28
       start: 26
@@ -5122,6 +5150,10 @@ reddendum:
     - start: 155
   related:
   - principium reddendae rationis
+religio:
+  references:
+    GA 55:
+    - start: 13
 sterben:
   references:
     SvG:
@@ -5311,6 +5343,8 @@ wesentliche Möglichkeit des Seins:
       suffix: ff
     GA 55:
     - start: 104
+    - start: 17
+      suffix: f
     WD:
     - start: 278
 ζῆν:
@@ -5324,6 +5358,8 @@ wesentliche Möglichkeit des Seins:
   parent: ζωή
   references:
     GA 55:
+    - start: 17
+      suffix: f
     - start: 90
     - start: 95
     WBPh:
@@ -5359,6 +5395,8 @@ wesentliche Möglichkeit des Seins:
     - start: 451
     - start: 454
       suffix: f
+    GA 55:
+    - start: 25
     GA 63:
     - start: 21
       suffix: f
@@ -5707,6 +5745,11 @@ wesentliche Möglichkeit des Seins:
   - φύσις
   - φύειν
   - Pindar
+φάος:
+  references:
+    GA 55:
+    - start: 16
+      suffix: f
 φύειν:
   references:
     EM:
@@ -5778,6 +5821,9 @@ wesentliche Möglichkeit des Seins:
     - start: 96
     - end: 103
       start: 101
+    - start: 16
+      suffix: f
+    - start: 25
     HF:
     - start: 145
     SA:
@@ -5849,6 +5895,7 @@ wesentliche Möglichkeit des Seins:
       start: 43
     GA 55:
     - start: 103
+    - start: 17
     WBPh:
     - start: 299
 ἀπόφασις:
@@ -5965,6 +6012,13 @@ wesentliche Möglichkeit des Seins:
   references:
     EM:
     - start: 116
+ἔρις:
+  references:
+    GA 55:
+    - start: 18
+    - start: 9
+      suffix: f
+    - start: 26
 ἦθος:
   references:
     GA 21:
@@ -6026,6 +6080,11 @@ wesentliche Möglichkeit des Seins:
     - start: 292
   related:
   - μορφή
+ὧ Σκοτειτνός:
+  references:
+    GA 55:
+    - start: 19
+    - start: 27
 ῥυθμός:
   references:
     WBPh:
