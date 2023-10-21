@@ -3390,10 +3390,10 @@ Reinhardt, Karl:
   references:
     EM:
     - start: 115
-    SZ:
-    - start: 295
     GA 55:
     - start: 63
+    SZ:
+    - start: 295
   related:
   - Sophokles
   type: p
@@ -4395,6 +4395,15 @@ Vorhandenen:
     SZ:
     - start: 135
     - start: 136
+Vorlesungen über die Geschichte der Philosophie:
+  author: Hegel, Georg Wilhelm Friedrich
+  references:
+    GA 55:
+    - start: 20
+      suffix: f
+    - start: 28
+      suffix: ff
+  type: w
 Vorstellen:
   references:
     EM:
