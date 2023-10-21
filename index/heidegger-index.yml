@@ -2317,10 +2317,6 @@ Kant, Immanuel:
   related:
   - dialektische Schein
   type: p
-Karl Reinhardt:
-  references:
-    GA 55:
-    - start: 63
 Karlsruhe:
   references:
     GA 13:
@@ -3396,6 +3392,8 @@ Reinhardt, Karl:
     - start: 115
     SZ:
     - start: 295
+    GA 55:
+    - start: 63
   related:
   - Sophokles
   type: p
@@ -6112,7 +6110,7 @@ wesentliche Möglichkeit des Seins:
     - start: 292
   related:
   - μορφή
-ὧ Σκοτειτνός:
+ὧ Σκοτεινός:
   references:
     GA 55:
     - start: 19
