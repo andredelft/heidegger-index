@@ -107,7 +107,8 @@ GA 13:
       given: Hermann
   event-place: Frankfurt am Main
   issued:
-    - year: 1983
+    date-parts:
+    - - 1983
   language: ger
   publisher: Vittorio Klostermann
   publisher-place: Frankfurt am Main
@@ -195,7 +196,8 @@ GA 55:
   event-place: Frankfurt am Main
   ISBN: 978-3-465-02648-8
   issued:
-    - year: 1979
+    date-parts:
+    - - 1979
   language: ger
   number-of-pages: XII, 406
   publisher: Vittorio Klostermann
@@ -280,7 +282,8 @@ SZ:
   publisher: Max Niemeyer Verlag
   publisher-place: Tübingen
   original-date:
-    - year: 1927
+    date-parts:
+    - - 1927
   title: Sein und Zeit
   type: book
 TK:
@@ -294,7 +297,8 @@ TK:
   event-place: Pfullingen
   ISBN: 3-7885-0178-2
   issued:
-    - year: 1978
+    date-parts:
+    - - 1978
   language: de-DE
   number-of-pages: '47'
   publisher: Günther Neske
@@ -470,7 +474,8 @@ GA 21:
       given: Walter
   event-place: Frankfurt am Main
   issued:
-    - year: 1976
+    date-parts:
+    - - 1976
   language: ger
   publisher: Vittorio Klostermann
   publisher-place: Frankfurt am Main
@@ -488,7 +493,8 @@ GA 63:
       given: Käte
   event-place: Frankfurt am Main
   issued:
-    - year: 1988
+    date-parts:
+    - - 1988
   language: ger
   publisher: Vittorio Klostermann
   publisher-place: Frankfurt am Main
@@ -507,7 +513,8 @@ Sch:
       given: Ingrid
   event-place: Frankfurt am Main
   issued:
-    - year: 1988
+    date-parts:
+    - - 1988
   language: ger
   number-of-pages: '289'
   publisher: Vittorio Klostermann
@@ -529,7 +536,8 @@ W:
   event-place: Frankfurt am Main
   ISBN: 978-3-465-03372-1
   issued:
-    - year: 1976
+    date-parts:
+    - - 1976
   language: ger
   number-of-pages: x, 487
   publisher: Vittorio Klostermann
@@ -557,7 +565,11 @@ WiM:
   event-place: Frankfurt am Main
   ISBN: 3-465-02862-7
   issued:
-    - year: 1976
+    date-parts:
+    - - 1976
+  original-date:
+    date-parts:
+    - - 1929
   page: 103-122
   publisher: Vittorio Klostermann
   publisher-place: Frankfurt am Main
@@ -578,7 +590,8 @@ GA 18:
   event-place: Frankfurt am Main
   ISBN: 3-465-03162-8
   issued:
-    - year: 2002
+    date-parts:
+    - - 2002
   language: ger
   note: Marburger Vorlesung Sommersemester 1924
   number-of-pages: XIII, 418
@@ -599,7 +612,8 @@ GA 19:
       given: Ingeborg
   event-place: Frankfurt am Main
   issued:
-    - year: 1992
+    date-parts:
+    - - 1992
   language: ger
   number-of-pages: xxxi, 668
   publisher: Vittorio Klostermann
@@ -619,7 +633,8 @@ GA 20:
       given: Petra
   event-place: Frankfurt am Main
   issued:
-    - year: 1979
+    date-parts:
+    - - 1979
   language: ger
   number-of-pages: xii, 447
   publisher: Vittorio Klostermann
@@ -639,7 +654,8 @@ GA 22:
   event-place: Frankfurt am Main
   ISBN: 978-3-465-03346-2
   issued:
-    - year: 1993
+    date-parts:
+    - - 1993
   language: ger
   note: Marburger Vorlesung Sommersemester 1926
   number-of-pages: XIII, 343
@@ -661,7 +677,8 @@ GA 24:
       dropping-particle: von
   event-place: Frankfurt am Main
   issued:
-    - year: 1975
+    date-parts:
+    - - 1975
   language: ger
   number-of-pages: x, 475
   publisher: Vittorio Klostermann
@@ -684,7 +701,8 @@ GA 27:
   event-place: Frankfurt am Main
   ISBN: 3-465-02893-7
   issued:
-    - year: 1996
+    date-parts:
+    - - 1996
   language: de-DE
   note: Freiburger Vorlesung Wintersemester 1928/29
   number-of-pages: X, 404
