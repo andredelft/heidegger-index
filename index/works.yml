@@ -283,6 +283,24 @@ SZ:
     - year: 1927
   title: Sein und Zeit
   type: book
+TK:
+  id: heideggerTechnikUndKehre1978
+  author:
+    - family: Heidegger
+      given: Martin
+  citation-key: heideggerTechnikUndKehre1978
+  collection-number: '1'
+  collection-title: Opuscula aus Wissenschaft und Dichtung
+  event-place: Pfullingen
+  ISBN: 3-7885-0178-2
+  issued:
+    - year: 1978
+  language: de-DE
+  number-of-pages: '47'
+  publisher: Günther Neske
+  publisher-place: Pfullingen
+  title: Die Technik und die Kehre
+  type: book
 VA:
   author:
   - family: Heidegger
