@@ -2811,6 +2811,15 @@ NL 2[106] 12.113:
     - start: 109
       type: r
   type: w
+NL 2[127]:
+  parent: Nachlass (Friedrich Nietzsche)
+  references:
+    GA 55:
+    - start: 66
+  type: w
+  related:
+  - Nihilismus
+  - Unheimliches
 NL 9[42] 12.354:
   author: Nietzsche, Friedrich
   parent: Nachlass (Friedrich Nietzsche)
@@ -4215,11 +4224,11 @@ Ungesprochene:
 Unheimische:
   parent: Unheimlichkeit
   references:
+    EM:
+    - start: 160
     GA 16:
     - end: 581
       start: 575
-    EM:
-    - start: 160
 Unheimliches:
   parent: Unheimlichkeit
   references:
