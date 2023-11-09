@@ -82,11 +82,13 @@
   {% endif %}
   {% if lemma.zeno %}
     <a href="http://zeno.org/nid/{{ lemma.zeno }}" target="_blank" class="action-menu__item icon-book-open">
-      {% if lemma.type == 'p' %}
-        {% blocktrans %}Lees werken van {{ author_short }} op <cite>Zeno.org</cite>{% endblocktrans %}
-      {% else %}
-        {% blocktrans %}Lees de volledige tekst op <cite>Zeno.org</cite>{% endblocktrans %}
-      {% endif %}
+      <span>
+        {% if lemma.type == 'p' %}
+          {% blocktrans %}Lees werken van {{ author_short }} op <cite>Zeno.org</cite>{% endblocktrans %}
+        {% else %}
+          {% blocktrans %}Lees de volledige tekst op <cite>Zeno.org</cite>{% endblocktrans %}
+        {% endif %}
+      </span>
     </a>
   {% endif %}
 </div>
