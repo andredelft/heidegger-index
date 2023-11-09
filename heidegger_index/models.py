@@ -14,7 +14,7 @@ from heidegger_index.utils import (
     slugify,
     contains_page_range,
 )
-from heidegger_index.validators import validate_gnd
+from heidegger_index.validators import validate_gnd, validate_zeno
 
 
 class Work(models.Model):
@@ -100,6 +100,14 @@ class Lemma(models.Model):
     )
 
     dk = models.IntegerField(MetadataType.DIELS_KRANZ.label, null=True)
+
+    zeno = models.CharField(
+        MetadataType.ZENO.label,
+        null=True,
+        unique=True,
+        max_length=50,
+        validators=[validate_zeno],
+    )
 
     sort_key = models.CharField(max_length=100, null=True, unique=True)
     first_letter = models.CharField(max_length=1, null=True)

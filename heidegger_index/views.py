@@ -11,7 +11,6 @@ def index_view(request):
     alphabet = get_alphabet()
 
     start = request.GET.get("start")
-    print("Start", start)
 
     if start:
         try:

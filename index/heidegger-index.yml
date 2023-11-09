@@ -47,6 +47,8 @@ Adversus mathematicos VII, 16:
   type: w
 Alemannische Gedichte:
   author: Hebel, Johann Peter
+  metadata:
+    zeno: '20005018617'
   references:
     GA 13:
     - end: 125
@@ -57,6 +59,8 @@ Alemannische Gedichte:
   type: w
 Alemannische Gedichte (Rezension):
   author: Goethe, Johann Wolfgang von
+  metadata:
+    zeno: 2000485599X
   references:
     JPH G:
     - start: 532
@@ -79,6 +83,8 @@ Allemannische Gedichte:
   type: w
 Allgemeine Betrachtung über das Weltgebäude:
   parent: Schatzkästlein des rheinischen Hausfreundes
+  metadata:
+    zeno: '20005019443'
   references:
     HF:
     - start: 143
@@ -492,6 +498,8 @@ Betrachtung über ein Vogelnest:
       start: 498
   type: w
 Betrachtungen über das Weltgebäude. Der Mond.:
+  metadata:
+    zeno: '20005019753'
   parent: Schatzkästlein des rheinischen Hausfreundes
   references:
     HF:
@@ -585,6 +593,8 @@ Brentano, Franz:
   type: p
 Brod und Wein:
   author: Hölderlin, Friedrich
+  metadata:
+    zeno: '20005104920'
   references:
     WD:
     - start: 269
@@ -969,6 +979,8 @@ Darwinismus:
     - start: 384
 Das Gewitter:
   author: Hebel, Johann Peter
+  metadata:
+    zeno: '20005019036'
   parent: Allemannische Gedichte
   references:
     JPH Z:
@@ -977,6 +989,8 @@ Das Gewitter:
   type: w
 Das Habermus:
   author: Hebel, Johann Peter
+  metadata:
+    zeno: '20005018838'
   parent: Allemannische Gedichte
   references:
     HF:
@@ -1161,6 +1175,8 @@ Der Mensch im Weltalter des Ausgleichs:
   type: w
 Der Sommerabend:
   author: Hebel, Johann Peter
+  metadata:
+    zeno: '20005018730'
   parent: Allemannische Gedichte
   references:
     HF:
@@ -1268,6 +1284,8 @@ Dichtung:
     - start: 146
 Die Vergänglichkeit:
   author: Hebel, Johann Peter
+  metadata:
+    zeno: '20005018919'
   parent: Allemannische Gedichte
   references:
     JPH Z:
@@ -1276,6 +1294,8 @@ Die Vergänglichkeit:
   type: w
 Die Wiese:
   author: Hebel, Johann Peter
+  metadata:
+    zeno: '20005018641'
   parent: Allemannische Gedichte
   references:
     HF:
@@ -1957,6 +1977,7 @@ Haustier:
 Hebel, Johann Peter:
   metadata:
     gnd: '118547453'
+    zeno: '20005018587'
   references:
     G:
     - start: 521
@@ -2168,6 +2189,7 @@ Hyperion:
 Hölderlin, Friedrich:
   metadata:
     gnd: '118551981'
+    zeno: '20005102928'
   references:
     GA 1:
     - start: 56
@@ -2370,6 +2392,7 @@ Kreisbewegung der Philosophie:
 Kreutzer, Conradin:
   metadata:
     gnd: 11871600X
+    zeno: '20007755473'
   references:
     G:
     - end: 518
@@ -2737,6 +2760,8 @@ Mittelalter:
     - start: 16
 Mnemosyne:
   author: Hölderlin, Friedrich
+  metadata:
+    zeno: '20005105110'
   references:
     WD:
     - start: 270
@@ -2987,6 +3012,7 @@ Nomen:
 Novalis:
   metadata:
     gnd: '118588893'
+    zeno: '20005446481'
   references:
     GA 29/30:
     - start: 7
@@ -4641,6 +4667,8 @@ Wesen des lebens:
     - start: 343
 Wie wenn am Feiertage...:
   author: Hölderlin, Friedrich
+  metadata:
+    zeno: '20005104955'
   references:
     WBPh:
     - start: 238

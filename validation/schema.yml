@@ -20,6 +20,10 @@ additionalProperties:
           type: integer
           minimum: 1
           description: Diels-Kranz ID
+        zeno:
+          type: string
+          pattern: ^\d{10}[\dX]$
+          description: Zeno.org ID
       additionalProperties: False
     references:
       type: object

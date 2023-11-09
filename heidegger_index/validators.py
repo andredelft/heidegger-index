@@ -1,8 +1,16 @@
 from django.core.exceptions import ValidationError
+from .constants import MetadataType
 
 import re
 
 GND_REGEX = r"1[012]?\d{7}[0-9X]|[47]\d{6}-\d|[1-9]\d{0,7}-[0-9X]|3\d{7}[0-9X]"
+DK_REGEX = r"^\d{1,2}$"  # https://www.wikidata.org/wiki/Property:P8163
+ZENO_REGEX = r"^\d{11}$"  # https://www.wikidata.org/wiki/Property:P11802
+
+
+def validate_simple_regex(value: str | int, pattern: str, name: str = "identifier"):
+    if not re.match(pattern, str(value)):
+        raise ValidationError(f"{value} is not a valid {name}")
 
 
 ## https://wiki.dnb.de/pages/viewpage.action?pageId=48139522
@@ -42,10 +50,9 @@ def validate_gnd(value):
         raise ValidationError(f"{value} is not a valid string or integer.")
 
 
-# https://www.wikidata.org/wiki/Property:P8163
-DK_REGEX = r"^\d{1,2}$"
-
-
 def validate_dk(value: int | str):
-    if not re.match(DK_REGEX, str(value)):
-        raise ValidationError(f"{value} is not a valid Diels-Kranz ID")
+    validate_simple_regex(value, DK_REGEX, MetadataType.DIELS_KRANZ.label)
+
+
+def validate_zeno(value: str | int):
+    validate_simple_regex(value, ZENO_REGEX, MetadataType.ZENO.label)

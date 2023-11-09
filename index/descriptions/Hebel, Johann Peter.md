@@ -1,1 +1,0 @@
-[Johann Peter Hebel on Zeno.org](http://www.zeno.org/pnd/118547453)
