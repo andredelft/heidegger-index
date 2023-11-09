@@ -4175,10 +4175,6 @@ Trost:
     JPH Z:
     - start: 515
   type: w
-Umheimliche:
-  references:
-    GA 16:
-    - start: 578
 Umwelt:
   references:
     GA 18:
@@ -4217,27 +4213,45 @@ Ungesprochene:
     WD:
     - start: 273
 Unheimische:
+  parent: Unheimlichkeit
   references:
     GA 16:
-    - start: 575
-    - start: 576
-    - start: 577
-    - start: 578
-    - start: 579
-    - start: 580
-    - start: 581
-Unheimlichkeit:
+    - end: 581
+      start: 575
+    EM:
+    - start: 160
+Unheimliches:
+  parent: Unheimlichkeit
   references:
-    GA 29/30:
-    - start: 490
+    EM:
+    - end: 162
+      start: 155
+    Ens 10:
+    - start: 205
+    G:
+    - start: 518
+    - start: 525
+    - start: 527
+    GA 16:
+    - start: 578
     HF:
     - start: 148
+    JPH G:
+    - start: 531
+      suffix: f
+    Sp:
+    - start: 669
     WiM:
     - start: 111
-      type: r
-    - start: 112
-      type: r
-    - start: 113
+Unheimlichkeit:
+  references:
+    EM:
+    - start: 160
+    GA 29/30:
+    - start: 490
+    WiM:
+    - end: 113
+      start: 112
 Unverborgenheit:
   references:
     EM:

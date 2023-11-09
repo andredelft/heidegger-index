@@ -73,6 +73,29 @@ G:
   - family: Wit
     given: Johannes
     dropping-particle: de
+Sp:
+  author:
+  - family: Heidegger
+    given: Martin
+  collection-editor:
+  - family: Klostermann
+    given: Vittorio
+  collection-number: band 16
+  collection-title: Gesamtausgabe
+  container-title: 'Reden und Zeugnisse eines Lebensweg: 1910–1976'
+  editor:
+  - family: Heidegger
+    given: Hermann
+  issued:
+    date-parts:
+    - - 2000
+  language: german
+  page: 652-683
+  publisher: Vittorio Klostermann
+  publisher-place: Frankfurt am Main
+  title: Spiegel-Gespräch mit Martin Heidegger (23. September 1966)
+  type: chapter
+  title-short: Spiegel-Gespräch
 GA 5:
   author:
   - family: Heidegger
@@ -94,6 +117,32 @@ GA 5:
   publisher-place: Frankfurt am Main
   title: Holzwege
   type: book
+Ens 10:
+  author:
+    - family: Eich
+      given: G.
+    - family: Buber
+      given: M.
+    - family: Benn
+      given: G.
+    - family: Jünger
+      given: E.
+    - family: Heidegger
+      given: M.
+  collection-title: >-
+    Internationales Jahrbuch für Literatur, im Auftrag der Bayerischen Akademie
+    der schönen Künste
+  container-title: Ensemble 10
+  editor:
+    - family: Piontek
+      given: Heinz
+  issued:
+    date-parts:
+    - - 1979
+  page: 201-208
+  title: Briefe an den Generalsekretär
+  type: chapter
+  language: german
 GA 13:
   id: GA13
   author:
