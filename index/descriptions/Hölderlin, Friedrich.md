@@ -1,1 +1,0 @@
-[Friedrich Hölderlin on Zeno.org](http://www.zeno.org/pnd/118551981)

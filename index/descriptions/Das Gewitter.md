@@ -1,1 +1,0 @@
-Full text on [Zeno.org](http://www.zeno.org/nid/20005019036)

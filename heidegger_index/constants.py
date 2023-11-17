@@ -11,6 +11,7 @@ class MetadataType(LabelEnum):
     URN = "urn", "Uniform Resource Name"
     GND = "gnd", "Gemeinsame Normdatei"
     DIELS_KRANZ = "dk", "Diels-Kranz ID"
+    ZENO = "zeno", "Zeno.org ID"
 
 
 class RefType(LabelEnum):
