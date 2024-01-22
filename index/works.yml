@@ -759,6 +759,32 @@ GA 27:
   publisher-place: Frankfurt am Main
   title: Einleitung in die Philosophie
   type: book
+GA 49:
+  author:
+    - family: Heidegger
+      given: Martin
+  citation-key: heideggerGA49
+  collection-number: band 49
+  collection-title: Martin Heidegger Gesamtausgabe
+  editor:
+    - family: Seubold
+      given: Günter
+  event-place: Frankfurt am Main
+  issued:
+    - year: 1991
+  language: ger
+  note: >-
+    Freiburger Vorlesung I. Trimester 1941. Freiburger Seminar
+    Sommersemester 1941.
+  number-of-pages: '209'
+  publisher: Vittorio Klostermann
+  publisher-place: Frankfurt am Main
+  title: >-
+    Die Metaphysik des deutschen Idealismus : Zur erneuten Auslegung von
+    Schelling: Philosophische Untersuchungen über das Wesen der menschlichen
+    Freiheit und die damit zusammenhängen Gegenstände (1809)
+  title-short: GA 49
+  type: book
 UK:
   ISBN: 978-3-465-03236-6 978-3-465-03237-3
   author:
