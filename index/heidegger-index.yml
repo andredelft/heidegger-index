@@ -82,9 +82,9 @@ Allemannische Gedichte:
       suffix: f
   type: w
 Allgemeine Betrachtung über das Weltgebäude:
+  parent: Schatzkästlein des rheinischen Hausfreundes
   metadata:
     zeno: '20005019443'
-  parent: Schatzkästlein des rheinischen Hausfreundes
   references:
     HF:
     - start: 143
@@ -268,8 +268,6 @@ Aristoteles:
     - start: 292
     - start: 297
     - start: 298
-  related:
-  - Vier-Ursachen-Lehre
   type: p
 Ars rhetorica:
   author: Aristoteles
@@ -1154,8 +1152,6 @@ Denkweg:
   references:
     SvG:
     - start: 168
-    TK:
-    - start: 5
 Der Feldweg:
   references:
     G:
@@ -1401,9 +1397,6 @@ Entbergen:
     - start: 490
     - start: 41
     - start: 44
-    TK:
-    - start: 11
-    - start: 12
     WBPh:
     - start: 277
     - start: 299
@@ -1412,10 +1405,6 @@ Entfernung:
     EWI:
     - start: 2
       suffix: ff
-Enthüllen:
-  references:
-    TK:
-    - start: 7
 Entschlossenheit:
   references:
     GA 29/30:
@@ -1554,8 +1543,6 @@ Fragen:
     - start: 13
     - end: 87
       start: 86
-    TK:
-    - start: 5
     WiM:
     - start: 103
     - end: 108
@@ -2083,11 +2070,6 @@ Heimweh:
       start: 10
     - start: 33
     - start: 28
-Her-vor-bringen:
-  references:
-    TK:
-    - start: 11
-    - start: 12
 Herakles:
   metadata:
     gnd: '118639552'
@@ -2295,13 +2277,6 @@ Information:
     - start: 532
     SvG:
     - start: 182
-Instrumental-anthropologische Bestimmung der Technik:
-  parent: Technik
-  references:
-    TK:
-    - start: 6
-    - start: 7
-    - start: 8
 JGB Nachgesang:
   author: Nietzsche, Friedrich
   parent: Jenseits von Gut und Böse
@@ -2866,10 +2841,10 @@ NL 2[127]:
   references:
     GA 55:
     - start: 66
+  type: w
   related:
   - Nihilismus
   - Unheimliches
-  type: w
 NL 9[42] 12.354:
   author: Nietzsche, Friedrich
   parent: Nachlass (Friedrich Nietzsche)
@@ -4018,19 +3993,6 @@ Symbol:
       start: 444
   related:
   - σύμβολον
-Symposion:
-  author: Plato
-  metadata:
-    urn: urn:cts:greekLit:tlg0059.tlg011
-  type: w
-Symposion 205:
-  metadata:
-    urn: urn:cts:greekLit:tlg0059.tlg011.perseus-grc2:205
-  parent: Symposion
-  references:
-    TK:
-    - start: 11
-  type: w
 System:
   references:
     GA 29/30:
@@ -4072,12 +4034,6 @@ Technik:
     - start: 177
     - start: 180
     - start: 181
-    TK:
-    - start: 5
-    - start: 6
-    - start: 7
-    - start: 8
-    - start: 12
 Technologie:
   references:
     SvG:
@@ -4356,8 +4312,6 @@ Ursache:
     - start: 172
     - start: 164
     - start: 165
-  related:
-  - Vier-Ursachen-Lehre
 Urteil:
   references:
     SvG:
@@ -4439,11 +4393,6 @@ Verwunderung:
   references:
     WiM:
     - start: 121
-Vier-Ursachen-Lehre:
-  references:
-    TK:
-    - end: 11
-      start: 7
 Vitalismus:
   references:
     GA 29/30:
@@ -4691,12 +4640,10 @@ Werden:
     EM:
     - end: 105
       start: 103
-Wesen der Technik:
-  parent: Technik
+Wesen des Lebends:
   references:
-    TK:
-    - start: 5
-    - start: 12
+    GA 29/30:
+    - start: 387
 Wesen des Lebens:
   parent: Leben
   references:
@@ -4705,11 +4652,9 @@ Wesen des Lebens:
       start: 265
     - start: 283
     - start: 318
-    - start: 343
     - start: 371
     - start: 378
     - start: 385
-    - start: 387
 Wesen des Menschen:
   references:
     EWI:
@@ -4746,6 +4691,10 @@ Wesen des Tieres:
     - start: 378
     - start: 388
     - start: 389
+Wesen des lebens:
+  references:
+    GA 29/30:
+    - start: 343
 Wie wenn am Feiertage...:
   author: Hölderlin, Friedrich
   metadata:
@@ -5033,10 +4982,6 @@ das Wachsende:
   references:
     GA 29/30:
     - start: 38
-das Wahre:
-  references:
-    TK:
-    - start: 7
 der Feldberg:
   references:
     GA 55:
@@ -5295,11 +5240,6 @@ religio:
   references:
     GA 55:
     - start: 13
-richtig:
-  references:
-    TK:
-    - start: 6
-    - start: 7
 sterben:
   references:
     SvG:
@@ -5406,10 +5346,10 @@ wesentliche Möglichkeit des Seins:
   type: w
 αἰτία:
   references:
+    FT:
+    - start: 12
     SvG:
     - start: 165
-    TK:
-    - start: 10
     WBPh:
     - start: 243
 αἰών:
@@ -5766,16 +5706,12 @@ wesentliche Möglichkeit des Seins:
   references:
     EM:
     - start: 44
-    TK:
-    - start: 11
-    - start: 12
     WBPh:
     - start: 287
     - start: 297
   related:
   - Herstellen
   - τέχνη
-  - Her-vor-bringen
 πρᾶγμα:
   references:
     EM:
@@ -5854,9 +5790,6 @@ wesentliche Möglichkeit des Seins:
     - start: 19
     GA 28:
     - start: 25
-    TK:
-    - start: 12
-      suffix: f
     WBPh:
     - start: 249
       suffix: f
@@ -5958,6 +5891,8 @@ wesentliche Möglichkeit des Seins:
       suffix: f
     - start: 142
     - start: 144
+    FT:
+    - start: 12
     GA 18:
     - start: 45
     GA 21:
@@ -5987,8 +5922,6 @@ wesentliche Möglichkeit des Seins:
     - start: 157
     - start: 163
     - start: 168
-    TK:
-    - start: 11
     WBPh:
     - start: 237
     - start: 239
@@ -6053,12 +5986,8 @@ wesentliche Möglichkeit des Seins:
     GA 55:
     - start: 103
     - start: 17
-    TK:
-    - start: 11
     WBPh:
     - start: 299
-  related:
-  - Entbergen
 ἀπόφασις:
   references:
     GA 29/30:
@@ -6131,9 +6060,6 @@ wesentliche Möglichkeit des Seins:
     - start: 1
     GA 29/30:
     - start: 49
-    TK:
-    - start: 12
-      suffix: f
 ἐπιστήμη λογική:
   parent: ἐπιστήμη
   references:
