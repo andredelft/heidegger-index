@@ -305,8 +305,6 @@ Atomenergie:
     - start: 181
     - start: 182
     - start: 188
-    TK:
-    - start: 15
 Atomtechnik:
   references:
     G:
@@ -407,10 +405,6 @@ Bauen:
   references:
     HF:
     - start: 138
-Bauer:
-  references:
-    TK:
-    - start: 14
 Bedeutung:
   references:
     GA 29/30:
@@ -491,18 +485,6 @@ Bestand:
   references:
     SvG:
     - start: 182
-    TK:
-    - start: 16
-    - start: 17
-Bestellen:
-  references:
-    TK:
-    - start: 16
-    - start: 17
-Bestellung:
-  references:
-    TK:
-    - start: 15
 Bethe, Albrecht:
   metadata:
     gnd: '117589934'
@@ -1195,12 +1177,6 @@ Der Mensch im Weltalter des Ausgleichs:
     GA 29/30:
     - start: 106
   type: w
-Der Rhein:
-  author: Hölderlin, Friedrich
-  references:
-    TK:
-    - start: 15
-  type: w
 Der Sommerabend:
   author: Hebel, Johann Peter
   metadata:
@@ -1428,9 +1404,6 @@ Entbergen:
     TK:
     - start: 11
     - start: 12
-    - start: 13
-    - start: 16
-    - start: 17
     WBPh:
     - start: 277
     - start: 299
@@ -1499,17 +1472,6 @@ Eschatologie des Seins:
   references:
     SA:
     - start: 327
-Ethica Nicomachea:
-  author: Aristoteles
-  metadata:
-    urn: urn:cts:greekLit:tlg0086.tlg010
-  type: w
-Ethica Nicomachea VI:
-  parent: Ethica Nicomachea
-  references:
-    TK:
-    - start: 13
-  type: w
 Etymologie:
   references:
     EWI:
@@ -1698,8 +1660,6 @@ Gegenstand:
     - start: 177
     - start: 182
     - start: 164
-    TK:
-    - start: 16
     WD:
     - start: 283
 Gegnet:
@@ -2079,9 +2039,6 @@ Hegel, Georg Wilhelm Friedrich:
     - start: 323
     SZ:
     - start: 3
-    TK:
-    - start: 16
-      suffix: f
     WBPh:
     - start: 251
     WiM:
@@ -2131,7 +2088,6 @@ Her-vor-bringen:
     TK:
     - start: 11
     - start: 12
-    - start: 13
 Herakles:
   metadata:
     gnd: '118639552'
@@ -2157,12 +2113,6 @@ Heraklit:
     - start: 277
     - start: 298
   type: p
-Herausfordern:
-  references:
-    TK:
-    - start: 14
-    - start: 15
-    - start: 16
 Herder, Johann Gottfried:
   references:
     JPH G:
@@ -2978,9 +2928,6 @@ Natur:
     - start: 70
     SvG:
     - start: 178
-    TK:
-    - start: 14
-    - start: 16
     WBPh:
     - end: 241
       start: 237
@@ -3010,9 +2957,6 @@ Naturwissenschaft:
       suffix: f
     SvG:
     - start: 180
-    TK:
-    - start: 13
-    - start: 14
     WD:
     - start: 278
 Nem. III:
@@ -4134,8 +4078,6 @@ Technik:
     - start: 7
     - start: 8
     - start: 12
-    - start: 13
-    - start: 14
 Technologie:
   references:
     SvG:
@@ -4599,8 +4541,6 @@ Wahrheit:
   references:
     SvG:
     - start: 173
-    TK:
-    - start: 13
 Wahrheit der Philosophie:
   parent: Philosophie
   references:
@@ -4757,7 +4697,6 @@ Wesen der Technik:
     TK:
     - start: 5
     - start: 12
-    - start: 17
 Wesen des Lebens:
   parent: Leben
   references:
@@ -5105,11 +5044,6 @@ der Feldberg:
     HF:
     - start: 134
   type: g
-der Rhein:
-  references:
-    TK:
-    - start: 15
-  type: g
 dialektische Schein:
   parent: Schein
   references:
@@ -5241,14 +5175,6 @@ metaphysischen Begriffe:
       start: 9
     - end: 13
       start: 12
-moderne Technik:
-  parent: Technik
-  references:
-    TK:
-    - end: 14
-      start: 13
-    - start: 16
-    - start: 17
 natura:
   references:
     EM:
@@ -6129,7 +6055,6 @@ wesentliche Möglichkeit des Seins:
     - start: 17
     TK:
     - start: 11
-    - start: 13
     WBPh:
     - start: 299
   related:
