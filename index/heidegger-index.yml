@@ -3119,11 +3119,24 @@ Objekt:
     - start: 249
 Odyssee:
   author: Homer
+  metadata:
+    urn: urn:cts:greekLit:tlg0012.tlg002
+  type: w
 Odyssee XX:
   parent: Odyssee
+  metadata:
+    urn: urn:cts:greekLit:tlg0012.tlg002:20
   references:
     GA 55:
     - start: 16
+  type: w
+Odyssee XXIV:
+  parent: Odyssee
+  metadata:
+    urn: urn:cts:greekLit:tlg0012.tlg002:24
+  references:
+    EM:
+    - start: 133
   type: w
 Oedipus Tyrannus:
   author: Sophokles
@@ -3212,12 +3225,6 @@ Otto Hahn:
     SvG:
     - start: 178
   type: p
-Oydssee XXIV:
-  author: Homer
-  parent: Odyssee
-  references:
-    EM:
-    - start: 133
 Parmenides:
   metadata:
     dk: 28
