@@ -3124,16 +3124,12 @@ Odyssee:
   type: w
 Odyssee XX:
   parent: Odyssee
-  metadata:
-    urn: urn:cts:greekLit:tlg0012.tlg002:20
   references:
     GA 55:
     - start: 16
   type: w
 Odyssee XXIV:
   parent: Odyssee
-  metadata:
-    urn: urn:cts:greekLit:tlg0012.tlg002:24
   references:
     EM:
     - start: 133
