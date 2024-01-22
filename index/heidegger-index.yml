@@ -492,13 +492,13 @@ Bestand:
     SvG:
     - start: 182
     TK:
-    - start: 16
-    - start: 17
+    - end: 17
+      start: 16
 Bestellen:
   references:
     TK:
-    - start: 16
-    - start: 17
+    - end: 17
+      start: 16
 Bestellung:
   references:
     TK:
@@ -1197,6 +1197,8 @@ Der Mensch im Weltalter des Ausgleichs:
   type: w
 Der Rhein:
   author: Hölderlin, Friedrich
+  metadata:
+    zeno: '20005104998'
   references:
     TK:
     - start: 15
@@ -1426,11 +1428,10 @@ Entbergen:
     - start: 41
     - start: 44
     TK:
-    - start: 11
-    - start: 12
-    - start: 13
-    - start: 16
-    - start: 17
+    - end: 13
+      start: 11
+    - end: 17
+      start: 16
     WBPh:
     - start: 277
     - start: 299
@@ -2129,9 +2130,8 @@ Heimweh:
 Her-vor-bringen:
   references:
     TK:
-    - start: 11
-    - start: 12
-    - start: 13
+    - end: 13
+      start: 11
 Herakles:
   metadata:
     gnd: '118639552'
@@ -2160,9 +2160,8 @@ Heraklit:
 Herausfordern:
   references:
     TK:
-    - start: 14
-    - start: 15
-    - start: 16
+    - end: 16
+      start: 14
 Herder, Johann Gottfried:
   references:
     JPH G:
@@ -2250,6 +2249,8 @@ Husserl, Edmund:
   type: p
 Hyperion:
   author: Hölderlin, Friedrich
+  metadata:
+    zeno: '20005106222'
   references:
     GA 55:
     - start: 31
@@ -2349,9 +2350,8 @@ Instrumental-anthropologische Bestimmung der Technik:
   parent: Technik
   references:
     TK:
-    - start: 6
-    - start: 7
-    - start: 8
+    - end: 8
+      start: 6
 JGB Nachgesang:
   author: Nietzsche, Friedrich
   parent: Jenseits von Gut und Böse
@@ -3011,8 +3011,8 @@ Naturwissenschaft:
     SvG:
     - start: 180
     TK:
-    - start: 13
-    - start: 14
+    - end: 14
+      start: 13
     WD:
     - start: 278
 Nem. III:
@@ -4132,13 +4132,10 @@ Technik:
     - start: 180
     - start: 181
     TK:
-    - start: 5
-    - start: 6
-    - start: 7
-    - start: 8
-    - start: 12
-    - start: 13
-    - start: 14
+    - end: 8
+      start: 5
+    - end: 14
+      start: 12
 Technologie:
   references:
     SvG:
@@ -5250,8 +5247,8 @@ moderne Technik:
     TK:
     - end: 14
       start: 13
-    - start: 16
-    - start: 17
+    - end: 17
+      start: 16
 natura:
   references:
     EM:
@@ -5375,8 +5372,8 @@ religio:
 richtig:
   references:
     TK:
-    - start: 6
-    - start: 7
+    - end: 7
+      start: 6
 sterben:
   references:
     SvG:
@@ -5844,8 +5841,8 @@ wesentliche Möglichkeit des Seins:
     EM:
     - start: 44
     TK:
-    - start: 11
-    - start: 12
+    - end: 12
+      start: 11
     WBPh:
     - start: 287
     - start: 297
