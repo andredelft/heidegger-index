@@ -150,8 +150,15 @@ class Lemma(models.Model):
                     + self.urn
                 )
                 p_response = requests.get(p_link)
-                parsed_xml = BeautifulSoup(p_response.text, "html.parser")
-                self.perseus_content = parsed_xml.p.contents[-1].string
+
+                try:
+                    # TODO: URN-based parsing, or strip bibl & label contents
+                    parsed_xml = BeautifulSoup(p_response.text, "html.parser")
+                    perseus_content = parsed_xml.p.contents[-1].string
+                except AttributeError:
+                    pass
+                else:
+                    self.perseus_content = perseus_content
 
     @property
     def display(self):
