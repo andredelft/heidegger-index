@@ -1,0 +1,6 @@
+{% load i18n %}
+
+<blockquote>
+  {{ lemma.perseus_content|truncatewords:100 }} 
+  ({% translate "Bron" %}: <a href="https://scaife.perseus.org/reader/{{ lemma.urn | safe }}" target="_blank"><cite>Perseus Digital Library</cite></a>)
+</blockquote>
