@@ -19,12 +19,8 @@
 </div>
 {% endif %}
 
-{% if lemma.type == "w" and lemma.perseus_content %}
-<blockquote>
-  {{ lemma.perseus_content }} 
-  ({% translate "Bron" %}: 
-  <a href="https://scaife.perseus.org/reader/{{ lemma.urn | safe }}" title="Read full text of {{ lemma.value }} on Perseus" target="_blank"><cite>Perseus Digital Library</cite></a>)
-</blockquote>
+{% if lemma.perseus_content %}
+  {% include "components/_perseus_content.html" %}
 {% endif %}
 
 {% if lemma.description %}
@@ -35,6 +31,10 @@
 
 {% for child in children %}
 <h2 id="{{ child.slug }}">{{ child }}</h2>
+  {% if child.perseus_content %}
+    {% include "components/_perseus_content.html" with lemma=child %}
+  {% endif %}
+
   {% if child.description %}
     {{ child.description | safe }}
   {% endif %}

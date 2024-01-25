@@ -1,6 +1,4 @@
 import requests
-from bs4 import BeautifulSoup
-from pyCTS import CTS_URN
 
 from django.db import models
 from django.conf import settings
@@ -9,6 +7,7 @@ from django.core.validators import URLValidator
 from django.utils.safestring import mark_safe
 
 from heidegger_index.constants import LemmaType, RefType, MetadataType
+from heidegger_index.passage import get_perseus_passage
 from heidegger_index.utils import (
     gen_sort_key,
     slugify,
@@ -140,25 +139,10 @@ class Lemma(models.Model):
         super().save(*args, **kwargs)
 
     def load_work_text(self):
-        if not self.perseus_content and self.urn and self.type == "w":
-            lemma_urn = CTS_URN(self.urn)
-            if not lemma_urn.passage_component:
-                self.perseus_content = None
-            else:
-                p_link = (
-                    "https://scaife-cts.perseus.org/api/cts?request=GetPassage&urn="
-                    + self.urn
-                )
-                p_response = requests.get(p_link)
+        if self.perseus_content or not self.urn or self.type != "w":
+            return
 
-                try:
-                    # TODO: URN-based parsing, or strip bibl & label contents
-                    parsed_xml = BeautifulSoup(p_response.text, "html.parser")
-                    perseus_content = parsed_xml.p.contents[-1].string
-                except AttributeError:
-                    pass
-                else:
-                    self.perseus_content = perseus_content
+        self.perseus_content = get_perseus_passage(self.urn)
 
     @property
     def display(self):
