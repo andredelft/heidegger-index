@@ -171,6 +171,7 @@ Antigone, Erste Chorlied:
   related:
   - τέχνη
   - δίκη
+  - Unheimliches
   type: w
 Antigonä:
   references:
@@ -683,7 +684,7 @@ DK 22A9:
   - Heraklit
   type: w
 DK 22B1:
-  author: Heraklit
+  author: Heraklitdy
   metadata:
     urn: urn:cts:greekLit:tlg0626.tlg002:1
   references:
@@ -4367,6 +4368,8 @@ Unheimliches:
       start: 155
     Ens 10:
     - start: 205
+    FT:
+    - start: 8
     G:
     - start: 518
     - start: 525
