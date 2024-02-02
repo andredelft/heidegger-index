@@ -684,7 +684,7 @@ DK 22A9:
   - Heraklit
   type: w
 DK 22B1:
-  author: Heraklitdy
+  author: Heraklit
   metadata:
     urn: urn:cts:greekLit:tlg0626.tlg002:1
   references:
@@ -693,10 +693,19 @@ DK 22B1:
     - start: 137
     GA 55:
     - start: 38
+    - start: 150
     WBPh:
     - start: 277
   related:
   - λόγος
+  type: w
+DK 22B104:
+  author: Heraklit
+  metadata:
+    urn: urn:cts:greekLit:tlg0626.tlg002:104
+  references:
+    GA 55:
+    - start: 150
   type: w
 DK 22B108:
   author: Heraklit
@@ -705,6 +714,8 @@ DK 22B108:
   references:
     GA 29/30:
     - start: 34
+    GA 55:
+    - start: 150
   type: w
 DK 22B112:
   author: Heraklit
@@ -731,8 +742,10 @@ DK 22B123:
     GA 29/30:
     - start: 41
     GA 55:
-    - end: 127
+    - end: 131
       start: 109
+    - start: 134
+      suffix: f
     WBPh:
     - start: 298
   related:
@@ -746,6 +759,14 @@ DK 22B124:
     EM:
     - start: 142
   type: w
+DK 22B13:
+  author: Heraklit
+  metadata:
+    urn: urn:cts:greekLit:tlg0626.tlg002:13
+  references:
+    GA 55:
+    - start: 150
+  type: w
 DK 22B16:
   author: Heraklit
   metadata:
@@ -754,6 +775,15 @@ DK 22B16:
     GA 55:
     - end: 85
       start: 44
+    - start: 146
+  type: w
+DK 22B17:
+  author: Heraklit
+  metadata:
+    urn: urn:cts:greekLit:tlg0626.tlg002:17
+  references:
+    GA 55:
+    - start: 150
   type: w
 DK 22B19:
   author: Heraklit
@@ -762,6 +792,8 @@ DK 22B19:
   references:
     EM:
     - start: 141
+    GA 55:
+    - start: 150
   type: w
 DK 22B2:
   author: Heraklit
@@ -771,6 +803,8 @@ DK 22B2:
     EM:
     - start: 136
     - start: 137
+    GA 55:
+    - start: 150
     WBPh:
     - start: 277
   related:
@@ -783,6 +817,8 @@ DK 22B29:
   references:
     EM:
     - start: 111
+    GA 55:
+    - start: 150
   type: w
 DK 22B30:
   author: Heraklit
@@ -798,6 +834,14 @@ DK 22B30:
   related:
   - ἀείζωον
   type: w
+DK 22B32:
+  author: Heraklit
+  metadata:
+    urn: urn:cts:greekLit:tlg0626.tlg002:32
+  references:
+    GA 55:
+    - start: 128
+  type: w
 DK 22B34:
   author: Heraklit
   metadata:
@@ -805,6 +849,32 @@ DK 22B34:
   references:
     EM:
     - start: 138
+    GA 55:
+    - start: 150
+  type: w
+DK 22B35:
+  author: Heraklit
+  metadata:
+    urn: urn:cts:greekLit:tlg0626.tlg002:35
+  references:
+    GA 55:
+    - start: 128
+  type: w
+DK 22B37:
+  author: Heraklit
+  metadata:
+    urn: urn:cts:greekLit:tlg0626.tlg002:37
+  references:
+    GA 55:
+    - start: 150
+  type: w
+DK 22B40:
+  author: Heraklit
+  metadata:
+    urn: urn:cts:greekLit:tlg0626.tlg002:40
+  references:
+    GA 55:
+    - start: 150
   type: w
 DK 22B50:
   author: Heraklit
@@ -813,6 +883,17 @@ DK 22B50:
   references:
     EM:
     - start: 137
+  type: w
+DK 22B51:
+  author: Heraklit
+  metadata:
+    urn: urn:cts:greekLit:tlg0626.tlg002:51
+  references:
+    GA 55:
+    - start: 150
+    - start: 152
+    - start: 148
+    - start: 147
   type: w
 DK 22B52:
   author: Heraklit
@@ -848,6 +929,8 @@ DK 22B54:
     - start: 142
     GA 29/30:
     - start: 44
+    GA 55:
+    - start: 142
   type: w
 DK 22B7:
   author: Heraklit
@@ -865,6 +948,8 @@ DK 22B72:
     EM:
     - start: 138
       suffix: f
+    GA 55:
+    - start: 150
   type: w
 DK 22B73:
   author: Heraklit
@@ -881,6 +966,8 @@ DK 22B8:
   references:
     EM:
     - start: 140
+    GA 55:
+    - start: 145
   type: w
 DK 22B80:
   author: Heraklit
@@ -892,6 +979,14 @@ DK 22B80:
   related:
   - δίκη
   type: w
+DK 22B87:
+  author: Heraklit
+  metadata:
+    urn: urn:cts:greekLit:tlg0626.tlg002:87
+  references:
+    GA 55:
+    - start: 150
+  type: w
 DK 22B9:
   author: Heraklit
   metadata:
@@ -899,6 +994,9 @@ DK 22B9:
   references:
     EM:
     - start: 141
+    GA 55:
+    - start: 150
+    - start: 151
   type: w
 DK 22B93:
   author: Heraklit
@@ -919,6 +1017,8 @@ DK 22B97:
   references:
     EM:
     - start: 141
+    GA 55:
+    - start: 150
   type: w
 DK 28B1:
   author: Parmenides
@@ -934,6 +1034,14 @@ DK 28B1 28–32:
   references:
     EM:
     - start: 120
+  type: w
+DK 28B13:
+  author: Parmenides
+  metadata:
+    urn: urn:cts:greekLit:tlg1562.tlg002:13
+  references:
+    GA 55:
+    - start: 132
   type: w
 DK 28B2:
   author: Parmenides
@@ -1926,6 +2034,8 @@ Grundfrage der Metaphysik:
     EM:
     - start: 3
     - start: 14
+    GA 55:
+    - start: 159
     WiM:
     - start: 122
 Grundlegung zur Metaphysik der Sitten:
@@ -3124,9 +3234,9 @@ Odyssee:
     urn: urn:cts:greekLit:tlg0012.tlg002
   type: w
 Odyssee XX:
-  parent: Odyssee
   metadata:
     urn: urn:cts:greekLit:tlg0012.tlg002:20
+  parent: Odyssee
   references:
     GA 55:
     - start: 16
@@ -4084,6 +4194,10 @@ Symposion:
   author: Plato
   metadata:
     urn: urn:cts:greekLit:tlg0059.tlg011
+  references:
+    GA 55:
+    - start: 132
+      suffix: f
   type: w
 Symposion 205:
   metadata:
