@@ -30,7 +30,7 @@
 {% include 'components/ref_list/_group_by_work.html' with ref_list=lemma.pagereference_set.all %}
 
 {% for child in children %}
-<h2 id="{{ child.slug }}">{{ child }}</h2>
+<h2 id="{{ child.slug }}">{{ child.display }}</h2>
   {% if child.perseus_content %}
     {% include "components/_perseus_content.html" with lemma=child %}
   {% endif %}
@@ -60,7 +60,7 @@
 <h2 class="h3 icon-link">{% translate "Gerelateerd" %}</h2>
 <div class="lemma-detail__related">
   {% for lemma in related %}
-    <a class="badge badge--secondary" href="{% url "lemma-detail" lemma.slug %}">{{ lemma }}</a>
+    <a class="badge badge--secondary" href="{% url "lemma-detail" lemma.slug %}">{{ lemma.display }}</a>
   {% endfor %}
 </div>
 {% endif %}

@@ -75,6 +75,9 @@ additionalProperties:
       type: string
       description: Lemma type
       enum: [p, w, g]
+    lang:
+      type: string
+      description: Language
   additionalProperties: False
   dependentRequired:
     metadata: [type]

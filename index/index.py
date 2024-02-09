@@ -24,7 +24,14 @@ REF_INTFIELDS = {"start", "end"}
 
 
 def add_ref(
-    lemma, work, ref, lemma_type=None, ref_type=None, betacode=False, force=False
+    lemma,
+    work,
+    ref,
+    lemma_type=None,
+    ref_type=None,
+    lang=None,
+    betacode=False,
+    force=False,
 ):
     if isinstance(ref, list):
         # Allow ref to be a list, call add_ref for each item and terminate function
@@ -49,6 +56,7 @@ def add_ref(
 
     if betacode:
         lemma = beta_to_uni(lemma)
+        lang = "grc"
 
     # Open index file
     with open(INDEX_FILE) as f:
@@ -65,6 +73,9 @@ def add_ref(
 
     if ref_type:
         ref_dict["type"] = ref_type
+
+    if lang:
+        ref_dict["lang"] = lang
 
     # Determine whether that lemma is already in the index
     try:
