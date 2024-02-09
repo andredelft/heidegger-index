@@ -74,6 +74,9 @@ def add_ref(
     if ref_type:
         ref_dict["type"] = ref_type
 
+    if lang:
+        ref_dict["lang"] = lang
+
     # Determine whether that lemma is already in the index
     try:
         lemma_entry = index[lemma]
