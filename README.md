@@ -26,10 +26,12 @@ $ add-ref --help
 Usage: add-ref [OPTIONS] LEMMA WORK REF
 
 Options:
-  -l, --lemma-type [p|w|g]  Type of lemma (p: person, w: work, g: geographical name)
-  -r, --ref-type [r]      Type of lemma (r: related)
-  -b, --betacode          Convert lemma from betacode to unicode
-  --help                  Show this message and exit.
+  -l, --lemma-type [p|w|g]  Lemma type (p: person, w: work, g: geographical)
+  -r, --ref-type [r]        Reference type (r: related)
+  --language TEXT           Lemma language (in ISO 639-3 format.)
+  -b, --betacode            Convert lemma from betacode to unicode
+  -f, --force               Force reference to be added to lemma
+  --help                    Show this message and exit.
 ```
 
 E.g.:
