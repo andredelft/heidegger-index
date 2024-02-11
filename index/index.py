@@ -53,6 +53,10 @@ def add_ref(
     m = REF_REGEX.search(str(ref).strip())
     if not m:
         raise click.BadParameter(f"Reference '{ref}' is not recognized")
+    
+    # Validation: lang
+    if lang:
+        validate_iso639_3_lang(lang)
 
     if betacode:
         lemma = beta_to_uni(lemma)
