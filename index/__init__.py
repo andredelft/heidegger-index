@@ -25,6 +25,13 @@ from heidegger_index.constants import LemmaType, RefType, MetadataType
     help=f"Reference type ({RefType.display_values()})",
 )
 @click.option(
+    "--language",
+    "lang",
+    default=None,
+    type=str,
+    help=f"Lemma language (in ISO 639-3 format)",
+)
+@click.option(
     "-b",
     "--betacode",
     "betacode",
@@ -40,8 +47,8 @@ from heidegger_index.constants import LemmaType, RefType, MetadataType
     default=False,
     help="Force reference to be added to lemma",
 )
-def click_add_ref(lemma, work, ref, lemma_type, ref_type, betacode, force):
-    add_ref(lemma, work, ref, lemma_type, ref_type, betacode, force)
+def click_add_ref(lemma, work, ref, lemma_type, ref_type, lang, betacode, force):
+    add_ref(lemma, work, ref, lemma_type, ref_type, lang, betacode, force)
 
 
 @click.command()

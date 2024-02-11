@@ -9,7 +9,7 @@ from pyCTS import CTS_URN
 
 from heidegger_index.utils import match_lemmata, contains_page_range, REF_REGEX
 from heidegger_index.constants import LemmaType, MetadataType, RefType, RelationType
-from heidegger_index.validators import validate_gnd
+from heidegger_index.validators import validate_gnd, validate_iso639_3_lang
 from heidegger_index.settings import CITEPROC_ENDPOINT, CITEPROC_STYLE
 from django.core.exceptions import ValidationError
 
@@ -53,6 +53,10 @@ def add_ref(
     m = REF_REGEX.search(str(ref).strip())
     if not m:
         raise click.BadParameter(f"Reference '{ref}' is not recognized")
+    
+    # Validation: lang
+    if lang:
+        validate_iso639_3_lang(lang)
 
     if betacode:
         lemma = beta_to_uni(lemma)
