@@ -3530,11 +3530,6 @@ Pindar:
     - start: 108
     - start: 110
   type: p
-Pizza:
-  lang: ita
-  references:
-    zz:
-    - start: 1
 Plato:
   metadata:
     urn: urn:cts:greekLit:tlg0059
