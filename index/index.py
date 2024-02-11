@@ -53,10 +53,6 @@ def add_ref(
     m = REF_REGEX.search(str(ref).strip())
     if not m:
         raise click.BadParameter(f"Reference '{ref}' is not recognized")
-    
-    # Validation: lang
-    if lang:
-        validate_iso639_3_lang(lang)
 
     if betacode:
         lemma = beta_to_uni(lemma)
@@ -77,9 +73,6 @@ def add_ref(
 
     if ref_type:
         ref_dict["type"] = ref_type
-
-    if lang:
-        ref_dict["lang"] = lang
 
     # Determine whether that lemma is already in the index
     try:
