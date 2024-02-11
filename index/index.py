@@ -36,7 +36,7 @@ def add_ref(
     if isinstance(ref, list):
         # Allow ref to be a list, call add_ref for each item and terminate function
         for r in ref:
-            add_ref(lemma, work, r, lemma_type, ref_type, betacode)
+            add_ref(lemma, work, r, lemma_type, ref_type, lang, betacode)
         return
 
     try:
@@ -53,10 +53,6 @@ def add_ref(
     m = REF_REGEX.search(str(ref).strip())
     if not m:
         raise click.BadParameter(f"Reference '{ref}' is not recognized")
-    
-    # Validation: lang
-    if lang:
-        validate_iso639_3_lang(lang)
 
     if betacode:
         lemma = beta_to_uni(lemma)
@@ -77,9 +73,6 @@ def add_ref(
 
     if ref_type:
         ref_dict["type"] = ref_type
-
-    if lang:
-        ref_dict["lang"] = lang
 
     # Determine whether that lemma is already in the index
     try:
@@ -147,6 +140,11 @@ def add_ref(
                 lemma_entry["type"] = lemma_type
 
         lemma_entry["references"] = refs
+
+    # Validation: lang
+    if lang:
+        validate_iso639_3_lang(lang)
+        lemma_entry["lang"] = lang
 
     index[lemma] = lemma_entry
 
