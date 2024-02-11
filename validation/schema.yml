@@ -87,6 +87,10 @@ additionalProperties:
       type: string
       description: Lemma type
       enum: [p, w, g]
+    lang:
+      type: string
+      description: Language, according to ISO 639-3 standard.
+      pattern: ^[a-z]{3}$
   additionalProperties: False
   dependentRequired:
     metadata: [type]
