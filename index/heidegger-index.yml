@@ -5168,6 +5168,8 @@ auf der Stelle zur Stelle:
     - start: 33
     - start: 35
     - start: 40
+    TK:
+    - start: 16
     VA:
     - start: 17
 aufheben:
