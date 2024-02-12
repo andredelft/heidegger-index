@@ -3453,6 +3453,17 @@ Philosophieren:
     - start: 7
     WiM:
     - start: 122
+Philosophische Untersuchungen über das Wesen der menschlichen Freiheit und die damit zusammenhängenden Gegenstände:
+  author: Schelling, Friedrich von
+  metadata:
+    zeno: '20009265759'
+  references:
+    GA 49:
+    - start: 1
+      suffix: f
+    - end: 9
+      start: 6
+  type: w
 Physica:
   author: Aristoteles
   metadata:
