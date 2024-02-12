@@ -10,6 +10,7 @@ from pyCTS import CTS_URN
 from heidegger_index.utils import match_lemmata, contains_page_range, REF_REGEX
 from heidegger_index.constants import LemmaType, MetadataType, RefType, RelationType
 from heidegger_index.validators import validate_gnd
+from heidegger_index.settings import CITEPROC_ENDPOINT, CITEPROC_STYLE
 from django.core.exceptions import ValidationError
 
 
@@ -18,9 +19,6 @@ WORKING_DIR = Path("index")
 INDEX_FILE = WORKING_DIR / "heidegger-index.yml"
 WORK_REFS_FILE = WORKING_DIR / "works.yml"
 OUTPUT_FILE = WORKING_DIR / "works.html"
-
-CITATION_STYLE = "mhra"  # Modern humanities research association
-CITEPROC_ENDPOINT = "https://labs.brill.com/citeproc"
 
 REF_INTFIELDS = {"start", "end"}
 
@@ -345,7 +343,7 @@ def add_interrelated(*lemmas):
 def format_refs(
     work_refs_file=WORK_REFS_FILE,
     citeproc_endpoint=CITEPROC_ENDPOINT,
-    citation_style=CITATION_STYLE,
+    citation_style=CITEPROC_STYLE,
     output_file=OUTPUT_FILE,
 ):
     with open(work_refs_file) as f:
