@@ -96,6 +96,29 @@ Sp:
   title: Spiegel-Gespräch mit Martin Heidegger (23. September 1966)
   type: chapter
   title-short: Spiegel-Gespräch
+GA 1:
+  id: heideggerGA1
+  author:
+    - family: Heidegger
+      given: Martin
+  citation-key: heideggerGA1
+  collection-number: band 1
+  collection-title: Martin Heidegger Gesamtausgabe
+  edition: Zweite Auflage
+  editor:
+    - family: Herrmann
+      given: Friedrich-Wilhelm
+      dropping-particle: von
+  event-place: Frankfurt am Main
+  ISBN: 978-3-465-00034-1
+  issued:
+    - year: 2018
+  language: de-DE
+  publisher: Vittorio Klostermann
+  publisher-place: Frankfurt am Main
+  title: Frühe Schriften
+  title-short: GA 1
+  type: book
 GA 5:
   author:
   - family: Heidegger
@@ -625,6 +648,29 @@ WiM:
   language: de-DE
   title: Was ist Metaphysik?
   type: chapter
+GA 11:
+  id: heideggerGA11
+  author:
+    - family: Heidegger
+      given: Martin
+  citation-key: heideggerGA11
+  collection-number: band 11
+  collection-title: Martin Heidegger Gesamtausgabe
+  editor:
+    - family: Herrmann
+      given: Friedrich-Wilhelm
+      dropping-particle: von
+  event-place: Frankfurt am Main
+  ISBN: 978-3-465-03493-3 978-3-465-03492-6
+  issued:
+    - year: 2006
+  language: ger
+  number-of-pages: vi, 168
+  publisher: Vittorio Klostermann
+  publisher-place: Frankfurt am Main
+  title: Identität und Differenz
+  title-short: GA 11
+  type: book
 GA 18:
   id: heideggerGA18
   author:
@@ -734,6 +780,29 @@ GA 24:
   publisher-place: Frankfurt am Main
   title: Die Grundprobleme der Phänomenologie
   type: book
+GA 25:
+  id: heideggerGA25
+  author:
+    - family: Heidegger
+      given: Martin
+  citation-key: heideggerGA25
+  collection-number: band 25
+  collection-title: Martin Heidegger Gesamtausgabe
+  edition: 3. Aufl
+  editor:
+    - family: Görland
+      given: Ingtraud
+  event-place: Frankfurt am Main
+  ISBN: 978-3-465-02819-2 978-3-465-02817-8
+  issued:
+    - year: 1995
+  language: ger
+  note: Marburger Vorlesung Wintersemester 1927/28
+  number-of-pages: xii, 436
+  publisher: Klostermann
+  publisher-place: Frankfurt am Main
+  title: Phänomenologische Interpretation von Kants Kritik der reinen Vernunft
+  type: book
 GA 27:
   id: heideggerGA27
   author:
@@ -758,6 +827,30 @@ GA 27:
   publisher: Vittorio Klostermann
   publisher-place: Frankfurt am Main
   title: Einleitung in die Philosophie
+  type: book
+GA 28:
+  id: heideggerGA28
+  author:
+    - family: Heidegger
+      given: Martin
+  citation-key: heideggerGA28
+  collection-number: band 28
+  collection-title: Martin Heidegger Gesamtausgabe
+  edition: 2. unveränderte Aufl
+  editor:
+    - family: Strube
+      given: Claudius
+  event-place: Frankfurt am Main
+  ISBN: 978-3-465-03721-7
+  issued:
+    - year: 2011
+  language: ger
+  number-of-pages: xii, 368
+  publisher: V. Klostermann
+  publisher-place: Frankfurt am Main
+  title: >-
+    Der deutsche Idealismus (Fichte, Schelling, Hegel) und die philosophische
+    Problemlage der Gegenwart
   type: book
 GA 49:
   author:
@@ -785,6 +878,53 @@ GA 49:
     Freiheit und die damit zusammenhängen Gegenstände (1809)
   title-short: GA 49
   type: book
+GA 61:
+  id: heideggerGA61
+  author:
+    - family: Heidegger
+      given: Martin
+  citation-key: heideggerGA61
+  collection-number: Band 61
+  collection-title: Martin Heidegger Gesamtausgabe
+  edition: 2., durchges. Aufl.
+  editor:
+    - family: Bröcker
+      given: Walter
+    - family: Bröcker-Oltmanns
+      given: Kate
+  event-place: Frankfurt am Main
+  ISBN: 978-3-465-02650-1
+  issued:
+    - year: 1994
+  language: ger
+  note: Wintersemester 1921/22
+  number-of-pages: xiv, 204
+  publisher: Vittorio Klostermann
+  publisher-place: Frankfurt am Main
+  title: Phänomenologische Untersuchungen zu Aristoteles
+  type: book
+GA 97:
+  id: heideggerGA97
+  author:
+    - family: Heidegger
+      given: Martin
+  citation-key: heideggerGA97
+  collection-number: band 97
+  collection-title: Martin Heidegger Gesamtausgabe
+  editor:
+    - family: Trawny
+      given: Peter
+  event-place: Frankfurt am Main
+  ISBN: 978-3-465-03870-2
+  issued:
+    - year: 2015
+  language: ger
+  number-of-pages: vi, 528
+  publisher: Vittorio Klostermann
+  publisher-place: Frankfurt am Main
+  title: Anmerkungen I-V (Schwarze Hefte 1942-1948)
+  title-short: GA 97
+  type: book
 UK:
   ISBN: 978-3-465-03236-6 978-3-465-03237-3
   author:
@@ -810,3 +950,25 @@ UK:
   source: Gemeinsamer Bibliotheksverbund ISBN
   title: Der Ursprung des Kunstwerkes
   type: chapter
+ZS:
+  id: heideggerZoS
+  author:
+    - family: Heidegger
+      given: Martin
+  citation-key: heideggerZoS
+  edition: 2. Auflage
+  editor:
+    - family: Boss
+      given: Medard
+  event-place: Frankfurt am Main
+  ISBN: 978-3-465-01764-6 978-3-465-01763-9
+  issued:
+    - year: 1994
+  number-of-pages: xxviii, 369
+  original-date:
+    - year: 1987
+  publisher: Vittorio Klostermann
+  publisher-place: Frankfurt am Main
+  title: 'Zollikoner Seminare: Protokolle, Gespräche, Briefe'
+  title-short: Zollikoner Seminare
+  type: book
