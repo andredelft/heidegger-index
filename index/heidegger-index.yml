@@ -6253,15 +6253,13 @@ wesentliche Möglichkeit des Seins:
     - start: 299
   related:
   - Entbergen
-ἀπόφασις:
-  references:
-    GA 29/30:
-    - start: 484
-    - start: 490
 ἀπόφασις:
   references:
     GA 19:
     - start: 18
+    GA 29/30:
+    - start: 484
+    - start: 490
 ἀρχὴ κινήσεως:
   parent: κίνησις
   references:
