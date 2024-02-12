@@ -400,6 +400,28 @@ VA:
   publisher-place: Frankfurt am Main
   title: Vorträge und Aufsätze
   type: book
+FT:
+  author:
+  - family: Heidegger
+    given: Martin
+  citation-key: heideggerFT
+  collection-number: band 7
+  collection-title: Martin Heidegger Gesamtausgabe
+  container-title: Vorträge und Aufsätze
+  editor:
+  - dropping-particle: von
+    family: Herrmann
+    given: Friedrich-Wilhelm
+  id: FT
+  issued:
+    date-parts:
+    - - 200
+  language: ger
+  page: 7-36
+  publisher: Vittorio Klostermann
+  publisher-place: Frankfurt am Main
+  title: Die Frage nach der Technik
+  type: chapter
 Vorarb29/30:
   ISSN: 08854580, 21539170
   author:
