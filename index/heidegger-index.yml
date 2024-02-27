@@ -2165,6 +2165,9 @@ Hebel, Johann Peter:
     - start: 530
     - end: 533
       start: 532
+    JPH Z:
+    - end: 497
+      start: 492
   type: p
 Hegel, Georg Wilhelm Friedrich:
   metadata:
@@ -5120,6 +5123,11 @@ Zwingli, Huldrych:
     - start: 23
       suffix: f
   type: p
+Zähringer Burg:
+  references:
+    JPH Z:
+    - start: 491
+  type: g
 absoluten Idealismus:
   references:
     GA 29/30:
