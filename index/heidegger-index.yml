@@ -399,6 +399,11 @@ Baer, Karl Ernst von:
     GA 29/30:
     - start: 378
   type: p
+Basel:
+  references:
+    JPH Z:
+    - start: 492
+  type: g
 Basel-Lörrach:
   references:
     HF:
@@ -1589,6 +1594,11 @@ Ergriffenheit:
     - start: 87
   related:
   - ergreifen
+Erlangen:
+  references:
+    JPH Z:
+    - start: 492
+  type: g
 Erlebnis:
   references:
     GA 55:
@@ -2534,6 +2544,8 @@ Karlsruhe:
     - start: 123
     HF:
     - start: 133
+    JPH Z:
+    - start: 492
   type: g
 Kierkegaard, Søren:
   metadata:
@@ -2759,6 +2771,11 @@ Logik:
       start: 107
     - start: 117
     - start: 120
+Lörrach:
+  references:
+    JPH Z:
+    - start: 492
+  type: g
 Maas:
   references:
     WD:
@@ -2767,6 +2784,8 @@ Markgräflerland:
   references:
     GA 13:
     - start: 123
+    JPH Z:
+    - start: 492
   type: g
 Maschine:
   references:
