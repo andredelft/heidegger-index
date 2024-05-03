@@ -119,6 +119,13 @@ Anaximander:
     SvG:
     - start: 158
   type: p
+Anfang:
+  references:
+    GA 94:
+    - end: 53
+      start: 52
+    - start: 63
+    - start: 89
 Angriff:
   references:
     GA 29/30:
@@ -157,6 +164,9 @@ Anthropologie:
       start: 48
 Antigone (Sophokles):
   author: Sophokles
+  references:
+    GA 94:
+    - start: 72
   type: w
 Antigone, Erste Chorlied:
   author: Sophokles
@@ -1522,6 +1532,10 @@ Einfühlung:
     GA 29/30:
     - start: 298
     - start: 304
+Einklang:
+  references:
+    GA 94:
+    - start: 59
 Elemente:
   references:
     WBPh:
@@ -3123,6 +3137,7 @@ Natur:
       start: 46
     GA 94:
     - start: 49
+    - start: 72
     HF:
     - end: 146
       start: 144
@@ -3613,6 +3628,11 @@ Politica:
     - start: 52
     - start: 57
   type: w
+Politik:
+  references:
+    GA 94:
+    - start: 61
+    - start: 58
 Princip:
   references:
     SvG:
@@ -5385,6 +5405,11 @@ gedeihen:
     - start: 521
     - start: 528
     - start: 526
+großen Anfang:
+  parent: Anfang
+  references:
+    GA 94:
+    - start: 53
 im Ganzen:
   references:
     GA 29/30:
@@ -5723,6 +5748,8 @@ wesentliche Möglichkeit des Seins:
   references:
     EM:
     - start: 159
+    GA 94:
+    - start: 72
 διαίρεσις:
   references:
     GA 29/30:
@@ -5955,6 +5982,8 @@ wesentliche Möglichkeit des Seins:
     - start: 40
     GA 63:
     - start: 21
+    GA 94:
+    - start: 86
     SA:
     - start: 324
     SvG:
@@ -6023,6 +6052,8 @@ wesentliche Möglichkeit des Seins:
     GA 29/30:
     - end: 52
       start: 50
+    GA 94:
+    - start: 70
     SvG:
     - start: 157
     WBPh:
@@ -6342,6 +6373,8 @@ wesentliche Möglichkeit des Seins:
     GA 55:
     - start: 103
     - start: 17
+    GA 94:
+    - start: 51
     TK:
     - start: 11
     - start: 13
