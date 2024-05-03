@@ -3277,7 +3277,10 @@ Natur:
       start: 46
     GA 94:
     - start: 49
+<<<<<<< HEAD
     - start: 72
+=======
+>>>>>>> 5d3dca2 (SvG (& Support whole work reference))
     HF:
     - end: 146
       start: 144
