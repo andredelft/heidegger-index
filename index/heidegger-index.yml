@@ -308,6 +308,10 @@ Atomenergie:
     - start: 188
     TK:
     - start: 15
+Atomphysik:
+  references:
+    SvG:
+    - start: 7
 Atomtechnik:
   references:
     G:
@@ -383,6 +387,8 @@ Axiom:
   references:
     SvG:
     - start: 174
+  related:
+  - ἀξίωμα
 Bachofen, Johann Jakob:
   metadata:
     gnd: '118505645'
@@ -489,6 +495,10 @@ Benommenheit, Offenheit der:
     - start: 391
       suffix: f
       type: r
+Bernoulli:
+  references:
+    SvG:
+    - start: 19
 Besinnung:
   references:
     GA 16:
@@ -1392,6 +1402,8 @@ Descartes, René:
     - start: 305
     SvG:
     - start: 174
+    - start: 18
+    - start: 19
   type: p
 Dialekt:
   references:
@@ -1963,6 +1975,10 @@ Gleichgültigkeit:
     - start: 107
     - start: 110
     - start: 111
+Gleichheit:
+  references:
+    SvG:
+    - start: 11
 Goethe, Johann Wolfgang von:
   metadata:
     gnd: '118540238'
@@ -1976,6 +1992,8 @@ Goethe, Johann Wolfgang von:
     - start: 181
     - start: 185
     - start: 188
+    - start: 9
+    - start: 13
   type: p
 Goethesch:
   parent: Goethe, Johann Wolfgang von
@@ -2010,25 +2028,7 @@ Großrechenanlage:
 Grund:
   references:
     SvG:
-    - end: 176
-      start: 171
-    - end: 184
-      start: 181
-    - end: 189
-      start: 186
-    - start: 153
-    - start: 155
-    - start: 156
-    - start: 159
-    - start: 161
-    - start: 162
-    - start: 163
-    - start: 164
-    - start: 165
-    - start: 166
-    - start: 167
-    - start: 168
-    - start: 169
+    - whole: true
     WD:
     - end: 270
       start: 269
@@ -2075,9 +2075,12 @@ Grundsatz:
     - end: 185
       start: 181
     - start: 188
+    - end: 25
+      start: 22
   related:
   - Satz vom Grund
   - Axiom
+  - ὑπόθεσις
 Grundstimmung:
   parent: Stimmung
   references:
@@ -2134,6 +2137,11 @@ Haben der Welt:
     GA 29/30:
     - end: 263
       start: 262
+Hamann, Joh. Georg:
+  references:
+    SvG:
+    - start: 13
+  type: p
 Hausfreund:
   references:
     HF:
@@ -2407,6 +2415,10 @@ Ich:
     - start: 84
     - start: 305
     - start: 302
+Identität:
+  references:
+    SvG:
+    - start: 11
 Illustrierte Zeitung:
   references:
     HF:
@@ -2724,6 +2736,9 @@ Leibniz, Gottfried Wilhelm:
     - start: 176
     - start: 182
     - start: 184
+    - start: 4
+    - start: 18
+    - start: 19
     WD:
     - start: 278
     - start: 279
@@ -2881,6 +2896,8 @@ Metaphysica:
   references:
     EM:
     - start: 18
+    SvG:
+    - start: 19
     WBPh:
     - start: 282
     - end: 285
@@ -3104,6 +3121,8 @@ Natur:
       start: 38
     - end: 47
       start: 46
+    GA 94:
+    - start: 49
     HF:
     - end: 146
       start: 144
@@ -3238,6 +3257,9 @@ Novalis:
     - end: 12
       start: 10
     - start: 33
+    SvG:
+    - start: 19
+    - start: 20
   type: p
 Oberschwaben:
   references:
@@ -3749,23 +3771,45 @@ Sapphos:
     EM:
     - start: 107
   type: p
+Satz der Identität:
+  references:
+    SvG:
+    - start: 10
+    - start: 11
+Satz des Unterschiedes:
+  references:
+    SvG:
+    - start: 10
+  related:
+  - Satz der Identität
+Satz des Widerspruchs:
+  references:
+    SvG:
+    - start: 10
+  related:
+  - Satz der Identität
+  - Satz des Unterschiedes
 Satz vom Grund:
   references:
     SvG:
-    - end: 173
-      start: 171
-    - start: 175
-    - start: 177
-    - start: 178
-    - start: 183
-    - start: 184
-    - start: 187
-    - start: 188
-    - start: 153
-    - start: 156
-    - start: 158
-    - start: 160
-    - start: 168
+    - whole: true
+  related:
+  - Satz der Identität
+  - Satz des Unterschiedes
+  - Satz des Widerspruchs
+  - Satz vom augeschlossenen Dritten
+Satz vom Widerspruch:
+  references:
+    SvG:
+    - start: 23
+Satz vom augeschlossenen Dritten:
+  references:
+    SvG:
+    - start: 10
+  related:
+  - Satz der Identität
+  - Satz des Unterschiedes
+  - Satz des Widerspruchs
 Schatzkästlein des rheinischen Hausfreundes:
   author: Hebel, Johann Peter
   references:
@@ -4732,6 +4776,7 @@ Vorstellen:
     - start: 188
     - start: 156
     - start: 162
+    - start: 3
 Wachsen:
   references:
     WBPh:
@@ -5323,6 +5368,10 @@ formale Anzeige:
       suffix: ff
     - start: 141
       suffix: f
+fundamentum inconcussum:
+  references:
+    SvG:
+    - start: 18
 ganz Andere:
   references:
     GA 29/30:
@@ -5441,6 +5490,11 @@ predigen:
   references:
     HF:
     - start: 143
+principium:
+  references:
+    SvG:
+    - start: 22
+    - start: 24
 principium magnum:
   references:
     SvG:
@@ -5460,6 +5514,8 @@ principium rationis:
     - start: 176
     - start: 177
     - start: 188
+    - start: 21
+    - start: 23
   related:
   - Satz vom Grund
 principium reddendae rationis:
@@ -6293,6 +6349,12 @@ wesentliche Möglichkeit des Seins:
     - start: 299
   related:
   - Entbergen
+ἀξίωμα:
+  references:
+    SvG:
+    - start: 22
+    - start: 23
+    - start: 24
 ἀπόφασις:
   references:
     GA 19:
@@ -6455,9 +6517,16 @@ wesentliche Möglichkeit des Seins:
       suffix: f
 ὑποκείμενον:
   references:
+    SvG:
+    - start: 12
     WBPh:
     - start: 258
       suffix: f
+ὑπόθεσις:
+  references:
+    SvG:
+    - start: 24
+    - start: 25
 ὕλη:
   references:
     GA 18:

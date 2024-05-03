@@ -1,0 +1,1 @@
+> Der Satz von Hamann lautet: 'Deutlichkeit ist eine gehörige Verteilung von Licht und Schatten.' [[Goethe|Goethe, Johann Wolfgang von]] fügt kurz und bündig hinzu: 'Hamann – Hört!' [@SvG, p. 13]

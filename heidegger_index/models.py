@@ -1,10 +1,12 @@
 import requests
 
 from django.db import models
+from django.db.models import Q
 from django.conf import settings
 from django_extensions.db.fields import AutoSlugField
 from django.core.validators import URLValidator
 from django.utils.safestring import mark_safe
+from django.utils.translation import gettext as _
 
 from heidegger_index.constants import LemmaType, RefType, MetadataType
 from heidegger_index.passage import get_perseus_passage
@@ -176,7 +178,8 @@ class PageReference(models.Model):
     type = models.CharField(max_length=1, choices=RefType.list_choices(), null=True)
 
     # Datafied page reference
-    start = models.IntegerField()
+    whole = models.BooleanField(default=False)
+    start = models.IntegerField(null=True)
     end = models.IntegerField(null=True)
     suffix = models.CharField(
         max_length=2,
@@ -185,7 +188,9 @@ class PageReference(models.Model):
     )
 
     def __str__(self):
-        if self.end:
+        if self.whole:
+            return _("Heel het werk")
+        elif self.end:
             return f"{self.start}–{self.end}"
         elif self.suffix:
             return f"{self.start}{self.suffix}"
@@ -199,7 +204,13 @@ class PageReference(models.Model):
         return False
 
     class Meta:
-        ordering = ["lemma", "work", "start", "end", "suffix"]
+        ordering = ["whole", "lemma", "work", "start", "end", "suffix"]
+        constraints = [
+            models.CheckConstraint(
+                check=Q(whole=False, start__isnull=False) | Q(whole=True),
+                name="Start must be defined when lemma doesn't refer to the whole work",
+            )
+        ]
 
 
 # Stored aggregates

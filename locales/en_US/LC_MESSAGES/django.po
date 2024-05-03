@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-09 11:35+0000\n"
+"POT-Creation-Date: 2024-02-09 10:03+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: André van Delft\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,6 +16,10 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+#: heidegger_index/models.py:192
+msgid "Heel het werk"
+msgstr "Whole work"
 
 #: heidegger_index/templates/_site_base.html:8
 #: heidegger_index/templates/lemma_list.html:6
@@ -26,13 +30,13 @@ msgstr "Heidegger index"
 msgid "Bibliografie"
 msgstr "Bibliography"
 
+#: heidegger_index/templates/components/_perseus_content.html:5
+msgid "Bron"
+msgstr "Source"
+
 #: heidegger_index/templates/components/ref_list/_group_by_work.html:12
 msgid "Referentie nog niet toegevoegd"
 msgstr "Reference not yet added"
-
-#: heidegger_index/templates/lemma_detail.html:25
-msgid "Bron"
-msgstr "Source"
 
 #: heidegger_index/templates/lemma_detail.html:46
 #, python-format
@@ -60,13 +64,13 @@ msgstr "Read full text of %(lemma)s on <cite>Perseus Digital Library</cite>"
 msgid "Lees werken van %(lemma)s op de <cite>Perseus Digital Library</cite>"
 msgstr "Read works of %(lemma)s on <cite>Perseus Digital Library</cite>"
 
-#: heidegger_index/templates/lemma_detail.html:86
+#: heidegger_index/templates/lemma_detail.html:87
 #, fuzzy, python-format
 #| msgid "Werken van %(author_short)s"
 msgid "Lees werken van %(author_short)s op <cite>Zeno.org</cite>"
 msgstr "Read works from %(author_short)s on <cite>Zeno.org</cite>"
 
-#: heidegger_index/templates/lemma_detail.html:88
+#: heidegger_index/templates/lemma_detail.html:89
 #, fuzzy
 msgid "Lees de volledige tekst op <cite>Zeno.org</cite>"
 msgstr "Read full text on <cite>Zeno.org</cite>"
