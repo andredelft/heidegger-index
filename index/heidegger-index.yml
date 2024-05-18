@@ -684,6 +684,8 @@ DK 12B1:
   references:
     EM:
     - start: 175
+    GA 45:
+    - start: 136
   related:
   - δίκη
   type: w
@@ -1078,6 +1080,11 @@ DK 28B2:
       suffix: f
   related:
   - ἀλήθεια
+  type: w
+DK 28B3:
+  author: Parmenides
+  metadata:
+    urn: urn:cts:greekLit:tlg1562.tlg002:5
   type: w
 DK 28B6:
   author: Parmenides
@@ -1641,6 +1648,11 @@ Erschlossenheit:
     SZ:
     - end: 137
       start: 135
+Erstaunen:
+  references:
+    GA 45:
+    - end: 180
+      start: 177
 Eschatologie des Seins:
   references:
     SA:
@@ -2294,6 +2306,8 @@ Heraklit:
     EM:
     - start: 66
     - start: 143
+    GA 45:
+    - start: 178
     SvG:
     - start: 161
     - start: 163
@@ -3401,6 +3415,8 @@ Parmenides:
     EM:
     - start: 103
     - start: 134
+    GA 45:
+    - start: 178
   type: p
 Pascal, Blaise:
   references:
@@ -5978,6 +5994,8 @@ wesentliche Möglichkeit des Seins:
     - end: 42
       start: 40
     - start: 44
+    GA 45:
+    - start: 139
     GA 55:
     - start: 40
     GA 63:
@@ -6041,6 +6059,12 @@ wesentliche Möglichkeit des Seins:
   references:
     WBPh:
     - start: 269
+νοεῖν:
+  references:
+    GA 45:
+    - start: 139
+  related:
+  - DK 28B3
 νόμος:
   references:
     EM:
@@ -6290,6 +6314,15 @@ wesentliche Möglichkeit des Seins:
     GA 29/30:
     - end: 52
       start: 38
+    GA 45:
+    - start: 97
+    - start: 129
+      suffix: ff
+    - start: 136
+      suffix: f
+    - start: 139
+    - start: 178
+      suffix: ff
     GA 55:
     - end: 90
       start: 87
@@ -6370,6 +6403,8 @@ wesentliche Möglichkeit des Seins:
     GA 29/30:
     - end: 44
       start: 43
+    GA 45:
+    - start: 139
     GA 55:
     - start: 103
     - start: 17

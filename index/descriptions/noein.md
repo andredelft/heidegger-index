@@ -1,0 +1,1 @@
+> Das Vernehmen, νοεῖν, ist das Waltenlassen der [[φύσις]] oder, wie wir auch sagen, das Seinlassen des Seienden in dem, was er ist. Der Mensch ist der Vernehmer des Seienden, der Verwahrer seiner Seiendheit und d. h. seiner Wahrheit. [@GA 45, p. 139]
