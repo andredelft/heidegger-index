@@ -50,24 +50,11 @@ additionalProperties:
               enum: [f, ff]
             whole:
               type: boolean
-          allOf:
-            - if:
-                anyOf:
-                  - properties:
-                      end:
-                        type: integer
-                  - properties:
-                      suffix:
-                        type: string
-                  - properties:
-                      type:
-                        const: r
-                  - not:
-                      properties:
-                        whole:
-                          const: True
-              then:
-                required: [start]
+              const: True
+          dependentRequired:
+            end: ["start"]
+            suffix: ["start"]
+            type: ["start"]
           additionalProperties: False
     related:
       type: array
