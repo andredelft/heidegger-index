@@ -2054,7 +2054,7 @@ Großrechenanlage:
 Grund:
   references:
     SvG:
-    - whole: true
+    - whole: True
     WD:
     - end: 270
       start: 269
@@ -3828,7 +3828,7 @@ Satz des Widerspruchs:
 Satz vom Grund:
   references:
     SvG:
-    - whole: true
+    - whole: True
   related:
   - Satz der Identität
   - Satz des Unterschiedes
