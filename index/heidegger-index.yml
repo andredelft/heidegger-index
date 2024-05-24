@@ -215,7 +215,7 @@ Apollon:
     - start: 18
     - start: 25
   related:
-  - DK 22B93
+  - DK 22 B93
   type: p
 Aristoteles:
   metadata:
@@ -679,7 +679,7 @@ Christus:
   references:
     WD:
     - start: 269
-DK 12B1:
+DK 12 B1:
   author: Anaximander
   references:
     EM:
@@ -689,7 +689,7 @@ DK 12B1:
   related:
   - δίκη
   type: w
-DK 22A1:
+DK 22 A1:
   author: Diogenes Laertius
   references:
     GA 55:
@@ -700,7 +700,7 @@ DK 22A1:
   related:
   - θαυμάζειν
   type: w
-DK 22A9:
+DK 22 A9:
   author: Aristoteles
   references:
     GA 55:
@@ -710,7 +710,7 @@ DK 22A9:
   related:
   - Heraklit
   type: w
-DK 22B1:
+DK 22 B1:
   author: Heraklit
   metadata:
     urn: urn:cts:greekLit:tlg0626.tlg002:1
@@ -726,7 +726,7 @@ DK 22B1:
   related:
   - λόγος
   type: w
-DK 22B104:
+DK 22 B104:
   author: Heraklit
   metadata:
     urn: urn:cts:greekLit:tlg0626.tlg002:104
@@ -734,7 +734,7 @@ DK 22B104:
     GA 55:
     - start: 150
   type: w
-DK 22B108:
+DK 22 B108:
   author: Heraklit
   metadata:
     urn: urn:cts:greekLit:tlg0626.tlg002:108
@@ -744,7 +744,7 @@ DK 22B108:
     GA 55:
     - start: 150
   type: w
-DK 22B112:
+DK 22 B112:
   author: Heraklit
   metadata:
     urn: urn:cts:greekLit:tlg0626.tlg002:112
@@ -753,13 +753,13 @@ DK 22B112:
     - start: 41
       suffix: f
   type: w
-DK 22B121:
+DK 22 B121:
   author: Heraklit
   references:
     GA 55:
     - start: 12
   type: w
-DK 22B123:
+DK 22 B123:
   author: Heraklit
   metadata:
     urn: urn:cts:greekLit:tlg0626.tlg002:123
@@ -778,7 +778,7 @@ DK 22B123:
   related:
   - φύσις
   type: w
-DK 22B124:
+DK 22 B124:
   author: Heraklit
   metadata:
     urn: urn:cts:greekLit:tlg0626.tlg002:124
@@ -786,7 +786,7 @@ DK 22B124:
     EM:
     - start: 142
   type: w
-DK 22B13:
+DK 22 B13:
   author: Heraklit
   metadata:
     urn: urn:cts:greekLit:tlg0626.tlg002:13
@@ -794,7 +794,7 @@ DK 22B13:
     GA 55:
     - start: 150
   type: w
-DK 22B16:
+DK 22 B16:
   author: Heraklit
   metadata:
     urn: urn:cts:greekLit:tlg0626.tlg002:16
@@ -804,7 +804,7 @@ DK 22B16:
       start: 44
     - start: 146
   type: w
-DK 22B17:
+DK 22 B17:
   author: Heraklit
   metadata:
     urn: urn:cts:greekLit:tlg0626.tlg002:17
@@ -812,7 +812,7 @@ DK 22B17:
     GA 55:
     - start: 150
   type: w
-DK 22B19:
+DK 22 B19:
   author: Heraklit
   metadata:
     urn: urn:cts:greekLit:tlg0626.tlg002:19
@@ -822,7 +822,7 @@ DK 22B19:
     GA 55:
     - start: 150
   type: w
-DK 22B2:
+DK 22 B2:
   author: Heraklit
   metadata:
     urn: urn:cts:greekLit:tlg0626.tlg002:2
@@ -837,7 +837,7 @@ DK 22B2:
   related:
   - λόγος
   type: w
-DK 22B29:
+DK 22 B29:
   author: Heraklit
   metadata:
     urn: urn:cts:greekLit:tlg0626.tlg002:29
@@ -847,7 +847,7 @@ DK 22B29:
     GA 55:
     - start: 150
   type: w
-DK 22B30:
+DK 22 B30:
   author: Heraklit
   metadata:
     urn: urn:cts:greekLit:tlg0626.tlg002:30
@@ -861,7 +861,7 @@ DK 22B30:
   related:
   - ἀείζωον
   type: w
-DK 22B32:
+DK 22 B32:
   author: Heraklit
   metadata:
     urn: urn:cts:greekLit:tlg0626.tlg002:32
@@ -869,7 +869,7 @@ DK 22B32:
     GA 55:
     - start: 128
   type: w
-DK 22B34:
+DK 22 B34:
   author: Heraklit
   metadata:
     urn: urn:cts:greekLit:tlg0626.tlg002:34
@@ -879,7 +879,7 @@ DK 22B34:
     GA 55:
     - start: 150
   type: w
-DK 22B35:
+DK 22 B35:
   author: Heraklit
   metadata:
     urn: urn:cts:greekLit:tlg0626.tlg002:35
@@ -887,7 +887,7 @@ DK 22B35:
     GA 55:
     - start: 128
   type: w
-DK 22B37:
+DK 22 B37:
   author: Heraklit
   metadata:
     urn: urn:cts:greekLit:tlg0626.tlg002:37
@@ -895,7 +895,7 @@ DK 22B37:
     GA 55:
     - start: 150
   type: w
-DK 22B40:
+DK 22 B40:
   author: Heraklit
   metadata:
     urn: urn:cts:greekLit:tlg0626.tlg002:40
@@ -903,7 +903,7 @@ DK 22B40:
     GA 55:
     - start: 150
   type: w
-DK 22B50:
+DK 22 B50:
   author: Heraklit
   metadata:
     urn: urn:cts:greekLit:tlg0626.tlg002:50
@@ -911,7 +911,7 @@ DK 22B50:
     EM:
     - start: 137
   type: w
-DK 22B51:
+DK 22 B51:
   author: Heraklit
   metadata:
     urn: urn:cts:greekLit:tlg0626.tlg002:51
@@ -922,7 +922,7 @@ DK 22B51:
     - start: 148
     - start: 147
   type: w
-DK 22B52:
+DK 22 B52:
   author: Heraklit
   metadata:
     urn: urn:cts:greekLit:tlg0626.tlg002:52
@@ -936,7 +936,7 @@ DK 22B52:
   - αἰών
   - Geschick
   type: w
-DK 22B53:
+DK 22 B53:
   author: Heraklit
   metadata:
     urn: urn:cts:greekLit:tlg0626.tlg002:53
@@ -947,7 +947,7 @@ DK 22B53:
   related:
   - πόλεμος
   type: w
-DK 22B54:
+DK 22 B54:
   author: Heraklit
   metadata:
     urn: urn:cts:greekLit:tlg0626.tlg002:54
@@ -959,7 +959,7 @@ DK 22B54:
     GA 55:
     - start: 142
   type: w
-DK 22B7:
+DK 22 B7:
   author: Heraklit
   metadata:
     urn: urn:cts:greekLit:tlg0626.tlg002:7
@@ -967,7 +967,7 @@ DK 22B7:
     EM:
     - start: 141
   type: w
-DK 22B72:
+DK 22 B72:
   author: Heraklit
   metadata:
     urn: urn:cts:greekLit:tlg0626.tlg002:72
@@ -978,7 +978,7 @@ DK 22B72:
     GA 55:
     - start: 150
   type: w
-DK 22B73:
+DK 22 B73:
   author: Heraklit
   metadata:
     urn: urn:cts:greekLit:tlg0626.tlg002:73
@@ -986,7 +986,7 @@ DK 22B73:
     EM:
     - start: 137
   type: w
-DK 22B8:
+DK 22 B8:
   author: Heraklit
   metadata:
     urn: urn:cts:greekLit:tlg0626.tlg002:8
@@ -996,7 +996,7 @@ DK 22B8:
     GA 55:
     - start: 145
   type: w
-DK 22B80:
+DK 22 B80:
   author: Heraklit
   metadata:
     urn: urn:cts:greekLit:tlg0626.tlg002:80
@@ -1006,7 +1006,7 @@ DK 22B80:
   related:
   - δίκη
   type: w
-DK 22B87:
+DK 22 B87:
   author: Heraklit
   metadata:
     urn: urn:cts:greekLit:tlg0626.tlg002:87
@@ -1014,7 +1014,7 @@ DK 22B87:
     GA 55:
     - start: 150
   type: w
-DK 22B9:
+DK 22 B9:
   author: Heraklit
   metadata:
     urn: urn:cts:greekLit:tlg0626.tlg002:9
@@ -1025,7 +1025,7 @@ DK 22B9:
     - start: 150
     - start: 151
   type: w
-DK 22B93:
+DK 22 B93:
   author: Heraklit
   metadata:
     urn: urn:cts:greekLit:tlg0626.tlg002:93
@@ -1037,7 +1037,7 @@ DK 22B93:
     WBPh:
     - start: 277
   type: w
-DK 22B97:
+DK 22 B97:
   author: Heraklit
   metadata:
     urn: urn:cts:greekLit:tlg0626.tlg002:97
@@ -1047,22 +1047,23 @@ DK 22B97:
     GA 55:
     - start: 150
   type: w
-DK 28B1:
+DK 28 B1:
   author: Parmenides
   metadata:
     urn: urn:cts:greekLit:tlg1562.tlg002:1
   related:
   - δόξα
   - δίκη
+  - ἀλήθεια
   type: w
-DK 28B1 28–32:
+DK 28 B1 28–32:
   author: Parmenides
-  parent: DK 28B1
+  parent: DK 28 B1
   references:
     EM:
     - start: 120
   type: w
-DK 28B13:
+DK 28 B13:
   author: Parmenides
   metadata:
     urn: urn:cts:greekLit:tlg1562.tlg002:13
@@ -1070,7 +1071,7 @@ DK 28B13:
     GA 55:
     - start: 132
   type: w
-DK 28B2:
+DK 28 B2:
   author: Parmenides
   metadata:
     urn: urn:cts:greekLit:tlg1562.tlg002:2
@@ -1081,12 +1082,12 @@ DK 28B2:
   related:
   - ἀλήθεια
   type: w
-DK 28B3:
+DK 28 B3:
   author: Parmenides
   metadata:
     urn: urn:cts:greekLit:tlg1562.tlg002:5
   type: w
-DK 28B6:
+DK 28 B6:
   author: Parmenides
   metadata:
     urn: urn:cts:greekLit:tlg1562.tlg002:6
@@ -1097,7 +1098,7 @@ DK 28B6:
   related:
   - λέγειν
   type: w
-DK 28B8:
+DK 28 B8:
   author: Parmenides
   metadata:
     urn: urn:cts:greekLit:tlg1562.tlg002:7
@@ -2054,7 +2055,7 @@ Großrechenanlage:
 Grund:
   references:
     SvG:
-    - whole: True
+    - whole: true
     WD:
     - end: 270
       start: 269
@@ -3828,7 +3829,7 @@ Satz des Widerspruchs:
 Satz vom Grund:
   references:
     SvG:
-    - whole: True
+    - whole: true
   related:
   - Satz der Identität
   - Satz des Unterschiedes
@@ -6064,7 +6065,7 @@ wesentliche Möglichkeit des Seins:
     GA 45:
     - start: 139
   related:
-  - DK 28B3
+  - DK 28 B3
 νόμος:
   references:
     EM:
@@ -6106,6 +6107,10 @@ wesentliche Möglichkeit des Seins:
   references:
     WBPh:
     - start: 288
+περὶ φύσεως:
+  references:
+    GA 54:
+    - start: 207
 ποίησις:
   references:
     EM:
