@@ -45,6 +45,17 @@ Adversus mathematicos VII, 16:
     GA 29/30:
     - start: 55
   type: w
+Aias:
+  author: Sophokles
+  type: w
+Aias, v. 646f.:
+  parent: Aias
+  references:
+    GA 54:
+    - start: 209
+  related:
+  - κρύπτεσθαι
+  - φύειν
 Alemannische Gedichte:
   author: Hebel, Johann Peter
   metadata:
@@ -777,6 +788,7 @@ DK 22 B123:
     - start: 298
   related:
   - φύσις
+  - κρύπτεσθαι
   type: w
 DK 22 B124:
   author: Heraklit
@@ -1056,6 +1068,12 @@ DK 28 B1:
   - δίκη
   - ἀλήθεια
   type: w
+DK 28 B1 22-32:
+  references:
+    GA 54:
+    - start: 6
+    - start: 13
+      suffix: f
 DK 28 B1 28–32:
   author: Parmenides
   parent: DK 28 B1
@@ -1086,6 +1104,9 @@ DK 28 B3:
   author: Parmenides
   metadata:
     urn: urn:cts:greekLit:tlg1562.tlg002:5
+  references:
+    GA 7:
+    - start: 237
   type: w
 DK 28 B6:
   author: Parmenides
@@ -1106,6 +1127,10 @@ DK 28 B8:
     EM:
     - start: 103
   type: w
+DK 28 B8 34-41:
+  references:
+    GA 7:
+    - start: 237
 Da-sein:
   parent: Dasein
   references:
@@ -5921,6 +5946,10 @@ wesentliche Möglichkeit des Seins:
   references:
     WBPh:
     - start: 262
+κρύπτεσθαι:
+  references:
+    GA 54:
+    - start: 209
 κίνησις:
   references:
     WBPh:
@@ -6262,6 +6291,8 @@ wesentliche Möglichkeit des Seins:
     - start: 108
     GA 29/30:
     - start: 38
+    GA 54:
+    - start: 209
 φύσει ὄντα:
   parent: φύσις
   references:
