@@ -1105,6 +1105,9 @@ DK 28 B3:
   metadata:
     urn: urn:cts:greekLit:tlg1562.tlg002:5
   references:
+    GA 40:
+    - start: 145
+      suffix: ff
     GA 7:
     - start: 237
   type: w
@@ -1127,6 +1130,10 @@ DK 28 B8:
     EM:
     - start: 103
   type: w
+DK 28 B8 34:
+  references:
+    GA 40:
+    - start: 147
 DK 28 B8 34-41:
   references:
     GA 7:
