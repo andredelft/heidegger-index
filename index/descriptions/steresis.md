@@ -1,3 +1,3 @@
 > Στέρησις als Abwesung ist nicht einfach Abwesenheit, sondern _Abwesung_, diejenige nämlich, in der gerade _die Abwesung_ – nicht etwa das Abwesende – anwest. Die στέρησις ist [[εἶδος]], aber εἶδος πος – ein irgendwie geartetes Aussehen und Anwesen. Wir Heutigen sind allzu geneigt, dgl. wie die abwesende Anwesung in ein leichtfertiges, dialektisches Begriffsspiel aufzulösen, statt ihr Erstaunliches festzuhalten; denn in der στέρησις verhüllt sich das Wesen der φύσις [@WBPh, p. 295]
 
-Στέρησις bij Aristoteles: [[Phys|Physica]]. Α 318b 16f., Β 193 b 20, [[Met|Metaphysica]]. Δ 22, 1022b 22ff. Zie ook [@WBPh, p. 292-295].
+Στέρησις bij Aristoteles: [[Physica|Phys]]. Α 318b 16f., Β 193 b 20, [[Metaphysica|Met]]. Δ 22, 1022b 22ff. Zie ook [@WBPh, p. 292-295].

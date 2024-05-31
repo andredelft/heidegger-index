@@ -25,7 +25,7 @@ class LemmaLinkInlineProcessor(InlineProcessor):
         display_value = m.group(1)
         lemma = m.group(1)
         if "|" in lemma:
-            display_value, _, lemma = lemma.rpartition("|")
+            lemma, _, display_value = lemma.rpartition("|")
 
         try:
             lemma_obj = Lemma.objects.get(sort_key=gen_sort_key(lemma))
