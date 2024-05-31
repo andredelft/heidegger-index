@@ -2,6 +2,7 @@ $theme-color: #f72b07;
 
 @import "theme";
 
+@import "./mixins";
 @import "./action-menu";
 @import "./bibliography";
 @import "./group-by";

@@ -1,0 +1,16 @@
+@mixin icon-indent {
+  &[class^="icon-"],
+  &[class*=" icon-"] {
+    flex-direction: column;
+    align-items: flex-start;
+
+    @include breakpoint(lg) {
+      margin-left: -1.2em; // Icon size (1em) + icon gutter (0.2em)
+      flex-direction: row;
+    }
+
+    &::before {
+      color: $slate-400;
+    }
+  }
+}
