@@ -1,0 +1,1 @@
+> [W]ir wissen zu viel und glauben zu eilig, um in einer recht erfahrenen Fragen heimisch werden zu künnen. Dazu braucht es das Vermögen, vor dem Einfachen zu erstaunen und dieses Erstaunen als Wohnsitz anzunehmen. [@VA, p. 266]

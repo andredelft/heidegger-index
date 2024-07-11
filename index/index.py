@@ -44,7 +44,7 @@ def add_ref(
 
     # Validation: ref
     m = REF_REGEX.search(str(ref).strip())
-    if not m and ref != "whole":
+    if not m:
         raise click.BadParameter(f"Reference '{ref}' is not recognized")
 
     if betacode:

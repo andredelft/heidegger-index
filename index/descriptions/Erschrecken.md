@@ -1,0 +1,1 @@
+> Im *[[Erstaunen|Er-staunen]]*, der Grundstimmung des Ersten Anfangs, kommt das Seiende erstmals zum Stehen in seine Gestalt. Im *Erschrecken*, der Grundstimmung des anderen Anfangs, enthüllt sich hinter aller Fortschrittlichkeit und Beherrschung des Seienden die dunkle Leere der Ziellosigkeit und das Ausweichen vor den ersten und letzten Entscheidungen. [@GA 45, p. 197]

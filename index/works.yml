@@ -276,6 +276,46 @@ GA 55:
   publisher-place: Frankfurt am Main
   title: Heraklit
   type: book
+GA 45:
+  title: Grundfragen der Philosophie. Ausgewählte 'Probleme' der 'Logik'
+  title-short: Grundfragen der Philosophie
+  author:
+    - family: Heidegger
+      given: Martin
+  citation-key: heideggerGA45
+  collection-number: band 45
+  collection-title: Martin Heidegger Gesamtausgabe
+  editor:
+    - family: von Hermann
+      given: Friedrich-Wilhelm
+  event-place: Frankfurt am Main
+  issued:
+    date-parts:
+    - - 1984
+  language: ger
+  publisher: Vittorio Klostermann
+  publisher-place: Frankfurt am Main
+  type: book
+GA 65:
+  title: Beiträge zur Philosophie (Vom Ereignis)
+  title-short: Beiträge
+  author:
+    - family: Heidegger
+      given: Martin
+  citation-key: heideggerGA65
+  collection-number: band 65
+  collection-title: Martin Heidegger Gesamtausgabe
+  editor:
+    - family: von Hermann
+      given: Friedrich-Wilhelm
+  event-place: Frankfurt am Main
+  issued:
+    date-parts:
+    - - 1989
+  language: ger
+  publisher: Vittorio Klostermann
+  publisher-place: Frankfurt am Main
+  type: book
 JPH G:
   index-status: complete
   author:
