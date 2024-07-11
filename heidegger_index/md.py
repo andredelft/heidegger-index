@@ -7,7 +7,7 @@ from django.urls import reverse
 from django.conf import settings
 
 from heidegger_index.models import Lemma, Work
-from heidegger_index.utils import gen_sort_key
+from heidegger_index.utils import gen_lemma_sort_key
 
 
 def convert_md(content):
@@ -28,7 +28,7 @@ class LemmaLinkInlineProcessor(InlineProcessor):
             lemma, _, display_value = lemma.rpartition("|")
 
         try:
-            lemma_obj = Lemma.objects.get(sort_key=gen_sort_key(lemma))
+            lemma_obj = Lemma.objects.get(sort_key=gen_lemma_sort_key(lemma))
         except Lemma.DoesNotExist:
             el = etree.Element("span")
             print(f"Markdown conversion: link to {lemma} not found")

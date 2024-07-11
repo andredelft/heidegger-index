@@ -11,7 +11,8 @@ from django.utils.translation import gettext as _
 from heidegger_index.constants import LemmaType, RefType, MetadataType
 from heidegger_index.passage import get_perseus_passage
 from heidegger_index.utils import (
-    gen_sort_key,
+    gen_work_sort_key,
+    gen_lemma_sort_key,
     slugify,
     contains_page_range,
 )
@@ -23,6 +24,7 @@ class Work(models.Model):
     csl_json = models.JSONField()
     reference = models.CharField(max_length=200, null=True)
     slug = AutoSlugField(populate_from="key")
+    sort_key = models.CharField(max_length=100)
     parent = models.ForeignKey(
         "self", on_delete=models.SET_NULL, null=True, related_name="children"
     )
@@ -63,8 +65,17 @@ class Work(models.Model):
 
         super().save(*args, **kwargs)
 
+    def create_sort_key(self):
+        self.sort_key = gen_work_sort_key(self.key)
+
+    def save(self, *args, **kwargs):
+        if not self.sort_key:
+            self.create_sort_key()
+
+        super().save(*args, **kwargs)
+
     class Meta:
-        ordering = ["key"]
+        ordering = ["sort_key"]
 
 
 class LemmaManager(models.Manager):
@@ -110,7 +121,7 @@ class Lemma(models.Model):
         validators=[validate_zeno],
     )
 
-    sort_key = models.CharField(max_length=100, null=True, unique=True)
+    sort_key = models.CharField(max_length=100)
     first_letter = models.CharField(max_length=1, null=True)
     slug = AutoSlugField(populate_from="value", slugify_function=slugify)
 
@@ -128,7 +139,7 @@ class Lemma(models.Model):
         return self.value
 
     def create_sort_key(self):
-        self.sort_key = gen_sort_key(self.value)
+        self.sort_key = gen_lemma_sort_key(self.value)
         first_letter = self.sort_key[0].upper() if self.sort_key else ""
         if ord("0") <= ord(first_letter) <= ord("9"):
             first_letter = "#"

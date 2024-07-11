@@ -8,7 +8,9 @@ PREFIXES = ["der", "die", "das", "den"]
 
 PREFIX_FILTER = re.compile(rf'^(?:{"|".join(PREFIXES)})\s+')
 
-REF_REGEX = re.compile(r"^(?P<start>\d+)(?:-(?P<end>\d+)|(?P<suffix>f{1,2})\.?)?$")
+REF_REGEX = re.compile(
+    r"^(?:whole|(?P<start>\d+)(?:-(?P<end>\d+)|(?P<suffix>f{1,2})\.?)?)$"
+)
 
 # This is the NUMBER FORM unicode block
 NUMERIC_UNICODE_VALUES = {
@@ -85,38 +87,43 @@ def convert_numeric_unicode(value: str) -> str:
     return new_value
 
 
-def gen_sort_key(value: str) -> str:
+def gen_work_sort_key(key: str) -> str:
+    # Strip and add a leading zero to single digits (GA 5 -> GA 05)
+    return re.sub("\d+", lambda m: f"{m.group():0>2}", key.strip())
+
+
+def gen_lemma_sort_key(key: str) -> str:
     # Strip surrounding whitespaces
-    value = value.strip()
+    sort_key = key.strip()
     # Convert numeric unicode to value
-    value = convert_numeric_unicode(value)
+    sort_key = convert_numeric_unicode(sort_key)
     # Normalize unicode
-    value = unidecode(value)
+    sort_key = unidecode(sort_key)
     # Convert to lowercase
-    value = value.lower()
+    sort_key = sort_key.lower()
     # Filter some prefixes
-    value, n = PREFIX_FILTER.subn("", value)
+    sort_key, n = PREFIX_FILTER.subn("", sort_key)
     while n:
-        value, n = PREFIX_FILTER.subn("", value)
+        sort_key, n = PREFIX_FILTER.subn("", sort_key)
     # Add leading zero's to numbers to improve number sorting
-    value = re.sub("\d+", lambda m: f"{m.group():0>5}", value)
-    return value
+    sort_key = re.sub("\d+", lambda m: f"{m.group():0>5}", sort_key)
+    return sort_key
 
 
 def match_lemmata(search_term, index, max_l_dist=2, include_search_term=True):
 
-    key_to_lemma = {gen_sort_key(lemma): lemma for lemma in index.keys()}
+    key_to_lemma = {gen_lemma_sort_key(lemma): lemma for lemma in index.keys()}
     keys = key_to_lemma.keys()
 
     if not include_search_term:
         # Remove subject lemma from list
-        keys = [k for k in keys if k != gen_sort_key(search_term)]
+        keys = [k for k in keys if k != gen_lemma_sort_key(search_term)]
 
     matches = [
         (
             key_to_lemma[key],
             find_near_matches(
-                gen_sort_key(search_term),
+                gen_lemma_sort_key(search_term),
                 key,
                 max_l_dist=max_l_dist,
             ),

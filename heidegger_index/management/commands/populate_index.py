@@ -1,4 +1,3 @@
-from typing import List
 from requests import HTTPError
 import yaml
 from tqdm import tqdm
@@ -9,7 +8,7 @@ from django.core.management.base import BaseCommand
 from django.conf import settings
 
 from heidegger_index.models import Work, Lemma, PageReference
-from heidegger_index.utils import gen_sort_key
+from heidegger_index.utils import gen_lemma_sort_key
 from heidegger_index.md import convert_md
 
 
@@ -63,7 +62,7 @@ class Command(BaseCommand):
             lemma = Path(fpath).stem
             with open(fpath) as f:
                 md_content = f.read()
-            description_by_sort_key[gen_sort_key(lemma)] = md_content
+            description_by_sort_key[gen_lemma_sort_key(lemma)] = md_content
 
         # Load index data
         with open(settings.INDEX_FILE) as f:
@@ -97,9 +96,11 @@ class Command(BaseCommand):
             work_by_key[work_key] = work_obj
 
             # Descriptions
-            description = description_by_sort_key.get(gen_sort_key(work_key))
+            description = description_by_sort_key.get(gen_lemma_sort_key(work_key))
             if description:
                 work_obj.description = convert_md(description)
+
+            work_obj.create_sort_key()
 
             work_objs.append(work_obj)
 
