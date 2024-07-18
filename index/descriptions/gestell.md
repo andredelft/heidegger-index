@@ -1,0 +1,1 @@
+> 'Gestell' dagegen ist ein Name aus dem [[Geschick]] des Seins, das als [[Φύσις]] beginnt und [[Θέσις]] ruft. [@GA 98, p. 136]

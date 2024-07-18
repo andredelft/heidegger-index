@@ -1073,11 +1073,13 @@ DK 28 B1:
   - ἀλήθεια
   type: w
 DK 28 B1 22-32:
+  parent: DK 28 B1
   references:
     GA 54:
     - start: 6
     - start: 13
       suffix: f
+  type: w
 DK 28 B1 28–32:
   author: Parmenides
   parent: DK 28 B1
@@ -1092,6 +1094,8 @@ DK 28 B13:
   references:
     GA 55:
     - start: 132
+    GA 98:
+    - start: 218
   type: w
 DK 28 B2:
   author: Parmenides
@@ -1112,6 +1116,10 @@ DK 28 B3:
     GA 40:
     - start: 145
       suffix: ff
+    GA 98:
+    - start: 169
+    GA 99:
+    - start: 12
     VA:
     - start: 237
   type: w
@@ -1135,13 +1143,17 @@ DK 28 B8:
     - start: 103
   type: w
 DK 28 B8 34:
+  parent: DK 28 B8
   references:
     GA 40:
     - start: 147
+  type: w
 DK 28 B8 34-41:
+  parent: DK 28 B8
   references:
     VA:
     - start: 237
+  type: w
 Da-sein:
   parent: Dasein
   references:
@@ -2009,6 +2021,10 @@ Geschick des Seins:
     SvG:
     - start: 153
     - start: 156
+Gestell:
+  references:
+    GA 98:
+    - start: 136
 Gestellung in das Aussehen:
   parent: Aussehen
   references:
@@ -2024,6 +2040,8 @@ Geviert:
     EWI:
     - start: 17
       suffix: ff
+    GA 98:
+    - start: 112
 Geworfenheit:
   references:
     SZ:
@@ -2711,6 +2729,9 @@ Kuinzige:
     GA 16:
     - start: 487
     - start: 737
+    GA 98:
+    - start: 171
+      suffix: f
 Kulturphilosophie:
   references:
     GA 29/30:
@@ -3071,6 +3092,8 @@ Mnemosyne:
   metadata:
     zeno: '20005105110'
   references:
+    GA 98:
+    - start: 400
     WD:
     - start: 270
   type: w
@@ -3183,6 +3206,10 @@ Nachstellen:
   references:
     EWI:
     - start: 68
+    GA 98:
+    - start: 138
+  related:
+  - Gestell
 Natur:
   references:
     EM:
@@ -3415,12 +3442,23 @@ Offenheit für das Geheimnis:
     G:
     - end: 529
       start: 528
+Ol. II:
+  author: Pindar
+  parent: Olympischen Oden
+  references:
+    GA 98:
+    - start: 97
+  related:
+  - φυά
+  type: w
 Ol. X:
   author: Pindar
   parent: Olympischen Oden
   references:
     EM:
     - start: 108
+  related:
+  - φυά
   type: w
 Olympischen Oden:
   author: Pindar
@@ -3476,6 +3514,8 @@ Parmenides:
     - start: 134
     GA 45:
     - start: 178
+    GA 98:
+    - start: 243
   type: p
 Pascal, Blaise:
   references:
@@ -4872,6 +4912,10 @@ Vorlesungen über die Geschichte der Philosophie:
     - start: 28
       suffix: ff
   type: w
+Vorsokratiker:
+  references:
+    GA 98:
+    - start: 232
 Vorstellen:
   references:
     EM:
@@ -5813,6 +5857,10 @@ wesentliche Möglichkeit des Seins:
   references:
     GA 29/30:
     - start: 382
+Überwindung der Metaphysik:
+  references:
+    GA 98:
+    - start: 369
 Φυσικῶν δόξαι:
   author: Theophrast
   references:
@@ -6213,6 +6261,13 @@ wesentliche Möglichkeit des Seins:
   - Herstellen
   - τέχνη
   - Her-vor-bringen
+πρότερον φύσει:
+  parent: φύσις
+  references:
+    GA 65:
+    - start: 222
+    GA 98:
+    - start: 9
 πρᾶγμα:
   references:
     EM:
@@ -6335,6 +6390,8 @@ wesentliche Möglichkeit des Seins:
   references:
     EM:
     - start: 108
+    GA 98:
+    - start: 97
   related:
   - φύσις
   - φύειν
@@ -6587,6 +6644,8 @@ wesentliche Möglichkeit des Seins:
     GA 21:
     - start: 1
     GA 29/30:
+    - start: 49
+    GA 98:
     - start: 49
     TK:
     - start: 12
