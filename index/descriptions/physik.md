@@ -1,0 +1,1 @@
+> *Physik* – je mehr das Instrumentarium der methodischen Naturbeherrschung sich erweitert, um so geringer wird die Einsicht in das, was 'die Natur' ist. [@GA 102, p. 141]

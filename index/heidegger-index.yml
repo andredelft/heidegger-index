@@ -781,6 +781,8 @@ DK 22 B123:
   references:
     EM:
     - start: 122
+    GA 102:
+    - start: 28
     GA 29/30:
     - start: 41
     GA 55:
@@ -970,6 +972,8 @@ DK 22 B54:
   references:
     EM:
     - start: 142
+    GA 101:
+    - start: 89
     GA 29/30:
     - start: 44
     GA 55:
@@ -1113,6 +1117,11 @@ DK 28 B3:
   metadata:
     urn: urn:cts:greekLit:tlg1562.tlg002:5
   references:
+    GA 100:
+    - start: 90
+    - start: 147
+    GA 102:
+    - start: 311
     GA 40:
     - start: 145
       suffix: ff
@@ -1123,6 +1132,10 @@ DK 28 B3:
     VA:
     - start: 237
   type: w
+DK 28 B4:
+  references:
+    GA 102:
+    - start: 312
 DK 28 B6:
   author: Parmenides
   metadata:
@@ -1131,6 +1144,13 @@ DK 28 B6:
     EM:
     - start: 119
       suffix: f
+    GA 102:
+    - start: 276
+    - start: 311
+    - start: 330
+      suffix: f
+    GA 99:
+    - start: 81
   related:
   - λέγειν
   type: w
@@ -1141,6 +1161,8 @@ DK 28 B8:
   references:
     EM:
     - start: 103
+    GA 100:
+    - start: 224
   type: w
 DK 28 B8 34:
   parent: DK 28 B8
@@ -1520,6 +1542,8 @@ Die Wiese:
     zeno: '20005018641'
   parent: Allemannische Gedichte
   references:
+    GA 101:
+    - start: 163
     HF:
     - start: 134
   type: w
@@ -1711,6 +1735,8 @@ Erschrecken:
   - Erstaunen
 Erstaunen:
   references:
+    GA 101:
+    - start: 84
     GA 45:
     - end: 180
       start: 177
@@ -2040,6 +2066,8 @@ Geviert:
     EWI:
     - start: 17
       suffix: ff
+    GA 101:
+    - start: 110
     GA 98:
     - start: 112
 Geworfenheit:
@@ -2532,6 +2560,8 @@ In lieblicher Bläue blühet...:
     EM:
     - start: 114
       suffix: f
+    GA 100:
+    - start: 74
   type: w
 In-der-Welt-sein:
   references:
@@ -2608,6 +2638,13 @@ Jaeger, Werner Wilhelm:
   type: p
 Jenseits von Gut und Böse:
   author: Nietzsche, Friedrich
+  type: w
+Joh. 1:1:
+  references:
+    GA 100:
+    - start: 264
+  related:
+  - λόγος
   type: w
 Johannesevangelium:
   references:
@@ -2726,6 +2763,9 @@ Kuinzige:
   references:
     FW:
     - start: 90
+    GA 101:
+    - start: 28
+      suffix: f
     GA 16:
     - start: 487
     - start: 737
@@ -3687,6 +3727,8 @@ Physik:
   references:
     EM:
     - start: 17
+    GA 100:
+    - start: 281
     GA 21:
     - start: 1
     GA 29/30:
@@ -4715,6 +4757,8 @@ Unheimliches:
     - start: 518
     - start: 525
     - start: 527
+    GA 100:
+    - start: 221
     GA 16:
     - start: 578
     HF:
@@ -4843,10 +4887,20 @@ Verwandlung des Daseins:
     - start: 423
     - start: 428
       suffix: ff
+Verwindung der Metaphysik:
+  references:
+    GA 102:
+    - start: 285
+    - start: 351
 Verwunderung:
   references:
     WiM:
     - start: 121
+Verwüstung:
+  references:
+    GA 102:
+    - start: 319
+    - start: 287
 Vier-Ursachen-Lehre:
   references:
     TK:
@@ -5489,6 +5543,8 @@ dialektische Schein:
 dichterisch wohnet der Mensch auf dieser Erde:
   parent: In lieblicher Bläue blühet...
   references:
+    DWM:
+    - whole: true
     HF:
     - start: 147
 dürftiger Zeit:
@@ -5859,8 +5915,13 @@ wesentliche Möglichkeit des Seins:
     - start: 382
 Überwindung der Metaphysik:
   references:
+    GA 102:
+    - start: 160
+    - start: 285
     GA 98:
     - start: 369
+  related:
+  - Verwindung der Metaphysik
 Φυσικῶν δόξαι:
   author: Theophrast
   references:
@@ -6021,6 +6082,8 @@ wesentliche Möglichkeit des Seins:
   - animal rationale
 θαυμάζειν:
   references:
+    GA 101:
+    - start: 84
     GA 55:
     - start: 12
 θέσις:
@@ -6294,6 +6357,10 @@ wesentliche Möglichkeit des Seins:
   references:
     EM:
     - start: 104
+    GA 100:
+    - start: 64
+    GA 101:
+    - start: 82
   related:
   - Heraklit
 πόλεμος:
