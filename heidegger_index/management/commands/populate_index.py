@@ -130,7 +130,8 @@ class Command(BaseCommand):
             lemma_obj = Lemma(
                 id=i,
                 value=value,
-                type=data.get("type", None),
+                type=data.get("type"),
+                lang=data.get("lang"),
                 **md,
             )
             if perform_external_calls:

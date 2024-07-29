@@ -93,6 +93,7 @@ class Lemma(models.Model):
     related = models.ManyToManyField("self", symmetrical=True)
     type = models.CharField(max_length=1, null=True, choices=LemmaType.list_choices())
     description = models.TextField(null=True)
+    lang = models.CharField(max_length=3, null=True)
 
     urn = models.URLField(
         MetadataType.URN.label,
@@ -159,13 +160,16 @@ class Lemma(models.Model):
 
     @property
     def display(self):
+        classes = ["lemma"]
+
         if self.type:
             lemma_type = LemmaType.get_label(self.type)
-            class_name = f"lemma lemma--{lemma_type}"
-        else:
-            class_name = "lemma"
+            classes.append(f"lemma--{lemma_type}")
 
-        return mark_safe(f'<span class="{class_name}">{self}</span>')
+        if self.lang:
+            classes.append(f"lang-{self.lang}")
+
+        return mark_safe(f'<span class="{" ".join(classes)}">{self}</span>')
 
     @property
     def icon(self):

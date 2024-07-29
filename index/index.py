@@ -9,7 +9,7 @@ from pyCTS import CTS_URN
 
 from heidegger_index.utils import match_lemmata, contains_page_range, REF_REGEX
 from heidegger_index.constants import LemmaType, MetadataType, RefType, RelationType
-from heidegger_index.validators import validate_gnd
+from heidegger_index.validators import validate_gnd, validate_iso639_3_lang
 from heidegger_index.settings import CITEPROC_ENDPOINT, CITEPROC_STYLE
 from django.core.exceptions import ValidationError
 
@@ -24,12 +24,19 @@ REF_INTFIELDS = {"start", "end"}
 
 
 def add_ref(
-    lemma, work, ref, lemma_type=None, ref_type=None, betacode=False, force=False
+    lemma,
+    work,
+    ref,
+    lemma_type=None,
+    ref_type=None,
+    lang=None,
+    betacode=False,
+    force=False,
 ):
     if isinstance(ref, list):
         # Allow ref to be a list, call add_ref for each item and terminate function
         for r in ref:
-            add_ref(lemma, work, r, lemma_type, ref_type, betacode)
+            add_ref(lemma, work, r, lemma_type, ref_type, lang, betacode)
         return
 
     try:
@@ -49,6 +56,7 @@ def add_ref(
 
     if betacode:
         lemma = beta_to_uni(lemma)
+        lang = "grc"
 
     # Open index file
     with open(INDEX_FILE) as f:
@@ -132,6 +140,11 @@ def add_ref(
                 lemma_entry["type"] = lemma_type
 
         lemma_entry["references"] = refs
+
+    # Validation: lang
+    if lang:
+        validate_iso639_3_lang(lang)
+        lemma_entry["lang"] = lang
 
     index[lemma] = lemma_entry
 

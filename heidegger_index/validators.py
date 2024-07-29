@@ -1,5 +1,7 @@
 from django.core.exceptions import ValidationError
 from .constants import MetadataType
+from iso639 import Lang
+from iso639.exceptions import InvalidLanguageValue
 
 import re
 
@@ -56,3 +58,13 @@ def validate_dk(value: int | str):
 
 def validate_zeno(value: str | int):
     validate_simple_regex(value, ZENO_REGEX, MetadataType.ZENO.label)
+
+
+def validate_iso639_3_lang(value: str):
+    try:
+        lang_code = Lang(value)
+    except InvalidLanguageValue as e:
+        raise ValidationError(e.msg)
+    
+    if lang_code.pt3 != value:
+        raise ValidationError(f'"{value}" is not a ISO 639 part 3 language code.')

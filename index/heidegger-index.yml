@@ -5727,6 +5727,7 @@ principium:
     - start: 22
     - start: 24
 principium magnum:
+  lang: lat
   references:
     SvG:
     - start: 171
@@ -5737,6 +5738,7 @@ principium magnum:
   - Satz vom Grund
   - principium rationis
 principium rationis:
+  lang: lat
   references:
     SvG:
     - start: 171
@@ -5750,6 +5752,7 @@ principium rationis:
   related:
   - Satz vom Grund
 principium reddendae rationis:
+  lang: lat
   parent: principium rationis
   references:
     SvG:
@@ -5758,11 +5761,13 @@ principium reddendae rationis:
     - start: 180
       type: r
 principium reddendae rationis sufficientis:
+  lang: lat
   parent: principium rationis
   references:
     SvG:
     - start: 177
 ratio:
+  lang: lat
   references:
     SvG:
     - start: 173
@@ -5803,6 +5808,7 @@ rechnende Denken:
   related:
   - rechnen
 reddendum:
+  lang: lat
   references:
     SvG:
     - start: 173
@@ -5924,11 +5930,13 @@ wesentliche Möglichkeit des Seins:
   - Verwindung der Metaphysik
 Φυσικῶν δόξαι:
   author: Theophrast
+  lang: grc
   references:
     SA:
     - start: 324
   type: w
 αἰτία:
+  lang: grc
   references:
     SvG:
     - start: 165
@@ -5937,15 +5945,18 @@ wesentliche Möglichkeit des Seins:
     WBPh:
     - start: 243
 αἰών:
+  lang: grc
   references:
     SvG:
     - start: 168
     - start: 169
 γεν:
+  lang: grc
   references:
     WBPh:
     - start: 236
 γένεσις:
+  lang: grc
   references:
     WBPh:
     - start: 286
@@ -5955,12 +5966,14 @@ wesentliche Möglichkeit des Seins:
     - start: 295
     - start: 296
 δεινόν:
+  lang: grc
   references:
     EM:
     - start: 159
     GA 94:
     - start: 72
 διαίρεσις:
+  lang: grc
   references:
     GA 29/30:
     - start: 484
@@ -5968,15 +5981,18 @@ wesentliche Möglichkeit des Seins:
     - start: 487
     - start: 490
 δοκεῖ:
+  lang: grc
   references:
     WBPh:
     - start: 270
     - start: 269
 δίκη:
+  lang: grc
   references:
     EM:
     - start: 175
 δόξα:
+  lang: grc
   references:
     EM:
     - end: 112
@@ -5984,6 +6000,7 @@ wesentliche Möglichkeit des Seins:
     - start: 120
     - start: 138
 δύναμις:
+  lang: grc
   references:
     WBPh:
     - start: 278
@@ -5991,6 +6008,7 @@ wesentliche Möglichkeit des Seins:
       start: 284
     - start: 296
 εἶδος:
+  lang: grc
   references:
     EM:
     - start: 65
@@ -6007,6 +6025,7 @@ wesentliche Möglichkeit des Seins:
   related:
   - Aussehen
 ζωή:
+  lang: grc
   references:
     GA 18:
     - start: 18
@@ -6020,6 +6039,7 @@ wesentliche Möglichkeit des Seins:
     WD:
     - start: 278
 ζῆν:
+  lang: grc
   parent: ζωή
   references:
     GA 55:
@@ -6027,6 +6047,7 @@ wesentliche Möglichkeit des Seins:
     - start: 104
     - start: 95
 ζῷον:
+  lang: grc
   parent: ζωή
   references:
     GA 55:
@@ -6038,11 +6059,13 @@ wesentliche Möglichkeit des Seins:
     - start: 286
     - start: 288
 ζῷον αλόγον:
+  lang: grc
   references:
     GA 29/30:
     - start: 442
       suffix: f
 ζῷον λόγον ἔχον:
+  lang: grc
   references:
     GA 18:
     - start: 18
@@ -6081,22 +6104,26 @@ wesentliche Möglichkeit des Seins:
   - ζῷον αλόγον
   - animal rationale
 θαυμάζειν:
+  lang: grc
   references:
     GA 101:
     - start: 84
     GA 55:
     - start: 12
 θέσις:
+  lang: grc
   references:
     EM:
     - start: 18
 κατάφασις:
+  lang: grc
   references:
     GA 29/30:
     - start: 484
     - start: 487
     - start: 490
 κατηγορία:
+  lang: grc
   references:
     WBPh:
     - start: 250
@@ -6104,6 +6131,7 @@ wesentliche Möglichkeit des Seins:
     - start: 284
     - start: 293
 κοινωνία:
+  lang: grc
   references:
     GA 18:
     - start: 46
@@ -6113,6 +6141,7 @@ wesentliche Möglichkeit des Seins:
   related:
   - Miteinandersein
 κρίνειν:
+  lang: grc
   references:
     WBPh:
     - start: 262
@@ -6121,6 +6150,7 @@ wesentliche Möglichkeit des Seins:
     GA 54:
     - start: 209
 κίνησις:
+  lang: grc
   references:
     WBPh:
     - start: 241
@@ -6137,12 +6167,14 @@ wesentliche Möglichkeit des Seins:
     - start: 296
     - start: 299
 κόσμος:
+  lang: grc
   references:
     GA 55:
     - start: 31
     SvG:
     - start: 168
 λέγειν:
+  lang: grc
   references:
     EM:
     - end: 133
@@ -6161,6 +6193,7 @@ wesentliche Möglichkeit des Seins:
   related:
   - λόγος
 λόγος:
+  lang: grc
   references:
     EM:
     - start: 62
@@ -6224,6 +6257,7 @@ wesentliche Möglichkeit des Seins:
     - start: 293
     - start: 299
 λόγος ἀποφαντικός:
+  lang: grc
   parent: λόγος
   references:
     GA 29/30:
@@ -6232,6 +6266,7 @@ wesentliche Möglichkeit des Seins:
     - start: 487
     - start: 489
 μεταβολή:
+  lang: grc
   references:
     WBPh:
     - start: 247
@@ -6239,6 +6274,7 @@ wesentliche Möglichkeit des Seins:
     - start: 283
     - start: 286
 μορφή:
+  lang: grc
   references:
     EM:
     - start: 65
@@ -6256,6 +6292,7 @@ wesentliche Möglichkeit des Seins:
       start: 293
     - start: 296
 μέθοδος:
+  lang: grc
   references:
     WBPh:
     - start: 269
@@ -6266,10 +6303,12 @@ wesentliche Möglichkeit des Seins:
   related:
   - DK 28 B3
 νόμος:
+  lang: grc
   references:
     EM:
     - start: 18
 οὐσία:
+  lang: grc
   references:
     EM:
     - start: 65
@@ -6299,10 +6338,12 @@ wesentliche Möglichkeit des Seins:
   related:
   - φύσις
 παρουσία:
+  lang: grc
   references:
     EM:
     - start: 65
 παράδειγμα:
+  lang: grc
   references:
     WBPh:
     - start: 288
@@ -6311,6 +6352,7 @@ wesentliche Möglichkeit des Seins:
     GA 54:
     - start: 207
 ποίησις:
+  lang: grc
   references:
     EM:
     - start: 44
@@ -6332,14 +6374,17 @@ wesentliche Möglichkeit des Seins:
     GA 98:
     - start: 9
 πρᾶγμα:
+  lang: grc
   references:
     EM:
     - start: 62
 πρᾶξις:
+  lang: grc
   references:
     EM:
     - start: 62
 πρῶτον ἀρρύθμιστον:
+  lang: grc
   parent: ῥυθμός
   references:
     WBPh:
@@ -6347,6 +6392,7 @@ wesentliche Möglichkeit des Seins:
     - start: 270
     - start: 271
 πτῶσις:
+  lang: grc
   references:
     EM:
     - start: 63
@@ -6354,6 +6400,7 @@ wesentliche Möglichkeit des Seins:
   related:
   - Nomen
 πάντα ῥεῖ:
+  lang: grc
   references:
     EM:
     - start: 104
@@ -6364,11 +6411,13 @@ wesentliche Möglichkeit des Seins:
   related:
   - Heraklit
 πόλεμος:
+  lang: grc
   references:
     EM:
     - start: 66
     - start: 121
 πόλις:
+  lang: grc
   references:
     EM:
     - start: 100
@@ -6376,17 +6425,20 @@ wesentliche Möglichkeit des Seins:
     - start: 11
       suffix: f
 στέρησις:
+  lang: grc
   references:
     WBPh:
     - end: 295
       start: 292
 συμβεβηκός:
+  lang: grc
   references:
     WBPh:
     - start: 256
     - start: 252
     - start: 253
 σύνθεσις:
+  lang: grc
   references:
     GA 29/30:
     - start: 484
@@ -6395,11 +6447,13 @@ wesentliche Möglichkeit des Seins:
     - start: 490
       suffix: f
 σύμβολον:
+  lang: grc
   references:
     GA 29/30:
     - end: 447
       start: 444
 τέλος:
+  lang: grc
   references:
     EM:
     - start: 64
@@ -6408,6 +6462,7 @@ wesentliche Möglichkeit des Seins:
     - end: 283
       start: 282
 τέχνη:
+  lang: grc
   references:
     EM:
     - start: 19
@@ -6426,6 +6481,7 @@ wesentliche Möglichkeit des Seins:
     - start: 290
     - start: 297
 τέχνῃ ὄντα:
+  lang: grc
   parent: τέχνη
   references:
     GA 29/30:
@@ -6433,14 +6489,17 @@ wesentliche Möglichkeit des Seins:
   related:
   - φύσει ὄντα
 τόπος:
+  lang: grc
   references:
     WBPh:
     - start: 246
 φυσικά:
+  lang: grc
   references:
     GA 29/30:
     - start: 38
 φυσιολόγοι:
+  lang: grc
   references:
     GA 22:
     - start: 216
@@ -6454,6 +6513,7 @@ wesentliche Möglichkeit des Seins:
   - φύσις
   - λόγος
 φυά:
+  lang: grc
   references:
     EM:
     - start: 108
@@ -6464,11 +6524,13 @@ wesentliche Möglichkeit des Seins:
   - φύειν
   - Pindar
 φάος:
+  lang: grc
   references:
     GA 55:
     - start: 16
       suffix: f
 φύειν:
+  lang: grc
   references:
     EM:
     - start: 108
@@ -6477,6 +6539,7 @@ wesentliche Möglichkeit des Seins:
     GA 54:
     - start: 209
 φύσει ὄντα:
+  lang: grc
   parent: φύσις
   references:
     EM:
@@ -6500,6 +6563,7 @@ wesentliche Möglichkeit des Seins:
   related:
   - κίνησις
 φύσις:
+  lang: grc
   references:
     EM:
     - end: 19
@@ -6586,6 +6650,7 @@ wesentliche Möglichkeit des Seins:
   - Natur
   - Seiende im Ganzen
 ψεύδεσθαι:
+  lang: grc
   references:
     GA 29/30:
     - start: 449
@@ -6594,12 +6659,14 @@ wesentliche Möglichkeit des Seins:
     - start: 490
     - start: 488
 ἀείζωον:
+  lang: grc
   parent: ζωή
   references:
     GA 55:
     - start: 104
     - start: 90
 ἀλεθεύειν:
+  lang: grc
   parent: ἀλήθεια
   references:
     GA 29/30:
@@ -6610,11 +6677,13 @@ wesentliche Möglichkeit des Seins:
     - start: 490
     - start: 488
 ἀληθέα:
+  lang: grc
   parent: ἀλήθεια
   references:
     GA 29/30:
     - start: 42
 ἀλήθεια:
+  lang: grc
   references:
     EM:
     - start: 109
@@ -6637,12 +6706,14 @@ wesentliche Möglichkeit des Seins:
   related:
   - Entbergen
 ἀξίωμα:
+  lang: grc
   references:
     SvG:
     - start: 22
     - start: 23
     - start: 24
 ἀπόφασις:
+  lang: grc
   references:
     GA 19:
     - start: 18
@@ -6650,6 +6721,7 @@ wesentliche Möglichkeit des Seins:
     - start: 484
     - start: 490
 ἀρχὴ κινήσεως:
+  lang: grc
   parent: κίνησις
   references:
     WBPh:
@@ -6661,6 +6733,7 @@ wesentliche Möglichkeit des Seins:
   - ἀρχή
   - φύσις
 ἀρχή:
+  lang: grc
   references:
     SvG:
     - start: 163
@@ -6673,10 +6746,12 @@ wesentliche Möglichkeit des Seins:
     - start: 296
       suffix: f
 ἀίδιον:
+  lang: grc
   references:
     WBPh:
     - start: 267
 ἐντελέχεια:
+  lang: grc
   references:
     EM:
     - start: 64
@@ -6692,6 +6767,7 @@ wesentliche Möglichkeit des Seins:
   - ἐνέργεια
   - τέλος
 ἐνέργεια:
+  lang: grc
   references:
     WBPh:
     - end: 285
@@ -6700,6 +6776,7 @@ wesentliche Möglichkeit des Seins:
     - start: 295
     - start: 299
 ἐπαγωγή:
+  lang: grc
   references:
     WBPh:
     - start: 242
@@ -6707,6 +6784,7 @@ wesentliche Möglichkeit des Seins:
     - start: 262
     - start: 268
 ἐπιστήμη:
+  lang: grc
   references:
     GA 21:
     - start: 1
@@ -6718,6 +6796,7 @@ wesentliche Möglichkeit des Seins:
     - start: 12
       suffix: f
 ἐπιστήμη λογική:
+  lang: grc
   parent: ἐπιστήμη
   references:
     EM:
@@ -6727,6 +6806,7 @@ wesentliche Möglichkeit des Seins:
   related:
   - λόγος
 ἐπιστήμη φυσική:
+  lang: grc
   parent: ἐπιστήμη
   references:
     GA 21:
@@ -6736,6 +6816,7 @@ wesentliche Möglichkeit des Seins:
   related:
   - φύσις
 ἐπιστήμη ἠθική:
+  lang: grc
   parent: ἐπιστήμη
   references:
     GA 21:
@@ -6744,10 +6825,12 @@ wesentliche Möglichkeit des Seins:
   related:
   - ἦθος
 ἐυδαιμονία:
+  lang: grc
   references:
     EM:
     - start: 115
 ἔγκλισις:
+  lang: grc
   references:
     EM:
     - start: 63
@@ -6756,10 +6839,12 @@ wesentliche Möglichkeit des Seins:
   - πτῶσις
   - Verbum
 ἔκλισις:
+  lang: grc
   references:
     EM:
     - start: 116
 ἔρις:
+  lang: grc
   references:
     GA 55:
     - start: 18
@@ -6767,6 +6852,7 @@ wesentliche Möglichkeit des Seins:
       suffix: f
     - start: 26
 ἦθος:
+  lang: grc
   references:
     GA 21:
     - start: 1
@@ -6775,6 +6861,7 @@ wesentliche Möglichkeit des Seins:
     SA:
     - start: 324
 ἰδέα:
+  lang: grc
   references:
     EM:
     - start: 65
@@ -6787,6 +6874,7 @@ wesentliche Möglichkeit des Seins:
   related:
   - εἶδος
 ὁδός:
+  lang: grc
   references:
     WBPh:
     - end: 291
@@ -6795,16 +6883,19 @@ wesentliche Möglichkeit des Seins:
   related:
   - μέθοδος
 ὄνομα:
+  lang: grc
   references:
     EM:
     - end: 62
       start: 61
 ὄργανον:
+  lang: grc
   references:
     GA 18:
     - start: 238
       suffix: f
 ὑποκείμενον:
+  lang: grc
   references:
     SvG:
     - start: 12
@@ -6817,6 +6908,7 @@ wesentliche Möglichkeit des Seins:
     - start: 24
     - start: 25
 ὕλη:
+  lang: grc
   references:
     GA 18:
     - start: 238
@@ -6835,6 +6927,7 @@ wesentliche Möglichkeit des Seins:
   related:
   - μορφή
 ὧ Σκοτεινός:
+  lang: grc
   references:
     GA 55:
     - start: 19
@@ -6842,12 +6935,14 @@ wesentliche Möglichkeit des Seins:
     - start: 32
     - start: 40
 ῥυθμός:
+  lang: grc
   references:
     WBPh:
     - start: 266
     - start: 265
     - start: 271
 ῥῆμα:
+  lang: grc
   references:
     EM:
     - end: 62
