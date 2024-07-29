@@ -21,4 +21,4 @@ django-compressor==4.*
 django-libsass==0.*
 python-decouple==3.*
 lxml==5.*
-iso639-lang
+iso639-lang==2.*
