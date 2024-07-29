@@ -988,6 +988,27 @@ GA 97:
   title: Anmerkungen I-V (Schwarze Hefte 1942-1948)
   title-short: GA 97
   type: book
+GA 101:
+  id: heideggerGA101
+  author:
+    - family: Heidegger
+      given: Martin
+  citation-key: heideggerGA101
+  collection-number: band 101
+  collection-title: Martin Heidegger Gesamtausgabe
+  editor:
+    - family: Trawny
+      given: Peter
+  event-place: Frankfurt am Main
+  ISBN: 978-3-465-01734-9 978-3-465-01720-2
+  issued:
+    - year: 2020
+  number-of-pages: vi, 220
+  publisher: Vittorio Klostermann
+  publisher-place: Frankfurt am Main
+  title: Winke I und II (Schwarze Hefte 1957-1959)
+  title-short: GA 101
+  type: book
 UK:
   ISBN: 978-3-465-03236-6 978-3-465-03237-3
   author:

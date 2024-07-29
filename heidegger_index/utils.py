@@ -88,8 +88,8 @@ def convert_numeric_unicode(value: str) -> str:
 
 
 def gen_work_sort_key(key: str) -> str:
-    # Strip and add a leading zero to single digits (GA 5 -> GA 05)
-    return re.sub("\d+", lambda m: f"{m.group():0>2}", key.strip())
+    # Strip and add a leading zero to digits (GA 5 -> GA 005, GA 15 -> GA 015)
+    return re.sub("\d+", lambda m: f"{m.group():0>3}", key.strip())
 
 
 def gen_lemma_sort_key(key: str) -> str:
