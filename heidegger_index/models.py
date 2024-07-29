@@ -16,7 +16,7 @@ from heidegger_index.utils import (
     slugify,
     contains_page_range,
 )
-from heidegger_index.validators import validate_gnd, validate_zeno, validate_iso639_3_lang
+from heidegger_index.validators import validate_gnd, validate_zeno
 
 
 class Work(models.Model):
@@ -93,7 +93,7 @@ class Lemma(models.Model):
     related = models.ManyToManyField("self", symmetrical=True)
     type = models.CharField(max_length=1, null=True, choices=LemmaType.list_choices())
     description = models.TextField(null=True)
-    lang = models.CharField(max_length=3, null=True, validators=[validate_iso639_3_lang])
+    lang = models.CharField(max_length=3, null=True)
 
     urn = models.URLField(
         MetadataType.URN.label,
