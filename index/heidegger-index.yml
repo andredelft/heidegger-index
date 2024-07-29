@@ -3757,11 +3757,6 @@ Pindar:
     - start: 108
     - start: 110
   type: p
-Pizza:
-  lang: ita
-  references:
-    zz:
-    - start: 1
 Plato:
   metadata:
     urn: urn:cts:greekLit:tlg0059
@@ -5715,8 +5710,8 @@ organische Chemie:
 pizza:
   references:
     zz:
-    - lang: ita
-      start: 1
+    - start: 1
+  lang: it
 positive Forschung:
   references:
     GA 29/30:
