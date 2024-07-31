@@ -95,29 +95,31 @@ class Command(BaseCommand):
 
             work_by_key[work_key] = work_obj
 
-            # Descriptions
-            description = description_by_sort_key.get(gen_lemma_sort_key(work_key))
-            if description:
-                work_obj.description = convert_md(description)
-
             work_obj.create_sort_key()
 
             work_objs.append(work_obj)
 
         Work.objects.bulk_create(tqdm(work_objs, desc="Populating works"))
 
+        # Descriptions
+        for i, work in enumerate(work_objs):
+            description = description_by_sort_key.get(gen_lemma_sort_key(work.key))
+            if description:
+                work.description = convert_md(description)
+
+            work_objs[i] = work
+
         # Setting work hierarchy
-        works_with_parents = []
         for i, work in enumerate(work_objs):
             container_title = work.csl_json.get("container-title")
             if container_title:
                 parent = work_by_title.get(container_title)
                 if parent:
                     work.parent = parent
-                    works_with_parents.append(work)
+                    work_objs[i] = work
 
         Work.objects.bulk_update(
-            tqdm(works_with_parents, desc="Setting work hierarchy"), ["parent"]
+            tqdm(work_objs, desc="Setting work hierarchy and adding descriptions"), ["parent", "description"]
         )
 
         # Populate lemmas
