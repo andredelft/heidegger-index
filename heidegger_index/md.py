@@ -54,8 +54,11 @@ class WorkLinkInlineProcessor(InlineProcessor):
         else:
             href = reverse("work-detail", kwargs={"slug": work_obj.slug})
             work_el = etree.SubElement(el, "a", href=href)
-
-        work_el.text = work_key
+            if citation:
+                work_el.text = work_key
+            else:
+                work_el.text = work_obj.title
+                work_el.attrib["class"] = "italic"
 
         if locator:
             work_el.tail = f", {locator.strip()}"  # Closing citation
