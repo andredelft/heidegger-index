@@ -1,1 +1,1 @@
-_Die Frage nach der Technik_ is a small text that is found in several places. In the Gesamtausgabe it is part of [@VA]. It has also been published in the smaller edition [@TK]. Please be aware of this when using the index.
+_Die Frage nach der Technik_ is a small text that is found in several places. In the Gesamtausgabe it is part of @VA. It has also been published in the smaller edition @TK. Please be aware of this when using the index.
