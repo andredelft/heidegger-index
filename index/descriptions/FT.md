@@ -1,1 +1,1 @@
-_Die Frage nach der Technik_ is a small text that is found in several places. In the Gesamtausgabe it is part of [[_Vorträge und Aufsätze_|VA]]. It has also been published in a smaller editions called [[_Die Technik und die Kehre_|TK]]. Please be aware of this when using the index.
+_Die Frage nach der Technik_ is a small text that is found in several places. In the Gesamtausgabe it is part of [@VA]. It has also been published in the smaller edition [@TK]. Please be aware of this when using the index.
