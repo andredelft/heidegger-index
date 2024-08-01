@@ -174,6 +174,9 @@ Anthropologie:
     - start: 408
     - start: 115
     - start: 283
+    GA 80:
+    - start: 215
+      suffix: ff
     GA 96:
     - start: 217
     KPM:
