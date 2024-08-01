@@ -77,9 +77,14 @@ KPM:
   author:
     - family: Heidegger
       given: Martin
+  citation-key: heideggerKPM
   collection-number: band 3
   collection-title: Martin Heidegger Gesamtausgabe
   edition: 2. Aufl
+  editor:
+    - dropping-particle: von
+      family: Herrmann
+      given: Friedrich-Wilhelm
   event-place: Frankfurt am Main
   id: KPM
   ISBN: 978-3-465-03677-7
@@ -87,10 +92,12 @@ KPM:
     - year: 2010
   language: german
   number-of-pages: XVIII, 317
+  original-date: 1929
+  original-publisher: Verlag von Friedrich Cohen
+  original-publisher-place: Bonn
   publisher: Vittorio Klostermann
   publisher-place: Frankfurt am Main
   title: Kant und das Problem der Metaphysik
-  title-short: GA 3
   type: book
 Sp:
   author:
@@ -148,8 +155,9 @@ GA 5:
   collection-number: band 5
   collection-title: Gesamtausgabe
   editor:
-  - family: Herrmann
-    given: Friedrich-Wilhelm von
+  - dropping-particle: von
+    family: Herrmann
+    given: Friedrich-Wilhelm
   id: GA 5
   issued:
     date-parts:
@@ -751,7 +759,6 @@ GA 11:
   publisher: Vittorio Klostermann
   publisher-place: Frankfurt am Main
   title: Identität und Differenz
-  title-short: GA 11
   type: book
 GA 18:
   id: heideggerGA18
@@ -958,7 +965,6 @@ GA 49:
     Die Metaphysik des deutschen Idealismus : Zur erneuten Auslegung von
     Schelling: Philosophische Untersuchungen über das Wesen der menschlichen
     Freiheit und die damit zusammenhängen Gegenstände (1809)
-  title-short: GA 49
   type: book
 GA 61:
   id: heideggerGA61
