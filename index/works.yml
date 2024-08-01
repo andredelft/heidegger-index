@@ -73,6 +73,25 @@ G:
   - family: Wit
     given: Johannes
     dropping-particle: de
+KPM:
+  author:
+    - family: Heidegger
+      given: Martin
+  collection-number: band 3
+  collection-title: Martin Heidegger Gesamtausgabe
+  edition: 2. Aufl
+  event-place: Frankfurt am Main
+  id: KPM
+  ISBN: 978-3-465-03677-7
+  issued:
+    - year: 2010
+  language: german
+  number-of-pages: XVIII, 317
+  publisher: Vittorio Klostermann
+  publisher-place: Frankfurt am Main
+  title: Kant und das Problem der Metaphysik
+  title-short: GA 3
+  type: book
 Sp:
   author:
   - family: Heidegger

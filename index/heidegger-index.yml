@@ -174,6 +174,13 @@ Anthropologie:
     - start: 408
     - start: 115
     - start: 283
+    GA 96:
+    - start: 217
+    KPM:
+    - end: 213
+      start: 205
+    - start: 215
+    - start: 218
     SZ:
     - end: 50
       start: 48
@@ -640,6 +647,12 @@ Bodenständigkeit:
     G:
     - start: 522
     - start: 526
+Bollnow, Otto Friedrich:
+  references:
+    GA 96:
+    - start: 216
+      suffix: ff
+  type: p
 Boveri, Theodor:
   metadata:
     gnd: '118662449'
@@ -685,6 +698,11 @@ Chemie:
     - start: 278
   related:
   - Naturwissenschaft
+Christendum:
+  references:
+    GA 96:
+    - start: 215
+      suffix: f
 Christentum:
   references:
     EM:
@@ -1231,6 +1249,13 @@ Das Habermus:
     - end: 514
       start: 511
   type: w
+Das Wesen der Stimmungen:
+  author: Bollnow, Otto Friedrich
+  references:
+    GA 96:
+    - start: 216
+      suffix: f
+  type: w
 Dasein:
   references:
     GA 18:
@@ -1414,6 +1439,8 @@ Der Rhein:
   metadata:
     zeno: '20005104998'
   references:
+    Sch:
+    - start: 285
     TK:
     - start: 15
   type: w
@@ -2669,6 +2696,8 @@ Kant und das Problem der Metaphysik:
     GA 29/30:
     - start: 441
     - start: 306
+    GA 96:
+    - start: 217
   type: w
 Kant, Immanuel:
   metadata:
@@ -2711,6 +2740,9 @@ Kierkegaard, Søren:
     - start: 226
     GA 63:
     - start: 111
+    GA 96:
+    - start: 215
+      suffix: f
     Sch:
     - end: 43
       start: 42
@@ -3679,6 +3711,8 @@ Philosophische Untersuchungen über das Wesen der menschlichen Freiheit und die 
       suffix: f
     - end: 9
       start: 6
+    Sch:
+    - whole: true
   type: w
 Physica:
   author: Aristoteles
@@ -4182,6 +4216,9 @@ Sein und Zeit:
     - start: 441
     - start: 44
     - start: 313
+    GA 96:
+    - end: 217
+      start: 215
     Vorarb29/30:
     - start: 6
     ZEG:
@@ -5709,6 +5746,14 @@ organische Chemie:
   references:
     GA 29/30:
     - start: 311
+philosophischen Anthropologie:
+  references:
+    GA 96:
+    - start: 217
+    KPM:
+    - end: 213
+      start: 208
+    - start: 218
 positive Forschung:
   references:
     GA 29/30:
