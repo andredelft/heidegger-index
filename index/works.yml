@@ -1,3 +1,49 @@
+EM:
+  author:
+  - family: Heidegger
+    given: Martin
+  citation-key: heideggerEinfuehrungMetaphysik1983
+  collection-number: band 40
+  collection-title: Gesamtausgabe
+  editor:
+  - family: Jaeger
+    given: Petra
+  event-place: Frankfurt am Main
+  id: heideggerEM
+  issued:
+    date-parts:
+    - - 1983
+  language: ger
+  publisher: Vittorio Klostermann
+  publisher-place: Frankfurt am Main
+  title: Einführung in die Metaphysik
+  type: book
+Ens 10:
+  author:
+    - family: Eich
+      given: G.
+    - family: Buber
+      given: M.
+    - family: Benn
+      given: G.
+    - family: Jünger
+      given: E.
+    - family: Heidegger
+      given: M.
+  collection-title: >-
+    Internationales Jahrbuch für Literatur, im Auftrag der Bayerischen Akademie
+    der schönen Künste
+  container-title: Ensemble 10
+  editor:
+    - family: Piontek
+      given: Heinz
+  issued:
+    date-parts:
+    - - 1979
+  page: 201-208
+  title: Briefe an den Generalsekretär
+  type: chapter
+  language: german
 EWI:
   author:
   - family: Heidegger
@@ -19,6 +65,28 @@ EWI:
   publisher: Vittorio Klostermann
   publisher-place: Frankfurt am Main
   title: Einblick in das was ist, Bremer Vorträge 1949
+  type: chapter
+FT:
+  author:
+  - family: Heidegger
+    given: Martin
+  citation-key: heideggerFT
+  collection-number: band 7
+  collection-title: Martin Heidegger Gesamtausgabe
+  container-title: Vorträge und Aufsätze
+  editor:
+  - dropping-particle: von
+    family: Herrmann
+    given: Friedrich-Wilhelm
+  id: FT
+  issued:
+    date-parts:
+    - - 200
+  language: ger
+  page: 7-36
+  publisher: Vittorio Klostermann
+  publisher-place: Frankfurt am Main
+  title: Die Frage nach der Technik
   type: chapter
 FW:
   author:
@@ -73,55 +141,6 @@ G:
   - family: Wit
     given: Johannes
     dropping-particle: de
-KPM:
-  author:
-    - family: Heidegger
-      given: Martin
-  citation-key: heideggerKPM
-  collection-number: band 3
-  collection-title: Martin Heidegger Gesamtausgabe
-  edition: 2. Aufl
-  editor:
-    - dropping-particle: von
-      family: Herrmann
-      given: Friedrich-Wilhelm
-  event-place: Frankfurt am Main
-  id: KPM
-  ISBN: 978-3-465-03677-7
-  issued:
-    - year: 2010
-  language: german
-  number-of-pages: XVIII, 317
-  original-date: 1929
-  original-publisher: Verlag von Friedrich Cohen
-  original-publisher-place: Bonn
-  publisher: Vittorio Klostermann
-  publisher-place: Frankfurt am Main
-  title: Kant und das Problem der Metaphysik
-  type: book
-Sp:
-  author:
-  - family: Heidegger
-    given: Martin
-  collection-editor:
-  - family: Klostermann
-    given: Vittorio
-  collection-number: band 16
-  collection-title: Gesamtausgabe
-  container-title: 'Reden und Zeugnisse eines Lebensweg: 1910–1976'
-  editor:
-  - family: Heidegger
-    given: Hermann
-  issued:
-    date-parts:
-    - - 2000
-  language: german
-  page: 652-683
-  publisher: Vittorio Klostermann
-  publisher-place: Frankfurt am Main
-  title: Spiegel-Gespräch mit Martin Heidegger (23. September 1966)
-  type: chapter
-  title-short: Spiegel-Gespräch
 GA 1:
   id: heideggerGA1
   author:
@@ -167,32 +186,28 @@ GA 5:
   publisher-place: Frankfurt am Main
   title: Holzwege
   type: book
-Ens 10:
+GA 11:
+  id: heideggerGA11
   author:
-    - family: Eich
-      given: G.
-    - family: Buber
-      given: M.
-    - family: Benn
-      given: G.
-    - family: Jünger
-      given: E.
     - family: Heidegger
-      given: M.
-  collection-title: >-
-    Internationales Jahrbuch für Literatur, im Auftrag der Bayerischen Akademie
-    der schönen Künste
-  container-title: Ensemble 10
+      given: Martin
+  citation-key: heideggerGA11
+  collection-number: band 11
+  collection-title: Martin Heidegger Gesamtausgabe
   editor:
-    - family: Piontek
-      given: Heinz
+    - family: Herrmann
+      given: Friedrich-Wilhelm
+      dropping-particle: von
+  event-place: Frankfurt am Main
+  ISBN: 978-3-465-03493-3 978-3-465-03492-6
   issued:
-    date-parts:
-    - - 1979
-  page: 201-208
-  title: Briefe an den Generalsekretär
-  type: chapter
-  language: german
+    - year: 2006
+  language: ger
+  number-of-pages: vi, 168
+  publisher: Vittorio Klostermann
+  publisher-place: Frankfurt am Main
+  title: Identität und Differenz
+  type: book
 GA 13:
   id: GA13
   author:
@@ -234,531 +249,6 @@ GA 16:
   publisher-place: Frankfurt am Main
   title: 'Reden und Zeugnisse eines Lebensweg: 1910–1976'
   title-short: Reden und Zeugnisse
-  type: book
-HF:
-  index-status: complete
-  author:
-  - family: Heidegger
-    given: Martin
-  collection-number: band 13
-  collection-title: Gesamtausgabe
-  container-title: Aus der Erfahrung des Denkens
-  editor:
-  - family: Heidegger
-    given: Hermann
-  event-place: Frankfurt am Main
-  id: HF
-  issued:
-    date-parts:
-    - - 2002
-  language: german
-  page: 133-150
-  publisher: Vittorio Klostermann
-  publisher-place: Frankfurt am Main
-  title: 'Hebel – Der Hausfreund'
-  type: chapter
-GA 29/30:
-  author:
-  - family: Heidegger
-    given: Martin
-  collection-editor:
-  - family: Klostermann
-    given: Vittorio
-  collection-number: band 29/30
-  collection-title: Gesamtausgabe
-  editor:
-  - family: Hermann
-    given: Friedrich-Wilhelm
-    non-dropping-particle: von
-  id: GA 29/30
-  issued:
-    date-parts:
-    - - 1983
-  language: german
-  publisher: Vittorio Klostermann
-  publisher-place: Frankfurt am Main
-  title: 'Die Grundbegriffe der Metaphysik: Welt, Endlichkeit, Einsamkeit'
-  title-short: Die Grundbegriffe der Metaphysik
-  type: book
-  index-status: incomplete
-GA 55:
-  id: heideggerGA55
-  author:
-    - family: Heidegger
-      given: Martin
-  citation-key: heideggerGA55
-  collection-number: band 55
-  collection-title: Martin Heidegger Gesamtausgabe
-  editor:
-    - family: Frings
-      given: Manfred S.
-  event-place: Frankfurt am Main
-  ISBN: 978-3-465-02648-8
-  issued:
-    date-parts:
-    - - 1979
-  language: ger
-  number-of-pages: XII, 406
-  publisher: Vittorio Klostermann
-  publisher-place: Frankfurt am Main
-  title: Heraklit
-  type: book
-GA 45:
-  title: Grundfragen der Philosophie. Ausgewählte ‘Probleme’ der ‘Logik’
-  title-short: Grundfragen der Philosophie
-  author:
-    - family: Heidegger
-      given: Martin
-  citation-key: heideggerGA45
-  collection-number: band 45
-  collection-title: Martin Heidegger Gesamtausgabe
-  editor:
-    - family: von Hermann
-      given: Friedrich-Wilhelm
-  event-place: Frankfurt am Main
-  issued:
-    date-parts:
-    - - 1984
-  language: ger
-  publisher: Vittorio Klostermann
-  publisher-place: Frankfurt am Main
-  type: book
-GA 65:
-  title: Beiträge zur Philosophie (Vom Ereignis)
-  title-short: Beiträge
-  author:
-    - family: Heidegger
-      given: Martin
-  citation-key: heideggerGA65
-  collection-number: band 65
-  collection-title: Martin Heidegger Gesamtausgabe
-  editor:
-    - family: von Hermann
-      given: Friedrich-Wilhelm
-  event-place: Frankfurt am Main
-  issued:
-    date-parts:
-    - - 1989
-  language: ger
-  publisher: Vittorio Klostermann
-  publisher-place: Frankfurt am Main
-  type: book
-JPH G:
-  index-status: complete
-  author:
-  - family: Heidegger
-    given: Martin
-  collection-editor:
-  - family: Klostermann
-    given: Vittorio
-  collection-number: band 16
-  collection-title: Gesamtausgabe
-  container-title: 'Reden und Zeugnisse eines Lebensweg: 1910–1976'
-  editor:
-  - family: Heidegger
-    given: Hermann
-  id: JPH G
-  issued:
-    date-parts:
-    - - 2000
-  language: german
-  page: 530-533
-  publisher: Vittorio Klostermann
-  publisher-place: Frankfurt am Main
-  title: Johann Peter Hebel (Göppingen, 9. November 1955, Volkshochschule)
-  type: chapter
-JPH Z:
-  author:
-  - family: Heidegger
-    given: Martin
-  collection-editor:
-  - family: Klostermann
-    given: Vittorio
-  collection-number: band 16
-  collection-title: Gesamtausgabe
-  container-title: 'Reden und Zeugnisse eines Lebensweg: 1910–1976'
-  editor:
-  - family: Heidegger
-    given: Hermann
-  id: JPH Z
-  issued:
-    date-parts:
-    - - 2000
-  language: german
-  page: 491-515
-  publisher: Vittorio Klostermann
-  publisher-place: Frankfurt am Main
-  title: Johann Peter Hebel (Zähringer Rede vom 5. September 1954)
-  type: chapter
-SvG:
-  author:
-  - family: Heidegger
-    given: Martin
-  citation-key: heideggerSvG
-  collection-number: band 10
-  collection-title: Gesamtausgabe
-  editor:
-  - family: Jaeger
-    given: Petra
-  event-place: Frankfurt am Main
-  id: heideggerSvG
-  issued:
-    date-parts:
-    - - 1976
-  language: ger
-  publisher: Vittorio Klostermann
-  publisher-place: Frankfurt am Main
-  title: Der Satz vom Grund
-  type: book
-SZ:
-  author:
-  - family: Heidegger
-    given: Martin
-  id: SZ
-  issued:
-    date-parts:
-    - - 1976
-  language: de-DE
-  publisher: Max Niemeyer Verlag
-  publisher-place: Tübingen
-  original-date:
-    date-parts:
-    - - 1927
-  title: Sein und Zeit
-  type: book
-TK:
-  id: heideggerTechnikUndKehre1978
-  author:
-    - family: Heidegger
-      given: Martin
-  citation-key: heideggerTechnikUndKehre1978
-  collection-number: '1'
-  collection-title: Opuscula aus Wissenschaft und Dichtung
-  event-place: Pfullingen
-  ISBN: 3-7885-0178-2
-  issued:
-    date-parts:
-    - - 1978
-  language: de-DE
-  number-of-pages: '47'
-  publisher: Günther Neske
-  publisher-place: Pfullingen
-  title: Die Technik und die Kehre
-  type: book
-VA:
-  author:
-  - family: Heidegger
-    given: Martin
-  collection-editor:
-  - family: Klostermann
-    given: Vittorio
-  collection-number: band 7
-  collection-title: Gesamtausgabe
-  editor:
-  - family: Hermann
-    given: Friedrich-Wilhelm
-    non-dropping-particle: von
-  id: VA
-  issued:
-    date-parts:
-    - - 2000
-  language: german
-  publisher: Vittorio Klostermann
-  publisher-place: Frankfurt am Main
-  title: Vorträge und Aufsätze
-  type: book
-FT:
-  author:
-  - family: Heidegger
-    given: Martin
-  citation-key: heideggerFT
-  collection-number: band 7
-  collection-title: Martin Heidegger Gesamtausgabe
-  container-title: Vorträge und Aufsätze
-  editor:
-  - dropping-particle: von
-    family: Herrmann
-    given: Friedrich-Wilhelm
-  id: FT
-  issued:
-    date-parts:
-    - - 200
-  language: ger
-  page: 7-36
-  publisher: Vittorio Klostermann
-  publisher-place: Frankfurt am Main
-  title: Die Frage nach der Technik
-  type: chapter
-Vorarb29/30:
-  ISSN: 08854580, 21539170
-  author:
-  - family: Heidegger
-    given: Martin
-  citation-key: heideggerVorarb29/30
-  container-title: Heidegger Studies
-  id: heideggerVorarb29/30
-  issued:
-  - day: 2
-    month: 4
-    year: 1991
-  language: ger
-  page: 5-12
-  publisher: Duncker & Humblot GmbH
-  title: 'Unbenutzte Vorarbeiten zur Vorlesung vom Wintersemester 1929/30: „Die Grundbegriffe
-    der Metaphysik. Welt – Endlichkeit – Einsamkeit“'
-  title-short: Unbenutzte Vorarbeiten zur „Die Grundbegriffe der Metaphysik“
-  type: article-journal
-  volume: '7'
-WBPh:
-  author:
-  - family: Heidegger
-    given: Martin
-  citation-key: heideggerWBPh
-  collection-number: band 9
-  collection-title: Gesamtausgabe
-  container-title: Wegmarken
-  editor:
-  - dropping-particle: von
-    family: Herrmann
-    given: Friedrich-Wilhelm
-  event-place: Frankfurt am Main
-  id: WBPh
-  issued:
-    date-parts:
-    - - 1976
-  language: ger
-  page: 239-302
-  publisher: Vittorio Klostermann
-  publisher-place: Frankfurt am Main
-  title: Vom Wesen und Begriff der Φὐσις, Aristoteles, Physik B, 1
-  title-short: Vom Wesen und Begriff der Φὐσις
-  type: chapter
-WD:
-  ISBN: 978-3-465-03236-6 978-3-465-03237-3
-  author:
-  - family: Heidegger
-    given: Martin
-  collection-number: band 5
-  collection-title: Gesamtausgabe
-  container-title: Holzwege
-  editor:
-  - dropping-particle: von
-    family: Herrmann
-    given: Friedrich-Wilhelm
-  event-place: Frankfurt am Main
-  id: WD
-  issued:
-    date-parts:
-    - - 2003
-  language: german
-  page: 269-320
-  publisher: Vittorio Klostermann
-  publisher-place: Frankfurt am Main
-  source: Gemeinsamer Bibliotheksverbund ISBN
-  title: Wozu Dichter?
-  type: chapter
-ZEG:
-  author:
-  - family: Heidegger
-    given: Martin
-  collection-number: band 13
-  collection-title: Gesamtausgabe
-  container-title: Aus der Erfahrung des Denkens
-  editor:
-  - family: Heidegger
-    given: Hermann
-  event-place: Frankfurt am Main
-  id: ZEG
-  issued:
-    date-parts:
-    - - 2002
-  language: german
-  page: 37-74
-  publisher: Vittorio Klostermann
-  publisher-place: Frankfurt am Main
-  title: 'Zur Erörterung der Gelassenheit: Aus einem Feldweggespräch über das Denken'
-  title-short: Zur Erörterung der Gelassenheit
-  type: chapter
-ZW:
-  ISBN: 978-3-465-03236-6 978-3-465-03237-3
-  author:
-  - family: Heidegger
-    given: Martin
-  collection-number: band 5
-  collection-title: Gesamtausgabe
-  container-title: Holzwege
-  citation-key: heideggerZW
-  editor:
-  - dropping-particle: von
-    family: Herrmann
-    given: Friedrich-Wilhelm
-  event-place: Frankfurt am Main
-  id: ZW
-  issued:
-    date-parts:
-    - - 2003
-  language: german
-  page: 75-113
-  publisher: Vittorio Klostermann
-  publisher-place: Frankfurt am Main
-  source: Gemeinsamer Bibliotheksverbund ISBN
-  title: Die Zeit des Weltbildes
-  type: chapter
-EM:
-  author:
-  - family: Heidegger
-    given: Martin
-  citation-key: heideggerEinfuehrungMetaphysik1983
-  collection-number: band 40
-  collection-title: Gesamtausgabe
-  editor:
-  - family: Jaeger
-    given: Petra
-  event-place: Frankfurt am Main
-  id: heideggerEM
-  issued:
-    date-parts:
-    - - 1983
-  language: ger
-  publisher: Vittorio Klostermann
-  publisher-place: Frankfurt am Main
-  title: Einführung in die Metaphysik
-  type: book
-GA 21:
-  author:
-    - family: Heidegger
-      given: Martin
-  citation-key: heideggerGA21
-  collection-number: band 21
-  collection-title: Gesamtausgabe
-  editor:
-    - family: Biemel
-      given: Walter
-  event-place: Frankfurt am Main
-  issued:
-    date-parts:
-    - - 1976
-  language: ger
-  publisher: Vittorio Klostermann
-  publisher-place: Frankfurt am Main
-  title: Logik. Die Frage nach der Wahrheit
-  type: book
-GA 63:
-  author:
-    - family: Heidegger
-      given: Martin
-  citation-key: heideggerGA63
-  collection-number: band 63
-  collection-title: Gesamtausgabe
-  editor:
-    - family: Bröcker-Oltmanns
-      given: Käte
-  event-place: Frankfurt am Main
-  issued:
-    date-parts:
-    - - 1988
-  language: ger
-  publisher: Vittorio Klostermann
-  publisher-place: Frankfurt am Main
-  title: Ontologie (Hermeneutik der Faktizität)
-  type: book
-Sch:
-  id: heideggerSch
-  author:
-    - family: Heidegger
-      given: Martin
-  citation-key: heideggerSch
-  collection-number: band 42
-  collection-title: Gesamtausgabe
-  editor:
-    - family: Schüßler
-      given: Ingrid
-  event-place: Frankfurt am Main
-  issued:
-    date-parts:
-    - - 1988
-  language: ger
-  number-of-pages: '289'
-  publisher: Vittorio Klostermann
-  publisher-place: Frankfurt am Main
-  title: 'Schelling: Vom Wesen der menschlichen Freiheit (1809)'
-  type: book
-W:
-  id: heideggerW
-  author:
-    - family: Heidegger
-      given: Martin
-  editor:
-    - family: Herrmann
-      given: Friedrich-Wilhelm
-      dropping-particle: von
-  citation-key: heideggerW
-  collection-number: band 9
-  collection-title: Gesamtausgabe
-  event-place: Frankfurt am Main
-  ISBN: 978-3-465-03372-1
-  issued:
-    date-parts:
-    - - 1976
-  language: ger
-  number-of-pages: x, 487
-  publisher: Vittorio Klostermann
-  publisher-place: Frankfurt am Main
-  title: Wegmarken
-  type: book
-WiM:
-  id: heideggerWiM
-  author:
-    - family: Heidegger
-      given: Martin
-  citation-key: heideggerWiM
-  index-status: complete
-  index-author:
-    - family: Wit
-      given: Johannes
-      dropping-particle: de
-  collection-number: band 9
-  collection-title: Martin Heidegger Gesamtausgabe
-  container-title: Wegmarken
-  editor:
-    - family: Herrmann
-      given: Friedrich-Wilhelm
-      dropping-particle: von
-  event-place: Frankfurt am Main
-  ISBN: 3-465-02862-7
-  issued:
-    date-parts:
-    - - 1976
-  original-date:
-    date-parts:
-    - - 1929
-  page: 103-122
-  publisher: Vittorio Klostermann
-  publisher-place: Frankfurt am Main
-  language: de-DE
-  title: Was ist Metaphysik?
-  type: chapter
-GA 11:
-  id: heideggerGA11
-  author:
-    - family: Heidegger
-      given: Martin
-  citation-key: heideggerGA11
-  collection-number: band 11
-  collection-title: Martin Heidegger Gesamtausgabe
-  editor:
-    - family: Herrmann
-      given: Friedrich-Wilhelm
-      dropping-particle: von
-  event-place: Frankfurt am Main
-  ISBN: 978-3-465-03493-3 978-3-465-03492-6
-  issued:
-    - year: 2006
-  language: ger
-  number-of-pages: vi, 168
-  publisher: Vittorio Klostermann
-  publisher-place: Frankfurt am Main
-  title: Identität und Differenz
   type: book
 GA 18:
   id: heideggerGA18
@@ -824,6 +314,25 @@ GA 20:
   publisher: Vittorio Klostermann
   publisher-place: Frankfurt am Main
   title: Prolegomena zur Geschichte des Zeitbegriffs
+  type: book
+GA 21:
+  author:
+    - family: Heidegger
+      given: Martin
+  citation-key: heideggerGA21
+  collection-number: band 21
+  collection-title: Gesamtausgabe
+  editor:
+    - family: Biemel
+      given: Walter
+  event-place: Frankfurt am Main
+  issued:
+    date-parts:
+    - - 1976
+  language: ger
+  publisher: Vittorio Klostermann
+  publisher-place: Frankfurt am Main
+  title: Logik. Die Frage nach der Wahrheit
   type: book
 GA 22:
   id: heideggerGA22
@@ -941,6 +450,50 @@ GA 28:
     Der deutsche Idealismus (Fichte, Schelling, Hegel) und die philosophische
     Problemlage der Gegenwart
   type: book
+GA 29/30:
+  author:
+  - family: Heidegger
+    given: Martin
+  collection-editor:
+  - family: Klostermann
+    given: Vittorio
+  collection-number: band 29/30
+  collection-title: Gesamtausgabe
+  editor:
+  - family: Hermann
+    given: Friedrich-Wilhelm
+    non-dropping-particle: von
+  id: GA 29/30
+  issued:
+    date-parts:
+    - - 1983
+  language: german
+  publisher: Vittorio Klostermann
+  publisher-place: Frankfurt am Main
+  title: 'Die Grundbegriffe der Metaphysik: Welt, Endlichkeit, Einsamkeit'
+  title-short: Die Grundbegriffe der Metaphysik
+  type: book
+  index-status: incomplete
+GA 45:
+  title: Grundfragen der Philosophie. Ausgewählte ‘Probleme’ der ‘Logik’
+  title-short: Grundfragen der Philosophie
+  author:
+    - family: Heidegger
+      given: Martin
+  citation-key: heideggerGA45
+  collection-number: band 45
+  collection-title: Martin Heidegger Gesamtausgabe
+  editor:
+    - family: von Hermann
+      given: Friedrich-Wilhelm
+  event-place: Frankfurt am Main
+  issued:
+    date-parts:
+    - - 1984
+  language: ger
+  publisher: Vittorio Klostermann
+  publisher-place: Frankfurt am Main
+  type: book
 GA 49:
   author:
     - family: Heidegger
@@ -966,6 +519,28 @@ GA 49:
     Schelling: Philosophische Untersuchungen über das Wesen der menschlichen
     Freiheit und die damit zusammenhängen Gegenstände (1809)
   type: book
+GA 55:
+  id: heideggerGA55
+  author:
+    - family: Heidegger
+      given: Martin
+  citation-key: heideggerGA55
+  collection-number: band 55
+  collection-title: Martin Heidegger Gesamtausgabe
+  editor:
+    - family: Frings
+      given: Manfred S.
+  event-place: Frankfurt am Main
+  ISBN: 978-3-465-02648-8
+  issued:
+    date-parts:
+    - - 1979
+  language: ger
+  number-of-pages: XII, 406
+  publisher: Vittorio Klostermann
+  publisher-place: Frankfurt am Main
+  title: Heraklit
+  type: book
 GA 61:
   id: heideggerGA61
   author:
@@ -990,6 +565,45 @@ GA 61:
   publisher: Vittorio Klostermann
   publisher-place: Frankfurt am Main
   title: Phänomenologische Untersuchungen zu Aristoteles
+  type: book
+GA 63:
+  author:
+    - family: Heidegger
+      given: Martin
+  citation-key: heideggerGA63
+  collection-number: band 63
+  collection-title: Gesamtausgabe
+  editor:
+    - family: Bröcker-Oltmanns
+      given: Käte
+  event-place: Frankfurt am Main
+  issued:
+    date-parts:
+    - - 1988
+  language: ger
+  publisher: Vittorio Klostermann
+  publisher-place: Frankfurt am Main
+  title: Ontologie (Hermeneutik der Faktizität)
+  type: book
+GA 65:
+  title: Beiträge zur Philosophie (Vom Ereignis)
+  title-short: Beiträge
+  author:
+    - family: Heidegger
+      given: Martin
+  citation-key: heideggerGA65
+  collection-number: band 65
+  collection-title: Martin Heidegger Gesamtausgabe
+  editor:
+    - family: von Hermann
+      given: Friedrich-Wilhelm
+  event-place: Frankfurt am Main
+  issued:
+    date-parts:
+    - - 1989
+  language: ger
+  publisher: Vittorio Klostermann
+  publisher-place: Frankfurt am Main
   type: book
 GA 97:
   id: heideggerGA97
@@ -1034,6 +648,229 @@ GA 101:
   title: Winke I und II (Schwarze Hefte 1957-1959)
   title-short: GA 101
   type: book
+HF:
+  index-status: complete
+  index-author:
+    - family: Delft
+      given: André
+      dropping-particle: van
+  author:
+  - family: Heidegger
+    given: Martin
+  collection-number: band 13
+  collection-title: Gesamtausgabe
+  container-title: Aus der Erfahrung des Denkens
+  editor:
+  - family: Heidegger
+    given: Hermann
+  event-place: Frankfurt am Main
+  id: HF
+  issued:
+    date-parts:
+    - - 2002
+  language: german
+  page: 133-150
+  publisher: Vittorio Klostermann
+  publisher-place: Frankfurt am Main
+  title: 'Hebel – Der Hausfreund'
+  type: chapter
+JPH G:
+  index-status: complete
+  author:
+  - family: Heidegger
+    given: Martin
+  collection-editor:
+  - family: Klostermann
+    given: Vittorio
+  collection-number: band 16
+  collection-title: Gesamtausgabe
+  container-title: 'Reden und Zeugnisse eines Lebensweg: 1910–1976'
+  editor:
+  - family: Heidegger
+    given: Hermann
+  id: JPH G
+  issued:
+    date-parts:
+    - - 2000
+  language: german
+  page: 530-533
+  publisher: Vittorio Klostermann
+  publisher-place: Frankfurt am Main
+  title: Johann Peter Hebel (Göppingen, 9. November 1955, Volkshochschule)
+  type: chapter
+JPH Z:
+  author:
+  - family: Heidegger
+    given: Martin
+  collection-editor:
+  - family: Klostermann
+    given: Vittorio
+  collection-number: band 16
+  collection-title: Gesamtausgabe
+  container-title: 'Reden und Zeugnisse eines Lebensweg: 1910–1976'
+  editor:
+  - family: Heidegger
+    given: Hermann
+  id: JPH Z
+  issued:
+    date-parts:
+    - - 2000
+  language: german
+  page: 491-515
+  publisher: Vittorio Klostermann
+  publisher-place: Frankfurt am Main
+  title: Johann Peter Hebel (Zähringer Rede vom 5. September 1954)
+  type: chapter
+KPM:
+  author:
+    - family: Heidegger
+      given: Martin
+  citation-key: heideggerKPM
+  collection-number: band 3
+  collection-title: Martin Heidegger Gesamtausgabe
+  edition: 2. Aufl
+  editor:
+    - dropping-particle: von
+      family: Herrmann
+      given: Friedrich-Wilhelm
+  event-place: Frankfurt am Main
+  id: KPM
+  ISBN: 978-3-465-03677-7
+  issued:
+    - year: 2010
+  language: german
+  number-of-pages: XVIII, 317
+  original-date: 1929
+  original-publisher: Verlag von Friedrich Cohen
+  original-publisher-place: Bonn
+  publisher: Vittorio Klostermann
+  publisher-place: Frankfurt am Main
+  title: Kant und das Problem der Metaphysik
+  type: book
+Sch:
+  id: heideggerSch
+  author:
+    - family: Heidegger
+      given: Martin
+  citation-key: heideggerSch
+  collection-number: band 42
+  collection-title: Gesamtausgabe
+  editor:
+    - family: Schüßler
+      given: Ingrid
+  event-place: Frankfurt am Main
+  issued:
+    date-parts:
+    - - 1988
+  language: ger
+  number-of-pages: '289'
+  publisher: Vittorio Klostermann
+  publisher-place: Frankfurt am Main
+  title: 'Schelling: Vom Wesen der menschlichen Freiheit (1809)'
+  type: book
+SD:
+  id: heideggerSD
+  author:
+    - family: Heidegger
+      given: Martin
+  citation-key: heideggerSD
+  collection-number: band 14
+  collection-title: Martin Heidegger Gesamtausgabe
+  editor:
+    - family: Herrmann
+      given: Friedrich-Wilhelm
+      dropping-particle: von
+  event-place: Frankfurt am Main
+  issued:
+    - year: 2007
+  language: de-DE
+  number-of-pages: VI, 156
+  original-date:
+    - year: 1969
+  original-publisher: Max Niemeyer Verlag
+  original-publisher-place: Tübingen
+  publisher: Vittorio Klostermann
+  publisher-place: Frankfurt am Main
+  title: Zur Sache des Denkens
+  type: book
+Sp:
+  author:
+  - family: Heidegger
+    given: Martin
+  collection-editor:
+  - family: Klostermann
+    given: Vittorio
+  collection-number: band 16
+  collection-title: Gesamtausgabe
+  container-title: 'Reden und Zeugnisse eines Lebensweg: 1910–1976'
+  editor:
+  - family: Heidegger
+    given: Hermann
+  issued:
+    date-parts:
+    - - 2000
+  language: german
+  page: 652-683
+  publisher: Vittorio Klostermann
+  publisher-place: Frankfurt am Main
+  title: Spiegel-Gespräch mit Martin Heidegger (23. September 1966)
+  type: chapter
+  title-short: Spiegel-Gespräch
+SvG:
+  author:
+  - family: Heidegger
+    given: Martin
+  citation-key: heideggerSvG
+  collection-number: band 10
+  collection-title: Gesamtausgabe
+  editor:
+  - family: Jaeger
+    given: Petra
+  event-place: Frankfurt am Main
+  id: heideggerSvG
+  issued:
+    date-parts:
+    - - 1976
+  language: ger
+  publisher: Vittorio Klostermann
+  publisher-place: Frankfurt am Main
+  title: Der Satz vom Grund
+  type: book
+SZ:
+  author:
+  - family: Heidegger
+    given: Martin
+  id: SZ
+  issued:
+    date-parts:
+    - - 1976
+  language: de-DE
+  publisher: Max Niemeyer Verlag
+  publisher-place: Tübingen
+  original-date:
+    date-parts:
+    - - 1927
+  title: Sein und Zeit
+  type: book
+TK:
+  id: heideggerTechnikUndKehre1978
+  author:
+    - family: Heidegger
+      given: Martin
+  citation-key: heideggerTechnikUndKehre1978
+  collection-number: '1'
+  collection-title: Opuscula aus Wissenschaft und Dichtung
+  event-place: Pfullingen
+  ISBN: 3-7885-0178-2
+  issued:
+    date-parts:
+    - - 1978
+  language: de-DE
+  number-of-pages: '47'
+  publisher: Günther Neske
+  publisher-place: Pfullingen
+  title: Die Technik und die Kehre
+  type: book
 UK:
   ISBN: 978-3-465-03236-6 978-3-465-03237-3
   author:
@@ -1059,6 +896,173 @@ UK:
   source: Gemeinsamer Bibliotheksverbund ISBN
   title: Der Ursprung des Kunstwerkes
   type: chapter
+VA:
+  author:
+  - family: Heidegger
+    given: Martin
+  collection-editor:
+  - family: Klostermann
+    given: Vittorio
+  collection-number: band 7
+  collection-title: Gesamtausgabe
+  editor:
+  - family: Hermann
+    given: Friedrich-Wilhelm
+    non-dropping-particle: von
+  id: VA
+  issued:
+    date-parts:
+    - - 2000
+  language: german
+  publisher: Vittorio Klostermann
+  publisher-place: Frankfurt am Main
+  title: Vorträge und Aufsätze
+  type: book
+Vorarb29/30:
+  ISSN: 08854580, 21539170
+  author:
+  - family: Heidegger
+    given: Martin
+  citation-key: heideggerVorarb29/30
+  container-title: Heidegger Studies
+  id: heideggerVorarb29/30
+  issued:
+  - day: 2
+    month: 4
+    year: 1991
+  language: ger
+  page: 5-12
+  publisher: Duncker & Humblot GmbH
+  title: 'Unbenutzte Vorarbeiten zur Vorlesung vom Wintersemester 1929/30: „Die Grundbegriffe
+    der Metaphysik. Welt – Endlichkeit – Einsamkeit“'
+  title-short: Unbenutzte Vorarbeiten zur „Die Grundbegriffe der Metaphysik“
+  type: article-journal
+  volume: '7'
+W:
+  id: heideggerW
+  author:
+    - family: Heidegger
+      given: Martin
+  editor:
+    - family: Herrmann
+      given: Friedrich-Wilhelm
+      dropping-particle: von
+  citation-key: heideggerW
+  collection-number: band 9
+  collection-title: Gesamtausgabe
+  event-place: Frankfurt am Main
+  ISBN: 978-3-465-03372-1
+  issued:
+    date-parts:
+    - - 1976
+  language: ger
+  number-of-pages: x, 487
+  publisher: Vittorio Klostermann
+  publisher-place: Frankfurt am Main
+  title: Wegmarken
+  type: book
+WBPh:
+  author:
+  - family: Heidegger
+    given: Martin
+  citation-key: heideggerWBPh
+  collection-number: band 9
+  collection-title: Gesamtausgabe
+  container-title: Wegmarken
+  editor:
+  - dropping-particle: von
+    family: Herrmann
+    given: Friedrich-Wilhelm
+  event-place: Frankfurt am Main
+  id: WBPh
+  issued:
+    date-parts:
+    - - 1976
+  language: ger
+  page: 239-302
+  publisher: Vittorio Klostermann
+  publisher-place: Frankfurt am Main
+  title: Vom Wesen und Begriff der Φὐσις, Aristoteles, Physik B, 1
+  title-short: Vom Wesen und Begriff der Φὐσις
+  type: chapter
+WD:
+  ISBN: 978-3-465-03236-6 978-3-465-03237-3
+  author:
+  - family: Heidegger
+    given: Martin
+  collection-number: band 5
+  collection-title: Gesamtausgabe
+  container-title: Holzwege
+  editor:
+  - dropping-particle: von
+    family: Herrmann
+    given: Friedrich-Wilhelm
+  event-place: Frankfurt am Main
+  id: WD
+  issued:
+    date-parts:
+    - - 2003
+  language: german
+  page: 269-320
+  publisher: Vittorio Klostermann
+  publisher-place: Frankfurt am Main
+  source: Gemeinsamer Bibliotheksverbund ISBN
+  title: Wozu Dichter?
+  type: chapter
+WiM:
+  id: heideggerWiM
+  author:
+    - family: Heidegger
+      given: Martin
+  citation-key: heideggerWiM
+  index-status: complete
+  index-author:
+    - family: Wit
+      given: Johannes
+      dropping-particle: de
+  collection-number: band 9
+  collection-title: Martin Heidegger Gesamtausgabe
+  container-title: Wegmarken
+  editor:
+    - family: Herrmann
+      given: Friedrich-Wilhelm
+      dropping-particle: von
+  event-place: Frankfurt am Main
+  ISBN: 3-465-02862-7
+  issued:
+    date-parts:
+    - - 1976
+  original-date:
+    date-parts:
+    - - 1929
+  page: 103-122
+  publisher: Vittorio Klostermann
+  publisher-place: Frankfurt am Main
+  language: de-DE
+  title: Was ist Metaphysik?
+  type: chapter
+ZEG:
+  author:
+  - family: Heidegger
+    given: Martin
+  collection-number: band 13
+  collection-title: Gesamtausgabe
+  container-title: Aus der Erfahrung des Denkens
+  editor:
+  - family: Heidegger
+    given: Hermann
+  event-place: Frankfurt am Main
+  id: ZEG
+  issued:
+    date-parts:
+    - - 2002
+  language: german
+  page: 37-74
+  publisher: Vittorio Klostermann
+  publisher-place: Frankfurt am Main
+  title: 'Zur Erörterung der Gelassenheit: Aus einem Feldweggespräch über das Denken'
+  title-short: Zur Erörterung der Gelassenheit
+  type: chapter
 ZS:
   id: heideggerZoS
   author:
@@ -1081,3 +1085,53 @@ ZS:
   title: 'Zollikoner Seminare: Protokolle, Gespräche, Briefe'
   title-short: Zollikoner Seminare
   type: book
+ZuS:
+  id: heideggerZuS
+  author:
+    - family: Heidegger
+      given: Martin
+  citation-key: heideggerZuS
+  collection-number: band 14
+  collection-title: Martin Heidegger Gesamtausgabe
+  container-title: Zur Sache des Denkens
+  editor:
+    - family: Herrmann
+      given: Friedrich-Wilhelm
+      dropping-particle: von
+  event-place: Frankfurt am Main
+  issued:
+    - year: 2007
+  language: de-DE
+  original-date:
+    date-parts:
+    - - 1962
+  page: 1-15
+  publisher: Vittorio Klostermann
+  publisher-place: Frankfurt am Main
+  title: Zeit und Sein
+  type: chapter
+ZW:
+  ISBN: 978-3-465-03236-6 978-3-465-03237-3
+  author:
+  - family: Heidegger
+    given: Martin
+  collection-number: band 5
+  collection-title: Gesamtausgabe
+  container-title: Holzwege
+  citation-key: heideggerZW
+  editor:
+  - dropping-particle: von
+    family: Herrmann
+    given: Friedrich-Wilhelm
+  event-place: Frankfurt am Main
+  id: ZW
+  issued:
+    date-parts:
+    - - 2003
+  language: german
+  page: 75-113
+  publisher: Vittorio Klostermann
+  publisher-place: Frankfurt am Main
+  source: Gemeinsamer Bibliotheksverbund ISBN
+  title: Die Zeit des Weltbildes
+  type: chapter
