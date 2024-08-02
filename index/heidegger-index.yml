@@ -4753,11 +4753,16 @@ Theologische Schriften 3, Gebet 3:
     - start: 530
   type: w
 Theophrastus:
+  metadata:
+    urn: urn:cts:greekLit:tlg0093
   references:
     SA:
     - start: 323
   type: p
 Thomas v. Aquin:
+  metadata:
+    gnd: '118622110'
+    zeno: '20009273328'
   references:
     GA 29/30:
     - start: 69
@@ -4862,6 +4867,9 @@ Tragödie:
     EM:
     - start: 153
 Trakl, Georg:
+  metadata:
+    gnd: '118623575'
+    zeno: '20005801095'
   references:
     GA 1:
     - start: 56
@@ -6145,6 +6153,8 @@ wesentliche Möglichkeit des Seins:
   related:
   - Theologische Schriften 3, Gebet 3
 Ödipus:
+  metadata:
+    gnd: '118589393'
   references:
     SvG:
     - start: 154
