@@ -1231,7 +1231,8 @@ DK 28 B3:
     GA 91:
     - start: 225
     - start: 427
-    - start: 487f
+    - start: 487
+      suffix: f
     - start: 624
     - start: 689
     GA 98:
