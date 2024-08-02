@@ -213,8 +213,8 @@ Antigone (Sophokles):
   type: w
 Antigone, Erste Chorlied:
   author: Sophokles
-  metadata:
-    urn: urn:cts:greekLit:tlg0011.tlg002:100-161b
+#  metadata:
+#    urn: urn:cts:greekLit:tlg0011.tlg002:100-161b
   parent: Antigone (Sophokles)
   references:
     EM:
@@ -4684,7 +4684,7 @@ Symposion:
   type: w
 Symposion 205:
   metadata:
-    urn: urn:cts:greekLit:tlg0059.tlg011.perseus-grc2:205
+    urn: urn:cts:greekLit:tlg0059.tlg011:205
   parent: Symposion
   references:
     TK:
