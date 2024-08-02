@@ -126,6 +126,8 @@ Alpen:
 Anaximander:
   metadata:
     dk: 12
+    gnd: '118645102'
+    zeno: '20009097767'
   references:
     SvG:
     - start: 158
@@ -209,11 +211,17 @@ Antigone, Erste Chorlied:
   - Unheimliches
   type: w
 Antigonä:
+  metadata:
+    gnd: '118503340'
   references:
     SvG:
     - start: 15
   type: p
 Antiphon:
+  metadata:
+    dk: 87
+    gnd: '118649655'
+    urn: urn:cts:greekLit:tlg1147
   references:
     WBPh:
     - end: 265
@@ -234,6 +242,8 @@ Anwesen:
     WD:
     - start: 271
 Apollon:
+  metadata:
+    gnd: '118503642'
   references:
     GA 55:
     - start: 16
@@ -244,7 +254,9 @@ Apollon:
   type: p
 Aristoteles:
   metadata:
+    gnd: '118650130'
     urn: urn:cts:greekLit:tlg0086
+    zeno: '20009145664'
   references:
     EM:
     - start: 18
@@ -317,6 +329,8 @@ Ars rhetorica:
       suffix: f
   type: w
 Artemis:
+  metadata:
+    gnd: '118504509'
   references:
     GA 55:
     - end: 19
@@ -378,7 +392,9 @@ Augenblick:
       suffix: f
 Augustin:
   metadata:
+    gnd: '118505114'
     urn: urn:cts:latinLit:stoa0040
+    zeno: '20009151036'
   references:
     GA 63:
     - start: 23
@@ -651,6 +667,8 @@ Bodenständigkeit:
     - start: 522
     - start: 526
 Bollnow, Otto Friedrich:
+  metadata:
+    gnd: '118513079'
   references:
     GA 96:
     - start: 216
@@ -664,6 +682,8 @@ Boveri, Theodor:
     - start: 386
   type: p
 Brentano, Franz:
+  metadata:
+    gnd: '118515063'
   references:
     GA 1:
     - start: 56
@@ -1216,6 +1236,7 @@ Dabeibleiben:
 Darwin, Charles:
   metadata:
     gnd: '118523813'
+    zeno: '20009160620'
   references:
     GA 29/30:
     - start: 366
@@ -1392,6 +1413,10 @@ De partibus animalium:
       start: 229
   type: w
 Demokrit:
+  metadata:
+    dk: 68
+    gnd: 11852464X
+    zeno: 2000916085X
   references:
     WBPh:
     - start: 266
@@ -1515,6 +1540,9 @@ Der europäische Geist:
     - start: 106
   type: w
 Descartes, René:
+  metadata:
+    gnd: '118524844'
+    zeno: '20009160965'
   references:
     GA 29/30:
     - end: 84
@@ -1580,6 +1608,8 @@ Die Wiese:
     - start: 134
   type: w
 Diels, Hermann:
+  metadata:
+    gnd: '119061457'
   references:
     GA 55:
     - start: 37
@@ -1590,8 +1620,13 @@ Ding:
     - start: 16
     - start: 17
 Diogenes Laertius:
+  metadata:
+    gnd: '118525859'
+    urn: urn:cts:greekLit:tlg0004
   type: p
 Dionysos:
+  metadata:
+    gnd: '118679759'
   references:
     WD:
     - start: 269
@@ -1600,6 +1635,7 @@ Dionysos:
 Dostojevski:
   metadata:
     gnd: '118527053'
+    zeno: '20004703383'
   references:
     GA 1:
     - start: 56
@@ -1842,6 +1878,7 @@ Fehl Gottes:
 Fichte, Johann Gottlieb:
   metadata:
     gnd: '118532847'
+    zeno: '20009166882'
   references:
     GA 29/30:
     - start: 83
@@ -1887,6 +1924,8 @@ Fragwürdige:
     - end: 146
       start: 145
 Franz Joseph Strauß:
+  metadata:
+    gnd: '118619063'
   references:
     SvG:
     - start: 178
@@ -2139,6 +2178,7 @@ Gleichheit:
 Goethe, Johann Wolfgang von:
   metadata:
     gnd: '118540238'
+    zeno: '20004838912'
   references:
     HF:
     - start: 145
@@ -2299,6 +2339,9 @@ Haben der Welt:
     - end: 263
       start: 262
 Hamann, Joh. Georg:
+  metadata:
+    gnd: '124138004'
+    zeno: '20009175059'
   references:
     SvG:
     - start: 13
@@ -2351,6 +2394,7 @@ Hebel, Johann Peter:
 Hegel, Georg Wilhelm Friedrich:
   metadata:
     gnd: '118547739'
+    zeno: '20009176365'
   references:
     EM:
     - end: 130
@@ -2437,6 +2481,7 @@ Heraklit:
     dk: 22
     gnd: '118549421'
     urn: urn:cts:greekLit:tlg0626
+    zeno: '20009184244'
   references:
     EM:
     - start: 66
@@ -2458,6 +2503,9 @@ Herausfordern:
     - end: 16
       start: 14
 Herder, Johann Gottfried:
+  metadata:
+    gnd: '118549553'
+    zeno: '20009184295'
   references:
     JPH G:
     - start: 531
@@ -2504,11 +2552,16 @@ Himmlischen:
     - start: 270
     - start: 271
 Hitler, Adolf:
+  metadata:
+    gnd: '118551655'
   references:
     Sch:
     - start: 40
   type: p
 Hobbes, Thomas:
+  metadata:
+    gnd: '118551698'
+    zeno: '20009184309'
   references:
     GA 29/30:
     - start: 477
@@ -2518,6 +2571,10 @@ Holzwege:
     GA 29/30:
     - start: 11
 Homer:
+  metadata:
+    gnd: 11855333X
+    urn: urn:cts:greekLit:tlg0012
+    zeno: 2000509660X
   references:
     EM:
     - start: 133
@@ -2529,6 +2586,7 @@ Horizont:
 Humboldt, Wilhelm von:
   metadata:
     gnd: '118554727'
+    zeno: '20009185283'
   references:
     SZ:
     - start: 166
@@ -2705,6 +2763,7 @@ Kant und das Problem der Metaphysik:
 Kant, Immanuel:
   metadata:
     gnd: '118559796'
+    zeno: '20009187871'
   references:
     EM:
     - start: 129
@@ -2736,6 +2795,7 @@ Karlsruhe:
 Kierkegaard, Søren:
   metadata:
     gnd: '118562002'
+    zeno: '20009194479'
   references:
     GA 1:
     - start: 56
@@ -2764,6 +2824,8 @@ Klages, Ludwig:
     - start: 105
   type: p
 Kopernikus:
+  metadata:
+    gnd: '118565273'
   references:
     HF:
     - start: 144
@@ -2909,6 +2971,9 @@ Leere im Ganzen:
     GA 29/30:
     - start: 251
 Leibniz, Gottfried Wilhelm:
+  metadata:
+    gnd: '118571249'
+    zeno: '20009205187'
   references:
     EM:
     - start: 65
@@ -3008,6 +3073,9 @@ Mathematik:
     - end: 25
       start: 23
 Matthias Claudius:
+  metadata:
+    gnd: '118521098'
+    zeno: '20004655249'
   references:
     EM:
     - start: 107
@@ -3032,6 +3100,9 @@ Mechanizismus:
     - start: 380
     - start: 381
 Meister Eckhart:
+  metadata:
+    gnd: '118528823'
+    zeno: '20009222456'
   references:
     Sch:
     - start: 42
@@ -3182,6 +3253,9 @@ Mond:
     - start: 144
       suffix: f
 Mozart, Wolfgang Amadeus:
+  metadata:
+    gnd: '118584596'
+    zeno: '20007762631'
   references:
     SvG:
     - end: 99
@@ -3195,6 +3269,8 @@ Mundart:
     - start: 124
       suffix: f
 Mussolini, Benito:
+  metadata:
+    gnd: '118585967'
   references:
     Sch:
     - start: 40
@@ -3221,6 +3297,8 @@ Möglichkeit der λόγος:
     - start: 489
       suffix: f
 Müller, Johannes:
+  metadata:
+    gnd: '118585053'
   references:
     GA 29/30:
     - start: 372
@@ -3410,6 +3488,7 @@ Nichts:
 Nietzsche, Friedrich:
   metadata:
     gnd: '118587943'
+    zeno: '20009229728'
   references:
     EM:
     - start: 15
@@ -3577,6 +3656,8 @@ Organismus:
     - end: 388
       start: 385
 Otto Hahn:
+  metadata:
+    gnd: '118544853'
   references:
     SvG:
     - start: 178
@@ -3584,7 +3665,9 @@ Otto Hahn:
 Parmenides:
   metadata:
     dk: 28
+    gnd: '118591770'
     urn: urn:cts:greekLit:tlg1562
+    zeno: '20009262016'
   references:
     EM:
     - start: 103
@@ -3595,6 +3678,9 @@ Parmenides:
     - start: 243
   type: p
 Pascal, Blaise:
+  metadata:
+    gnd: '118591843'
+    zeno: '20009262059'
   references:
     SZ:
     - start: 4
@@ -3602,6 +3688,8 @@ Pascal, Blaise:
     - start: 54
   type: p
 Paulus:
+  metadata:
+    gnd: '118641549'
   references:
     GA 29/30:
     - start: 396
@@ -3790,6 +3878,7 @@ Phänomenologie:
     - start: 110
 Pindar:
   metadata:
+    gnd: '118594427'
     urn: urn:cts:greekLit:tlg0033
   references:
     EM:
@@ -3798,7 +3887,9 @@ Pindar:
   type: p
 Plato:
   metadata:
+    gnd: '118594893'
     urn: urn:cts:greekLit:tlg0059
+    zeno: '20009262431'
   references:
     EM:
     - start: 19
@@ -3890,6 +3981,8 @@ Rechnung:
     - start: 157
     - start: 168
 Reinhardt, Karl:
+  metadata:
+    gnd: '118744275'
   references:
     EM:
     - start: 115
@@ -3930,6 +4023,9 @@ Rickert, Heinrich:
     - start: 216
   type: p
 Rilke, Rainer Maria:
+  metadata:
+    gnd: '118601024'
+    zeno: 2000553268X
   references:
     GA 1:
     - start: 56
@@ -3957,6 +4053,8 @@ Ruhm:
     - start: 114
       suffix: f
 Rádl, Emanuel:
+  metadata:
+    gnd: 11926451X
   references:
     GA 29/30:
     - start: 365
@@ -3990,6 +4088,8 @@ Römer 8. 29:
     - start: 22
   type: w
 Sapphos:
+  metadata:
+    gnd: '118605534'
   references:
     EM:
     - start: 107
@@ -4082,6 +4182,7 @@ Scheler, Max:
 Schelling, Friedrich von:
   metadata:
     gnd: '118607057'
+    zeno: '20009264310'
   references:
     GA 1:
     - start: 56
@@ -4309,7 +4410,9 @@ Sophistes:
   type: w
 Sophokles:
   metadata:
+    gnd: '118615688'
     urn: urn:cts:greekLit:tlg0011
+    zeno: '20005701538'
   references:
     EM:
     - start: 114
@@ -4318,6 +4421,8 @@ Sophokles:
     - start: 154
   type: p
 Spemann, Hans:
+  metadata:
+    gnd: '118616056'
   references:
     GA 29/30:
     - start: 381
@@ -4327,6 +4432,7 @@ Spemann, Hans:
 Spengler, Oswald:
   metadata:
     gnd: '118616110'
+    zeno: '20009267891'
   references:
     GA 29/30:
     - start: 105
@@ -4357,6 +4463,9 @@ Spielraum:
     SZ:
     - start: 107
 Spinoza, Baruch:
+  metadata:
+    gnd: '118616242'
+    zeno: '20009272283'
   references:
     Sch:
     - end: 61
@@ -4432,6 +4541,8 @@ Späte Gedichte:
     - start: 285
   type: w
 Stanley, Wendell Meredith, 1904-1971:
+  metadata:
+    gnd: 114141239X
   references:
     G:
     - start: 525
@@ -4525,6 +4636,7 @@ System:
       suffix: f
 Tatian:
   metadata:
+    gnd: 11864310X
     urn: urn:cts:greekLit:tlg1766
   references:
     GA 63:
@@ -5498,6 +5610,7 @@ animal rationale:
     SvG:
     - start: 189
 antike Metaphysik:
+  parent: Metaphysik
   references:
     WiM:
     - start: 119
@@ -5750,6 +5863,7 @@ organische Chemie:
     GA 29/30:
     - start: 311
 philosophischen Anthropologie:
+  parent: Anthropologie
   references:
     GA 96:
     - start: 217
@@ -5757,6 +5871,8 @@ philosophischen Anthropologie:
     - end: 213
       start: 208
     - start: 218
+  related:
+  - Scheler, Max
 positive Forschung:
   references:
     GA 29/30:
