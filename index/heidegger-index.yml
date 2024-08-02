@@ -28,10 +28,17 @@ Abwesen:
     WD:
     - start: 271
 Act. Apost. XIX, 34:
-  author: Paulus
+  metadata:
+    urn: urn:cts:greekLit:tlg0031.tlg005:19.34
+  parent: Acta Apostolorum
   references:
     GA 55:
     - start: 14
+  type: w
+Acta Apostolorum:
+  author: Paulus
+  metadata:
+    urn: urn:cts:greekLit:tlg0031.tlg005
   type: w
 Adversus mathematicos:
   metadata:
@@ -47,8 +54,12 @@ Adversus mathematicos VII, 16:
   type: w
 Aias:
   author: Sophokles
+  metadata:
+    urn: urn:cts:greekLit:tlg0011.tlg003
   type: w
 Aias, v. 646f.:
+  metadata:
+    urn: urn:cts:greekLit:tlg0011.tlg003:646-647
   parent: Aias
   references:
     GA 54:
@@ -56,6 +67,7 @@ Aias, v. 646f.:
   related:
   - κρύπτεσθαι
   - φύειν
+  type: w
 Alemannische Gedichte:
   author: Hebel, Johann Peter
   metadata:
@@ -80,6 +92,8 @@ Alemannische Gedichte (Rezension):
   type: w
 Allemannische Gedichte:
   author: Hebel, Johann Peter
+  metadata:
+    zeno: '20005018617'
   references:
     GA 97:
     - start: 215
@@ -191,12 +205,16 @@ Anthropologie:
       start: 48
 Antigone (Sophokles):
   author: Sophokles
+  metadata:
+    urn: urn:cts:greekLit:tlg0011.tlg002
   references:
     GA 94:
     - start: 72
   type: w
 Antigone, Erste Chorlied:
   author: Sophokles
+  metadata:
+    urn: urn:cts:greekLit:tlg0011.tlg002:100-161b
   parent: Antigone (Sophokles)
   references:
     EM:
@@ -321,6 +339,8 @@ Aristoteles:
   type: p
 Ars rhetorica:
   author: Aristoteles
+  metadata:
+    urn: urn:cts:greekLit:tlg0086.tlg038
   references:
     GA 18:
     - start: 48
@@ -1359,6 +1379,7 @@ De Interpretatione:
   author: Aristoteles
   metadata:
     urn: urn:cts:greekLit:tlg0086.tlg017
+    zeno: '20009145850'
   references:
     EM:
     - start: 62
@@ -1486,6 +1507,8 @@ Der Sommerabend:
   type: w
 Der Untergang des Abendlandes:
   author: Spengler, Oswald
+  metadata:
+    zeno: '20009267905'
   references:
     GA 29/30:
     - start: 105
@@ -1651,6 +1674,8 @@ Driesch, Hans:
   type: p
 Duineser Elegien:
   author: Rilke, Rainer Maria
+  metadata:
+    zeno: '20005535905'
   references:
     WD:
     - start: 274
@@ -1820,6 +1845,7 @@ Ethica Nicomachea:
   author: Aristoteles
   metadata:
     urn: urn:cts:greekLit:tlg0086.tlg010
+    zeno: '20009149929'
   type: w
 Ethica Nicomachea VI:
   parent: Ethica Nicomachea
@@ -2247,6 +2273,8 @@ Grundfrage der Metaphysik:
     - start: 122
 Grundlegung zur Metaphysik der Sitten:
   author: Kant, Immanuel
+  metadata:
+    zeno: '20009189599'
   references:
     GA 21:
     - start: 4
@@ -2319,6 +2347,8 @@ Gründung:
     - whole: true
 Gute Antwort:
   author: Hebel, Johann Peter
+  metadata:
+    zeno: 2000502014X
   parent: Schatzkästlein des rheinischen Hausfreundes
   references:
     JPH Z:
@@ -2713,6 +2743,8 @@ Instrumental-anthropologische Bestimmung der Technik:
       start: 6
 JGB Nachgesang:
   author: Nietzsche, Friedrich
+  metadata:
+    zeno: '20009255907'
   parent: Jenseits von Gut und Böse
   references:
     GA 29/30:
@@ -2728,8 +2760,13 @@ Jaeger, Werner Wilhelm:
   type: p
 Jenseits von Gut und Böse:
   author: Nietzsche, Friedrich
+  metadata:
+    zeno: '20009255427'
   type: w
 Joh. 1:1:
+  metadata:
+    urn: urn:cts:greekLit:tlg0031.tlg004:1.1
+  parent: Johannesevangelium
   references:
     GA 100:
     - start: 264
@@ -2737,6 +2774,9 @@ Joh. 1:1:
   - λόγος
   type: w
 Johannesevangelium:
+  metadata:
+    urn: urn:cts:greekLit:tlg0031.tlg004
+    zeno: '20005344794'
   references:
     EM:
     - start: 135
@@ -2851,6 +2891,8 @@ Kreutzer, Conradin:
   type: p
 Kritik der Reinen Vernunft:
   author: Kant, Immanuel
+  metadata:
+    zeno: '20009188398'
   references:
     GA 29/30:
     - start: 422
@@ -3149,6 +3191,9 @@ Mensch qua Mensch:
     - start: 414
 Metaphysica:
   author: Aristoteles
+  metadata:
+    urn: urn:cts:greekLit:tlg0086.tlg025
+    zeno: '20009149392'
   references:
     EM:
     - start: 18
@@ -3446,6 +3491,8 @@ Nem. III:
   type: w
 Nemeischen Oden:
   author: Pindar
+  metadata:
+    urn: urn:cts:greekLit:tlg0033.tlg003
   type: w
 Neovitalismus:
   references:
@@ -3547,16 +3594,20 @@ Odyssee:
   author: Homer
   metadata:
     urn: urn:cts:greekLit:tlg0012.tlg002
+    zeno: 2000509688X
   type: w
 Odyssee XX:
   metadata:
     urn: urn:cts:greekLit:tlg0012.tlg002:20
+    zeno: '20005097088'
   parent: Odyssee
   references:
     GA 55:
     - start: 16
   type: w
 Odyssee XXIV:
+  metadata:
+    zeno: '20005097126'
   parent: Odyssee
   references:
     EM:
@@ -3566,6 +3617,7 @@ Oedipus Tyrannus:
   author: Sophokles
   metadata:
     urn: urn:cts:greekLit:tlg0011.tlg004
+    zeno: '20005701562'
   references:
     EM:
     - end: 116
@@ -3723,6 +3775,7 @@ Phaidros:
   author: Plato
   metadata:
     urn: urn:cts:greekLit:tlg0059.tlg012
+    zeno: '20009262660'
   references:
     EM:
     - start: 19
@@ -3809,6 +3862,7 @@ Physica:
   author: Aristoteles
   metadata:
     urn: urn:cts:greekLit:tlg0086.tlg031
+    zeno: '20009148590'
   references:
     GA 29/30:
     - start: 50
@@ -3906,6 +3960,8 @@ Plato:
   type: p
 Politica:
   author: Aristoteles
+  metadata:
+    urn: urn:cts:greekLit:tlg0086.tlg035
   references:
     GA 18:
     - start: 45
@@ -4135,6 +4191,8 @@ Satz vom augeschlossenen Dritten:
   - Satz des Widerspruchs
 Schatzkästlein des rheinischen Hausfreundes:
   author: Hebel, Johann Peter
+  metadata:
+    zeno: '20005019427'
   references:
     GA 13:
     - start: 117
@@ -4385,6 +4443,8 @@ Solipsismus:
     - start: 302
 Sonette an Orpheus:
   author: Rilke, Rainer Maria
+  metadata:
+    zeno: '20005536014'
   references:
     WD:
     - start: 274
@@ -4616,6 +4676,7 @@ Symposion:
   author: Plato
   metadata:
     urn: urn:cts:greekLit:tlg0059.tlg011
+    zeno: '20009262539'
   references:
     GA 55:
     - start: 132
@@ -4848,6 +4909,9 @@ Trieb:
       suffix: f
     - start: 385
 Trost:
+  author: Hebel, Johann Peter
+  metadata:
+    zeno: '20005019168'
   references:
     JPH Z:
     - start: 515
@@ -5113,6 +5177,8 @@ Vorhandenen:
     - start: 136
 Vorlesungen über die Geschichte der Philosophie:
   author: Hegel, Georg Wilhelm Friedrich
+  metadata:
+    zeno: '20009181946'
   references:
     GA 55:
     - start: 20
@@ -5421,6 +5487,8 @@ Wissenschaft:
   - positive Forschung
 Wissenschaft der Logik:
   author: Hegel, Georg Wilhelm Friedrich
+  metadata:
+    zeno: '20009177124'
   references:
     WBPh:
     - start: 251
