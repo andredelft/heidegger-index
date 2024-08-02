@@ -211,8 +211,6 @@ Antigone (Sophokles):
   type: w
 Antigone, Erste Chorlied:
   author: Sophokles
-#  metadata:
-#    urn: urn:cts:greekLit:tlg0011.tlg002:100-161b
   parent: Antigone (Sophokles)
   references:
     EM:
@@ -1645,6 +1643,9 @@ Dialekt:
   references:
     HF:
     - start: 134
+    JPH Z:
+    - start: 495
+    - start: 497
 Dialektik:
   references:
     GA 29/30:
@@ -1674,6 +1675,9 @@ Dichtung:
   references:
     HF:
     - start: 146
+    JPH Z:
+    - end: 496
+      start: 493
 Die Vergänglichkeit:
   author: Hebel, Johann Peter
   metadata:
@@ -2546,6 +2550,9 @@ Heimat:
     - start: 580
     JPH G:
     - start: 530
+    JPH Z:
+    - start: 493
+      suffix: f
 Heimweh:
   references:
     GA 13:
@@ -3381,6 +3388,11 @@ Mundart:
       suffix: f
     - start: 124
       suffix: f
+    JPH Z:
+    - start: 495
+    - start: 497
+  related:
+  - Dialekt
 Mussolini, Benito:
   metadata:
     gnd: '118585967'
@@ -4643,6 +4655,10 @@ Sprachgeist:
   references:
     HF:
     - start: 135
+    JPH Z:
+    - start: 495
+  related:
+  - Sprache
 Sprachmaschine:
   references:
     HF:
@@ -5853,6 +5869,12 @@ dialektische Schein:
     GA 29/30:
     - end: 422
       start: 421
+dichten:
+  references:
+    JPH Z:
+    - start: 493
+  related:
+  - Dichtung
 dichterisch wohnet der Mensch auf dieser Erde:
   parent: In lieblicher Bläue blühet...
   references:
