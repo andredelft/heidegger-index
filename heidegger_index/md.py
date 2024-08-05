@@ -18,7 +18,7 @@ def convert_md(content):
 
 RE_LEMMA_LINK = r"\[\[([^\]\n]+)\]\]"  # e.g. [[Aristoteles]]
 RE_WORK_CIT = r"\[@([^\]\n]+?)\]"  # e.g. [@GA-62, p. 4]
-RE_WORK_LINK_IN_TEXT = r"(?<!\[)@(\w[^\s,{}]*\w+)|@{([^\n{}]+?)}" # e.g. @GA-29/30 and @{GA 29/30}
+RE_IN_TEXT_WORK_CIT = r"(?<!\[)@(\w[^\s,{}]*\w+)|@{([^\n{}]+?)}" # e.g. @GA-29/30 and @{GA 29/30}
 
 
 class LemmaLinkInlineProcessor(InlineProcessor):
@@ -49,7 +49,6 @@ class WorkLinkInlineProcessor(InlineProcessor):
             work_obj = Work.objects.get(key=work_key)
         except Work.DoesNotExist:
             work_el = etree.SubElement(el, "span")
-            work_el.attrib["class"] = "italic"
             print(f"Markdown conversion: cited work {work_key} does not exist")
         else:
             href = reverse("work-detail", kwargs={"slug": work_obj.slug})
@@ -58,7 +57,6 @@ class WorkLinkInlineProcessor(InlineProcessor):
                 work_el.text = work_key
             else:
                 work_el.text = work_obj.title
-                work_el.attrib["class"] = "italic"
 
         if locator:
             work_el.tail = f", {locator.strip()}"  # Closing citation
@@ -88,7 +86,7 @@ class WorkCitationInlineProcessor(WorkLinkInlineProcessor):
         return el, m.start(), m.end()
 
 
-class WorkLinkInTextInlineProcessor(WorkLinkInlineProcessor):
+class InTextWorkCitInlineProcessor(WorkLinkInlineProcessor):
     def handleMatch(self, m, data):
         if m.group(1):
             work_key = m.group(1)
