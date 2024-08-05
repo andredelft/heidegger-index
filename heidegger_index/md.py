@@ -17,6 +17,8 @@ def convert_md(content):
 
 
 RE_LEMMA_LINK = r"\[\[([^\]\n]+)\]\]"  # e.g. [[Aristoteles]]
+# For citations were adhering to Pandoc's syntax.
+# See https://pandoc.org/chunkedhtml-demo/8.20-citation-syntax.html
 RE_WORK_CIT = r"\[@([^\]\n]+?)\]"  # e.g. [@GA-62, p. 4]
 RE_IN_TEXT_WORK_CIT = r"(?<!\[)@(\w[^\s,{}]*\w+)|@{([^\n{}]+?)}" # e.g. @GA-29/30 and @{GA 29/30}
 
@@ -132,6 +134,6 @@ class HeideggerIndexExtension(Extension):
             WorkCitationInlineProcessor(RE_WORK_CIT, md), "work_cit", 41
         )
         md.inlinePatterns.register(
-            WorkLinkInTextInlineProcessor(RE_WORK_LINK_IN_TEXT, md), "work_link", 42
+            InTextWorkCitInlineProcessor(RE_IN_TEXT_WORK_CIT, md), "work_link", 42
         )
         md.parser.blockprocessors["quote"] = NonLazyBlockQuoteBlockProcessor(md.parser)
