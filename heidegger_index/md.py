@@ -17,7 +17,10 @@ def convert_md(content):
 
 
 RE_LEMMA_LINK = r"\[\[([^\]\n]+)\]\]"  # e.g. [[Aristoteles]]
+# For citations were adhering to Pandoc's syntax.
+# See https://pandoc.org/chunkedhtml-demo/8.20-citation-syntax.html
 RE_WORK_CIT = r"\[@([^\]\n]+?)\]"  # e.g. [@GA-62, p. 4]
+RE_IN_TEXT_WORK_CIT = r"(?<!\[)@(\w[^\s,{}]*\w+)|@{([^\n{}]+?)}" # e.g. @GA-29/30 and @{GA 29/30}
 
 
 class LemmaLinkInlineProcessor(InlineProcessor):
@@ -38,38 +41,61 @@ class LemmaLinkInlineProcessor(InlineProcessor):
 
         el.text = display_value.strip()
         return el, m.start(), m.end()
-
-
-class WorkCitationInlineProcessor(InlineProcessor):
-    def handleMatch(self, m, data):
-        citation = m.group(1)
-        if "," in citation:
-            work_key, citation = citation.split(",", maxsplit=1)
-        else:
-            work_key = citation
-            citation = ""
-
-        work_key = work_key.strip()
-        citation = citation.strip()
-
+    
+class WorkLinkInlineProcessor(InlineProcessor):
+    def build_element(self, work_key, locator, citation=True):
         el = etree.Element("span")
-        el.text = "("  # Opening citation
+        if citation:
+            el.text = "("  # Opening citation
         try:
             work_obj = Work.objects.get(key=work_key)
         except Work.DoesNotExist:
             work_el = etree.SubElement(el, "span")
-            work_el.attrib["class"] = "italic"
             print(f"Markdown conversion: cited work {work_key} does not exist")
         else:
             href = reverse("work-detail", kwargs={"slug": work_obj.slug})
             work_el = etree.SubElement(el, "a", href=href)
+            if citation:
+                work_el.text = work_key
+            else:
+                work_el.text = work_obj.title
 
-        work_el.text = work_key
-
+        if locator:
+            work_el.tail = f", {locator.strip()}"  # Closing citation
         if citation:
-            work_el.tail = f", {citation.strip()})"  # Closing citation
+            if work_el.tail:
+                work_el.tail += ")"
+            else:
+                work_el.tail = ")"
+
+        return el
+        
+
+class WorkCitationInlineProcessor(WorkLinkInlineProcessor):
+    def handleMatch(self, m, data):
+        citation = m.group(1)
+        if "," in citation:
+            work_key, locator = citation.split(",", maxsplit=1)
         else:
-            work_el.tail = ")"
+            work_key = citation
+            locator = ""
+
+        work_key = work_key.strip()
+        locator = locator.strip()
+
+        el = self.build_element(work_key, locator, citation=True)
+
+        return el, m.start(), m.end()
+
+
+class InTextWorkCitInlineProcessor(WorkLinkInlineProcessor):
+    def handleMatch(self, m, data):
+        if m.group(1):
+            work_key = m.group(1)
+        else:
+            work_key = m.group(2)
+
+        el = self.build_element(work_key, locator="", citation=False)
 
         return el, m.start(), m.end()
 
@@ -106,5 +132,8 @@ class HeideggerIndexExtension(Extension):
         )
         md.inlinePatterns.register(
             WorkCitationInlineProcessor(RE_WORK_CIT, md), "work_cit", 41
+        )
+        md.inlinePatterns.register(
+            InTextWorkCitInlineProcessor(RE_IN_TEXT_WORK_CIT, md), "work_link", 42
         )
         md.parser.blockprocessors["quote"] = NonLazyBlockQuoteBlockProcessor(md.parser)
