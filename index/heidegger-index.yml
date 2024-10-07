@@ -73,6 +73,9 @@ Alemannische Gedichte:
   metadata:
     zeno: '20005018617'
   references:
+    GA 13:
+    - end: 125
+      start: 123
     GA 97:
     - start: 215
     HF:
@@ -83,9 +86,6 @@ Alemannische Gedichte:
     JPH G:
     - start: 532
       suffix: f
-    GA 13:
-    - end: 125
-      start: 123
     JPH Z:
     - end: 497
       start: 492
@@ -566,6 +566,8 @@ Besinnung:
   references:
     GA 16:
     - start: 574
+    TK:
+    - start: 34
 Bestand:
   references:
     SvG:
@@ -1810,6 +1812,8 @@ Entbergen:
       start: 11
     - end: 17
       start: 16
+    - start: 30
+    - start: 32
     WBPh:
     - start: 277
     - start: 299
@@ -2006,6 +2010,8 @@ Fragen:
       start: 86
     TK:
     - start: 5
+    - start: 35
+      suffix: f
     WiM:
     - start: 103
     - end: 108
@@ -2263,6 +2269,11 @@ Geworfenheit:
     - start: 137
     WiM:
     - start: 117
+Gewährte:
+  references:
+    TK:
+    - start: 31
+      suffix: f
 Glanz:
   references:
     FW:
@@ -3272,6 +3283,8 @@ Mensch:
     - start: 176
     - start: 189
     - start: 167
+    TK:
+    - start: 32
     WD:
     - start: 280
     - start: 285
@@ -3879,6 +3892,8 @@ Phaidros:
   references:
     EM:
     - start: 19
+    TK:
+    - start: 35
   type: w
 Phaidros 279a:
   author: Plato
@@ -4055,6 +4070,8 @@ Plato:
     - start: 484
     SZ:
     - start: 3
+    TK:
+    - start: 30
     WBPh:
     - start: 299
   type: p
@@ -4543,6 +4560,11 @@ Simplicius:
   references:
     SA:
     - start: 325
+  type: p
+Sokrates:
+  references:
+    TK:
+    - start: 30
   type: p
 Solipsismus:
   references:
@@ -5137,6 +5159,7 @@ Unverborgenheit:
     - end: 26
       start: 25
     - start: 27
+    - start: 32
     WBPh:
     - start: 268
     - start: 271
@@ -5516,6 +5539,13 @@ Werden:
     EM:
     - end: 105
       start: 103
+Wesen:
+  references:
+    TK:
+    - start: 29
+      suffix: f
+  related:
+  - Währende
 Wesen der Technik:
   parent: Technik
   references:
@@ -5523,6 +5553,8 @@ Wesen der Technik:
     - start: 5
     - start: 12
     - start: 17
+    - end: 36
+      start: 29
 Wesen des Lebens:
   parent: Leben
   references:
@@ -5572,6 +5604,10 @@ Wesen des Tieres:
     - start: 378
     - start: 388
     - start: 389
+Weserei:
+  references:
+    TK:
+    - start: 30
 Wie wenn am Feiertage...:
   author: Hölderlin, Friedrich
   metadata:
@@ -5661,6 +5697,11 @@ Wort:
     - start: 40
     Vorarb29/30:
     - start: 7
+Währende:
+  references:
+    TK:
+    - start: 30
+      suffix: f
 Zeitalter:
   references:
     SvG:
@@ -6285,6 +6326,10 @@ vulgäre Verstand:
     - start: 338
   related:
   - Alltäglichkeit
+walten:
+  references:
+    TK:
+    - start: 30
 wesentliche Möglichkeit des Seins:
   references:
     GA 29/30:
@@ -6763,6 +6808,7 @@ wesentliche Möglichkeit des Seins:
     TK:
     - end: 12
       start: 11
+    - start: 30
     WBPh:
     - start: 287
     - start: 297
@@ -6877,6 +6923,7 @@ wesentliche Möglichkeit des Seins:
     TK:
     - start: 12
       suffix: f
+    - start: 34
     WBPh:
     - start: 249
       suffix: f
@@ -7281,6 +7328,9 @@ wesentliche Möglichkeit des Seins:
     - start: 111
     - start: 113
     - start: 129
+    TK:
+    - start: 31
+    - start: 30
     WBPh:
     - start: 273
       suffix: f
