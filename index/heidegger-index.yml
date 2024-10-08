@@ -163,6 +163,8 @@ Anklang:
     - whole: true
 Anspruch:
   references:
+    FW:
+    - start: 88
     GA 29/30:
     - start: 428
       suffix: f
@@ -1844,6 +1846,8 @@ Entzug:
     - start: 165
 Erde:
   references:
+    FW:
+    - start: 88
     HF:
     - start: 134
     - start: 139
@@ -2099,6 +2103,12 @@ Gedankenlosigkeit:
     - end: 519
       start: 518
     - start: 529
+Gedeihen:
+  references:
+    FW:
+    - start: 89
+  related:
+  - gedeihen
 Gefahr:
   references:
     G:
@@ -2670,6 +2680,8 @@ Herstellen:
     - start: 288
 Himmel:
   references:
+    FW:
+    - start: 88
     HF:
     - start: 139
     - start: 150
@@ -3249,6 +3261,8 @@ Meister Eckhart:
     gnd: '118528823'
     zeno: '20009222456'
   references:
+    FW:
+    - start: 89
     Sch:
     - start: 42
   type: p
@@ -4240,6 +4254,8 @@ Rádl, Emanuel:
   type: p
 Rätsel:
   references:
+    FW:
+    - start: 89
     SZ:
     - start: 4
 Römer:
@@ -5776,6 +5792,8 @@ Zuspiel:
     - whole: true
 Zuspruch:
   references:
+    FW:
+    - start: 89
     SvG:
     - start: 183
     - start: 187
@@ -6020,6 +6038,8 @@ ganz Andere:
       type: r
 gedeihen:
   references:
+    FW:
+    - start: 88
     G:
     - start: 521
     - start: 528
