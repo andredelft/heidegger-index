@@ -2107,8 +2107,6 @@ Gedeihen:
   references:
     FW:
     - start: 89
-  related:
-  - gedeihen
 Gefahr:
   references:
     G:
