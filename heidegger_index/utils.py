@@ -89,7 +89,7 @@ def convert_numeric_unicode(value: str) -> str:
 
 def gen_work_sort_key(key: str) -> str:
     # Strip and add a leading zero to digits (GA 5 -> GA 005, GA 15 -> GA 015)
-    return re.sub("\d+", lambda m: f"{m.group():0>3}", key.strip())
+    return re.sub(r"\d+", lambda m: f"{m.group():0>3}", key.strip())
 
 
 def gen_lemma_sort_key(key: str) -> str:
@@ -106,7 +106,7 @@ def gen_lemma_sort_key(key: str) -> str:
     while n:
         sort_key, n = PREFIX_FILTER.subn("", sort_key)
     # Add leading zero's to numbers to improve number sorting
-    sort_key = re.sub("\d+", lambda m: f"{m.group():0>5}", sort_key)
+    sort_key = re.sub(r"\d+", lambda m: f"{m.group():0>5}", sort_key)
     return sort_key
 
 

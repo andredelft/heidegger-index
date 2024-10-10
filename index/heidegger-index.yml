@@ -830,6 +830,10 @@ DK 22 B112:
     GA 29/30:
     - start: 41
       suffix: f
+  related:
+  - φύσις
+  - ἀληθέα
+  - λέγειν
   type: w
 DK 22 B121:
   author: Heraklit
@@ -1151,6 +1155,9 @@ DK 22 B93:
     - start: 185
     WBPh:
     - start: 277
+  related:
+  - κρύπτειν
+  - λέγειν
   type: w
 DK 22 B97:
   author: Heraklit
@@ -6602,6 +6609,13 @@ wesentliche Möglichkeit des Seins:
   references:
     WBPh:
     - start: 262
+κρύπτειν:
+  lang: grc
+  parent: κρύπτεσθαι
+  references:
+    GA 29/30:
+    - start: 40
+      suffix: f
 κρύπτεσθαι:
   references:
     GA 54:
