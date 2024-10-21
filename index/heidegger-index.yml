@@ -557,6 +557,7 @@ Benommenheit, Offenheit der:
     - end: 370
       start: 368
       type: r
+    - start: 377
     - end: 362
       start: 359
     - start: 391
@@ -804,6 +805,7 @@ DK 22 B1:
   - λόγος
   type: w
 DK 22 B10:
+  author: Heraklit
   references:
     GA 91:
     - start: 223
@@ -1131,6 +1133,7 @@ DK 22 B87:
     - start: 150
   type: w
 DK 22 B88:
+  author: Heraklit
   references:
     GA 91:
     - start: 223
@@ -1251,6 +1254,7 @@ DK 28 B3:
     - start: 237
   type: w
 DK 28 B4:
+  author: Parmenides
   references:
     GA 102:
     - start: 312
@@ -1681,6 +1685,8 @@ Dichter:
     - start: 272
     - start: 273
     - start: 274
+  related:
+  - Dichten
 Dichtung:
   references:
     HF:
@@ -1688,6 +1694,8 @@ Dichtung:
     JPH Z:
     - end: 496
       start: 493
+  related:
+  - Dichten
 Die Vergänglichkeit:
   author: Hebel, Johann Peter
   metadata:
@@ -2106,6 +2114,7 @@ Ge-stell:
   related:
   - Gestell
 Gebrochenheit des Daseins:
+  parent: Dasein
   references:
     GA 29/30:
     - start: 252
@@ -3788,11 +3797,6 @@ Offene:
     - start: 277
     - start: 284
     - start: 285
-Offenheit der Benommenheit:
-  parent: Benommenheit
-  references:
-    GA 29/30:
-    - start: 377
 Offenheit für das Geheimnis:
   parent: Geheimnis
   references:
@@ -4011,6 +4015,8 @@ Philosophische Untersuchungen über das Wesen der menschlichen Freiheit und die 
       start: 6
     Sch:
     - whole: true
+  related:
+  - Problem der menschlichen Freiheit
   type: w
 Physica:
   author: Aristoteles
@@ -5573,6 +5579,7 @@ Weltnacht:
     - end: 272
       start: 269
 Weltphänomen:
+  parent: Welt
   references:
     GA 29/30:
     - start: 450
@@ -5640,6 +5647,7 @@ Wesen des Menschen:
     ZEG:
     - start: 38
 Wesen des Tieres:
+  parent: Tier
   references:
     GA 29/30:
     - start: 309
@@ -5757,6 +5765,7 @@ Zeitalter:
     - start: 180
     - start: 187
 Zeitlichkeit des Daseins:
+  parent: Dasein
   references:
     GA 29/30:
     - start: 253
@@ -6134,6 +6143,7 @@ menschliche Dasein:
   references:
     GA 22:
     - start: 207
+    - start: 311
     GA 25:
     - start: 20
     GA 29/30:
@@ -6141,11 +6151,6 @@ menschliche Dasein:
     - start: 302
     - start: 306
     - start: 307
-menschliches Dasein:
-  parent: Dasein
-  references:
-    GA 22:
-    - start: 311
     GA 63:
     - start: 21
     - start: 26
