@@ -799,6 +799,8 @@ DK 22 B1:
     GA 55:
     - start: 38
     - start: 150
+    SZ:
+    - start: 290
     WBPh:
     - start: 277
   related:
@@ -1250,6 +1252,8 @@ DK 28 B3:
     - start: 169
     GA 99:
     - start: 12
+    SZ:
+    - start: 282
     VA:
     - start: 237
   type: w
@@ -3344,6 +3348,8 @@ Metaphysica:
   references:
     EM:
     - start: 18
+    SZ:
+    - start: 282
     SvG:
     - start: 19
     WBPh:
@@ -3386,6 +3392,13 @@ Metaphysik:
     - start: 103
     - end: 122
       start: 118
+Metapolitik:
+  references:
+    GA 91:
+    - end: 179
+      start: 172
+  related:
+  - πόλις
 Mitdasein:
   references:
     SZ:
@@ -6025,6 +6038,8 @@ dichterisch wohnet der Mensch auf dieser Erde:
   references:
     DWM:
     - whole: true
+    GA 39:
+    - start: 217
     HF:
     - start: 147
     TK:
@@ -6622,6 +6637,11 @@ wesentliche Möglichkeit des Seins:
   references:
     EM:
     - start: 18
+καθόλου:
+  lang: grc
+  references:
+    GA 28:
+    - start: 25
 κατάφασις:
   lang: grc
   references:
@@ -7039,6 +7059,8 @@ wesentliche Möglichkeit des Seins:
     - start: 24
     GA 29/30:
     - start: 42
+    GA 3:
+    - start: 222
     SA:
     - start: 324
   related:
@@ -7211,6 +7233,11 @@ wesentliche Möglichkeit des Seins:
     - start: 487
     - start: 490
     - start: 488
+ἀληθεία:
+  lang: grc
+  references:
+    SZ:
+    - start: 282
 ἀληθέα:
   lang: grc
   parent: ἀλήθεια
@@ -7247,6 +7274,13 @@ wesentliche Möglichkeit des Seins:
     - start: 22
     - start: 23
     - start: 24
+ἀποφαίνεσθαι:
+  lang: grc
+  references:
+    GA 29/30:
+    - start: 44
+    SZ:
+    - start: 290
 ἀπόφασις:
   lang: grc
   references:

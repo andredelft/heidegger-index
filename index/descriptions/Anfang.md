@@ -1,0 +1,1 @@
+> ‘Beginn’ – das ist etwas anderes als ‘Anfang’. Eine neue Wetterlage z.B. beginnt mit einem Sturm, ihr Anfang aber ist die vorauswirkende, völlige Umwandlung der Luftverhältnisse. Beginn ist jenes, womit etwas anhebt, Anfang das, woraus etwas entspringt. [@GA 39, p. 3]
