@@ -857,6 +857,10 @@ DK 22 B123:
     - start: 122
     GA 102:
     - start: 28
+    GA 19:
+    - start: 237
+    GA 26:
+    - start: 281
     GA 29/30:
     - start: 41
     GA 55:
@@ -1139,6 +1143,14 @@ DK 22 B88:
   references:
     GA 91:
     - start: 223
+DK 22 B89:
+  author: Heraklit
+  references:
+    GA 26:
+    - start: 220
+  related:
+  - κόσμος
+  type: w
 DK 22 B9:
   author: Heraklit
   metadata:
@@ -1241,6 +1253,9 @@ DK 28 B3:
     - end: 815
       start: 791
     - start: 972
+    GA 84.2:
+    - start: 562
+    - start: 691
     GA 91:
     - start: 225
     - start: 427
@@ -1262,6 +1277,11 @@ DK 28 B4:
   references:
     GA 102:
     - start: 312
+    GA 26:
+    - start: 220
+  related:
+  - κόσμος
+  urn: urn:cts:greekLit:tlg1562.tlg002:4
 DK 28 B6:
   author: Parmenides
   metadata:
@@ -1275,6 +1295,8 @@ DK 28 B6:
     - start: 311
     - start: 330
       suffix: f
+    GA 19:
+    - start: 237
     GA 99:
     - start: 81
   related:
@@ -1307,6 +1329,14 @@ DK 28 B8 34-41:
   references:
     VA:
     - start: 237
+  type: w
+DK 30 B7:
+  author: Melissos
+  references:
+    GA 26:
+    - start: 220
+  related:
+  - κόσμος
   type: w
 Da-sein:
   parent: Dasein
@@ -2698,6 +2728,8 @@ Herrschaft des Menschen:
     - start: 182
 Herstellen:
   references:
+    GA 24:
+    - start: 149
     WBPh:
     - start: 272
     - start: 279
@@ -3293,6 +3325,11 @@ Meister Eckhart:
     - start: 89
     Sch:
     - start: 42
+  type: p
+Melissos:
+  references:
+    GA 26:
+    - start: 220
   type: p
 Mensch:
   references:
@@ -3892,6 +3929,9 @@ Parmenides:
     - start: 134
     GA 45:
     - start: 178
+    GA 62:
+    - end: 231
+      start: 209
     GA 98:
     - start: 243
   type: p
@@ -6632,6 +6672,8 @@ wesentliche Möglichkeit des Seins:
     GA 80.2:
     - start: 783
       suffix: f
+    GA 82:
+    - start: 434
 θέσις:
   lang: grc
   references:
@@ -6703,6 +6745,9 @@ wesentliche Möglichkeit des Seins:
 κόσμος:
   lang: grc
   references:
+    GA 26:
+    - start: 219
+      suffix: f
     GA 55:
     - start: 31
     SvG:
@@ -6893,8 +6938,12 @@ wesentliche Möglichkeit des Seins:
 περὶ φύσεως:
   lang: grc
   references:
+    GA 19:
+    - start: 237
     GA 54:
     - start: 207
+    GA 62:
+    - start: 209
 ποίησις:
   lang: grc
   references:
@@ -7071,6 +7120,8 @@ wesentliche Möglichkeit des Seins:
   references:
     EM:
     - start: 108
+    GA 82:
+    - start: 457
     GA 98:
     - start: 97
   related:
@@ -7107,6 +7158,8 @@ wesentliche Möglichkeit des Seins:
     - start: 46
     - end: 52
       start: 49
+    GA 62:
+    - start: 188
     SA:
     - start: 324
     WBPh:
