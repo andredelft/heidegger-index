@@ -1274,6 +1274,8 @@ DK 28 B3:
   type: w
 DK 28 B4:
   author: Parmenides
+  metadata:
+    urn: urn:cts:greekLit:tlg1562.tlg002:4
   references:
     GA 102:
     - start: 312
@@ -1281,7 +1283,7 @@ DK 28 B4:
     - start: 220
   related:
   - κόσμος
-  urn: urn:cts:greekLit:tlg1562.tlg002:4
+  type: w
 DK 28 B6:
   author: Parmenides
   metadata:
@@ -7286,11 +7288,6 @@ wesentliche Möglichkeit des Seins:
     - start: 487
     - start: 490
     - start: 488
-ἀληθεία:
-  lang: grc
-  references:
-    SZ:
-    - start: 282
 ἀληθέα:
   lang: grc
   parent: ἀλήθεια
@@ -7313,6 +7310,8 @@ wesentliche Möglichkeit des Seins:
     - start: 17
     GA 94:
     - start: 51
+    SZ:
+    - start: 282
     TK:
     - start: 11
     - start: 13
