@@ -2179,6 +2179,11 @@ Gefühl:
     - start: 110
   related:
   - Stimmung
+Gegend:
+  references:
+    ZEG:
+    - end: 47
+      start: 45
 Gegenstand:
   references:
     EM:
@@ -2196,12 +2201,17 @@ Gegenstand:
     - start: 16
     WD:
     - start: 283
+    ZEG:
+    - start: 48
+    - start: 44
 Gegnet:
   references:
     GA 55:
     - start: 335
     ZEG:
     - start: 47
+    - start: 49
+    - start: 51
 Geheimnis:
   references:
     GA 29/30:
@@ -2220,6 +2230,8 @@ Gelassenheit:
     ZEG:
     - start: 40
       suffix: ff
+    - end: 59
+      start: 51
 Gelassenheit zu den Dingen:
   parent: Gelassenheit
   references:
@@ -2788,6 +2800,9 @@ Horizont:
   references:
     GA 29/30:
     - start: 252
+    ZEG:
+    - start: 44
+      suffix: f
 Humboldt, Wilhelm von:
   metadata:
     gnd: '118554727'
@@ -3327,6 +3342,8 @@ Meister Eckhart:
     - start: 89
     Sch:
     - start: 42
+    ZEG:
+    - start: 42
   type: p
 Melissos:
   references:
@@ -3723,6 +3740,11 @@ Neuzeit:
     SvG:
     - start: 177
     - start: 153
+Nicht-Wollen:
+  references:
+    ZEG:
+    - start: 38
+      suffix: f
 Nichts:
   references:
     EM:
@@ -3849,6 +3871,10 @@ Offene:
     - start: 277
     - start: 284
     - start: 285
+    ZEG:
+    - start: 49
+    - start: 47
+    - start: 45
 Offenheit für das Geheimnis:
   parent: Geheimnis
   references:
@@ -5478,6 +5504,8 @@ Vorstellen:
     - start: 156
     - start: 162
     - start: 3
+    ZEG:
+    - start: 48
 Wachsen:
   references:
     WBPh:
@@ -5666,6 +5694,15 @@ Wesen der Technik:
     - start: 17
     - end: 36
       start: 29
+Wesen des Denkens:
+  parent: Denken
+  references:
+    ZEG:
+    - start: 38
+    - start: 39
+    - end: 43
+      start: 42
+    - start: 50
 Wesen des Lebens:
   parent: Leben
   references:
@@ -6409,6 +6446,11 @@ tiefe Langeweile:
       start: 251
     WiM:
     - start: 110
+transzendental-horizontale Vorstellen:
+  parent: Vorstellen
+  references:
+    ZEG:
+    - start: 44
 unbestimmte Unmittelbare:
   references:
     SZ:
