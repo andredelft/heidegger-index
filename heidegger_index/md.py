@@ -20,7 +20,9 @@ RE_LEMMA_LINK = r"\[\[([^\]\n]+)\]\]"  # e.g. [[Aristoteles]]
 # For citations were adhering to Pandoc's syntax.
 # See https://pandoc.org/chunkedhtml-demo/8.20-citation-syntax.html
 RE_WORK_CIT = r"\[@([^\]\n]+?)\]"  # e.g. [@GA-62, p. 4]
-RE_IN_TEXT_WORK_CIT = r"(?<!\[)@(\w[^\s,{}]*\w+)|@{([^\n{}]+?)}" # e.g. @GA-29/30 and @{GA 29/30}
+RE_IN_TEXT_WORK_CIT = (
+    r"(?<!\[)@(\w[^\s,{}]*\w+)|@{([^\n{}]+?)}"  # e.g. @GA-29/30 and @{GA 29/30}
+)
 
 
 class LemmaLinkInlineProcessor(InlineProcessor):
@@ -41,12 +43,14 @@ class LemmaLinkInlineProcessor(InlineProcessor):
 
         el.text = display_value.strip()
         return el, m.start(), m.end()
-    
+
+
 class WorkLinkInlineProcessor(InlineProcessor):
     def build_element(self, work_key, locator, citation=True):
         el = etree.Element("span")
         if citation:
             el.text = "("  # Opening citation
+
         try:
             work_obj = Work.objects.get(key=work_key)
         except Work.DoesNotExist:
@@ -55,13 +59,15 @@ class WorkLinkInlineProcessor(InlineProcessor):
         else:
             href = reverse("work-detail", kwargs={"slug": work_obj.slug})
             work_el = etree.SubElement(el, "a", href=href)
-            if citation:
-                work_el.text = work_key
-            else:
-                work_el.text = work_obj.title
+
+        if citation:
+            work_el.text = work_key
+        else:
+            work_el.text = work_obj.title
 
         if locator:
             work_el.tail = f", {locator.strip()}"  # Closing citation
+
         if citation:
             if work_el.tail:
                 work_el.tail += ")"
@@ -69,7 +75,7 @@ class WorkLinkInlineProcessor(InlineProcessor):
                 work_el.tail = ")"
 
         return el
-        
+
 
 class WorkCitationInlineProcessor(WorkLinkInlineProcessor):
     def handleMatch(self, m, data):
