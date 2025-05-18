@@ -6520,6 +6520,10 @@ wesentliche Möglichkeit des Seins:
   references:
     GA 29/30:
     - start: 382
+Übersetzung:
+  references:
+    GA 35:
+    - start: 15
 Überwindung der Metaphysik:
   references:
     GA 102:
@@ -7092,6 +7096,12 @@ wesentliche Möglichkeit des Seins:
     GA 29/30:
     - end: 447
       start: 444
+τὰ ὄντα:
+  lang: grc
+  references:
+    GA 35:
+    - end: 5
+      start: 3
 τέλος:
   lang: grc
   references:
@@ -7146,6 +7156,8 @@ wesentliche Möglichkeit des Seins:
 φυσιολόγοι:
   lang: grc
   references:
+    GA 19:
+    - start: 436
     GA 22:
     - start: 216
     GA 28:
@@ -7455,6 +7467,9 @@ wesentliche Möglichkeit des Seins:
     - start: 1
     GA 29/30:
     - start: 49
+    GA 86:
+    - start: 571
+      suffix: f
     GA 98:
     - start: 49
     TK:

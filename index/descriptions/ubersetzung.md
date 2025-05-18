@@ -1,0 +1,1 @@
+> Die Übersetzung ist immer Ergebnis und letzte Sammlung einer Auslegung. Übersetzung ist nie ein bloßes Auswechseln einer fremden Sprache gegen die Muttersprache, sondern das Über-setzen mit der ursprünglichen Kraft der eigenen Sprache in die Wirklichkeit der Welt, die sich in der fremden bekundet. [@GA 35, p. 15]

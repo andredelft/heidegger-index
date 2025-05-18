@@ -1,0 +1,1 @@
+> τὰ ὄντα – das Seiende – das meint: das [[Seiende im Ganzen]]. Davon unterschieden: alles Seiende sowohl, wie das Ganze Seiende. Doch machen wir uns nichts vor. Was damit gemeint ist, verstehen wir doch noch nicht in aller Klarheit. [@GA 35, p. 5]
