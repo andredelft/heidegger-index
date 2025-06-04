@@ -1884,10 +1884,21 @@ Enthüllen:
   references:
     TK:
     - start: 7
-Entmachtung:
+Entmachtung der φύσις:
   references:
+    GA 40:
+    - start: 217
+      suffix: ff
     GA 45:
     - start: 195
+    GA 65:
+    - start: 115
+    GA 82:
+    - start: 106
+    GA 94:
+    - start: 247
+  related:
+  - φύσις
 Entschlossenheit:
   references:
     GA 29/30:
@@ -2125,6 +2136,10 @@ Fähigkeit:
   references:
     GA 29/30:
     - start: 489
+Galilei, Galileo:
+  references:
+    GA 41:
+    - start: 66
 Ganze des Seienden:
   references:
     GA 29/30:
@@ -3695,6 +3710,9 @@ Naturwissenschaft:
   references:
     GA 29/30:
     - start: 85
+    GA 41:
+    - end: 69
+      start: 66
     HF:
     - start: 140
     - start: 144
