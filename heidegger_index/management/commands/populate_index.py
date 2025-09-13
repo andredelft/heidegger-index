@@ -51,7 +51,7 @@ class Command(BaseCommand):
             self._flush_table(Model)
 
         # Load work data
-        with open(settings.WORK_REFS_FILE) as f:
+        with open(settings.WORK_REFS_FILE, encoding='utf-8') as f:
             works_data = yaml.safe_load(f)
 
         # Load descriptions
@@ -60,12 +60,12 @@ class Command(BaseCommand):
             glob(str(settings.DESCRIPTIONS_DIR / "*.md")), desc="Loading descriptions"
         ):
             lemma = Path(fpath).stem
-            with open(fpath) as f:
+            with open(fpath, encoding='utf-8') as f:
                 md_content = f.read()
             description_by_sort_key[gen_lemma_sort_key(lemma)] = md_content
 
         # Load index data
-        with open(settings.INDEX_FILE) as f:
+        with open(settings.INDEX_FILE, encoding='utf-8') as f:
             index_data = yaml.safe_load(f)
 
         # Populate works and index by title and by key

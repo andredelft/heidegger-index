@@ -59,7 +59,7 @@ def add_ref(
         lang = "grc"
 
     # Open index file
-    with open(INDEX_FILE) as f:
+    with open(INDEX_FILE, encoding='utf-8') as f:
         index = yaml.safe_load(f)
 
     # Prepare reference dictionary
@@ -148,13 +148,13 @@ def add_ref(
 
     index[lemma] = lemma_entry
 
-    with open(INDEX_FILE, "w") as f:
+    with open(INDEX_FILE, "w", encoding='utf-8') as f:
         yaml.safe_dump(index, f, allow_unicode=True)
 
 
 def add_rel(first_lemma, second_lemma, rel_type):
     # Open index file
-    with open(INDEX_FILE) as f:
+    with open(INDEX_FILE, encoding='utf-8') as f:
         index = yaml.safe_load(f)
 
     # Validation: first_lemma and second_lemma exist
@@ -202,12 +202,12 @@ def add_rel(first_lemma, second_lemma, rel_type):
         case _:
             print("No match")
 
-    with open(INDEX_FILE, "w") as f:
+    with open(INDEX_FILE, "w", encoding='utf-8') as f:
         yaml.safe_dump(index, f, allow_unicode=True)
 
 
 def find_ref(search_term, max_l_dist=2, num_results=5):
-    with open(INDEX_FILE) as f:
+    with open(INDEX_FILE, encoding='utf-8') as f:
         index = yaml.safe_load(f)
     matches = match_lemmata(search_term, index, max_l_dist, True)
     if matches:
@@ -226,7 +226,7 @@ def add_metadata(md_type, lemma, lemma_type, md_value=None, overwrite=False):
         raise click.BadParameter(e)
 
     # Open index file
-    with open(INDEX_FILE) as f:
+    with open(INDEX_FILE, encoding='utf-8') as f:
         index = yaml.safe_load(f)
 
     # Validation: {md_type: md_value} is not already present in index.
@@ -334,7 +334,7 @@ def add_metadata(md_type, lemma, lemma_type, md_value=None, overwrite=False):
     index[lemma] = lemma_dict
 
     # Close and write index file.
-    with open(INDEX_FILE, "w") as f:
+    with open(INDEX_FILE, "w", encoding='utf-8') as f:
         yaml.safe_dump(index, f, allow_unicode=True)
 
 
@@ -359,7 +359,7 @@ def format_refs(
     citation_style=CITEPROC_STYLE,
     output_file=OUTPUT_FILE,
 ):
-    with open(work_refs_file) as f:
+    with open(work_refs_file, encoding='utf-8') as f:
         refs = yaml.safe_load(f)
 
     r = requests.post(
@@ -368,5 +368,5 @@ def format_refs(
         params={"style": citation_style, "responseformat": "html"},
     )
 
-    with open(output_file, "wb") as f:
+    with open(output_file, "wb", encoding='utf-8') as f:
         f.write(r.content)

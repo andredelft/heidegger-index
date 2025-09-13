@@ -13,8 +13,8 @@ def validate_yaml(file, schema):
 
 
 def validate_index():
-    with open(INDEX_FILE) as f:
-        with open(SCHEMA_FILE) as s:
+    with open(INDEX_FILE, encoding='utf-8') as f:
+        with open(SCHEMA_FILE, encoding='utf-8') as s:
             validate_yaml(f, s)
 
 
