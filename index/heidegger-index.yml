@@ -863,6 +863,9 @@ DK 22 B123:
     - start: 281
     GA 29/30:
     - start: 41
+    GA 34:
+    - end: 16
+      start: 13
     GA 55:
     - end: 131
       start: 109
@@ -4219,6 +4222,27 @@ Plato:
     WBPh:
     - start: 299
   type: p
+Politeia:
+  author: Plato
+  metadata:
+    urn: urn:cts:greekLit:tlg0059.tlg030
+    zeno: '20009262555'
+  type: w
+Politeia VII 514a-517a:
+  author: Plato
+  metadata:
+    urn: urn:cts:greekLit:tlg0059.tlg030.perseus-grc2:7.514-7.517
+  parent: Politeia
+  references:
+    GA 34:
+    - end: 19
+      start: 17
+    - end: 147
+      start: 21
+    W:
+    - end: 238
+      start: 203
+  type: w
 Politica:
   author: Aristoteles
   metadata:
@@ -5050,6 +5074,17 @@ Theophrastus:
     SA:
     - start: 323
   type: p
+Theätet:
+  author: Plato
+  metadata:
+    urn: urn:cts:greekLit:tlg0059.tlg006
+    zeno: '20009262687'
+  references:
+    GA 34:
+    - start: 146
+    - end: 322
+      start: 149
+  type: w
 Thomas v. Aquin:
   metadata:
     gnd: '118622110'
