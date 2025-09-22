@@ -2183,10 +2183,6 @@ Gedankenlosigkeit:
     - end: 519
       start: 518
     - start: 529
-Gedeihen:
-  references:
-    FW:
-    - start: 89
 Gefahr:
   references:
     G:
@@ -5612,6 +5608,8 @@ Walten:
     - end: 47
       start: 46
     - start: 48
+    TK:
+    - start: 30
 Walten des Seienden:
   parent: Walten
   references:
@@ -6174,12 +6172,6 @@ dialektische Schein:
     GA 29/30:
     - end: 422
       start: 421
-dichten:
-  references:
-    JPH Z:
-    - start: 493
-  related:
-  - Dichtung
 dichterisch wohnet der Mensch auf dieser Erde:
   parent: In lieblicher Bläue blühet...
   references:
@@ -6248,7 +6240,8 @@ ganz Andere:
 gedeihen:
   references:
     FW:
-    - start: 88
+    - end: 89
+      start: 88
     G:
     - start: 521
     - start: 528
@@ -6559,10 +6552,6 @@ vulgäre Verstand:
     - start: 338
   related:
   - Alltäglichkeit
-walten:
-  references:
-    TK:
-    - start: 30
 wesentliche Möglichkeit des Seins:
   references:
     GA 29/30:
@@ -7232,7 +7221,7 @@ wesentliche Möglichkeit des Seins:
     - start: 24
     GA 29/30:
     - start: 42
-    GA 3:
+    KPM:
     - start: 222
     SA:
     - start: 324

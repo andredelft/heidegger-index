@@ -8,6 +8,7 @@ DWM:
     given: Vittorio
   collection-number: band 7
   collection-title: Gesamtausgabe
+  container-title: Vorträge und Aufsätze
   editor:
   - family: Hermann
     given: Friedrich-Wilhelm
@@ -18,7 +19,7 @@ DWM:
     date-parts:
     - - 2000
   language: ger
-  page: 239-302
+  page: 189-208
   publisher: Vittorio Klostermann
   publisher-place: Frankfurt am Main
   title: »… dichterisch wohnet der Mensch …«
