@@ -532,6 +532,11 @@ Benehmen:
     - end: 372
       start: 362
     - start: 375
+Benennung:
+  references:
+    ZEG:
+    - start: 52
+      suffix: f
 Benommenheit:
   references:
     GA 29/30:
@@ -847,6 +852,15 @@ DK 22 B121:
   references:
     GA 55:
     - start: 12
+  type: w
+DK 22 B122:
+  author: Heraklit
+  metadata:
+    urn: urn:cts:greekLit:tlg0626.tlg002:123
+  references:
+    ZEG:
+    - end: 73
+      start: 71
   type: w
 DK 22 B123:
   author: Heraklit
@@ -2203,6 +2217,7 @@ Gegend:
     ZEG:
     - end: 47
       start: 45
+    - start: 53
 Gegenstand:
   references:
     EM:
@@ -2231,6 +2246,11 @@ Gegnet:
     - start: 47
     - start: 49
     - start: 51
+    - start: 52
+    - end: 71
+      start: 54
+  related:
+  - Gegend
 Geheimnis:
   references:
     GA 29/30:
@@ -2826,6 +2846,7 @@ Horizont:
     ZEG:
     - start: 44
       suffix: f
+    - start: 55
 Humboldt, Wilhelm von:
   metadata:
     gnd: '118554727'
@@ -3657,6 +3678,11 @@ Nachstellen:
     - start: 138
   related:
   - Gestell
+Name:
+  references:
+    ZEG:
+    - end: 54
+      start: 52
 Natur:
   references:
     EM:
@@ -3901,6 +3927,7 @@ Offene:
     - start: 49
     - start: 47
     - start: 45
+    - start: 54
 Offenheit für das Geheimnis:
   parent: Geheimnis
   references:
@@ -5222,6 +5249,9 @@ Transzendenz:
     - start: 115
     - start: 118
     - start: 120
+    ZEG:
+    - start: 44
+    - start: 55
 Trieb:
   references:
     GA 22:
@@ -6512,6 +6542,8 @@ transzendental-horizontale Vorstellen:
   references:
     ZEG:
     - start: 44
+    - start: 55
+    - start: 56
 unbestimmte Unmittelbare:
   references:
     SZ:
