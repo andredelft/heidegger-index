@@ -18,7 +18,7 @@
 
 {% if work.children.all %}
 <ul class="work-list">
-  {% for work in work.children.all %}
+  {% for work in work.children.all|dictsort:"csl_json.page" %}
     <li>
       <a href="{% url "work-detail" work.slug %}">{{ work.title }}</a>
     </li>
