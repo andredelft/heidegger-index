@@ -631,6 +631,28 @@ GA 65:
   publisher: Vittorio Klostermann
   publisher-place: Frankfurt am Main
   type: book
+GA 96:
+  id: heideggerGA96
+  author:
+    - family: Heidegger
+      given: Martin
+  citation-key: heideggerGA96
+  collection-number: band 96
+  collection-title: Martin Heidegger Gesamtausgabe
+  editor:
+    - family: Trawny
+      given: Peter
+  event-place: Frankfurt am Main
+  ISBN: 978-3-465-03839-9
+  issued:
+    - year: 2014
+  language: de-DE
+  number-of-pages: '285'
+  publisher: Vittorio Klostermann
+  publisher-place: Frankfurt am Main
+  title: Überlegungen XII-XV (Schwarze Hefte 1939–1941)
+  title-short: GA 96
+  type: book
 GA 97:
   id: heideggerGA97
   author:
@@ -653,6 +675,71 @@ GA 97:
   title: Anmerkungen I-V (Schwarze Hefte 1942-1948)
   title-short: GA 97
   type: book
+GA 98:
+  id: heideggerGA98
+  author:
+    - family: Heidegger
+      given: Martin
+  citation-key: heideggerGA98
+  collection-number: Band 98
+  collection-title: Martin Heidegger Gesamtausgabe
+  editor:
+    - family: Trawny
+      given: Peter
+  event-place: Frankfurt am Main
+  ISBN: 978-3-465-00583-4
+  issued:
+    - year: 2018
+  language: ger
+  number-of-pages: VI, 422
+  publisher: Vittorio Klostermann
+  publisher-place: Frankfurt am Main
+  title: Anmerkungen VI-IX (Schwarze Hefte 1948/49-1951)
+  title-short: GA 98
+  type: book
+GA 99:
+  id: heideggerGA99
+  author:
+    - family: Heidegger
+      given: Martin
+  citation-key: heideggerGA99
+  collection-number: band 99
+  collection-title: Martin Heidegger Gesamtausgabe
+  editor:
+    - family: Trawny
+      given: Peter
+  event-place: Frankfurt am Main
+  ISBN: 978-3-465-00776-0
+  issued:
+    - year: 2019
+  language: ger
+  number-of-pages: VI, 190
+  publisher: Vittorio Klostermann
+  publisher-place: Frankfurt am Main
+  title: Vier Hefte I und II (Schwarze Hefte 1947-1950)
+  title-short: GA 99
+  type: book
+GA 100:
+  id: heideggerGA100
+  author:
+    - family: Heidegger
+      given: Martin
+  citation-key: heideggerGA100
+  collection-number: band 100
+  collection-title: Martin Heidegger Gesamtausgabe
+  editor:
+    - family: Trawny
+      given: Peter
+  event-place: Frankfurt am Main
+  ISBN: 978-3-465-01118-7 978-3-465-01121-7
+  issued:
+    - year: 2020
+  language: ger
+  publisher: Vittorio Klostermann
+  publisher-place: Frankfurt am Main
+  title: Vigilae und notturno (Schwarze Hefte 1952-53 bis 1957)
+  title-short: GA 100
+  type: book
 GA 101:
   id: heideggerGA101
   author:
@@ -673,6 +760,27 @@ GA 101:
   publisher-place: Frankfurt am Main
   title: Winke I und II (Schwarze Hefte 1957-1959)
   title-short: GA 101
+  type: book
+GA 102:
+  id: heideggerGA102
+  author:
+    - family: Heidegger
+      given: Martin
+  citation-key: heideggerGA102
+  collection-number: band 102
+  collection-title: Martin Heidegger Gesamtausgabe
+  editor:
+    - family: Trawny
+      given: Peter
+  event-place: Frankfurt am Main
+  ISBN: 978-3-465-02690-7
+  issued:
+    - year: 2022
+  language: ger
+  publisher: Klostermann
+  publisher-place: Frankfurt am Main
+  title: Vorläufiges I-IV (Schwarze Hefte 1963-1970)
+  title-short: GA 102
   type: book
 HF:
   index-status: complete
