@@ -381,13 +381,13 @@ Atomtechnik:
     - start: 527
 Atomzeitalter:
   references:
+    700JM:
+    - start: 577
     G:
     - end: 525
       start: 522
     - start: 528
     - start: 529
-    GA 16:
-    - start: 577
     SvG:
     - start: 178
     - start: 179
@@ -574,7 +574,7 @@ Bernoulli:
     - start: 19
 Besinnung:
   references:
-    GA 16:
+    700JM:
     - start: 574
     TK:
     - start: 34
@@ -2679,19 +2679,17 @@ Heilige:
     - start: 274
 Heimat:
   references:
+    700JM:
+    - end: 576
+      start: 574
+    - end: 580
+      start: 578
     G:
     - end: 522
       start: 520
     GA 13:
     - end: 124
       start: 123
-    GA 16:
-    - start: 574
-    - start: 575
-    - start: 576
-    - start: 578
-    - start: 579
-    - start: 580
     JPH G:
     - start: 530
     JPH Z:
@@ -2699,14 +2697,13 @@ Heimat:
       suffix: f
 Heimweh:
   references:
+    700JM:
+    - end: 580
+      start: 578
     GA 13:
     - start: 123
       type: r
     - start: 124
-    GA 16:
-    - start: 578
-    - start: 579
-    - start: 580
     GA 29/30:
     - start: 7
     - end: 12
@@ -3117,12 +3114,12 @@ Kreutzer, Conradin:
     gnd: 11871600X
     zeno: '20007755473'
   references:
+    700JM:
+    - start: 581
     G:
     - end: 518
       start: 517
     - start: 529
-    GA 16:
-    - start: 581
   type: p
 Kritik der Reinen Vernunft:
   author: Kant, Immanuel
@@ -3159,10 +3156,10 @@ Kunst:
     - start: 300
 Langeweile:
   references:
+    700JM:
+    - start: 579
     EWI:
     - start: 39
-    GA 16:
-    - start: 579
     GA 29/30:
     - start: 115
       suffix: ff
@@ -3659,14 +3656,14 @@ NL 9[42] 12.354:
   type: w
 Nachdenken:
   references:
+    700JM:
+    - start: 574
+    - start: 582
     G:
     - start: 521
     - start: 526
     - end: 529
       start: 528
-    GA 16:
-    - start: 574
-    - start: 582
 Nachlass (Friedrich Nietzsche):
   author: Nietzsche, Friedrich
   type: w
@@ -5051,19 +5048,19 @@ Tatsache:
     - start: 281
 Technik:
   references:
+    700JM:
+    - end: 578
+      start: 577
+    - start: 579
+      type: r
+    - start: 580
+      type: r
     G:
     - end: 524
       start: 523
     - start: 526
       type: r
     - start: 527
-    GA 16:
-    - start: 577
-    - start: 578
-    - start: 579
-      type: r
-    - start: 580
-      type: r
     GA 29/30:
     - start: 115
     HF:
@@ -5333,14 +5330,16 @@ Ungesprochene:
 Unheimische:
   parent: Unheimlichkeit
   references:
-    EM:
-    - start: 160
-    GA 16:
+    700JM:
     - end: 581
       start: 575
+    EM:
+    - start: 160
 Unheimliches:
   parent: Unheimlichkeit
   references:
+    700JM:
+    - start: 578
     EM:
     - end: 162
       start: 155
@@ -5354,8 +5353,6 @@ Unheimliches:
     - start: 527
     GA 100:
     - start: 221
-    GA 16:
-    - start: 578
     HF:
     - start: 148
     JPH G:
@@ -6009,9 +6006,9 @@ Zuhandene:
     - start: 137
 Zukunft:
   references:
-    GA 16:
-    - start: 574
-    - start: 575
+    700JM:
+    - end: 575
+      start: 574
 Zukünftigen:
   references:
     GA 65:
@@ -6527,9 +6524,9 @@ technische Gegenstand:
 tiefe Langeweile:
   parent: Langeweile
   references:
-    GA 16:
-    - start: 579
-    - start: 580
+    700JM:
+    - end: 580
+      start: 579
     GA 29/30:
     - end: 410
       start: 409

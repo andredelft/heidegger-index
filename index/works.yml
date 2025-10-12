@@ -1,3 +1,27 @@
+700JM:
+  id: heidegger700JM
+  author:
+  - family: Heidegger
+    given: Martin
+  collection-editor:
+  - family: Klostermann
+    given: Vittorio
+  collection-number: band 16
+  collection-title: Gesamtausgabe
+  container-title: 'Reden und Zeugnisse eines Lebensweg: 1910–1976'
+  editor:
+  - family: Heidegger
+    given: Hermann
+  issued:
+    date-parts:
+    - - 2000
+  language: german
+  page: 574-582
+  publisher: Vittorio Klostermann
+  publisher-place: Frankfurt am Main
+  title: 700 Jahre Messkirch (Ansprache zum Heimatabend am 22. Juli 1961)
+  title-short: 700 Jahre Messkirch
+  type: chapter
 DWM:
   author:
   - family: Heidegger
@@ -927,6 +951,29 @@ SD:
   publisher-place: Frankfurt am Main
   title: Zur Sache des Denkens
   type: book
+SDU:
+  id: heideggerSDU
+  author:
+  - family: Heidegger
+    given: Martin
+  collection-editor:
+  - family: Klostermann
+    given: Vittorio
+  collection-number: band 16
+  collection-title: Gesamtausgabe
+  container-title: 'Reden und Zeugnisse eines Lebensweg: 1910–1976'
+  editor:
+  - family: Heidegger
+    given: Hermann
+  issued:
+    date-parts:
+    - - 2000
+  language: german
+  page: 107-117
+  publisher: Vittorio Klostermann
+  publisher-place: Frankfurt am Main
+  title: Die Selbstbehauptung der deutschen Universität
+  type: chapter
 Sp:
   author:
   - family: Heidegger
