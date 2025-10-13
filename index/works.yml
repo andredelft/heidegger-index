@@ -443,7 +443,8 @@ GA 25:
   event-place: Frankfurt am Main
   ISBN: 978-3-465-02819-2 978-3-465-02817-8
   issued:
-    - year: 1995
+    date-parts:
+    - - 1995
   language: ger
   note: Marburger Vorlesung Wintersemester 1927/28
   number-of-pages: xii, 436
@@ -524,6 +525,73 @@ GA 29/30:
   title-short: Die Grundbegriffe der Metaphysik
   type: book
   index-status: incomplete
+GA 34:
+  id: heideggerGA34
+  author:
+    - family: Heidegger
+      given: Martin
+  citation-key: heideggerGA34
+  collection-number: band 34
+  collection-title: Martin Heidegger Gesamtausgabe
+  edition: 2., durchges. Aufl
+  editor:
+    - family: Mörchen
+      given: Hermann
+  event-place: Frankfurt am Main
+  ISBN: 978-3-465-02925-0
+  issued:
+    - year: 1997
+  language: ger
+  number-of-pages: X, 338
+  publisher: Vittorio Klostermann
+  publisher-place: Frankfurt am Main
+  title: 'Vom Wesen der Wahrheit : Zu Platons Höhlengleichnis und Theätet'
+  type: book
+GA 35:
+  id: heideggerGA35
+  author:
+    - family: Heidegger
+      given: Martin
+  citation-key: heideggerGA35
+  collection-number: band 35
+  collection-title: Martin Heidegger Gesamtausgabe
+  editor:
+    - family: Trawny
+      given: Peter
+  event-place: Frankfurt am Main
+  ISBN: 978-3-465-03726-2
+  issued:
+    - year: 2012
+  language: ger
+  number-of-pages: XII, 272
+  publisher: Vittorio Klostermann
+  publisher-place: Frankfurt am Main
+  title: >-
+    Der Anfang der abendländischen Philosophie : Auslegung des Anaximander und
+    Parmenides
+  title-short: Der Anfang der abendländischen Philosophie
+  type: book
+GA 39:
+  id: heideggerGA39
+  author:
+    - family: Heidegger
+      given: Martin
+  citation-key: heideggerGA39
+  collection-number: band 39
+  collection-title: Martin Heidegger Gesamtausgabe
+  edition: 4., durchgesehene und ergänzte Auflage
+  editor:
+    - family: Ziegler
+      given: Susanne
+  event-place: Frankfurt am Main
+  ISBN: 978-3-465-02849-9
+  issued:
+    - year: 2022
+  language: ger
+  publisher: Vittorio Klostermann
+  publisher-place: Frankfurt am Main
+  title: Hölderlins Hymnen "Germanien" und "Der Rhein"
+  type: book
 GA 45:
   title: Grundfragen der Philosophie. Ausgewählte ‘Probleme’ der ‘Logik’
   title-short: Grundfragen der Philosophie
@@ -654,6 +722,27 @@ GA 65:
   language: ger
   publisher: Vittorio Klostermann
   publisher-place: Frankfurt am Main
+  type: book
+GA 86:
+  id: heideggerGA86
+  author:
+    - family: Heidegger
+      given: Martin
+  citation-key: heideggerGA86
+  collection-number: band 86
+  collection-title: Martin Heidegger Gesamtausgabe
+  editor:
+    - family: Trawny
+      given: Peter
+  event-place: Frankfurt am Main
+  ISBN: 978-3-465-03682-1
+  issued:
+    - year: 2011
+  language: ger
+  number-of-pages: XLII, 906
+  publisher: Vittorio Klostermann
+  publisher-place: Frankfurt am Main
+  title: 'Seminare: Hegel - Schelling'
   type: book
 GA 96:
   id: heideggerGA96
@@ -801,7 +890,7 @@ GA 102:
   issued:
     - year: 2022
   language: ger
-  publisher: Klostermann
+  publisher: Vittorio Klostermann
   publisher-place: Frankfurt am Main
   title: Vorläufiges I-IV (Schwarze Hefte 1963-1970)
   title-short: GA 102
