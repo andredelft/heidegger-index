@@ -2111,8 +2111,10 @@ Fragen:
       start: 106
     - end: 121
       start: 117
-Fragwürdige:
+Fragwürdig:
   references:
+    GA 16:
+    - start: 111
     HH:
     - end: 146
       start: 145
@@ -4308,6 +4310,11 @@ Problem der menschlichen Freiheit:
   references:
     GA 29/30:
     - start: 429
+Prometheus:
+  references:
+    GA 16:
+    - start: 109
+  type: p
 Protagoras:
   references:
     GA 80.2:
@@ -4714,6 +4721,11 @@ Sein zu Seiendem als Seidendem:
   references:
     SZ:
     - start: 4
+Seinede im Ganzen:
+  references:
+    GA 16:
+    - end: 111
+      start: 110
 Seinsblinden:
   references:
     WBPh:
@@ -6643,6 +6655,11 @@ wesentliche Möglichkeit des Seins:
     SvG:
     - start: 168
     - start: 169
+αἴσθησις:
+  lang: grc
+  references:
+    GA 19:
+    - start: 209
 γεν:
   lang: grc
   references:
@@ -7225,6 +7242,11 @@ wesentliche Möglichkeit des Seins:
     - start: 46
   related:
   - φύσει ὄντα
+τὸ ὄν ᾗ ὄν:
+  lang: grc
+  references:
+    GA 19:
+    - start: 208
 τόπος:
   lang: grc
   references:
