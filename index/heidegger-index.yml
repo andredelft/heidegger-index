@@ -494,6 +494,11 @@ Bedeutung:
     - start: 115
   related:
   - wesentliche Möglichkeit des Seins
+Bedingnis:
+  references:
+    ZEG:
+    - start: 59
+      suffix: f
 Bedrängnis im Ganzen:
   references:
     GA 29/30:
@@ -1784,6 +1789,9 @@ Ding:
     EM:
     - start: 16
     - start: 17
+    ZEG:
+    - end: 61
+      start: 58
 Diogenes Laertius:
   metadata:
     gnd: '118525859'
@@ -5452,6 +5460,13 @@ Vereinzelung:
     GA 29/30:
     - end: 253
       start: 251
+Vergegnis:
+  references:
+    ZEG:
+    - end: 60
+      start: 56
+  related:
+  - Gegnet
 Verhalten:
   references:
     SZ:
@@ -5806,6 +5821,8 @@ Wesen des Denkens:
     - end: 43
       start: 42
     - start: 50
+    - end: 58
+      start: 56
 Wesen des Lebens:
   parent: Leben
   references:
