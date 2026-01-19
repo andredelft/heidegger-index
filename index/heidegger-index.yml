@@ -220,7 +220,7 @@ Antigone, Erste Chorlied:
   related:
   - τέχνη
   - δίκη
-  - Unheimliches
+  - Unheimliche
   type: w
 Antigonä:
   metadata:
@@ -3657,7 +3657,7 @@ NL 2[127]:
     - start: 66
   related:
   - Nihilismus
-  - Unheimliches
+  - Unheimliche
   type: w
 NL 9[42] 12.354:
   author: Nietzsche, Friedrich
@@ -5359,7 +5359,7 @@ Unheimische:
       start: 575
     EM:
     - start: 160
-Unheimliches:
+Unheimliche:
   parent: Unheimlichkeit
   references:
     700JM:
