@@ -2727,6 +2727,10 @@ Heimweh:
   related:
   - Stimmung
   - Philosophie
+Heiterkeit:
+  references:
+    700JM:
+    - start: 582
 Her-vor-bringen:
   references:
     TK:
@@ -2778,6 +2782,11 @@ Hergestelltheit:
     WBPh:
     - start: 248
       suffix: f
+Herkunft:
+  references:
+    700JM:
+    - end: 581
+      start: 580
 Hermeneutik:
   references:
     GA 63:
@@ -6042,6 +6051,7 @@ Zukunft:
     700JM:
     - end: 575
       start: 574
+    - start: 581
 Zukünftigen:
   references:
     GA 65:
