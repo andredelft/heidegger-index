@@ -5871,6 +5871,7 @@ Wesen des Menschen:
     - start: 149
     ZEG:
     - start: 38
+    - start: 61
 Wesen des Tieres:
   parent: Tier
   references:
@@ -6388,6 +6389,13 @@ metaphysischen Begriffe:
       start: 9
     - end: 13
       start: 12
+methodologische Zergliederung der Physik:
+  references:
+    GA 77:
+    - start: 42
+    - start: 134
+    ZEG:
+    - start: 61
 moderne Technik:
   parent: Technik
   references:
