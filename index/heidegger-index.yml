@@ -791,9 +791,17 @@ Christentum:
     EM:
     - start: 16
     - start: 80
+    GA 16:
+    - start: 416
     GA 96:
     - start: 215
       suffix: f
+  related:
+  - Christlichkeit
+Christlichkeit:
+  references:
+    GA 16:
+    - start: 416
 Christus:
   references:
     WD:
@@ -1795,6 +1803,13 @@ Dichtung:
       start: 493
   related:
   - Dichten
+Die Selbstbehauptung der deutschen Universität:
+  references:
+    GA 16:
+    - end: 381
+      start: 377
+    - start: 430
+  type: w
 Die Vergänglichkeit:
   author: Hebel, Johann Peter
   metadata:
@@ -2896,6 +2911,11 @@ Hobbes, Thomas:
     GA 29/30:
     - start: 477
   type: p
+Holocaust:
+  references:
+    GA 16:
+    - start: 431
+      type: r
 Holzwege:
   references:
     GA 29/30:
@@ -3143,6 +3163,8 @@ Kierkegaard, Søren:
   references:
     GA 1:
     - start: 56
+    GA 16:
+    - start: 416
     GA 29/30:
     - start: 226
     GA 63:
@@ -3399,6 +3421,14 @@ Maas:
   references:
     WD:
     - start: 273
+Marcuse, Herbert:
+  metadata:
+    gnd: '118577638'
+  references:
+    GA 16:
+    - end: 431
+      start: 430
+  type: p
 Markgräflerland:
   references:
     GA 13:
@@ -3759,6 +3789,11 @@ Name:
     ZEG:
     - end: 54
       start: 52
+Nationalsocializmus:
+  references:
+    GA 16:
+    - end: 431
+      start: 430
 Natur:
   references:
     EM:
