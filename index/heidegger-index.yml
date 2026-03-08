@@ -822,9 +822,12 @@ DK 22 B1:
   type: w
 DK 22 B10:
   author: Heraklit
+  metadata:
+    urn: urn:cts:greekLit:tlg0626.tlg002:10
   references:
     GA 91:
     - start: 223
+  type: w
 DK 22 B104:
   author: Heraklit
   metadata:
@@ -1166,9 +1169,12 @@ DK 22 B87:
   type: w
 DK 22 B88:
   author: Heraklit
+  metadata:
+    urn: urn:cts:greekLit:tlg0626.tlg002:88
   references:
     GA 91:
     - start: 223
+  type: 2
 DK 22 B89:
   author: Heraklit
   references:
