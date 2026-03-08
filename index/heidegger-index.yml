@@ -757,16 +757,14 @@ Chemie:
     - start: 278
   related:
   - Naturwissenschaft
-Christendum:
-  references:
-    GA 96:
-    - start: 215
-      suffix: f
 Christentum:
   references:
     EM:
     - start: 16
     - start: 80
+    GA 96:
+    - start: 215
+      suffix: f
 Christus:
   references:
     WD:
