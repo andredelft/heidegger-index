@@ -1,0 +1,4 @@
+> Philosophie, Metaphysik ist ein Heimweh, ein Trieb, überall zu Hause zu sein, ein Verlangen, nicht blind und richtungslos, sondern das in uns aufwacht zu solchen Fragen und ihrer Einheit, wie wir sie eben stellten: Was ist Welt, Endlichkeit, Vereinzelung? [@GA 29/30, p. 9]
+
+> Unsere Sprache nennt den Zug zur Heimat das Heimweh. In ihm ist die Heimat so bedrängend als Heimat gegenwärtig wie nirgends sonst. Indes sieht es so aus, als sei gerade für den heutigen Menschen, weil er überall zu Hause ist und nirgends, das Heimweh abgestorben. …
+> Bedenken wir es gut und lang: Das Heimweh ist dort lebendig, wo der Mensch ständig auf der Flucht ins Unheimische ist, das ihn unterhalten , behexen, seine Zeit ausfüllen, ihm die Zeit verkürzen soll, weil sie ihm fortwährend zu lang wird. [@700JM, pp. 578-9]

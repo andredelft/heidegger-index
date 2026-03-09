@@ -2826,11 +2826,11 @@ Heimweh:
       type: r
     - start: 124
     GA 29/30:
-    - start: 7
     - end: 12
-      start: 10
+      start: 7
     - start: 33
     - start: 28
+    - start: 120
     GA 73.1:
     - start: 761
     - start: 819
@@ -2845,6 +2845,7 @@ Heimweh:
   related:
   - Stimmung
   - Philosophie
+  - Heimat
 Heiterkeit:
   references:
     700JM:
