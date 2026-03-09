@@ -2831,6 +2831,17 @@ Heimweh:
       start: 10
     - start: 33
     - start: 28
+    GA 73.1:
+    - start: 761
+    - start: 819
+    JPH Z:
+    - start: 493
+      type: r
+    - start: 494
+    SvG:
+    - start: 62
+    VA:
+    - start: 102
   related:
   - Stimmung
   - Philosophie
