@@ -2377,6 +2377,7 @@ Gelassenheit:
       suffix: ff
     - end: 59
       start: 51
+    - start: 62
 Gelassenheit zu den Dingen:
   parent: Gelassenheit
   references:
@@ -2435,6 +2436,9 @@ Geschichtlichkeit:
     - end: 21
       start: 19
     - start: 39
+    ZEG:
+    - start: 61
+      type: r
 Geschick:
   references:
     EM:
@@ -3980,6 +3984,7 @@ Nicht-Wollen:
     ZEG:
     - start: 38
       suffix: f
+    - start: 62
 Nichts:
   references:
     EM:
@@ -6063,6 +6068,7 @@ Wesen des Menschen:
     ZEG:
     - start: 38
     - start: 61
+    - start: 62
 Wesen des Tieres:
   parent: Tier
   references:
@@ -6558,6 +6564,10 @@ großen Anfang:
   references:
     GA 94:
     - start: 53
+historisch:
+  references:
+    ZEG:
+    - start: 61
 im Ganzen:
   references:
     GA 29/30:
@@ -6838,6 +6848,7 @@ transzendental-horizontale Vorstellen:
     - start: 44
     - start: 55
     - start: 56
+    - start: 62
 unbestimmte Unmittelbare:
   references:
     SZ:
