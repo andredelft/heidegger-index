@@ -2013,6 +2013,8 @@ Entschlossenheit:
     GA 29/30:
     - start: 251
     - start: 427
+    ZEG:
+    - start: 63
   related:
   - Augenblick
 Entzug:
@@ -6021,6 +6023,10 @@ Wesen der Technik:
     - start: 17
     - end: 36
       start: 29
+Wesen der Wahrheit:
+  references:
+    ZEG:
+    - start: 63
 Wesen des Denkens:
   parent: Denken
   references:
@@ -6171,6 +6177,10 @@ Wohnen:
     - start: 143
     - end: 147
       start: 146
+Wollen:
+  references:
+    ZEG:
+    - start: 63
 Wort:
   references:
     GA 29/30:
