@@ -505,6 +505,8 @@ Bedingnis:
     ZEG:
     - start: 59
       suffix: f
+    - end: 64
+      start: 63
 Bedrängnis im Ganzen:
   references:
     GA 29/30:
@@ -2013,8 +2015,13 @@ Entschlossenheit:
     GA 29/30:
     - start: 251
     - start: 427
+    SZ:
+    - start: 270
+    - end: 301
+      start: 297
     ZEG:
     - start: 63
+    - start: 64
   related:
   - Augenblick
 Entzug:
@@ -6038,6 +6045,7 @@ Wesen des Denkens:
     - start: 50
     - end: 58
       start: 56
+    - start: 64
 Wesen des Lebens:
   parent: Leben
   references:
