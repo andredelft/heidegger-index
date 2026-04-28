@@ -366,7 +366,7 @@ Atomenergie:
   references:
     G:
     - end: 524
-      start: 523
+      start: 522
     HF:
     - start: 146
     SvG:
@@ -390,10 +390,10 @@ Atomzeitalter:
     700JM:
     - start: 577
     G:
-    - end: 525
+    - end: 526
       start: 522
-    - start: 528
-    - start: 529
+    - end: 529
+      start: 528
     SvG:
     - start: 178
     - start: 179
@@ -727,6 +727,8 @@ Blut und Boden:
       type: r
 Boden:
   references:
+    G:
+    - start: 521
     GA 16:
     - start: 560
     GA 94:
@@ -2126,6 +2128,7 @@ Europa:
   references:
     G:
     - start: 523
+  type: g
 Existentzialität:
   references:
     SZ:
@@ -2339,6 +2342,8 @@ Gegenstand:
     - start: 62
     G:
     - start: 523
+    - end: 527
+      start: 526
     SvG:
     - start: 174
     - start: 175
@@ -2368,6 +2373,8 @@ Gegnet:
   - Gegend
 Geheimnis:
   references:
+    G:
+    - start: 528
     GA 29/30:
     - start: 255
     SvG:
@@ -2604,8 +2611,8 @@ Grund und Boden:
   references:
     G:
     - start: 526
-    - start: 528
-    - start: 529
+    - end: 529
+      start: 528
     GA 16:
     - start: 200
 Grundbegriffe:
@@ -2829,6 +2836,10 @@ Heimat:
     JPH Z:
     - start: 493
       suffix: f
+Heimatvertriebenen:
+  references:
+    G:
+    - start: 521
 Heimweh:
   references:
     700JM:
@@ -5288,11 +5299,8 @@ Technik:
     - start: 580
       type: r
     G:
-    - end: 524
+    - end: 527
       start: 523
-    - start: 526
-      type: r
-    - start: 527
     GA 29/30:
     - start: 115
     HF:
@@ -5739,6 +5747,10 @@ Verwunderung:
   references:
     WiM:
     - start: 121
+Verwurzelung:
+  references:
+    G:
+    - start: 521
 Verwüstung:
   references:
     GA 102:
@@ -6065,6 +6077,9 @@ Wesen des Menschen:
     - start: 70
     G:
     - start: 529
+    - start: 519
+      type: r
+    - start: 525
     GA 29/30:
     - end: 408
       start: 406
@@ -6161,6 +6176,10 @@ Wissenschaft der Logik:
     WiM:
     - start: 120
   type: w
+Wissenschaftliche Technik:
+  references:
+    G:
+    - start: 523
 Wissenschaftslehre:
   author: Fichte, Johann Gottlieb
   references:
@@ -6185,6 +6204,10 @@ Wohnen:
     - start: 143
     - end: 147
       start: 146
+Wohnen des Menschen:
+  references:
+    G:
+    - start: 521
 Wollen:
   references:
     ZEG:
@@ -6417,11 +6440,13 @@ besinnliche Denken:
     G:
     - end: 526
       start: 525
+    - start: 520
     SvG:
     - start: 178
     - start: 182
   related:
   - besinnliche Nachdenken
+  - rechnende Denken
 besinnliche Nachdenken:
   references:
     G:
