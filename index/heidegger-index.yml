@@ -145,6 +145,10 @@ Anaximander:
     SvG:
     - start: 158
   type: p
+Andenken:
+  references:
+    ZEG:
+    - start: 65
 Anfang:
   references:
     GA 94:
@@ -1651,6 +1655,8 @@ Denken:
     - start: 13
     WD:
     - start: 276
+    ZEG:
+    - start: 65
 Denkweg:
   references:
     SvG:
@@ -1918,6 +1924,10 @@ Durchschnittlichkeit:
     SZ:
     - end: 44
       start: 43
+Edelmut:
+  references:
+    ZEG:
+    - start: 65
 Eigentlichkeit:
   references:
     GA 29/30:
@@ -2394,6 +2404,7 @@ Gelassenheit:
     - end: 59
       start: 51
     - start: 62
+    - start: 65
 Gelassenheit zu den Dingen:
   parent: Gelassenheit
   references:
@@ -3148,6 +3159,11 @@ Instrumental-anthropologische Bestimmung der Technik:
     TK:
     - end: 8
       start: 6
+Inständigkeit:
+  references:
+    ZEG:
+    - start: 64
+    - start: 65
 JGB Nachgesang:
   author: Nietzsche, Friedrich
   metadata:
