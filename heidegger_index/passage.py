@@ -2,7 +2,6 @@ import requests
 from bs4 import BeautifulSoup
 from pyCTS import CTS_URN
 
-
 STRIP_TAGS = ["bibl", "label", "note"]
 
 
@@ -26,7 +25,7 @@ def get_perseus_passage(urn: str):
 
     try:
         r = requests.get(api_url)
-    except requests.HTTPError:
+    except (requests.HTTPError, requests.exceptions.SSLError):
         return
 
     return strip_tei_xml(r.text)
