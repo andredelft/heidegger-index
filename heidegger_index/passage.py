@@ -22,7 +22,7 @@ def get_perseus_passage(urn: str):
     if not CTS_URN(urn).passage_component:
         return
 
-    api_url = f"https://scaife-cts.perseus.org/api/cts?request=GetPassage&urn={urn}"
+    api_url = f"https://scaife.perseus.org/library/{urn}/cts-api-xml/"
 
     try:
         r = requests.get(api_url)
