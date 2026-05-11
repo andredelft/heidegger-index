@@ -586,12 +586,16 @@ Benommenheit, Offenheit der:
       suffix: f
       type: r
 Bergson, Henri:
+  metadata:
+    gnd: '118509578'
   references:
     SZ:
     - start: 18
     - start: 26
   type: p
 Bernoulli:
+  metadata:
+    gnd: '118509969'
   references:
     SvG:
     - start: 19
@@ -2244,13 +2248,6 @@ Fragwürdig:
     HH:
     - end: 146
       start: 145
-Franz Joseph Strauß:
-  metadata:
-    gnd: '118619063'
-  references:
-    SvG:
-    - start: 178
-  type: p
 Franz Suarez:
   metadata:
     gnd: '118619799'
@@ -2287,9 +2284,12 @@ Fähigkeit:
     GA 29/30:
     - start: 489
 Galilei, Galileo:
+  metadata:
+    gnd: '118537229'
   references:
     GA 41:
     - start: 66
+  type: p
 Ganze des Seienden:
   references:
     GA 29/30:
@@ -2736,6 +2736,13 @@ Haben der Welt:
     GA 29/30:
     - end: 263
       start: 262
+Hahn, Otto:
+  metadata:
+    gnd: '118544853'
+  references:
+    SvG:
+    - start: 178
+  type: p
 Hamann, Joh. Georg:
   metadata:
     gnd: '124138004'
@@ -3332,6 +3339,13 @@ Kritik der Reinen Vernunft:
     WBPh:
     - start: 272
   type: w
+Kromer, Lina:
+  metadata:
+    gnd: '116553235'
+  references:
+    GA 13:
+    - start: 253
+  type: p
 Kuinzige:
   references:
     FW:
@@ -3370,6 +3384,8 @@ Langeweile:
     WiM:
     - start: 110
 Laotse:
+  metadata:
+    gnd: '118569678'
   references:
     GA 16:
     - start: 617
@@ -3498,13 +3514,6 @@ Liebe:
     WD:
     - start: 274
     - start: 275
-Lina Kromer:
-  metadata:
-    gnd: '116553235'
-  references:
-    GA 13:
-    - start: 253
-  type: p
 Logik:
   references:
     GA 29/30:
@@ -3607,6 +3616,9 @@ Meister Eckhart:
     - start: 42
   type: p
 Melissos:
+  metadata:
+    dk: 30
+    gnd: '118732854'
   references:
     GA 26:
     - start: 220
@@ -4215,13 +4227,6 @@ Organismus:
       start: 380
     - end: 388
       start: 385
-Otto Hahn:
-  metadata:
-    gnd: '118544853'
-  references:
-    SvG:
-    - start: 178
-  type: p
 Parmenides:
   metadata:
     dk: 28
@@ -5021,6 +5026,8 @@ Sinn von Sein:
     - start: 24
       suffix: f
 Sokrates:
+  metadata:
+    gnd: '118615270'
   references:
     TK:
     - start: 30
@@ -5238,6 +5245,13 @@ Stimmung:
     WiM:
     - end: 111
       start: 110
+Strauß, Franz Joseph:
+  metadata:
+    gnd: '118619063'
+  references:
+    SvG:
+    - start: 178
+  type: p
 Subjeckt:
   references:
     Vorarb29/30:
@@ -5354,6 +5368,7 @@ Theologische Schriften 3, Ideen zur Gebetstheorie 3:
   type: w
 Theophrastus:
   metadata:
+    gnd: '118621793'
     urn: urn:cts:greekLit:tlg0093
   references:
     SA:
@@ -5544,6 +5559,20 @@ Trost:
     JPH Z:
     - start: 515
   type: w
+Uexküll, Jakob Johann von:
+  metadata:
+    gnd: '118763407'
+  references:
+    GA 21:
+    - start: 215
+    GA 29/30:
+    - start: 284
+    - start: 315
+    - start: 327
+    - start: 365
+    - start: 382
+      suffix: f
+  type: p
 Umwelt:
   references:
     GA 18:
@@ -5570,7 +5599,7 @@ Umwelt der Tiere:
     - start: 383
     - start: 384
   related:
-  - von Uexküll, Jakob Johann
+  - Uexküll, Jakob Johann von
   - Umwelt
 Uneigentlichkeit:
   references:
@@ -6917,20 +6946,6 @@ verbauern:
     HF:
     - end: 146
       start: 145
-von Uexküll, Jakob Johann:
-  metadata:
-    gnd: '118763407'
-  references:
-    GA 21:
-    - start: 215
-    GA 29/30:
-    - start: 284
-    - start: 315
-    - start: 327
-    - start: 365
-    - start: 382
-      suffix: f
-  type: p
 vulgäre Verstand:
   references:
     GA 29/30:
