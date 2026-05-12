@@ -75,10 +75,29 @@ def add_ref(
         ref_dict["type"] = ref_type
 
     # Determine whether that lemma is already in the index
+    lemma_in_index = False
     try:
         lemma_entry = index[lemma]
     except KeyError:
         # This triggers if the lemma is not present in the index.
+
+        # Check whether lemma is an alias.
+        for k, v in index.items():
+            if "aliases" in v:
+                if lemma in v["aliases"]:
+                    click.echo(f"'{lemma}' is known to be an alias for '{k}' in this index. Reference will be added to '{k}'")
+                    lemma = k
+                    lemma_entry = index[lemma]
+                    lemma_in_index = True
+                    break
+                else:
+                    continue
+            else:
+                continue
+    else:
+        lemma_in_index = True
+
+    if not lemma_in_index:
         lemma_entry = {"references": {work: [ref_dict]}}
         if lemma_type:
             lemma_entry["type"] = lemma_type
@@ -227,6 +246,17 @@ def add_alias(lemma: str, alias: str):
 
     if alias in index:
         raise click.BadParameter(f"Alias '{alias}' is a lemma in the index. Please use 'add-rel' to add it as a relation between lemmata.")
+
+    # Check whether lemma is an alias.
+    for k, v in index.items():
+        if "aliases" in v:
+            if lemma in v["aliases"]:
+                raise click.BadParameter(f"Alias '{alias}' is already an alias for '{k}' in the index. No duplicates are allowed.")
+                break
+            else:
+                continue
+        else:
+            continue
 
     lemma_dict = index[lemma]
 
