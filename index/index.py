@@ -216,6 +216,28 @@ def find_ref(search_term, max_l_dist=2, num_results=5):
         print("No matches found")
 
 
+def add_alias(lemma: str, alias: str):
+    """Add an alias to a lemma in the index. An alias is regarded as a property of the lemma."""
+
+    with open(INDEX_FILE, encoding='utf-8') as f:
+        index = yaml.safe_load(f)
+    
+    if lemma not in index:
+        raise click.BadParameter(f"Lemma '{lemma}' not found in index.")
+
+    if alias in index:
+        raise click.BadParameter(f"Alias '{alias}' is a lemma in the index. Please use 'add-rel' to add it as a relation between lemmata.")
+
+    lemma_dict = index[lemma]
+
+    index[lemma]["aliases"] = lemma_dict.get("aliases", []) + [
+        alias
+    ]
+
+    with open(INDEX_FILE, "w", encoding='utf-8') as f:
+        yaml.safe_dump(index, f, allow_unicode=True)
+
+
 def add_metadata(md_type, lemma, lemma_type, md_value=None, overwrite=False):
     """Add metadata to a lemma of type 'author' or 'work'"""
 
