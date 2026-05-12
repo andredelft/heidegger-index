@@ -556,6 +556,8 @@ Benennung:
       suffix: f
 Benommenheit:
   references:
+    GA 28:
+    - start: 351
     GA 29/30:
     - start: 443
     - start: 489
@@ -935,6 +937,8 @@ DK 22 B122:
     ZEG:
     - end: 73
       start: 71
+  related:
+  - αγχιβασίη
   type: w
 DK 22 B123:
   author: Heraklit
@@ -1677,6 +1681,8 @@ Der Feldweg:
     - start: 28
     GA 16:
     - start: 487
+    - start: 561
+      type: r
   type: w
 Der Geist als Widersacher der Seele:
   author: Klages, Ludwig
@@ -1695,6 +1701,8 @@ Der Rhein:
   metadata:
     zeno: '20005104998'
   references:
+    GA 16:
+    - start: 561
     Sch:
     - start: 285
     TK:
@@ -2314,6 +2322,11 @@ Ge-stell:
       start: 23
   related:
   - Gestell
+Geborgenheit:
+  references:
+    GA 28:
+    - start: 353
+    - start: 354
 Gebrochenheit des Daseins:
   parent: Dasein
   references:
@@ -3080,9 +3093,7 @@ Hölderlin, Friedrich:
     WD:
     - start: 269
     - end: 273
-      start: 272
-    - start: 271
-    - start: 273
+      start: 271
     - start: 276
   type: p
 Ich:
@@ -3135,6 +3146,19 @@ In-der-Welt-sein:
     - start: 135
     - start: 137
     - start: 246
+In-die-Nähe-Kommen:
+  references:
+    GA 28:
+    - end: 349
+      start: 348
+    ZEG:
+    - start: 49
+In-die-Nähe-gehen:
+  references:
+    ZEG:
+    - start: 73
+  related:
+  - αγχιβασίη
 In-sein:
   references:
     SZ:
@@ -4059,6 +4083,8 @@ Nietzsche, Friedrich:
     - start: 80
     GA 1:
     - start: 56
+    GA 16:
+    - start: 560
     GA 29/30:
     - start: 105
     - end: 111
@@ -4096,6 +4122,15 @@ Novalis:
     - start: 19
     - start: 20
   type: p
+Nähe:
+  references:
+    GA 28:
+    - end: 349
+      start: 348
+    ZEG:
+    - end: 71
+      start: 69
+    - start: 74
 Oberschwaben:
   references:
     GA 16:
@@ -4312,6 +4347,8 @@ Phaidros 279a:
   type: w
 Philosophie:
   references:
+    GA 28:
+    - start: 349
     GA 29/30:
     - start: 259
     - start: 260
@@ -4498,6 +4535,9 @@ Politeia VII 514a-517a:
     urn: urn:cts:greekLit:tlg0059.tlg030.perseus-grc2:7.514-7.517
   parent: Politeia
   references:
+    GA 28:
+    - end: 361
+      start: 351
     GA 34:
     - end: 19
       start: 17
@@ -4619,6 +4659,10 @@ Reizbarkeit:
     GA 29/30:
     - end: 373
       start: 372
+Religion:
+  references:
+    GA 28:
+    - start: 354
 Revolution der Technik:
   parent: Technik
   references:
@@ -5508,6 +5552,8 @@ Trakl, Georg:
   type: p
 Transzendenz:
   references:
+    GA 28:
+    - start: 354
     GA 29/30:
     - start: 447
     Vorarb29/30:
@@ -5658,6 +5704,11 @@ Unheimlichkeit:
     WiM:
     - end: 113
       start: 112
+Unruhe:
+  references:
+    GA 28:
+    - start: 347
+    - start: 353
 Unverborgenheit:
   references:
     EM:
@@ -5954,6 +6005,11 @@ Warum:
     - start: 169
   related:
   - Weil
+Weber, Max:
+  references:
+    GA 28:
+    - start: 349
+  type: p
 Weil:
   references:
     SvG:
@@ -6186,6 +6242,9 @@ Wissenschaft:
     - start: 523
     GA 21:
     - start: 1
+    GA 28:
+    - end: 350
+      start: 348
     GA 29/30:
     - end: 49
       start: 48
@@ -6211,6 +6270,12 @@ Wissenschaft:
   related:
   - ἐπιστήμη
   - positive Forschung
+Wissenschaft als Beruf:
+  author: Weber, Max
+  references:
+    GA 28:
+    - start: 349
+  type: w
 Wissenschaft der Logik:
   author: Hegel, Georg Wilhelm Friedrich
   metadata:
@@ -6562,6 +6627,10 @@ dichterisch wohnet der Mensch auf dieser Erde:
     - start: 147
     TK:
     - start: 35
+die Universität:
+  references:
+    GA 28:
+    - start: 347
 dürftiger Zeit:
   references:
     WD:
@@ -6916,6 +6985,10 @@ technische Gegenstand:
     G:
     - end: 527
       start: 526
+theoretisch:
+  references:
+    GA 28:
+    - start: 350
 tiefe Langeweile:
   parent: Langeweile
   references:
@@ -7010,6 +7083,12 @@ wesentliche Möglichkeit des Seins:
     SA:
     - start: 324
   type: w
+αγχιβασίη:
+  lang: grc
+  references:
+    ZEG:
+    - end: 73
+      start: 72
 αἰτία:
   lang: grc
   references:
