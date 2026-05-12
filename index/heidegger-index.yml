@@ -938,7 +938,7 @@ DK 22 B122:
     - end: 73
       start: 71
   related:
-  - αγχιβασίη
+  - ἀγχιβασίη
   type: w
 DK 22 B123:
   author: Heraklit
@@ -3158,7 +3158,7 @@ In-die-Nähe-gehen:
     ZEG:
     - start: 73
   related:
-  - αγχιβασίη
+  - ἀγχιβασίη
 In-sein:
   references:
     SZ:
@@ -3521,6 +3521,12 @@ Letztes:
   references:
     GA 29/30:
     - start: 3
+Licht:
+  references:
+    GA 28:
+    - start: 355
+    - end: 357
+      start: 356
 Lichtung:
   references:
     GA 45:
@@ -4234,6 +4240,8 @@ Optimismus:
     - start: 271
 Organ:
   references:
+    GA 28:
+    - start: 357
     GA 29/30:
     - start: 312
     - end: 318
@@ -6627,6 +6635,11 @@ dichterisch wohnet der Mensch auf dieser Erde:
     - start: 147
     TK:
     - start: 35
+die Helle:
+  references:
+    GA 28:
+    - end: 358
+      start: 357
 die Universität:
   references:
     GA 28:
@@ -7083,12 +7096,6 @@ wesentliche Möglichkeit des Seins:
     SA:
     - start: 324
   type: w
-αγχιβασίη:
-  lang: grc
-  references:
-    ZEG:
-    - end: 73
-      start: 72
 αἰτία:
   lang: grc
   references:
@@ -7894,6 +7901,12 @@ wesentliche Möglichkeit des Seins:
     - start: 484
     - start: 490
     - start: 488
+ἀγχιβασίη:
+  lang: grc
+  references:
+    ZEG:
+    - end: 73
+      start: 72
 ἀείζωον:
   lang: grc
   parent: ζωή
@@ -7924,6 +7937,9 @@ wesentliche Möglichkeit des Seins:
     EM:
     - start: 109
     - start: 129
+    GA 28:
+    - start: 359
+      suffix: f
     GA 29/30:
     - end: 44
       start: 43
