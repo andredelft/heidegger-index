@@ -90,6 +90,12 @@ def click_add_metadata(metadata_type, lemma, lemma_type, md_value, overwrite):
 def click_find_ref(search_term):
     find_ref(search_term)
 
+@click.command()
+@click.argument("lemma", type=str)
+@click.argument("alias", type=str)
+def click_add_alias(lemma, alias):
+    add_alias(lemma, alias)
+
 
 @click.command()
 def click_format_refs():

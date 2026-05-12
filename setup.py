@@ -11,6 +11,7 @@ setup(
             "add-ref=index:click_add_ref",
             "add-rel=index:click_add_rel",
             "add-metadata=index:click_add_metadata",
+            "add-alias=index:click_add_alias",
             "find-ref=index:click_find_ref",
             "format-refs=index:click_format_refs",
         ]
