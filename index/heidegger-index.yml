@@ -1945,6 +1945,9 @@ Eigentlichkeit:
     GA 29/30:
     - end: 427
       start: 426
+    SZ:
+    - start: 42
+      suffix: f
 Eigentümlichkeit:
   references:
     GA 29/30:
@@ -2182,6 +2185,11 @@ Existenz:
       start: 104
     - start: 121
     - start: 122
+Existenzialien:
+  references:
+    SZ:
+    - start: 44
+      suffix: f
 Faktizität:
   references:
     SZ:
@@ -3292,6 +3300,11 @@ Karlsruhe:
     JPH Z:
     - start: 492
   type: g
+Kategorien:
+  references:
+    SZ:
+    - start: 44
+      suffix: f
 Kierkegaard, Søren:
   metadata:
     gnd: '118562002'
@@ -3482,6 +3495,8 @@ Lebensphilosophie:
     - start: 21
     GA 21:
     - start: 216
+    SZ:
+    - start: 46
 Leere:
   references:
     GA 29/30:
@@ -3981,6 +3996,7 @@ Natur:
     SZ:
     - start: 70
     - start: 25
+    - start: 60
     SvG:
     - start: 178
     TK:
@@ -5072,6 +5088,13 @@ Simplicius:
     SA:
     - start: 325
   type: p
+Sinn:
+  references:
+    SZ:
+    - start: 151
+    - start: 324
+  related:
+  - Sinn von Sein
 Sinn von Sein:
   references:
     SZ:
@@ -6322,6 +6345,8 @@ Wohnen:
     - start: 143
     - end: 147
       start: 146
+    SZ:
+    - start: 54
 Wohnen des Menschen:
   references:
     G:
@@ -7299,6 +7324,11 @@ wesentliche Möglichkeit des Seins:
     - start: 484
     - start: 487
     - start: 490
+κατηγορεῖσθαι:
+  lang: grc
+  references:
+    SZ:
+    - start: 44
 κατηγορία:
   lang: grc
   references:
@@ -7370,6 +7400,8 @@ wesentliche Möglichkeit des Seins:
     - start: 41
     GA 55:
     - start: 42
+    SZ:
+    - start: 44
     SvG:
     - start: 160
     - start: 161
@@ -7428,16 +7460,11 @@ wesentliche Möglichkeit des Seins:
     - start: 25
     - end: 34
       start: 32
+    - start: 44
+      suffix: f
     SvG:
-    - start: 158
-    - start: 159
-    - start: 160
-    - start: 161
-    - start: 162
-    - start: 163
-    - start: 164
-    - start: 165
-    - start: 166
+    - end: 166
+      start: 158
     - start: 168
     WBPh:
     - start: 251
@@ -7500,6 +7527,8 @@ wesentliche Möglichkeit des Seins:
   references:
     GA 45:
     - start: 139
+    SZ:
+    - start: 44
   related:
   - DK 28 B3
 νόμος:
