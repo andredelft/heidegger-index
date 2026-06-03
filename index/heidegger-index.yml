@@ -6190,6 +6190,7 @@ Wesen des Denkens:
     - end: 58
       start: 56
     - start: 64
+    - start: 66
 Wesen des Lebens:
   parent: Leben
   references:
@@ -6230,6 +6231,7 @@ Wesen des Menschen:
     - start: 38
     - start: 61
     - start: 62
+    - start: 66
 Wesen des Tieres:
   parent: Tier
   references:
@@ -7057,6 +7059,10 @@ verbauern:
     HF:
     - end: 146
       start: 145
+vereignen:
+  references:
+    ZEG:
+    - start: 66
 vulgäre Verstand:
   references:
     GA 29/30:
