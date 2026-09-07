@@ -3056,14 +3056,9 @@ Horizont:
     GA 29/30:
     - start: 252
     ZEG:
-<<<<<<< HEAD
-    - start: 44
-      suffix: f
-    - start: 55
-=======
     - end: 46
       start: 44
->>>>>>> 64f842f (Misc ZEG lemmata)
+    - start: 55
 Humboldt, Wilhelm von:
   metadata:
     gnd: '118554727'
