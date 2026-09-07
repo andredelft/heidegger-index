@@ -2387,8 +2387,8 @@ Gegenstand:
     WD:
     - start: 283
     ZEG:
-    - start: 48
-    - start: 44
+    - end: 48
+      start: 44
 Gegnet:
   references:
     GA 55:
@@ -3056,9 +3056,14 @@ Horizont:
     GA 29/30:
     - start: 252
     ZEG:
+<<<<<<< HEAD
     - start: 44
       suffix: f
     - start: 55
+=======
+    - end: 46
+      start: 44
+>>>>>>> 64f842f (Misc ZEG lemmata)
 Humboldt, Wilhelm von:
   metadata:
     gnd: '118554727'
