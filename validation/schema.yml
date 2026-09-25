@@ -4,6 +4,12 @@ additionalProperties:
   type: object
   description: Lemma object
   properties:
+    aliases:
+      type: array
+      description: List of aliases of lemma.
+      uniqueItems: True
+      items:
+        type: string
     metadata:
       type: object
       description: Metadata object

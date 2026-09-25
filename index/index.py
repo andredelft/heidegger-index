@@ -75,10 +75,29 @@ def add_ref(
         ref_dict["type"] = ref_type
 
     # Determine whether that lemma is already in the index
+    lemma_in_index = False
     try:
         lemma_entry = index[lemma]
     except KeyError:
         # This triggers if the lemma is not present in the index.
+
+        # Check whether lemma is an alias.
+        for k, v in index.items():
+            if "aliases" in v:
+                if lemma in v["aliases"]:
+                    click.echo(f"'{lemma}' is known to be an alias for '{k}' in this index. Reference will be added to '{k}'")
+                    lemma = k
+                    lemma_entry = index[lemma]
+                    lemma_in_index = True
+                    break
+                else:
+                    continue
+            else:
+                continue
+    else:
+        lemma_in_index = True
+
+    if not lemma_in_index:
         lemma_entry = {"references": {work: [ref_dict]}}
         if lemma_type:
             lemma_entry["type"] = lemma_type
@@ -214,6 +233,39 @@ def find_ref(search_term, max_l_dist=2, num_results=5):
         print("\n".join(f"{m[0]}" for m in matches[:num_results]))
     else:
         print("No matches found")
+
+
+def add_alias(lemma: str, alias: str):
+    """Add an alias to a lemma in the index. An alias is regarded as a property of the lemma."""
+
+    with open(INDEX_FILE, encoding='utf-8') as f:
+        index = yaml.safe_load(f)
+    
+    if lemma not in index:
+        raise click.BadParameter(f"Lemma '{lemma}' not found in index.")
+
+    if alias in index:
+        raise click.BadParameter(f"Alias '{alias}' is a lemma in the index. Please use 'add-rel' to add it as a relation between lemmata.")
+
+    # Check whether lemma is an alias.
+    for k, v in index.items():
+        if "aliases" in v:
+            if lemma in v["aliases"]:
+                raise click.BadParameter(f"Alias '{alias}' is already an alias for '{k}' in the index. No duplicates are allowed.")
+                break
+            else:
+                continue
+        else:
+            continue
+
+    lemma_dict = index[lemma]
+
+    index[lemma]["aliases"] = lemma_dict.get("aliases", []) + [
+        alias
+    ]
+
+    with open(INDEX_FILE, "w", encoding='utf-8') as f:
+        yaml.safe_dump(index, f, allow_unicode=True)
 
 
 def add_metadata(md_type, lemma, lemma_type, md_value=None, overwrite=False):
