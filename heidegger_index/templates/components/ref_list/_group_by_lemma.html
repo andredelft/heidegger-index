@@ -3,7 +3,7 @@
   {% for lemma, page_ref_list in lemma_groups %}
     <li>
       <a href="{% url 'lemma-detail' lemma.slug %}">{{ lemma.display }}</a>:
-      {{ page_ref_list|join:', ' }}
+      {{ page_ref_list|dictsort:"start"|join:', ' }}
     </li>
   {% endfor %}
 </ul>
